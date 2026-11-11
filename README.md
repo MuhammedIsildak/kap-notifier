@@ -90,6 +90,18 @@ API anahtarı al ve `.env` dosyasına ekle:
 GEMINI_API_KEY=...
 ```
 
+Anahtarı terminalde görünmeden test edip `.env` dosyasına kaydetmek için:
+
+```bash
+.venv/bin/python tools/setup_ai.py
+```
+
+Farklı bir model denemek için:
+
+```bash
+.venv/bin/python tools/setup_ai.py --model gemini-2.0-flash
+```
+
 Anahtar yoksa veya kota dolarsa e-posta yine gönderilir; sadece KAP'ın kendi
 özeti görünür. LLM yalnızca filtreden geçen yeni bildirimler için çağrılır ve
 özetler `state/summaries.json` içinde önbelleğe alınır.
