@@ -108,7 +108,8 @@ llm:
   model: gemini-3.5-flash-lite
   api_key_env: GEMINI_API_KEY
   batch_size: 8
-  max_items_per_run: 30
+  # Her e-posta parçasındaki tüm bildirimlerin özetlenmesi için 40+ seç.
+  max_items_per_run: 60
   timeout_seconds: 60
 
 email:
