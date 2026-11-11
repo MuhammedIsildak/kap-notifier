@@ -4,6 +4,7 @@ from src.documents import (
     DocumentFetcher,
     clean_document_text,
     extract_body_text,
+    extract_table_rows,
 )
 from src.models import Disclosure
 from src.config import DocumentsConfig
@@ -60,6 +61,87 @@ def test_clean_document_text_drops_script_noise():
     assert "34.775.000 TL" in cleaned
 
 
+def _table_row(label: str, values: list[str], row_no: int = 5) -> str:
+    cells = "".join(
+        f'<td class="taxonomy-context-value col-order-class-{index}">'
+        f"<div><div class=\"gwt-Label\">{value}</div></div></td>"
+        for index, value in enumerate(values)
+    )
+    return (
+        f'<tr class="banks_role_210011-row-{row_no} data-input-row">'
+        '<td class="taxonomy-field-name-cell"><div>x|</div></td>'
+        '<td class="taxonomy-field-title"><table><tbody><tr><td>'
+        f'<div class="gwt-Label multi-language-content content-tr">{label}</div>'
+        '<div class="gwt-Label multi-language-content content-en">English</div>'
+        "</td></tr></tbody></table></td>"
+        f"{cells}</tr>"
+    )
+
+
+def _table_page(rows: list[str]) -> str:
+    header = (
+        '<td class="context-header taxonomy-dimensional-header-cell">'
+        '<div class="gwt-HTML multi-language-content content-tr">'
+        "Cari Dönem<br/>30.09.2026</div></td>"
+    )
+    return header + "".join(rows)
+
+
+def test_extract_table_rows_returns_aggregate_lines():
+    page = _table_page(
+        [
+            _table_row("VARLIKLAR TOPLAMI", ["94.271", "38.527"], 3),
+            _table_row("Dönem Net Kâr veya Zararı", ["3.175", "4.867"], 9),
+            _table_row("ÖZKAYNAKLAR", ["15.763", "13.578"], 51),
+            _table_row("Nakit ve Nakit Benzerleri", ["15.333", "2.849"], 5),
+        ]
+    )
+    lines = extract_table_rows(page)
+    joined = "\n".join(lines)
+
+    assert "VARLIKLAR TOPLAMI: 94.271 | 38.527" in joined
+    assert "Dönem Net Kâr veya Zararı: 3.175 | 4.867" in joined
+    # Anahtar kalem olmayan satır bırakılır.
+    assert "Nakit ve Nakit Benzerleri" not in joined
+    # Dönem başlığı korunur.
+    assert "30.09.2026" in joined
+
+
+def test_extract_table_rows_drops_english_label():
+    page = _table_page([_table_row("VARLIKLAR TOPLAMI", ["94.271"], 3)])
+    joined = "\n".join(extract_table_rows(page))
+    assert "English" not in joined
+    assert "VARLIKLAR TOPLAMI" in joined
+
+
+def test_extract_table_rows_falls_back_when_no_keyword_matches():
+    page = _table_page([_table_row("Bilinmeyen Kalem", ["1", "2"], 3)])
+    joined = "\n".join(extract_table_rows(page))
+    assert "Bilinmeyen Kalem" in joined
+
+
+def test_extract_table_rows_captures_currency_and_scope():
+    page = (
+        '<table class="financial-header-table"><tr>'
+        '<td class="financial-header-title">Sunum Para Birimi</td>'
+        "<td>1.000.000 TL</td></tr><tr>"
+        '<td class="financial-header-title">Finansal Tablo Niteliği</td>'
+        "<td>Konsolide</td></tr></table>"
+    ) + _table_page([_table_row("VARLIKLAR TOPLAMI", ["94.271"], 3)])
+    joined = "\n".join(extract_table_rows(page))
+    assert "1.000.000 TL" in joined
+    assert "Konsolide" in joined
+
+
+def test_body_text_includes_table_rows():
+    page = _page("<p>Şirket açıklama metni.</p>") + _table_page(
+        [_table_row("VARLIKLAR TOPLAMI", ["94.271"], 3)]
+    )
+    body = extract_body_text(page)
+    assert "Şirket açıklama metni." in body
+    assert "VARLIKLAR TOPLAMI: 94.271" in body
+
+
 class _FakeResponse:
     def __init__(self, status_code: int, text: str = ""):
         self.status_code = status_code
@@ -95,7 +177,6 @@ def test_fetcher_uses_body_when_no_attachment(tmp_path):
         summary="Yurt İçi Pamuk Alım Anlaşması İmzalanması Hakkında",
         publish_date="11.11.2026 13:33:19",
     )
-
     result = fetcher.fetch([disclosure])
 
     assert "1696917" not in result
