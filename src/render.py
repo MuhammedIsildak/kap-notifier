@@ -211,7 +211,7 @@ def _item_html(
         background, color = MATERIALITY_COLORS.get(materiality, ("#e2e8f0", "#334155"))
         badges += _badge(label, background, color)
     if summary is not None and summary.has_document:
-        badges += _badge("PDF OKUNDU", "#dcfce7", "#166534")
+        badges += _badge("KAYNAK OKUNDU", "#dcfce7", "#166534")
 
     rating_block = ""
     if rating is not None and (rating.current or rating.previous):
@@ -265,7 +265,7 @@ def _summary_text(summary: Summary | None) -> list[str]:
     if summary.analysis_points:
         lines.append("Analiz: " + "; ".join(summary.analysis_points))
     if summary.has_document:
-        lines.append("Kaynak: PDF eki okunarak analiz edildi")
+        lines.append("Kaynak: KAP bildirim metni/ek dosyası okunarak analiz edildi")
     return lines
 
 

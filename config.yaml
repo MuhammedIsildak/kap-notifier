@@ -231,7 +231,7 @@ documents:
   enabled: true
   # KAP 429 riski nedeniyle tek çalışmada sınırlı sayıda bildirim okunur.
   # Öncelik kritik/yüksek maddiyetli bildirimlere verilir.
-  max_items_per_run: 8
+  max_items_per_run: 12
   max_attachments: 2
   # Tek bildirim için modele giden en fazla karakter (yaklaşık 1.5-2 bin token).
   max_chars: 6000

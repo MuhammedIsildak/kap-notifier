@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html as html_lib
 import logging
 import re
 import time
@@ -35,6 +36,75 @@ NOISE_LINES = (
 )
 
 
+def _decode_json_escapes(text: str) -> str:
+    """KAP sayfasındaki JSON kaçışlarını (\u003e, \n, \") gerçer metne çevirir."""
+    def replace(match: re.Match) -> str:
+        return chr(int(match.group(1), 16))
+
+    text = re.sub(r"\\u([0-9a-fA-F]{4})", replace, text)
+    text = text.replace("\\n", "\n").replace("\\r", " ").replace("\\t", " ")
+    text = text.replace('\\"', '"').replace("\\\\", "\\")
+    return text
+
+
+def _strip_tags(fragment: str) -> str:
+    text = _decode_json_escapes(fragment)
+    text = html_lib.unescape(text)
+    text = re.sub(r"<[^>]+>", " ", text)
+    # KAP'ın birleştirme işaretleri gövde metninin önündedir.
+    marker = text.rfind("[CONSOLIDATION_METHOD")
+    if marker != -1:
+        closing = text.find("]", marker)
+        if closing != -1:
+            text = text[closing + 1 :]
+    return " ".join(text.split())
+
+
+def extract_body_text(page_html: str) -> str:
+    """KAP detay sayfasındaki bildirim gövdesini (açıklama metnini) çıkarır.
+
+    Ek dosyası olmayan bildirimlerde sözleşme tutarı, tarih ve koşullar
+    yalnızca gövdede yazılıdır; bu metin okunmazsa AI "tutar açıklanmadı"
+    der ve önemli bilgi kaybolur.
+    """
+    flat = page_html.replace('\\"', '"')
+
+    # Türkçe gövde hücreleri ayrıştırılır; İngilizce kopya atlanır.
+    cell_pattern = re.compile(
+        r'taxonomy-context-value-summernote[^"]*multi-language-content\s+'
+        r'content-(tr|en)"[^>]*>(.*?)</td>',
+        re.DOTALL,
+    )
+    turkish: list[str] = []
+    for match in cell_pattern.finditer(flat):
+        if match.group(1) != "tr":
+            continue
+        chunk = match.group(2)
+        found = False
+        for block in re.findall(
+            r'<div class="text-block-value"[^>]*>(.*?)</div>', chunk, re.DOTALL
+        ):
+            text = _strip_tags(block)
+            if text:
+                turkish.append(text)
+                found = True
+        if not found:
+            # Gövde doğrudan hücre içindeyse.
+            text = _strip_tags(chunk)
+            if text:
+                turkish.append(text)
+
+    # Aynı metin hem TR hem EN hücresinde geçebilir; tekrarları at.
+    seen: set[str] = set()
+    unique: list[str] = []
+    for text in turkish:
+        if text in seen:
+            continue
+        seen.add(text)
+        unique.append(text)
+    return "\n".join(unique)
+
+
 def _is_noise(line: str) -> bool:
     low = normalize(line)
     if len(line) < 4:
@@ -46,6 +116,12 @@ def _is_noise(line: str) -> bool:
         return True
     # Tek kelimelik başlık kalıntıları (tablo sütun adı vs.).
     if " " not in line and not any(char.isdigit() for char in line):
+        return True
+    # Sayfa kabuğu / betik kalıntıları.
+    if any(
+        marker in line
+        for marker in ("self.__next_f", "notification-body-scale", "$RS(", "[CONSOLIDATION")
+    ):
         return True
     return False
 
@@ -127,8 +203,6 @@ class DocumentFetcher:
             if str(item.get("fileExtension") or "").lower() == "pdf"
             or str(item.get("fileName") or "").lower().endswith(".pdf")
         ][: self.config.max_attachments]
-        if not pdfs:
-            return ""
 
         budget = self.config.max_chars
         parts: list[str] = []
@@ -151,7 +225,19 @@ class DocumentFetcher:
             if cleaned:
                 parts.append(cleaned)
 
-        return "\n\n".join(parts).strip()
+        if parts:
+            return "\n\n".join(parts).strip()
+
+        # Ek yoksa bildirim gövdesi okunur. Sözleşme tutarı, tarih ve
+        # koşullar genellikle yalnızca burada yazılıdır.
+        body = clean_document_text(extract_body_text(page_html), budget)
+        if body:
+            LOGGER.info(
+                "Bildirim gövdesi okundu (%s): %s karakter",
+                disclosure.index,
+                len(body),
+            )
+        return body
 
     def _get(self, url: str) -> requests.Response:
         response = self._request(url)
