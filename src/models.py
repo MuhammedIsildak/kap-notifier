@@ -110,6 +110,7 @@ class Summary:
     category: str = ""
     red_flags: tuple[str, ...] = ()
     analysis_points: tuple[str, ...] = ()
+    has_document: bool = False
 
     def to_dict(self) -> dict:
         return {
@@ -118,6 +119,7 @@ class Summary:
             "category": self.category,
             "red_flags": list(self.red_flags),
             "analysis_points": list(self.analysis_points),
+            "has_document": self.has_document,
         }
 
     @classmethod
@@ -133,6 +135,7 @@ class Summary:
             analysis_points=tuple(
                 str(item) for item in data.get("analysis_points") or ()
             ),
+            has_document=bool(data.get("has_document")),
         )
 
 

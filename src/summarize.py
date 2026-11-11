@@ -5,6 +5,7 @@ import logging
 import os
 import re
 import time
+from dataclasses import replace
 from pathlib import Path
 
 import requests
@@ -45,7 +46,25 @@ Her bildirim için şu alanları üret:
 - summary: 2-4 cümle. Ne oldu, hangi büyüklükte, analist için neden önemli?
   Sayıları, tarihleri ve şirket unvanlarını koru. Dış bilgi ekleme.
 - red_flags: en fazla 3 somut risk sinyali; yoksa boş liste.
-- analysis_points: analistin dikkat etmesi gereken en fazla 3 nokta.
+- analysis_points: en fazla 3 madde. Her madde bir NETİCE söylemeli:
+  "<somut gözlem veya rakam> → <bunun sonucu: ne olur / ne izlenir>".
+  Örnek: "Sözleşme 450 mn TL, 2025 cirosunun %18'i → 2027 FAVÖK'üne
+  yıllık ~%6 katkı, nakit girişi 2027'de başlar".
+  Örnek: "Net borç/FAVÖK 4.1x → 2027'de 3.5x altına inmezse kredi
+  koşulları yeniden fiyatlandır".
+  "İncelenmelidir", "takip edilmelidir", "dikkat edilmelidir", "önemlidir"
+  gibi tek başına havada kalan ifadeler YASAK. Her maddede sayı, tarih,
+  eşik veya doğrudan sonuç olmalı. Bilgi yoksa "tutar açıklanmadı → etki
+  hesaplanamıyor, KAP ekine bakılmalı" gibi açık yaz.
+
+- has_document: belge metni ("belge_metni") sağlanıyorsa True, yoksa False.
+  Sadece verilen bilgilere dayan; tahmin ve yorum katma.
+
+Belge metni ("belge_metni") verilmişse:
+- Özet ve analiz noktalarını KAP'ın kısa özeti yerine belgedeki tutar, oran,
+  tarih ve koşullara dayandır.
+- Belge ile KAP özeti çelişirse belge metnini esas al.
+- Belgede olmayan sayıyı uydurma; yoksa "belgede tutar belirtilmemiş" yaz.
 
 Kurallar:
 - Sadece verilen bilgilere dayan; tahmin ve yorum katma.
@@ -53,13 +72,9 @@ Kurallar:
   aksiyon ve görünüm.
 - Yatırım tavsiyesi verme.
 - Yanıtı SADECE aşağıdaki JSON şemasında döndür:
-  {"items": [{"id": "bildirim-index", "materiality": "high",
+{"items": [{"id": "bildirim-index", "materiality": "high",
   "category": "Kredi notu", "summary": "...", "red_flags": ["..."],
-  "analysis_points": ["..."]}]}
-
-Bildirimler:
-{payload}
-"""
+  "analysis_points": ["..."]}]}"""
 
 
 def load_soul(path: Path = SOUL_PATH) -> str:
@@ -93,9 +108,11 @@ class Summarizer:
         self,
         disclosures: list[Disclosure],
         ratings: dict[str, RatingInfo] | None = None,
+        documents: dict[str, str] | None = None,
     ) -> dict[str, Summary]:
         """Önbellekte olanları döndürür, eksikleri LLM ile özetler."""
         ratings = ratings or {}
+        documents = documents or {}
         results: dict[str, Summary] = {}
         missing: list[Disclosure] = []
 
@@ -143,7 +160,7 @@ class Summarizer:
         for start in range(0, len(limited), self.config.batch_size):
             batch = limited[start : start + self.config.batch_size]
             try:
-                summarized = self._call_gemini(batch, api_key, ratings)
+                summarized = self._call_gemini(batch, api_key, ratings, documents)
             except Exception as exc:  # noqa: BLE001 - tek parti hatası tüm işi durdurmasın
                 LOGGER.warning("LLM partisi özetlenemedi: %s", exc)
                 continue
@@ -167,6 +184,7 @@ class Summarizer:
         batch: list[Disclosure],
         api_key: str,
         ratings: dict[str, RatingInfo],
+        documents: dict[str, str],
     ) -> dict[str, Summary]:
         payload = []
         for item in batch:
@@ -179,6 +197,7 @@ class Summarizer:
                     "tarih": item.publish_date,
                     "kap_ozeti": item.summary,
                     "kredi_notu": rating.to_dict() if rating else None,
+                    "belge_metni": documents.get(item.index) or None,
                 }
             )
         prompt = PROMPT.replace(
@@ -205,7 +224,16 @@ class Summarizer:
         for model in models:
             try:
                 text = self._request(model, api_key, body)
-                return self._parse_response(text, valid_ids)
+                parsed = self._parse_response(text, valid_ids)
+                for index, summary in list(parsed.items()):
+                    if documents.get(index):
+                        parsed[index] = replace(summary, has_document=True)
+                if documents:
+                    LOGGER.info(
+                        "%s bildirim için PDF içeriği özete eklendi",
+                        sum(1 for item in batch if documents.get(item.index)),
+                    )
+                return parsed
             except Exception as exc:  # noqa: BLE001 - model yedeğine geç
                 last_error = exc
                 LOGGER.warning("LLM modeli başarısız (%s): %s", model, exc)
@@ -294,6 +322,7 @@ class Summarizer:
             analysis_points = _string_list(
                 item.get("analysis_points"), limit=4, length=280
             )
+            has_document = bool(item.get("has_document"))
             results[index] = Summary(
                 text=summary[:800],
                 materiality=materiality,
@@ -302,6 +331,7 @@ class Summarizer:
                 )[:60],
                 red_flags=red_flags,
                 analysis_points=analysis_points,
+                has_document=has_document,
             )
         return results
 

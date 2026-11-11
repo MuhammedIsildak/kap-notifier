@@ -114,6 +114,7 @@ class State:
             analysis_points=tuple(
                 str(item) for item in entry.get("analysis_points") or ()
             ),
+            has_document=bool(entry.get("has_document")),
         )
 
     def set_summary(

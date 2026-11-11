@@ -90,6 +90,19 @@ class RatingsConfig:
 
 
 @dataclass(frozen=True)
+class DocumentsConfig:
+    """Bildirim eklerindeki PDF'lerin okunması."""
+
+    enabled: bool = True
+    max_items_per_run: int = 8
+    max_attachments: int = 2
+    max_chars: int = 6000
+    max_pdf_bytes: int = 15_000_000
+    timeout_seconds: int = 30
+    request_delay_seconds: float = 0.4
+
+
+@dataclass(frozen=True)
 class EmailConfig:
     subject_prefix: str = "KAP"
     smtp_host: str = "smtp.gmail.com"
@@ -116,6 +129,7 @@ class AppConfig:
     quiet_hours: QuietHoursConfig = field(default_factory=QuietHoursConfig)
     llm: LLMConfig = field(default_factory=LLMConfig)
     ratings: RatingsConfig = field(default_factory=RatingsConfig)
+    documents: DocumentsConfig = field(default_factory=DocumentsConfig)
     email: EmailConfig = field(default_factory=EmailConfig)
 
 
@@ -137,6 +151,7 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
     quiet_raw = raw.get("quiet_hours") or {}
     llm_raw = raw.get("llm") or {}
     ratings_raw = raw.get("ratings") or {}
+    documents_raw = raw.get("documents") or {}
     email_raw = raw.get("email") or {}
 
     analyst = AnalystConfig(
@@ -189,6 +204,20 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         timeout_seconds=max(5, _as_int(ratings_raw.get("timeout_seconds"), 45)),
     )
 
+    documents = DocumentsConfig(
+        enabled=_as_bool(documents_raw.get("enabled"), True),
+        max_items_per_run=max(0, _as_int(documents_raw.get("max_items_per_run"), 8)),
+        max_attachments=max(1, _as_int(documents_raw.get("max_attachments"), 2)),
+        max_chars=max(1000, _as_int(documents_raw.get("max_chars"), 6000)),
+        max_pdf_bytes=max(
+            1_000_000, _as_int(documents_raw.get("max_pdf_bytes"), 15_000_000)
+        ),
+        timeout_seconds=max(5, _as_int(documents_raw.get("timeout_seconds"), 30)),
+        request_delay_seconds=max(
+            0.0, float(documents_raw.get("request_delay_seconds") or 0.4)
+        ),
+    )
+
     env_recipients = os.getenv("KAP_EMAIL_TO", "")
     if env_recipients:
         recipients = tuple(
@@ -216,5 +245,6 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         quiet_hours=quiet_hours,
         llm=llm,
         ratings=ratings,
+        documents=documents,
         email=email,
     )

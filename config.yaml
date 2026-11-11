@@ -225,6 +225,21 @@ ratings:
   max_pdf_bytes: 15000000
   timeout_seconds: 45
 
+documents:
+  # Seçili bildirimlerin PDF eklerini okuyup AI özetine ve analiz noktalarına
+  # girdi olarak verir. Ek yoksa o bildirim için indirme yapılmaz.
+  enabled: true
+  # KAP 429 riski nedeniyle tek çalışmada sınırlı sayıda bildirim okunur.
+  # Öncelik kritik/yüksek maddiyetli bildirimlere verilir.
+  max_items_per_run: 8
+  max_attachments: 2
+  # Tek bildirim için modele giden en fazla karakter (yaklaşık 1.5-2 bin token).
+  max_chars: 6000
+  max_pdf_bytes: 15000000
+  timeout_seconds: 30
+  # İstekler arasında kibarca bekleme (saniye).
+  request_delay_seconds: 0.4
+
 email:
   subject_prefix: "KAP"
   # Alıcılar KAP_EMAIL_TO ortam değişkeni ile verilir (virgülle ayrılabilir).

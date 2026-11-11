@@ -12,10 +12,11 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from dotenv import load_dotenv
 
 from src.config import AppConfig, ConfigError, load_config
+from src.documents import DocumentFetcher
 from src.fetch import FetchError, fetch_disclosures, fetch_from_file
 from src.filter import Candidate, select_candidates
 from src.mailer import MailerError, send_email
-from src.models import DATE_FORMAT, Disclosure, Summary
+from src.models import DATE_FORMAT, MATERIALITY_ORDER, Disclosure, Summary
 from src.ratings import RatingExtractor
 from src.render import RenderedEmail, render_email
 from src.state import State
