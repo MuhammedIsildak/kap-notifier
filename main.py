@@ -60,6 +60,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Kredi notu eklerini indirme/çıkarma",
     )
     parser.add_argument(
+        "--no-documents",
+        action="store_true",
+        help="PDF eklerini indirme/okuma",
+    )
+    parser.add_argument(
         "--limit",
         type=int,
         default=0,
@@ -223,8 +228,15 @@ def run(args: argparse.Namespace) -> int:
 
     summarizer = Summarizer(config.llm, state)
     rating_extractor = RatingExtractor(config.ratings, state)
+    document_fetcher = DocumentFetcher(config.documents)
     ratings_enabled = (
         config.ratings.enabled and not args.no_ratings and not is_fixture
+    )
+    documents_enabled = (
+        config.documents.enabled
+        and not args.no_documents
+        and not is_fixture
+        and config.llm.enabled
     )
     chunk_size = max(1, config.filters.max_items)
     chunks = [
@@ -243,8 +255,29 @@ def run(args: argparse.Namespace) -> int:
             state.save_ratings(now)
             LOGGER.info("%s kredi notu bildirimi çıkarıldı", len(ratings))
 
+        documents: dict[str, str] = {}
+        if documents_enabled:
+            # Önce kritik/yüksek maddiyetli bildirimlerin ekleri okunur.
+            ordered = sorted(
+                chunk,
+                key=lambda item: (
+                    MATERIALITY_ORDER.get(item.materiality, 2),
+                    item.priority,
+                ),
+            )
+            documents = document_fetcher.fetch(
+                [item.disclosure for item in ordered],
+                skip=set(ratings),
+            )
+            if documents:
+                LOGGER.info(
+                    "%s bildirimin PDF eki okundu", len(documents)
+                )
+
         summaries = summarizer.summarize(
-            [item.disclosure for item in chunk], ratings=ratings
+            [item.disclosure for item in chunk],
+            ratings=ratings,
+            documents=documents,
         )
         if summaries and not args.dry_run:
             state.save_summaries(now)
