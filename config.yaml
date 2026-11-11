@@ -81,6 +81,110 @@ filters:
   # 1 = allowlist eşleşmesi yeterli. 2+ = ek keyword/şirket eşleşmesi ister.
   min_score: 1
 
+  # Mali analist filtresi: rutin işlemleri ayıklar, maddi olayları öne çıkarır.
+  analyst:
+    enabled: true
+
+    # Rutin konu + maddi istisna yoksa bildirim gönderilmez.
+    drop_routine: true
+    routine_topics:
+      - "payların geri alınmasına ilişkin bildirim"
+      - "pay geri alım"
+      - "geri alım işlemleri"
+      - "yönetim kurulu üyeliği"
+      - "yönetim kurulu üyesi"
+      - "yönetim kurulu üye değişikliği"
+      - "yönetim kurulu üyesinin istifası"
+      - "üye istifası"
+      - "genel müdür atanması"
+      - "genel müdürün istifası"
+      - "bağımsız denetçi"
+      - "sorumlu yönetici"
+      - "ağırlıklı ortalama fiyat"
+      - "net aktif değer"
+
+    # Rutin konuyu istisnaya çeviren maddi olaylar.
+    override_keywords:
+      - "temerrüt"
+      - "iflas"
+      - "konkordato"
+      - "tasfiye"
+      - "not indirimi"
+      - "not düşür"
+      - "sermaye kaybı"
+      - "borca batık"
+      - "olağanüstü"
+      - "kayyum"
+      - "tutuklama"
+      - "gözaltı"
+      - "vefat"
+      - "soruşturma"
+      - "ceza"
+      - "dava"
+      - "yapılandırma"
+      - "likidite"
+      - "nakit akışı"
+      - "satın alma"
+      - "birleşme"
+      - "bölünme"
+      - "devralma"
+      - "hisse devri"
+      - "yatırım"
+      - "sermaye artırımı"
+      - "temettü"
+      - "kâr dağıtımı"
+      - "finansal zorluk"
+
+    # Doğrudan kritik kabul edilen olaylar (e-posta başlığında "kritik" sayılır).
+    critical_keywords:
+      - "temerrüt"
+      - "iflas"
+      - "konkordato"
+      - "tasfiye"
+      - "not indirimi"
+      - "not düşür"
+      - "derecelendirme notunun düşürülmesi"
+      - "sermaye kaybı"
+      - "borca batık"
+      - "faaliyetlerin durdurulması"
+      - "üretime ara"
+      - "tmsf"
+      - "el konulması"
+      - "kayyum"
+
+    # Analiz gerektiren yüksek değerli olaylar.
+    high_value_keywords:
+      - "yatırım kararı"
+      - "yatırım"
+      - "kapasite"
+      - "yeni tesis"
+      - "fabrika"
+      - "ihale"
+      - "sözleşme"
+      - "satın alma"
+      - "birleşme"
+      - "bölünme"
+      - "devralma"
+      - "hisse devri"
+      - "temettü"
+      - "kâr dağıtımı"
+      - "sermaye artırımı"
+      - "bedelli"
+      - "bedelsiz"
+      - "halka arz"
+      - "finansman"
+      - "borçlanma"
+      - "likidite"
+      - "nakit akışı"
+      - "yapılandırma"
+      - "ihracat"
+      - "lisans"
+      - "üretim"
+      - "dava"
+      - "ceza"
+      - "soruşturma"
+      - "vefat"
+
   # E-postada üstte gösterilecek öncelikli türler.
   priority_subjects:
     - "Özel Durum Açıklaması"
@@ -102,15 +206,24 @@ quiet_hours:
 llm:
   enabled: true
   provider: gemini
-  # Google'ın güncel model listesinde 3.5 ailesi: gemini-3.5-flash-lite
-  # Daha güçlü/yeni alternatif: gemini-3.8-flash
-  # Diğer uygulamanda farklı bir tam ID görüyorsan buraya onu yaz.
-  model: gemini-3.5-flash-lite
+  # 3.5 Flash: 3.5 Flash-Lite'a göre Türkçe metin kalitesi belirgin daha iyi.
+  model: gemini-3.5-flash
+  # Yoğun saatlerde 503 gelirse bu modele düşülür; hızlı ve genelde müsait.
+  fallback_model: gemini-3.5-flash-lite
   api_key_env: GEMINI_API_KEY
-  batch_size: 8
+  batch_size: 5
   # Her e-posta parçasındaki tüm bildirimlerin özetlenmesi için 40+ seç.
   max_items_per_run: 60
   timeout_seconds: 60
+
+ratings:
+  # Kredi derecelendirme bildirimlerinin ekini indirip firma/not/aksiyon çıkarır.
+  enabled: true
+  # Tek çalışmada en fazla kaç derecelendirme bildirimi için detay/ek indirilir.
+  max_items_per_run: 25
+  max_attachments: 2
+  max_pdf_bytes: 15000000
+  timeout_seconds: 45
 
 email:
   subject_prefix: "KAP"

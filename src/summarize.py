@@ -5,49 +5,117 @@ import logging
 import os
 import re
 import time
+from pathlib import Path
 
 import requests
 
 from .config import LLMConfig
-from .models import Disclosure
+from .models import (
+    MATERIALITY_ORDER,
+    Disclosure,
+    RatingInfo,
+    Summary,
+)
 from .state import State
 
 LOGGER = logging.getLogger(__name__)
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 RETRYABLE_STATUS = {429, 500, 502, 503, 504}
+SOUL_PATH = Path(__file__).resolve().parents[1] / "soul.md"
 
-PROMPT = """Aşağıdaki KAP bildirimlerini yatırımcı için Türkçe özetle.
+DEFAULT_SOUL = """Sen kıdemli bir kurumsal finans ve kredi analistisin.
+KAP bildirimlerini bir mali analistin karar sürecinde işine yarayacak şekilde
+okur, rutin işlemleri ayırır, maddi etkisi olan gelişmeleri öne çıkarırsın.
+Türkçe yazarsın; sayıları ve tarihleri korursun; spekülasyon yapmaz ve yatırım
+tavsiyesi vermezsin."""
+
+PROMPT = """Aşağıdaki KAP bildirimlerini, kıdemli bir mali analistin gözüyle
+Türkçe değerlendir.
+
+Her bildirim için şu alanları üret:
+- materiality: "critical" | "high" | "normal" | "low"
+  critical: temerrüt, iflas, konkordato, not indirimi, sermaye kaybı, faaliyet durması
+  high: yatırım kararı, M&A, büyük sözleşme/ihale, temettü, sermaye artırımı, önemli finansman
+  normal: rutin dışı ama doğrudan kritik olmayan gelişme
+  low: rutin idari işlem, sıradan yönetici ataması, olağan geri alım
+- category: kısa etiket (örn. "Kredi notu", "Temerrüt", "İflas/hukuki",
+  "TMSF/devir", "Yatırım", "M&A", "Temettü", "Sözleşme", "Finansal rapor",
+  "Finansman", "Yönetim değişikliği", "Diğer")
+- summary: 2-4 cümle. Ne oldu, hangi büyüklükte, analist için neden önemli?
+  Sayıları, tarihleri ve şirket unvanlarını koru. Dış bilgi ekleme.
+- red_flags: en fazla 3 somut risk sinyali; yoksa boş liste.
+- analysis_points: analistin dikkat etmesi gereken en fazla 3 nokta.
 
 Kurallar:
-- Her özet en fazla 3 cümle olsun.
-- Sadece verilen bilgilere dayan; tahmin, yorum veya dış bilgi ekleme.
-- Sayıları, tarihleri ve şirket unvanlarını koru.
+- Sadece verilen bilgilere dayan; tahmin ve yorum katma.
+- "Kredi notu" verisi varsa onu mutlaka kullan: firma, ajans, önceki/yeni not,
+  aksiyon ve görünüm.
 - Yatırım tavsiyesi verme.
 - Yanıtı SADECE aşağıdaki JSON şemasında döndür:
-  {"items": [{"id": "bildirim-index", "summary": "..."}]}
+  {"items": [{"id": "bildirim-index", "materiality": "high",
+  "category": "Kredi notu", "summary": "...", "red_flags": ["..."],
+  "analysis_points": ["..."]}]}
 
 Bildirimler:
 {payload}
 """
 
 
+def load_soul(path: Path = SOUL_PATH) -> str:
+    try:
+        text = path.read_text(encoding="utf-8").strip()
+    except OSError:
+        return DEFAULT_SOUL
+    return text or DEFAULT_SOUL
+
+
+def _rating_materiality(rating: RatingInfo) -> str:
+    if rating.action == "Temerrüt" or rating.current.upper().startswith("TR D"):
+        return "critical"
+    if rating.action == "Not indirimi":
+        return "high"
+    if rating.action in {"Not artırımı", "İzlemeye alındı", "Askıya alındı"}:
+        return "high"
+    return "normal"
+
+
+def _fallback_summary(rating: RatingInfo) -> Summary:
+    return Summary(
+        text=rating.fallback_summary(),
+        materiality=_rating_materiality(rating),
+        category="Kredi notu",
+        red_flags=rating.red_flags,
+    )
+
+
 class Summarizer:
     def __init__(self, config: LLMConfig, state: State):
         self.config = config
         self.state = state
+        self.soul = load_soul()
 
-    def summarize(self, disclosures: list[Disclosure]) -> dict[str, str]:
+    def summarize(
+        self,
+        disclosures: list[Disclosure],
+        ratings: dict[str, RatingInfo] | None = None,
+    ) -> dict[str, Summary]:
         """Önbellekte olanları döndürür, eksikleri LLM ile özetler."""
-        results: dict[str, str] = {}
+        ratings = ratings or {}
+        results: dict[str, Summary] = {}
         missing: list[Disclosure] = []
 
         for disclosure in disclosures:
             cached = self.state.get_summary(disclosure.index)
-            if cached:
+            if cached is not None:
                 results[disclosure.index] = cached
-            else:
-                missing.append(disclosure)
+                continue
+
+            rating = ratings.get(disclosure.index)
+            if rating is not None:
+                # LLM çalışmazsa bile kredi notu tablosu anlamlı kalsın.
+                results[disclosure.index] = _fallback_summary(rating)
+            missing.append(disclosure)
 
         if not self.config.enabled or not missing:
             return results
@@ -81,64 +149,104 @@ class Summarizer:
         for start in range(0, len(limited), self.config.batch_size):
             batch = limited[start : start + self.config.batch_size]
             try:
-                summarized = self._call_gemini(batch, api_key)
+                summarized = self._call_gemini(batch, api_key, ratings)
             except Exception as exc:  # noqa: BLE001 - tek parti hatası tüm işi durdurmasın
                 LOGGER.warning("LLM partisi özetlenemedi: %s", exc)
                 continue
 
             for disclosure in batch:
-                text = summarized.get(disclosure.index)
-                if not text:
+                summary = summarized.get(disclosure.index)
+                if summary is None:
                     continue
-                results[disclosure.index] = text
+                results[disclosure.index] = summary
                 self.state.set_summary(
                     disclosure.index,
-                    text,
+                    summary,
                     model=self.config.model,
                     now=_now_like(),
                 )
 
         return results
 
-    def _call_gemini(self, batch: list[Disclosure], api_key: str) -> dict[str, str]:
-        payload = [
-            {
-                "id": item.index,
-                "sirket": item.title,
-                "bildirim": item.subject,
-                "tarih": item.publish_date,
-                "kap_ozeti": item.summary,
-            }
-            for item in batch
-        ]
+    def _call_gemini(
+        self,
+        batch: list[Disclosure],
+        api_key: str,
+        ratings: dict[str, RatingInfo],
+    ) -> dict[str, Summary]:
+        payload = []
+        for item in batch:
+            rating = ratings.get(item.index)
+            payload.append(
+                {
+                    "id": item.index,
+                    "sirket": item.title,
+                    "bildirim": item.subject,
+                    "tarih": item.publish_date,
+                    "kap_ozeti": item.summary,
+                    "kredi_notu": rating.to_dict() if rating else None,
+                }
+            )
         prompt = PROMPT.replace(
             "{payload}", json.dumps(payload, ensure_ascii=False)
         )
-        body = {
+        body: dict = {
             "contents": [{"role": "user", "parts": [{"text": prompt}]}],
             "generationConfig": {
                 "temperature": 0.2,
-                "maxOutputTokens": 2048,
+                "maxOutputTokens": 8192,
                 "responseMimeType": "application/json",
             },
         }
-        url = GEMINI_URL.format(model=self.config.model)
+        if self.soul:
+            body["systemInstruction"] = {"parts": [{"text": self.soul}]}
 
+        valid_ids = {item.index for item in batch}
+        models = [self.config.model]
+        fallback = self.config.fallback_model.strip()
+        if fallback and fallback not in models:
+            models.append(fallback)
+
+        last_error: Exception | None = None
+        for model in models:
+            try:
+                text = self._request(model, api_key, body)
+                return self._parse_response(text, valid_ids)
+            except Exception as exc:  # noqa: BLE001 - model yedeğine geç
+                last_error = exc
+                LOGGER.warning("LLM modeli başarısız (%s): %s", model, exc)
+                continue
+
+        raise RuntimeError(f"Tüm LLM modelleri başarısız: {last_error}")
+
+    def _request(self, model: str, api_key: str, body: dict) -> str:
+        url = GEMINI_URL.format(model=model)
         response: requests.Response | None = None
-        for attempt in range(1, 4):
-            response = requests.post(
-                url,
-                params={"key": api_key},
-                json=body,
-                timeout=self.config.timeout_seconds,
-            )
+        for attempt in range(1, 5):
+            try:
+                response = requests.post(
+                    url,
+                    params={"key": api_key},
+                    json=body,
+                    timeout=self.config.timeout_seconds,
+                )
+            except requests.RequestException as exc:
+                LOGGER.warning(
+                    "Gemini isteği başarısız (deneme %s/4, %s): %s",
+                    attempt,
+                    model,
+                    exc,
+                )
+                time.sleep(min(2 ** attempt, 10))
+                continue
             if response.status_code in RETRYABLE_STATUS:
                 LOGGER.warning(
-                    "Gemini geçici hata verdi (deneme %s/3): HTTP %s",
+                    "Gemini geçici hata verdi (deneme %s/4, %s): HTTP %s",
                     attempt,
+                    model,
                     response.status_code,
                 )
-                time.sleep(min(2 ** (attempt - 1), 8))
+                time.sleep(min(2 ** attempt, 10))
                 continue
             break
 
@@ -158,11 +266,10 @@ class Summarizer:
         text = "".join(str(part.get("text") or "") for part in parts).strip()
         if not text:
             raise RuntimeError("Gemini metin döndürmedi")
-
-        return self._parse_response(text, {item.index for item in batch})
+        return text
 
     @staticmethod
-    def _parse_response(text: str, valid_ids: set[str]) -> dict[str, str]:
+    def _parse_response(text: str, valid_ids: set[str]) -> dict[str, Summary]:
         cleaned = text.strip()
         cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned, flags=re.IGNORECASE)
         cleaned = re.sub(r"\s*```$", "", cleaned)
@@ -176,15 +283,46 @@ class Summarizer:
         if not isinstance(items, list):
             raise RuntimeError("Gemini yanıtında items listesi yok")
 
-        results: dict[str, str] = {}
+        results: dict[str, Summary] = {}
         for item in items:
             if not isinstance(item, dict):
                 continue
             index = str(item.get("id") or item.get("index") or "").strip()
             summary = " ".join(str(item.get("summary") or "").split())
-            if index in valid_ids and summary:
-                results[index] = summary[:600]
+            if index not in valid_ids or not summary:
+                continue
+
+            materiality = str(item.get("materiality") or "normal").strip().lower()
+            if materiality not in MATERIALITY_ORDER:
+                materiality = "normal"
+
+            red_flags = _string_list(item.get("red_flags"), limit=4, length=240)
+            analysis_points = _string_list(
+                item.get("analysis_points"), limit=4, length=280
+            )
+            results[index] = Summary(
+                text=summary[:800],
+                materiality=materiality,
+                category=" ".join(
+                    str(item.get("category") or "").split()
+                )[:60],
+                red_flags=red_flags,
+                analysis_points=analysis_points,
+            )
         return results
+
+
+def _string_list(value: object, *, limit: int, length: int) -> tuple[str, ...]:
+    if not isinstance(value, list):
+        return ()
+    output: list[str] = []
+    for item in value:
+        text = " ".join(str(item or "").split())
+        if text:
+            output.append(text.rstrip(".,;:")[:length])
+        if len(output) >= limit:
+            break
+    return tuple(output)
 
 
 def _now_like():

@@ -4,8 +4,13 @@ KAP (Kamuyu Aydınlatma Platformu) bildirimlerini saatlik olarak tarar, seçtiğ
 konulara uyanları Türkçe özetler ve e-posta olarak gönderir.
 
 - Tüm şirketler taranır; `config.yaml` ile şirket/konu/kelime filtresi uygulanır.
+- Mali analist filtresi rutin pay geri alımlarını ve sıradan atamaları eler;
+  temerrüt, not indirimi, yatırım, M&A, sözleşme gibi maddi olayları öne çıkarır.
+- Kredi derecelendirme bildirimleri ek/PDF üzerinden okunur; firma, ajans, not,
+  görünüm ve aksiyon ayrı bir tabloda gösterilir.
 - Aynı bildirim tekrar gönderilmez; içeriği değişirse "GÜNCELLENDİ" olarak gelir.
-- KAP özeti her zaman korunur; LLM anahtarı varsa üstüne 2-3 cümlelik AI özeti eklenir.
+- KAP özeti her zaman korunur; LLM anahtarı varsa `soul.md` personasıyla
+  yapılandırılmış bir analist özeti eklenir.
 - Sunucu, veritabanı ve ücretli servis gerekmez: GitHub Actions + Gmail SMTP.
 
 ## Hızlı başlangıç
@@ -28,6 +33,15 @@ Bu komut KAP'tan günün bildirimlerini çeker, filtreler, `out/preview_*.html`
 dosyasına önizleme yazar ve terminale düz metin basar. State yazmaz, e-posta
 göndermez.
 
+Hızlı denemeler için kredi notu eklerini indirmeden ve LLM çağırmadan çalıştır:
+
+```bash
+python main.py --dry-run --no-llm --no-ratings --limit 40
+```
+
+`--no-ratings` yalnızca geliştirme/önizleme içindir; normal çalışmada kredi notu
+çıkarımı açıktır.
+
 Testleri çalıştır:
 
 ```bash
@@ -48,12 +62,43 @@ Tüm filtreler `config.yaml` içinde:
 - `filters.min_score`: 1 = tür eşleşmesi yeterli; 2+ = ek keyword/şirket eşleşmesi ister.
 - `filters.priority_subjects`: e-postada üstte gösterilecek öncelikli türler.
 - `filters.max_items`: tek e-postadaki maksimum bildirim.
+- `filters.analyst`: mali analist filtresi. `routine_topics` rutin sayılan
+  konular, `override_keywords` rutin konuyu maddi hale getiren istisnalar,
+  `critical_keywords` doğrudan kritik olaylar, `high_value_keywords` analiz
+  gerektiren yüksek değerli olaylardır. `drop_routine: true` iken rutin konu +
+  istisna yoksa bildirim gönderilmez.
+- `ratings`: kredi notu eklerinin indirilmesi. `max_items_per_run` tek çalışmada
+  kaç derecelendirme bildirimi için detay/ek indirileceğini sınırlar.
 - `quiet_hours`: varsayılan 00:00-08:00 arası e-posta gönderilmez; birikenler
   08:05'te tek e-postada gelir. Kapatmak için `enabled: false`.
-- `llm`: Gemini modeli, parti boyutu ve çalışma başına limit.
+- `llm`: Gemini modeli, yedek model, parti boyutu ve çalışma başına limit.
+  `llm.fallback_model`, ana model 503/429 verdiğinde devreye girer.
 
 Türkçe karakterler eşleştirmede sadeleştirilir: `ı/İ/i`, `ğ/g`, `ü/u`, `ş/s`,
 `ö/o`, `ç/c`. Yani `temettu` yazsan da `temettü` bildirimini yakalar.
+
+## Kredi notu bildirimleri
+
+`Kredi Derecelendirmesi` ve `Varlık veya İhraççı Derecelendirme Notu` türündeki
+bildirimler için sistem:
+
+1. KAP detay sayfasındaki ek listesini bulur.
+2. Ek PDF varsa indirir (KAP bazen PDF'i Java başlığıyla sarar; `%PDF`
+   başlangıcına hizalanır). Ek yoksa bildirim gövdesini okur.
+3. Firma, ajans, güncel not, önceki not, görünüm ve aksiyonu çıkarır.
+4. Sonucu `state/ratings.json` içinde içerik hash'iyle önbelleğe alır.
+
+E-postada "Kredi Notu Bildirimleri" tablosu şu sütunlarla gelir:
+
+| Firma | Ajans | Not | Görünüm | Aksiyon | Link |
+|---|---|---|---|---|---|
+
+Aksiyon etiketleri: `Temerrüt`, `Not indirimi`, `Not artırımı`, `Teyit`,
+`İzlemeye alındı`, `Askıya alındı`, `Güncelleme`. Notu okunamayan kayıtlar
+tabloya eklenmez; AI özeti KAP metniyle devam eder.
+
+KAP ek indirmelerinde `429` görülürse istek üç kez geri çekilmeli olarak
+yeniden denenir. Yoğun saatlerde bazı ekler bir sonraki çalışmaya kalabilir.
 
 ## E-posta ayarları (Gmail)
 
@@ -99,19 +144,36 @@ Anahtarı terminalde görünmeden test edip `.env` dosyasına kaydetmek için:
 Farklı bir model denemek için:
 
 ```bash
-.venv/bin/python tools/setup_ai.py --model gemini-3.8-flash
+.venv/bin/python tools/setup_ai.py --model gemini-3.5-flash
 ```
 
 Anahtar yoksa veya kota dolarsa e-posta yine gönderilir; sadece KAP'ın kendi
-özeti görünür. LLM yalnızca filtreden geçen yeni bildirimler için çağrılır ve
-özetler `state/summaries.json` içinde önbelleğe alınır.
+özeti ve varsa deterministik kredi notu özeti görünür. LLM yalnızca filtreden
+geçen yeni bildirimler için çağrılır ve özetler `state/summaries.json` içinde
+önbelleğe alınır.
+
+AI çıktısı serbest metin değil, yapılandırılmış JSON'dur:
+
+- `materiality`: `critical` / `high` / `normal` / `low`
+- `category`: kısa etiket (Kredi notu, Yatırım, M&A, Temettü, Sözleşme...)
+- `summary`: 2-4 cümlelik analist özeti
+- `red_flags`: somut risk sinyalleri
+- `analysis_points`: analistin bakması gereken noktalar
+
+Deterministik filtre ile AI'nın maddiyet değerlendirmesi çelişirse **daha ağır
+olan** kullanılır; yani AI bir temerrüdü "rutin" sayarak düşüremez.
+
+Analist personası `soul.md` dosyasındadır ve Gemini'ye `systemInstruction`
+olarak gönderilir. Neyin kritik/yüksek/rutin sayıldığı, nasıl yazılacağı ve
+çıktı disiplini burada tanımlıdır. Dosyayı düzenleyerek tonu değiştirebilirsin.
 
 Ücretsiz kota ve model adları zamanla değişebilir. `config.yaml` içindeki
 `llm.model` değerini güncel ücretsiz modelle değiştirebilirsin.
 
 ## GitHub Actions ile saatlik çalıştırma
 
-1. Bu klasörü bir GitHub reposuna push et (private repo önerilir).
+1. Bu klasörü bir GitHub reposuna push et. Public repo önerilir: bu proje için
+   ücretsiz Actions dakikası sınırsızdır ve sırlar repoda tutulmaz.
 2. Repo → Settings → Secrets and variables → Actions bölümünde şu secret'ları ekle:
 
 | Secret | Zorunlu | Açıklama |
@@ -133,8 +195,8 @@ Anahtar yoksa veya kota dolarsa e-posta yine gönderilir; sadece KAP'ın kendi
 
 - Cron saatleri **garantili değildir**; yoğun saatlerde 5-30 dakika gecikebilir.
   Bu yüzden "saatlik özet" olarak tasarlandı, borsa emri tetikleyicisi değil.
-- Private repoda ayda 2.000 ücretsiz dakika vardır. Bu iş genelde 1 dakikanın
-  altında sürer; saatlik çalışma ayda ~720 dakika eder.
+- Private repoda ayda 2.000 ücretsiz dakika vardır; public repoda Actions
+  dakikaları ücretsizdir. Bu iş genelde 1 dakikanın altında sürer.
 - Scheduled workflow'lar 60 gün repo aktivitesi olmazsa kapanabilir. State
   branch'ine saatlik commit geldiği için bu risk normalde oluşmaz.
 - Aynı anda iki çalışma başlamasın diye `concurrency` kilidi vardır.
@@ -144,11 +206,12 @@ Anahtar yoksa veya kota dolarsa e-posta yine gönderilir; sadece KAP'ın kendi
 ```
 GitHub Actions (saatlik)
   → GET /tr/api/disclosure/list/light  (günün tüm bildirimleri)
-  → tür allow/deny + keyword skoru
+  → tür allow/deny + keyword skoru + analist maddiyet filtresi
   → disclosureIndex ile state karşılaştırması
-  → Gemini ile toplu özet (opsiyonel)
+  → kredi notu bildirimleri için detay/ek PDF → ratings.json
+  → Gemini ile yapılandırılmış özet (opsiyonel, soul.md)
   → HTML e-posta + Gmail SMTP
-  → state branch'ine seen.json / summaries.json
+  → state branch'ine seen.json / summaries.json / ratings.json
 ```
 
 KAP'ın bu uç noktası resmî/dokümante bir API değildir; KAP arayüzünün kullandığı
@@ -176,11 +239,22 @@ Normal Gmail şifresi değil, 2FA açıkken oluşturulan uygulama şifresi kulla
 
 **Gemini 429 / kota**
 `llm.batch_size` ve `llm.max_items_per_run` değerlerini düşür veya
-`llm.enabled: false` yap. E-posta yine çalışır.
+`llm.enabled: false` yap. E-posta yine çalışır. 503 "high demand" hatalarında
+kod üç kez geri çekilmeli deneme yapar; yine olmazsa o parti KAP özetiyle geçer.
+
+**Kredi notu tablosu boş / eksik**
+KAP detay sayfası veya ek PDF değişmiş olabilir. `ratings.max_items_per_run`
+limiti dolmuşsa kalanlar sonraki saatte işlenir. Notu okunamayan kayıtlar
+tabloya eklenmez; ham bildirim yine e-postada görünür. KAP `429` verirse ek
+indirmesi üç kez denenir ve başarısız olursa kayıt sonraki çalışmaya kalır.
+
+**AI özeti İngilizce/bozuk Türkçe geliyor**
+`config.yaml` içindeki `llm.model` değerini `gemini-3.5-flash` yap. Flash-Lite
+modelleri Türkçe eklerde daha sık yazım hatası üretiyor.
 
 ## Maliyet
 
-- GitHub Actions: private repo için aylık 2.000 ücretsiz dakika (bu iş için fazlasıyla yeterli).
+- GitHub Actions: public repo için ücretsiz.
 - Gmail SMTP: ücretsiz (günlük makul gönderim limitleri içinde).
 - Gemini API: ücretsiz kota yeterli; kota biterse KAP özetine düşer.
 - Sunucu/veritabanı: yok.

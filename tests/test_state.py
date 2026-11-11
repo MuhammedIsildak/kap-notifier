@@ -3,7 +3,7 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from src.filter import Candidate
-from src.models import Disclosure
+from src.models import Disclosure, RatingInfo, Summary
 from src.state import State
 
 TZ = ZoneInfo("Europe/Istanbul")
@@ -39,12 +39,36 @@ def test_save_and_reload(tmp_path):
     state.mark_sent(
         [Candidate(disclosure=disclosure, score=2, priority=0)], NOW
     )
-    state.set_summary(disclosure.index, "AI özeti", "test-model", NOW)
+    state.set_summary(
+        disclosure.index,
+        Summary(text="AI özeti", materiality="high", category="Kredi notu"),
+        "test-model",
+        NOW,
+    )
     state.save(NOW)
 
     reloaded = State(tmp_path)
     assert reloaded.status(disclosure) is None
-    assert reloaded.get_summary(disclosure.index) == "AI özeti"
+    summary = reloaded.get_summary(disclosure.index)
+    assert summary is not None
+    assert summary.text == "AI özeti"
+    assert summary.materiality == "high"
+    assert summary.category == "Kredi notu"
+
+
+def test_rating_cache_and_content_hash(tmp_path):
+    state = State(tmp_path)
+    rating = RatingInfo(
+        agency="JCR Avrasya",
+        entity="ÖRNEK FON",
+        current="CCC (tr)",
+        previous="A (tr)",
+        action="Not indirimi",
+    )
+    state.set_rating("123", rating, content_hash="hash-1", now=NOW)
+
+    assert state.get_rating("123", "hash-1") == rating
+    assert state.get_rating("123", "hash-2") is None
 
 
 def test_old_entries_are_pruned(tmp_path):

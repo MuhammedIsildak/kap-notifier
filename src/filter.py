@@ -4,7 +4,7 @@ import logging
 from dataclasses import dataclass, field
 
 from .config import FilterConfig
-from .models import Disclosure
+from .models import MATERIALITY_ORDER, Disclosure
 from .normalize import matching_terms, normalize, subject_rank
 
 LOGGER = logging.getLogger(__name__)
@@ -17,12 +17,19 @@ class Candidate:
     priority: int
     reasons: list[str] = field(default_factory=list)
     status: str = "new"  # new | updated
+    materiality: str = "normal"  # critical | high | normal | low
+    materiality_reasons: list[str] = field(default_factory=list)
+    analyst_note: str = ""
 
     @property
-    def sort_key(self) -> tuple[int, float]:
+    def materiality_rank(self) -> int:
+        return MATERIALITY_ORDER.get(self.materiality, 2)
+
+    @property
+    def sort_key(self) -> tuple[int, int, float]:
         published = self.disclosure.published_at
         timestamp = published.timestamp() if published else 0.0
-        return (self.priority, -timestamp)
+        return (self.materiality_rank, self.priority, -timestamp)
 
 
 def evaluate(
@@ -76,6 +83,45 @@ def evaluate(
         score += min(len(keyword_hits), 3)
         reasons.append("kelime:" + ",".join(keyword_hits[:3]))
 
+    materiality = "normal"
+    materiality_reasons: list[str] = []
+    analyst_note = ""
+    analyst = filters.analyst
+    if analyst.enabled:
+        # Şirket unvanı analist kelimeleriyle eşleşmemeli: "YATIRIM ORTAKLIĞI"
+        # veya "FİNANSMAN" gibi unvanlar her bildirimi yüksek değerli yapıyordu.
+        content_text = f"{disclosure.subject} {disclosure.summary}"
+        critical_hits = matching_terms(content_text, analyst.critical_keywords)
+        high_hits = matching_terms(content_text, analyst.high_value_keywords)
+        routine_hits = matching_terms(content_text, analyst.routine_topics)
+        override_hits = matching_terms(content_text, analyst.override_keywords)
+
+        # Rutin konular (pay geri alımı, sıradan atama vb.) yalnızca
+        # maddi bir istisna varsa geçer.
+        if analyst.drop_routine and routine_hits and not (
+            critical_hits or high_hits or override_hits
+        ):
+            return None
+
+        if critical_hits:
+            materiality = "critical"
+            materiality_reasons = critical_hits
+            analyst_note = "Kritik olay: " + ", ".join(critical_hits[:2])
+        elif high_hits:
+            materiality = "high"
+            materiality_reasons = high_hits
+            analyst_note = "Analiz konusu: " + ", ".join(high_hits[:2])
+        elif routine_hits:
+            materiality = "low"
+            materiality_reasons = routine_hits
+            analyst_note = "Rutin konu"
+            if override_hits:
+                analyst_note += " (istisna: " + ", ".join(override_hits[:2]) + ")"
+
+        if materiality in ("critical", "high"):
+            score += 2
+            reasons.append(f"analist:{materiality}")
+
     if score < filters.min_score:
         return None
 
@@ -84,6 +130,9 @@ def evaluate(
         score=score,
         priority=subject_rank(disclosure.subject, filters.priority_subjects),
         reasons=reasons,
+        materiality=materiality,
+        materiality_reasons=materiality_reasons,
+        analyst_note=analyst_note,
     )
 
 

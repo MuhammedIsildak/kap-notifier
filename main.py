@@ -15,7 +15,8 @@ from src.config import AppConfig, ConfigError, load_config
 from src.fetch import FetchError, fetch_disclosures, fetch_from_file
 from src.filter import Candidate, select_candidates
 from src.mailer import MailerError, send_email
-from src.models import DATE_FORMAT, Disclosure
+from src.models import DATE_FORMAT, Disclosure, Summary
+from src.ratings import RatingExtractor
 from src.render import RenderedEmail, render_email
 from src.state import State
 from src.summarize import Summarizer
@@ -51,6 +52,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--no-llm",
         action="store_true",
         help="LLM özetini kapat",
+    )
+    parser.add_argument(
+        "--no-ratings",
+        action="store_true",
+        help="Kredi notu eklerini indirme/çıkarma",
     )
     parser.add_argument(
         "--limit",
@@ -132,11 +138,12 @@ def print_candidates(candidates: list[Candidate]) -> None:
     for item in candidates:
         disclosure = item.disclosure
         LOGGER.info(
-            "- %s | %s | %s | skor=%s%s",
+            "- %s | %s | %s | skor=%s | %s%s",
             disclosure.time_label,
             disclosure.title[:40],
             disclosure.subject[:60],
             item.score,
+            item.materiality,
             " | GÜNCELLENDİ" if item.status == "updated" else "",
         )
 
@@ -159,7 +166,10 @@ def build_test_email(config: AppConfig, now: datetime) -> RenderedEmail:
     rendered = render_email(
         [candidate],
         {
-            disclosure.index: "E-posta gönderimi çalışıyor. Bu özet test amaçlı üretilmiştir."
+            disclosure.index: Summary(
+                text="E-posta gönderimi çalışıyor. Bu özet test amaçlı üretilmiştir.",
+                category="Test",
+            )
         },
         config,
         now,
@@ -211,6 +221,10 @@ def run(args: argparse.Namespace) -> int:
     print_candidates(selected)
 
     summarizer = Summarizer(config.llm, state)
+    rating_extractor = RatingExtractor(config.ratings, state)
+    ratings_enabled = (
+        config.ratings.enabled and not args.no_ratings and not is_fixture
+    )
     chunk_size = max(1, config.filters.max_items)
     chunks = [
         selected[start : start + chunk_size]
@@ -219,12 +233,23 @@ def run(args: argparse.Namespace) -> int:
     LOGGER.info("%s bildirim, %s e-posta halinde işlenecek", len(selected), len(chunks))
 
     for part, chunk in enumerate(chunks, start=1):
-        summaries = summarizer.summarize([item.disclosure for item in chunk])
+        ratings = (
+            rating_extractor.extract([item.disclosure for item in chunk], now)
+            if ratings_enabled
+            else {}
+        )
+        if ratings and not args.dry_run:
+            state.save_ratings(now)
+            LOGGER.info("%s kredi notu bildirimi çıkarıldı", len(ratings))
+
+        summaries = summarizer.summarize(
+            [item.disclosure for item in chunk], ratings=ratings
+        )
         if summaries and not args.dry_run:
             state.save_summaries(now)
             LOGGER.info("%s bildirim için özet hazır", len(summaries))
 
-        rendered = render_email(chunk, summaries, config, now)
+        rendered = render_email(chunk, summaries, config, now, ratings=ratings)
         if len(chunks) > 1:
             rendered = replace(
                 rendered, subject=f"{rendered.subject} ({part}/{len(chunks)})"

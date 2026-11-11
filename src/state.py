@@ -7,12 +7,13 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 from .filter import Candidate
-from .models import DATE_FORMAT, Disclosure
+from .models import DATE_FORMAT, Disclosure, RatingInfo, Summary
 
 LOGGER = logging.getLogger(__name__)
 
 SEEN_RETENTION_DAYS = 7
 SUMMARY_RETENTION_DAYS = 14
+RATING_RETENTION_DAYS = 14
 
 
 def _atomic_write(path: Path, payload: dict) -> None:
@@ -46,8 +47,10 @@ class State:
         self.directory = Path(directory).expanduser()
         self.seen_path = self.directory / "seen.json"
         self.summaries_path = self.directory / "summaries.json"
+        self.ratings_path = self.directory / "ratings.json"
         self.seen: dict[str, dict] = {}
         self.summaries: dict[str, dict] = {}
+        self.ratings: dict[str, dict] = {}
         self._load()
 
     def _load(self) -> None:
@@ -66,6 +69,15 @@ class State:
             self.summaries = {
                 str(index): entry
                 for index, entry in raw_summaries.items()
+                if isinstance(entry, dict)
+            }
+
+        ratings_data = _load_json(self.ratings_path)
+        raw_ratings = ratings_data.get("items")
+        if isinstance(raw_ratings, dict):
+            self.ratings = {
+                str(index): entry
+                for index, entry in raw_ratings.items()
                 if isinstance(entry, dict)
             }
 
@@ -88,15 +100,51 @@ class State:
                 "sent_at": sent_at,
             }
 
-    def get_summary(self, index: str) -> str | None:
+    def get_summary(self, index: str) -> Summary | None:
         entry = self.summaries.get(index) or {}
         summary = entry.get("summary")
-        return str(summary) if summary else None
+        if not summary:
+            return None
+        materiality = str(entry.get("materiality") or "normal").strip().lower()
+        return Summary(
+            text=str(summary),
+            materiality=materiality,
+            category=str(entry.get("category") or ""),
+            red_flags=tuple(str(item) for item in entry.get("red_flags") or ()),
+            analysis_points=tuple(
+                str(item) for item in entry.get("analysis_points") or ()
+            ),
+        )
 
-    def set_summary(self, index: str, summary: str, model: str, now: datetime) -> None:
-        self.summaries[index] = {
-            "summary": summary,
-            "model": model,
+    def set_summary(
+        self, index: str, summary: Summary, model: str, now: datetime
+    ) -> None:
+        payload = summary.to_dict()
+        payload["model"] = model
+        payload["ts"] = now.isoformat()
+        self.summaries[index] = payload
+
+    def get_rating(
+        self, index: str, content_hash: str | None = None
+    ) -> RatingInfo | None:
+        entry = self.ratings.get(index) or {}
+        if content_hash and entry.get("hash") != content_hash:
+            return None
+        payload = entry.get("info")
+        if not isinstance(payload, dict):
+            return None
+        return RatingInfo.from_dict(payload)
+
+    def set_rating(
+        self,
+        index: str,
+        rating: RatingInfo,
+        content_hash: str,
+        now: datetime,
+    ) -> None:
+        self.ratings[index] = {
+            "hash": content_hash,
+            "info": rating.to_dict(),
             "ts": now.isoformat(),
         }
 
@@ -133,6 +181,18 @@ class State:
             if reference is not None and reference < summary_cutoff:
                 self.summaries.pop(index, None)
 
+        rating_cutoff = now - timedelta(days=RATING_RETENTION_DAYS)
+        for index, entry in list(self.ratings.items()):
+            ts = entry.get("ts")
+            reference: datetime | None = None
+            if ts:
+                try:
+                    reference = datetime.fromisoformat(str(ts))
+                except ValueError:
+                    reference = None
+            if reference is not None and reference < rating_cutoff:
+                self.ratings.pop(index, None)
+
     def save(self, now: datetime) -> None:
         self._prune(now)
         updated_at = now.isoformat()
@@ -141,6 +201,7 @@ class State:
             {"version": 1, "updated_at": updated_at, "seen": self.seen},
         )
         self.save_summaries(now)
+        self.save_ratings(now)
 
     def save_summaries(self, now: datetime) -> None:
         self._prune(now)
@@ -150,5 +211,16 @@ class State:
                 "version": 1,
                 "updated_at": now.isoformat(),
                 "items": self.summaries,
+            },
+        )
+
+    def save_ratings(self, now: datetime) -> None:
+        self._prune(now)
+        _atomic_write(
+            self.ratings_path,
+            {
+                "version": 1,
+                "updated_at": now.isoformat(),
+                "items": self.ratings,
             },
         )

@@ -37,6 +37,18 @@ def _as_int(value: object, default: int) -> int:
 
 
 @dataclass(frozen=True)
+class AnalystConfig:
+    """Mali analist için maddi etki kuralları."""
+
+    enabled: bool = False
+    drop_routine: bool = True
+    routine_topics: tuple[str, ...] = ()
+    override_keywords: tuple[str, ...] = ()
+    critical_keywords: tuple[str, ...] = ()
+    high_value_keywords: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
 class FilterConfig:
     subject_allow: tuple[str, ...] = ()
     subject_deny: tuple[str, ...] = ()
@@ -46,6 +58,7 @@ class FilterConfig:
     min_score: int = 1
     priority_subjects: tuple[str, ...] = ()
     max_items: int = 40
+    analyst: AnalystConfig = field(default_factory=AnalystConfig)
 
 
 @dataclass(frozen=True)
@@ -59,11 +72,21 @@ class QuietHoursConfig:
 class LLMConfig:
     enabled: bool = True
     provider: str = "gemini"
-    model: str = "gemini-3.5-flash-lite"
+    model: str = "gemini-3.5-flash"
+    fallback_model: str = "gemini-3.5-flash-lite"
     api_key_env: str = "GEMINI_API_KEY"
-    batch_size: int = 8
+    batch_size: int = 5
     max_items_per_run: int = 30
     timeout_seconds: int = 60
+
+
+@dataclass(frozen=True)
+class RatingsConfig:
+    enabled: bool = True
+    max_items_per_run: int = 25
+    max_attachments: int = 2
+    max_pdf_bytes: int = 15_000_000
+    timeout_seconds: int = 45
 
 
 @dataclass(frozen=True)
@@ -92,6 +115,7 @@ class AppConfig:
     filters: FilterConfig = field(default_factory=FilterConfig)
     quiet_hours: QuietHoursConfig = field(default_factory=QuietHoursConfig)
     llm: LLMConfig = field(default_factory=LLMConfig)
+    ratings: RatingsConfig = field(default_factory=RatingsConfig)
     email: EmailConfig = field(default_factory=EmailConfig)
 
 
@@ -109,9 +133,20 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
     config_path = Path(path).expanduser().resolve()
     raw = _read_yaml(config_path)
     filters_raw = raw.get("filters") or {}
+    analyst_raw = filters_raw.get("analyst") or {}
     quiet_raw = raw.get("quiet_hours") or {}
     llm_raw = raw.get("llm") or {}
+    ratings_raw = raw.get("ratings") or {}
     email_raw = raw.get("email") or {}
+
+    analyst = AnalystConfig(
+        enabled=_as_bool(analyst_raw.get("enabled"), False),
+        drop_routine=_as_bool(analyst_raw.get("drop_routine"), True),
+        routine_topics=_as_tuple(analyst_raw.get("routine_topics")),
+        override_keywords=_as_tuple(analyst_raw.get("override_keywords")),
+        critical_keywords=_as_tuple(analyst_raw.get("critical_keywords")),
+        high_value_keywords=_as_tuple(analyst_raw.get("high_value_keywords")),
+    )
 
     filters = FilterConfig(
         subject_allow=_as_tuple(filters_raw.get("subject_allow")),
@@ -122,6 +157,7 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         min_score=_as_int(filters_raw.get("min_score"), 1),
         priority_subjects=_as_tuple(filters_raw.get("priority_subjects")),
         max_items=max(1, _as_int(filters_raw.get("max_items"), 40)),
+        analyst=analyst,
     )
 
     quiet_hours = QuietHoursConfig(
@@ -133,11 +169,24 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
     llm = LLMConfig(
         enabled=_as_bool(llm_raw.get("enabled"), True),
         provider=str(llm_raw.get("provider") or "gemini").lower(),
-        model=str(llm_raw.get("model") or "gemini-3.5-flash-lite"),
+        model=str(llm_raw.get("model") or "gemini-3.5-flash"),
+        fallback_model=str(
+            llm_raw.get("fallback_model") or "gemini-3.5-flash-lite"
+        ),
         api_key_env=str(llm_raw.get("api_key_env") or "GEMINI_API_KEY"),
-        batch_size=max(1, _as_int(llm_raw.get("batch_size"), 8)),
+        batch_size=max(1, _as_int(llm_raw.get("batch_size"), 5)),
         max_items_per_run=max(0, _as_int(llm_raw.get("max_items_per_run"), 30)),
         timeout_seconds=max(5, _as_int(llm_raw.get("timeout_seconds"), 60)),
+    )
+
+    ratings = RatingsConfig(
+        enabled=_as_bool(ratings_raw.get("enabled"), True),
+        max_items_per_run=max(0, _as_int(ratings_raw.get("max_items_per_run"), 25)),
+        max_attachments=max(1, _as_int(ratings_raw.get("max_attachments"), 2)),
+        max_pdf_bytes=max(
+            1_000_000, _as_int(ratings_raw.get("max_pdf_bytes"), 15_000_000)
+        ),
+        timeout_seconds=max(5, _as_int(ratings_raw.get("timeout_seconds"), 45)),
     )
 
     env_recipients = os.getenv("KAP_EMAIL_TO", "")
@@ -166,5 +215,6 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         filters=filters,
         quiet_hours=quiet_hours,
         llm=llm,
+        ratings=ratings,
         email=email,
     )

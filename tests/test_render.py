@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 
 from src.config import load_config
 from src.filter import Candidate
-from src.models import Disclosure
+from src.models import Disclosure, RatingInfo, Summary
 from src.render import render_email
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,3 +46,64 @@ def test_updated_badge():
     rendered = render_email([candidate], {}, config, NOW)
     assert "GÜNCELLENDİ" in rendered.html
     assert "1 güncelleme" in rendered.subject
+
+
+def test_rating_table_and_critical_badge():
+    config = load_config(ROOT / "config.yaml")
+    disclosure = Disclosure(
+        index="44",
+        title="JCR AVRASYA DERECELENDİRME A.Ş.",
+        subject="Kredi Derecelendirmesi",
+        summary="KREDİ DERECELENDİRME BİLDİRİMİ",
+        publish_date="11.11.2026 20:00:00",
+    )
+    candidate = Candidate(
+        disclosure=disclosure,
+        score=4,
+        priority=0,
+        materiality="critical",
+    )
+    rating = RatingInfo(
+        agency="JCR Avrasya",
+        entity="ÖRNEK FON",
+        current="CCC (tr)",
+        previous="A (tr)",
+        outlook="—",
+        action="Not indirimi",
+        red_flags=("Nakit akışı bozuldu",),
+    )
+    summary = Summary(
+        text="Not iki kademe indirildi.",
+        materiality="critical",
+        category="Kredi notu",
+        analysis_points=("Nakit akışını izle",),
+    )
+    rendered = render_email(
+        [candidate], {"44": summary}, config, NOW, ratings={"44": rating}
+    )
+
+    assert "Kredi Notu Bildirimleri" in rendered.html
+    assert "ÖRNEK FON" in rendered.html
+    assert "CCC (tr)" in rendered.html
+    assert "Not indirimi" in rendered.html
+    assert "KRİTİK" in rendered.html
+    assert "1 kritik" in rendered.subject
+    assert "Kredi Notu Bildirimleri" in rendered.text
+
+
+def test_critical_filter_materiality_wins_over_ai_normal():
+    config = load_config(ROOT / "config.yaml")
+    disclosure = Disclosure(
+        index="45",
+        title="ŞİRKET",
+        subject="Özel Durum Açıklaması",
+        summary="Temerrüt açıklaması",
+        publish_date="11.11.2026 20:00:00",
+    )
+    candidate = Candidate(
+        disclosure=disclosure, score=4, priority=0, materiality="critical"
+    )
+    rendered = render_email(
+        [candidate], {"45": Summary(text="Rutin görünüyor", materiality="normal")}, config, NOW
+    )
+    assert "KRİTİK" in rendered.html
