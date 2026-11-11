@@ -50,13 +50,16 @@ def _as_summary(value: Summary | str | None) -> Summary | None:
 
 
 def _effective_materiality(
-    candidate: Candidate, summary: Summary | None
+    candidate: Candidate,
+    summary: Summary | None,
+    rating: RatingInfo | None = None,
 ) -> str:
-    candidate_rank = MATERIALITY_ORDER.get(candidate.materiality, 2)
-    summary_rank = MATERIALITY_ORDER.get(
-        summary.materiality if summary else "normal", 2
-    )
-    return candidate.materiality if candidate_rank <= summary_rank else summary.materiality
+    values = [candidate.materiality]
+    if summary is not None:
+        values.append(summary.materiality)
+    if rating is not None:
+        values.append(rating.materiality)
+    return min(values, key=lambda value: MATERIALITY_ORDER.get(value, 2))
 
 
 def _badge(text: str, background: str, color: str) -> str:
@@ -199,7 +202,7 @@ def _item_html(
     rating: RatingInfo | None,
 ) -> str:
     disclosure = candidate.disclosure
-    materiality = _effective_materiality(candidate, summary)
+    materiality = _effective_materiality(candidate, summary, rating)
     badges = ""
     if candidate.status == "updated":
         badges += _badge("GÜNCELLENDİ", "#fef3c7", "#92400e")
@@ -265,10 +268,12 @@ def _summary_text(summary: Summary | None) -> list[str]:
 def _split_groups(
     candidates: list[Candidate],
     summaries: dict[str, Summary],
+    ratings: dict[str, RatingInfo],
 ) -> list[tuple[str, list[Candidate]]]:
     def is_hot(item: Candidate) -> bool:
         summary = summaries.get(item.disclosure.index)
-        materiality = _effective_materiality(item, summary)
+        rating = ratings.get(item.disclosure.index)
+        materiality = _effective_materiality(item, summary, rating)
         return materiality in ("critical", "high") or item.priority < 10_000
 
     hot = [item for item in candidates if is_hot(item)]
@@ -298,7 +303,8 @@ def render_email(
 
     def sort_key(item: Candidate) -> tuple[int, int, float]:
         summary = parsed_summaries.get(item.disclosure.index)
-        materiality = _effective_materiality(item, summary)
+        rating = ratings.get(item.disclosure.index)
+        materiality = _effective_materiality(item, summary, rating)
         published = item.disclosure.published_at
         timestamp = published.timestamp() if published else 0.0
         return (
@@ -319,7 +325,11 @@ def render_email(
     count_label = ", ".join(parts) or f"{len(candidates)} bildirim"
 
     materialities = [
-        _effective_materiality(item, parsed_summaries.get(item.disclosure.index))
+        _effective_materiality(
+            item,
+            parsed_summaries.get(item.disclosure.index),
+            ratings.get(item.disclosure.index),
+        )
         for item in candidates
     ]
     critical_count = materialities.count("critical")
@@ -347,7 +357,7 @@ def render_email(
     rating_section_html = _rating_table_html(rating_rows)
     rating_section_text = _rating_table_text(rating_rows)
 
-    groups = _split_groups(candidates, parsed_summaries)
+    groups = _split_groups(candidates, parsed_summaries, ratings)
     sections_html: list[str] = []
     sections_text: list[str] = []
 
@@ -377,7 +387,7 @@ def render_email(
             disclosure = item.disclosure
             summary = parsed_summaries.get(disclosure.index)
             rating = ratings.get(disclosure.index)
-            materiality = _effective_materiality(item, summary)
+            materiality = _effective_materiality(item, summary, rating)
             materiality_label = MATERIALITY_LABELS.get(materiality, "")
             labels = []
             if item.status == "updated":

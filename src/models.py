@@ -34,6 +34,18 @@ class RatingInfo:
             return f"{self.current} (önceki {self.previous})"
         return self.current
 
+    @property
+    def materiality(self) -> str:
+        """Kredi notu aksiyonundan maddiyet seviyesi türetir."""
+        current = (self.current or "").upper()
+        if self.action == "Temerrüt" or current.startswith("TR D") or current.startswith(
+            "D ("
+        ):
+            return "critical"
+        if self.action in {"Not indirimi", "İzlemeye alındı", "Askıya alındı"}:
+            return "high"
+        return "normal"
+
     def fallback_summary(self) -> str:
         """LLM yokken kullanılacak deterministik özet."""
         entity = self.entity or "İlgili kuruluş"

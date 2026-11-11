@@ -91,6 +91,37 @@ def test_rating_table_and_critical_badge():
     assert "Kredi Notu Bildirimleri" in rendered.text
 
 
+def test_rating_default_escalates_materiality():
+    config = load_config(ROOT / "config.yaml")
+    disclosure = Disclosure(
+        index="46",
+        title="İSTANBUL ULUSLARARASI DERECELENDİRME HİZMETLERİ A.Ş.",
+        subject="Kredi Derecelendirmesi",
+        summary="Kredi Derecelendirme Not Güncellemesi",
+        publish_date="11.11.2026 20:00:00",
+    )
+    candidate = Candidate(
+        disclosure=disclosure, score=2, priority=10_000, materiality="normal"
+    )
+    rating = RatingInfo(
+        agency="Turkrating",
+        entity="Dünya Varlık Yönetim A.Ş.",
+        current="TR D",
+        outlook="Temerrüt (Askıda)",
+        action="Temerrüt",
+    )
+    rendered = render_email(
+        [candidate],
+        {"46": Summary(text="Rutin güncelleme", materiality="normal")},
+        config,
+        NOW,
+        ratings={"46": rating},
+    )
+    assert "KRİTİK" in rendered.html
+    assert "1 kritik" in rendered.subject
+    assert "Analiz Gerektirenler" in rendered.text
+
+
 def test_critical_filter_materiality_wins_over_ai_normal():
     config = load_config(ROOT / "config.yaml")
     disclosure = Disclosure(

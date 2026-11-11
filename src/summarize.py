@@ -71,13 +71,7 @@ def load_soul(path: Path = SOUL_PATH) -> str:
 
 
 def _rating_materiality(rating: RatingInfo) -> str:
-    if rating.action == "Temerrüt" or rating.current.upper().startswith("TR D"):
-        return "critical"
-    if rating.action == "Not indirimi":
-        return "high"
-    if rating.action in {"Not artırımı", "İzlemeye alındı", "Askıya alındı"}:
-        return "high"
-    return "normal"
+    return rating.materiality
 
 
 def _fallback_summary(rating: RatingInfo) -> Summary:
