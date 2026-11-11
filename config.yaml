@@ -1,0 +1,114 @@
+# KAP Notifier yapılandırması
+# Sırlar (şifre, API anahtarı) bu dosyaya YAZILMAZ; ortam değişkeni / GitHub Secrets kullanılır.
+
+timezone: Europe/Istanbul
+
+# Boş liste = tüm şirketler.
+# Doluysa şirket unvanı içinde bu metinlerden biri geçmelidir (büyük/küçük harf duyarsız).
+# Örnek: ["ASELSAN", "TÜPRAŞ", "THY"]
+companies: []
+
+filters:
+  # Bildirim türü allowlist'i. Boş bırakılırsa tüm türler denenir.
+  subject_allow:
+    - "Özel Durum Açıklaması"
+    - "Finansal Rapor"
+    - "Payların Geri Alınmasına İlişkin Bildirim"
+    - "Sermaye Artırımı"
+    - "İhraç Tavanına İlişkin Bildirim"
+    - "Kâr Dağıtımı"
+    - "Temettü"
+    - "Genel Kurul"
+    - "Birleşme"
+    - "Bölünme"
+    - "Satın Alma"
+    - "Kredi Derecelendirmesi"
+    - "Faaliyet Raporu"
+
+  # Gürültüyü kesen sert deny listesi. Bu türler hiç gönderilmez.
+  subject_deny:
+    - "Portföy Dağılım Raporu"
+    - "Pay Bazında Devre Kesici"
+    - "Borsa Dışı Repo"
+    - "Ters Repo"
+    - "Piyasa Yapıcılığı"
+    - "Yatırımcı Bilgi Formu"
+    - "Fon Sürekli Bilgilendirme"
+    - "Tanıtım Formu"
+    - "İç Tüzük"
+    - "İzahname"
+    - "Şirket Genel Bilgi Formu"
+
+  # Konu/özet/şirket metninde aranan kelimeler. Skoru artırır.
+  include_keywords:
+    - "temettü"
+    - "kâr dağıtımı"
+    - "sermaye artırımı"
+    - "bedelli"
+    - "bedelsiz"
+    - "geri alım"
+    - "ihale"
+    - "sözleşme"
+    - "satın alma"
+    - "birleşme"
+    - "yatırım"
+    - "kredi"
+    - "derecelendirme"
+    - "genel kurul"
+    - "faaliyet raporu"
+    - "halka arz"
+    - "temlik"
+    - "ipotek"
+    - "dava"
+    - "ceza"
+    - "soruşturma"
+    - "üretim"
+    - "kapasite"
+    - "tesis"
+    - "lisans"
+    - "ihracat"
+    - "finansman"
+    - "borçlanma"
+
+  # Bu kelimelerden biri geçerse bildirim gönderilmez.
+  exclude_keywords:
+    - "portföy dağılım"
+    - "devre kesici"
+
+  # true yaparsan allowlist'e uysa bile en az bir include keyword aranır.
+  require_keyword: false
+
+  # 1 = allowlist eşleşmesi yeterli. 2+ = ek keyword/şirket eşleşmesi ister.
+  min_score: 1
+
+  # E-postada üstte gösterilecek öncelikli türler.
+  priority_subjects:
+    - "Özel Durum Açıklaması"
+    - "Payların Geri Alınmasına İlişkin Bildirim"
+    - "Sermaye Artırımı"
+    - "Kâr Dağıtımı"
+    - "Temettü"
+
+  # Tek e-postada gönderilecek maksimum bildirim.
+  # Fazlası ayrı e-postalara bölünür; hiçbiri atlanmaz.
+  max_items: 40
+
+quiet_hours:
+  # 00:00-08:00 arası e-posta gönderilmez; birikenler 08:05'te gelir.
+  enabled: true
+  start: "00:00"
+  end: "08:00"
+
+llm:
+  enabled: true
+  provider: gemini
+  # Ücretsiz katmanda kullanılabilen bir model seç. Kota/limit değişebilir.
+  model: gemini-2.5-flash
+  api_key_env: GEMINI_API_KEY
+  batch_size: 8
+  max_items_per_run: 30
+  timeout_seconds: 60
+
+email:
+  subject_prefix: "KAP"
+  # Alıcılar KAP_EMAIL_TO ortam değişkeni ile verilir (virgülle ayrılabilir).

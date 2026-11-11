@@ -1,0 +1,71 @@
+name: KAP Notifier
+
+on:
+  schedule:
+    # Her saat :05 UTC (= :05 TRT). GitHub cron'u birkaç dakika gecikebilir.
+    - cron: "5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kap-notifier
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Bağımlılıklar
+        run: pip install -r requirements.txt
+
+      - name: State worktree hazırla
+        run: |
+          STATE_WT="$RUNNER_TEMP/kap-state"
+          if git ls-remote --exit-code --heads origin state >/dev/null 2>&1; then
+            git fetch origin state
+            git worktree add "$STATE_WT" origin/state
+          else
+            git worktree add --detach "$STATE_WT"
+            cd "$STATE_WT"
+            git checkout --orphan state
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+          mkdir -p "$STATE_WT/state"
+
+      - name: Çalıştır
+        env:
+          KAP_STATE_DIR: ${{ runner.temp }}/kap-state/state
+          KAP_SMTP_HOST: ${{ secrets.KAP_SMTP_HOST }}
+          KAP_SMTP_PORT: ${{ secrets.KAP_SMTP_PORT }}
+          KAP_SMTP_USER: ${{ secrets.KAP_SMTP_USER }}
+          KAP_SMTP_PASS: ${{ secrets.KAP_SMTP_PASS }}
+          KAP_EMAIL_FROM: ${{ secrets.KAP_EMAIL_FROM }}
+          KAP_EMAIL_TO: ${{ secrets.KAP_EMAIL_TO }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py
+
+      - name: State'i kaydet
+        if: always()
+        run: |
+          cd "$RUNNER_TEMP/kap-state"
+          git add state
+          if git diff --cached --quiet; then
+            echo "State değişmedi"
+            exit 0
+          fi
+          git config user.name "kap-notifier[bot]"
+          git config user.email "kap-notifier[bot]@users.noreply.github.com"
+          git commit -m "state: $(date -u +%FT%TZ)"
+          git push origin HEAD:state

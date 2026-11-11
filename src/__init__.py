@@ -1,0 +1,1 @@
+"""KAP bildirim izleyici."""
