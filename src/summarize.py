@@ -74,7 +74,9 @@ Kurallar:
 - Yanıtı SADECE aşağıdaki JSON şemasında döndür:
 {"items": [{"id": "bildirim-index", "materiality": "high",
   "category": "Kredi notu", "summary": "...", "red_flags": ["..."],
-  "analysis_points": ["..."]}]}"""
+  "analysis_points": ["..."]}]}Bildirimler:
+{payload}
+"""
 
 
 def load_soul(path: Path = SOUL_PATH) -> str:

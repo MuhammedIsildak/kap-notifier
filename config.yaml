@@ -207,9 +207,9 @@ llm:
   enabled: true
   provider: gemini
   # 3.5 Flash: 3.5 Flash-Lite'a göre Türkçe metin kalitesi belirgin daha iyi.
-  model: gemini-3.5-flash
+  model: gemini-3.5-flash-lite
   # Yoğun saatlerde 503 gelirse bu modele düşülür; hızlı ve genelde müsait.
-  fallback_model: gemini-3.5-flash-lite
+  fallback_model: gemini-3.1-flash-lite
   api_key_env: GEMINI_API_KEY
   batch_size: 5
   # Her e-posta parçasındaki tüm bildirimlerin özetlenmesi için 40+ seç.
