@@ -444,8 +444,18 @@
       "model": "gemini-3.5-flash-lite",
       "summary": "EGEYAPI AVRUPA GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., 11.11.2026 tarihinde pay geri alım işlemine ilişkin bildirimde bulunmuştur.",
       "ts": "2026-11-11T21:22:09.023593+03:00"
+    },
+    "1697398": {
+      "model": "gemini-3.5-flash-lite",
+      "summary": "BOR ŞEKER A.Ş., 11.11.2026 tarihli pay geri alım işlemlerine ilişkin bildirimde bulunmuştur. İşlem 11.11.2026 tarihinde gerçekleştirilmiştir.",
+      "ts": "2026-11-11T21:24:33.904799+03:00"
+    },
+    "1697399": {
+      "model": "gemini-3.5-flash-lite",
+      "summary": "SAVUR GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., 11.11.2026 tarihinde payların geri alınmasına ilişkin bildirim yapmıştır. Bildirimin konusu Payların Geri Alım Programı Hk. olarak belirtilmiştir.",
+      "ts": "2026-11-11T21:24:33.904753+03:00"
     }
   },
-  "updated_at": "2026-11-11T21:21:42.963485+03:00",
+  "updated_at": "2026-11-11T21:24:31.411911+03:00",
   "version": 1
 }
