@@ -454,8 +454,47 @@
       "model": "gemini-3.5-flash-lite",
       "summary": "SAVUR GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., 11.11.2026 tarihinde payların geri alınmasına ilişkin bildirim yapmıştır. Bildirimin konusu Payların Geri Alım Programı Hk. olarak belirtilmiştir.",
       "ts": "2026-11-11T21:24:33.904753+03:00"
+    },
+    "1697400": {
+      "analysis_points": [
+        "Eurobond takas ve muvafakat teklifine katılım oranı",
+        "İşlem sonrası oluşan yeni borç itfa profili ve ortalama borçlanma maliyeti",
+        "Şirketin kısa vadeli dış finansman yükü üzerindeki etkisi"
+      ],
+      "category": "Finansman",
+      "materiality": "high",
+      "model": "gemini-3.5-flash",
+      "red_flags": [
+        "Yurt dışı borçlanma araçlarının yenilenmesinde yaşanabilecek olası maliyet artışı riski"
+      ],
+      "summary": "VESTEL ELEKTRONİK SANAYİ VE TİCARET A.Ş., 11.11.2026 tarihinde yurt dışı tahvil (Eurobond) sahiplerine yönelik başlatılan takas teklifi ve muvafakat talebi sonuçlarını açıklamıştır. Borç yapısını ve itfa takvimini doğrudan etkilemesi nedeniyle şirketin finansman yönetimi açısından kritik bir gelişmedir. İşlemin nihai tutarları ve katılım oranları borç yenileme riskinin değerlendirilmesi açısından önemlidir.",
+      "ts": "2026-11-11T21:57:30.209544+03:00"
+    },
+    "1697403": {
+      "analysis_points": [
+        "Düzeltme yapılan kalemin finansal sonuçlar veya operasyonel açıklamalar üzerindeki etkisi",
+        "İlk açıklanan rapor ile düzeltilmiş versiyon arasındaki farklar"
+      ],
+      "category": "Finansal rapor",
+      "materiality": "low",
+      "model": "gemini-3.5-flash",
+      "red_flags": [],
+      "summary": "ÇUHADAROĞLU METAL SANAYİ VE PAZARLAMA A.Ş., 11.11.2026 tarihinde 30.09.2026 dönemi konsolide faaliyet raporuna ilişkin düzeltme açıklaması yapmıştır. Düzeltmenin gerekçesi ve finansal büyüklüklere etkisi bildirim özetinde yer almamaktadır. Analistlerin düzeltilen rapordaki değişiklikleri kontrol etmesi gerekmektedir.",
+      "ts": "2026-11-11T21:57:30.209550+03:00"
+    },
+    "1697409": {
+      "analysis_points": [
+        "2026/9 dönemine ilişkin sunumdaki operasyonel marjlar ve satış hacimleri",
+        "Şirketin mevcut borçluluk ve sermaye harcaması eğilimleri"
+      ],
+      "category": "Finansal rapor",
+      "materiality": "low",
+      "model": "gemini-3.5-flash",
+      "red_flags": [],
+      "summary": "ÖZYAŞAR TEL VE GALVANİZLEME SANAYİ A.Ş., 11.11.2026 tarihinde 2026 yılı 9 aylık konsolide yatırımcı sunumunu yayımlamıştır. Açıklama rutin bilgilendirme niteliğinde olup şirket tarafından ek bir finansal büyüklük bildirilmemiştir. Analistlerin dönemsel operasyonel performans ve nakit akış göstergelerini incelemesi açısından önem taşımaktadır.",
+      "ts": "2026-11-11T21:57:30.209520+03:00"
     }
   },
-  "updated_at": "2026-11-11T21:24:31.411911+03:00",
+  "updated_at": "2026-11-11T21:57:18.595281+03:00",
   "version": 1
 }
