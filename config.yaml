@@ -102,8 +102,10 @@ quiet_hours:
 llm:
   enabled: true
   provider: gemini
-  # Ücretsiz katmanda kullanılabilen bir model seç. Kota/limit değişebilir.
-  model: gemini-2.5-flash
+  # Google'ın güncel model listesinde 3.5 ailesi: gemini-3.5-flash-lite
+  # Daha güçlü/yeni alternatif: gemini-3.8-flash
+  # Diğer uygulamanda farklı bir tam ID görüyorsan buraya onu yaz.
+  model: gemini-3.5-flash-lite
   api_key_env: GEMINI_API_KEY
   batch_size: 8
   max_items_per_run: 30

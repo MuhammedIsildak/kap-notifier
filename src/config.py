@@ -59,7 +59,7 @@ class QuietHoursConfig:
 class LLMConfig:
     enabled: bool = True
     provider: str = "gemini"
-    model: str = "gemini-2.5-flash"
+    model: str = "gemini-3.5-flash-lite"
     api_key_env: str = "GEMINI_API_KEY"
     batch_size: int = 8
     max_items_per_run: int = 30
@@ -133,7 +133,7 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
     llm = LLMConfig(
         enabled=_as_bool(llm_raw.get("enabled"), True),
         provider=str(llm_raw.get("provider") or "gemini").lower(),
-        model=str(llm_raw.get("model") or "gemini-2.5-flash"),
+        model=str(llm_raw.get("model") or "gemini-3.5-flash-lite"),
         api_key_env=str(llm_raw.get("api_key_env") or "GEMINI_API_KEY"),
         batch_size=max(1, _as_int(llm_raw.get("batch_size"), 8)),
         max_items_per_run=max(0, _as_int(llm_raw.get("max_items_per_run"), 30)),

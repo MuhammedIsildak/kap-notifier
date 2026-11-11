@@ -3,7 +3,7 @@
 
 Kullanım:
     .venv/bin/python tools/setup_ai.py
-    .venv/bin/python tools/setup_ai.py --model gemini-2.0-flash
+    .venv/bin/python tools/setup_ai.py --model gemini-3.8-flash
 
 Anahtar terminalde görünmez (getpass) ve hata mesajlarında maskelenir.
 """
@@ -125,7 +125,7 @@ def list_models(key: str) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Gemini API anahtarını test et")
     parser.add_argument(
-        "--model", default="gemini-2.5-flash", help="Test edilecek model"
+        "--model", default="gemini-3.5-flash-lite", help="Test edilecek model"
     )
     parser.add_argument(
         "--no-save",

@@ -99,7 +99,7 @@ Anahtarı terminalde görünmeden test edip `.env` dosyasına kaydetmek için:
 Farklı bir model denemek için:
 
 ```bash
-.venv/bin/python tools/setup_ai.py --model gemini-2.0-flash
+.venv/bin/python tools/setup_ai.py --model gemini-3.8-flash
 ```
 
 Anahtar yoksa veya kota dolarsa e-posta yine gönderilir; sadece KAP'ın kendi
