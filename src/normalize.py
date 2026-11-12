@@ -33,11 +33,6 @@ def normalize(text: object) -> str:
     return " ".join(value.split())
 
 
-def contains_any(text: object, terms: Iterable[str]) -> bool:
-    haystack = normalize(text)
-    return any(normalize(term) in haystack for term in terms if normalize(term))
-
-
 def matching_terms(text: object, terms: Iterable[str]) -> list[str]:
     haystack = normalize(text)
     return [term for term in terms if normalize(term) and normalize(term) in haystack]

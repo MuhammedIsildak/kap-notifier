@@ -36,6 +36,18 @@ def _as_int(value: object, default: int) -> int:
         return default
 
 
+def _as_delay(value: object) -> float:
+    """İstekler arası bekleme; hatalı değer sessizce yutulmaz."""
+    if value is None:
+        return 0.4
+    try:
+        return max(0.0, float(value))  # type: ignore[arg-type]
+    except (TypeError, ValueError) as exc:
+        raise ConfigError(
+            f"documents.request_delay_seconds sayı olmalı: {value!r}"
+        ) from exc
+
+
 @dataclass(frozen=True)
 class AnalystConfig:
     """Mali analist için maddi etki kuralları."""
@@ -78,6 +90,7 @@ class LLMConfig:
     batch_size: int = 5
     max_items_per_run: int = 30
     timeout_seconds: int = 60
+    max_run_seconds: int = 600
 
 
 @dataclass(frozen=True)
@@ -192,6 +205,7 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         batch_size=max(1, _as_int(llm_raw.get("batch_size"), 5)),
         max_items_per_run=max(0, _as_int(llm_raw.get("max_items_per_run"), 30)),
         timeout_seconds=max(5, _as_int(llm_raw.get("timeout_seconds"), 60)),
+        max_run_seconds=max(30, _as_int(llm_raw.get("max_run_seconds"), 600)),
     )
 
     ratings = RatingsConfig(
@@ -213,9 +227,7 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
             1_000_000, _as_int(documents_raw.get("max_pdf_bytes"), 15_000_000)
         ),
         timeout_seconds=max(5, _as_int(documents_raw.get("timeout_seconds"), 30)),
-        request_delay_seconds=max(
-            0.0, float(documents_raw.get("request_delay_seconds") or 0.4)
-        ),
+        request_delay_seconds=_as_delay(documents_raw.get("request_delay_seconds")),
     )
 
     env_recipients = os.getenv("KAP_EMAIL_TO", "")

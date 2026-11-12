@@ -278,6 +278,7 @@ def run(args: argparse.Namespace) -> int:
             [item.disclosure for item in chunk],
             ratings=ratings,
             documents=documents,
+            now=now,
         )
         if summaries and not args.dry_run:
             state.save_summaries(now)
