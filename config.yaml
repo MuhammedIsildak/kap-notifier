@@ -212,9 +212,13 @@ llm:
   fallback_model: gemini-3.1-flash-lite
   api_key_env: GEMINI_API_KEY
   batch_size: 5
-  # Her e-posta parçasındaki tüm bildirimlerin özetlenmesi için 40+ seç.
+  # Her çalışmada en fazla kaç bildirim LLM ile özetlenir. Özetlenmeyenler
+  # KAP özetiyle yine de gönderilir, sonraki çalışmada özetlenir.
   max_items_per_run: 60
   timeout_seconds: 60
+  # Tek çalışmada LLM'e ayrılan toplam süre. Actions işi 20 dakikada keser;
+  # bu bütçe dolunca yeni parti başlatılmaz, KAP özetiyle devam edilir.
+  max_run_seconds: 600
 
 ratings:
   # Kredi derecelendirme bildirimlerinin ekini indirip firma/not/aksiyon çıkarır.

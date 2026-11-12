@@ -1,5 +1,3 @@
-import json
-
 from src.documents import (
     DocumentFetcher,
     clean_document_text,
@@ -8,7 +6,6 @@ from src.documents import (
 )
 from src.models import Disclosure
 from src.config import DocumentsConfig
-from src.state import State
 
 
 def _page(body_html: str) -> str:

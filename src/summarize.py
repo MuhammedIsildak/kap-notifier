@@ -6,6 +6,7 @@ import os
 import re
 import time
 from dataclasses import replace
+from datetime import datetime
 from pathlib import Path
 
 import requests
@@ -87,6 +88,15 @@ def load_soul(path: Path = SOUL_PATH) -> str:
     return text or DEFAULT_SOUL
 
 
+def redact(text: str, secret: str) -> str:
+    """Hata mesajlarından API anahtarını siler.
+
+    Anahtar istek adresinde (query parametresi) taşındığı için ağ hataları
+    URL'yi düz metin olarak içerir; loglara sızmasın diye burada maskelenir.
+    """
+    return text.replace(secret, "***") if secret else text
+
+
 def _rating_materiality(rating: RatingInfo) -> str:
     return rating.materiality
 
@@ -105,12 +115,17 @@ class Summarizer:
         self.config = config
         self.state = state
         self.soul = load_soul()
+        # Limitler ve süre bütçesi çalışma başına geçerli olsun; e-posta
+        # parçaları arasında yeniden sıfırlanmasın.
+        self._sent_to_llm = 0
+        self._deadline = time.monotonic() + config.max_run_seconds
 
     def summarize(
         self,
         disclosures: list[Disclosure],
         ratings: dict[str, RatingInfo] | None = None,
         documents: dict[str, str] | None = None,
+        now: datetime | None = None,
     ) -> dict[str, Summary]:
         """Önbellekte olanları döndürür, eksikleri LLM ile özetler."""
         ratings = ratings or {}
@@ -153,7 +168,9 @@ class Summarizer:
         if self.config.max_items_per_run <= 0:
             return results
 
-        limited = missing[: self.config.max_items_per_run]
+        budget = max(0, self.config.max_items_per_run - self._sent_to_llm)
+        limited = missing[:budget]
+        self._sent_to_llm += len(limited)
         if len(missing) > len(limited):
             LOGGER.info(
                 "%s bildirim LLM limiti (%s) nedeniyle bu çalışmada özetlenmeyecek",
@@ -161,7 +178,19 @@ class Summarizer:
                 self.config.max_items_per_run,
             )
 
+        # Süre bütçesi: GitHub Actions işi 20 dakikada kesiyor. Bütçe
+        # dolarsa yeni parti başlatılmaz; bildirimler KAP özetiyle gider.
+        stamp = now or _now_like()
+
         for start in range(0, len(limited), self.config.batch_size):
+            if time.monotonic() >= self._deadline:
+                LOGGER.warning(
+                    "LLM süre bütçesi doldu (%ss); %s bildirim KAP özetiyle "
+                    "gönderilecek",
+                    self.config.max_run_seconds,
+                    len(limited) - start,
+                )
+                break
             batch = limited[start : start + self.config.batch_size]
             try:
                 summarized = self._call_gemini(batch, api_key, ratings, documents)
@@ -178,7 +207,7 @@ class Summarizer:
                     disclosure.index,
                     summary,
                     model=self.config.model,
-                    now=_now_like(),
+                    now=stamp,
                     content_hash=disclosure.content_hash(),
                 )
 
@@ -262,7 +291,7 @@ class Summarizer:
                     "Gemini isteği başarısız (deneme %s/4, %s): %s",
                     attempt,
                     model,
-                    exc,
+                    redact(str(exc), api_key),
                 )
                 time.sleep(min(2 ** attempt, 10))
                 continue
@@ -356,7 +385,6 @@ def _string_list(value: object, *, limit: int, length: int) -> tuple[str, ...]:
 
 def _now_like():
     """State ile aynı saat dilimini kullanmak için tembel import."""
-    from datetime import datetime
     from zoneinfo import ZoneInfo
 
     return datetime.now(ZoneInfo("Europe/Istanbul"))

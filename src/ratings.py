@@ -511,6 +511,9 @@ class RatingExtractor:
         self.config = config
         self.state = state
         self.session = session or requests.Session()
+        # Sayaç örnek seviyesinde: limit "tek çalışmada" geçerli olsun,
+        # e-posta parçaları arasında yeniden sıfırlanmasın.
+        self._attempted = 0
         logging.getLogger("pypdf").setLevel(logging.ERROR)
 
     def extract(
@@ -520,7 +523,6 @@ class RatingExtractor:
         if not self.config.enabled:
             return results
 
-        attempted = 0
         for disclosure in disclosures:
             if not is_rating_disclosure(disclosure):
                 continue
@@ -532,13 +534,13 @@ class RatingExtractor:
                 results[disclosure.index] = cached
                 continue
 
-            if attempted >= self.config.max_items_per_run:
+            if self._attempted >= self.config.max_items_per_run:
                 LOGGER.info(
                     "Kredi notu çıkarma limiti (%s) doldu; kalanlar sonraki çalışmada",
                     self.config.max_items_per_run,
                 )
                 break
-            attempted += 1
+            self._attempted += 1
 
             try:
                 info = self._extract_one(disclosure)

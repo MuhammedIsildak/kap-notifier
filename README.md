@@ -73,6 +73,10 @@ Tüm filtreler `config.yaml` içinde:
   08:05'te tek e-postada gelir. Kapatmak için `enabled: false`.
 - `llm`: Gemini modeli, yedek model, parti boyutu ve çalışma başına limit.
   `llm.fallback_model`, ana model 503/429 verdiğinde devreye girer.
+  `llm.max_items_per_run` tek çalışmada LLM'e gönderilecek bildirim sayısıdır;
+  aşan bildirimler KAP özetiyle gönderilir, sonraki çalışmada özetlenir.
+  `llm.max_run_seconds` LLM'e ayrılan toplam süre bütçesidir; Actions işi
+  20 dakikada kesildiği için bu bütçe korunur.
 
 Türkçe karakterler eşleştirmede sadeleştirilir: `ı/İ/i`, `ğ/g`, `ü/u`, `ş/s`,
 `ö/o`, `ç/c`. Yani `temettu` yazsan da `temettü` bildirimini yakalar.
@@ -99,6 +103,8 @@ tabloya eklenmez; AI özeti KAP metniyle devam eder.
 
 KAP ek indirmelerinde `429` görülürse istek üç kez geri çekilmeli olarak
 yeniden denenir. Yoğun saatlerde bazı ekler bir sonraki çalışmaya kalabilir.
+`ratings.max_items_per_run` ve `documents.max_items_per_run` tek çalışmada
+geçerlidir; e-posta parçaları arasında yeniden sayılmaz.
 
 ## E-posta ayarları (Gmail)
 
@@ -240,7 +246,9 @@ Normal Gmail şifresi değil, 2FA açıkken oluşturulan uygulama şifresi kulla
 **Gemini 429 / kota**
 `llm.batch_size` ve `llm.max_items_per_run` değerlerini düşür veya
 `llm.enabled: false` yap. E-posta yine çalışır. 503 "high demand" hatalarında
-kod üç kez geri çekilmeli deneme yapar; yine olmazsa o parti KAP özetiyle geçer.
+her model dört kez denenir, sonra yedek modele geçilir; yine olmazsa o parti
+KAP özetiyle geçer. Toplam süre `llm.max_run_seconds` bütçesini aşarsa kalan
+partiler atlanır.
 
 **Kredi notu tablosu boş / eksik**
 KAP detay sayfası veya ek PDF değişmiş olabilir. `ratings.max_items_per_run`
@@ -249,8 +257,9 @@ tabloya eklenmez; ham bildirim yine e-postada görünür. KAP `429` verirse ek
 indirmesi üç kez denenir ve başarısız olursa kayıt sonraki çalışmaya kalır.
 
 **AI özeti İngilizce/bozuk Türkçe geliyor**
-`config.yaml` içindeki `llm.model` değerini `gemini-3.5-flash` yap. Flash-Lite
-modelleri Türkçe eklerde daha sık yazım hatası üretiyor.
+Varsayılan model `gemini-3.5-flash-lite`; Flash-Lite modelleri Türkçe
+eklerde daha sık yazım hatası üretiyor. `config.yaml` içindeki `llm.model`
+değerini `gemini-3.5-flash` yap.
 
 ## Maliyet
 

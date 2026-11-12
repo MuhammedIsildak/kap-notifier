@@ -287,6 +287,9 @@ class DocumentFetcher:
         self.config = config
         self.session = session or requests.Session()
         self._memo: dict[str, str] = {}
+        # Sayaç örnek seviyesinde: limit "tek çalışmada" geçerli olsun,
+        # e-posta parçaları arasında yeniden sıfırlanmasın.
+        self._attempted = 0
         logging.getLogger("pypdf").setLevel(logging.ERROR)
 
     def fetch(
@@ -297,7 +300,6 @@ class DocumentFetcher:
 
         skip = skip or set()
         results: dict[str, str] = {}
-        attempted = 0
         for disclosure in disclosures:
             if disclosure.index in skip:
                 continue
@@ -305,13 +307,13 @@ class DocumentFetcher:
             if cached:
                 results[disclosure.index] = cached
                 continue
-            if attempted >= self.config.max_items_per_run:
+            if self._attempted >= self.config.max_items_per_run:
                 LOGGER.info(
                     "Belge okuma limiti (%s) doldu; kalanlar sonraki çalışmada",
                     self.config.max_items_per_run,
                 )
                 break
-            attempted += 1
+            self._attempted += 1
             try:
                 text = self._fetch_one(disclosure)
             except Exception as exc:  # noqa: BLE001 - tek bildirim tüm işi durdurmasın
