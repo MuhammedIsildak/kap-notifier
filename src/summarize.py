@@ -119,7 +119,9 @@ class Summarizer:
         missing: list[Disclosure] = []
 
         for disclosure in disclosures:
-            cached = self.state.get_summary(disclosure.index)
+            cached = self.state.get_summary(
+                disclosure.index, disclosure.content_hash()
+            )
             if cached is not None:
                 results[disclosure.index] = cached
                 continue
@@ -177,6 +179,7 @@ class Summarizer:
                     summary,
                     model=self.config.model,
                     now=_now_like(),
+                    content_hash=disclosure.content_hash(),
                 )
 
         return results
