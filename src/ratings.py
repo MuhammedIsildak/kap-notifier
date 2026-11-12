@@ -1,37 +1,30 @@
 from __future__ import annotations
 
 import html as html_lib
-import io
-import json
 import logging
 import re
-import time
+from dataclasses import replace
 from datetime import datetime
 from pathlib import PurePath
 
 import requests
-from pypdf import PdfReader
 
 from .config import RatingsConfig
+from .kap import (
+    KAP_DETAIL_URL,
+    KAP_FILE_URL,
+    attachment_fingerprint,
+    extract_attachments,
+    get_bytes_with_retry,
+    get_with_retry,
+    pdf_attachments,
+    pdf_text,
+)
 from .models import Disclosure, RatingInfo
 from .normalize import normalize
 from .state import State
 
 LOGGER = logging.getLogger(__name__)
-
-KAP_DETAIL_URL = "https://www.kap.org.tr/tr/Bildirim/{index}"
-KAP_FILE_URL = "https://www.kap.org.tr/tr/api/file/download/{oid}"
-
-HEADERS = {
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.8",
-    "Referer": "https://www.kap.org.tr/tr/bildirim-sorgu",
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/131.0.0.0 Safari/537.36"
-    ),
-}
 
 RATING_SUBJECT_TERMS = (
     "kredi derecelendirmesi",
@@ -446,37 +439,6 @@ def parse_rating(
     )
 
 
-def extract_attachments(page_html: str) -> list[dict]:
-    """KAP detay sayfasındaki ek dosya listesini çıkarır."""
-    flat = page_html.replace('\\"', '"')
-    match = re.search(r'"attachments"\s*:\s*(\[.*?\])', flat, re.DOTALL)
-    if match:
-        try:
-            parsed = json.loads(match.group(1))
-        except ValueError:
-            parsed = None
-        if isinstance(parsed, list):
-            attachments = [
-                item
-                for item in parsed
-                if isinstance(item, dict) and item.get("objId")
-            ]
-            if attachments:
-                return attachments
-
-    # Yedek: doğrudan indirme bağlantıları.
-    fallback: list[dict] = []
-    for match in re.finditer(
-        r'href="[^"]*?/api/file/download/([a-f0-9]{16,64})"[^>]*>([^<]*)<',
-        page_html,
-        re.IGNORECASE,
-    ):
-        fallback.append(
-            {"objId": match.group(1), "fileName": match.group(2).strip()}
-        )
-    return fallback
-
-
 def html_to_text(page_html: str) -> str:
     text = re.sub(
         r"<script.*?</script>", " ", page_html, flags=re.DOTALL | re.IGNORECASE
@@ -490,15 +452,6 @@ def html_to_text(page_html: str) -> str:
     )
     text = re.sub(r"<[^>]+>", " ", text)
     return _clean(html_lib.unescape(text))
-
-
-def pdf_text(payload: bytes) -> str:
-    """KAP bazen PDF'i Java serileştirme başlığıyla sarar; %PDF'e hizala."""
-    start = payload.find(b"%PDF")
-    if start > 0:
-        payload = payload[start:]
-    reader = PdfReader(io.BytesIO(payload), strict=False)
-    return "\n".join((page.extract_text() or "") for page in reader.pages)
 
 
 class RatingExtractor:
@@ -527,13 +480,6 @@ class RatingExtractor:
             if not is_rating_disclosure(disclosure):
                 continue
 
-            cached = self.state.get_rating(
-                disclosure.index, disclosure.content_hash()
-            )
-            if cached is not None:
-                results[disclosure.index] = cached
-                continue
-
             if self._attempted >= self.config.max_items_per_run:
                 LOGGER.info(
                     "Kredi notu çıkarma limiti (%s) doldu; kalanlar sonraki çalışmada",
@@ -543,7 +489,20 @@ class RatingExtractor:
             self._attempted += 1
 
             try:
-                info = self._extract_one(disclosure)
+                page_html = self._fetch(KAP_DETAIL_URL.format(index=disclosure.index))
+                attachments = extract_attachments(page_html)
+                fingerprint = attachment_fingerprint(attachments)
+
+                # Ek dosya değişmediyse önbellekteki kayıt geçerlidir; PDF
+                # yeniden indirilmez.
+                cached = self.state.get_rating(
+                    disclosure.index, disclosure.content_hash()
+                )
+                if cached is not None and cached.attachments == fingerprint:
+                    results[disclosure.index] = cached
+                    continue
+
+                info = self._extract_one(disclosure, page_html, attachments)
             except Exception as exc:  # noqa: BLE001 - tek bildirim tüm işi durdurmasın
                 LOGGER.warning(
                     "Kredi notu çıkarılamadı (%s): %s", disclosure.index, exc
@@ -562,16 +521,13 @@ class RatingExtractor:
 
         return results
 
-    def _extract_one(self, disclosure: Disclosure) -> RatingInfo | None:
-        page_html = self._fetch(KAP_DETAIL_URL.format(index=disclosure.index))
-        attachments = extract_attachments(page_html)
-
-        pdfs = [
-            item
-            for item in attachments
-            if str(item.get("fileExtension") or "").lower() == "pdf"
-            or str(item.get("fileName") or "").lower().endswith(".pdf")
-        ][: self.config.max_attachments]
+    def _extract_one(
+        self,
+        disclosure: Disclosure,
+        page_html: str,
+        attachments: list[dict],
+    ) -> RatingInfo | None:
+        pdfs = pdf_attachments(attachments, self.config.max_attachments)
 
         text_parts: list[str] = []
         source = ""
@@ -596,6 +552,7 @@ class RatingExtractor:
             text_parts.append(html_to_text(page_html))
 
         info = parse_rating("\n".join(text_parts), disclosure, source=source)
+        info = replace(info, attachments=attachment_fingerprint(attachments))
         # Notu okunamayan kayıtlar tabloyu kirletmesin; AI özeti KAP
         # metniyle devam eder.
         if not (info.current or info.previous):
@@ -604,34 +561,15 @@ class RatingExtractor:
             return None
         return info
 
-    RETRYABLE_STATUS = {429, 500, 502, 503, 504}
-
     def _fetch(self, url: str) -> str:
-        return self._get(url).text
+        return get_with_retry(
+            self.session, url, timeout=self.config.timeout_seconds
+        ).text
 
     def _fetch_bytes(self, url: str) -> bytes:
-        response = self._get(url)
-        if len(response.content) > self.config.max_pdf_bytes:
-            raise ValueError("Ek dosya boyut sınırını aşıyor")
-        return response.content
-
-    def _get(self, url: str) -> requests.Response:
-        response: requests.Response | None = None
-        for attempt in range(1, 4):
-            response = self.session.get(
-                url, headers=HEADERS, timeout=self.config.timeout_seconds
-            )
-            if response.status_code in self.RETRYABLE_STATUS:
-                LOGGER.info(
-                    "KAP geçici hata verdi (deneme %s/3): HTTP %s",
-                    attempt,
-                    response.status_code,
-                )
-                time.sleep(min(2 ** (attempt - 1), 6))
-                continue
-            response.raise_for_status()
-            return response
-        if response is None:
-            raise RuntimeError("KAP yanıtı alınamadı")
-        response.raise_for_status()
-        return response
+        return get_bytes_with_retry(
+            self.session,
+            url,
+            timeout=self.config.timeout_seconds,
+            max_bytes=self.config.max_pdf_bytes,
+        )

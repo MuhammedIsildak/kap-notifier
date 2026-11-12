@@ -1,7 +1,9 @@
 """Kod incelemesinde bulunan hataların regresyon testleri."""
 
 import logging
+from datetime import datetime
 from unittest.mock import MagicMock, patch
+from zoneinfo import ZoneInfo
 
 import pytest
 import requests
@@ -12,6 +14,8 @@ from src.models import Disclosure
 from src.ratings import RatingExtractor
 from src.state import State
 from src.summarize import Summarizer, redact
+
+NOW = datetime.now(ZoneInfo("Europe/Istanbul"))
 
 
 def disclosure(index: str = "1", subject: str = "Kredi Derecelendirmesi") -> Disclosure:
@@ -63,8 +67,8 @@ def test_rating_limit_applies_to_the_whole_run(tmp_path):
     )
 
     with patch.object(RatingExtractor, "_extract_one", return_value=None):
-        first = extractor.extract([disclosure("1"), disclosure("2")], now=None)
-        second = extractor.extract([disclosure("3")], now=None)
+        first = extractor.extract([disclosure("1"), disclosure("2")], now=NOW)
+        second = extractor.extract([disclosure("3")], now=NOW)
 
     assert first == {}
     assert second == {}
