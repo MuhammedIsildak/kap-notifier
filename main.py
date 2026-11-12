@@ -127,6 +127,30 @@ def collect_new(candidates: list[Candidate], state: State) -> list[Candidate]:
     return selected
 
 
+def warn_if_gap(disclosures: list[Disclosure], state: State) -> None:
+    """Saatlik koşu kaçırıldıysa uyar.
+
+    KAP'ın hafif uç noktası yalnızca günün bildirimlerini döndürür ve
+    tarih sorgusu bot korumasına kapalıdır; kaçan bir gün geriye dönük
+    alınamaz. Bu uyarı, boşluğun fark edilmesini sağlar.
+    """
+    latest_seen = state.latest_published()
+    if latest_seen is None:
+        return
+    latest_fetched = max(
+        (item.published_at for item in disclosures if item.published_at),
+        default=None,
+    )
+    if latest_fetched is None or latest_fetched >= latest_seen:
+        return
+    LOGGER.warning(
+        "Olası boşluk: KAP'taki en yeni bildirim %s, daha önce gönderilen en yeni %s. "
+        "Aradaki bildirimler kaçırılmış olabilir.",
+        latest_fetched.strftime(DATE_FORMAT),
+        latest_seen.strftime(DATE_FORMAT),
+    )
+
+
 def write_preview(
     rendered: RenderedEmail, now: datetime, suffix: str = ""
 ) -> Path:
@@ -215,6 +239,7 @@ def run(args: argparse.Namespace) -> int:
 
     state_dir = Path(os.getenv("KAP_STATE_DIR", "state"))
     state = State(state_dir)
+    warn_if_gap(disclosures, state)
     selected = collect_new(candidates, state)
 
     if args.limit > 0:

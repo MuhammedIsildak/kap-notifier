@@ -90,6 +90,21 @@ class State:
             return "updated"
         return None
 
+    def latest_published(self) -> datetime | None:
+        """Daha önce gönderilen en yeni bildirimin yayın tarihi."""
+        latest: datetime | None = None
+        for entry in self.seen.values():
+            published = entry.get("published")
+            if not published:
+                continue
+            try:
+                moment = datetime.strptime(str(published), DATE_FORMAT)
+            except ValueError:
+                continue
+            if latest is None or moment > latest:
+                latest = moment
+        return latest
+
     def mark_sent(self, candidates: list[Candidate], now: datetime) -> None:
         sent_at = now.isoformat()
         for candidate in candidates:

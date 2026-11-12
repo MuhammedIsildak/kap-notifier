@@ -3,24 +3,23 @@ from __future__ import annotations
 import html as html_lib
 import logging
 import re
-import time
 
 import requests
 
 from .config import DocumentsConfig
-from .models import Disclosure
-from .normalize import normalize
-from .ratings import (
-    HEADERS,
+from .kap import (
     KAP_DETAIL_URL,
     KAP_FILE_URL,
     extract_attachments,
+    get_bytes_with_retry,
+    get_with_retry,
+    pdf_attachments,
     pdf_text,
 )
+from .models import Disclosure
+from .normalize import normalize
 
 LOGGER = logging.getLogger(__name__)
-
-RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 
 # PDF'lerin her sayfasında tekrar eden KAP başlıkları ve tablo döküntüleri
 # modele gitmeden önce atılır.
@@ -327,14 +326,14 @@ class DocumentFetcher:
         return results
 
     def _fetch_one(self, disclosure: Disclosure) -> str:
-        page_html = self._get(KAP_DETAIL_URL.format(index=disclosure.index)).text
+        page_html = get_with_retry(
+            self.session,
+            KAP_DETAIL_URL.format(index=disclosure.index),
+            timeout=self.config.timeout_seconds,
+            delay=self.config.request_delay_seconds,
+        ).text
         attachments = extract_attachments(page_html)
-        pdfs = [
-            item
-            for item in attachments
-            if str(item.get("fileExtension") or "").lower() == "pdf"
-            or str(item.get("fileName") or "").lower().endswith(".pdf")
-        ][: self.config.max_attachments]
+        pdfs = pdf_attachments(attachments, self.config.max_attachments)
 
         budget = self.config.max_chars
         parts: list[str] = []
@@ -346,7 +345,13 @@ class DocumentFetcher:
             if not oid:
                 continue
             try:
-                payload = self._get_bytes(KAP_FILE_URL.format(oid=oid))
+                payload = get_bytes_with_retry(
+                    self.session,
+                    KAP_FILE_URL.format(oid=oid),
+                    timeout=self.config.timeout_seconds,
+                    max_bytes=self.config.max_pdf_bytes,
+                    delay=self.config.request_delay_seconds,
+                )
                 raw = pdf_text(payload)
             except Exception as exc:  # noqa: BLE001
                 LOGGER.warning(
@@ -370,36 +375,3 @@ class DocumentFetcher:
                 len(body),
             )
         return body
-
-    def _get(self, url: str) -> requests.Response:
-        response = self._request(url)
-        if self.config.request_delay_seconds:
-            time.sleep(self.config.request_delay_seconds)
-        return response
-
-    def _get_bytes(self, url: str) -> bytes:
-        response = self._get(url)
-        if len(response.content) > self.config.max_pdf_bytes:
-            raise ValueError("Ek dosya boyut sınırını aşıyor")
-        return response.content
-
-    def _request(self, url: str) -> requests.Response:
-        response: requests.Response | None = None
-        for attempt in range(1, 4):
-            response = self.session.get(
-                url, headers=HEADERS, timeout=self.config.timeout_seconds
-            )
-            if response.status_code in RETRYABLE_STATUS:
-                LOGGER.info(
-                    "KAP geçici hata verdi (deneme %s/3): HTTP %s",
-                    attempt,
-                    response.status_code,
-                )
-                time.sleep(min(2 ** (attempt - 1), 6))
-                continue
-            response.raise_for_status()
-            return response
-        if response is None:
-            raise RuntimeError("KAP yanıtı alınamadı")
-        response.raise_for_status()
-        return response

@@ -224,6 +224,44 @@ KAP'ın bu uç noktası resmî/dokümante bir API değildir; KAP arayüzünün k
 bir uç noktadır. Site değişirse uç nokta da değişebilir. Bu durumda
 `src/fetch.py` içindeki `KAP_LIGHT_URL` güncellenmelidir.
 
+### KAP erişimi tek katmanda
+
+Detay sayfası, ek dosya indirme ve HTTP yeniden deneme mantığı `src/kap.py`
+modülünde toplanır; `src/ratings.py` ve `src/documents.py` aynı yardımcıları
+kendi kopyalarını üretmez. KAP'a yapılan her istek (yeniden deneme ve bekleme
+süreleri dâhil) buradan geçer.
+
+### Kredi notu önbelleği ek dosyaları da izler
+
+Bir kredi derecelendirme bildiriminin ek PDF'i sonradan değişirse bildirimin
+başlığı/özeti değişmez; yalnızca içerik hash'i değişir. Bu yüzden kredi notu
+kaydı, ek dosyaların kimliğini de (`objId`) tutar. Her çalışmada detay sayfası
+kontrol edilir: ekler değişmediyse önbellekteki kayıt kullanılır ve PDF yeniden
+indirilmez; ek değiştiyse kayıt yeniden çıkarılır.
+
+### Kaçan günler
+
+KAP'ın hafif uç noktası **yalnızca günün bildirimlerini** döndürür ve tarih
+sorgusu bot korumasına kapalıdır (HTTP 666). Bu yüzden bir gün boyunca hiç
+çalışılmazsa o günün bildirimleri geriye dönük alınamaz. Sistem, KAP'taki en
+yeni bildirim daha önce gönderilmiş bir bildirimden eskiyse "Olası boşluk"
+uyarısı yazar; böylece kayıp fark edilir.
+
+### Bağımlılıklar ve CI
+
+`requirements.txt` aralıkları geliştirme içindir; CI `requirements-lock.txt`
+dosyasını kurar ve sürümler birebir sabittir. Bağımlılık değiştirdikten sonra
+kilidi yenile:
+
+```bash
+.venv/bin/pip install -r requirements-dev.txt
+.venv/bin/pip freeze > requirements-lock.txt
+```
+
+Actions, `actions/checkout` ve `actions/setup-python` için etiket yerine commit
+SHA'sı kullanır (tedarik zinciri koruması); etiket yükseltmesi gerektiğinde
+SHA'yı güncelle. CI ayrıca `pyflakes` ile lint adımı çalıştırır.
+
 ## Sorun giderme
 
 **`KAP isteği reddedildi: HTTP 403/405`**

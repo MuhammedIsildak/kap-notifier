@@ -1,8 +1,9 @@
 import json
 
 from src.config import RatingsConfig
+from src.kap import extract_attachments
 from src.models import Disclosure
-from src.ratings import RatingExtractor, extract_attachments, html_to_text, parse_rating
+from src.ratings import RatingExtractor, html_to_text, parse_rating
 from src.state import State
 
 
@@ -239,7 +240,7 @@ class _FakeSession:
 
 
 def test_extractor_retries_on_429(tmp_path, monkeypatch):
-    monkeypatch.setattr("src.ratings.time.sleep", lambda _seconds: None)
+    monkeypatch.setattr("src.kap.time.sleep", lambda _seconds: None)
     session = _FakeSession(
         [_FakeResponse(429), _FakeResponse(200, text="<html>ok</html>")]
     )

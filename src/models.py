@@ -25,6 +25,7 @@ class RatingInfo:
     details: tuple[str, ...] = ()
     red_flags: tuple[str, ...] = ()
     source: str = ""
+    attachments: tuple[str, ...] = ()
 
     @property
     def display_note(self) -> str:
@@ -84,6 +85,7 @@ class RatingInfo:
             "details": list(self.details),
             "red_flags": list(self.red_flags),
             "source": self.source,
+            "attachments": list(self.attachments),
         }
 
     @classmethod
@@ -98,6 +100,7 @@ class RatingInfo:
             details=tuple(str(item) for item in data.get("details") or ()),
             red_flags=tuple(str(item) for item in data.get("red_flags") or ()),
             source=str(data.get("source") or ""),
+            attachments=tuple(str(item) for item in data.get("attachments") or ()),
         )
 
 
