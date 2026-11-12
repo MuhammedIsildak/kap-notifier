@@ -759,8 +759,26 @@
       "red_flags": [],
       "summary": "Beta Enerji ve Teknoloji A.Ş. İnsan Kaynakları ve Organizasyonel Gelişim Direktörlüğü görevine Hüseyin Şenel'in atandığını duyurmuştur. Bu atama şirketin operasyonel yapısında rutin bir üst düzey yönetici değişikliği niteliğindedir.",
       "ts": "2026-11-12T17:06:26.302481+03:00"
+    },
+    "1697818": {
+      "analysis_points": [
+        "Devredilen 1.094.173.000 TL'lik varlık, Akfen GYO'nun toplam aktif büyüklüğüne oranlanarak operasyonel odak değişikliği analiz edilmelidir",
+        "Time-in Turizm Yatırımları A.Ş.'ye devredilen yükümlülüklerin (borçların) tutarı ve vadesi, Akfen GYO'nun solo bilançosundaki finansal borç yükünü nasıl değiştireceği açısından incelenmelidir",
+        "Kolaylaştırılmış usulde bölünme nedeniyle uzman kuruluş görüşü alınmamıştır → İşlemin şirket değerlemesine etkisini ölçmek için bağımsız denetim raporlarındaki varlık değerlemeleri esas alınmalıdır"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "586ef7850b73841f",
+      "materiality": "high",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [
+        "Bölünmeye konu varlıkların detaylı dökümü (Ek/1) KAP metninde yer almamaktadır",
+        "İşlem sonrası Akfen GYO'nun nakit akışı ve borçluluk rasyoları üzerindeki net etkisi belirsizdir"
+      ],
+      "summary": "Akfen GYO, 31.12.2025 tarihli finansal tablolarda 1.094.173.000 TL net kayıtlı değere sahip varlık ve yükümlülüklerini, iştirak modeliyle kısmi bölünme suretiyle yeni kurulacak Time-in Turizm Yatırımları A.Ş.'ye devretmektedir. Söz konusu işlem, Akfen GYO'nun %100 bağlı ortaklığı olacak yeni bir şirket üzerinden yürütülecek olup, operasyonel yapıda bir yeniden düzenleme niteliği taşımaktadır.",
+      "ts": "2026-11-12T23:00:54.542086+03:00"
     }
   },
-  "updated_at": "2026-11-12T21:12:23.372632+03:00",
+  "updated_at": "2026-11-12T23:00:54.542086+03:00",
   "version": 1
 }
