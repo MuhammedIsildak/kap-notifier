@@ -22,7 +22,9 @@ def test_render_escapes_html_and_contains_link():
         publish_date="11.11.2026 20:00:00",
     )
     candidate = Candidate(disclosure=disclosure, score=2, priority=0)
-    rendered = render_email([candidate], {"42": "AI <özet>"}, config, NOW)
+    rendered = render_email(
+        [candidate], {"42": Summary(text="AI <özet>")}, config, NOW
+    )
 
     assert "<script>" not in rendered.html
     assert "&lt;script&gt;" in rendered.html

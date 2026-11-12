@@ -97,14 +97,10 @@ def redact(text: str, secret: str) -> str:
     return text.replace(secret, "***") if secret else text
 
 
-def _rating_materiality(rating: RatingInfo) -> str:
-    return rating.materiality
-
-
 def _fallback_summary(rating: RatingInfo) -> Summary:
     return Summary(
         text=rating.fallback_summary(),
-        materiality=_rating_materiality(rating),
+        materiality=rating.materiality,
         category="Kredi notu",
         red_flags=rating.red_flags,
     )
