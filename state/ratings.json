@@ -1,5 +1,27 @@
 {
-  "items": {},
-  "updated_at": "2026-11-12T12:43:21.485624+03:00",
+  "items": {
+    "1697615": {
+      "hash": "601bd41888a196e1",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5e01a1cfafc60a551e"
+        ],
+        "current": "BB+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: B+ / (Durağan)",
+          "Kısa vadeli ulusal: J3 (tr) / (Negatif)"
+        ],
+        "entity": "LORAS HOLDİNG ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "BBB (tr)",
+        "red_flags": [],
+        "source": "LORAS HOLDİNG ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-12T17:06:26.302481+03:00"
+    }
+  },
+  "updated_at": "2026-11-12T17:06:26.302481+03:00",
   "version": 1
 }
