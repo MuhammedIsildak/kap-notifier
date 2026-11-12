@@ -192,6 +192,9 @@ class NvidiaClient:
             # Çoğu model JSON modunu destekler; desteklemeyenler 400 döner ve
             # aşağıdaki denemede şema olmadan tekrar istek yapılır.
             "response_format": {"type": "json_object"},
+            # Akıl yürüten modeller çıktı jetonlarını reasoning_content'e
+            # harcar; kapatmak özeti hızlandırır ve maliyeti düşürür.
+            "reasoning_effort": "none",
         }
         headers = {
             "Authorization": f"Bearer {self.client.api_key}",
@@ -203,8 +206,12 @@ class NvidiaClient:
             json_body=body,
             headers=headers,
         )
-        if response.status_code == 400:
-            body.pop("response_format", None)
+        # 400: model isteğin bazı alanlarını desteklemiyor. Önce JSON modu,
+        # sonra akıl yürütme ayarı düşürülerek yeniden denenir.
+        for optional in ("response_format", "reasoning_effort"):
+            if response.status_code != 400 or optional not in body:
+                continue
+            body.pop(optional, None)
             response = _post(
                 self.client,
                 NVIDIA_URL,

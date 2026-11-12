@@ -219,7 +219,7 @@ llm:
       model: nvidia/nemotron-3-ultra-550b-a55b
       api_key_env: NVIDIA_API_KEY
     - provider: nvidia
-      model: nvidia/nemotron-3.5-lightning-30b-a3b
+      model: minimaxai/minimax-m3.1-flash
       api_key_env: NVIDIA_API_KEY
   batch_size: 5
   # Her çalışmada en fazla kaç bildirim LLM ile özetlenir. Özetlenmeyenler
