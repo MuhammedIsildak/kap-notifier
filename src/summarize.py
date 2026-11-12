@@ -302,10 +302,11 @@ class Summarizer:
             "https://integrate.api.nvidia.com/v1/chat/completions",
             headers={"Authorization": f"Bearer {api_key}"},
             json={
-                "model": os.getenv("NIM_MODEL", "meta/llama-3.3-70b-instruct"),
+                "model": os.getenv("NIM_MODEL", "minimaxai/minimax-m3.1-flash"),
                 "messages": messages,
                 "temperature": 0.2,
                 "max_tokens": 8192,
+                "reasoning_effort": "none",
             },
             timeout=self.config.timeout_seconds,
         )
