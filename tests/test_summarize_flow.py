@@ -1,3 +1,4 @@
+from dataclasses import replace
 from unittest.mock import MagicMock, patch
 
 from src.config import LLMConfig
@@ -48,6 +49,30 @@ def test_summarizer_calls_gemini_and_caches(tmp_path, monkeypatch):
     body = post.call_args.kwargs["json"]
     assert "systemInstruction" in body
     assert "kıdemli" in body["systemInstruction"]["parts"][0]["text"].lower()
+
+
+def test_summarizer_resummarizes_when_content_changes(tmp_path, monkeypatch):
+    monkeypatch.setenv("GEMINI_API_KEY", "test-key")
+    state = State(tmp_path)
+
+    response = MagicMock()
+    response.status_code = 200
+    response.json.return_value = {
+        "candidates": [
+            {"content": {"parts": [{"text": '{"items":[{"id":"1","summary":"Yeni özet"}]}'}]}}
+        ]
+    }
+
+    with patch("src.summarize.requests.post", return_value=response) as post:
+        summarizer = Summarizer(
+            LLMConfig(enabled=True, model="test-model", batch_size=8), state
+        )
+        summarizer.summarize([disclosure()])
+        changed = replace(disclosure(), summary="Güncellenmiş KAP özeti")
+        result = summarizer.summarize([changed])
+
+    assert result["1"].text == "Yeni özet"
+    assert post.call_count == 2
 
 
 def test_summarizer_without_key_returns_empty(tmp_path, monkeypatch):

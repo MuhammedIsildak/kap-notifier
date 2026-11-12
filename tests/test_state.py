@@ -71,6 +71,23 @@ def test_rating_cache_and_content_hash(tmp_path):
     assert state.get_rating("123", "hash-2") is None
 
 
+def test_summary_cache_invalidated_when_content_changes(tmp_path):
+    state = State(tmp_path)
+    disclosure = make_disclosure()
+    state.set_summary(
+        disclosure.index,
+        Summary(text="Eski AI özeti"),
+        "test-model",
+        NOW,
+        content_hash=disclosure.content_hash(),
+    )
+
+    assert state.get_summary(disclosure.index, disclosure.content_hash()) is not None
+
+    changed = replace(disclosure, summary="Güncellenmiş özet")
+    assert state.get_summary(changed.index, changed.content_hash()) is None
+
+
 def test_old_entries_are_pruned(tmp_path):
     state = State(tmp_path)
     state.seen["old"] = {

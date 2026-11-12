@@ -100,10 +100,19 @@ class State:
                 "sent_at": sent_at,
             }
 
-    def get_summary(self, index: str) -> Summary | None:
+    def get_summary(
+        self, index: str, content_hash: str | None = None
+    ) -> Summary | None:
+        """Önbellekteki özeti döndürür.
+
+        content_hash verilirse, bildirim içeriği değiştiğinde eski özet
+        kullanılmaz; çağıran taraf yeniden özetlemek için None alır.
+        """
         entry = self.summaries.get(index) or {}
         summary = entry.get("summary")
         if not summary:
+            return None
+        if content_hash and entry.get("hash") != content_hash:
             return None
         materiality = str(entry.get("materiality") or "normal").strip().lower()
         return Summary(
@@ -118,11 +127,18 @@ class State:
         )
 
     def set_summary(
-        self, index: str, summary: Summary, model: str, now: datetime
+        self,
+        index: str,
+        summary: Summary,
+        model: str,
+        now: datetime,
+        content_hash: str | None = None,
     ) -> None:
         payload = summary.to_dict()
         payload["model"] = model
         payload["ts"] = now.isoformat()
+        if content_hash:
+            payload["hash"] = content_hash
         self.summaries[index] = payload
 
     def get_rating(
