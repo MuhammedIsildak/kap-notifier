@@ -1,9 +1,6 @@
 name: KAP Notifier
 
 on:
-  schedule:
-    # Her saat :05 UTC (= :05 TRT). GitHub cron'u birkaç dakika gecikebilir.
-    - cron: "5 * * * *"
   workflow_dispatch:
 
 permissions:
