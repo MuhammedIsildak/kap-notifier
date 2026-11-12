@@ -5,13 +5,12 @@ import logging
 import os
 import re
 import time
-from dataclasses import replace
+from dataclasses import dataclass, replace
 from datetime import datetime
 from pathlib import Path
 
-import requests
-
 from .config import LLMConfig
+from .llm import build_client
 from .models import (
     MATERIALITY_ORDER,
     Disclosure,
@@ -22,8 +21,6 @@ from .state import State
 
 LOGGER = logging.getLogger(__name__)
 
-GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 SOUL_PATH = Path(__file__).resolve().parents[1] / "soul.md"
 
 DEFAULT_SOUL = """Sen kıdemli bir kurumsal finans ve kredi analistisin.
@@ -88,23 +85,23 @@ def load_soul(path: Path = SOUL_PATH) -> str:
     return text or DEFAULT_SOUL
 
 
-def redact(text: str, secret: str) -> str:
-    """Hata mesajlarından API anahtarını siler.
+@dataclass(frozen=True)
+class Attempt:
+    """Denenecek tek bir (sağlayıcı, model) çifti ve anahtarın ortam değişkeni."""
 
-    Anahtar istek adresinde (query parametresi) taşındığı için ağ hataları
-    URL'yi düz metin olarak içerir; loglara sızmasın diye burada maskelenir.
-    """
-    return text.replace(secret, "***") if secret else text
+    provider: str
+    model: str
+    api_key_env: str
 
-
-def _rating_materiality(rating: RatingInfo) -> str:
-    return rating.materiality
+    @property
+    def label(self) -> str:
+        return f"{self.provider}/{self.model}"
 
 
 def _fallback_summary(rating: RatingInfo) -> Summary:
     return Summary(
         text=rating.fallback_summary(),
-        materiality=_rating_materiality(rating),
+        materiality=rating.materiality,
         category="Kredi notu",
         red_flags=rating.red_flags,
     )
@@ -150,18 +147,11 @@ class Summarizer:
         if not self.config.enabled or not missing:
             return results
 
-        api_key = os.getenv(self.config.api_key_env, "").strip()
-        if not api_key:
+        attempts = self._attempts()
+        if not attempts:
             LOGGER.info(
-                "%s tanımlı değil; LLM özeti atlanıyor, KAP özeti kullanılacak",
-                self.config.api_key_env,
-            )
-            return results
-
-        if self.config.provider != "gemini":
-            LOGGER.warning(
-                "Desteklenmeyen LLM sağlayıcısı: %s; LLM özeti atlanıyor",
-                self.config.provider,
+                "Kullanılabilir LLM anahtarı yok; LLM özeti atlanıyor, "
+                "KAP özeti kullanılacak"
             )
             return results
 
@@ -193,7 +183,9 @@ class Summarizer:
                 break
             batch = limited[start : start + self.config.batch_size]
             try:
-                summarized = self._call_gemini(batch, api_key, ratings, documents)
+                summarized, used_model = self._call_llm(
+                    batch, attempts, ratings, documents
+                )
             except Exception as exc:  # noqa: BLE001 - tek parti hatası tüm işi durdurmasın
                 LOGGER.warning("LLM partisi özetlenemedi: %s", exc)
                 continue
@@ -206,20 +198,70 @@ class Summarizer:
                 self.state.set_summary(
                     disclosure.index,
                     summary,
-                    model=self.config.model,
+                    model=used_model,
                     now=stamp,
                     content_hash=disclosure.content_hash(),
                 )
 
         return results
 
-    def _call_gemini(
+    def _attempts(self) -> list[Attempt]:
+        """Sırayla denenecek sağlayıcı/model zinciri.
+
+        Ana sağlayıcı, aynı sağlayıcının yedek modeli ve yapılandırılmış
+        alternatif sağlayıcılar. Anahtarı tanımlı olmayan adaylar atlanır.
+        """
+        attempts: list[Attempt] = []
+        seen: set[tuple[str, str]] = set()
+
+        def add(provider: str, model: str, api_key_env: str) -> None:
+            provider = provider.strip().lower()
+            model = model.strip()
+            if not provider or not model:
+                return
+            key = (provider, model)
+            if key in seen:
+                return
+            seen.add(key)
+            attempts.append(
+                Attempt(
+                    provider=provider,
+                    model=model,
+                    api_key_env=api_key_env.strip(),
+                )
+            )
+
+        add(self.config.provider, self.config.model, self.config.api_key_env)
+        # Yedek model aynı sağlayıcıya ait; anahtar da aynı.
+        if self.config.provider.strip().lower() == "gemini":
+            add(
+                self.config.provider,
+                self.config.fallback_model,
+                self.config.api_key_env,
+            )
+        for fallback in self.config.fallbacks:
+            add(fallback.provider, fallback.model, fallback.api_key_env)
+
+        usable: list[Attempt] = []
+        for attempt in attempts:
+            if not os.getenv(attempt.api_key_env, "").strip():
+                LOGGER.info(
+                    "%s tanımlı değil; %s atlanıyor",
+                    attempt.api_key_env,
+                    attempt.label,
+                )
+                continue
+            usable.append(attempt)
+        return usable
+
+    def _call_llm(
         self,
         batch: list[Disclosure],
-        api_key: str,
+        attempts: list[Attempt],
         ratings: dict[str, RatingInfo],
         documents: dict[str, str],
-    ) -> dict[str, Summary]:
+    ) -> tuple[dict[str, Summary], str]:
+        """Parti özetini üretir; başarılı modelin etiketini de döndürür."""
         payload = []
         for item in batch:
             rating = ratings.get(item.index)
@@ -237,27 +279,21 @@ class Summarizer:
         prompt = PROMPT.replace(
             "{payload}", json.dumps(payload, ensure_ascii=False)
         )
-        body: dict = {
-            "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-            "generationConfig": {
-                "temperature": 0.2,
-                "maxOutputTokens": 8192,
-                "responseMimeType": "application/json",
-            },
-        }
-        if self.soul:
-            body["systemInstruction"] = {"parts": [{"text": self.soul}]}
-
         valid_ids = {item.index for item in batch}
-        models = [self.config.model]
-        fallback = self.config.fallback_model.strip()
-        if fallback and fallback not in models:
-            models.append(fallback)
 
         last_error: Exception | None = None
-        for model in models:
+        for attempt in attempts:
+            api_key = os.getenv(attempt.api_key_env, "").strip()
+            if not api_key:
+                continue
             try:
-                text = self._request(model, api_key, body)
+                client = build_client(
+                    attempt.provider,
+                    attempt.model,
+                    api_key,
+                    timeout_seconds=self.config.timeout_seconds,
+                )
+                text = client.complete(prompt, self.soul or None)
                 parsed = self._parse_response(text, valid_ids)
                 for index, summary in list(parsed.items()):
                     if documents.get(index):
@@ -267,101 +303,13 @@ class Summarizer:
                         "%s bildirim için PDF içeriği özete eklendi",
                         sum(1 for item in batch if documents.get(item.index)),
                     )
-                return parsed
-            except Exception as exc:  # noqa: BLE001 - model yedeğine geç
+                return parsed, attempt.label
+            except Exception as exc:  # noqa: BLE001 - sonraki sağlayıcıya geç
                 last_error = exc
-                LOGGER.warning("LLM modeli başarısız (%s): %s", model, exc)
+                LOGGER.warning("LLM modeli başarısız (%s): %s", attempt.label, exc)
                 continue
-
-        # Gemini tarafı tükendi; NIM yedeğini dene.
-        try:
-            parsed = self._call_nim(prompt, valid_ids)
-            for index, summary in list(parsed.items()):
-                if documents.get(index):
-                    parsed[index] = replace(summary, has_document=True)
-            LOGGER.info("Bülten NIM yedeğiyle üretildi")
-            return parsed
-        except Exception as exc:  # noqa: BLE001
-            last_error = exc
 
         raise RuntimeError(f"Tüm LLM modelleri başarısız: {last_error}")
-
-    def _call_nim(
-        self,
-        prompt: str,
-        valid_ids: set[str],
-    ) -> dict[str, Summary]:
-        """Tüm Gemini modelleri başarısız olursa NVIDIA NIM (OpenAI-uyumlu) yedeği."""
-        api_key = os.getenv("NVIDIA_API_KEY", "").strip()
-        if not api_key:
-            raise RuntimeError("NVIDIA_API_KEY tanımlı değil; NIM yedeği atlandı")
-        messages = [{"role": "user", "content": prompt}]
-        if self.soul:
-            messages.insert(0, {"role": "system", "content": self.soul})
-        response = requests.post(
-            "https://integrate.api.nvidia.com/v1/chat/completions",
-            headers={"Authorization": f"Bearer {api_key}"},
-            json={
-                "model": os.getenv("NIM_MODEL", "minimaxai/minimax-m3.1-flash"),
-                "messages": messages,
-                "temperature": 0.2,
-                "max_tokens": 8192,
-                "reasoning_effort": "none",
-            },
-            timeout=self.config.timeout_seconds,
-        )
-        response.raise_for_status()
-        text = response.json()["choices"][0]["message"]["content"]
-        return self._parse_response(text, valid_ids)
-
-    def _request(self, model: str, api_key: str, body: dict) -> str:
-        url = GEMINI_URL.format(model=model)
-        response: requests.Response | None = None
-        for attempt in range(1, 5):
-            try:
-                response = requests.post(
-                    url,
-                    params={"key": api_key},
-                    json=body,
-                    timeout=self.config.timeout_seconds,
-                )
-            except requests.RequestException as exc:
-                LOGGER.warning(
-                    "Gemini isteği başarısız (deneme %s/4, %s): %s",
-                    attempt,
-                    model,
-                    redact(str(exc), api_key),
-                )
-                time.sleep(min(2 ** attempt, 10))
-                continue
-            if response.status_code in RETRYABLE_STATUS:
-                LOGGER.warning(
-                    "Gemini geçici hata verdi (deneme %s/4, %s): HTTP %s",
-                    attempt,
-                    model,
-                    response.status_code,
-                )
-                time.sleep(min(2 ** attempt, 10))
-                continue
-            break
-
-        if response is None:
-            raise RuntimeError("Gemini yanıtı alınamadı")
-        if response.status_code >= 400:
-            snippet = response.text[:300].replace("\n", " ")
-            raise RuntimeError(f"Gemini HTTP {response.status_code}: {snippet}")
-
-        data = response.json()
-        candidates = data.get("candidates") or []
-        if not candidates:
-            feedback = data.get("promptFeedback") or {}
-            raise RuntimeError(f"Gemini boş yanıt döndü: {feedback}")
-
-        parts = candidates[0].get("content", {}).get("parts") or []
-        text = "".join(str(part.get("text") or "") for part in parts).strip()
-        if not text:
-            raise RuntimeError("Gemini metin döndürmedi")
-        return text
 
     @staticmethod
     def _parse_response(text: str, valid_ids: set[str]) -> dict[str, Summary]:
@@ -369,14 +317,13 @@ class Summarizer:
         cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned, flags=re.IGNORECASE)
         cleaned = re.sub(r"\s*```$", "", cleaned)
 
-        try:
-            parsed = json.loads(cleaned)
-        except ValueError as exc:
-            raise RuntimeError(f"Gemini JSON döndürmedi: {cleaned[:160]}") from exc
+        parsed = _loads_json(cleaned)
+        if parsed is None:
+            raise RuntimeError(f"LLM JSON döndürmedi: {cleaned[:160]}")
 
         items = parsed.get("items") if isinstance(parsed, dict) else parsed
         if not isinstance(items, list):
-            raise RuntimeError("Gemini yanıtında items listesi yok")
+            raise RuntimeError("LLM yanıtında items listesi yok")
 
         results: dict[str, Summary] = {}
         for item in items:
@@ -407,6 +354,47 @@ class Summarizer:
                 has_document=has_document,
             )
         return results
+
+
+def _loads_json(text: str) -> object | None:
+    """Metni JSON'a çevirir; çeviremezse metindeki ilk JSON nesnesini dener.
+
+    Gemini JSON modu temiz yanıt verir; OpenAI uyumlu sağlayıcılar (NVIDIA)
+    ise modele göre metni çevreleyen ek açıklama ekleyebilir.
+    """
+    try:
+        return json.loads(text)
+    except ValueError:
+        pass
+
+    start = text.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    in_string = False
+    escaped = False
+    for index in range(start, len(text)):
+        char = text[index]
+        if in_string:
+            if escaped:
+                escaped = False
+            elif char == "\\":
+                escaped = True
+            elif char == '"':
+                in_string = False
+            continue
+        if char == '"':
+            in_string = True
+        elif char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(text[start : index + 1])
+                except ValueError:
+                    return None
+    return None
 
 
 def _string_list(value: object, *, limit: int, length: int) -> tuple[str, ...]:

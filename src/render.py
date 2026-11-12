@@ -41,14 +41,6 @@ ACTION_COLORS = {
 }
 
 
-def _as_summary(value: Summary | str | None) -> Summary | None:
-    if value is None:
-        return None
-    if isinstance(value, Summary):
-        return value
-    return Summary(text=str(value))
-
-
 def _effective_materiality(
     candidate: Candidate,
     summary: Summary | None,
@@ -293,17 +285,13 @@ def _split_groups(
 
 def render_email(
     candidates: list[Candidate],
-    summaries: dict[str, Summary | str],
+    summaries: dict[str, Summary],
     config: AppConfig,
     now: datetime,
     ratings: dict[str, RatingInfo] | None = None,
 ) -> RenderedEmail:
     ratings = ratings or {}
-    parsed_summaries = {
-        index: summary
-        for index, value in summaries.items()
-        if (summary := _as_summary(value)) is not None
-    }
+    parsed_summaries = dict(summaries)
 
     def sort_key(item: Candidate) -> tuple[int, int, float]:
         summary = parsed_summaries.get(item.disclosure.index)

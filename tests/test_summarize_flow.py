@@ -35,7 +35,7 @@ def test_summarizer_calls_gemini_and_caches(tmp_path, monkeypatch):
         ]
     }
 
-    with patch("src.summarize.requests.post", return_value=response) as post:
+    with patch("src.llm.requests.post", return_value=response) as post:
         summarizer = Summarizer(
             LLMConfig(enabled=True, model="test-model", batch_size=8), state
         )
@@ -63,7 +63,7 @@ def test_summarizer_resummarizes_when_content_changes(tmp_path, monkeypatch):
         ]
     }
 
-    with patch("src.summarize.requests.post", return_value=response) as post:
+    with patch("src.llm.requests.post", return_value=response) as post:
         summarizer = Summarizer(
             LLMConfig(enabled=True, model="test-model", batch_size=8), state
         )
@@ -108,7 +108,7 @@ def test_rating_fallback_without_key(tmp_path, monkeypatch):
 
 def test_falls_back_to_second_model_on_503(tmp_path, monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", "test-key")
-    monkeypatch.setattr("src.summarize.time.sleep", lambda _seconds: None)
+    monkeypatch.setattr("src.llm.time.sleep", lambda _seconds: None)
     state = State(tmp_path)
 
     unavailable = MagicMock()
@@ -123,7 +123,7 @@ def test_falls_back_to_second_model_on_503(tmp_path, monkeypatch):
     }
 
     with patch(
-        "src.summarize.requests.post", side_effect=[unavailable] * 4 + [ok]
+        "src.llm.requests.post", side_effect=[unavailable] * 4 + [ok]
     ) as post:
         summarizer = Summarizer(
             LLMConfig(

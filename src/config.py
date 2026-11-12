@@ -81,6 +81,15 @@ class QuietHoursConfig:
 
 
 @dataclass(frozen=True)
+class FallbackProvider:
+    """Ana sağlayıcı başarısız olduğunda denenecek alternatif sağlayıcı."""
+
+    provider: str = "nvidia"
+    model: str = ""
+    api_key_env: str = "NVIDIA_API_KEY"
+
+
+@dataclass(frozen=True)
 class LLMConfig:
     enabled: bool = True
     provider: str = "gemini"
@@ -91,6 +100,7 @@ class LLMConfig:
     max_items_per_run: int = 30
     timeout_seconds: int = 60
     max_run_seconds: int = 600
+    fallbacks: tuple[FallbackProvider, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -194,6 +204,16 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         end=str(quiet_raw.get("end") or "08:00"),
     )
 
+    fallbacks = tuple(
+        FallbackProvider(
+            provider=str(item.get("provider") or "nvidia").lower(),
+            model=str(item.get("model") or "").strip(),
+            api_key_env=str(item.get("api_key_env") or "NVIDIA_API_KEY").strip(),
+        )
+        for item in (llm_raw.get("fallbacks") or [])
+        if isinstance(item, dict) and str(item.get("model") or "").strip()
+    )
+
     llm = LLMConfig(
         enabled=_as_bool(llm_raw.get("enabled"), True),
         provider=str(llm_raw.get("provider") or "gemini").lower(),
@@ -206,6 +226,7 @@ def load_config(path: str | Path = "config.yaml") -> AppConfig:
         max_items_per_run=max(0, _as_int(llm_raw.get("max_items_per_run"), 30)),
         timeout_seconds=max(5, _as_int(llm_raw.get("timeout_seconds"), 60)),
         max_run_seconds=max(30, _as_int(llm_raw.get("max_run_seconds"), 600)),
+        fallbacks=fallbacks,
     )
 
     ratings = RatingsConfig(
