@@ -273,7 +273,45 @@ class Summarizer:
                 LOGGER.warning("LLM modeli başarısız (%s): %s", model, exc)
                 continue
 
+        # Gemini tarafı tükendi; NIM yedeğini dene.
+        try:
+            parsed = self._call_nim(prompt, valid_ids)
+            for index, summary in list(parsed.items()):
+                if documents.get(index):
+                    parsed[index] = replace(summary, has_document=True)
+            LOGGER.info("Bülten NIM yedeğiyle üretildi")
+            return parsed
+        except Exception as exc:  # noqa: BLE001
+            last_error = exc
+
         raise RuntimeError(f"Tüm LLM modelleri başarısız: {last_error}")
+
+    def _call_nim(
+        self,
+        prompt: str,
+        valid_ids: set[str],
+    ) -> dict[str, Summary]:
+        """Tüm Gemini modelleri başarısız olursa NVIDIA NIM (OpenAI-uyumlu) yedeği."""
+        api_key = os.getenv("NVIDIA_API_KEY", "").strip()
+        if not api_key:
+            raise RuntimeError("NVIDIA_API_KEY tanımlı değil; NIM yedeği atlandı")
+        messages = [{"role": "user", "content": prompt}]
+        if self.soul:
+            messages.insert(0, {"role": "system", "content": self.soul})
+        response = requests.post(
+            "https://integrate.api.nvidia.com/v1/chat/completions",
+            headers={"Authorization": f"Bearer {api_key}"},
+            json={
+                "model": os.getenv("NIM_MODEL", "meta/llama-3.3-70b-instruct"),
+                "messages": messages,
+                "temperature": 0.2,
+                "max_tokens": 8192,
+            },
+            timeout=self.config.timeout_seconds,
+        )
+        response.raise_for_status()
+        text = response.json()["choices"][0]["message"]["content"]
+        return self._parse_response(text, valid_ids)
 
     def _request(self, model: str, api_key: str, body: dict) -> str:
         url = GEMINI_URL.format(model=model)

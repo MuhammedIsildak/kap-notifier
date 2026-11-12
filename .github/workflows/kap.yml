@@ -55,6 +55,7 @@ jobs:
           KAP_EMAIL_FROM: ${{ secrets.KAP_EMAIL_FROM }}
           KAP_EMAIL_TO: ${{ secrets.KAP_EMAIL_TO }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
         run: python main.py
 
       - name: State'i kaydet
