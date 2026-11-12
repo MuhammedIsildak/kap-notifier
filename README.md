@@ -73,6 +73,9 @@ Tüm filtreler `config.yaml` içinde:
   08:05'te tek e-postada gelir. Kapatmak için `enabled: false`.
 - `llm`: Gemini modeli, yedek model, parti boyutu ve çalışma başına limit.
   `llm.fallback_model`, ana model 503/429 verdiğinde devreye girer.
+  `llm.fallbacks`, ana sağlayıcı da başarısız olduğunda sırayla denenecek
+  alternatif sağlayıcı listesidir (ör. NVIDIA NIM). Her aday kendi
+  `api_key_env` değişkenini kullanır; anahtarı tanımlı olmayan aday atlanır.
   `llm.max_items_per_run` tek çalışmada LLM'e gönderilecek bildirim sayısıdır;
   aşan bildirimler KAP özetiyle gönderilir, sonraki çalışmada özetlenir.
   `llm.max_run_seconds` LLM'e ayrılan toplam süre bütçesidir; Actions işi
@@ -169,12 +172,39 @@ AI çıktısı serbest metin değil, yapılandırılmış JSON'dur:
 Deterministik filtre ile AI'nın maddiyet değerlendirmesi çelişirse **daha ağır
 olan** kullanılır; yani AI bir temerrüdü "rutin" sayarak düşüremez.
 
-Analist personası `soul.md` dosyasındadır ve Gemini'ye `systemInstruction`
-olarak gönderilir. Neyin kritik/yüksek/rutin sayıldığı, nasıl yazılacağı ve
-çıktı disiplini burada tanımlıdır. Dosyayı düzenleyerek tonu değiştirebilirsin.
+Analist personası `soul.md` dosyasındadır ve Gemini'ye `systemInstruction`,
+NVIDIA'ya ise `system` rolüyle gönderilir. Neyin kritik/yüksek/rutin sayıldığı,
+nasıl yazılacağı ve çıktı disiplini burada tanımlıdır. Dosyayı düzenleyerek
+tonu değiştirebilirsin.
 
 Ücretsiz kota ve model adları zamanla değişebilir. `config.yaml` içindeki
 `llm.model` değerini güncel ücretsiz modelle değiştirebilirsin.
+
+## LLM sağlayıcı zinciri
+
+Özetleme tek bir sağlayıcıya bağlı değildir. Sırayla denenen bir zincir vardır:
+
+1. `llm.provider` + `llm.model` (varsayılan: Gemini)
+2. Aynı sağlayıcının `llm.fallback_model` modeli
+3. `llm.fallbacks` listesindeki alternatif sağlayıcılar (ör. NVIDIA NIM)
+
+İlk başarılı yanıtı veren aday kullanılır. Adayın API anahtarı tanımlı değilse
+o aday sessizce atlanır; tüm adaylar başarısız olursa bildirim KAP özetiyle
+gönderilir. Özeti üreten model `state/summaries.json` içinde `model` alanıyla
+kaydedilir.
+
+Desteklenen sağlayıcılar:
+
+| Sağlayıcı | Uç nokta | Anahtar |
+|---|---|---|
+| `gemini` | `generativelanguage.googleapis.com` (generateContent) | `GEMINI_API_KEY` |
+| `nvidia` | `integrate.api.nvidia.com` (OpenAI uyumlu chat/completions) | `NVIDIA_API_KEY` |
+
+NVIDIA NIM ücretsiz krediyle çalışır; `build.nvidia.com` üzerinden alınan
+anahtar `nvapi-` ile başlar. Anahtar `Authorization` başlığında taşınır, adrese
+gömülmez, bu yüzden hata mesajlarına sızma riski düşüktür. Ücretsiz kredi
+saatlik/daily limitlere tabidir; limit dolduğunda zincirdeki bir sonraki
+sağlayıcıya düşülür.
 
 ## GitHub Actions ile saatlik çalıştırma
 
@@ -191,6 +221,7 @@ olarak gönderilir. Neyin kritik/yüksek/rutin sayıldığı, nasıl yazılacağ
 | `KAP_SMTP_HOST` | Hayır | Varsayılan: `smtp.gmail.com` |
 | `KAP_SMTP_PORT` | Hayır | Varsayılan: `465` |
 | `GEMINI_API_KEY` | Hayır | AI özeti için |
+| `NVIDIA_API_KEY` | Hayır | Gemini başarısız olduğunda yedek sağlayıcı (NVIDIA NIM) |
 
 3. Actions sekmesinden **KAP Notifier → Run workflow** ile bir kez elle çalıştır.
 4. İlk çalıştırmada `state` branch'i otomatik oluşturulur. Görülen bildirimler
@@ -284,9 +315,10 @@ Normal Gmail şifresi değil, 2FA açıkken oluşturulan uygulama şifresi kulla
 **Gemini 429 / kota**
 `llm.batch_size` ve `llm.max_items_per_run` değerlerini düşür veya
 `llm.enabled: false` yap. E-posta yine çalışır. 503 "high demand" hatalarında
-her model dört kez denenir, sonra yedek modele geçilir; yine olmazsa o parti
-KAP özetiyle geçer. Toplam süre `llm.max_run_seconds` bütçesini aşarsa kalan
-partiler atlanır.
+her model dört kez denenir, sonra yedek modele geçilir; `llm.fallbacks`
+tanımlıysa ondan sonra alternatif sağlayıcı denenir. Hepsi başarısız olursa o
+parti KAP özetiyle geçer. Toplam süre `llm.max_run_seconds` bütçesini aşarsa
+kalan partiler atlanır.
 
 **Kredi notu tablosu boş / eksik**
 KAP detay sayfası veya ek PDF değişmiş olabilir. `ratings.max_items_per_run`
@@ -304,6 +336,7 @@ değerini `gemini-3.5-flash` yap.
 - GitHub Actions: public repo için ücretsiz.
 - Gmail SMTP: ücretsiz (günlük makul gönderim limitleri içinde).
 - Gemini API: ücretsiz kota yeterli; kota biterse KAP özetine düşer.
+- NVIDIA NIM: ücretsiz kredi (limitli); Gemini'e yedek olarak kullanılır.
 - Sunucu/veritabanı: yok.
 
 ## Notlar

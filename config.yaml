@@ -211,6 +211,16 @@ llm:
   # Yoğun saatlerde 503 gelirse bu modele düşülür; hızlı ve genelde müsait.
   fallback_model: gemini-3.1-flash-lite
   api_key_env: GEMINI_API_KEY
+  # Ana sağlayıcı (ve aynı sağlayıcının yedek modeli) başarısız olursa
+  # sırayla bu alternatif sağlayıcılar denenir. NVIDIA NIM ücretsiz krediyle
+  # çalışır; anahtarı NVIDIA_API_KEY ortam değişkeninde aranır.
+  fallbacks:
+    - provider: nvidia
+      model: nvidia/nemotron-3-ultra-550b-a55b
+      api_key_env: NVIDIA_API_KEY
+    - provider: nvidia
+      model: nvidia/nemotron-3.5-lightning-30b-a3b
+      api_key_env: NVIDIA_API_KEY
   batch_size: 5
   # Her çalışmada en fazla kaç bildirim LLM ile özetlenir. Özetlenmeyenler
   # KAP özetiyle yine de gönderilir, sonraki çalışmada özetlenir.

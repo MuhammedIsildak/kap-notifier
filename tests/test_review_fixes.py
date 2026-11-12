@@ -13,7 +13,8 @@ from src.documents import DocumentFetcher
 from src.models import Disclosure
 from src.ratings import RatingExtractor
 from src.state import State
-from src.summarize import Summarizer, redact
+from src.llm import redact
+from src.summarize import Summarizer
 
 NOW = datetime.now(ZoneInfo("Europe/Istanbul"))
 
@@ -36,7 +37,7 @@ def test_api_key_is_masked_in_error_messages():
 def test_gemini_failure_does_not_log_api_key(tmp_path, monkeypatch, caplog):
     """Anahtar istek adresinde taşındığı için ağ hatasında loga sızabilirdi."""
     monkeypatch.setenv("GEMINI_API_KEY", "SECRET-KEY")
-    monkeypatch.setattr("src.summarize.time.sleep", lambda _seconds: None)
+    monkeypatch.setattr("src.llm.time.sleep", lambda _seconds: None)
     state = State(tmp_path)
     summarizer = Summarizer(LLMConfig(enabled=True, model="m"), state)
 
@@ -45,7 +46,7 @@ def test_gemini_failure_does_not_log_api_key(tmp_path, monkeypatch, caplog):
         "?key=SECRET-KEY"
     )
     with caplog.at_level(logging.WARNING):
-        with patch("src.summarize.requests.post", side_effect=failure):
+        with patch("src.llm.requests.post", side_effect=failure):
             summarizer.summarize([disclosure()])
 
     assert "SECRET-KEY" not in caplog.text
@@ -100,7 +101,7 @@ def test_llm_limit_applies_to_the_whole_run(tmp_path, monkeypatch):
     response.json.return_value = {
         "candidates": [{"content": {"parts": [{"text": '{"items":[]}'}]}}]
     }
-    with patch("src.summarize.requests.post", return_value=response) as post:
+    with patch("src.llm.requests.post", return_value=response) as post:
         summarizer.summarize([disclosure("1")])
         summarizer.summarize([disclosure("2")])
 
@@ -128,7 +129,7 @@ def test_llm_deadline_stops_new_batches(tmp_path, monkeypatch):
     response.json.return_value = {
         "candidates": [{"content": {"parts": [{"text": '{"items":[]}'}]}}]
     }
-    with patch("src.summarize.requests.post", return_value=response) as post:
+    with patch("src.llm.requests.post", return_value=response) as post:
         result = summarizer.summarize([disclosure("1")])
 
     assert result == {}
