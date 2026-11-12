@@ -493,8 +493,108 @@
       "red_flags": [],
       "summary": "ÖZYAŞAR TEL VE GALVANİZLEME SANAYİ A.Ş., 11.11.2026 tarihinde 2026 yılı 9 aylık konsolide yatırımcı sunumunu yayımlamıştır. Açıklama rutin bilgilendirme niteliğinde olup şirket tarafından ek bir finansal büyüklük bildirilmemiştir. Analistlerin dönemsel operasyonel performans ve nakit akış göstergelerini incelemesi açısından önem taşımaktadır.",
       "ts": "2026-11-11T21:57:30.209520+03:00"
+    },
+    "1697421": {
+      "analysis_points": [
+        "Asgari özsermaye açığı 45.815.061,09 TL → 100 milyon TL'lik nakit sermaye artırımı ile tamamen kapatılıyor",
+        "Mevcut sermaye 213 milyon TL'den 313 milyon TL'ye çıkıyor → Aracı kurumun sermaye yeterliliği rasyoları yasal tabanın üzerine taşınır",
+        "Sermaye artırımının tamamı nakden ve tescilden önce ödendi → Şirketin likiditesine doğrudan nakit girişi sağlandı"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "materiality": "high",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [
+        "Sermaye yeterliliği tebliği uyarınca asgari özsermaye açığı bulunması",
+        "Mevzuat gereği açığın kapatılması zorunluluğu"
+      ],
+      "summary": "Ata Yatırım Menkul Kıymetler A.Ş., SPK'nın 05.10.2026 tarihli yazısıyla sermaye yeterliliği tebliği uyarınca tespit edilen 45.815.061,09 TL asgari özsermaye açığı ve diğer mevzuat açıkları nedeniyle sermayesini 213.000.000 TL'den 313.000.000 TL'ye yükseltme kararı aldı. Artan 100.000.000 TL'lik kısmın 99.938.966,43 TL'si Ata Holding A.Ş., 61.033,57 TL'si ise Seniha Ece Kurdoğlu tarafından nakden karşılandı. Bu operasyon, yasal sermaye yeterliliği açığının kapatılması ve regülasyon uyumunun sağlanması açısından kritik önem taşıyor.",
+      "ts": "2026-11-12T12:43:47.129308+03:00"
+    },
+    "1697445": {
+      "analysis_points": [
+        "Hasılat 809,9 milyon TL (%19,3 artış), FAVÖK 260,5 milyon TL (%86 artış) → Operasyonel kârlılıkta belirgin iyileşme var",
+        "Net dönem kârı 60,5 milyon TL, net kâr marjı %7,5 → Hasılat büyümesine kıyasla net kâr marjı düşük kalmaya devam ediyor",
+        "Özkaynaklar 559,7 milyon TL seviyesine ulaştı → Şirketin bilanço yapısı ve özkaynak tabanı güçleniyor"
+      ],
+      "category": "Finansnal rapor",
+      "has_document": true,
+      "materiality": "normal",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Oncosem Onkolojik Sistemler Sanayi ve Ticaret A.Ş., 2026 yılının ilk dokuz aylık döneminde 809,9 milyon TL hasılat ve 60,5 milyon net dönem kârı açıkladı. Hasılat geçen yılın aynı dönemine göre %19,3 artarken, esas faaliyet kârı %143,7 ve FAVÖK %86 artış gösterdi. Operasyonel karlılıktaki bu güçlü artış, şirketin maliyet yönetimi ve katma değerli ürün odaklı büyüme stratejisinin finansal sonuçlara yansıdığını gösteriyor.",
+      "ts": "2026-11-12T12:43:47.129319+03:00"
+    },
+    "1697487": {
+      "analysis_points": [
+        "Fonksiyonel para birimi Avro olan şirketin finansal verileri 30 Eylül 2026 kuru olan 55,5890 ile TL'ye çevrilmiştir → Çevrim kurlarındaki hareketler sonraki dönem bilançolarında kur farkı etkisini belirleyecektir",
+        "Rapor dönemi kârı 3.706,97 milyon TL, net kâr marjı %5,0 olarak gerçekleşmiştir → Kârlılık oranları dönemsel operasyonel performansı yansıtmaktadır",
+        "Serbest nakit akışları 6.531,39 milyon TL seviyesindedir → Nakit yaratma kapasitesi borç servis ve yatırım kapasitesini desteklemektedir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "materiality": "normal",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "DO & CO Aktiengesellschaft, 1 Nisan 2026 - 30 Eylül 2026 hesap dönemine ait bağımsız denetimden geçmiş konsolide finansal raporunu açıklamıştır. Şirketin fonksiyonel para birimi Avro olup, raporlama dönemi sonu itibarıyla EUR/TRY kuru 55,5890 olarak alınmıştır. Finansal raporun İngilizce ve Almanca orijinal metinlerine ilgili internet adreslerinden ulaşılabileceği belirtilmiştir.",
+      "ts": "2026-11-12T12:43:58.073443+03:00"
+    },
+    "1697489": {
+      "analysis_points": [
+        "Net borçlar 30 Eylül 2026 itibarıyla -2.940,40 milyon TL (nakit pozisyonu) → Net Borç/FAVÖK oranı -0.17 seviyesinde olup finansal kaldıraç riski bulunmuyor",
+        "Nakit ve nakit benzerleri 16.047,58 milyon TL seviyesinde → Güçlü likidite yapısı operasyonel esneklik sağlıyor",
+        "Özkaynaklar 35.372,30 milyon TL, özkaynak oranı %43,0 → Bilanço yapısı sermaye yeterliliğini destekliyor"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "materiality": "normal",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "DO & CO Aktiengesellschaft, 1 Nisan 2026 - 30 Eylül 2026 dönemini kapsayan 2026/2027 mali yılı 1. yarıyıl konsolide faaliyet raporunu yayımlamıştır. Rapora göre şirket 74.525,49 milyon TL satış geliri, 9.273,09 milyon TL FAVÖK ve 3.706,97 milyon TL konsolide kâr elde etmiştir. Finansal tabloların EUR/TRY kuru 30 Eylül 2026 itibarıyla 55,5890 üzerinden Türk Lirası'na çevrildiği bildirilmiştir.",
+      "ts": "2026-11-12T12:43:58.073426+03:00"
+    },
+    "1697500": {
+      "analysis_points": [
+        "İşlem rutin genel kurul hazırlık aşamasıdır → Şirketin finansal görünümüne doğrudan etkisi bulunmuyor",
+        "Toplantı nisabı ve katılım bilgileri yer alıyor → Yönetişim prosedürleri çerçevesinde olağan bir süreçtir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "materiality": "low",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Diriteks Diriliş Tekstil Sanayi ve Ticaret A.Ş., 2024-2025 yılı olağan genel kurul toplantısına ilişkin hazır bulunanlar listesini bildirdi. Açıklama rutin bir şirket genel kurulu idari işlemidir ve şirketin finansal yapısında doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-12T12:43:47.129323+03:00"
+    },
+    "1697516": {
+      "analysis_points": [
+        "Toplam 175 milyon Avro ve 5 yıl vade → Bankanın dış kaynaklı uzun vadeli likidite pozisyonunu güçlendirir",
+        "Kredilerin kullanım alanları (kadın/genç KOBİ, yeşil dönüşüm) → ESG kriterli fonlamalara erişim maliyetini optimize eder",
+        "Tutar ve vade net, ancak maliyet ve faiz oranları belirsiz → Net faiz marjına (NIM) etkisi bilanço döneminde görülecek"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "materiality": "high",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Denizbank A.Ş., Avrupa İmar ve Kalkınma Bankası (EBRD) ile TURWIB-II, TURYIB ve GEFF III programları kapsamında toplam 175 milyon Avro tutarında, 5 yıl vadeli kredi sözleşmeleri imzaladı. Krediler kadın KOBİ'leri, genç KOBİ'leri ve yeşil dönüşüm yatırımlarını desteklemek amacıyla kullandırılacak. Bu uzun vadeli fonlama, bankanın bilanço vade yapısını desteklemesi ve hedefli segmentlerde kredi hacmini artırması açısından önem taşıyor.",
+      "ts": "2026-11-12T12:43:47.129279+03:00"
+    },
+    "1697528": {
+      "analysis_points": [
+        "İhraç belgesi onaylandı ancak tutar belgede belirtilmemiş → Etki hesaplanamıyor, ihraç anındaki duyurular ve KAP ekleri incelenmeli",
+        "Yurtdışı borçlanma aracı tavanı → Şirketin borçlanma çeşitliliğini artırır",
+        "Vade ve maliyet bilgisi yok → Piyasa koşullarına göre borçlanma maliyeti takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "materiality": "high",
+      "model": "gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Yapı Kredi Faktoring A.Ş.'nin yurtdışı borçlanma araçlarına ilişkin ihraç belgesi SPK tarafından onaylandı. Bu onay, şirketin yurtdışı sermaye piyasalarında borçlanma tavanı açmasını sağlayarak alternatif likidite kaynaklarına erişim imkanı tanıyor. İhraç tutarı ve koşulları bu belgede yer almamakla birlikte, orta vadeli fonlama stratejisi açısından önem arz ediyor.",
+      "ts": "2026-11-12T12:43:47.129314+03:00"
     }
   },
-  "updated_at": "2026-11-11T21:57:18.595281+03:00",
+  "updated_at": "2026-11-12T12:43:21.485624+03:00",
   "version": 1
 }
