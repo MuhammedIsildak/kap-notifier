@@ -932,8 +932,22 @@
       ],
       "summary": "Ata Yatırım Menkul Kıymetler A.Ş., SPK Aracı Kurumlar Dairesi'nin 05.10.2026 tarihli yazısıyla özsermaye açığı tespit edilmesi üzerine sermayesini 213.000.000 TL'den 313.000.000 TL'ye yükseltme kararı almıştır. Mevcut sermaye açığının kapatılması ve tebliğ yükümlülüklerinin yerine getirilmesi amacıyla yapılan bu nakit artırımın 99.938.966,43 TL'si Ata Holding A.Ş., 61.033,57 TL'si ise Seniha Ece Kurdoğlu tarafından karşılanacaktır. Bu operasyon şirketin yasal sermaye yeterliliği sorununu çözmeyi hedeflemektedir.",
       "ts": "2026-11-13T14:00:55.473752+03:00"
+    },
+    "1697951": {
+      "analysis_points": [
+        "100 milyon dolar tutarında 5 yıl vadeli dış kaynak → bankanın uzun vadeli döviz likiditesini destekler ve vade yapısını iyileştirir",
+        "Fonun kullanım alanı iklim değişikliği finansmanı → yeşil kredi portföyünün büyümesine ve sürdürülebilirlik kriterli fon maliyetlerine etkisi izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "108292ec27029033",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "DENİZBANK A.Ş., Japonya Uluslararası İş Birliği Ajansı (JICA) ile 13.11.2026 tarihinde iklim değişikliği finansmanında kullanılmak üzere 100 milyon dolar tutarında 5 yıl vadeli iş birliği anlaşması imzalamıştır. Bu uzun vadeli dış kaynak temini, bankanın dış borçlanma vadesini uzatması ve yeşil finansman portföyünü genişletmesi açısından önemlidir. Anlaşma, döviz cinsinden likidite ve maliyet yapısını doğrudan etkileyecektir.",
+      "ts": "2026-11-13T14:29:06.316794+03:00"
     }
   },
-  "updated_at": "2026-11-13T14:00:55.473752+03:00",
+  "updated_at": "2026-11-13T14:29:06.316794+03:00",
   "version": 1
 }
