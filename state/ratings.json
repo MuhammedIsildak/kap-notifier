@@ -20,8 +20,117 @@
         "source": "LORAS HOLDİNG ANONİM ŞİRKETİ.pdf"
       },
       "ts": "2026-11-12T17:06:26.302481+03:00"
+    },
+    "1698125": {
+      "hash": "85b85781433c8945",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5e01a1d46f41057739"
+        ],
+        "current": "AA- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "METROPAL KURUMSAL HİZMETLER ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "",
+        "red_flags": [
+          "2026 yılının ilk yarısında nakit yaratımındaki zayıflamaya ve yıl içerisinde gerçekleştirilen temettü ödemeleri ile pay geri alımlarının nakit pozisyonu üzerinde yaratması beklenen baskıya rağmen, yapısal olarak desteklenen operasyonel naki"
+        ],
+        "source": "METROPAL KURUMSAL HİZMETLER ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-13T19:00:56.576724+03:00"
+    },
+    "1698126": {
+      "hash": "fb70a9ac5062d179",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da17e515f01a1d4c6c29f23e9"
+        ],
+        "current": "BBB- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB- / (Durağan)",
+          "Kısa vadeli ulusal: J3 (tr) / (Durağan)"
+        ],
+        "entity": "MARGÜN ENERJİ ÜRETİM SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "BBB (tr)",
+        "red_flags": [],
+        "source": "MARGÜN ENERJİ ÜRETİM SANAYİ VE TİCARET ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-13T19:00:56.576724+03:00"
+    },
+    "1698127": {
+      "hash": "cdd971e4fc2a626a",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5e01a1d470c08d7769"
+        ],
+        "current": "BBB+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "MENDERES TEKSTİL SANAYİ VE TİCARET A.Ş.",
+        "outlook": "Stabil",
+        "previous": "A (tr)",
+        "red_flags": [],
+        "source": "MENDERES TEKSTİL SANAYİ VE TİCARET AŞ.pdf"
+      },
+      "ts": "2026-11-13T19:00:56.576724+03:00"
+    },
+    "1698137": {
+      "hash": "67b5d50b3e0331a6",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5f01a1d581b1e45eb7"
+        ],
+        "current": "BBB+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "MENDERES TEKSTİL SANAYİ VE TİCARET A.Ş.",
+        "outlook": "Stabil",
+        "previous": "A (tr)",
+        "red_flags": [],
+        "source": "MENDERES TEKSTİL AŞ RATING BİLDİRİM FORMU.pdf"
+      },
+      "ts": "2026-11-13T19:00:56.576724+03:00"
+    },
+    "1698152": {
+      "hash": "9a637c13ea59ff5b",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5f01a1d58afbbd6115"
+        ],
+        "current": "AA- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "METROPAL KURUMSAL HİZMETLER ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "",
+        "red_flags": [
+          "2026 yılının ilk yarısında nakit yaratımındaki zayıflamaya ve yıl içerisinde gerçekleştirilen temettü ödemeleri ile pay geri alımlarının nakit pozisyonu üzerinde yaratması beklenen baskıya rağmen, yapısal olarak desteklenen operasyonel naki"
+        ],
+        "source": "METROPAL KURUMSAL HİZMETLER ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-13T19:00:56.576724+03:00"
     }
   },
-  "updated_at": "2026-11-13T18:00:56.829551+03:00",
+  "updated_at": "2026-11-13T19:00:56.576724+03:00",
   "version": 1
 }
