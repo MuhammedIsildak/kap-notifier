@@ -1608,8 +1608,25 @@
       ],
       "summary": "Türkiye Sigorta A.Ş., 7596 sayılı Kanun ve SPK kararlarına istinaden yapılan bir ödemeye ilişkin özel durum açıklaması yapmıştır. Açıklamada şirket nezdinde yürütülen iç denetimler ile TMSF ve SPK görüşmeleri sonucunda belirli hususların kamuoyuna sunulduğu belirtilmiştir. Bildirim metninde kesin bir tutar veya ödeme kalemi detaylı olarak yer almamaktadır.",
       "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698204": {
+      "analysis_points": [
+        "Geç Muvafakat Ücreti nominal tutarın %0,40'ı olarak belirlendi → Toplam nominal borç tutarı KAP ekinden kontrol edilerek toplam maliyet hesaplanmalı",
+        "XS2926261426 ve US98977LAA44 ISIN kodlu tahvillerin anapara ve kupon vadeleri → Yaklaşık nakit çıkış takvimi ve refinansman baskısı yeniden modellenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "e63f3457326604c7",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yurt dışı tahviller için muvafakat talebi sürecinin devam etmesi borç servis riskine işaret eder",
+        "Geç Muvafakat Ücreti oranının %0,40'a yükseltilmesi finansman maliyetini artırır"
+      ],
+      "summary": "Zorlu Enerji Elektrik Üretim A.Ş., XS2926261426 ve US98977LAA44 ISIN kodlu yurt dışı tahvillerine (Eurobonds) ilişkin 22 Ekim 2026'da başlattığı muvafakat talebi sürecinde teklif koşullarında değişiklik yapıldığını bildirdi. Yapılan düzenlemeyle geçici ilave kısıtlamalarda değişiklik öngörülmüş ve Geç Muvafakat Ücreti (Late Consent Fee) nominal tutarın %0,40'ına yükseltilmiştir. Bu gelişme, şirketin uluslararası borçlanma araçlarının yeniden yapılandırılması veya vade/koşul optimizasyonu sürecindeki likidite ve maliyet yapısını doğrudan etkiler.",
+      "ts": "2026-11-13T21:00:52.730042+03:00"
     }
   },
-  "updated_at": "2026-11-13T20:00:57.109682+03:00",
+  "updated_at": "2026-11-13T21:00:52.730042+03:00",
   "version": 1
 }
