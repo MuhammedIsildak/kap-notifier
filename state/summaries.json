@@ -792,8 +792,36 @@
       ],
       "summary": "Pasifik Eurasia Lojistik Dış Ticaret A.Ş., Çin'in Xi'an şehrinde faaliyet gösteren ve yıllık 5,4 milyon TEU elleçleme kapasitesine sahip Xi'an Free Trade Port Construction and Operation Co., Ltd. ile uluslararası demiryolu taşımacılığının geliştirilmesine yönelik bir Mutabakat Zaptı (MoU) imzalamıştır. Bildirimde iş birliğinin finansal tutarına veya ciroya etkisine ilişkin herhangi bir rakamsal büyüklük açıklanmamıştır. Bu stratejik adım, şirketin uluslararası koridorlardaki operasyonel hacmini artırma potansiyeli taşımaktadır.",
       "ts": "2026-11-13T09:00:52.599292+03:00"
+    },
+    "1697848": {
+      "analysis_points": [
+        "220.000.000 adet (A) grubu imtiyazlı pay (B) grubuna dönüştürüldü → toplam çıkarılmış sermaye 2.178.000.000 TL'de sabit kalıyor, kontrol yapısı ve sermaye oranları değişmiyor",
+        "İşlem bedelsiz gerçekleştiriliyor → II-23.3 sayılı Önemli Nitelikteki İşlemler ve Ayrılma Hakkı Tebliği'nin 16. maddesinin 1. fıkrasının (b) bendi uyarınca ayrılma hakkı muafiyeti talep edildi, SPK onayı bekleniyor"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "bd5c09aa308b14b5",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Efor Yatırım Sanayi Ticaret A.Ş. Yönetim Kurulu, Yönetim Kurulu Başkanı İbrahim Akkuş'a ait 600.000.000 adet (A) Grubu imtiyazlı payın 220.000.000 adedinin imtiyazlarından feragat edilerek (B) Grubu hamiline yazılı paya dönüştürülmesine ve esas sözleşmenin 6. maddesinin tadil edilmesine karar vermiştir. 12.11.2026 tarihinde SPK'ya başvuru yapılmış olup, işlemin bedelsiz olması nedeniyle ayrılma hakkından muafiyet talep edilmiştir. Bu işlem 2.178.000.000 TL tutarındaki çıkarılmış sermaye toplamını veya pay sahiplerinin sermaye oranlarını değiştirmemekle birlikte, pay gruplarındaki imtiyaz yapısını dönüştürmektedir.",
+      "ts": "2026-11-13T10:00:53.039165+03:00"
+    },
+    "1697857": {
+      "analysis_points": [
+        "Bankanın fondaki pay oranı %6,25 → tasfiye sonucunda elde edilecek nakit veya varlık dağılımı bilançoda küçük ölçekli likidite hareketi yaratır",
+        "Fon süresinin dolması otomatik gerçekleşiyor → vade sonu tasfiyesi olduğundan ek bir risk veya zarar yazma zorunluluğu belgede belirtilmedi, fonun defter değerine bakılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "d7d48a6af877ef37",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Türkiye Kalkınma ve Yatırım Bankası A.Ş.'nin Lüksemburg'ta kurulu ve %6,25 pay oranına sahip olduğu Turkish Investment Initiative-iVCi İstanbul Venture Capital Initiative-Alt Fonu, memorandum hükümlerine göre 13 Kasım 2026 tarihinde süresinin dolması nedeniyle otomatik olarak tasfiye sürecine girecektir. Bu gelişme, bankanın iştirak portföyündeki bir fonun olağan vade sonu tasfiyesini ifade etmekte olup, bankanın ana finansal yapısını ve operasyonlarını doğrudan etkileyecek kritik bir unsur içermemektedir.",
+      "ts": "2026-11-13T10:00:53.039165+03:00"
     }
   },
-  "updated_at": "2026-11-13T09:00:52.599292+03:00",
+  "updated_at": "2026-11-13T10:00:53.039165+03:00",
   "version": 1
 }
