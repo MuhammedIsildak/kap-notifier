@@ -946,8 +946,84 @@
       "red_flags": [],
       "summary": "DENİZBANK A.Ş., Japonya Uluslararası İş Birliği Ajansı (JICA) ile 13.11.2026 tarihinde iklim değişikliği finansmanında kullanılmak üzere 100 milyon dolar tutarında 5 yıl vadeli iş birliği anlaşması imzalamıştır. Bu uzun vadeli dış kaynak temini, bankanın dış borçlanma vadesini uzatması ve yeşil finansman portföyünü genişletmesi açısından önemlidir. Anlaşma, döviz cinsinden likidite ve maliyet yapısını doğrudan etkileyecektir.",
       "ts": "2026-11-13T14:29:06.316794+03:00"
+    },
+    "1697962": {
+      "analysis_points": [
+        "Mevcut sözleşme tutarı 100 milyon Euro ve 30 milyon Amerikan Doları → Şirketin ana faaliyetleri için döviz cinsinden likidite sağlar",
+        "Tutarın 100 milyon Euro ve 50 milyon Amerikan Doları'na artış opsiyonu var → Yeni katılımcı gelmesi durumunda 20 milyon Amerikan Doları ek borçlanma potansiyeli bulunur"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "011d6baba460159d",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Döviz cinsi sendikasyon kredisi kur riski barındırmaktadır"
+      ],
+      "summary": "İş Finansal Kiralama A.Ş., Hollanda Kalkınma Bankası (FMO) liderliğinde muhtelif uluslararası finans kuruluşlarının katılımıyla toplam 100 milyon Euro ve 30 milyon Amerikan Doları tutarında sendikasyon kredi sözleşmesi imzalamıştır. İlerleyen dönemde yeni katılımcılarla tutarın 100 milyon Euro ve 50 milyon Amerikan Doları'na kadar artırılabileceği belirtilmiştir.",
+      "ts": "2026-11-13T15:00:57.100819+03:00"
+    },
+    "1697965": {
+      "analysis_points": [
+        "Kredi tutarı 209,2 milyon euro, vade 30 yıl → Bankanın fonlama vadesini en üst kademeye taşıyan çok uzun vadeli bir kaynaktır",
+        "Dış borcun ikrazı yöntemi kullanıldı → Geri ödeme mekanizması Hazine ikraz sözleşmesi koşullarına tabidir"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "535ba241d23eeaaa",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 12.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığının dış borcun ikrazı yöntemiyle Dünya Bankası (IBRD) ile 209,2 milyon euro tutarında ve 30 yıl vadeli kredi anlaşması imzalamıştır. Sağlanan bu 30 yıl vadeli kaynak, bankanın uzun vadeli borçlanma vadesini önemli ölçüde desteklemektedir.",
+      "ts": "2026-11-13T15:00:57.100819+03:00"
+    },
+    "1697967": {
+      "analysis_points": [
+        "Kredi tutarı 100 milyon ABD doları, vade 15 yıl → 15 yıllık vade uzun vadeli projelerin finansmanı için uygundur",
+        "Hazine ve Maliye Bakanlığı geri ödeme garantisi var → Kredi riski Hazine garantisi altındadır"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "20a4e30e202a159a",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 12.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi altında Asya Altyapı Yatırım Bankası (AIIB) ile 100 milyon ABD doları tutarında ve 15 yıl vadeli kredi anlaşması imzalamıştır. Sağlanan bu uzun vadeli kaynak, bankanın fonlama yapısının vadesini uzatması açısından önem taşımaktadır.",
+      "ts": "2026-11-13T15:00:57.100819+03:00"
+    },
+    "1697968": {
+      "analysis_points": [
+        "Kredi tutarı 200 milyon ABD doları, vade 7 yıl → Vade yapısı orta-uzun vadeli fonlama ihtiyacını destekler",
+        "T.C. Hazine ve Maliye Bakanlığı garantisi mevcut → Bankanın kendi maliyetinden ziyade Hazine garantili borçlanma maliyeti takip edilmelidir"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "9c89a1d989a26bce",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Döviz cinsinden uzun vadeli borçlanma kur riski yaratmaktadır"
+      ],
+      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 12.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi altında Asya Altyapı Yatırım Bankası (AIIB) ile 200 milyon ABD doları tutarında ve 7 yıl vadeli kredi anlaşması imzalamıştır. Bu işlem bankanın uzun vadeli dış kaynak teminini destekleyerek bilanço likiditesine katkı sağlamaktadır.",
+      "ts": "2026-11-13T15:00:57.100819+03:00"
+    },
+    "1697969": {
+      "analysis_points": [
+        "Kredi tutarı 250 milyon euro, vade 12 yıl → Uzun vadeli Euro cinsi yükümlülük yaratır",
+        "T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi → Borç servisi Hazine garantisi kapsamındadır"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "f509acd4d564b1a9",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Euro cinsi borçlanma Euro/TL kur hareketlerine karşı bilançoda açık pozisyon etkisi yaratabilir"
+      ],
+      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 11.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi altında Alman Kalkınma Bankası (KfW) ile 250 milyon euro tutarında ve 12 yıl vadeli kredi anlaşması imzalamıştır. Bu işlem, bankanın uluslararası finans kuruluşlarından sağladığı dış kaynakların çeşitliliğini artırmaktadır.",
+      "ts": "2026-11-13T15:00:57.100819+03:00"
     }
   },
-  "updated_at": "2026-11-13T14:29:06.316794+03:00",
+  "updated_at": "2026-11-13T15:00:57.100819+03:00",
   "version": 1
 }
