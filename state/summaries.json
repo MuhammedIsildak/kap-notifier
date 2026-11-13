@@ -1075,8 +1075,62 @@
       "red_flags": [],
       "summary": "Mopaş Marketçılık Gıda Sanayi ve Ticaret A.Ş.'de Yatırımcı İlişkileri Bölüm Yöneticisi ve Kurumsal Yönetim Komitesi Üyesi Fatih Karacanik 12/11/2026 tarihi itibarıyla görevinden ayrılmıştır. Tebliğ uyarınca boşalan pozisyona 30 gün içinde yeni atama yapılması gerekmektedir; bu durum idari bir süreç olup şirketin operasyonel veya finansal yapısını doğrudan etkilememektedir.",
       "ts": "2026-11-13T16:00:57.974213+03:00"
+    },
+    "1698018": {
+      "analysis_points": [
+        "Şube kapatma kararı alındı → Bölgesel operasyon maliyetleri ve gelir katkısı incelenmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "3fe34a76ebc3f6d0",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Skyalp Finansal Teknolojiler ve Danışmanlık A.Ş., Düzce Teknopark Teknoloji Geliştirme Bölgesi'nde faaliyet gösteren Düzce Şubesi'nin kapatılmasına ve Şube Müdürü Ferit Zakir Kaya'nın temsil ve ilzam yetkilerinin iptal edilmesine karar vermiştir. İlgili sicil tescil işlemleri başlatılmıştır.",
+      "ts": "2026-11-13T17:00:52.628345+03:00"
+    },
+    "1698040": {
+      "analysis_points": [
+        "Sınırlı denetim raporu olumlu yayımlandı → 30 Eylül 2026 bilançosu ve kârlılık kalemleri detaylı incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "ff53511d30ad47a1",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Deutsche Bank A.Ş.'nin 30 Eylül 2026 tarihli konsolide olmayan finansal tablolarına ilişkin sınırlı denetim raporu yayımlanmıştır. Bağımsız denetçi Güney Bağımsız Denetim ve SMMM A.Ş. tarafından yapılan sınırlı denetimde, raporlanan döneme ilişkin olumsuz bir hususa veya şartlı görüşe rastlanmamıştır.",
+      "ts": "2026-11-13T17:00:52.628345+03:00"
+    },
+    "1698043": {
+      "analysis_points": [
+        "Yatırımcı sunumu yayımlandı → Şirketin 30 Eylül 2026 bilançosu ve portföy değeri detaylı olarak incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "36b65b54361624d8",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Sinpaş Gayrimenkul Yatırım Ortaklığı A.Ş., 30 Eylül 2026 tarihli yatırımcı sunumunu kurumsal internet sitesinde yayımlamıştır. Bildirim rutin bir bilgilendirme niteliğinde olup şirketin operasyonel veya finansal yapısında doğrudan ani bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-13T17:00:52.628345+03:00"
+    },
+    "1698056": {
+      "analysis_points": [
+        "Finansal rapor bildirimi 21.12.2026 tarihine ertelendi → 30.06.2026 ve 30.09.2026 bilançoları açıklanana kadar şirketin mali durumu izlenemiyor"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "01d1d6bfa240de29",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Finansal raporların açıklanmasında uzun süreli gecikme yaşanması"
+      ],
+      "summary": "Sermaye Piyasası Kurulu (SPK), Mega Polietilen Köpük Sanayi ve Ticaret A.Ş.'nin 30.06.2026 ve 30.09.2026 tarihli finansal raporlarının KAP'a bildirim süresini 21.12.2026 tarihine kadar (bu tarih dahil) uzatmıştır. Ek süre verilmesi, şirketin finansal raporlama süreçlerinde gecikmeler yaşandığına işaret etmektedir.",
+      "ts": "2026-11-13T17:00:52.628345+03:00"
     }
   },
-  "updated_at": "2026-11-13T16:00:57.974213+03:00",
+  "updated_at": "2026-11-13T17:00:52.628345+03:00",
   "version": 1
 }
