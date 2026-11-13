@@ -1625,8 +1625,44 @@
       ],
       "summary": "Zorlu Enerji Elektrik Üretim A.Ş., XS2926261426 ve US98977LAA44 ISIN kodlu yurt dışı tahvillerine (Eurobonds) ilişkin 22 Ekim 2026'da başlattığı muvafakat talebi sürecinde teklif koşullarında değişiklik yapıldığını bildirdi. Yapılan düzenlemeyle geçici ilave kısıtlamalarda değişiklik öngörülmüş ve Geç Muvafakat Ücreti (Late Consent Fee) nominal tutarın %0,40'ına yükseltilmiştir. Bu gelişme, şirketin uluslararası borçlanma araçlarının yeniden yapılandırılması veya vade/koşul optimizasyonu sürecindeki likidite ve maliyet yapısını doğrudan etkiler.",
       "ts": "2026-11-13T21:00:52.730042+03:00"
+    },
+    "1698206": {
+      "analysis_points": [
+        "Devre konu stok ve sözleşmelerin ciroya ve kârlılığa etkisi → finansal tablolardan arındırma etkisi ayrıca takip edilmeli",
+        "İşlem bedeli açıklanmadı → nakit girişi veya varlık satışı kârı hesaplanamıyor, detaylı finansal raporlar incelenmeli",
+        "Kapanış tarihi Alarko Holding pay devrine bağlandı → Holding seviyesindeki süreçlerin tamamlanması izlenmeli"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "2992b6d622c36c0c",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İşlemin finansal büyüklüğü ve satış bedeli belgede belirtilmemiş",
+        "Kapanış tarihinin Alarko Holding ile Carrier arasındaki pay devrine bağlı olması takvimi belirsizleştiriyor"
+      ],
+      "summary": "Alarko Carrier Sanayi ve Ticaret A.Ş., Carrier ve Toshiba markalarına ilişkin belirli stok ve sözleşmelerin Viessmann Isı Teknikleri Ticaret Limited Şirketi'ne devredilmesi amacıyla 7 Ağustos 2026'da imzalanan faaliyet ayrıştırma sözleşmesi için Rekabet Kurumu onayının alındığını duyurdu. İşlemin kapanışı, Alarko Holding A.Ş. ile Carrier arasındaki pay devri işleminin kapanış tarihi ile eş zamanlı gerçekleşecek. Bu operasyon, şirketin portföy optimizasyonu ve varlık yapısının dönüştürülmesi açısından önem taşıyor.",
+      "ts": "2026-11-13T23:00:52.539833+03:00"
+    },
+    "1698207": {
+      "analysis_points": [
+        "11.12.2026 tarihli olağanüstü genel kurul → yönetim kurulu yapısındaki olası değişimler ve yeni üyelerin profilleri izlenmeli",
+        "Yönetim kurulu üye sayısı ve ücret politikası değişimi → genel kurul gündemindeki kararlar şirketin genel yönetim giderlerine yansıtılmalı",
+        "TTK 363 kapsamındaki atamaların gerekçesi → eksik bilgi durumunda yatırımcı ilişkilerinden netleştirilmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "aaa4ecd4b2b1deca",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Dönem içinde yönetim kurulu üyelerinde neden değişiklik olduğu belgede açıklanmadı",
+        "Yönetim değişikliklerinin operasyonel veya stratejik bir uyuşmazlıktan kaynaklanıp kaynaklanmadığı belirsiz"
+      ],
+      "summary": "Kartonsan Karton Sanayi ve Ticaret A.Ş., 11 Aralık 2026 tarihinde olağanüstü genel kurul toplantısı yapılacağını bildirdi. Gündemde dönem içinde gerçekleşen yönetim kurulu üyelik değişikliklerinin TTK 363 uyarınca onaylanması, üye sayısı ve ücretlerin belirlenmesi ile yeni yönetim kurulu üyelerinin seçimi yer alıyor. Bu gelişme, şirketin yönetim yapısında olağan dışı bir yenilenme sürecine işaret ediyor.",
+      "ts": "2026-11-13T23:00:52.539833+03:00"
     }
   },
-  "updated_at": "2026-11-13T21:00:52.730042+03:00",
+  "updated_at": "2026-11-13T23:00:52.539833+03:00",
   "version": 1
 }
