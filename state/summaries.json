@@ -820,8 +820,36 @@
       "red_flags": [],
       "summary": "Türkiye Kalkınma ve Yatırım Bankası A.Ş.'nin Lüksemburg'ta kurulu ve %6,25 pay oranına sahip olduğu Turkish Investment Initiative-iVCi İstanbul Venture Capital Initiative-Alt Fonu, memorandum hükümlerine göre 13 Kasım 2026 tarihinde süresinin dolması nedeniyle otomatik olarak tasfiye sürecine girecektir. Bu gelişme, bankanın iştirak portföyündeki bir fonun olağan vade sonu tasfiyesini ifade etmekte olup, bankanın ana finansal yapısını ve operasyonlarını doğrudan etkileyecek kritik bir unsur içermemektedir.",
       "ts": "2026-11-13T10:00:53.039165+03:00"
+    },
+    "1697915": {
+      "analysis_points": [
+        "İhraç tutarı ve vadesi açıklanmadı → fonlama maliyeti ve vade yapısı hesaplanamıyor, ihraç belgesi beklenmeli",
+        "Mevcut borç stoğu içindeki payı belirtilmedi → kaldıraç oranlarına etkisi net değil"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "63d8cba5bdfd89f3",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "FİBA FAKTORİNG A.Ş., 13.11.2026 tarihinde borçlanma aracı ihracına ilişkin yönetim kurulu kararı aldığını bildirdi. Alınan bu karar şirketin borçlanma tavanı ve likidite yönetimi açısından atılan rutin dışı olmayan bir adımdır. İhraç tutarı, vadesi ve faiz oranına dair detaylar açıklanmadı.",
+      "ts": "2026-11-13T13:00:50.705022+03:00"
+    },
+    "1697925": {
+      "analysis_points": [
+        "Proje tamamlandı ancak sözleşme büyüklüğü ve ciroya katkısı belgede belirtilmedi → 2026 gelir tablosuna yansıması takip edilemiyor",
+        "Tahsilat koşulları ve son hakediş tutarı açıklanmadı → işletme sermayesine nakit girişi zamanlaması belirsiz"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "9773a1ac255b3423",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "LİNK BİLGİSAYAR SİSTEMLERİ YAZILIMI VE DONANIMI SANAYİ VE TİCARET A.Ş., Emniyet Genel Müdürlüğü KGYS Projesinin tamamlanmasına ilişkin 13.11.2026 tarihinde güncelleme açıklaması yaptı. Projenin tamamlanması şirketin operasyonel faaliyetlerini ve ilgili dönem nakit akışını doğrudan etkiler. Belge metninde sözleşme tutarına veya tahsilat detayına yer verilmemiştir.",
+      "ts": "2026-11-13T13:00:50.705022+03:00"
     }
   },
-  "updated_at": "2026-11-13T10:00:53.039165+03:00",
+  "updated_at": "2026-11-13T13:00:50.705022+03:00",
   "version": 1
 }
