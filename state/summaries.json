@@ -1022,8 +1022,61 @@
       ],
       "summary": "Türkiye İhracat Kredi Bankası A.Ş., 11.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi altında Alman Kalkınma Bankası (KfW) ile 250 milyon euro tutarında ve 12 yıl vadeli kredi anlaşması imzalamıştır. Bu işlem, bankanın uluslararası finans kuruluşlarından sağladığı dış kaynakların çeşitliliğini artırmaktadır.",
       "ts": "2026-11-13T15:00:57.100819+03:00"
+    },
+    "1697979": {
+      "analysis_points": [
+        "Konsolide olmayan raporda sınırlı denetçi kanaatini olumsuz etkileyen bir husus bulunmuyor → Bilanço ve gelir tablosu verileri denetçi onayından geçmiştir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "afe22180a2624c87",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "HSBC Bank A.Ş.'nin 30 Eylül 2026 tarihinde sona eren 9 aylık hesap dönemine ait konsolide olmayan finansal tabloları sınırlı bağımsız denetimden geçmiş ve olumlu rapor almıştır. Rapor, BDDK düzenlemeleri ve TMS 34 hükümlerine uygun olarak yayımlanmıştır.",
+      "ts": "2026-11-13T16:00:57.974213+03:00"
+    },
+    "1697981": {
+      "analysis_points": [
+        "Sınırlı denetim raporunda olumsuz görüş veya şartlı ifade yok → Finansal tablolarda mevzuata aykırı husus tespit edilmedi"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "6a537c2218b16c72",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "HSBC Bank A.Ş.'nin 30 Eylül 2026 tarihinde sona eren 9 aylık hesap dönemine ait konsolide finansal tabloları bağımsız denetim şirketinden olumlu sınırlı denetim raporu almıştır. Rapor, BDDK muhasebe ve finansal raporlama mevzuatına uygun olarak hazırlanmıştır.",
+      "ts": "2026-11-13T16:00:57.974213+03:00"
+    },
+    "1697990": {
+      "analysis_points": [
+        "Sermaye 802.845.890 TL değişmiyor (%100 grup içi devir) → Pay sahipliği yapısı ve çıkarılmış sermaye korunuyor",
+        "İşlem Rekabet Kurulu iznine tabi değil → Onay süreci doğrudan SPK incelemesiyle ilerler"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "025a1299a7af94fc",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Ata Turizm İşletmecilik Taşımacılık Madencilik Kuyumculuk Sanayi ve Dış Ticaret A.Ş., sermayesinin %100'üne sahip olduğu bağlı ortaklığı Gökyüzü Balonculuk Taşımacılık Hizmetleri Ticaret Turizm A.Ş.'yi kolaylaştırılmış usulde devralmak üzere yönetim kurulu kararı almış ve SPK'ya başvurmuştur. Devralınan şirketin paylarının tamamı devralana ait olduğundan, Ata Turizm'in 802.845.890 TL olan ödenmiş sermayesi bu birleşme nedeniyle değişmeyecektir.",
+      "ts": "2026-11-13T16:00:57.974213+03:00"
+    },
+    "1697996": {
+      "analysis_points": [
+        "Yatırımcı ilişkileri yöneticiliği boş → 30 gün içinde atama yapılmazsa SPK uyum süreci riski oluşur"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "4b1b62d4e675120c",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Mopaş Marketçılık Gıda Sanayi ve Ticaret A.Ş.'de Yatırımcı İlişkileri Bölüm Yöneticisi ve Kurumsal Yönetim Komitesi Üyesi Fatih Karacanik 12/11/2026 tarihi itibarıyla görevinden ayrılmıştır. Tebliğ uyarınca boşalan pozisyona 30 gün içinde yeni atama yapılması gerekmektedir; bu durum idari bir süreç olup şirketin operasyonel veya finansal yapısını doğrudan etkilememektedir.",
+      "ts": "2026-11-13T16:00:57.974213+03:00"
     }
   },
-  "updated_at": "2026-11-13T15:00:57.100819+03:00",
+  "updated_at": "2026-11-13T16:00:57.974213+03:00",
   "version": 1
 }
