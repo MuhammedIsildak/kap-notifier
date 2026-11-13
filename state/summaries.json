@@ -1129,8 +1129,24 @@
       ],
       "summary": "Sermaye Piyasası Kurulu (SPK), Mega Polietilen Köpük Sanayi ve Ticaret A.Ş.'nin 30.06.2026 ve 30.09.2026 tarihli finansal raporlarının KAP'a bildirim süresini 21.12.2026 tarihine kadar (bu tarih dahil) uzatmıştır. Ek süre verilmesi, şirketin finansal raporlama süreçlerinde gecikmeler yaşandığına işaret etmektedir.",
       "ts": "2026-11-13T17:00:52.628345+03:00"
+    },
+    "1698097": {
+      "analysis_points": [
+        "Metin Öztürk istifa etti → Şirket yönetim kurulunda üye eksikliği oluştu, boşalan üyeliğe atama yapılması gerekir",
+        "İstifa gerekçesi belirtilmedi → Yönetim içi olası bir anlaşmazlık veya stratejik ayrışma olasılığı takip edilmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "5d6f08da181ace1c",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yönetim kurulu üyesi istifa etmiştir ancak gerekçesi açıklanmamıştır"
+      ],
+      "summary": "Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. Yönetim Kurulu üyesi Metin Öztürk şirketteki görevinden istifa etmiştir. Açıklamada istifanın gerekçesine ve yerine yapılacak atamaya dair bir bilgi yer almamaktadır.",
+      "ts": "2026-11-13T18:00:56.829551+03:00"
     }
   },
-  "updated_at": "2026-11-13T17:00:52.628345+03:00",
+  "updated_at": "2026-11-13T18:00:56.829551+03:00",
   "version": 1
 }
