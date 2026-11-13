@@ -848,8 +848,92 @@
       "red_flags": [],
       "summary": "LİNK BİLGİSAYAR SİSTEMLERİ YAZILIMI VE DONANIMI SANAYİ VE TİCARET A.Ş., Emniyet Genel Müdürlüğü KGYS Projesinin tamamlanmasına ilişkin 13.11.2026 tarihinde güncelleme açıklaması yaptı. Projenin tamamlanması şirketin operasyonel faaliyetlerini ve ilgili dönem nakit akışını doğrudan etkiler. Belge metninde sözleşme tutarına veya tahsilat detayına yer verilmemiştir.",
       "ts": "2026-11-13T13:00:50.705022+03:00"
+    },
+    "1697929": {
+      "analysis_points": [
+        "Sürkit Holding A.Ş. 103.626.430 pay ile temsil ediliyor → şirkette hâkim ortaklık yapısı bu grup elindedir",
+        "Olağanüstü genel kurul gündemi metinde yer almıyor → alınan kararların (sermaye, esas sözleşme vb.) detayları ayrıca incelenmeli",
+        "Rutin genel kurul süreci → doğrudan operasyonel veya finansal risk barındırmıyor"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "3eb8dcfbace797ec",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Best Brands Grup Enerji Yatırım A.Ş., 13 Kasım 2026 tarihinde 2026 yılı Olağanüstü Genel Kurul Toplantısı'nı gerçekleştirmiştir. Hazır bulunanlar listesinde Sürkit Holding A.Ş.'nin 103.626.430 pay ile temsil edildiği görülmüştür. Toplantı genel kurul süreçlerinin bir parçasıdır.",
+      "ts": "2026-11-13T14:00:55.473752+03:00"
+    },
+    "1697930": {
+      "analysis_points": [
+        "Sigorta limiti 2.000.000 USD → şirket sermayesinin %25'ini aşmaktadır",
+        "Yenileme maliyeti raporda yer almıyor → operasyonel kârlılığa etkisi ihmal edilebilir seviyededir",
+        "Rutin kurumsal yönetim bildirimi → kredi veya hisse değeri üzerinde doğrudan finansal etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "4238b246c19c0e83",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kaplamin Ambalaj Sanayi ve Ticaret A.Ş., Yönetici Sorumluluk Sigortası'nın yasal mevzuata uygun olarak yenilendiğini ve yıllık sorumluluk limitinin 2.000.000 USD olarak belirlendiğini açıklamıştır. Bu tutar şirket sermayesinin %25'ini aşmaktadır. İşlem rutin bir kurumsal yönetim gerekliliğidir.",
+      "ts": "2026-11-13T14:00:55.473752+03:00"
+    },
+    "1697939": {
+      "analysis_points": [
+        "Kredi tutarı 75 milyon Avro → bilanço dış kaynak büyüklüğünü ve döviz açık pozisyonunu doğrudan artırır",
+        "Vade ve maliyet bilgisi verilmedi → faiz gideri ve anapara geri ödeme takvimi belirsiz, sözleşme detayları incelenmeli",
+        "Proparco finansmanı → uluslararası kalkınma kuruluşu kaynağı olması nedeniyle uzun vade ve uygun maliyet imkanı sunabilir"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "e5146e9ec57e74dd",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kredinin faiz oranı ve vade yapısı açıklanmadı",
+        "Döviz cinsinden borçlanmanın kur riskine etkisi"
+      ],
+      "summary": "QNB Finansal Kiralama A.Ş., Société de Promotion et de Participation pour la Coopération Économique S.A. (Proparco) ile toplam 75 milyon Avro tutarında kredi anlaşması imzalamıştır. Bu finansman anlaşması şirketin dış kaynak temin kapasitesini ve döviz cinsinden likidite yapısını doğrudan etkilemektedir. Sağlanan fonun vade ve maliyet koşulları analist takibinde kritik unsurlardır.",
+      "ts": "2026-11-13T14:00:55.473752+03:00"
+    },
+    "1697940": {
+      "analysis_points": [
+        "İhraç başvurusu işlemden kaldırıldı → piyasadan borçlanma yoluyla likidite yaratılamayacak",
+        "Alternatif finansman kanalları → şirket kısa vadede özkaynak veya banka kredilerine yönelmek zorunda kalabilir",
+        "Tutar belirsiz → ihraç tavanı büyüklüğü bilinmediği için bilanço etkisi KAP ekinden teyit edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "17c76a9cfb6cbcca",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Borçlanma aracı ihraç başvurusunun işlemden kaldırılması",
+        "Sermaye piyasalarından fon sağlama imkanının gecikmesi"
+      ],
+      "summary": "Bulls Yatırım Menkul Değerler A.Ş.'nin borçlanma aracı ihraç başvurusunun işlemden kaldırıldığı duyurulmuştur. Bu durum şirketin sermaye piyasalarından borçlanma yoluyla likidite sağlama planının askıya alındığını veya iptal edildiğini göstermektedir. İhraç tavanının iptali alternatif finansman maliyetlerini artırabilir.",
+      "ts": "2026-11-13T14:00:55.473752+03:00"
+    },
+    "1697949": {
+      "analysis_points": [
+        "Mevcut sermaye 213.000.000 TL, artış 100.000.000 TL → yeni sermaye 313.000.000 TL olacak",
+        "Asgari özsermaye açığı ve taban açıkları toplamı tebliğ şartlarını ihlal ediyordu → nakit taahhüt tescil öncesi ödendiği için açık kapatılacak",
+        "Ata Holding A.Ş. 99.938.966,43 TL nakit taahhüt etti → ana ortak şirketin finansal bünyesini doğrudan fonluyor"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "e6c48a6ac2624acb",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "30.09.2026 itibarıyla Seri: V, No: 34 tebliğince asgari özsermaye açığı tespit edildi",
+        "Sermaye yeterliliği taban açıkları (45.815.061,09 TL, 66.312.625,91 TL ve 37.202.058,10 TL) yasal limitlerin ihlal edildiğini gösteriyor"
+      ],
+      "summary": "Ata Yatırım Menkul Kıymetler A.Ş., SPK Aracı Kurumlar Dairesi'nin 05.10.2026 tarihli yazısıyla özsermaye açığı tespit edilmesi üzerine sermayesini 213.000.000 TL'den 313.000.000 TL'ye yükseltme kararı almıştır. Mevcut sermaye açığının kapatılması ve tebliğ yükümlülüklerinin yerine getirilmesi amacıyla yapılan bu nakit artırımın 99.938.966,43 TL'si Ata Holding A.Ş., 61.033,57 TL'si ise Seniha Ece Kurdoğlu tarafından karşılanacaktır. Bu operasyon şirketin yasal sermaye yeterliliği sorununu çözmeyi hedeflemektedir.",
+      "ts": "2026-11-13T14:00:55.473752+03:00"
     }
   },
-  "updated_at": "2026-11-13T13:00:50.705022+03:00",
+  "updated_at": "2026-11-13T14:00:55.473752+03:00",
   "version": 1
 }
