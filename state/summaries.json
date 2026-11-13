@@ -1435,8 +1435,181 @@
       "red_flags": [],
       "summary": "DİLER YATIRIM BANKASI A.Ş.’nin 30 Eylül 2026 tarihli konsolide olmayan finansal tabloları KPMG Bağımsız Denetim tarafından sınırlı denetime tabi tutulmuştur. Denetçi raporuna göre, finansal tabloların BDDK muhasebe mevzuatına uygun olarak gerçeğe uygun sunulmadığına dair herhangi bir hususa rastlanmamış olup olumlu sonuç bildirilmiştir. Bu rapor, bankanın dokuz aylık mali bünyesinin mevzuata uygun ve denetlenmiş olduğunu teyit etmektedir.",
       "ts": "2026-11-13T19:00:56.576724+03:00"
+    },
+    "1698179": {
+      "analysis_points": [
+        "İmtiyazlı pay alımından vazgeçildi (13.11.2026 tarihli karar) → Metro Yatırım Ortaklığı üzerindeki kontrol veya ortaklık yapısı planlandığı gibi değişmeyecek",
+        "Gerekçe belirtilmemiş → Şirketin stratejik planları ve nakit kullanımı açısından ek açıklamalar takip edilmeli"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "001cbb90e9f69a4c",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Daha önce duyurulan imtiyazlı pay alım işleminden vazgeçilmiştir",
+        "İşlemden vazgeçilme gerekçesi belgede açıklanmamıştır"
+      ],
+      "summary": "Metro Ticari ve Mali Yatırımlar Holding A.Ş. Yönetim Kurulu, 13.11.2026 tarihinde aldığı kararla Metro Yatırım Ortaklığı A.Ş.'nin imtiyazlı paylarının alımı işleminden vazgeçtiğini açıklamıştır. Daha önce 19.08.2026 tarihinde duyurulan pay alım sürecinin iptal edilmesi, şirketin sermaye tahsisi ve ortaklık stratejilerinde değişikliğe gittiğini göstermektedir. Bu karar, planlanan konsolidasyon veya kontrol değişimlerinin gerçekleşmeyeceğini ortaya koymaktadır.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698183": {
+      "analysis_points": [
+        "Metinde bilanço büyüklüğü, özkaynak veya net kâr rakamı yer almamaktadır → etki ve kârlılık trendi hesaplanamıyor, tam finansal tablolar incelenmeli",
+        "Güney Bağımsız Denetim tarafından olumsuz bir hususa rastlanmadığı belirtilmiştir → denetçi görüşünde çekince (şartlı görüş) bulunmamaktadır"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "d0a8792d98520e37",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "T.O.M. Katılım Bankası A.Ş.'nin 30 Eylül 2026 tarihinde sona eren 9 aylık ara hesap dönemine ait konsolide olmayan finansal tabloları Güney Bağımsız Denetim ve SMMM A.Ş. (Ernst & Young) tarafından sınırlı denetime tabi tutulmuştur. Sınırlı denetim sonucunda, finansal bilgilerin BDDK muhasebe ve finansal raporlama mevzuatına uygun olarak tüm önemli yönleriyle gerçeğe uygun biçimde sunulmadığına dair olumsuz bir hususa rastlanmadığı belirtilmiştir. Raporda net kâr/zarar tutarı veya bilanço büyüklüklerine dair rakamsal detaylar metinde yer almamaktadır.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698186": {
+      "analysis_points": [
+        "Sınırlı denetim raporunda şartlı görüş veya bulgu yok → Finansal tabloların denetçi onayından temiz geçtiğini ve ek risk barındırmadığını gösterir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "8e9eab2cf9eafc66",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "MUFG Bank Turkey A.Ş.'nin 30 Eylül 2026 tarihli konsolide olmayan finansal tabloları PwC tarafından sınırlı denetime tabi tutulmuştur. Sınırlı denetim raporunda, finansal tabloların BDDK muhasebe ve finansal raporlama mevzuatına uygun olarak tüm önemli yönleriyle gerçeğe uygun bir biçimde sunulduğu, olumsuz veya şartlı bir hususa rastlanmadığı belirtilmiştir. Rapor standart ara dönem faaliyet ve finansal performans göstergelerini içermektedir.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698187": {
+      "analysis_points": [
+        "Serbest karşılıkların net kâra 2.205 milyon TL etkisi → Gerçek operasyonel kârlılığın ve vergi etkisinin normalize edilerek incelenmesini gerektirir",
+        "Özkaynaklar üzerindeki 9.100 milyon TL'lik potansiyel fark → Bankanın sermaye yeterlilik rasyolarının muhafazakâr bir ihtiyat tamponu ile yönetildiğini gösterir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "6c1a7b8e393a970d",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "13.000 milyon TL tutarında yüksek serbest karşılık ayrılması kârlılığı ve özkaynakları baskılamaktadır"
+      ],
+      "summary": "Türkiye Emlak Katılım Bankası A.Ş.'nin 30 Eylül 2026 sona eren 9 aylık konsolide olmayan finansal raporuna ilişkin PwC tarafından sınırlı denetim raporu yayımlanmıştır. Raporda, banka yönetiminin BDDK mevzuatı dışında toplam 13.000 milyon TL serbest karşılık (9.850 milyon TL geçmiş yıllar, 3.150 milyon TL cari dönem) ve buna bağlı 3.900 milyon TL ertelenmiş vergi varlığı muhasebeleştirdiği belirtilmiştir. Serbest karşılıklar ayrılmamış olsaydı net dönem kârı ve özkaynaklar sırasıyla 2.205 milyon TL ve 9.100 milyon TL daha fazla olacaktı.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698190": {
+      "analysis_points": [
+        "592.659.650 TL işletme sermayesi kullanımı → Buğday alımları finanse edilerek stok ve üretim kapasitesi desteklenmiştir",
+        "469.654.817 TL borç kapatılması → Finansal borç yükü azaltılarak net finansal gider kalemi iyileştirilmiştir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "d7634edee36a185c",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Halka arz fonlarının tamamının 9 aylık sürede tamamen tüketilmiş olması yeni nakit ihtiyacı doğurabilir"
+      ],
+      "summary": "Akhan Un Fabrikası ve Tarım Ürünleri Gıda Sanayi Ticaret A.Ş., 28-30 Ocak 2026 tarihlerinde 21,5 TL sabit fiyatla gerçekleştirdiği halka arzda 1.176.050.000 TL brüt gelir elde etmiştir. 57.824.245 TL halka arz maliyeti düşüldükten sonra kalan 1.118.225.755 TL net fonun tamamı 13 Kasım 2026 tarihi itibarıyla tamamen tüketilmiştir. Fonun 592.659.650 TL'si (%53) işletme sermayesi (buğday alımı), 469.654.817 TL'si (%42) finansal borçların kapatılması ve 55.911.288 TL'si (%5) finansal kiralama ödemeleri için harcanmıştır.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698192": {
+      "analysis_points": [
+        "HEZ MORALI JES-2 önlisans başvurusu EPDK aşamasında → Onay alınmadan capex ve devreye alma takvimi kesinleşmiyor",
+        "Hedeflenen toplam kurulu güç 42 MWm/42 MWe → Tamamlandığında şirketin toplam enerji üretim hacmine ve FAVÖK büyümesine katkı sağlar"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "8f8fe59737d622e5",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "HEZ MORALI JES-2 için henüz önlisans onayı alınmamıştır",
+        "Yatırım maliyeti ve finansman kaynağına ilişkin net bir tutar açıklanmamıştır"
+      ],
+      "summary": "Margün Enerji, bağlı ortaklığı Margün Jeotermal Enerji aracılığıyla 24 MWm gücündeki HEZ MORALI JES-1'i bünyesinde bulunduran Hez Enerji'nin %100 payını 2026'da satın almış ve Hez Enerji Aydın Germencik'te planlanan 18 MWm/18 MWe gücündeki HEZ MORALI JES-2 için EPDK'ya önlisans başvurusunda bulunmuştur. Projenin onaylanması ve yatırımların tamamlanmasıyla toplam kurulu gücün 42 MWm/42 MWe gücüne ulaşması hedeflenmektedir. Bu yatırım, şirketin yenilenebilir enerji portföyünü ve gelecekteki elektrik üretimi gelir tabanını genişletmesi bakımından önem arz etmektedir.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698194": {
+      "analysis_points": [
+        "Brüt 2.380.000.000 TL nakit girişi ve 1.637.617,513.59 TL borç ödemesi → Kısa vadeli finansal borçlarda azalış ve faiz giderlerinde yıllık tasarruf sağlar",
+        "Çıkarılmış sermayenin 9.132.064,896.76 TL'ye çıkması → Özkaynak tabanını güçlendirerek kaldıraç oranlarını olumlu etkiler"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "12cf4bad61e49658",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Fonun kalanı kullanılana kadar finansal enstrümanlarda değerlendirilecek olması piyasa riskine açık bırakmaktadır"
+      ],
+      "summary": "Hektaş Ticaret T.A.Ş., 25.000.000.000 TL kayıtlı sermaye tavanı içerisinde 8.430.000.000 TL olan çıkarılmış sermayesini OYAK tarafından sağlanan 2.380.000.000 TL sermaye avansı karşılığında 702.064,896.76 TL artırarak 9.132.064,896.76 TL'ye ulaştırmıştır. Denetimden Sorumlu Komite raporuna göre, tahsisli sermaye artışından elde edilen 2.380.000.000 TL'lik fonun tamamı finansal borç ödemelerinde kullanılacak olup, rapor tarihi itibarıyla 1.637.617,513.59 TL'si bu amaçla harcanmıştır. Bu işlem şirketin finansal borç yükünü hafifleterek kısa vadeli likidite baskısını azaltmaktadır.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698195": {
+      "analysis_points": [
+        "Tahsisli artış tutarı 132.000.000 TL → Tamamı hakim ortaktan alınan avansların borç kapatmada kullanılmasından kaynaklanmaktadır",
+        "Banka borçları (48.179.880 TL) ve çek ödemeleri (33.830.910 TL) ağırlıklı fon kullanımı → Şirketin kısa vadeli finansal borç yükü ve likidite baskısı bu operasyonla hafifletilmiştir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "89866a0388b8be08",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yüksek enflasyon, ekonomik yavaşlama ve yüksek faiz ortamı likiditeye erişimi zorlaştırmakta ve borçlanma maliyetlerini artırmaktadır",
+        "Sağlanan fonlar doğrudan yeni yatırımdan ziyade mevcut borçların (kredi, çek, ticari ve personel borçları) tasfiyesinde kullanılmıştır"
+      ],
+      "summary": "Bayrak Ebt Taban Sanayi ve Ticaret A.Ş., 13.11.2026 tarihli yönetim kurulu kararıyla tahsisli sermaye artırımı fon kullanım raporunu revize etmiştir. Hakim ortak Kurt Taban Ayakkabı Sanayi Ticaret A.Ş.'nin şirkete aktardığı sermaye avanslarının özkaynağa kazandırılması amacıyla, mevcut ortakların rüçhan hakları kısıblatılarak 132.000.000 TL satış bedeli karşılığında tahsisli sermaye artırımı yapılmış ve elde edilen fon kısa/uzun vadeli borçların kapatılmasında kullanılmıştır. Fonun 48.179.880,00 TL'si banka kredilerine, 33.830.910,00 TL'si çek ödemelerine, 32.294.926,00 TL'si ticari borçlara ve 11.631.076,00 TL'si personele borçlara tahsis edilmiştir.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698196": {
+      "analysis_points": [
+        "Net fon tutarı 343.363.693,00 TL → Fonun %81,64'ü (280.332.513,77 TL) ortaklar tarafından verilen sermaye avanslarının mahsubunda kullanılmıştır",
+        "Kalan kullanılmayan kısım 7.110.854,87 TL → TL cinsi enstrümanlarda tutulmaktadır, likidite yönetimi açısından etkisi sınırlıdır"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "0c9402b550e4a1e3",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "IC Enterra Yenilenebilir Enerji A.Ş., 01.01.2026 – 30.09.2026 dönemi sermaye artırımından elde edilen fonun kullanımına ilişkin raporunu yayınlamıştır. Şirket 343.363.693,00 TL net gelir elde etmiş; bunun 280.332.513,77 TL'sini sermaye avanslarının mahsubunda, 27.957.211,20 TL'sini GES ve RES proje giderlerinde, 27.963.119,17 TL'sini ise net işletme sermayesinde kullanmıştır. 30 Eylül 2026 itibarıyla kullanılmayan 7.110.854,87 TL TL cinsinden enstrümanlarda değerlendirilmektedir.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698198": {
+      "analysis_points": [
+        "FYY başvuru süreci 29.07.2025'ten bu yana devam ediyor → Anlaşma şartları ve vade uzatımları henüz netleşmediğinden nakit akışı riskleri izlenmeli",
+        "Bankalarla yürütülen görüşmeler → Şirketin kısa vadeli borç yükümlülüklerinin uzun vadeye yayılıp yayılmadığı finansal tablolardan takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "cb81af93f5f4fcfc",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Mevcut kredilerin ödenmesinde zorluk yaşandığı için Finansal Yeniden Yapılandırma sürecine başvurulmuştur",
+        "Yeniden yapılandırma sürecinin sonuçlandığına dair nihai bir mutabakat veya imza tarihi henüz netleşmemiştir"
+      ],
+      "summary": "Arzum Elektrikli Ev Aletleri Sanayi ve Ticaret A.Ş., mevcut kredilerinin yeniden yapılandırılması amacıyla 29.07.2025 tarihinde aldığı Yönetim Kurulu kararı doğrultusunda Finansal Yeniden Yapılandırma (FYY) çerçevesine dahil bankalara başvuruda bulunduğunu güncellemiştir. Bu süreç, şirketin nakit akışı ve borç servis kapasitesinde sıkıntılar yaşandığını ve banka borçlarının vadelerinin uzatılması veya yapılandırılması ihtiyacını ortaya koyması açısından kredi profili için önem taşımaktadır. Yapılandırma anlaşmasının nihai koşulları şirketin likidite baskısını doğrudan etkileyecektir.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
+    },
+    "1698200": {
+      "analysis_points": [
+        "Tutar veya oran açıklanmadı → Finansal tablolara ve kârlılığa etkisi hesaplanamıyor, KAP ekine bakılmalı",
+        "TMSF ve SPK teması → Olası bir regülasyon yaptırımı veya mali yükümlülük açısından izlenmelidir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "1fcb7df9c9edc774",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "TMSF ve SPK süreçlerinin iç denetim bulgularına dayanması yasal ve finansal risk barındırabilir"
+      ],
+      "summary": "Türkiye Sigorta A.Ş., 7596 sayılı Kanun ve SPK kararlarına istinaden yapılan bir ödemeye ilişkin özel durum açıklaması yapmıştır. Açıklamada şirket nezdinde yürütülen iç denetimler ile TMSF ve SPK görüşmeleri sonucunda belirli hususların kamuoyuna sunulduğu belirtilmiştir. Bildirim metninde kesin bir tutar veya ödeme kalemi detaylı olarak yer almamaktadır.",
+      "ts": "2026-11-13T20:00:57.109682+03:00"
     }
   },
-  "updated_at": "2026-11-13T19:00:56.576724+03:00",
+  "updated_at": "2026-11-13T20:00:57.109682+03:00",
   "version": 1
 }
