@@ -1661,8 +1661,22 @@
       ],
       "summary": "Kartonsan Karton Sanayi ve Ticaret A.Ş., 11 Aralık 2026 tarihinde olağanüstü genel kurul toplantısı yapılacağını bildirdi. Gündemde dönem içinde gerçekleşen yönetim kurulu üyelik değişikliklerinin TTK 363 uyarınca onaylanması, üye sayısı ve ücretlerin belirlenmesi ile yeni yönetim kurulu üyelerinin seçimi yer alıyor. Bu gelişme, şirketin yönetim yapısında olağan dışı bir yenilenme sürecine işaret ediyor.",
       "ts": "2026-11-13T23:00:52.539833+03:00"
+    },
+    "1698226": {
+      "analysis_points": [
+        "Sermaye 42.000.000 TL, toplantıda temsil edilen pay 1.660.638,00 TL → düşük katılım oranıyla genel kurul nisabı sağlanarak kararlar oy birliğiyle alındı",
+        "2025 ve 2026 dönemi bağımsız denetçisi Meridyen Kurumsal Çözüm ve Bağımsız Denetim A.Ş. olarak seçildi → finansal raporlama denetimi bu kurum üzerinden yürütülecek"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "49b83bb84f3f3951",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Umpaş Holding A.Ş., 05/11/2026 tarihinde gerçekleştirilen 2024 yılı olağan genel kurul toplantı sonucunu açıklamıştır. 42.000.000 TL sermayeyi temsil eden payların 1.660.638,00 TL'lik kısmının katıldığı toplantıda, 2024 yılı finansal tabloları yenilenerek onaylanmış ve yönetim kurulu üyeleri ibra edilmiştir. Ayrıca 2025 ve 2026 yıllarında görev yapmak üzere Meridyen Kurumsal Çözüm ve Bağımsız Denetim A.Ş. bağımsız denetçi olarak seçilmiştir.",
+      "ts": "2026-11-15T08:00:54.891834+03:00"
     }
   },
-  "updated_at": "2026-11-13T23:00:52.539833+03:00",
+  "updated_at": "2026-11-15T08:00:54.891834+03:00",
   "version": 1
 }
