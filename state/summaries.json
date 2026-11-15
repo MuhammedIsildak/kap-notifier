@@ -1675,8 +1675,22 @@
       "red_flags": [],
       "summary": "Umpaş Holding A.Ş., 05/11/2026 tarihinde gerçekleştirilen 2024 yılı olağan genel kurul toplantı sonucunu açıklamıştır. 42.000.000 TL sermayeyi temsil eden payların 1.660.638,00 TL'lik kısmının katıldığı toplantıda, 2024 yılı finansal tabloları yenilenerek onaylanmış ve yönetim kurulu üyeleri ibra edilmiştir. Ayrıca 2025 ve 2026 yıllarında görev yapmak üzere Meridyen Kurumsal Çözüm ve Bağımsız Denetim A.Ş. bağımsız denetçi olarak seçilmiştir.",
       "ts": "2026-11-15T08:00:54.891834+03:00"
+    },
+    "1698231": {
+      "analysis_points": [
+        "Unvan benzerliği nedeniyle piyasada oluşabilecek yanılgılar giderildi → operasyonel veya finansal bir etkisi bulunmuyor",
+        "İki şirket arasında ortaklık veya bağlılık yok → KARCL paylarındaki SPK yaptırım/incelemeleri KRDMA, KRDMB ve KRDMD hisselerini hukuki veya mali olarak etkilemez"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "cd25d85cdda573c9",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kardemir Karabük Demir Çelik Sanayi ve Ticaret A.Ş., SPK bülteninde yer alan işlemlerin başka bir unvan taşıyan Kardemir Çelik Sanayi A.Ş. (KARCL) ile ilgili olduğunu ve şirketleriyle hiçbir bağının bulunmadığını duyurmuştur. Bu açıklama, benzer unvan karışıklığı nedeniyle piyasada oluşabilecek yanlış anlamaları ve olası itibar riskini ortadan kaldırmaktadır. Şirket, 24.07.2026 tarihli önceki açıklamasına atıfta bulunarak iki tüzel kişilik arasındaki bağımsızlığı teyit etmiştir.",
+      "ts": "2026-11-15T17:00:51.603259+03:00"
     }
   },
-  "updated_at": "2026-11-15T08:00:54.891834+03:00",
+  "updated_at": "2026-11-15T17:00:51.603259+03:00",
   "version": 1
 }
