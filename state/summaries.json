@@ -2417,8 +2417,23 @@
       ],
       "summary": "Hedef Yatırım Bankası A.Ş.'nin 30 Eylül 2026 sona eren 9 aylık finansal raporuna ilişkin bağımsız denetçi KPMG, denetimi tamamlayamayarak 'Sonuç Bildirmekten Kaçınma' görüşü vermiştir. BDDK kararları uyarınca bankadaki nitelikli pay sahiplerinin (Sibel Gökalp %10, Namık Kemal Gökalp %10, Hedef Holding AŞ %41, Hedef Girişim Sermayesi Yatırım Ortaklığı AŞ %30) temettü dışındaki ortaklık hakları TMSF tarafından devralınmış ve yönetim 1 Ekim 2026 itibarıyla TMSF atanan yönetim kuruluna geçmiştir. Eski yönetim hakkında adli süreç devam etmekte olup, yeni yönetim tablo ve sorumluluk beyanlarını onaylamamıştır.",
       "ts": "2026-11-16T21:00:55.077863+03:00"
+    },
+    "1698681": {
+      "analysis_points": [
+        "Halka arzdan sağlanan 2.131.891.552 TL net kaynağın tamamı 13.11.2026 itibarıyla tüketilmiştir → Şirketin operasyonel nakit akışı ve işletme sermayesi döngüsü bundan sonraki süreçte öz kaynaklar ve faaliyet kârı üzerinden yürümelidir",
+        "Finansal borç ödemelerine 442.314.596 TL aktarılmıştır → Kısa ve orta vadeli borç yükündeki bu azalışın şirketin finansman giderlerine ve 2026 sonu faiz oranlarına yansıması finansal tablolardan izlenmelidir",
+        "İşletme sermayesi için 1.689.576.956 TL stok finansmanı ve ürün tedarikine harcanmıştır → Artan stok seviyelerinin stok devir hızı ve brüt kâr marjı üzerindeki etkisi takip edilmelidir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "bd197b2c68c7d576",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Saat ve Saat Sanayi ve Ticaret A.Ş., 16 Temmuz 2026'da Borsa İstanbul'da işlem görmeye başlayan halka arzında brüt 2.249.350.488 TL kaynak elde etmiştir. 13.11.2026 tarihli raporuna göre, 117.458.936 TL halka arz maliyeti düşüldükten sonra kalan 2.131.891.552 TL net kaynağın tamamı planlandığı şekilde harcanmıştır. Net fonun %79,25'ine denk gelen 1.689.576.956 TL işletme sermayesine, %20,75'ine denk gelen 442.314.596 TL ise finansal borçların ödenmesine tahsis edilmiştir.",
+      "ts": "2026-11-16T23:00:52.809584+03:00"
     }
   },
-  "updated_at": "2026-11-16T21:00:55.077863+03:00",
+  "updated_at": "2026-11-16T23:00:52.809584+03:00",
   "version": 1
 }
