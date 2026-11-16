@@ -1965,8 +1965,62 @@
       "red_flags": [],
       "summary": "T.C. Ziraat Bankası A.Ş., toplam 409 milyon ABD Doları ve 390 milyon Avro tutarında 367 gün vadeli; 185 milyon ABD Doları ve 64 milyon Avro tutarında 732 gün vadeli olmak üzere dört dilimli sendikasyon kredisi sağlamıştır.",
       "ts": "2026-11-16T17:00:59.186193+03:00"
+    },
+    "1698544": {
+      "analysis_points": [
+        "Brüt halka arz geliri 1.595.000.000 TL → Vagon üretim tesisi ve lisanssız GES yatırımlarının tamamlanmasında dış finansman bağımlılığını azaltır",
+        "Halka açıklık oranı %28, çıkarılmış sermaye 312.500.000 TL → Şirketin sermaye piyasalarından gelecekte yapabileceği olası borçlanma ve sermaye artırımlarındaki manevra alanını genişletir",
+        "Halka arz fiyatı 25,52 TL ve büyüklük 2.233.000.000 TL → Şirketin piyasa değeri ve özkaynak büyüklüğü üzerinden gelecek dönem çarpan analizleri güncellenmelidir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "ba24e6191f878f50",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Halka arz gelirinin kullanım alanlarının taahhüt edildiği gibi verimli projelerde değerlendirilip değerlendirilmediği ara raporlarda izlenmelidir",
+        "Şirketin ana faaliyet kalemi olan polietilen bazlı plastik boru sektöründeki hammadde maliyeti dalgalanmaları nakit akışını baskılayabilir"
+      ],
+      "summary": "Net Global Endüstriyel Yatırımlar A.Ş., 1.500.000.000 TL kayıtlı sermaye tavanı içerisinde 250.000.000 TL olan sermayesini 312.500.000 TL'ye yükseltmiştir. 09-10-11 Eylül 2026 tarihlerinde 25,52 TL fiyatla gerçekleştirilen halka arzda toplam 2.233.000.000,00 TL halka arz büyüklüğüne ulaşılmış olup brüt gelir 1.595.000.000,00 TL olarak gerçekleşmiştir. Sağlanan bu fon şirketin borçlanma ihtiyacını azaltırken, devam eden vagon üretim tesisi ve GES yatırımlarının finansmanı açısından kritik önem taşımaktadır.",
+      "ts": "2026-11-16T18:00:58.661430+03:00"
+    },
+    "1698546": {
+      "analysis_points": [
+        "30 Eylül 2026 tarihli sınırlı denetim raporu olumlu görüş içermektedir → Finansal tabloların güvenilirliği açısından denetim görüşünde şerh bulunmamaktadır",
+        "Geçmiş dönem (30 Eylül 2025) raporunda TMSF yönetiminden kaynaklı denetim kısıtları mevcuttu → Cari dönem itibarıyla bu kısıtların denetim raporundan kalkmış olduğu izlenmektedir",
+        "9 aylık konsolide olmayan bilânço ve gelir tablosu verileri → Bankanın kredi büyümesi, aktif kalitesi ve özkaynak kârlılığı rasyoları üzerinden detaylı incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "7c2c2c0cd5767e53",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Geçmiş dönemlerde TMSF tarafından atanan yönetim dönemine ait teyit sınırlamaları nedeniyle denetim kısıtları yaşanmıştır",
+        "Bankanın kredi portföyünün kalitesi ve faiz marjlarındaki değişimler net faiz gelirini baskılayabilir"
+      ],
+      "summary": "Bankpozitif Kredi ve Kalkınma Bankası A.Ş.'nin 30 Eylül 2026 tarihinde sona eren dokuz aylık hesap dönemine ait konsolide olmayan finansal tabloları bağımsız denetim şirketince sınırlı denetime tabi tutulmuştur. Sınırlı denetim sonucunda, finansal tabloların BDDK muhasebe ve finansal raporlama mevzuatına uygun olarak tüm önemli yönleriyle gerçeğe uygun sunulmadığına dair herhangi bir olumsuz hususa rastlanmadığı bildirilmiştir. Raporda geçmiş dönemlere ilişkin TMSF atamalı yönetim dönemindeki bazı kısıtlamalara da \"Diğer Husus\" altında değinilmiştir.",
+      "ts": "2026-11-16T18:00:58.661430+03:00"
+    },
+    "1698562": {
+      "analysis_points": [
+        "Arsa alım bedeli 2.100.000.000 TL ve toplam alan 120.655,31 m² → Metrekare başına maliyet yaklaşık 17.404 TL seviyesindedir, bölgedeki emsal arsa maliyetleriyle karşılaştırılmalıdır",
+        "Alımın KDV muaf ve TOKİ ile gerçekleştirilmiş olması → Finansal yapı üzerinde vergi avantajı sağlarken, ödeme vadesine bağlı olarak net nakit akımını etkiler",
+        "Portföye eklenen yeni arsalar → Şirketin gelecek dönemde üreteceği konut projelerinin arsa maliyet tabanını ve brüt kâr marjını doğrudan şekillendirir"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "bb8dbd146cad0282",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "2.100.000.000 TL tutarındaki arsa alımının şirketin nakit pozisyonu veya kısa vadeli borçlanma kalemi üzerindeki etkisi incelenmelidir",
+        "Aydın Didim bölgesindeki arsa için planlanan projelerin satış hızı ve bölge talebi risk oluşturabilir"
+      ],
+      "summary": "Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş., TOKİ ile Aydın Didim Efeler Mahallesi'nde yer alan toplam 120.655,31 m² büyüklüğündeki iki taşınmazın 2.100.000.000 TL (KDV muaf) bedelle satın alınmasına ilişkin protokol imzalamıştır. Alım, şirketin uzun vadeli büyüme stratejisi doğrultusunda gayrimenkul portföyüne dahil edilmiştir. Bu büyüklükteki nakit çıkışı veya yükümlülük, şirketin kısa vadeli likidite yapısı ve gelecekteki proje geliştirme potansiyeli açısından önem arz etmektedir.",
+      "ts": "2026-11-16T18:00:58.661430+03:00"
     }
   },
-  "updated_at": "2026-11-16T17:00:59.186193+03:00",
+  "updated_at": "2026-11-16T18:00:58.661430+03:00",
   "version": 1
 }
