@@ -2019,8 +2019,342 @@
       ],
       "summary": "Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş., TOKİ ile Aydın Didim Efeler Mahallesi'nde yer alan toplam 120.655,31 m² büyüklüğündeki iki taşınmazın 2.100.000.000 TL (KDV muaf) bedelle satın alınmasına ilişkin protokol imzalamıştır. Alım, şirketin uzun vadeli büyüme stratejisi doğrultusunda gayrimenkul portföyüne dahil edilmiştir. Bu büyüklükteki nakit çıkışı veya yükümlülük, şirketin kısa vadeli likidite yapısı ve gelecekteki proje geliştirme potansiyeli açısından önem arz etmektedir.",
       "ts": "2026-11-16T18:00:58.661430+03:00"
+    },
+    "1698565": {
+      "analysis_points": [
+        "Grup içi atama → yönetim bağımsızlığı ve denetim yapısı üzerinde etkisi sınırlı",
+        "Genel kurul onayı 15.05.2027'ye kadar → onaylanmazsa koltuk tekrar boşalır"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "3c2aea83f13e4740",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "Zorlu Enerji Elektrik Üretim A.Ş. Yönetim Kurulu'nda Zorlu Yenilenebilir Enerji A.Ş. istifa etmiş, yerine Zorlu Doğal Elektrik Üretim A.Ş. atanmıştır (gerçek kişi temsilcisi Elif Yener). Atama 15.05.2027'ye kadar geçerli, ilk genel kurulda onaylanacaktır. Grup içi bir koltuk değişimi olup bağımsızlık veya stratejik yönde değişiklik yoktur.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698566": {
+      "analysis_points": [
+        "Rutin genel kurul tescili → şirketin operasyonel veya finansal yapısına doğrudan etkisi bulunmuyor, mali tabloları değiştirmeyecek"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "b9c27d2de73e94d8",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "EYG GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., 16.11.2026 tarihinde 2025 Yılı Olağan Genel Kurul Toplantısı'nın tescil edildiğini bildirdi. Bu bildirim rutin bir idari ve yasal süreci yansıtmakta olup şirketin finansal yapısında veya kredi profilinde doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698567": {
+      "analysis_points": [
+        "İstifa nedeni açıklanmamış → yönetim kararlılığı üzerindeki etkisi izlenmeli, KAP ekine bakılmalı",
+        "Yeni üye ataması ve genel kurul onayı süreci → 15.05.2027'ye kadar geçici boşluk oluşabilir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "608a984b0a34f1a2",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. Yönetim Kurulu üyesi Abdullah Kavukcu istifa etmiştir. İstifa nedeni ve yerine gelecek kişi bildirilmemiştir. Rutin bir üye değişikliği olup şirketin operasyonel veya finansal profilini doğrudan değiştiren bir unsuru yoktur.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698572": {
+      "analysis_points": [
+        "Rutin genel kurul açıklaması → finansal tablolar veya borç yapısı üzerinde somut bir etkisi yoktur"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "4768dcbd56680708",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Avrupa Yatırım Holding A.Ş., 2025 yılı olağan genel kurul toplantısının gerçekleştirildiğine dair bildirimde bulunmuştur. Bildirim, standart bir kurumsal yönetim prosedürü niteliğindedir. Şirketin bilanço, borç veya nakit akış yapısına doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698589": {
+      "analysis_points": [
+        "Alacakların sermayeye dönüştürülmesi → Bağlı ortaklığın nakit ihtiyacının karşılanması ve bilançosunun güçlendirilmesi, Baydöner'in konsolide borçluluk yapısında nötr etki yaratır",
+        "APK Gıda'nın özkaynak yapısı → Sermaye artırımı sonrası bağlı ortaklığın yatırım kapasitesi ve operasyonel nakit akışı izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "7dee181bc1bd1ecd",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Baydöner Restoranları A.Ş., %100 bağlı ortaklığı APK Gıda'nın sermayesini 250 bin TL'den 40,25 milyon TL'ye çıkarmıştır. 40 milyon TL'lik sermaye artırımı, Baydöner'in APK Gıda'dan olan alacaklarının mahsup edilmesi yoluyla gerçekleştirilmiştir.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698597": {
+      "analysis_points": [
+        "İhraç tutarı açıklanmadı → Şirketin likidite ihtiyacı ve borç çevirme rasyoları üzerindeki etkisi için ihraç tavanı takip edilmeli",
+        "İhraç vadesi ve faiz oranı belirsiz → Finansman maliyetinin şirketin FAVÖK marjı üzerindeki baskısı izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "ebab8bfed5bc68f2",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Arçelik A.Ş., yurt içinde borçlanma aracı ihracı için karar alarak SPK'ya başvuru yapmıştır. Şirketin borçlanma tavanı ve ihraç miktarı gibi detaylar henüz açıklanmamıştır.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698604": {
+      "analysis_points": [
+        "Belge metni boş → İşlemin finansal büyüklüğü ve şirket üzerindeki etkisi hesaplanamıyor, detaylı açıklama beklenmeli"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "a2c38cef32396771",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Bildirim içeriğinde işlemin mahiyetine dair bilgi bulunmaması"
+      ],
+      "summary": "MİA Teknoloji A.Ş. tarafından yapılan birleşme işlemine ilişkin bildirimde, ekli dosyada herhangi bir somut finansal veri veya işlem detayı yer almamaktadır. Belge içeriği yalnızca doğrulama kodlarından ibaret olup, işlemin kapsamı, tarafları veya finansal etkileri hakkında bilgi içermemektedir.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698608": {
+      "analysis_points": [
+        "Kredi notu A- (tr)'den BBB (tr)'ye indirildi → borçlanma maliyetleri artar ve finansmana erişim koşulları zorlaşır",
+        "Kısa vadeli finansal borçlar ve capex arttı → serbest nakit akışı daraldığı için borç servis kapasitesi izlenmelidir",
+        "Görünüm Negatif → kaldıraç oranları düşürülemezse önümüzdeki dönemde ilave not indirimleri gündeme gelebilir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "32c0a542e39e1b96",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Tedarik dinamiklerindeki değişimler kaynaklı artan işletme sermayesi ihtiyacı",
+        "Yüksek tutarlı yatırım harcamalarının (capex) faaliyetlerden nakit akışını ve serbest nakit akışını daraltması",
+        "Kısa vadeli finansal borçluluktaki önemli artışın kaldıraç ve likidite üzerinde oluşturduğu baskı"
+      ],
+      "summary": "JCR Avrasya, Kuzey Boru Anonim Şirketi'nin kredi notunu A- (tr)'den BBB (tr)'ye indirmiş ve görünümü Negatif olarak belirlemiştir. Uzun vadeli uluslararası not BB (Durağan), kısa vadeli ulusal not J2 (tr) (Durağan) olarak teyit edilmiştir. Tedarik dinamiklerindeki değişimler nedeniyle artan işletme sermayesi ihtiyacı, yüksek tutarlı yatırım harcamaları ve kısa vadeli finansal borçlardaki artış not indiriminin ana gerekçeleri olarak gösterilmiştir.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698610": {
+      "analysis_points": [
+        "Rutin genel kurul tescili → şirketin operasyonel veya finansal yapısına doğrudan etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "0a5d887c655f4a42",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Katmerciler Üstü Ekipman Sanayi ve Ticaret A.Ş., 2025 yılı olağan genel kurul toplantısına ilişkin tescil ve ilan işlemlerinin tamamlandığını bildirdi. Bildirim, olağan idari ve kurumsal bir süreci kapsamakta olup şirketin finansal yapısında doğrudan bir değişiklik yaratmamaktadır. Analist açısından kritik bir finansal etki barındırmamaktadır.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698611": {
+      "analysis_points": [
+        "982 milyon TL tutarlı finansman bonosu ödenemedi → şirketin likidite sıkıntısı temerrüt ile sonuçlandı, diğer borçlar için çapraz temerrüt riski incelenmeli",
+        "Notlar prD (Temerrüt) seviyesine indi → yeni borçlanma maliyetleri imkansızlaşır ve regülasyon nezdindeki faaliyet koşulları zorlaşır",
+        "Nakit akışı ve likidite tamponları tükendi → borç yeniden yapılandırma veya sermaye enjeksiyonu zorunlu hale geldi"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "41ed0fd27ed84ff6",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "13.11.2026 itfa tarihli 982 milyon TL nominal tutarlı finansman bonosunun ödenememesi ve temerrüt",
+        "Uzun vadeli uluslararası notun prD (Temerrüt) seviyesinde olması",
+        "Kısa vadeli ulusal notun prD (tr) (Negatif) seviyesine gerilemesi"
+      ],
+      "summary": "JCR Avrasya, Bulls Yatırım Menkul Değerler Anonim Şirketi'nin kredi notunu CC (tr) seviyesine indirerek görünümü Negatif olarak güncellemiştir. Uzun vadeli uluslararası not prD (Negatif), kısa vadeli ulusal not prD (tr) (Negatif) olarak belirlenmiştir. Şirketin 13.11.2026 itfa tarihli 982 milyon TL nominal tutarlı finansman bonosunun anapara ve kupon ödemesini vadesinde gerçekleştiremeyerek temerrüde düşmesi not indiriminin temel gerekçesini oluşturmuştur.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698612": {
+      "analysis_points": [
+        "İlişkili taraf alacaklarının dönen varlıklar içindeki payı artıyor → tahsilat yapılmazsa nakit akışı ve işletme sermayesi baskı altında kalır",
+        "Uzun vadeli ulusal not BBB- (tr) sınır seviyede → görünüm Negatif olduğu için olası bir kademe indiriminde yatırım yapılabilir seviyenin altına düşer",
+        "Kısa vadeli ulusal not J3 (tr) (Durağan) → kısa vadeli borç servis kapasitesi mevcut seviyede korunuyor ancak likidite izlenmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "d7c930fdcad60ff8",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "2026 yılı ilk 9 aylık dönem sonu itibarıyla ilişkili taraflardan alacakların artış eğilimini sürdürmesi",
+        "İlişkili taraf alacaklarının tahsilat sürecine ilişkin devam eden belirsizlikler",
+        "Uzun vadeli uluslararası görünümün Negatif olması"
+      ],
+      "summary": "JCR Avrasya, Erciyas Çelik Boru Sanayi A.Ş.'nin kredi notunu Uzun Vadeli Ulusal BBB- (tr), görünümü Negatif olarak teyit etmiştir. Uzun vadeli uluslararası not BB- (Negatif), kısa vadeli ulusal not ise J3 (tr) (Durağan) olarak belirlenmiştir. Bildirimde, ilişkili taraflardan alacakların yüksek seviyelerde artış eğilimini sürdürmesi ve tahsilat sürecindeki belirsizlikler kredi kalitesi açısından risk unsuru olarak vurgulanmıştır.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698614": {
+      "analysis_points": [
+        "Belge metni sağlanmamış → KAP'tan tam mali tablolar indirilip likidite, borçlanma, karlılık ve capex metrikleri hesaplanmalı",
+        "9 aylık net borç/FAVÖK, cari oran, serbest nakit akışı gibi kredi metrikleri rapor eline geçene kadar hesaplanamaz"
+      ],
+      "category": "Finansal rapor",
+      "has_document": false,
+      "hash": "3fae56b5e4b358cf",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "BURÇELİK VANA SANAYİ VE TİCARET A.Ş. 01.01.2026-30.09.2026 dönemi mali tablolarını yayımladı. Belge metni sağlanmadığı için bilanço, kar/zarar, nakit akışı ve özkaynak kalemleri bu çıktıda değerlendirilemedi.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698616": {
+      "analysis_points": [
+        "Belge metni sağlanmamış → KAP'tan tam metin indirilip ciro, FAVÖK, net borç, capex ve özkaynak değişimleri incelenmeli",
+        "9 aylık karlılık trendi ve nakit akışı yönü belirsiz → tam rapor eline geçene kadar pozisyon alma riski yüksek"
+      ],
+      "category": "Finansal rapor",
+      "has_document": false,
+      "hash": "a7bcc595ba19cb74",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "BURÇELİK VANA SANAYİ VE TİCARET A.Ş. 01.01.2026-30.09.2026 dönemi faaliyet raporunu yayımladı. Belge metni sağlanmadığı için sayısal detaylar (ciro, kâr, nakit, borç, yatırım) ve yönetim değerlendirmesi bu çıktıda değerlendirilemedi.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698621": {
+      "analysis_points": [
+        "1 Ocak 2027 münhasır distribütörlük → Şirketin 2027 yılı ciro beklentisine doğrudan katkı potansiyeli, pazar payı hedefleri üzerinden değerlendirilmeli",
+        "Üretim iş birliği → Yerli üretim avantajının maliyet yapısına ve vergi teşviklerine etkisi izlenmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "64c0dd832c7f4b53",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Mobiltel İletişim, Realme markalı ürünlerin Türkiye'de satışı, pazarlanması ve dağıtımı için distribütörlük sözleşmesi imzalamıştır. 1 Ocak 2027 itibarıyla münhasır distribütörlük yetkisi kazanılacak olup, üretim Mıstaçoğlu Grup iştiraki AGM Teknoloji tarafından yapılacaktır.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698625": {
+      "analysis_points": [
+        "Kar dağıtımı teklifi yok (zarar) → nakit akışı ve özkaynak pozisyonu 2026/27 bütçesinde dış finansman ihtiyacını belirleyecek",
+        "Denetim firması Any Partners olarak önerildi → bağımsız denetim süreci ve rapor kalitesi izlenmeli",
+        "Yönetim kurulu ücretleri yeniden belirlenecek → G&A gider kalemindeki trend ve nakit akışı etkisi takip edilmeli"
+      ],
+      "category": "Genel Kurul",
+      "has_document": true,
+      "hash": "e7448c53064bd8ad",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Dönem zararı → kar dağıtımı yok, özkaynak beslemesi sınırlı, transfer/faaliyet finansmanı dış kaynaklara bağımlı olabilir"
+      ],
+      "summary": "TRABZONSPOR SPORTİF YATIRIM A.Ş. 01.06.2025-31.05.2026 hesap dönemi için 11.12.2026 tarihinde olağan genel kurul toplantısı çağıracak. Gündemde 2025/26 döneminde zarar oluşması nedeniyle kar dağıtımı yapılamayacağına ilişkin yönetim kurulu teklifi, yönetim kurulu üyelerinin ibrası, yeni dönem denetim firmasının (Any Partners) atanması ve yönetim kurulu ücretlerinin tespiti yer alıyor.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698628": {
+      "analysis_points": [
+        "Net kar 183,8 mn TL (+36,3% YoY) → esas faaliyet karı düz ama finansman/vergi giderleri/gelirleri net kârı yukarı çekti, kalite ayrımı yapmalı",
+        "Brüt kar marjı %8,0 (%12,5'den) → birim maliyet artışı veya satış fiyatı baskısı, 2026 yıl sonu hedefleri için Q4'te marj iyileşmesi gerekli",
+        "Özkaynak karlılığı (ROE) 9 ayda ~%20,4 (183,8/898,9) → sermaye verimliliği yüksek, temettü kapasitesi ve yeniden yatırım alanı geniş"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "87d387388e061bd0",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Hasılat %5,7 düştü ama brüt kar %40 düştü → maliyet baskısı ve/veya fiyatlama gücü zayıflaması, 2026 Q4 marj toparlanması kritik",
+        "İlişkili taraflara ticari borç 400,7 mn TL (31.12.2025: 185,2 mn TL) → işleyiş kapitali ve nakit çevrim süresi üzerindeki etkisi izlenmeli"
+      ],
+      "summary": "BOSCH FREN SİSTEMLERİ A.Ş. 30.09.2026 tarihli ara dönem mali tablolarını yayımladı. 9 aylık hasılat 2,525 mn TL (önceki yıl: 2,677 mn TL, -5,7%), brüt kar 201,4 mn TL (335,5 mn TL, -40%), esas faaliyet karı 147,6 mn TL (146,3 mn TL, +0,9%), net dönem karı 183,8 mn TL (134,9 mn TL, +36,3%). Brüt kar marjı %8,0'ye (önceki yıl %12,5) düştü. Nakit ve nakit benzerleri 349,8 mn TL, toplam özkaynaklar 898,9 mn TL.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698629": {
+      "analysis_points": [
+        "Nakit 349,8 mn TL (+78,6% YTD) → operasyonel nakit üretimi güçlü, 9 ayda 153,8 mn TL artış",
+        "İlişkili taraflara ticari borç 400,7 mn TL (%116 artış) → anahtar tedarikçi/ana ortak (Robert Bosch GmbH) ödeme takvimi ve koşulları takip edilmeli",
+        "Toplam özkaynaklar 898,9 mn TL (31.12.2025: 715,4 mn TL) → 9 ayda 183,5 mn TL artış, karlılık ve özkayağın güçlenmesi devam ediyor"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "8180ac13581a2e26",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "İlişkili taraflara ticari borçlar 9 aylık dönemde 215,5 mn TL arttı → nakit döngüsü ve işleyiş kapitali yönetimi izlenmeli"
+      ],
+      "summary": "BOSCH FREN SİSTEMLERİ A.Ş. 01.01.2026-30.09.2026 ara dönem faaliyet raporunu yayımladı. Nakit ve nakit benzerleri 349,8 mn TL'ye (31.12.2025: 195,9 mn TL) yükseldi. Ticari alacaklar 604,7 mn TL'ye (708,5 mn TL) düştü, stoklar 153,4 mn TL'ye (204,2 mn TL) geriledi. İlişkili taraflara ticari borçlar 400,7 mn TL'ye (185,2 mn TL) 116% arttı, toplam kısa vadeli yükümlülükler 633,4 mn TL'ye (705,5 mn TL) düştü. Yönetim Kurulu Başkanı Daniel Archip Werner Korioth 30.07.2026'da istifa etti, Karin Gabriele Gilges aynı tarihten itibaren atandı.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698630": {
+      "analysis_points": [
+        "Not BBB (tr) / Negatif → bir sonraki indirimde BB+ (tr) (spekülatif seviye) → banka kredilerinde temerrüt tetikleyicileri (covenant breach) ve fon maliyeti artışı beklenir; 2025-2026 borç matürite profili ve nakit pozisyonu test edilmeli",
+        "Faaliyet nakit akışı ince, yatırım harcamaları yüksek → serbest nakit akışı (FCF) 2025-2026'da negatif mi? Negatifse dış finansman olmadan likidite kaç ay dayanır? Hesaplanmalı",
+        "Kısa vadeli borçlanma artışı → 2025 sonu kısa vadeli borç / toplam borç oranı ve cari oran izlenmeli; cari oran 1.0 altına düşerse acil likidite planı gerekir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "afd93f62cb481448",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Not iki notch indirildi (A- → BBB) ve görünüm Negatif → bir sonraki gözlemde BB+ (tr) veya altına düşme riski (yüksek yield/ speculative grade eşiği)",
+        "Faaliyetlerden nakit akışı ve serbest nakit akışı 'ince' tanımlandı → borç ödeme kapasitesi zayıf, yeniden finansman riski yüksek",
+        "Kısa vadeli finansal borçlulukta 'önemli artış' → refinansman rollover riski, faaliyet nakit akışıyla karşılanamıyorsa likidite darboğazı"
+      ],
+      "summary": "JCR Avrasya, Kuzey Boru A.Ş.'nin uzun vadeli ulusal kredi notunu A- (tr)'den BBB (tr)'ye iki notch indirmiş, görünüm 'Negatif' tutmuştur. Uzun vadeli uluslararası not BB (Durağan), kısa vadeli ulusal not J2 (tr) (Durağan). İndirim gerekçeleri: tedarik dinamiklerindeki değişimden dolayı artan işletme sermayesi ihtiyacı ve yüksek yatırım harcamalarının etkisiyle faaliyetlerden nakit akışı ve serbest nakit akışının ince olması; yatırım harcamalarından kaynaklanan kısa vadeli finansal borçluluktaki önemli artışın 2025 itibarıyla kaldıraç ve likidite göstergeleri üzerinde baskı oluşturması.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698634": {
+      "analysis_points": [
+        "Personel sayısında %29,71 azalış → Operasyonel giderlerde (OPEX) tasarruf beklentisi, ancak gelir yaratma kapasitesinde daralma riski incelenmeli",
+        "Organizasyonel yapılanma → Şirketin stratejik odak değişikliği veya faaliyet hacmindeki daralma neticesi takip edilmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "b518e0eff49093ab",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Kısa sürede yüksek oranlı personel azaltımı",
+        "Operasyonel küçülme sinyali"
+      ],
+      "summary": "İnfo Yatırım Menkul Değerler A.Ş., organizasyonel yapılanma gerekçesiyle personel sayısında 30.09.2026 tarihine göre %29,71 oranında küçülmeye gitmiştir. Çalışan sayısı 276'dan 194'e düşürülmüştür.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698652": {
+      "analysis_points": [
+        "87 Milyon TL ibra geliri (net 61 Milyon TL kâr etkisi) bir kezlik → 9M2026 net kârından çıkarılınca çekirdek kârlılık ne kadar? Hesaplanmalı",
+        "13 Milyon TL serbest karşılık iptali → 30.09.2026 bilançosunda karşılıklar 13 Milyon TL azalmış, kâr da 13 Milyon TL düşmüş; CAR etkisi izlenmeli",
+        "27 Milyon TL ertelenmiş vergi hatası (2024) → 2025 ve 2026 vergisi üzerindeki etkisi netleşmeli, nakit vergi ödemeleri değişebilir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "845c570e5461f9a0",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Sınırlı olumlu görüş (iki ayrı düzeltme) → muhasebe kontrol zayıflığı, düzenleyici inceleme riski",
+        "İbra edilen 87 Milyon TL gelir bir kezlik → tekrar edecek nitelikte değil, çekirdek kârlılığıyı abartıyor",
+        "TMS 12 ve TMS 37 uyumsuzlukları → iç kontrol ve finansal raporlama sürecinde sistematik hata"
+      ],
+      "summary": "Turkland Bank A.Ş. 30 Eylül 2026 tarihli 9 aylık solo finansal tablolarında EY 'sınırlı olumlu görüş' vermiştir. İki ana neden: (1) Bankmed S.A.L. ile imzalı yönetim sözleşmesi kapsamındaki yükümlülüklerin ibrası sonucu 87 Milyon TL 'Diğer Faaliyet Gelirleri' ve 26 Milyon TL 'Ertelenmiş Vergi Gideri' muhasebeleştirilmiş, net 61 Milyon TL kâr etkisi Özkaynaklar'da 'Geçmiş Yıllar Karı' altına alınmış (Özkaynaklar toplamı değişmemiş). (2) 31.12.2024'te TMS 12 uyarınca 27 Milyon TL ertelenmiş vergi varlığı/gideri kaçırılmış, 31.03.2025'te düzeltilmiş; karşılaştırmalı tablolarda Dönem Net Karı ve Ertelenmiş Vergi Gelir Etkisi etkilenmiş. Ayrıca 18 Milyon TL TMS 37 kriterlerini karşılamayan serbest karşılık ve 5 Milyon TL ertelenmiş vergi varlığı iptal edilerek 13 Milyon TL onceki yıl zararı olu",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698654": {
+      "analysis_points": [
+        "610 Milyon TL serbest karşılık BDDK dışı → bu tutar özkaynaklardan düşülürse standart sermaye oranları (CAR) ne kadar etkilenecek? Hesaplanmalı",
+        "Şartlı görüş süresi 30.09.2026 → yıl sonu 31.12.2026 tablolarında karşılık iptal edilmiş mi? Yıllık denetim raporu izlenmeli",
+        "Konsolide tablo kapsamında UPT, Aktif Portföy, N Kolay, Aktif Menkul, Kazakhstan Ijara yer alıyor → alt şirketlerin performansı banka kârına ne oranda katkı sağlıyor? Segment bazlı analiz gerekli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "1e443f994463acea",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Şartlı denetim görüşü (serbest karşılık 610 Milyon TL) → BDDK mevzuatı uyumsuzluğu, düzenleyici baskı riski",
+        "Serbest karşılık BDDK dışı ayrılmış → tazminat/ceza ve sermaye yeterliliği hesaplamalarını etkileyebilir"
+      ],
+      "summary": "Aktif Yatırım Bankası A.Ş. 30 Eylül 2026 tarihli 9 aylık konsolide finansal tablolarında Deloitte 'şartlı olumlu görüş' vermiştir. Nedeni: BDDK mevzuatı dışında geçmiş dönemde ayrılan 610 Milyon TL serbest karşılığın muhasebeleştirilmesi. Bu karşılık iptal edilmeseydi diğer karşılıklar 610 Milyon TL daha az, geçmiş yıllar kârları 610 Milyon TL daha fazla olurdu. Banka 30.09.2026 itibarıyla BDDK mevzuatına uygun hazırlanmış, ancak bu fark nedeniyle şartlı görüş almıştır.",
+      "ts": "2026-11-16T19:00:56.847628+03:00"
     }
   },
-  "updated_at": "2026-11-16T18:00:58.661430+03:00",
+  "updated_at": "2026-11-16T19:00:56.847628+03:00",
   "version": 1
 }

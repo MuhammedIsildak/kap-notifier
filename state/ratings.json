@@ -150,8 +150,102 @@
         "source": "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI ANONİM ŞİRKETİ.pdf"
       },
       "ts": "2026-11-16T16:00:55.893897+03:00"
+    },
+    "1698608": {
+      "hash": "32c0a542e39e1b96",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da17e515f01a1e41673ad4877"
+        ],
+        "current": "BBB (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "KUZEY BORU ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "A- (tr)",
+        "red_flags": [
+          "Büyük ölçüde tedarik dinamiklerindeki değişimlerden kaynaklanan artan işletme sermayesi ihtiyacı ve yüksek tutarlı yatırım harcamalarının etkisiyle işletme faaliyetlerden kaynaklanan nakit akışı ve faaliyetlerden serbest nakit akışının ince",
+          "Ağırlıklı olarak yatırım harcamalarından kaynaklanan kısa vadeli finansal borçluluktaki önemli artışın 2025 yılı itibarıyla kaldıraç ve likidite göstergeleri üzerinde baskı oluşturması."
+        ],
+        "source": "KUZEY BORU ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698611": {
+      "hash": "41ed0fd27ed84ff6",
+      "info": {
+        "action": "Güncelleme",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da17e515f01a1e411815c47b4"
+        ],
+        "current": "CC (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: prD / (Negatif)",
+          "Kısa vadeli ulusal: prD (tr) / (Negatif)"
+        ],
+        "entity": "BULLS YATIRIM MENKUL DEĞERLER ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [
+          "13.11.2026 itfa tarihli, 982 milyon TL nominal tutarlı finansman bonosunun anapara ve kupon ödemesinin vadesinde ödenememesi ve temerrüde düşmesi Esas itibarıyla yukarıdaki hususlar kapsamında \"BULLS YATIRIM MENKUL DEĞERLER ANONİM ŞİRKETİ\" "
+        ],
+        "source": "BULLS YATIRIM MENKUL DEĞERLER ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698612": {
+      "hash": "d7c930fdcad60ff8",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da17e515f01a1e4591da04c48"
+        ],
+        "current": "BBB- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB- / (Negatif)",
+          "Kısa vadeli ulusal: J3 (tr) / (Durağan)"
+        ],
+        "entity": "ERCİYAS ÇELİK BORU SANAYİ A.Ş.",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [
+          "2026 yılı ilk 9 aylık dönem sonu verilerine göre, yüksek seviyelerde seyreden ilişkili taraflardan alacakların artış eğilimini sürdürmesinin yanı sıra ilgili alacakların tahsilat sürecine ilişkin devam eden belirsizlik Esas itibarıyla yukar"
+        ],
+        "source": "ERCİYAS ÇELİK BORU SANAYİ A.Ş..pdf"
+      },
+      "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698630": {
+      "hash": "afd93f62cb481448",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5e01a1e4f657f93986"
+        ],
+        "current": "BBB (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "KUZEY BORU ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "A- (tr)",
+        "red_flags": [
+          "Büyük ölçüde tedarik dinamiklerindeki değişimlerden kaynaklanan artan işletme sermayesi ihtiyacı ve yüksek tutarlı yatırım harcamalarının etkisiyle işletme faaliyetlerden kaynaklanan nakit akışı ve faaliyetlerden serbest nakit akışının ince",
+          "Ağırlıklı olarak yatırım harcamalarından kaynaklanan kısa vadeli finansal borçluluktaki önemli artışın 2025 yılı itibarıyla kaldıraç ve likidite göstergeleri üzerinde baskı oluşturması."
+        ],
+        "source": "jcrer_KuzeyBoru_spkbildirim_2026.pdf"
+      },
+      "ts": "2026-11-16T19:00:56.847628+03:00"
     }
   },
-  "updated_at": "2026-11-16T18:00:58.661430+03:00",
+  "updated_at": "2026-11-16T19:00:56.847628+03:00",
   "version": 1
 }
