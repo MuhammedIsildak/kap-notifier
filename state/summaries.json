@@ -1689,8 +1689,22 @@
       "red_flags": [],
       "summary": "Kardemir Karabük Demir Çelik Sanayi ve Ticaret A.Ş., SPK bülteninde yer alan işlemlerin başka bir unvan taşıyan Kardemir Çelik Sanayi A.Ş. (KARCL) ile ilgili olduğunu ve şirketleriyle hiçbir bağının bulunmadığını duyurmuştur. Bu açıklama, benzer unvan karışıklığı nedeniyle piyasada oluşabilecek yanlış anlamaları ve olası itibar riskini ortadan kaldırmaktadır. Şirket, 24.07.2026 tarihli önceki açıklamasına atıfta bulunarak iki tüzel kişilik arasındaki bağımsızlığı teyit etmiştir.",
       "ts": "2026-11-15T17:00:51.603259+03:00"
+    },
+    "1698232": {
+      "analysis_points": [
+        "Sınırlı denetim raporunda olumsuz görüş veya şartlı tasdik bulunmuyor → finansal tablolar standartlara uygun olarak sunulmuştur",
+        "Rapor metninde detaylı finansal kalemler (net borç, FAVÖK, ciro) yer almamaktadır → dipnotlar ve tablolardaki ana kalemler ayrıca incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "4fe99765354b246d",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Lokman Hekim Engürüsağ Sağlık, Turizm, Eğitim Hizmetleri ve İnşaat Taahhüt A.Ş.'nin 01.01.2026-30.09.2026 ara hesap dönemine ait konsolide finansal tabloları yayımlandı. Vezin Bağımsız Denetim A.Ş. tarafından gerçekleştirilen sınırlı denetim sonucunda, raporun TMS 34 Ara Dönem Finansal Raporlama Standardı'na uygun olmadığını düşündürecek herhangi bir hususa rastlanmadığı belirtildi. Bu bildirim, şirketin 9 aylık finansal performansının ve nakit akışlarının denetlenmiş resmi sonuçlarını ortaya koymaktadır.",
+      "ts": "2026-11-16T08:00:54.840017+03:00"
     }
   },
-  "updated_at": "2026-11-15T17:00:51.603259+03:00",
+  "updated_at": "2026-11-16T08:00:54.840017+03:00",
   "version": 1
 }
