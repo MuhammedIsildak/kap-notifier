@@ -1810,8 +1810,34 @@
       "red_flags": [],
       "summary": "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş., Pusula Portföy Birinci Hisse Senedi Serbest (TL) Fon portföyünde bulunan şirket paylarının devri için kurum ve kuruluşlarla yazışmaların sürdürüldüğünü güncellemiştir. Bu bildirim, rutin bir pay sahipliği ve idari süreç güncellemesi niteliğindedir. Şirketin ana faaliyetlerini veya finansal yapısını doğrudan etkileyecek kritik bir unsur içermemektedir.",
       "ts": "2026-11-16T10:00:56.734692+03:00"
+    },
+    "1698294": {
+      "analysis_points": [
+        "SPK'nın 06.11.2026 tarihli yazısına istinaden İzmir Şubesi 16.11.2026'da tescil edildi → Yeni şubenin operasyonel giderlere yansıması ve komisyon gelirlerine katkısı gelecek dönem finansal raporlarında takip edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "cd77993a06a132dc",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "FİBA YATIRIM MENKUL DEĞERLER A.Ş., Sermaye Piyasası Kurulu'nun 06.11.2026 tarihli yazısına istinaden Konak/İzmir adresinde İzmir Şubesi'nin açıldığını ve 16.11.2026 tarih ve 11709 sayılı Türkiye Ticaret Sicil Gazetesi'nde ilan edildiğini duyurmuştur. Bu şube açılışı operasyonel genişlemeye işaret etmekle birlikte, şirketin ana finansal tabloları üzerinde kısa vadede doğrudan büyük bir etki yaratması beklenmemektedir.",
+      "ts": "2026-11-16T11:00:54.588043+03:00"
+    },
+    "1698301": {
+      "analysis_points": [
+        "Düzce Şubesi'nin kapatılması ve temsil yetkisinin iptali 13.11.2026 tarih ve 11708 sayılı Ticaret Sicili Gazetesi'nde tescil edildi → Bölgesel operasyonel maliyetlerde düşüş beklenmeli, gelir tablosuna etkisi şube bazlı karlılık raporlarından izlenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "f9938941ef81338b",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "SKYALP FİNANSAL TEKNOLOJİLER VE DANIŞMANLIK A.Ş., Düzce Şubesi'nin kapatılması ve Şube Müdürü'nün temsil yetkisinin iptaline ilişkin Yönetim Kurulu kararının 13.11.2026 tarihinde tescil edilerek Türkiye Ticaret Sicili Gazetesi'nde ilan edildiğini bildirmiştir. Bu idari işlem, operasyonel ağın daraldığını gösterse de şirketin finansal yapısı ve kredi profili üzerinde doğrudan kritik bir etki yaratmaz.",
+      "ts": "2026-11-16T11:00:54.588043+03:00"
     }
   },
-  "updated_at": "2026-11-16T10:00:56.734692+03:00",
+  "updated_at": "2026-11-16T11:00:54.588043+03:00",
   "version": 1
 }
