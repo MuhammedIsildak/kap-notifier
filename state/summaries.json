@@ -1721,8 +1721,97 @@
       ],
       "summary": "Lokman Hekim Engürüsağ A.Ş.'nin 2026 ilk dokuz aylık konsolide hasılatı geçen yılın aynı dönemine göre %9,3 artarak 4,2 milyar TL'ye, FAVÖK'ü ise %9,2 artışla 912 milyon TL'ye ulaştı. Maddi duran varlık satışından sağlanan 1,4 milyar TL nakit girişi ve 884 milyon TL satış kârının etkisiyle ana ortaklık net dönem kârı %438 artarak 835 milyon TL'ye yükseldi. Elde edilen nakdin borç kapatmada kullanılmasıyla düzeltilmiş net borç 1,153 milyar TL'ye gerilerken, net borç/FAVÖK oranı 0,92'ye düştü.",
       "ts": "2026-11-16T09:00:57.378569+03:00"
+    },
+    "1698257": {
+      "analysis_points": [
+        "Sözleşme tutarı yaklaşık 18.000.000 ABD Doları (905.000.000 TL) → 2026 son çeyreği ve 2027 ilk yarısında konsolide ciroya katkı sağlar",
+        "Ürünlerin büyük bölümü teslim alındı → Kısa vadede stok ve işletme sermayesi kalemlerinde nakit çıkışı veya borçlanma etkisi izlenmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "25bb3eccba3ec9d5",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Efor Yatırım Sanayi Ticaret A.Ş.'nin bağlı ortaklığı Efor Gübre Madencilik Sanayi Ticaret A.Ş., yurt dışında yerleşik uluslararası bir gübre tedarikçisiyle yaklaşık 18.000.000 ABD Doları (yaklaşık 905.000.000 TL) tutarında gübre alım anlaşması imzalamıştır. Ürünlerin büyük bölümü teslim alınmış olup kalan kısmın yakın zamanda teslim alınması beklenmektedir. Bu anlaşma, 2026 yılı son çeyreği ve 2027 yılı ilk yarısında konsolide ciroya katkı sağlayacaktır.",
+      "ts": "2026-11-16T10:00:56.734692+03:00"
+    },
+    "1698258": {
+      "analysis_points": [
+        "9 aylık konsolide sunum yayımlandı → Net kâr, FAVÖK ve net borç kalemleri incelenmeli",
+        "Türkçe yatırımcı sunumu esas alınacak → Metinler arası mutabakat kontrol edilmeli",
+        "Belgede finansal özet rakam verilmemiş → Şirket internet sitesindeki sunum dosyası incelenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "11a283c389a5c936",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Özyaşar Tel ve Galvanizleme Sanayi A.Ş., 2026 yılı 9 aylık konsolide İngilizce finansal sonuç sunumunu kurumsal internet sitesinde yayımlamıştır. Bu bildirim, dönemsel mali verilerin kamuya duyurulması amacıyla yapılan rutin finansal raporlama faaliyetidir. Asıl analitik değerlendirme, sunum içerisindeki kârlılık, borçluluk ve nakit akışı metriklerindeki değişimler üzerinden yapılmalıdır.",
+      "ts": "2026-11-16T10:00:56.734692+03:00"
+    },
+    "1698262": {
+      "analysis_points": [
+        "Sipariş tutarı 17.227.200 USD (866.235.297 TL) → Tripy'nin ve konsolide cirosunun büyümesine dönemsel katkı sağlar",
+        "10 yıllık uzun vadeli çerçeve sözleşme ve ek hizmet gelirleri → Şirketin düzenli nakit akışı yaratma kapasitesini destekler",
+        "Sürücüsüz otonom araç ve altyapı tedariki → Ar-Ge harcamalarının ticari ürüne dönüşüm oranını gösterir"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "a2bcef8028699d58",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Mia Teknoloji A.Ş. bağlı ortaklığı Tripy Mobility Teknoloji A.Ş., Türkiye'nin büyük telekomünikasyon şirketlerinden biriyle imzalanan 10 yıllık çerçeve sözleşme kapsamında KDV dâhil 17.227.200 USD (866.235.297 TL) tutarında sipariş almıştır. Sözleşme; otonom araçlar, kamyonlar, elektrikli bisikletler ile ilgili yazılım ve teknik altyapı tedarikini kapsamakta olup, bakım ve lisans gibi 10 yıllık ek hizmetler ayrıca ücretlendirilecektir. Bu anlaşma, şirketin otonom mobilite alanındaki teknolojik yetkinliğini ve yüksek ölçekli proje kapasitesini kanıtlayan önemli bir ticari gelişmedir.",
+      "ts": "2026-11-16T10:00:56.734692+03:00"
+    },
+    "1698263": {
+      "analysis_points": [
+        "Şube adresi Finanskent Mahallesi Finans Caddesi N30 İç Kapı N 17 Ümraniye/İSTANBUL olarak değiştirildi → Müşteri erişimi ve operasyonel süreklilik açısından izlenmeli",
+        "Finansal etki belirtilmedi → Mali tablolar üzerinde doğrudan bir etkisi bulunmuyor",
+        "Rutin idari işlem → Ek analiz gerektirmiyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "9c92d8e5d94af093",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Vakıf Finansal Kiralama A.Ş., İstanbul Anadolu Şubesi'nin adresini Ümraniye'deki yeni lokasyonuna taşımıştır. Bu bildirim operasyonel ve idari nitelikte rutin bir değişikliktir. Şirketin finansal tablolarına, borç yapısına veya varlık kalitesine etkisi bulunmamaktadır.",
+      "ts": "2026-11-16T10:00:56.734692+03:00"
+    },
+    "1698268": {
+      "analysis_points": [
+        "Sermaye artış bedeli 200.000 USD (26.000.000 KES) → Kalekim'in nakit pozisyonu üzerinde sınırlı etki yaratır",
+        "İştirak payı %50 oranında korunuyor → Yönetim ve ortaklık yapısında kontrol dengesi değişmiyor",
+        "Artışın gerekçesi işletme sermayesi ve büyüme → İştirakin operasyonel kârlılığı ve nakit yaratma kapasitesi izlenmeli"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "ce9d856f3b4d0a9a",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kalekim Kimyevi Maddeler Sanayi ve Ticaret A.Ş., %50 oranında iştirak ettiği Kenya'daki Kalekim East Africa Limited'in sermaye artırımına katılım kararı almıştır. Şirket, büyüme ve işletme sermayesi ihtiyacını karşılamak amacıyla 50.000.000 KES olan ödenmiş sermayenin 52.000.000 KES artırılarak 102.000.000 KES'e çıkarılması sürecinde, yeni pay alma hakkını kullanarak 26.000.000 KES (200.000 USD) nakit ödeme yapacaktır. Bu işlem, şirketin yurtdışı iştirak operasyonlarını ve bölgesel büyüme stratejisini destekleyen bir sermaye tahsisidir.",
+      "ts": "2026-11-16T10:00:56.734692+03:00"
+    },
+    "1698269": {
+      "analysis_points": [
+        "Pay devri süreci devam ediyor → Pay dağılımındaki değişim genel kurul ve ortaklık yapısı açısından izlenmeli",
+        "Belgede finansal tutar veya oran belirtilmemiş → Şirket değerlemesine doğrudan etki hesaplanamıyor",
+        "Yazışmaların tamamlanma tarihi açıklanmadı → Sürecin sonuçlanması beklenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "a3cdc0776ead7672",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş., Pusula Portföy Birinci Hisse Senedi Serbest (TL) Fon portföyünde bulunan şirket paylarının devri için kurum ve kuruluşlarla yazışmaların sürdürüldüğünü güncellemiştir. Bu bildirim, rutin bir pay sahipliği ve idari süreç güncellemesi niteliğindedir. Şirketin ana faaliyetlerini veya finansal yapısını doğrudan etkileyecek kritik bir unsur içermemektedir.",
+      "ts": "2026-11-16T10:00:56.734692+03:00"
     }
   },
-  "updated_at": "2026-11-16T09:00:57.378569+03:00",
+  "updated_at": "2026-11-16T10:00:56.734692+03:00",
   "version": 1
 }
