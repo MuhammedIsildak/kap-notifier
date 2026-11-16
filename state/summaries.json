@@ -2353,8 +2353,53 @@
       ],
       "summary": "Aktif Yatırım Bankası A.Ş. 30 Eylül 2026 tarihli 9 aylık konsolide finansal tablolarında Deloitte 'şartlı olumlu görüş' vermiştir. Nedeni: BDDK mevzuatı dışında geçmiş dönemde ayrılan 610 Milyon TL serbest karşılığın muhasebeleştirilmesi. Bu karşılık iptal edilmeseydi diğer karşılıklar 610 Milyon TL daha az, geçmiş yıllar kârları 610 Milyon TL daha fazla olurdu. Banka 30.09.2026 itibarıyla BDDK mevzuatına uygun hazırlanmış, ancak bu fark nedeniyle şartlı görüş almıştır.",
       "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1698661": {
+      "analysis_points": [
+        "Kolaylaştırılmış usulde birleşme → Hukuki ve operasyonel süreçlerin hızlanması beklenmeli",
+        "Grup içi şirketlerin birleşmesi → Konsolide bilançoda özkaynak yapısı ve borç dağılımı üzerindeki etkisi incelenmeli"
+      ],
+      "category": "M&A",
+      "has_document": false,
+      "hash": "ec3802c1df8536c3",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Anel Elektrik Proje Taahhüt ve Ticaret A.Ş., bağlı ortaklıkları Anel Net Teknik Hizmetleri, Anelyapı Gayrimenkul ve Anel Holding ile kolaylaştırılmış usulde birleşme kararı almıştır. İşlem, grup içi yapılandırma niteliğinde olup operasyonel ve finansal konsolidasyon süreçlerini etkileyecektir.",
+      "ts": "2026-11-16T20:00:59.516878+03:00"
+    },
+    "1698673": {
+      "analysis_points": [
+        "Sınırlı denetim raporu → Denetçi görüşünde bir kısıtlama bulunmuyor, finansal verilerin doğruluğu teyit edilmiş",
+        "Konsolidasyon kapsamı → DK Girişim Sermayesi ve DK Portföy gibi iştiraklerin ana banka bilançosuna katkısı ve risk ağırlıklı varlıklar üzerindeki etkisi 9 aylık dipnotlardan analiz edilmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "75f9c8716ca4e1eb",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Dünya Katılım Bankası A.Ş.'nin 30 Eylül 2026 tarihli konsolide finansal tabloları sınırlı denetimden geçmiş olup, denetçi PwC tarafından olumsuz bir hususa rastlanmadığı belirtilmiştir. Rapor, bankanın konsolidasyon kapsamındaki iştiraklerini ve finansal raporlama standartlarına uyumunu içermektedir.",
+      "ts": "2026-11-16T20:00:59.516878+03:00"
+    },
+    "1698675": {
+      "analysis_points": [
+        "Kira sertifikası ödemesinin yapılamaması → Şirketin diğer finansal yükümlülükleri için temerrüt riski ve çapraz temerrüt (cross-default) maddeleri tetiklenebilir",
+        "Nakit akış tablosu → Kısa vadeli borç çevirme oranları ve nakit pozisyonu acilen gözden geçirilmeli"
+      ],
+      "category": "Temerrüt",
+      "has_document": true,
+      "hash": "e08f38e71f92dee9",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Vadesi gelen borcun ödenememesi (temerrüt)",
+        "Likidite krizi sinyali"
+      ],
+      "summary": "Peker Gayrimenkul Yatırım Ortaklığı A.Ş., 13.11.2026 vadeli TRDTERVK2618 ISIN kodlu kira sertifikasına ilişkin anapara ve kâr payı ödemesini vade tarihinde gerçekleştirememiştir. Bu durum şirketin likidite sıkışıklığı yaşadığını ve borç ödeme kapasitesinin zayıfladığını göstermektedir.",
+      "ts": "2026-11-16T20:00:59.516878+03:00"
     }
   },
-  "updated_at": "2026-11-16T19:00:56.847628+03:00",
+  "updated_at": "2026-11-16T20:00:59.516878+03:00",
   "version": 1
 }
