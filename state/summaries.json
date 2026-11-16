@@ -1879,8 +1879,94 @@
       ],
       "summary": "JCR Avrasya, PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI ANONİM ŞİRKETİ için kredi derecelendirme notunu güncelleyerek uzun vadeli ulusal notu CC (tr), görünümü ise Negatif olarak belirlemiştir. Ayrıca uzun vadeli uluslararası notu prD ve kısa vadeli ulusal notu prD (tr) olarak açıklamıştır. Bu derecelendirme, şirketin borç servis kapasitesinde ve likidite profilinde ciddi sıkıntılara işaret ettiği için kredi riski açısından kritik önem taşımaktadır.",
       "ts": "2026-11-16T16:00:55.893897+03:00"
+    },
+    "1698450": {
+      "analysis_points": [
+        "İhraç tavanı tutarı açıklanmadı → Bankanın fon toplama kapasitesi ve likidite yönetimi için SPK onayı sonrası tutar izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "8c92e3e0b0dbacdc",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Türkiye Finans Katılım Bankası A.Ş., kira sertifikası ihraç tavanı alınması için Yönetim Kurulu kararı almıştır. İhraç tavanı tutarı bildirimde yer almamaktadır.",
+      "ts": "2026-11-16T17:00:59.186193+03:00"
+    },
+    "1698452": {
+      "analysis_points": [
+        "İhraç tavanı tutarı açıklanmadı → Borçlanma maliyeti ve vadesi takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "3c699c21bb92468a",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Türkiye İhracat Kredi Bankası A.Ş. (Türk Eximbank), yurtdışı borçlanma aracı ihracı için SPK'ya onay başvurusunda bulunmuştur. İhraç tavanı tutarı bildirimde belirtilmemiştir.",
+      "ts": "2026-11-16T17:00:59.186193+03:00"
+    },
+    "1698453": {
+      "analysis_points": [
+        "Belgede tutar belirtilmemiş → Birleşmenin şirket değerlemesine etkisi hesaplanamıyor, detaylı rapor incelenmeli"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "be041545f5d22190",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Belge içeriğinde finansal veri veya birleşme detaylarının eksikliği"
+      ],
+      "summary": "MİA Teknoloji A.Ş. tarafından yapılan birleşme sürecinin tamamlandığına dair bildirimde, ekli belgede herhangi bir finansal veri veya işlem detayı yer almamaktadır. Belge içeriği yalnızca doğrulama kodlarından oluşmaktadır.",
+      "ts": "2026-11-16T17:00:59.186193+03:00"
+    },
+    "1698461": {
+      "analysis_points": [
+        "160 milyon dolar, 5 yıl vade → Bankanın uzun vadeli fonlama maliyeti ve vade uyumu açısından olumlu",
+        "Kullanım alanı (kadın girişimci, deprem bölgesi, yeşil finansman) → Bankanın ESG (Çevresel, Sosyal, Yönetişim) skoruna ve uygun maliyetli fon erişimine katkı sağlar"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "989fdde7fa22bfb7",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "DenizBank A.Ş., Uluslararası Finans Kurumu (IFC) ile 160 milyon dolar tutarında, 5 yıl vadeli bir finansman paketi için iş birliği yapmıştır. Kaynak, kadın girişimciler, deprem bölgesi KOBİ'leri ve sürdürülebilirlik projeleri için kullanılacaktır.",
+      "ts": "2026-11-16T17:00:59.186193+03:00"
+    },
+    "1698468": {
+      "analysis_points": [
+        "2,33 milyar TL hasılat ve ~17,6 milyon TL net kâr → net kâr marjı <%1 seviyesinde gerçekleşti, operasyonel kârlılık oranları daralıyor",
+        "Yatırım için ayrılan kaynağın şirket bünyesinde muhafaza edildiği belirtildi → gelecekteki capex harcamalarının nakit pozisyonu üzerindeki etkisi izlenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "074ec156f9536ad9",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "2,33 milyar TL hasılat karşılığında net kârın yaklaşık 17,6 milyon TL ile oldukça düşük kalması",
+        "Enflasyon muhasebesi ve sermaye düzeltmelerinin finansal tablolar üzerinde baskı yaratması"
+      ],
+      "summary": "Golda Gıda Sanayi ve Ticaret A.Ş.'nin 12/11/2026 tarihinde gerçekleştirilen 2025 yılı olağan genel kurul toplantı tutanağı yayımlandı. Şirketin 250.000.000 TL çıkarılmış sermayesini temsilen 162.504.820 adet payın katıldığı toplantıda, 2025 yılında yaklaşık 2,33 milyar TL hasılat elde edilmesine karşın net dönem kârının yaklaşık 17,6 milyon TL düzeyinde kaldığı açıklandı. Bu durum analistler açısından düşük kârlılık marjı ve enflasyon muhasebesi etkilerinin operasyonel sonuçlar üzerindeki baskısını göstermesi bakımından önem taşımaktadır.",
+      "ts": "2026-11-16T17:00:59.186193+03:00"
+    },
+    "1698490": {
+      "analysis_points": [
+        "Toplam 594 milyon USD ve 454 milyon EUR tutarında kaynak girişi → Bankanın kısa ve orta vadeli likidite pozisyonunu güçlendirir",
+        "367 gün ve 732 gün vadeli yapı → Bankanın dış borç çevirme rasyoları ve maliyetleri izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "df868e6181ba8fff",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "T.C. Ziraat Bankası A.Ş., toplam 409 milyon ABD Doları ve 390 milyon Avro tutarında 367 gün vadeli; 185 milyon ABD Doları ve 64 milyon Avro tutarında 732 gün vadeli olmak üzere dört dilimli sendikasyon kredisi sağlamıştır.",
+      "ts": "2026-11-16T17:00:59.186193+03:00"
     }
   },
-  "updated_at": "2026-11-16T16:00:55.893897+03:00",
+  "updated_at": "2026-11-16T17:00:59.186193+03:00",
   "version": 1
 }
