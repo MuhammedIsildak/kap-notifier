@@ -1703,8 +1703,26 @@
       "red_flags": [],
       "summary": "Lokman Hekim Engürüsağ Sağlık, Turizm, Eğitim Hizmetleri ve İnşaat Taahhüt A.Ş.'nin 01.01.2026-30.09.2026 ara hesap dönemine ait konsolide finansal tabloları yayımlandı. Vezin Bağımsız Denetim A.Ş. tarafından gerçekleştirilen sınırlı denetim sonucunda, raporun TMS 34 Ara Dönem Finansal Raporlama Standardı'na uygun olmadığını düşündürecek herhangi bir hususa rastlanmadığı belirtildi. Bu bildirim, şirketin 9 aylık finansal performansının ve nakit akışlarının denetlenmiş resmi sonuçlarını ortaya koymaktadır.",
       "ts": "2026-11-16T08:00:54.840017+03:00"
+    },
+    "1698233": {
+      "analysis_points": [
+        "Düzeltilmiş net borç 2,163 milyar TL'den 1,153 milyar TL'ye geriledi ve net borç/FAVÖK oranı 1,83'ten 0,92'ye düştü → Finansman maliyetlerindeki düşüşün 2026 son çeyrek net kârına olumlu yansıması izlenmelidir",
+        "Maddi duran varlık satışından 1,4 milyar TL nakit girişi sağlandı → Bu nakdin 529 milyon TL'lik 9 aylık capex harcaması düşüldükten sonra kalan kısmının borç servisindeki etkinliği takip edilmelidir",
+        "3. çeyrekte satışların maliyeti 1.186 milyon TL (satışların maliyeti oranı %85) olarak gerçekleşti → Operasyonel kârlılık üzerindeki maliyet baskısının sürdürülebilirliği incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "274afe6ce1fcdf29",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Esas faaliyet kârındaki yüksek artışın temel sebebi operasyonel büyümeden ziyade 884 milyon TL'lik tek seferlik duran varlık satış kârından kaynaklanmaktadır",
+        "3. çeyrekte satışların maliyetinin net satışlara oranı %85'e yükselmiş olup, hekimlerin bordrolu sisteme geçişinin marjlar üzerindeki baskısı devam etmektedir"
+      ],
+      "summary": "Lokman Hekim Engürüsağ A.Ş.'nin 2026 ilk dokuz aylık konsolide hasılatı geçen yılın aynı dönemine göre %9,3 artarak 4,2 milyar TL'ye, FAVÖK'ü ise %9,2 artışla 912 milyon TL'ye ulaştı. Maddi duran varlık satışından sağlanan 1,4 milyar TL nakit girişi ve 884 milyon TL satış kârının etkisiyle ana ortaklık net dönem kârı %438 artarak 835 milyon TL'ye yükseldi. Elde edilen nakdin borç kapatmada kullanılmasıyla düzeltilmiş net borç 1,153 milyar TL'ye gerilerken, net borç/FAVÖK oranı 0,92'ye düştü.",
+      "ts": "2026-11-16T09:00:57.378569+03:00"
     }
   },
-  "updated_at": "2026-11-16T08:00:54.840017+03:00",
+  "updated_at": "2026-11-16T09:00:57.378569+03:00",
   "version": 1
 }
