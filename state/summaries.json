@@ -2398,8 +2398,27 @@
       ],
       "summary": "Peker Gayrimenkul Yatırım Ortaklığı A.Ş., 13.11.2026 vadeli TRDTERVK2618 ISIN kodlu kira sertifikasına ilişkin anapara ve kâr payı ödemesini vade tarihinde gerçekleştirememiştir. Bu durum şirketin likidite sıkışıklığı yaşadığını ve borç ödeme kapasitesinin zayıfladığını göstermektedir.",
       "ts": "2026-11-16T20:00:59.516878+03:00"
+    },
+    "1698677": {
+      "analysis_points": [
+        "Bağımsız denetim görüşünden kaçınılması → 30 Eylül 2026 finansal tablolarının doğruluğu ve güvenilirliği doğrulanamıyor",
+        "Yönetimin 1 Ekim 2026 itibarıyla TMSF'ye devri → Bankanın kredi değerliliği, operasyonel sürekliliği ve borç servisi risk altında",
+        "Eski yönetim hakkında adli süreç bulunması → Hukuki belirsizlikler ve olası operasyonel/mali yükler yakından izlenmeli"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "f0a8694d67192d12",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Bağımsız denetçinin denetim görüşü bildirmekten kaçınması",
+        "Bankanın yönetiminin TMSF'ye devredilmesi ve eski yönetim hakkında adli süreç olması",
+        "Yeni yönetim kurulunun 1 Ocak - 30 Eylül 2026 dönemine ait finansal tabloları onaylamaması ve sorumluluk beyanı sunmaması"
+      ],
+      "summary": "Hedef Yatırım Bankası A.Ş.'nin 30 Eylül 2026 sona eren 9 aylık finansal raporuna ilişkin bağımsız denetçi KPMG, denetimi tamamlayamayarak 'Sonuç Bildirmekten Kaçınma' görüşü vermiştir. BDDK kararları uyarınca bankadaki nitelikli pay sahiplerinin (Sibel Gökalp %10, Namık Kemal Gökalp %10, Hedef Holding AŞ %41, Hedef Girişim Sermayesi Yatırım Ortaklığı AŞ %30) temettü dışındaki ortaklık hakları TMSF tarafından devralınmış ve yönetim 1 Ekim 2026 itibarıyla TMSF atanan yönetim kuruluna geçmiştir. Eski yönetim hakkında adli süreç devam etmekte olup, yeni yönetim tablo ve sorumluluk beyanlarını onaylamamıştır.",
+      "ts": "2026-11-16T21:00:55.077863+03:00"
     }
   },
-  "updated_at": "2026-11-16T20:00:59.516878+03:00",
+  "updated_at": "2026-11-16T21:00:55.077863+03:00",
   "version": 1
 }
