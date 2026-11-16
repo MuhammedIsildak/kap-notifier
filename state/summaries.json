@@ -1849,8 +1849,21 @@
       "red_flags": [],
       "summary": "NETCAD YAZILIM A.Ş., 16.11.2026 tarihli Yönetim Kurulu kararıyla Mali ve İdari İşler Direktörü ataması yapıldığını bildirmiştir. Açıklamada yeni atanan kişinin kimliğine veya özgeçmişine ilişkin bilgi verilmemiştir. Bu bildirim rutin bir idari atama niteliğinde olup, şirketin finansal yapısına veya borç profiline doğrudan etkisi bulunmamaktadır.",
       "ts": "2026-11-16T12:00:57.026731+03:00"
+    },
+    "1698353": {
+      "analysis_points": [
+        "Metin içeriğinde detay veya finansal veri bulunmuyor → etki hesaplanamıyor, KAP sistemindeki orijinal duyuru metni kontrol edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "57eaa9692a4b5853",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kamuyu Aydınlatma Platformu tarafından genel nitelikli bir özel durum açıklaması yapılmıştır. Bildirim metninde ve ekinde herhangi bir finansal veri, kritik operasyonel gelişme veya kurumsal finansman işlemi yer almamaktadır. Bu nedenle şirketin finansal yapısı, borç servisi veya nakit akışı üzerinde doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-16T15:01:10.596166+03:00"
     }
   },
-  "updated_at": "2026-11-16T12:00:57.026731+03:00",
+  "updated_at": "2026-11-16T15:01:10.596166+03:00",
   "version": 1
 }
