@@ -129,8 +129,29 @@
         "source": "METROPAL KURUMSAL HİZMETLER ANONİM ŞİRKETİ.pdf"
       },
       "ts": "2026-11-13T19:00:56.576724+03:00"
+    },
+    "1698432": {
+      "hash": "c1719f8f96531143",
+      "info": {
+        "action": "Güncelleme",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da17e515f01a1e44272964aad"
+        ],
+        "current": "CC (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: prD / (Negatif)",
+          "Kısa vadeli ulusal: prD (tr) / (Negatif)"
+        ],
+        "entity": "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [],
+        "source": "PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-16T16:00:55.893897+03:00"
     }
   },
-  "updated_at": "2026-11-16T15:01:10.596166+03:00",
+  "updated_at": "2026-11-16T16:00:55.893897+03:00",
   "version": 1
 }

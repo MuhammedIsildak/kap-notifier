@@ -1862,8 +1862,25 @@
       "red_flags": [],
       "summary": "Kamuyu Aydınlatma Platformu tarafından genel nitelikli bir özel durum açıklaması yapılmıştır. Bildirim metninde ve ekinde herhangi bir finansal veri, kritik operasyonel gelişme veya kurumsal finansman işlemi yer almamaktadır. Bu nedenle şirketin finansal yapısı, borç servisi veya nakit akışı üzerinde doğrudan bir etkisi bulunmamaktadır.",
       "ts": "2026-11-16T15:01:10.596166+03:00"
+    },
+    "1698432": {
+      "analysis_points": [
+        "Uzun vadeli ulusal not CC (tr) ve kısa vadeli ulusal not prD (tr) seviyesinde → şirketin mevcut borçlarını çevirmekte zorlandığı ve temerrüt riskinin yüksek olduğu anlamına gelir",
+        "Görünümün Negatif olması → yakın vadede not artışı beklenmemesini, aksine borç yapılandırma veya ödeme gecikmesi risklerinin artabileceğini gösterir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "c1719f8f96531143",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kısa ve uzun vadeli notların temerrüt seviyesine işaret eden prD (Default) ve CC seviyesinde olması",
+        "Kredi notu görünümünün Negatif olması"
+      ],
+      "summary": "JCR Avrasya, PEKER GAYRİMENKUL YATIRIM ORTAKLIĞI ANONİM ŞİRKETİ için kredi derecelendirme notunu güncelleyerek uzun vadeli ulusal notu CC (tr), görünümü ise Negatif olarak belirlemiştir. Ayrıca uzun vadeli uluslararası notu prD ve kısa vadeli ulusal notu prD (tr) olarak açıklamıştır. Bu derecelendirme, şirketin borç servis kapasitesinde ve likidite profilinde ciddi sıkıntılara işaret ettiği için kredi riski açısından kritik önem taşımaktadır.",
+      "ts": "2026-11-16T16:00:55.893897+03:00"
     }
   },
-  "updated_at": "2026-11-16T15:01:10.596166+03:00",
+  "updated_at": "2026-11-16T16:00:55.893897+03:00",
   "version": 1
 }
