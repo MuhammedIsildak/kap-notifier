@@ -1836,8 +1836,21 @@
       "red_flags": [],
       "summary": "SKYALP FİNANSAL TEKNOLOJİLER VE DANIŞMANLIK A.Ş., Düzce Şubesi'nin kapatılması ve Şube Müdürü'nün temsil yetkisinin iptaline ilişkin Yönetim Kurulu kararının 13.11.2026 tarihinde tescil edilerek Türkiye Ticaret Sicili Gazetesi'nde ilan edildiğini bildirmiştir. Bu idari işlem, operasyonel ağın daraldığını gösterse de şirketin finansal yapısı ve kredi profili üzerinde doğrudan kritik bir etki yaratmaz.",
       "ts": "2026-11-16T11:00:54.588043+03:00"
+    },
+    "1698333": {
+      "analysis_points": [
+        "Yeni atanan Mali ve İdari İşler Direktörünün adı ve özgeçmişi belgede belirtilmemiş → KAP ekindeki yönetim kurulu kararından kontrol edilmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "bc90dadb11c33da5",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "NETCAD YAZILIM A.Ş., 16.11.2026 tarihli Yönetim Kurulu kararıyla Mali ve İdari İşler Direktörü ataması yapıldığını bildirmiştir. Açıklamada yeni atanan kişinin kimliğine veya özgeçmişine ilişkin bilgi verilmemiştir. Bu bildirim rutin bir idari atama niteliğinde olup, şirketin finansal yapısına veya borç profiline doğrudan etkisi bulunmamaktadır.",
+      "ts": "2026-11-16T12:00:57.026731+03:00"
     }
   },
-  "updated_at": "2026-11-16T11:00:54.588043+03:00",
+  "updated_at": "2026-11-16T12:00:57.026731+03:00",
   "version": 1
 }
