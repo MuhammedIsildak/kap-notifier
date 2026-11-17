@@ -3046,8 +3046,22 @@
       ],
       "summary": "Uluslararası derecelendirme kuruluşu Fitch Ratings, VESTEL ELEKTRONİK SANAYİ VE TİCARET A.Ş.'nin 'CCC-' olan Uzun Vadeli Yerel ve Yabancı Para Cinsinden kredi notunu 'C'ye, Eurobond ihraçlarına ilişkin kıdemli teminatsız tahvil notunu ise 'CC'den 'C'ye revize etmiştir. Notun temerrüt seviyesine yaklaşması, şirketin borç servis kapasitesi ve refinansman riskleri açısından kritik bir bozulmaya işaret etmektedir.",
       "ts": "2026-11-17T21:00:58.329463+03:00"
+    },
+    "1699303": {
+      "analysis_points": [
+        "İç kaynaklardan bedelsiz artırım → Nakit yaratmaz, özkaynak yapısında iç kalemler arası transfer gerçekleşir",
+        "SPK onayı alındı → İşlem tarihinin kesinleşmesi ve yeni payların dağıtım takvimi izlenmeli"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": false,
+      "hash": "4a2f233b0cd60352",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Flap Kongre Toplantı Hizmetleri Otomotiv ve Turizm A.Ş., iç kaynaklardan bedelsiz sermaye artırımı için Sermaye Piyasası Kurulu'ndan (SPK) onay aldığını bildirdi. Bu işlem şirketin çıkarılmış sermayesini iç kaynaklar yoluyla artırırken, nakit girişine yol açmayan muhasebe tabanlı bir özkaynak düzenlemesidir. Yatırımcılar ve analistler için ödenermiş sermaye tabanını genişletirken hisse başına fiyatlamayı teknik olarak böler.",
+      "ts": "2026-11-17T22:01:00.377011+03:00"
     }
   },
-  "updated_at": "2026-11-17T21:00:58.329463+03:00",
+  "updated_at": "2026-11-17T22:01:00.377011+03:00",
   "version": 1
 }
