@@ -2509,8 +2509,49 @@
       "red_flags": [],
       "summary": "KAYATUR FİLO KİRALAMA A.Ş., 06.11.2026 tarihi itibarıyla Ankara Çankaya'da Konya Yolu Şubesi'nin açılışını gerçekleştirmiştir. Bu idari ve rutin operasyonel gelişme, şirketin finansal yapısında veya kredi profilinde doğrudan büyük bir değişikliğe yol açmamaktadır.",
       "ts": "2026-11-17T12:00:53.923949+03:00"
+    },
+    "1698957": {
+      "analysis_points": [
+        "Genel kurul tescili tamamlandı → yönetim kurulu yetkilendirmeleri yasallaştı, operasyonel süreklilik sağlanır"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "e21ccc49ed0efd28",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "EYG Gayrimenkul Yatırım Ortaklığı A.Ş., 03.11.2026 tarihli Olağan Genel Kurul Toplantısı'nın tescil edildiğini duyurdu. Pay sahipleri ve yönetim yapısının tescili kurumsal yönetim açısından standart bir idari süreçtir. Finansal tablolar üzerinde doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-17T13:00:57.557331+03:00"
+    },
+    "1698960": {
+      "analysis_points": [
+        "Şube kapatılması tescil edildi → operasyonel maliyet tasarrufu sağlar ancak bölgesel gelir tabanını daraltabilir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "0509df34d7f91d68",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Neo Menkul Değerler A.Ş. Kalamış Şubesi'nin kapanışı 10.11.2026 tarihinde Ticaret Sicili'nde tescil edilerek ilan edildi. Şube operasyonlarının sonlandırılması, operasyonel verimlilik veya küçülme hamlesi olarak değerlendirilebilir. Şirketin genel komisyon gelirlerine etkisi takip edilmelidir.",
+      "ts": "2026-11-17T13:00:57.557331+03:00"
+    },
+    "1698961": {
+      "analysis_points": [
+        "İhraç tavanı tutarı ve vadesi açıklanmadı → fonlama kapasitesindeki daralma belirsiz, başvuru detayları incelenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "2e6fd60e797d1228",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Borçlanma aracı ihraç başvurusunun işlemden kaldırılması alternatif likidite maliyetini artırabilir"
+      ],
+      "summary": "Bulls Yatırım Menkul Değerler A.Ş., borçlanma aracı ihraç başvurusunun işlemden kaldırıldığını bildirdi. İhraç tavanı başvurusunun sonuçsuz kalması, şirketin kısa vadeli borçlanma enstrümanlarıyla likidite sağlama planlarını doğrudan etkiler. Alternatif fonlama maliyetleri izlenmelidir.",
+      "ts": "2026-11-17T13:00:57.557331+03:00"
     }
   },
-  "updated_at": "2026-11-17T12:00:53.923949+03:00",
+  "updated_at": "2026-11-17T13:00:57.557331+03:00",
   "version": 1
 }
