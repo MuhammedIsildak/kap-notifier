@@ -2987,8 +2987,67 @@
       ],
       "summary": "Umpaş Holding A.Ş., daha önce hissedarların talebiyle ertelenen 2024 yılı olağan genel kurul toplantısını 05/11/2026 tarihinde gerçekleştirmiştir. Toplantıda 2024 yılı finansal tabloları yeniden incelenerek onaylanmış, yönetim kurulu üyeleri ibra edilmiş ve 2025-2026 yılları için Meridyen Kurumsal Çözüm ve Bağımsız Denetim A.Ş. bağımsız denetçi olarak seçilmiştir. Şirketin geçmiş dönem finansal tablolarının düzeltilerek onaylanması, kurumsal yönetişim açısından olağan dışı bir gecikmeye işaret etmektedir.",
       "ts": "2026-11-17T20:01:09.856628+03:00"
+    },
+    "1699286": {
+      "analysis_points": [
+        "67.337 adet pay alımı gerçekleştirildi → Üst yönetimin şirket hisselerine olan güven göstergesi olarak takip edilebilir, operasyonel etki yaratmaz"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "8f84c2e195d9b4c7",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ÜLKER BİSKÜVİ SANAYİ A.Ş. CEO'su Özgür Kölükfakı 16.11.2026 tarihinde 74.15-74.40 fiyat aralığından toplam 67.337 adet pay alımı gerçekleştirmiştir. Şirket sermayesindeki payı %0,018 seviyesine ulaşan bu işlem, yasal eşiğin altında kalmasına rağmen şeffaflık amacıyla gönüllü olarak açıklanmıştır.",
+      "ts": "2026-11-17T21:00:58.329463+03:00"
+    },
+    "1699287": {
+      "analysis_points": [
+        "İştirakin sermayesi 600 mn TL bedelli artışla 1.35 mlr TL'ye ulaşıyor → Pınar Entegre'nin %45,28 pay oranına düşen nakit sermaye taahhüt tutarı nakit akış tablosundan takip edilmeli"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "c0bb983fadee8185",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Sermaye artırımının şirketin nakit akışı ve likiditesi üzerindeki etkisi"
+      ],
+      "summary": "PINAR ENTEGRE ET VE UN SANAYİİ A.Ş., %45,28 oranında iştiraki olan Yaşar Birleşik Pazarlama'nın sermayesinin 80.953.360,53 TL'den 1.352.166.373,37 TL'ye (600.000.000 TL'si bedelli) yükseltilmesi işlemine mevcut pay oranına isabet eden kısım yönünden katılma kararı almıştır. Bu işlem şirketin nakit çıkışını ve iştirak portföyündeki sermaye taahhüdünü doğrudan etkilemektedir.",
+      "ts": "2026-11-17T21:00:58.329463+03:00"
+    },
+    "1699292": {
+      "analysis_points": [
+        "Mali ve İdari İşler Direktörlüğü pozisyonunda boşalma yaşandı → Şirketin finansal raporlama süreçlerinde aksama olup olmadığı yeni atama ile izlenmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "7bdcda94b4a449f8",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "NETCAD YAZILIM A.Ş. Mali ve İdari İşler Direktörü Gözde Şekercioğlu 17 Kasım 2026 tarihi itibarıyla görevinden ayrılmıştır. Rutin bir üst düzey yönetici istifası olup, şirketin operasyonel ve finansal yapısı üzerinde doğrudan kritik bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-17T21:00:58.329463+03:00"
+    },
+    "1699299": {
+      "analysis_points": [
+        "Fitch uzun vadeli notu CCC-'den C seviyesine düşürdü → Şirketin mevcut borçlanma maliyetleri ve dış kaynaklara erişimi kısıtlanabilir",
+        "Kıdemli teminatsız tahvil notu CC'den C'ye çekildi → Eurobond ödemeleri ve mevcut borç yapılandırma süreçleri yakından izlenmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "b0bb7dc94e6b8c1b",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kredi notunun 'C' seviyesine indirilmesi",
+        "Tahvil notunun düşmesi ve temerrüt riskinin artması",
+        "Yabancı para cinsi borçlanmalarda refinansman maliyetlerinin yükselmesi"
+      ],
+      "summary": "Uluslararası derecelendirme kuruluşu Fitch Ratings, VESTEL ELEKTRONİK SANAYİ VE TİCARET A.Ş.'nin 'CCC-' olan Uzun Vadeli Yerel ve Yabancı Para Cinsinden kredi notunu 'C'ye, Eurobond ihraçlarına ilişkin kıdemli teminatsız tahvil notunu ise 'CC'den 'C'ye revize etmiştir. Notun temerrüt seviyesine yaklaşması, şirketin borç servis kapasitesi ve refinansman riskleri açısından kritik bir bozulmaya işaret etmektedir.",
+      "ts": "2026-11-17T21:00:58.329463+03:00"
     }
   },
-  "updated_at": "2026-11-17T20:01:09.856628+03:00",
+  "updated_at": "2026-11-17T21:00:58.329463+03:00",
   "version": 1
 }
