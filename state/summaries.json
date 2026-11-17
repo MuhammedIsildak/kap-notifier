@@ -2495,8 +2495,22 @@
       "red_flags": [],
       "summary": "GLOBAL MENKUL DEĞERLER A.Ş., Çınarlı Mah. 61027 Sk. Sunar Nuri Çomu İş Merkezi C Blok N20/12 Seyhan/Adana adresindeki Adana Şubesi'nin 17.11.2026 tarihi itibarıyla kapatılmasına karar vermiştir. Yatırımcıların işlemleri için şirket merkezi, internet ve çağrı merkezine yönlendirileceği belirtilmiştir. Bu operasyonel küçülme veya kanal optimizasyonu kararı, şirketin genel finansal yapısı ve kredi profili üzerinde doğrudan kritik bir etki yaratmamaktadır.",
       "ts": "2026-11-17T11:00:59.092901+03:00"
+    },
+    "1698933": {
+      "analysis_points": [
+        "Şube açılış maliyeti ve başlangıç sermayesi belgede belirtilmemiş → yatırım harcamasının nakit akışına etkisi hesaplanamıyor, finansal tablolardan izlenmeli",
+        "Yeni şubenin filo kiralama operasyonlarına katkısı ve kira gideri belirtilmemiş → 2026 sonu operasyonel giderlere etkisi belirsiz"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "ef472bb05be39d09",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "KAYATUR FİLO KİRALAMA A.Ş., 06.11.2026 tarihi itibarıyla Ankara Çankaya'da Konya Yolu Şubesi'nin açılışını gerçekleştirmiştir. Bu idari ve rutin operasyonel gelişme, şirketin finansal yapısında veya kredi profilinde doğrudan büyük bir değişikliğe yol açmamaktadır.",
+      "ts": "2026-11-17T12:00:53.923949+03:00"
     }
   },
-  "updated_at": "2026-11-17T11:00:59.092901+03:00",
+  "updated_at": "2026-11-17T12:00:53.923949+03:00",
   "version": 1
 }
