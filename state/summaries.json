@@ -2550,8 +2550,25 @@
       ],
       "summary": "Bulls Yatırım Menkul Değerler A.Ş., borçlanma aracı ihraç başvurusunun işlemden kaldırıldığını bildirdi. İhraç tavanı başvurusunun sonuçsuz kalması, şirketin kısa vadeli borçlanma enstrümanlarıyla likidite sağlama planlarını doğrudan etkiler. Alternatif fonlama maliyetleri izlenmelidir.",
       "ts": "2026-11-17T13:00:57.557331+03:00"
+    },
+    "1698987": {
+      "analysis_points": [
+        "Toplam 148.289.614,90 TL fon sağlandı, 81.542.913 TL bakiye kaldı → Fonun %56'sı henüz harcanmadı, yatırımlar öngörülen takvimin gerisinde kalmış olabilir",
+        "İşletme sermayesi için ayrılan 6.187.139,90 TL'nin tamamı ambalaj ve yardımcı malzeme alımında kullanıldı → Kısa vadeli operasyonel ihtiyaçlar fonla finanse edildi, nakit akışı üzerinde dönemsel rahatlama sağlandı",
+        "Kalan 81.542.913 TL risksiz bankacılık ürünlerinde tutuluyor → Yüksek faiz ortamında faiz geliri yaratır ancak ana faaliyet kârlılığına doğrudan katkısı sınırlı kalır"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "bec5f025a64c3ff1",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Sözleşmeli tarım yatırımları için toplanan fonun çok büyük kısmının (81.542.913 TL) harcanmayarak bankada tutulması yatırım planlarında gecikmeye işaret ediyor"
+      ],
+      "summary": "Frıgo-Pak Gıda Maddeleri Sanayi ve Ticaret A.Ş., 147.102.475 TL tutarındaki çıkarılmış sermayesini %100 oranında bedelli artırarak 294.204.950 TL'ye ulaştırmış ve toplam 148.289.614,90 TL net fon elde etmiştir. 17.11.2026 tarihli denetim komitesi raporuna göre, elde edilen fonun 6.187.139,90 TL'si işletme sermayesine aktarılmış, sözleşmeli tarım yatırımları için planlanan kısmın ise çok küçük bir kısmı (58.509,56 TL) harcanmıştır. Kalan 81.542.913 TL'lik bakiye (%43,63) risksiz bankacılık ürünlerinde değerlendirilmektedir.",
+      "ts": "2026-11-17T14:00:56.895422+03:00"
     }
   },
-  "updated_at": "2026-11-17T13:00:57.557331+03:00",
+  "updated_at": "2026-11-17T14:00:56.895422+03:00",
   "version": 1
 }
