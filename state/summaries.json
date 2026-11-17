@@ -2432,8 +2432,25 @@
       "red_flags": [],
       "summary": "Saat ve Saat Sanayi ve Ticaret A.Ş., 16 Temmuz 2026'da Borsa İstanbul'da işlem görmeye başlayan halka arzında brüt 2.249.350.488 TL kaynak elde etmiştir. 13.11.2026 tarihli raporuna göre, 117.458.936 TL halka arz maliyeti düşüldükten sonra kalan 2.131.891.552 TL net kaynağın tamamı planlandığı şekilde harcanmıştır. Net fonun %79,25'ine denk gelen 1.689.576.956 TL işletme sermayesine, %20,75'ine denk gelen 442.314.596 TL ise finansal borçların ödenmesine tahsis edilmiştir.",
       "ts": "2026-11-16T23:00:52.809584+03:00"
+    },
+    "1698685": {
+      "analysis_points": [
+        "Depolama kapasitesi 2.000 tondan 15.000 tona yükseldi (%650 artış) → 2026 sonu ve 2027 operasyonlarında taze meyve stoklama ve tedarik zinciri yönetimi güçlenecek",
+        "Yatırım tutarı bildirimde belirtilmedi → Yatırımın özkaynak mı yoksa yabancı kaynak ile mi finanse edildiği finansal rapordan kontrol edilmeli",
+        "Kapasite artışının şirketin cirosuna ve FAVÖK marjına dönemsel yansıması 2027 bilançolarında takip edilmeli"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "153cf3fe718c21a5",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yatırımın toplam maliyeti ve finansman kaynağı bildirimde açıklanmadı"
+      ],
+      "summary": "Göknur Gıda Maddeleri Enerji İmalat İthalat İhracat Ticaret ve Sanayi A.Ş., Afyonkarahisar Dinar'daki 6.840 m² kapalı alana sahip ilave soğuk hava deposu yatırımını tamamlayarak işletmeye almıştır. Bu yatırımla şirketin toplam meyve soğuk hava depolama kapasitesi 2.000 tondan 15.000 tona yükselmiş ve %650 oranında kapasite artışı sağlanmıştır. Gerçekleşen bu kapasite artışı, şirketin taze meyve pazarındaki büyüme stratejisi ve operasyonel verimliliği açısından önem taşımaktadır.",
+      "ts": "2026-11-17T09:01:04.699498+03:00"
     }
   },
-  "updated_at": "2026-11-16T23:00:52.809584+03:00",
+  "updated_at": "2026-11-17T09:01:04.699498+03:00",
   "version": 1
 }
