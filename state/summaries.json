@@ -2584,8 +2584,35 @@
       ],
       "summary": "Golda Gıda Sanayi ve Ticaret A.Ş.'nin 12/11/2026 tarihinde gerçekleştirilen 2025 yılı olağan genel kurul toplantı tutanağı yayımlandı. Toplantıda 250.000.000 TL çıkarılmış sermayeyi temsil eden 162.504.820 adet pay temsil edilirken, 2025 yılı finansal tabloları ve faaliyet raporu müzakere edilerek onaylandı. Pay sahiplerinin yönelttiği sorular üzerine şirket yönetimi, yaklaşık 2,33 milyar TL hasılata karşılık net kârın 17,6 milyon TL kalmasında enflasyon muhasebesinin etkili olduğunu ve yatırım kaynaklarının korunduğunu bildirdi.",
       "ts": "2026-11-17T15:00:55.561715+03:00"
+    },
+    "1699035": {
+      "analysis_points": [
+        "Kurulu güç 30 MWe → Önlisans onayı ve yatırım maliyeti (capex) netleşmeden finansman modeli kurulamaz",
+        "Proje kaynağı Jeotermal → Çevresel etki değerlendirme ve sondaj maliyetleri ilk etapta nakit çıkışı yaratır"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "50030a998123433a",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Margün Enerji Üretim Sanayi ve Ticaret A.Ş., bağlı ortaklığı Margün Jeotermal Enerji Üretim A.Ş. aracılığıyla Denizli Buldan'da 30 MWm / 30 MWe gücünde MARGÜN BULDAN JES-1 tesisi için EPDK'ya önlisans başvurusunda bulundu. Bu başvuru, şirketin yenilenebilir enerji kapasite artışı ve gelecekteki operasyonel nakit akışı potansiyeli açısından önem taşımaktadır. Önlisans süreci ve sonrasındaki yatırımlar şirket capex planını etkileyecektir.",
+      "ts": "2026-11-17T16:00:59.790158+03:00"
+    },
+    "1699040": {
+      "analysis_points": [
+        "İşlem idari nitelikte → Finansal tablolara ve borç servisine doğrudan etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "af4313687f6ca780",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "İş Gayrimenkul Yatırım Ortaklığı A.Ş., 2025 yılı gayrimenkul değerleme firmalarının seçimine ilişkin daha önce 30.01.2026 tarihinde yapılan açıklamada güncellenmeye gidildiğini bildirdi. Bu bildirim rutin bir kurumsal yönetim ve idari süreç güncellemesidir. Şirketin finansal yapısı, nakit akışı veya borç ödeme kapasitesi üzerinde doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-17T16:00:59.790158+03:00"
     }
   },
-  "updated_at": "2026-11-17T15:00:55.561715+03:00",
+  "updated_at": "2026-11-17T16:00:59.790158+03:00",
   "version": 1
 }
