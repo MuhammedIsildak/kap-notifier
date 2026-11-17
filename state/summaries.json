@@ -2699,8 +2699,244 @@
       "red_flags": [],
       "summary": "İş Girişim Sermayesi Yatırım Ortaklığı A.Ş., Ekim 2026 - Ekim 2027 dönemini kapsayan, 10 milyon ABD Doları teminatlı Yönetici Sorumluluk ve Mesleki Sorumluluk Sigortası'nın Berkshire Hathaway Inc. ve GR Risk Partners Ltd.'den satın alındığını bildirmiştir. Şirket sermayesinin yüzde yirmibeşini aşan bir bedelle gerçekleştirilen bu işlem rutin kurumsal yönetim ve risk yönetimi kapsamındadır.",
       "ts": "2026-11-17T18:01:01.188766+03:00"
+    },
+    "1699179": {
+      "analysis_points": [
+        "Komite yapısı → Kurumsal yönetim ilkeleri çerçevesinde komite başkanlıklarının bağımsız üyelerce üstlenilmesi uyum açısından izlenmelidir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "71dc45ef6b6a5fe6",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Sekuro Plastik Ambalaj Sanayi A.Ş., yönetim kurulu bünyesindeki komitelerin üyelik ve görev dağılımlarını yeniden belirlemiştir. Bağımsız yönetim kurulu üyeleri Sanlı Baş ve Mehmet Adnan Dabak, komite başkanlıkları ve üyeliklerine atanmıştır.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699184": {
+      "analysis_points": [
+        "Net fon tutarı 99.560.194,89 TL → Tamamı yeni leasing işlemlerine aktarılarak işlem hacmine dönüştürülmüştür",
+        "Özkaynaklar 30.09.2026'da 1.225.733 bin TL (30.06.2026: 1.067.085 bin TL) → Sermaye artışı bilançoya ve toplam aktif büyüklüğüne (7.163.414 bin TL) doğrudan yansımıştır"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "e3c02dfe26a92b9c",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Finansal kiralama sektöründe kaldıraç oranları yüksek olduğundan, artan özkaynak tabanının varlık kalitesine etkisi izlenmelidir"
+      ],
+      "summary": "Şeker Finansal Kiralama A.Ş., 100.000.000 TL olan sermayesini nakden 200.000.000 TL'ye yükseltme sürecinde rüçhan hakları ve birincil piyasa satışıyla toplam 101.035.927,28 TL nakit girişi sağlamıştır. 1.475.732,38 TL maliyet düşüldükten sonra elde edilen 99.560.194,89 TL net fon, izahnameye uygun olarak tamamıyla yeni leasing işlemlerinde kullanılmak üzere değerlendirilmiştir. Bu sermaye artırımı sayesinde şirketin özkaynakları 30.09.2026 itibarıyla 1.225.733 bin TL'ye ulaşmış ve finansal kiralama faaliyet hacmi desteklenmiştir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699189": {
+      "analysis_points": [
+        "Net halka arz geliri 2.431.368.461 TL → Şirketin özkaynak tabanı ve yatırım kapasitesi önemli ölçüde güçlenmiştir",
+        "Fon kullanımının %75'i yenilenebilir enerji projelerine ayrıldı → Orta vadede aktif büyüklüğünde GES ve RES yatırımlarının payı artacak"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "f3789e9e8bdb0ae5",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Halka arz maliyetleri 81 milyon TL'yi aşmaktadır; fonların projeye dönüş süreci yakından izlenmelidir"
+      ],
+      "summary": "Masfen Enerji A.Ş., 22-24 Temmuz 2026 tarihlerindeki halka arzı sonucunda çıkarılmış sermayesini 500.000.000 TL'den 555.000.000 TL'ye çıkarmıştır. Halka arzda 2.512.400.000 TL brüt gelir elde edilmiş, 81.031.539 TL maliyet düşüldükten sonra net 2.431.368.461 TL fon sağlanmıştır. Elde edilen net fonun %75'inin yenilenebilir enerji yatırımlarında, %25'inin ise yurtiçi/yurtdışı mühendislik ve proje geliştirme işletme sermayesinde kullanılması planlanmaktadır.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699194": {
+      "analysis_points": [
+        "9 milyon USD nakit çıkışı → Şirketin mevcut nakit pozisyonu ve borç ödeme kapasitesi üzerindeki etkisi değerlendirilmelidir",
+        "Finansman maliyeti → Tahvilin kupon oranı ile mevcut piyasa faiz oranları karşılaştırılarak, itfanın net faiz giderine etkisi hesaplanmalıdır",
+        "Bilanço optimizasyonu → Net borç/FAVÖK rasyosundaki değişim, itfa sonrası takip edilmelidir"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "324364d79a5671e8",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "9 milyon USD'lik nakit çıkışının likidite üzerindeki etkisi",
+        "Erken itfa maliyetlerinin finansal sonuçlara etkisi"
+      ],
+      "summary": "Destek Yatırım Menkul Değerler A.Ş., 15.05.2026 tarihinde ihraç edilen 9 milyon USD nominal tutarlı tahvilin tamamının geri alınmasına karar vermiştir. Şirket, bu işlemi finansman maliyetlerini azaltmak ve bilanço yapısını optimize etmek amacıyla gerçekleştireceğini belirtmiştir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699198": {
+      "analysis_points": [
+        "Satış bedeli KDV dahil 35.000.000 TL (ilk alım maliyeti 23.754.000 TL) → İşlemden nominal bazda olumlu portföy kârı yazılır",
+        "Balpınar Enerji'nin paylarının %100'ü devredildi → Meta Mobilite'nin kurulu güç ve D-GES portföyü küçülür, nakit pozisyonu güçlenir"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "1d58bea5d04e4056",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kısa süre önce alım anlaşması duyurulan bir projenin lisans aşamasında devredilmesi, yatırım stratejisinde hızlı değişime işaret edebilir"
+      ],
+      "summary": "1000 Yatırımlar Holding bağlı ortaklığı Meta Mobilite Enerji A.Ş., daha önce 23.754.000 TL bedelle alım sözleşmesi imzaladığı Balpınar Enerji Üretim A.Ş. paylarının tamamını KDV dahil 35.000.000 TL bedelle Türkiye'de yerleşik iki şirkete devretmiştir. Bu varlık satışı ile holding, yatırım portföyünü etkin yönetme ve sermaye verimliliğini artırma amacıyla ilgili projeden çıkış yapmıştır. İşlem sonucunda şirketin nakit pozisyonunda ve iştirak portföyünde realizasyon gerçekleşmiştir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699217": {
+      "analysis_points": [
+        "Not indirimi → Şirketin finansman maliyetlerinde artış ve kredi limitlerinde kısıtlama riski doğurabilir",
+        "Konkordato etkisi → İştirakin finansal tablolara yansıyan değer düşüklüğü ve nakit akışına etkisi 2026 yıl sonu raporlarında netleştirilmelidir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "4e11f895e13ad05d",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Nakit akış metriklerinde bozulma ve likit varlıklarda gerileme",
+        "Özkaynak yöntemiyle değerlenen yatırımın konkordato süreci",
+        "Kredi notunun iki kademe düşürülmesi"
+      ],
+      "summary": "JCR Avrasya, Grainturk Holding Anonim Şirketi'nin kredi notunu A+ (tr) seviyesinden BBB+ (tr) seviyesine indirmiş ve görünümü Stabil olarak belirlemiştir. Not indirimine gerekçe olarak nakit akışındaki bozulma ve iştiraklerden birinin konkordato süreci gösterilmiştir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699221": {
+      "analysis_points": [
+        "Not teyidi ve pozitif görünüm → Şirketin borç çevirme kapasitesinin piyasa koşullarında güçlü kaldığını gösterir",
+        "FAVÖK marjı iyileşmesi → 2026 yılı sonu finansallarında marjın korunup korunmadığı takip edilmelidir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "3017f697df51197f",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Çeyrek finansallarında gözlemlenen sınırlı bozulma",
+        "Likidite yönetiminin 2025 yılı verilerine dayalı olması"
+      ],
+      "summary": "JCR Avrasya, Yataş Yatak ve Yorgan Sanayi Ticaret A.Ş.'nin kredi notunu A+ (tr) olarak teyit etmiş, görünümü Pozitif olarak korumuştur. Derecelendirme kuruluşu, şirketin likidite yönetimini ve FAVÖK marjındaki iyileşmeyi notun temel dayanakları olarak belirtmiştir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699225": {
+      "analysis_points": [
+        "Satın alma bedeli → Nominal değer üzerinden gerçekleştiği belirtilmiş olup, şirketin bilançosuna etkisi sınırlı görünmektedir",
+        "Stratejik uyum → DR Nar Gıda'nın faaliyet alanı ve Vanet Gıda'nın operasyonel verimliliğine katkısı izlenmelidir"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "b0be627c0cfb4f65",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Vanet Gıda Sanayi İç ve Dış Ticaret A.Ş., 1,5 milyon TL sermayeli DR Nar Gıda Sanayi ve Ticaret A.Ş.'nin paylarının tamamını satın alarak tek ortak haline geldiğini teyit etmiştir. Satın alma işlemi, şirketin büyüme stratejisi kapsamında daha önce duyurulan bir sürecin tamamlanmasıdır.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699226": {
+      "analysis_points": [
+        "Bağımsız üye değişikliği → Kurumsal yönetim komitesi raporu ve SPK onayı sonrası görev dağılımı kesinleşecektir",
+        "Görev süresi → Yeni üye, selefinin kalan görev süresini tamamlayacaktır"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "b9a23d3803602152",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Erciyas Çelik Boru Sanayi A.Ş., istifa eden bağımsız yönetim kurulu üyesi Hakan Avdan'ın yerine Hayrettin Kaplan'ın aday gösterildiğini ve SPK onay sürecinin başlatıldığını duyurmuştur. Bu değişiklik, kurumsal yönetim uyum süreci kapsamında rutin bir atama niteliğindedir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699244": {
+      "analysis_points": [
+        "Pınar Süt'ün iştirak payı oranı %46,63 → 600 milyon TL'lik bedelli artırımda şirketin ödeyeceği tutar ~279,78 milyon TL olarak hesaplanmaktadır",
+        "Nakit çıkışı → Şirketin kısa vadeli nakit akışı ve serbest nakit akışı (FCF) üzerindeki baskı izlenmelidir",
+        "İştirak finansal performansı → Yaşar Birleşik Pazarlama'nın son dönem finansalları, yatırımın geri dönüş süresi açısından incelenmelidir"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "f1366fcc5134befd",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "İştirak sermaye ihtiyacının büyüklüğü",
+        "Nakit çıkışının Pınar Süt'ün likidite pozisyonuna etkisi"
+      ],
+      "summary": "Pınar Süt Mamülleri Sanayii A.Ş., %46,63 oranında iştiraki olan Yaşar Birleşik Pazarlama'nın 600 milyon TL bedelli sermaye artırımına mevcut pay oranında katılma kararı almıştır. Şirketin iştirak yapısındaki sermaye ihtiyacını karşılamaya yönelik bu işlem, Pınar Süt'ün nakit çıkışını ve iştirak portföyündeki sermaye taahhüdünü etkileyecektir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699246": {
+      "analysis_points": [
+        "Finansman tutarı 242,5 milyon ABD doları → Bankanın dış kaynaklı kredi portföyüne ve uzun vadeli pasif yapısına doğrudan katkı sağlar",
+        "Kullanım alanı KOBİ ve orta-büyük ölçekli işletmelerin yeşil/dijital dönüşümü → Ticari kredi büyümesinde hedefli ve teşvik belgeli segment ağırlığı artar"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "4595f25f8eeedc9f",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Dış borcun ikrazı yöntemiyle sağlandığı için Hazine ve Maliye Bakanlığı garantisi veya risk paylaşım mekanizmaları detaylı incelenmelidir"
+      ],
+      "summary": "VakıfBank, Sanayi ve Teknoloji Bakanlığı programları kapsamında KOBİ ve orta-büyük ölçekli işletmelerin yeşil ve dijital dönüşüm yatırımlarının finansmanı için Dünya Bankası (IBRD) kaynaklı 242,5 milyon ABD doları tutarında kredi anlaşması imzalamıştır. Sağlanan bu dış kaynak, bankanın bilançosunda uzun vadeli dış borçlanma pasifini ve buna karşılık tahsisli kredi varlıklarını artıracaktır. İşlem, bankanın sektörel dönüşüm kredilerindeki porsiyonunu ve likidite yapısını güçlendirecektir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699248": {
+      "analysis_points": [
+        "Finansal tabloların içeriği açıklanmamıştır → Şirketin net borç/FAVÖK ve özkaynak değişimlerini görmek için tam set finansal raporlar incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": false,
+      "hash": "d8d7842215c45d11",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "TÜMOSAN Motor ve Traktör Sanayi A.Ş.'nin 30.09.2026 tarihli finansal raporu yayımlanmıştır. Bildirim içeriğinde detaylı finansal tablolar bulunmamaktadır.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699249": {
+      "analysis_points": [
+        "9 aylık dönemde toplam satış geliri 9.146 milyon TL olarak gerçekleşmiştir → Yıllık ciro projeksiyonu için 4. çeyrek satış hızı izlenmelidir",
+        "Çalışan sayısı 531 seviyesinde korunmuştur → Operasyonel kapasitede bir daralma veya genişleme sinyali bulunmamaktadır"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "78b99393273dc081",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Yurtdışı satışların toplam satışlar içindeki payının düşük seyretmesi",
+        "Üretim ve satış adetlerinde dönemler arası dalgalanmalar"
+      ],
+      "summary": "TÜMOSAN Motor ve Traktör Sanayi A.Ş.'nin 01.01.2026 – 30.09.2026 dönemine ilişkin yönetim kurulu faaliyet raporu yayımlanmıştır. Raporda şirketin üretim, satış verileri, Ar-Ge faaliyetleri ve genel finansal durumuna dair bilgiler yer almaktadır.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699250": {
+      "analysis_points": [
+        "Toplam kredi tutarı 500.000.000 ABD doları → Bankanın dış kaynaklı fonlama tabanını ve bilanço pasif vadesini uzatır",
+        "400 milyon dolar 20 yıl vade (Hazine garantili), 100 milyon dolar 5 yıl vade (garantisiz) → Farklı risk ve vade yapısıyla maliyet optimizasyonu sağlar"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "188605016d9718ac",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "400 milyon dolarlık dilimin 20 yıl vadeli olması uzun vadeli döviz yükümlülüğü yaratırken, Hazine garantisi kamu risk üstlenmesini artırmaktadır"
+      ],
+      "summary": "VakıfBank, Asya Kalkınma Bankası (ADB) ile toplam 500.000.000 ABD doları tutarında iki dilimli kredi anlaşması imzalamıştır. Finansmanın Hazine ve Maliye Bakanlığı garantili 400.000.000 ABD doları tutarındaki kısmı 20 yıl vadeli, garantisiz 100.000.000 ABD doları tutarındaki kısmı ise 5 yıl vadelidir. Sağlanan bu uzun vadeli dış kaynak, bankanın hem orta-uzun vadeli likidite profilini hem de dış borçlanma vadesini destekleyecektir.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699255": {
+      "analysis_points": [
+        "Toplantı nisabı 49.400.102,999 TL itibari değerli pay ile sağlanmıştır → Şirket yönetiminin kontrol yapısında bir değişiklik gözlenmemektedir",
+        "Faaliyet raporu ve yönetim kurulu ibrası oy çokluğu ile kabul edilmiştir → Yönetimsel bir uyuşmazlık veya hukuki ihtilaf sinyali bulunmamaktadır"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "085a57948201f810",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Arena Bilgisayar Sanayi ve Ticaret A.Ş.'nin 1 Nisan 2025 – 31 Mart 2026 hesap dönemine ait olağan genel kurul toplantısı 17 Kasım 2026 tarihinde gerçekleştirilmiştir. Toplantıda faaliyet raporu ve yönetim kurulu işlemleri pay sahiplerinin onayına sunulmuş olup, toplantı nisabı sağlanarak gündem maddeleri karara bağlanmıştır.",
+      "ts": "2026-11-17T19:01:03.898509+03:00"
     }
   },
-  "updated_at": "2026-11-17T18:01:01.188766+03:00",
+  "updated_at": "2026-11-17T19:01:03.898509+03:00",
   "version": 1
 }

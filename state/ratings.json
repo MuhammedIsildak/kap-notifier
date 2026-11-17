@@ -244,8 +244,56 @@
         "source": "jcrer_KuzeyBoru_spkbildirim_2026.pdf"
       },
       "ts": "2026-11-16T19:00:56.847628+03:00"
+    },
+    "1699217": {
+      "hash": "4e11f895e13ad05d",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5f01a1e95b7a401987"
+        ],
+        "current": "BBB+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "GRAINTURK HOLDİNG ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "A+ (tr)",
+        "red_flags": [
+          "Çeyrek itibarıyla nakit akış metriklerindeki bozulmanın yanı sıra likit varlıkların seviyesindeki gerileme.",
+          "Özkaynak yöntemiyle değerlenen yatırımın diğer ortağı hakkında konkordato kararı alınmış olmasının, söz konusu şirketin yükümlülüklerini karşılamasında yaratabileceği olası baskı, Esas itibarıyla yukarıdaki hususlar kapsamında \"GRAINTURK HO"
+        ],
+        "source": "GRAINTURK HOLDİNG ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699221": {
+      "hash": "3017f697df51197f",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5f01a1e94ac9451715"
+        ],
+        "current": "A+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1 (tr) / (Durağan)"
+        ],
+        "entity": "YATAŞ YATAK VE YORGAN SANAYİ TİCARET ANONİM ŞİRKETİ",
+        "outlook": "Pozitif",
+        "previous": "",
+        "red_flags": [
+          "2025 yılında net işletme sermayesi fazlası ve pozitif nakit akışı göstergeleri sayesinde likidite yönetiminin belirli ölçüde desteklenmesi.",
+          "Çeyrek finansallarında gözlemlenen sınırlı bozulmaya rağmen 2025 yılında FAVÖK marjındaki iyileşmenin desteğiyle temel kârlılık göstergelerinin makul seviyelerde korunması."
+        ],
+        "source": "YATAŞ YATAK VE YORGAN SANAYİ TİCARET ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-17T19:01:03.898509+03:00"
     }
   },
-  "updated_at": "2026-11-17T18:01:01.188766+03:00",
+  "updated_at": "2026-11-17T19:01:03.898509+03:00",
   "version": 1
 }
