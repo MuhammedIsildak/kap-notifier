@@ -2449,8 +2449,40 @@
       ],
       "summary": "Göknur Gıda Maddeleri Enerji İmalat İthalat İhracat Ticaret ve Sanayi A.Ş., Afyonkarahisar Dinar'daki 6.840 m² kapalı alana sahip ilave soğuk hava deposu yatırımını tamamlayarak işletmeye almıştır. Bu yatırımla şirketin toplam meyve soğuk hava depolama kapasitesi 2.000 tondan 15.000 tona yükselmiş ve %650 oranında kapasite artışı sağlanmıştır. Gerçekleşen bu kapasite artışı, şirketin taze meyve pazarındaki büyüme stratejisi ve operasyonel verimliliği açısından önem taşımaktadır.",
       "ts": "2026-11-17T09:01:04.699498+03:00"
+    },
+    "1698718": {
+      "analysis_points": [
+        "Alım tutarı 90.165.000 TL → şirketin işletme sermayesi ve kısa vadeli nakit çıkış projeksiyonuna dahil edilmeli",
+        "Ödeme planı ve vade bilgisi verilmedi → işletme sermayesi üzerindeki net nakit yükü vade tarihlerine göre modellenmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "ceeb43ff27766422",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Alım sözleşmesinin vade ve ödeme koşulları açıklanmadı"
+      ],
+      "summary": "DCT Trading Dış Ticaret A.Ş., 2026/2027 sezonu yurt içi pamuk alımları kapsamında 90.165.000 TL tutarında pamuk alım anlaşması imzalamıştır. 17.11.2026 tarihinde yapılan açıklamada işlemin dönemsel ticari faaliyete yönelik olduğu belirtilmiştir. Bu sözleşme, şirketin sezonluk hammadde tedarikini ve buna bağlı işletme sermayesi ihtiyacını doğrudan belirler.",
+      "ts": "2026-11-17T10:00:57.557970+03:00"
+    },
+    "1698719": {
+      "analysis_points": [
+        "İhraç tavanı ve döviz cinsi belgede belirtilmemiş → uluslararası piyasalarda ihraç büyüklüğü ve maliyeti netleşmeden nakit akışına etkisi hesaplanamaz",
+        "Yurt dışı borçlanma maliyeti → mevcut döviz cinsi borçların ortalama faiz maliyeti ile karşılaştırılmalı"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "7715c0876b76d723",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İhraç tutarı, vade ve faiz oranına ilişkin bilgi verilmedi"
+      ],
+      "summary": "YEO Teknoloji Enerji ve Endüstri A.Ş., yurt dışında borçlanma aracı ihracına ilişkin SPK onayını almıştır. 17.11.2026 tarihinde yapılan bildirime göre ihraç tavanı için SPK onayı belgelenmiştir. Bu gelişme, şirketin uluslararası borçlanma kanallarını açarak likidite ve finansman yapısını çeşitlendirmesine olanak tanır.",
+      "ts": "2026-11-17T10:00:57.557970+03:00"
     }
   },
-  "updated_at": "2026-11-17T09:01:04.699498+03:00",
+  "updated_at": "2026-11-17T10:00:57.557970+03:00",
   "version": 1
 }
