@@ -2611,8 +2611,53 @@
       "red_flags": [],
       "summary": "İş Gayrimenkul Yatırım Ortaklığı A.Ş., 2025 yılı gayrimenkul değerleme firmalarının seçimine ilişkin daha önce 30.01.2026 tarihinde yapılan açıklamada güncellenmeye gidildiğini bildirdi. Bu bildirim rutin bir kurumsal yönetim ve idari süreç güncellemesidir. Şirketin finansal yapısı, nakit akışı veya borç ödeme kapasitesi üzerinde doğrudan bir etkisi bulunmamaktadır.",
       "ts": "2026-11-17T16:00:59.790158+03:00"
+    },
+    "1699084": {
+      "analysis_points": [
+        "23 Aralık 2026 tarihindeki Olağanüstü Genel Kurul gündemi → TSRS uyumlu denetçi seçimi ve yönetim kurulu atamalarının onayı gerçekleştirilecek",
+        "Türk Ticaret Kanunu'nun 363. maddesi kapsamındaki atamalar → Kurumsal yönetim yapısındaki ara dönem değişikliklerinin genel kurul tarafından onay süreci takip edilecek"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "278b191d74a0f671",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Pasha Yatırım Bankası A.Ş., Yönetim Kurulu'nun 17 Kasım 2026 tarihli kararı ile 2026 yılı Olağanüstü Genel Kurul Toplantısı'nın 23 Aralık 2026 tarihinde gerçekleştirileceğini duyurmuştur. Toplantı gündeminde Türkiye Sürdürülebilirlik Raporlama Standartları (TSRS) kapsamında denetçi seçimi ve yıl içinde boşalan Yönetim Kurulu üyelikleri için yapılan atamaların onayı yer almaktadır.",
+      "ts": "2026-11-17T17:00:57.640303+03:00"
+    },
+    "1699090": {
+      "analysis_points": [
+        "17 Kasım 2026 tarihi itibarıyla Serkan Uğraş Kaygalak'ın göreve başlaması → Şirketin stratejik yöneliminde ve operasyonel yönetiminde üst düzey liderlik değişimi gerçekleşti",
+        "Yönetmeliğin 6. maddesi gereği Yönetim Kurulu doğal üyesi olunması → Yürütme ve denetim mekanizmalarında karar alma süreçlerinin tek elde birleşmesi izlenmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "40d8e1e0634d29ef",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Anadolu Anonim Türk Sigorta Şirketi'nde Zekai Mehmet Tuğtan'dan boşalan Genel Müdürlük görevine yasal izin sürecinin tamamlanmasının ardından 17 Kasım 2026 tarihi itibarıyla Serkan Uğraş Kaygalak atanmıştır. Atanan yeni Genel Müdür, ilgili mevzuat gereği aynı zamanda Yönetim Kurulu'nun doğal üyesi olarak da görev yapacaktır.",
+      "ts": "2026-11-17T17:00:57.640303+03:00"
+    },
+    "1699094": {
+      "analysis_points": [
+        "01.07.2026 tarihinden itibaren 5746 sayılı Kanun kapsamındaki teşvik ve desteklerden yararlanılamayacak → Ar-Ge vergi teşviklerinin kaybının vergi giderlerine ve net kâra yansıması mali tablolarda izlenmeli",
+        "Ürün geliştirme faaliyetlerinin Proje ve Yönetim & Tasarım yöneticiliğine devredilmesi → Şirketin inovasyon kapasitesi ve katma değerli üretim gücü üzerindeki operasyonel etkileri takip edilmeli",
+        "Şirket yönetimi finansal tablolara önemli bir etki beklemediğini beyan etti → Gelecek dönem bilançolarında Ar-Ge harcamalarının gider kalemlerindeki değişimi kontrol edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "5592ee0511dffb40",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Ar-Ge faaliyetlerinin sürdürülebilmesi için gerekli asgari şartların, ekonomik etkenler ve personel yapısı nedeniyle sağlanamaması"
+      ],
+      "summary": "Burçelik Bursa Çelik Döküm Sanayii A.Ş., Sanayi ve Teknoloji Bakanlığı'na yaptığı başvuru sonucunda Ar-Ge Merkezinin kapatılmasına karar verildiğini 17.11.2026 tarihinde duyurmuştur. İşletme dışı ekonomik etkenler ve personel sayısı nedeniyle asgari şartların sürdürülemediği belirtilirken, 01.07.2026 tarihinden itibaren teşvik ve desteklerden yararlanılamayacak olup finansal tablolara önemli bir etkisinin olması beklenmemektedir. Ürün geliştirme faaliyetleri Proje ve Yönetim & Tasarım yöneticiliği bünyesinde sürdürülecektir.",
+      "ts": "2026-11-17T17:00:57.640303+03:00"
     }
   },
-  "updated_at": "2026-11-17T16:00:59.790158+03:00",
+  "updated_at": "2026-11-17T17:00:57.640303+03:00",
   "version": 1
 }
