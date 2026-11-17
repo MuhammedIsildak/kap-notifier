@@ -2481,8 +2481,22 @@
       ],
       "summary": "YEO Teknoloji Enerji ve Endüstri A.Ş., yurt dışında borçlanma aracı ihracına ilişkin SPK onayını almıştır. 17.11.2026 tarihinde yapılan bildirime göre ihraç tavanı için SPK onayı belgelenmiştir. Bu gelişme, şirketin uluslararası borçlanma kanallarını açarak likidite ve finansman yapısını çeşitlendirmesine olanak tanır.",
       "ts": "2026-11-17T10:00:57.557970+03:00"
+    },
+    "1698887": {
+      "analysis_points": [
+        "Adana şubesinin kapatılması → fiziksel operasyon giderlerinde düşüş, müşteri kaybı olup olmadığı internet/çağrı merkezi hacimlerinden izlenmeli",
+        "Şube kapatma maliyeti ve kıdem tazminatı gibi tek seferlik giderlerin tutarı açıklanmadı → dönemsel net kâr üzerindeki etkisi mali tablolardan görülmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "77dcf7a181e1abd8",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "GLOBAL MENKUL DEĞERLER A.Ş., Çınarlı Mah. 61027 Sk. Sunar Nuri Çomu İş Merkezi C Blok N20/12 Seyhan/Adana adresindeki Adana Şubesi'nin 17.11.2026 tarihi itibarıyla kapatılmasına karar vermiştir. Yatırımcıların işlemleri için şirket merkezi, internet ve çağrı merkezine yönlendirileceği belirtilmiştir. Bu operasyonel küçülme veya kanal optimizasyonu kararı, şirketin genel finansal yapısı ve kredi profili üzerinde doğrudan kritik bir etki yaratmamaktadır.",
+      "ts": "2026-11-17T11:00:59.092901+03:00"
     }
   },
-  "updated_at": "2026-11-17T10:00:57.557970+03:00",
+  "updated_at": "2026-11-17T11:00:59.092901+03:00",
   "version": 1
 }
