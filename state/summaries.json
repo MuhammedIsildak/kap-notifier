@@ -2935,8 +2935,60 @@
       "red_flags": [],
       "summary": "Arena Bilgisayar Sanayi ve Ticaret A.Ş.'nin 1 Nisan 2025 – 31 Mart 2026 hesap dönemine ait olağan genel kurul toplantısı 17 Kasım 2026 tarihinde gerçekleştirilmiştir. Toplantıda faaliyet raporu ve yönetim kurulu işlemleri pay sahiplerinin onayına sunulmuş olup, toplantı nisabı sağlanarak gündem maddeleri karara bağlanmıştır.",
       "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699267": {
+      "analysis_points": [
+        "Net halka arz geliri 1.537.831.982 TL → Şirket özkaynaklarını ve likiditesini doğrudan güçlendirmiştir",
+        "Yatırımlara ayrılan tutar 999.590.788 TL → 2026-2027 yıllarında capex harcamalarının nakit çıkışını hızlandıracaktır",
+        "İşletme sermayesine aktarılan 538.241.194 TL → Ar-Ge ve üretim giderlerini finanse ederek kısa vadeli banka borçluluğunu azaltabilir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "f5350371a8a36a3d",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Net halka arz gelirinin 70.168.018 TL'si maliyet ve komisyonlara harcanmıştır",
+        "Fonun %19,50'si (299.877.237 TL) ana faaliyet alanı dışındaki Birleşik Seracılık sera yatırımına ayrılmıştır"
+      ],
+      "summary": "İntetra Teknoloji ve Bilişim Hizmetleri A.Ş., 26-27 Ağustos 2026 tarihlerinde 53,60 TL pay fiyatıyla gerçekleştirdiği halka arzdan 1.608.000.000 TL brüt gelir elde etmiş, halka arz maliyetleri düşüldükten sonra şirket hesaplarına net 1.537.831.982 TL aktarılmıştır. Şirket, bu fonun %35'ini (538.241.194 TL) işletme sermayesinin güçlendirilmesinde, %65'ini (999.590.788 TL) ise yatırımların finansmanında (İntetra yatırımları, Tetra HGS yatırımları ve Birleşik Seracılık sera yatırımı) kullanmayı planlamaktadır. Bu rapor, halka arz sonrası hazırlanan ilk fon kullanım raporu olup, şirketin operasyonel kapasite artışı ve yatırım projelerinin nakit akışı açısından kritik önem taşımaktadır.",
+      "ts": "2026-11-17T20:01:09.856628+03:00"
+    },
+    "1699278": {
+      "analysis_points": [
+        "İşlem büyüklüğü ve finansman yöntemi açıklanmadı → Şirketin kısa vadeli nakit pozisyonu veya borçlanma ihtiyacı üzerindeki etkisi henüz hesaplanamamaktadır",
+        "HoReCa segmentinde varlık alımı → Şirketin kurumsal proje pazarındaki cirosunu ve marjlarını orta vadede artırabilir"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "2cf8f8439e45d025",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Satın alım için herhangi bir tutar veya ödeme koşulu açıklanmadı",
+        "Ön görüşme aşamasında olunması nedeniyle anlaşmanın başarısız olma riski bulunmaktadır"
+      ],
+      "summary": "Koleksiyon Mobilya Sanayi A.Ş., büyüme stratejisi doğrultusunda otel, restoran ve kafe (HoReCa) projelerine yönelik yeni bir iş birimi oluşturma kararı almıştır. Bu kapsamda Papell Mobilya Tasarım Proje Sanayi ve Ticaret A.Ş. ile seçili varlıkların satın alınmasına yönelik ön görüşmelere başlanmış ve gizlilik sözleşmesi imzalanmıştır. İşlemin finansal büyüklüğü henüz açıklanmamış olup, potansiyel varlık alımı şirketin pazar payını ve ürün yelpazesini genişletecektir.",
+      "ts": "2026-11-17T20:01:09.856628+03:00"
+    },
+    "1699279": {
+      "analysis_points": [
+        "Toplantıda temsil edilen pay oranı ~%3.95 → Hissedar katılımı son derece düşüktür",
+        "Bağımsız denetçi olarak Meridyen A.Ş. seçildi → 2025 ve 2026 dönem denetimleri bu kuruluş tarafından yürütülecektir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "09435c51fd8014f3",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "2024 yılı finansal tablolarının incelenmesi hissedar talebiyle 1 ay ertelenmiştir",
+        "Toplantıda 42.000.000 TL sermayeyi temsil eden paylardan sadece 1.660.638,00 TL'lik kısmının asaleten temsil edilmesi düşük ortak katılımını göstermektedir"
+      ],
+      "summary": "Umpaş Holding A.Ş., daha önce hissedarların talebiyle ertelenen 2024 yılı olağan genel kurul toplantısını 05/11/2026 tarihinde gerçekleştirmiştir. Toplantıda 2024 yılı finansal tabloları yeniden incelenerek onaylanmış, yönetim kurulu üyeleri ibra edilmiş ve 2025-2026 yılları için Meridyen Kurumsal Çözüm ve Bağımsız Denetim A.Ş. bağımsız denetçi olarak seçilmiştir. Şirketin geçmiş dönem finansal tablolarının düzeltilerek onaylanması, kurumsal yönetişim açısından olağan dışı bir gecikmeye işaret etmektedir.",
+      "ts": "2026-11-17T20:01:09.856628+03:00"
     }
   },
-  "updated_at": "2026-11-17T19:01:03.898509+03:00",
+  "updated_at": "2026-11-17T20:01:09.856628+03:00",
   "version": 1
 }
