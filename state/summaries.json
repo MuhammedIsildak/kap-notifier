@@ -3060,8 +3060,39 @@
       "red_flags": [],
       "summary": "Flap Kongre Toplantı Hizmetleri Otomotiv ve Turizm A.Ş., iç kaynaklardan bedelsiz sermaye artırımı için Sermaye Piyasası Kurulu'ndan (SPK) onay aldığını bildirdi. Bu işlem şirketin çıkarılmış sermayesini iç kaynaklar yoluyla artırırken, nakit girişine yol açmayan muhasebe tabanlı bir özkaynak düzenlemesidir. Yatırımcılar ve analistler için ödenermiş sermaye tabanını genişletirken hisse başına fiyatlamayı teknik olarak böler.",
       "ts": "2026-11-17T22:01:00.377011+03:00"
+    },
+    "1699305": {
+      "analysis_points": [
+        "Tuzla 2. Otel Projesi'ne aktarılan fon 343,76 milyon TL → Projenin 2026/2027 dönemindeki nakit çıkış yükünü ve tamamlama maliyetini artırır",
+        "Toplam fon tutarı 598,47 milyon TL → Kaynakların Kıyıkışlacık, Tuzla ve Esenboğa projeleri arasında yeniden dağıtılması, bu yatırımların operasyonel başlangıç tarihlerini doğrudan etkiler"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "cc487942fcdb5f89",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Tersane Hotel İstanbul Projesi'nden vazgeçilmiştir",
+        "Projeler arası fon transferleri sermaye kullanım raporunun değiştirilmesine yol açmaktadır"
+      ],
+      "summary": "Akfen Gayrimenkul Yatırım Ortaklığı A.Ş., sermaye artırımından elde edilen 598,47 milyon TL tutarındaki fonun kullanım yerlerinde değişiklik yapmıştır. Tersane Hotel İstanbul Projesi'nden vazgeçilmesi nedeniyle bu proje için ayrılan fonların yaklaşık %25'i (140 milyon TL) Tuzla 2nd Hotel Projesi'ne aktarılmış olup toplam fon tahsisatı güncellenmiştir. Bu değişiklik, şirketin yatırım önceliklerinin revize edildiğini ve otel ile lojistik projeleri arasında kaynak kaydırıldığını göstermektedir.",
+      "ts": "2026-11-17T23:01:00.496739+03:00"
+    },
+    "1699307": {
+      "analysis_points": [
+        "Genel Kurul tarihi 16.12.2026 → 2025 yılı kâr dağıtımı ve temettü kararları bu tarihte netleşecektir",
+        "Gündem maddesi 7 (kâr dağıtımı önerisi) → Şirketin nakit temettü ödeme kapasitesi ve geçmiş yıl karlarının kullanım politikası izlenmelidir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "e43ec9160427f105",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Odaş Elektrik Üretim Sanayi Ticaret A.Ş., 2025 yılı Olağan Genel Kurul Toplantısı'nın 16.12.2026 tarihinde yapılacağını duyurmuştur. Toplantı gündeminde finansal tabloların onaylanması, yönetim kurulu üyelerinin ibrası ve kâr dağıtımı önerisinin görüşülmesi yer almaktadır. Bu bildirim rutin bir kurumsal yönetim prosedürü olup şirketin operasyonel veya finansal yapısında doğrudan olağan dışı bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-17T23:01:00.496739+03:00"
     }
   },
-  "updated_at": "2026-11-17T22:01:00.377011+03:00",
+  "updated_at": "2026-11-17T23:01:00.496739+03:00",
   "version": 1
 }
