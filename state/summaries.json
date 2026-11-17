@@ -2567,8 +2567,25 @@
       ],
       "summary": "Frıgo-Pak Gıda Maddeleri Sanayi ve Ticaret A.Ş., 147.102.475 TL tutarındaki çıkarılmış sermayesini %100 oranında bedelli artırarak 294.204.950 TL'ye ulaştırmış ve toplam 148.289.614,90 TL net fon elde etmiştir. 17.11.2026 tarihli denetim komitesi raporuna göre, elde edilen fonun 6.187.139,90 TL'si işletme sermayesine aktarılmış, sözleşmeli tarım yatırımları için planlanan kısmın ise çok küçük bir kısmı (58.509,56 TL) harcanmıştır. Kalan 81.542.913 TL'lik bakiye (%43,63) risksiz bankacılık ürünlerinde değerlendirilmektedir.",
       "ts": "2026-11-17T14:00:56.895422+03:00"
+    },
+    "1699031": {
+      "analysis_points": [
+        "2025 yılı hasılat 2,33 milyar TL, net dönem kârı ~17,6 milyon TL → net kâr marjı %1'in altında gerçekleşti",
+        "Yatırım için ayrılan kaynağın şirket bünyesinde muhafaza edildiği ifade edildi → izahnamede belirtilen esas yatırımların nakit akışı ve capex planına yansımaları izlenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "2657d6c5182bef28",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "2,33 milyar TL hasılata karşılık net kârın 17,6 milyon TL seviyesinde kalması düşük net kâr marjına işaret ediyor",
+        "Enflasyon muhasebesi ve sermaye düzeltmelerinin net kâr üzerinde baskı yarattığı belirtildi"
+      ],
+      "summary": "Golda Gıda Sanayi ve Ticaret A.Ş.'nin 12/11/2026 tarihinde gerçekleştirilen 2025 yılı olağan genel kurul toplantı tutanağı yayımlandı. Toplantıda 250.000.000 TL çıkarılmış sermayeyi temsil eden 162.504.820 adet pay temsil edilirken, 2025 yılı finansal tabloları ve faaliyet raporu müzakere edilerek onaylandı. Pay sahiplerinin yönelttiği sorular üzerine şirket yönetimi, yaklaşık 2,33 milyar TL hasılata karşılık net kârın 17,6 milyon TL kalmasında enflasyon muhasebesinin etkili olduğunu ve yatırım kaynaklarının korunduğunu bildirdi.",
+      "ts": "2026-11-17T15:00:55.561715+03:00"
     }
   },
-  "updated_at": "2026-11-17T14:00:56.895422+03:00",
+  "updated_at": "2026-11-17T15:00:55.561715+03:00",
   "version": 1
 }
