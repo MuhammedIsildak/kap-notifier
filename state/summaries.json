@@ -2656,8 +2656,51 @@
       ],
       "summary": "Burçelik Bursa Çelik Döküm Sanayii A.Ş., Sanayi ve Teknoloji Bakanlığı'na yaptığı başvuru sonucunda Ar-Ge Merkezinin kapatılmasına karar verildiğini 17.11.2026 tarihinde duyurmuştur. İşletme dışı ekonomik etkenler ve personel sayısı nedeniyle asgari şartların sürdürülemediği belirtilirken, 01.07.2026 tarihinden itibaren teşvik ve desteklerden yararlanılamayacak olup finansal tablolara önemli bir etkisinin olması beklenmemektedir. Ürün geliştirme faaliyetleri Proje ve Yönetim & Tasarım yöneticiliği bünyesinde sürdürülecektir.",
       "ts": "2026-11-17T17:00:57.640303+03:00"
+    },
+    "1699111": {
+      "analysis_points": [
+        "17.11.2026 itibarıyla tesiste üretime başlandı → Çelemli Fabrikası'nın hammadde maliyetlerinde düşüş ve operasyonel verimlilik artışı beklenmeli",
+        "Yatırım halka arz gelirlerinden finanse edildi → Şirketin taahhüt ettiği fon kullanım planına uygunluk ve kapasite artışının finansal tablolara yansıması izlenmeli"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "2636b962549e8ee9",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Vişne Madencilik Üretim Sanayi ve Ticaret A.Ş., Adana Ceyhan'daki Gündoğan Şubesi'nde Çelemli Fabrikası'nın hammadde tedarik altyapısını güçlendirmek amacıyla kırma-eleme tesisi yatırımını tamamlayarak 17.11.2026 tarihi itibarıyla üretime başlamıştır. Halka arz gelirlerinin kullanım yerleri kapsamında gerçekleştirilen bu yatırım, şirketin hammadde hazırlama kapasitesini artırması açısından önem taşımaktadır.",
+      "ts": "2026-11-17T18:01:01.188766+03:00"
+    },
+    "1699130": {
+      "analysis_points": [
+        "Toplam fon tutarı 6.267.340.000 TL → Şirketin özkaynak tabanını güçlendirerek büyük ölçekli ihalelerde rekabet gücünü artırır",
+        "Fonun %20'si (1.253.468.000 TL) borç ödemesine ayrıldı → Finansman maliyetlerinde düşüş ve net borç/FAVÖK rasyosunda iyileşme takip edilmeli",
+        "Fonun %80'i (5.013.872.000 TL) işletme sermayesine aktarıldı → Proje hakediş dönemleri öncesi imalat harcamalarının nakit akışına etkisi izlenmeli"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "8500ae3b03781d83",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Gülermak Ağır Sanayi İnşaat ve Taahhüt A.Ş., tahsisli sermaye artırımından elde edilecek 6.267.340.000,00 TL tutarındaki fonun kullanım yerlerine ilişkin raporunu yayımlamıştır. Fonun %80'i (5.013.872.000 TL) genel işletme sermayesine, %20'si (1.253.468.000 TL) ise finansal borçların geri ödenmesine ayrılmıştır; bu adım şirketin özkaynak tabanını güçlendirmeyi ve borçluluk düzeyini azaltmayı hedeflemektedir.",
+      "ts": "2026-11-17T18:01:01.188766+03:00"
+    },
+    "1699134": {
+      "analysis_points": [
+        "Teminat tutarı 10 milyon ABD Doları, dönem Ekim 2026 - Ekim 2027 → Şirketin yöneticileri için mesleki sorumluluk güvencesi sağlanmıştır",
+        "İşlem sermayenin %25'ini aşmaktadır → Sigorta prim maliyetinin dönemsel nakit çıkışlarına etkisi mali tablolar üzerinden izlenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "3428f5a4f6d6ba69",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "İş Girişim Sermayesi Yatırım Ortaklığı A.Ş., Ekim 2026 - Ekim 2027 dönemini kapsayan, 10 milyon ABD Doları teminatlı Yönetici Sorumluluk ve Mesleki Sorumluluk Sigortası'nın Berkshire Hathaway Inc. ve GR Risk Partners Ltd.'den satın alındığını bildirmiştir. Şirket sermayesinin yüzde yirmibeşini aşan bir bedelle gerçekleştirilen bu işlem rutin kurumsal yönetim ve risk yönetimi kapsamındadır.",
+      "ts": "2026-11-17T18:01:01.188766+03:00"
     }
   },
-  "updated_at": "2026-11-17T17:00:57.640303+03:00",
+  "updated_at": "2026-11-17T18:01:01.188766+03:00",
   "version": 1
 }
