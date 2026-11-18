@@ -3144,8 +3144,21 @@
       ],
       "summary": "Palmet Enerji A.Ş.'nin bağlı ortaklığı Palmet Upstream Enerji Arama ve Üretim A.Ş., Thrace Basin Natural Gas (Türkiye) Corporation (TBNG), Corporate Resources B.V. ve Thrace Basin Enerji A.Ş. paylarının devralınması için Pay Alım Sözleşmesi imzalamıştır. İşlem ile şirket Trakya'da doğal gaz arama ve üretim faaliyetlerine adım atmayı hedeflemektedir. Pay devri henüz tamamlanmamış olup, süreç ilgili kamu ve düzenleyici kurum onaylarına ile kapanış koşullarına bağlıdır.",
       "ts": "2026-11-18T11:00:56.110993+03:00"
+    },
+    "1699498": {
+      "analysis_points": [
+        "Bildirim içeriği detay içermiyor → somut finansal etki hesaplanamıyor, KAP ekindeki tam metin incelenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "8ceb696af3f53777",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "KAMUYU AYDINLATMA PLATFORMU tarafından 18.11.2026 tarihinde Özel Durum Açıklaması (Genel) yayımlanmıştır. Bildirim içeriğinde şirketin finansal veya operasyonel yapısını doğrudan etkileyecek somut bir veri veya işlem yer almamaktadır. Rutin nitelikteki bu bildirim, şirket profili üzerinde herhangi bir finansal ya da risk etkisi yaratmamaktadır.",
+      "ts": "2026-11-18T12:00:56.639426+03:00"
     }
   },
-  "updated_at": "2026-11-18T11:00:56.110993+03:00",
+  "updated_at": "2026-11-18T12:00:56.639426+03:00",
   "version": 1
 }
