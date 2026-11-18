@@ -3461,8 +3461,24 @@
       "red_flags": [],
       "summary": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., 2026 yılı için portföye alınabilecek varlıklar adına değerleme hizmeti alacağı kuruluşları Yetkin Gayrimenkul Değerleme ve Danışmanlık A.Ş. ve Terra Gayrimenkul Değerleme ve Danışmanlık A.Ş. olarak SPK onayıyla güncellemiştir. Bu bildirim rutin idari ve operasyonel bir güncelleme niteliğinde olup şirketin finansal yapısına veya kredi profiline doğrudan bir etkisi bulunmamaktadır.",
       "ts": "2026-11-18T21:01:10.822306+03:00"
+    },
+    "1700082": {
+      "analysis_points": [
+        "Toplam yatırım tutarı 10.000.000 ABD Doları → 31.12.2030 tarihine kadar kademeli ödenecek olup dönemsel nakit çıkışları ATP Capital'in likidite projeksiyonlarına yansıtılmalıdır",
+        "Hedef şirketlerde %51 pay edinimi planlanıyor → İşlem tamamlandığında Nuclean ve BA Steel konsolidasyon kapsamına girebilir, bu da grup finansallarına yeni varlık ve yükümlülükler ekleyecektir"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "ac67f5dfebece99d",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yatırım taahhüdünün 31.12.2030 tarihine kadar zamana yayılması nakit çıkış planlamasının uzun vadeli ve kademeli olacağını gösterir"
+      ],
+      "summary": "ATP Yazılım ve Teknoloji A.Ş. bağlı ortaklığı ATP Capital'in %45,10 ortak olduğu Ata Temiz Enerji, Nuclean ve BA Steel şirketlerine sermayeye katılım yoluyla yatırım yapma kararı almıştır. 18.11.2026 tarihinde imzalanan sözleşmeler kapsamında, Ata Temiz Enerji 31.12.2030 tarihine kadar her bir şirkete 5.000.000 ABD Doları olmak üzere toplam 10.000.000 ABD Doları yatırım yapacaktır ve bu işlemler sonucunda her iki şirkette de %51 oranında pay sahibi olması planlanmaktadır. Bu işlem grubun enerji ve savunma sanayii teknolojilerine yönelik sermaye tahsisini artırmaktadır.",
+      "ts": "2026-11-18T22:01:07.364956+03:00"
     }
   },
-  "updated_at": "2026-11-18T21:01:10.822306+03:00",
+  "updated_at": "2026-11-18T22:01:07.364956+03:00",
   "version": 1
 }
