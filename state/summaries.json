@@ -3157,8 +3157,27 @@
       "red_flags": [],
       "summary": "KAMUYU AYDINLATMA PLATFORMU tarafından 18.11.2026 tarihinde Özel Durum Açıklaması (Genel) yayımlanmıştır. Bildirim içeriğinde şirketin finansal veya operasyonel yapısını doğrudan etkileyecek somut bir veri veya işlem yer almamaktadır. Rutin nitelikteki bu bildirim, şirket profili üzerinde herhangi bir finansal ya da risk etkisi yaratmamaktadır.",
       "ts": "2026-11-18T12:00:56.639426+03:00"
+    },
+    "1699507": {
+      "analysis_points": [
+        "Sermaye 4.900.000 TL'den 10.000.000 TL'ye %104 oranında artırılmaktadır → Rüçhan haklarının tamamen kısıtlanması mevcut ortakların pay oranlarında seyreltmeye yol açacaktır",
+        "TTK 376 maddesi kapsamında yürütülen çalışmalar gündemdedir → Özkaynak yapısının durumu ve olası sermaye tamamlama veya borç yapılandırma ihtiyacı incelenmelidir",
+        "Şirketin zarara uğratılmasına ilişkin tahsil süreçleri takip edilmelidir → Tahsilatların nakit akışına ve bilanço dışı varlık kazanımlarına olası etkisi izlenmelidir"
+      ],
+      "category": "Sermaye kaybı",
+      "has_document": true,
+      "hash": "ca7a874e10c20ca0",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "TTK 376 kapsamında sermaye kaybı ve borca batıklık süreci yürütülmektedir",
+        "Geçmiş dönem işlemleri nedeniyle şirketin zarara uğratıldığı ve faillerden tahsil için adli/idari süreç başlatıldığı belirtilmiştir",
+        "Mevcut ortakların rüçhan haklarının tamamen sınırlandırılması suretiyle tahsisli sermaye artırımı öngörülmektedir"
+      ],
+      "summary": "CASA Emtia Petrol Kimyevi ve Türevleri Sanayi ve Ticaret A.Ş., 18.12.2026 tarihinde yapılacak 2025 yılı Olağan Genel Kurul toplantı gündemini yayımlamıştır. Gündemde şirketin sermaye kaybı ve Türk Ticaret Kanunu'nun (TTK) 376. maddesi kapsamındaki çalışmaların değerlendirilmesi yer almaktadır. Ayrıca şirket esas sermayesinin 4.900.000 TL'den 10.000.000 TL'ye çıkarılması ve artırılacak 5.100.000 TL'lik kısmın rüçhan hakları tamamen kısıtlanarak tahsisli satış yöntemiyle gerçekleştirilmesi görüşülecektir.",
+      "ts": "2026-11-18T13:00:58.036111+03:00"
     }
   },
-  "updated_at": "2026-11-18T12:00:56.639426+03:00",
+  "updated_at": "2026-11-18T13:00:58.036111+03:00",
   "version": 1
 }
