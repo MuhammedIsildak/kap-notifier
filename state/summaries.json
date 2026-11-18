@@ -3252,8 +3252,40 @@
       "red_flags": [],
       "summary": "Hedef Holding A.Ş. yönetim kurulu üyeliklerine Prof. Dr. Ercan Baldemir bağımsız üye adayı olarak gösterilmiştir. 18.11.2026 tarihli açıklamada adayın özgeçmişi ve SPK mevzuatına uygun bağımsızlık beyanı paylaşılmıştır. Bu gelişme rutin bir kurumsal yönetim ve yönetim kurulu yapılandırma işlemidir.",
       "ts": "2026-11-18T17:01:03.478749+03:00"
+    },
+    "1699818": {
+      "analysis_points": [
+        "Geçici mühlet süresi 10.11.2026 tarihinde başladı → 10.02.2027 tarihine kadar icra-iflas takipleri durduruldu, bu sürede finansal yeniden yapılandırma planı sunulmalı",
+        "Mühlet süresi 3 ay → Süre sonunda kesin mühlet verilmezse iflas riskine geçiş tetiklenir, banka kredileri takipteki alacaklar (NPL) sınıfına devredilebilir",
+        "Filo kiralama faaliyetleri → Araç kiralama gelirlerinin tahsilatında ve operasyonel nakit akışında aksama yaşanır, finansal borçlar temerrüde düşer"
+      ],
+      "category": "Temerrüt/Konkordato",
+      "has_document": true,
+      "hash": "0afaf5d8ada74a1e",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "T.C. Ankara Batı 1. Asliye Ticaret Mahkemesi'nden üç aylık geçici konkordato mühleti alınması",
+        "Şirketin kısa vadeli borç ödeme kabiliyetinin yasal koruma gerektirecek düzeyde zayıflaması"
+      ],
+      "summary": "KAYATUR FİLO KİRALAMA A.Ş., T.C. Ankara Batı 1. Asliye Ticaret Mahkemesi'nin 2026/1015 E. sayılı dosyası üzerinden 10.11.2026 tarihinden itibaren geçerli olmak üzere üç ay süreyle geçici konkordato mühleti almıştır. Bu karar, şirketin yakın vadeli borç servis kapasitesinin tıkandığını ve yasal koruma kalkanına ihtiyaç duyduğunu göstermektedir. Alacaklı finansal kurumlar ve ticari tedarikçiler açısından risk primi doğrudan artmış olup, nakit akışlarında kesinti yaşanması beklenmektedir.",
+      "ts": "2026-11-18T18:01:10.944051+03:00"
+    },
+    "1699865": {
+      "analysis_points": [
+        "Bağımsız yönetim kurulu üyesi istifa etti → İlk genel kurulda pay sahiplerinin onayına sunulacak yeni üye ataması yapılana kadar yönetim kurulu yeter sayısı ve komite yapıları incelenmeli",
+        "II-17.1 sayılı Kurumsal Yönetim Tebliği → Yeni bağımsız üye atama süreci tebliğ kurallarına uygun yürütülmeli, aksi takdirde kurumsal yönetim uyum derecesi etkilenebilir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "9733a1de1960a3f4",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Sümer Varlık Yönetim A.Ş. bağımsız yönetim kurulu üyesi Sn. Ferhun Ateş'in istifa ettiğini açıklamıştır. Boşalan bağımsız üyelik için II-17.1 sayılı Kurumsal Yönetim Tebliği hükümleri çerçevesinde değerlendirme süreci devam etmektedir. Şirketin ana operasyonlarını, kredi profilini veya finansal yapısını doğrudan etkileyecek nitelikte bir gelişme değildir.",
+      "ts": "2026-11-18T18:01:10.944051+03:00"
     }
   },
-  "updated_at": "2026-11-18T17:01:03.478749+03:00",
+  "updated_at": "2026-11-18T18:01:10.944051+03:00",
   "version": 1
 }
