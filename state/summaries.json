@@ -3239,8 +3239,21 @@
       ],
       "summary": "Bilicı Yatırım Sanayi ve Ticaret A.Ş., Kumaş Apre - Boyama tesisinin modernizasyonu ve kapasite artırımı amacıyla toplam yaklaşık 860.000 EUR bedelle 4 adet Jet boya, 1 adet Rulo Kumaş ambalaj ve 5 adet kalite kontrol makinesi alım sözleşmesi imzalamıştır. Makinelerin teslimi ve üretime alınması 2026 Aralık ile 2027 ilk çeyreğinde gerçekleştirilecek olup, özkaynaklardan karşılanacak bu yatırımın ciroya etkisinin %20 olacağı öngörülmektedir. Bu capex harcaması, özkaynak yapısını etkilerken gelecek dönem operasyonel kapasitesini ve gelir tablosunu doğrudan destekleyecektir.",
       "ts": "2026-11-18T16:00:57.875008+03:00"
+    },
+    "1699762": {
+      "analysis_points": [
+        "Bağımsız üye adayı Ercan Baldemir akademik kariyere sahip → Şirketin yönetim kurulundaki bağımsız üye sayısı ve komite yapıları güncellenir, operasyonel veya finansal yapıya doğrudan etki etmez"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "39548a64e2ecd31b",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Hedef Holding A.Ş. yönetim kurulu üyeliklerine Prof. Dr. Ercan Baldemir bağımsız üye adayı olarak gösterilmiştir. 18.11.2026 tarihli açıklamada adayın özgeçmişi ve SPK mevzuatına uygun bağımsızlık beyanı paylaşılmıştır. Bu gelişme rutin bir kurumsal yönetim ve yönetim kurulu yapılandırma işlemidir.",
+      "ts": "2026-11-18T17:01:03.478749+03:00"
     }
   },
-  "updated_at": "2026-11-18T16:00:57.875008+03:00",
+  "updated_at": "2026-11-18T17:01:03.478749+03:00",
   "version": 1
 }
