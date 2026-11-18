@@ -3418,8 +3418,51 @@
       ],
       "summary": "Aygaz A.Ş., %27,5 pay sahibi olduğu iştiraki Kolay Gelsin Dağıtım Hizmetleri A.Ş.'nin sermaye artırımına katılarak 412,5 milyon TL rüçhan hakkını 30 Kasım 2026'ya kadar ödeyeceğini duyurmuştur. İştirakin sermayesi, eş zamanlı olarak geçmiş yıl ve cari dönem zararlarının mahsubu ile 5 milyon TL'ye düşürülmüştür.",
       "ts": "2026-11-18T19:01:04.229481+03:00"
+    },
+    "1700056": {
+      "analysis_points": [
+        "Şahsi malvarlığı tedbiri kaldırıldı → Şirketin ticari ve operasyonel faaliyetlerinin süreç boyunca etkilenmediği belirtilmiştir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "8b4f98e195440beb",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ŞA-RA ENERJİ İNŞAAT TİCARET VE SANAYİ A.Ş. pay sahibi ve Yönetim Kurulu üyesi Şadi Türk'ün şahsi malvarlığına yönelik tedbirlerin adli makam kararıyla kaldırıldığını bildirdi. Açıklamaya göre tedbirler şahsi olup şirketin malvarlığına, banka hesaplarına veya operasyonlarına yansımamıştır.",
+      "ts": "2026-11-18T21:01:10.822306+03:00"
+    },
+    "1700068": {
+      "analysis_points": [
+        "Kredi notu B2'den B3'e indirildi → Borçlanma maliyetlerinde artış ve yeni finansman maliyetlerinin yükselmesi beklenmelidir",
+        "Görünüm Negatif'ten Durağan'a revize edildi → Yönetimin refinansman riskini bertaraf edici adımları ve azalan capex programı nakit akışı toparlanması için yakından izlenmelidir"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "c1322ea71c6faa81",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kredi notu B3 seviyesine (çöp seviye alt sınırı / yüksek risk) düşürüldü",
+        "Temel pazarlarda arz fazlası ve durgun talep baskısı devam ediyor"
+      ],
+      "summary": "Uluslararası kredi derecelendirme kuruluşu Moody's, 18.11.2026 tarihinde TÜRKİYE ŞİŞE VE CAM FABRİKALARI A.Ş.'nin kredi notunu B2'den B3'e indirmiş ve görünümünü Negatif'ten Durağan'a revize etmiştir. Not indirimine Avrupa'daki arz fazlası/durgun talep ile yoğun yatırım programının serbest nakit akışı üzerindeki baskısı gerekçe gösterilirken, borç vade profilini iyileştirme adımları ve azalan capex beklentisi Durağan görünümü desteklemiştir.",
+      "ts": "2026-11-18T21:01:10.822306+03:00"
+    },
+    "1700079": {
+      "analysis_points": [
+        "Değerleme kuruluşu seçimi güncellendi → Şirketin finansal tablolarına veya nakit akışına doğrudan bir etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "d5a55eb346e7f91c",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., 2026 yılı için portföye alınabilecek varlıklar adına değerleme hizmeti alacağı kuruluşları Yetkin Gayrimenkul Değerleme ve Danışmanlık A.Ş. ve Terra Gayrimenkul Değerleme ve Danışmanlık A.Ş. olarak SPK onayıyla güncellemiştir. Bu bildirim rutin idari ve operasyonel bir güncelleme niteliğinde olup şirketin finansal yapısına veya kredi profiline doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-18T21:01:10.822306+03:00"
     }
   },
-  "updated_at": "2026-11-18T19:01:04.229481+03:00",
+  "updated_at": "2026-11-18T21:01:10.822306+03:00",
   "version": 1
 }
