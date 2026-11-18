@@ -3091,8 +3091,27 @@
       "red_flags": [],
       "summary": "Odaş Elektrik Üretim Sanayi Ticaret A.Ş., 2025 yılı Olağan Genel Kurul Toplantısı'nın 16.12.2026 tarihinde yapılacağını duyurmuştur. Toplantı gündeminde finansal tabloların onaylanması, yönetim kurulu üyelerinin ibrası ve kâr dağıtımı önerisinin görüşülmesi yer almaktadır. Bu bildirim rutin bir kurumsal yönetim prosedürü olup şirketin operasyonel veya finansal yapısında doğrudan olağan dışı bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-17T23:01:00.496739+03:00"
+    },
+    "1699329": {
+      "analysis_points": [
+        "Ankara 1. Asliye Ticaret Mahkemesi 2026/664 Esas sayılı konkordato süreci devam ediyor → 03.11.2026 tarihinden itibaren verilen 2 aylık ek süre sonundaki mahkeme kararı takip edilmeli",
+        "Banka kredileri ve çek bakiyeleri için mutabakat sağlanamadı → Finansal tablolardaki borç ve yükümlülük kalemlerinde olası düzeltme riskleri izlenmeli",
+        "Kısa vadeli ödeme yükümlülükleri yoğunlaştı → Likidite kısıtları nedeniyle borç servis kapasitesinin tamamen durma riski değerlendirilmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "6bfdd84d72ddbdf1",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "17.08.2026 tarihinde konkordato talebinde bulunulmuş ve 03.11.2026'dan itibaren 2 ay süreyle uzatılmıştır",
+        "Banka kredileri, banka bakiyeleri ve portföydeki çekler için bankalardan mutabakat temin edilememiştir",
+        "Makroekonomik koşullar ve kısa vadeli borç yoğunlaşması likidite riskini kritik seviyeye taşımıştır"
+      ],
+      "summary": "Fikret Petrol Ürünleri Pazarlama Sanayi ve Ticaret A.Ş.'nin 30 Haziran 2026 sona eren ara hesap dönemine ait sınırlı denetim raporunda şartlı sonuç verilmiştir. Şirket hakkında Ankara 1. Asliye Ticaret Mahkemesi'nin 2026/664 Esas sayılı dosyası kapsamında 17.08.2026'da konkordato talep edilmiş ve 3 ay geçici mühlet verilmiş olup, mühlet 03.11.2026'dan itibaren 2 ay uzatılmıştır. Bağımsız denetçiler stok sayımı, banka mutabakatları ve kredi bakiyeleri gibi kritik kalemlerde denetim kanıtı elde edilemediğini, likidite riskinin kritik seviyede olduğunu belirtmiştir.",
+      "ts": "2026-11-18T10:00:58.260891+03:00"
     }
   },
-  "updated_at": "2026-11-17T23:01:00.496739+03:00",
+  "updated_at": "2026-11-18T10:00:58.260891+03:00",
   "version": 1
 }
