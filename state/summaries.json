@@ -3222,8 +3222,25 @@
       "red_flags": [],
       "summary": "Dof Roboter Sanayi A.Ş., 17-20 Kasım 2026 tarihlerinde ABD'nin Orlando kentinde düzenlenen IAAPA Expo Orlando 2026 fuarına katılım sağlamıştır. Bildirimde fuar katılımı duyurulmuş olup, herhangi bir sözleşme tutarı veya finansal etki unsuru yer almamaktadır.",
       "ts": "2026-11-18T15:01:04.234576+03:00"
+    },
+    "1699683": {
+      "analysis_points": [
+        "Yaklaşık 860.000 EUR tutarındaki yatırım özkaynaktan karşılanacak → Şirketin likidite pozisyonu ve kısa vadeli nakit akışı bu tutar kadar azalır",
+        "Üretim kapasitesine ve yıllık ciroya etkisinin %20 olacağı öngörülüyor → 2027 ilk çeyreğinde devreye girmesiyle birlikte ciro büyümesine pozitif yansır",
+        "Makinelerin teslim ve üretime alınma takvimi 2026 Aralık - 2027 ilk çeyreği → Yatırımın nakit çıkışı ile operasyonel katkısı arasındaki vade farkı izlenmeli"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "f506a3d50ddd1ca3",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yatırım bedelinin özkaynaktan karşılanması kısa vadeli serbest nakit akışını ve likiditeyi baskılayabilir"
+      ],
+      "summary": "Bilicı Yatırım Sanayi ve Ticaret A.Ş., Kumaş Apre - Boyama tesisinin modernizasyonu ve kapasite artırımı amacıyla toplam yaklaşık 860.000 EUR bedelle 4 adet Jet boya, 1 adet Rulo Kumaş ambalaj ve 5 adet kalite kontrol makinesi alım sözleşmesi imzalamıştır. Makinelerin teslimi ve üretime alınması 2026 Aralık ile 2027 ilk çeyreğinde gerçekleştirilecek olup, özkaynaklardan karşılanacak bu yatırımın ciroya etkisinin %20 olacağı öngörülmektedir. Bu capex harcaması, özkaynak yapısını etkilerken gelecek dönem operasyonel kapasitesini ve gelir tablosunu doğrudan destekleyecektir.",
+      "ts": "2026-11-18T16:00:57.875008+03:00"
     }
   },
-  "updated_at": "2026-11-18T15:01:04.234576+03:00",
+  "updated_at": "2026-11-18T16:00:57.875008+03:00",
   "version": 1
 }
