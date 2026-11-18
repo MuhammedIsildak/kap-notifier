@@ -3110,8 +3110,42 @@
       ],
       "summary": "Fikret Petrol Ürünleri Pazarlama Sanayi ve Ticaret A.Ş.'nin 30 Haziran 2026 sona eren ara hesap dönemine ait sınırlı denetim raporunda şartlı sonuç verilmiştir. Şirket hakkında Ankara 1. Asliye Ticaret Mahkemesi'nin 2026/664 Esas sayılı dosyası kapsamında 17.08.2026'da konkordato talep edilmiş ve 3 ay geçici mühlet verilmiş olup, mühlet 03.11.2026'dan itibaren 2 ay uzatılmıştır. Bağımsız denetçiler stok sayımı, banka mutabakatları ve kredi bakiyeleri gibi kritik kalemlerde denetim kanıtı elde edilemediğini, likidite riskinin kritik seviyede olduğunu belirtmiştir.",
       "ts": "2026-11-18T10:00:58.260891+03:00"
+    },
+    "1699389": {
+      "analysis_points": [
+        "Satın alma bedeli belirtilmedi → Palmet Mühendislik'in konsolide borçlanma ihtiyacı ve kaldıraç oranına etkisi şu an ölçülemiyor",
+        "27 Ağustos 2026 tarihli stratejinin ilk yatırımı → Trakya'daki saha ve üretim entegrasyonu için ilave capex (sermaye harcaması) bütçesi açıklanmalı"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "7e4188cfd7f8cdf6",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Satın alma bedeli ve finansman yapısı paylaşılmadı → likidite ve nakit akışı üzerindeki yükü belirsiz",
+        "Kapanış koşullarının gerçekleşmesi regülasyon onaylarına tabi → süreç uzayabilir"
+      ],
+      "summary": "Palmet Mühendislik Taahhüt Servis Endüstri ve Ticaret A.Ş.'nin tamamına sahip olduğu bağlı ortaklığı Palmet Upstream Enerji Arama ve Üretim A.Ş., TBNG, Corporate Resources B.V. ve Thrace Basin Enerji A.Ş. paylarının devri için Pay Alım Sözleşmesi imzalamıştır. Bu adım, 27 Ağustos 2026 tarihli açıklamada duyurulan stratejinin ilk doğrudan yatırım hamlesidir. İşlemin tamamlanması düzenleyici kurum onaylarına ve kapanış koşullarının yerine getirilmesine bağlıdır.",
+      "ts": "2026-11-18T11:00:56.110993+03:00"
+    },
+    "1699390": {
+      "analysis_points": [
+        "İşlem bedeli ve finansman kaynağı (özkaynak vs. borç) açıklanmadı → devir sonrası net borç/FAVÖK oranı hesaplanamıyor, KAP ekine veya detaylara bakılmalı",
+        "Pay devri henüz gerçekleşmedi ve düzenleyici onaylara bağlı → 18.11.2026 itibarıyla konsolide finansallara etkisi onaylar sonrasında netleşecek"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "d1503a787658afd5",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İşlem tutarı ve ödeme koşulları açıklanmadı → fonlama maliyeti ve bilanço etkisi belirsiz",
+        "Kapanış düzenleyici onaylara bağlı → onay süreçlerinde gecikme riski mevcut"
+      ],
+      "summary": "Palmet Enerji A.Ş.'nin bağlı ortaklığı Palmet Upstream Enerji Arama ve Üretim A.Ş., Thrace Basin Natural Gas (Türkiye) Corporation (TBNG), Corporate Resources B.V. ve Thrace Basin Enerji A.Ş. paylarının devralınması için Pay Alım Sözleşmesi imzalamıştır. İşlem ile şirket Trakya'da doğal gaz arama ve üretim faaliyetlerine adım atmayı hedeflemektedir. Pay devri henüz tamamlanmamış olup, süreç ilgili kamu ve düzenleyici kurum onaylarına ile kapanış koşullarına bağlıdır.",
+      "ts": "2026-11-18T11:00:56.110993+03:00"
     }
   },
-  "updated_at": "2026-11-18T10:00:58.260891+03:00",
+  "updated_at": "2026-11-18T11:00:56.110993+03:00",
   "version": 1
 }
