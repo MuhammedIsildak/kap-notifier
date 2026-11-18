@@ -292,8 +292,31 @@
         "source": "YATAŞ YATAK VE YORGAN SANAYİ TİCARET ANONİM ŞİRKETİ.pdf"
       },
       "ts": "2026-11-17T19:01:03.898509+03:00"
+    },
+    "1699976": {
+      "hash": "69d91ba2bdeb0b49",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da17e515f01a1ed58133c46e4"
+        ],
+        "current": "AAA (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB+ / (Negatif)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "AG ANADOLU GRUBU HOLDİNG ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [
+          "Likidite yönetiminde etkinliği ve finansal esnekliği artıran, elverişli nakit dönüşüm dinamikleriyle desteklenen sürdürülebilir faaliyetlerden nakit akışı yaratma kapasitesi."
+        ],
+        "source": "AG ANADOLU GRUBU HOLDİNG ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-18T19:01:04.229481+03:00"
     }
   },
-  "updated_at": "2026-11-18T18:01:10.944051+03:00",
+  "updated_at": "2026-11-18T19:01:04.229481+03:00",
   "version": 1
 }
