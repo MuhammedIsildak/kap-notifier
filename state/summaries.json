@@ -3176,8 +3176,54 @@
       ],
       "summary": "CASA Emtia Petrol Kimyevi ve Türevleri Sanayi ve Ticaret A.Ş., 18.12.2026 tarihinde yapılacak 2025 yılı Olağan Genel Kurul toplantı gündemini yayımlamıştır. Gündemde şirketin sermaye kaybı ve Türk Ticaret Kanunu'nun (TTK) 376. maddesi kapsamındaki çalışmaların değerlendirilmesi yer almaktadır. Ayrıca şirket esas sermayesinin 4.900.000 TL'den 10.000.000 TL'ye çıkarılması ve artırılacak 5.100.000 TL'lik kısmın rüçhan hakları tamamen kısıtlanarak tahsisli satış yöntemiyle gerçekleştirilmesi görüşülecektir.",
       "ts": "2026-11-18T13:00:58.036111+03:00"
+    },
+    "1699570": {
+      "analysis_points": [
+        "14.11.2025 tarihli eski notlar geçerli → Yeni not henüz açıklanmadı, revizyon süreci devam ediyor",
+        "Mevcut notlar korunuyor → Şirketin borçlanma maliyetleri ve kredi limitleri üzerinde ani bir değişiklik yaratmaz, yeni not beklenmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "6acad8dacfc742c5",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kredi derecelendirme revizyonunun gecikmesi veya not indirim riski"
+      ],
+      "summary": "Drc Derecelendirme Hizmetleri A.Ş., 14.11.2025 tarihli Korteks Mensucat Sanayi ve Ticaret A.Ş. kredi derecelendirme revizyon çalışmalarının devam ettiğini açıklamıştır. Revizyon süreci tamamlanana kadar 14.11.2025 tarihli mevcut kredi derecelendirme notları geçerliliğini korumaktadır.",
+      "ts": "2026-11-18T15:01:04.234576+03:00"
+    },
+    "1699578": {
+      "analysis_points": [
+        "Toplam 220 mn USD dış kaynak → 734 gün ve 1097 gün vadelerde sırasıyla SOFR+%1,75 ve SOFR+%2,00 maliyetle refinansman gerçekleştirildi",
+        "Döviz cinsi yükümlülükler → Bilançoda yabancı para açık pozisyonu ve faiz oranı riski (SOFR dalgalanmaları) yaratır"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "cb823a8cd5185b71",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yabancı para cinsinden borçlanmanın vade yapısı ve kur riski yaratma potansiyeli"
+      ],
+      "summary": "Denizbank A.Ş., 12 Kasım 2026 tarihinde toplam 220.000.000 ABD Doları tutarında iki dilimli Murabaha Sendikasyonu Sözleşmesi imzalamıştır. Kredinin 95.000.000 ABD Doları tutarındaki kısmı 734 gün vadeli ve SOFR+%1,75 maliyetle, 125.000.000 ABD Doları tutarındaki kısmı ise 1097 gün vadeli ve SOFR+%2,00 maliyetle sağlanmıştır. Bu işlem bankanın dış kaynak temin maliyetini ve orta vadeli likidite yapısını doğrudan etkilemektedir.",
+      "ts": "2026-11-18T15:01:04.234576+03:00"
+    },
+    "1699590": {
+      "analysis_points": [
+        "Fuar katılımı ve ürün lansmanı → Doğrudan finansal büyüklük veya sözleşme tutarı açıklanmadı, ciroya etkisi belirsiz",
+        "Pazarlama faaliyeti → Şirketin operasyonel faaliyetleri kapsamında rutin tanıtım faaliyeti olarak kalır"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "88176f1d94d4dbd4",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Dof Roboter Sanayi A.Ş., 17-20 Kasım 2026 tarihlerinde ABD'nin Orlando kentinde düzenlenen IAAPA Expo Orlando 2026 fuarına katılım sağlamıştır. Bildirimde fuar katılımı duyurulmuş olup, herhangi bir sözleşme tutarı veya finansal etki unsuru yer almamaktadır.",
+      "ts": "2026-11-18T15:01:04.234576+03:00"
     }
   },
-  "updated_at": "2026-11-18T13:00:58.036111+03:00",
+  "updated_at": "2026-11-18T15:01:04.234576+03:00",
   "version": 1
 }
