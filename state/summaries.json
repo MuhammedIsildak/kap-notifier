@@ -3518,8 +3518,35 @@
       "red_flags": [],
       "summary": "Kuzey Boru A.Ş., 2026/3. çeyrek finansal sonuçlarına ilişkin değerlendirme sunumunu kurumsal internet sitesinde yayımladı. Bildirim rutine yakın bir bilgilendirme niteliğinde olup, asıl değerlendirme sunum içerisindeki kâr, borç ve nakit akışı verileri üzerinden yapılmalıdır. Tutar veya oran bilgisi bu duyuru metninde yer almamaktadır.",
       "ts": "2026-11-19T11:00:56.290134+03:00"
+    },
+    "1700160": {
+      "analysis_points": [
+        "Canlı sunum tarihi 19.11.2026 → Sunum içeriğindeki borç yapılandırma ve nakit akışı güncellemeleri finansal modellere yansıtılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "e96999735d95c4c5",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Zorlu Enerji Elektrik Üretim A.Ş., yatırımcılara yönelik 19 Kasım 2026 tarihinde bir canlı sunum (webcast) gerçekleştirileceğini ve katılım bağlantısının internet sitesinde yayımlandığını duyurdu. Bu bildirim rutin bir yatırımcı ilişkileri faaliyeti olup şirketin finansal yapısında veya operasyonlarında doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-19T12:01:01.191943+03:00"
+    },
+    "1700187": {
+      "analysis_points": [
+        "Mevcut sermaye 22.750.000 TL, artırılan tutar 277.250.000 TL (%1218,68 oranında artış) → Pay başına fiyat ve likidite yapısı bu oranda bölünerek yeniden şekillenir",
+        "Fon kaynağı Sermaye Düzeltmesi Olumlu Farkları → Şirkete taze nakit girişi sağlamaz, özkaynak kalemleri kendi içinde yer değiştirir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "1ee8688f08b0c9ae",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Plastikkart Akıllı Kart İletişim Sistemleri Sanayi ve Ticaret A.Ş., 22.750.000 TL olan ödenmiş sermayesini Sermaye Düzeltmesi Olumlu Farklarından karşılanmak suretiyle %1218,68131 oranında artırarak 300.000.000 TL'ye yükseltilmesine ilişkin SPK onayını aldı. Bu işlem iç kaynaklardan yapılan bedelsiz sermaye artırımı niteliğinde olup şirketin özkaynak yapısında nakit girişine yol açmayan bir muhasebe içi transferdir.",
+      "ts": "2026-11-19T12:01:01.191943+03:00"
     }
   },
-  "updated_at": "2026-11-19T11:00:56.290134+03:00",
+  "updated_at": "2026-11-19T12:01:01.191943+03:00",
   "version": 1
 }
