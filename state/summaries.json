@@ -3505,8 +3505,21 @@
       "red_flags": [],
       "summary": "MİA Teknoloji A.Ş., Gürbağ Savunma ve Teknoloji A.Ş. ile Eskişehir'deki TSK Bulut Bilişim Veri Merkezi Projesi – Faz 2 kapsamında 18.11.2026 tarihinde KDV dâhil 2.388.000 ABD Doları (120.461.227,20 TL) bedelli sözleşme imzaladı. Anlaşma; kritik veri merkezi teknolojilerinin tedariği, kurulumu, mühendislik, devreye alma ve saha kabul test hizmetlerini kapsıyor. Bu sözleşme şirketin savunma sanayii ve kritik bilişim altyapılarındaki iş geliştirme potansiyelini destekler niteliktedir.",
       "ts": "2026-11-19T10:00:59.078649+03:00"
+    },
+    "1700149": {
+      "analysis_points": [
+        "Sunum metni KAP bildiriminde yer almıyor → etki hesaplanamıyor, yatırımcı ilişkileri sitesindeki ilgili sunum incelenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "46ccdbe67df54240",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kuzey Boru A.Ş., 2026/3. çeyrek finansal sonuçlarına ilişkin değerlendirme sunumunu kurumsal internet sitesinde yayımladı. Bildirim rutine yakın bir bilgilendirme niteliğinde olup, asıl değerlendirme sunum içerisindeki kâr, borç ve nakit akışı verileri üzerinden yapılmalıdır. Tutar veya oran bilgisi bu duyuru metninde yer almamaktadır.",
+      "ts": "2026-11-19T11:00:56.290134+03:00"
     }
   },
-  "updated_at": "2026-11-19T10:00:59.078649+03:00",
+  "updated_at": "2026-11-19T11:00:56.290134+03:00",
   "version": 1
 }
