@@ -3591,8 +3591,100 @@
       "red_flags": [],
       "summary": "Tarkim Bitki Koruma Sanayi ve Ticaret A.Ş., Turgutlu Yeni Fabrika Yatırımı hakkında daha önce 16.02.2026, 20.05.2026, 08.06.2026 ve 27.10.2026 tarihlerinde yapılan açıklamaların güncellendiğini bildirdi. Söz konusu güncelleme, şirketin üretim kapasitesini ve operasyonel yapısını etkileyecek yatırım sürecinin devam ettiğini gösteriyor. Bu tür yatırımlar, orta vadeli nakit çıkışları ve ilerleyen dönemde kapasite artışı yoluyla finansal tabloları doğrudan etkiler.",
       "ts": "2026-11-19T16:00:59.462683+03:00"
+    },
+    "1700274": {
+      "analysis_points": [
+        "2025 yılı kâr dağıtım önerisi görüşülecek → kâr payı dağıtılacaksa nakit akışı ve temettü verimliliği hesaplanmalı",
+        "Bağımsız denetim kuruluşu seçimi yapılacak → 2026 mali tablolarının denetimi için denetçi değişimi olup olmadığı kontrol edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "37cfc63b6735bac6",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Çan2 Termik A.Ş., 2025 yılı Olağan Genel Kurul Toplantısı'nın 15 Aralık 2026 Salı günü saat 10:30'da Nidakule Kuzey Ataşehir İstanbul adresinde gerçekleştirileceğini bildirdi. Toplantı gündeminde finansal tabloların onaylanması, yönetim kurulunun ibrası, bağımsız denetçi seçimi ve 2025 yılı kâr dağıtım önerisinin görüşülmesi yer alıyor. Bu bildirim rutin bir kurumsal işlem olup şirketin operasyonel veya finansal yapısında doğrudan bir değişikliğe yol açmamaktadır.",
+      "ts": "2026-11-19T17:00:59.740360+03:00"
+    },
+    "1700275": {
+      "analysis_points": [
+        "TMSF kayyım olarak atandı → Şirketin borç servis kapasitesi, banka ilişkileri ve operasyonel kararları tamamen kamu kontrolüne geçti",
+        "Hukuki süreç ve kayyım kararı kesinleşti → Alacaklı bankaların kredi sözleşmelerindeki 'hızlandırılmış ödeme' (cross-default) maddelerini tetikleyip tetiklemediği incelenmeli"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "fb6d53236b7f43ab",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Şirkete Tasarruf Mevduatı Sigorta Fonu'nun (TMSF) kayyım olarak atanması",
+        "Mahkeme ve Fon Kurul kararıyla yönetim kontrolünün değişmesi"
+      ],
+      "summary": "İstanbul 4. Sulh Ceza Hâkimliğinin 14.11.2026 tarihli ve 2026/11462 D. İş sayılı kararı ile Fon Kurulunun 17.11.2026 tarihli ve 2026/793 sayılı kararı uyarınca Tasarruf Mevduatı Sigorta Fonu (TMSF), Dünya Varlık Yönetim A.Ş.'ye kayyım olarak atanmıştır. Bu atama şirket yönetiminin kamu otoritesine geçmesi anlamına gelmekte olup kredi profili ve operasyonel devamlılık açısından kritik önem taşımaktadır.",
+      "ts": "2026-11-19T17:00:59.740360+03:00"
+    },
+    "1700288": {
+      "analysis_points": [
+        "Yatırımcı ilişkileri yöneticisi değişti → Yeni atama yapılana kadar Yahya İncetahtacı vekâlet edecek, operasyonel bir risk yaratmaz"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "7c4ee98e76ca5c61",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Koza Polyester Sanayi ve Ticaret A.Ş.'de 01.08.2023 tarihinden beri Yatırımcı İlişkileri Bölümü Yöneticisi ve Kurumsal Yönetim Komitesi Üyesi olan Hakan Baştürk 19.11.2026 itibarıyla görevinden ayrılmıştır. Yeni atama yapılana kadar bu görevler Yahya İncetahtacı tarafından yürütülecektir. Bu değişiklik rutin bir idari atama olup şirketin finansal yapısını veya operasyonlarını doğrudan etkilememektedir.",
+      "ts": "2026-11-19T17:00:59.740360+03:00"
+    },
+    "1700308": {
+      "analysis_points": [
+        "Üretim kapasitesi %50 azaltıldı → Sabit maliyetlerin karşılanmasında zorluk artar, ciro tabanı daralır",
+        "İş gücü azaltımına gidildi → Kıdem ve ihbar tazminatı yükü kısa vadeli nakit çıkışını tetikler",
+        "Faaliyetler konkordato projesine göre yürütülüyor → Tedarikçi ve müşteri ilişkilerindeki bozulmanın bilançoya etkisi izlenmeli"
+      ],
+      "category": "İflas/hukuki",
+      "has_document": true,
+      "hash": "47bc39fdba7a7438",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Üretim kapasitesinin %50 oranında azaltılması",
+        "Konkordato sürecinde operasyonel daralma ve iş gücü azaltımı"
+      ],
+      "summary": "Uşak Seramik Sanayi A.Ş., devam eden konkordato süreci kapsamında operasyonel yeniden yapılandırma çerçevesinde üretim kapasitesi kullanımını yaklaşık %50 oranında azaltmış ve iş gücü azaltımına gitmiştir. Bu adım, işletme giderlerinin azaltılması ve nakit akışının iyileştirilmesi amacıyla atılmış olup konkordato projesine uygun olarak yönetilmektedir. Üretim hacmindeki bu denli büyük daralma, şirketin ticari gelirlerinde ve pazar payında kalıcı kayıplara yol açabilir.",
+      "ts": "2026-11-19T17:00:59.740360+03:00"
+    },
+    "1700321": {
+      "analysis_points": [
+        "Bağımsız üye istifa etti ve üç komitedeki görevi bitti → İlk genel kurula kadar komite yapılarının tebliğe uyumu takip edilmeli",
+        "Yeni bağımsız üye atama süreci devam ediyor → Kurumsal yönetim ilkelerine uyum açısından atanacak kişinin profili izlenmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "dd1bfba387e6a903",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Bağımsız üyenin birden fazla kritik komitedeki (Denetim, Risk, Kurumsal Yönetim) görevlerinin aynı anda sona ermesi"
+      ],
+      "summary": "Sümer Varlık Yönetim A.Ş. bağımsız yönetim kurulu üyesi Emek Toraman Çolgar istifa ederek görevinden ayrılmıştır. Bu ayrılıkla birlikte üyenin Riskin Erken Saptanması Komitesi, Denetim Komitesi ve Kurumsal Yönetim Komitesi'ndeki görevleri de sona ermiştir. Boşalan bağımsız üyelik için ilk genel kurulda onaylanmak üzere değerlendirme süreci devam etmektedir.",
+      "ts": "2026-11-19T17:00:59.740360+03:00"
+    },
+    "1700328": {
+      "analysis_points": [
+        "Uzun Vadeli YP ve Yerel Para notu BB- seviyesinde teyit edildi → Not görünümü 'Durağan', fonlama maliyetlerinde kısa vadede baskı beklenmiyor",
+        "Önceki not tarihi 15.04.2026 idi → Mevcut not seviyesi korunuyor, kredi kalitesinde kademeli bir bozulma veya iyileşme rapor edilmedi"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "3c3584945ff4c196",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Uluslararası derecelendirme kuruluşu Fitch Ratings, 18 Kasım 2026 tarihinde Vakıf Katılım Bankası AŞ'nin Uzun Vadeli Yerel ve Yabancı Para cinsinden kredi notlarını BB- olarak teyit etmiş ve not görünümlerini Durağan olarak belirlemiştir. Bu teyit, bankanın mevcut borçlanma maliyetlerinde ve uluslararası fonlama imkânlarında ani bir değişiklik yaratmayacağını göstermektedir.",
+      "ts": "2026-11-19T17:00:59.740360+03:00"
     }
   },
-  "updated_at": "2026-11-19T16:00:59.462683+03:00",
+  "updated_at": "2026-11-19T17:00:59.740360+03:00",
   "version": 1
 }
