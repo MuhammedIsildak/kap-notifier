@@ -3545,8 +3545,40 @@
       "red_flags": [],
       "summary": "Plastikkart Akıllı Kart İletişim Sistemleri Sanayi ve Ticaret A.Ş., 22.750.000 TL olan ödenmiş sermayesini Sermaye Düzeltmesi Olumlu Farklarından karşılanmak suretiyle %1218,68131 oranında artırarak 300.000.000 TL'ye yükseltilmesine ilişkin SPK onayını aldı. Bu işlem iç kaynaklardan yapılan bedelsiz sermaye artırımı niteliğinde olup şirketin özkaynak yapısında nakit girişine yol açmayan bir muhasebe içi transferdir.",
       "ts": "2026-11-19T12:01:01.191943+03:00"
+    },
+    "1700249": {
+      "analysis_points": [
+        "Finansal borçlar için ayrılan 621,3 mn TL tamamen kullanıldı → kısa/uzun vadeli borç yükünde ve finansman giderlerinde azalış izlenmeli",
+        "Esenyurt ve Kazakistan yatırımları için 1,035 mlr TL'nin 477,2 mn TL'si harcandı → kalan 558,3 mn TL'lik yatırım fonu vadeli hesapta getiri sağlarken capex takvimi izlenmeli",
+        "Net halka arz gelirinin %73'ü 3 ay içinde tüketildi → kalan %27'lik kısmın yatırım programına göre kullanım hızları takip edilmeli"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "f33ac9b86b36a93e",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Orzaks İlaç ve Kimya Sanayi Ticaret A.Ş., 07.07.2026 tarihinde gerçekleşen halka arzdan elde ettiği 2.071.000.000 TL net fonun 30.09.2026 itibarıyla %73,04'üne denk gelen 1.512.662.822 TL'lik kısmını harcamıştır. Fonun 621.300.000 TL'si finansal borç anapara ve faiz ödemelerine, 414.200.000 TL'si işletme sermayesine ve 477.162.822 TL'si Esenyurt ile Kazakistan tesis yatırımlarına tahsis edilmiştir. Kalan 558.337.178 TL'lik tutar vadeli mevduat ve para piyasası fonlarında değerlendirilmektedir.",
+      "ts": "2026-11-19T15:00:59.962474+03:00"
+    },
+    "1700256": {
+      "analysis_points": [
+        "Sözleşme bedeli ve hacmi belirtilmedi → etki hesaplanamıyor, KAP ekine bakılmalı",
+        "Reefer konteyner taşımacılığı başladı → katma değerli lojistik gelirleri ve marjlar izlenmeli",
+        "Azerbaycan hattındaki ortaklık → bölgesel taşıma hacmine katkısı operasyonel rapordan takip edilmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "7036420d34955ccd",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Sözleşme tutarı ve süresi açıklanmadı"
+      ],
+      "summary": "Pasifik Eurasia Lojistik Dış Ticaret A.Ş., Azerbaycan'ın multimodal lojistik firmalarından Ali Prime Logistics LLC ile genel kargo konteyner ve soğutuculu (reefer) konteyner taşımacılığı alanında anlaşmaya varmıştır. Anlaşmanın finansal büyüklüğü veya süresine ilişkin bilgi verilmemiştir; bu durum ciroya ve nakit akışına etkisinin doğrudan hesaplanmasını engellemektedir. Bu iş birliği, şirketin uluslararası taşımacılık ağını ve bölgesel operasyonel hacmini artırma potansiyeli taşımaktadır.",
+      "ts": "2026-11-19T15:00:59.962474+03:00"
     }
   },
-  "updated_at": "2026-11-19T12:01:01.191943+03:00",
+  "updated_at": "2026-11-19T15:00:59.962474+03:00",
   "version": 1
 }
