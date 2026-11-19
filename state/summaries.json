@@ -3853,8 +3853,36 @@
       "red_flags": [],
       "summary": "Global Yatırım Holding A.Ş., dolaylı bağlı ortaklığı Global Ports Holding'in Ekim 2026 dönemine ait yolcu istatistiklerini yayınlamıştır. Bu veriler, şirketin ana faaliyet kolu olan liman işletmeciliğindeki operasyonel hacmi göstermektedir.",
       "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700434": {
+      "analysis_points": [
+        "Bedelsiz pay alma hakkı başlangıcı 19.11.2026 → Pay adetleri artar, hisse fiyatı teknik olarak düzeltmeye girer",
+        "Sermaye artırımı türü bedelsiz → Şirkete nakit girişi olmaz, iç kaynaklardan karşılanır"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": false,
+      "hash": "b5de6504161ca7e7",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "FLAP KONGRE TOPLANTI HİZMETLERİ OTOMOTİV VE TURİZM A.Ş., 19.11.2026 tarihinde bedelsiz pay alma hakkı kullanım başlangıç tarihini açıklamıştır. Bu işlem özkaynak yapısını ve hisse adetlerini doğrudan etkilemektedir. Analist için sermaye ve pay başına düşen finansal kalemlerin revize edilmesini gerektirir.",
+      "ts": "2026-11-19T20:01:04.730481+03:00"
+    },
+    "1700435": {
+      "analysis_points": [
+        "İhraç tavanı tutarı ve türü belgede belirtilmemiş → Borçlanma limiti ve vadesi KAP ekindeki yönetim kurulu kararından incelenmeli",
+        "Yönetim kurulu karar tarihi 19.11.2026 → SPK başvuru süreci ve onaylanan ihraç tavanı tutarı netleşmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "2bacc72944ea76c4",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "KOÇ SİSTEM BİLGİ VE İLETİŞİM HİZMETLERİ A.Ş., 19.11.2026 tarihinde ihraç tavanına ilişkin yönetim kurulu kararı almıştır. Bu karar şirketin borçlanma aracı ihracı yoluyla likidite temin etme kapasitesini belirler. Analist açısından gelecekteki borçlanma maliyetleri ve vade yapısının yönetimi için takip edilmelidir.",
+      "ts": "2026-11-19T20:01:04.730481+03:00"
     }
   },
-  "updated_at": "2026-11-19T19:00:58.399696+03:00",
+  "updated_at": "2026-11-19T20:01:04.730481+03:00",
   "version": 1
 }
