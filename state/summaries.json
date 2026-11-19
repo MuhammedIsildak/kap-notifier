@@ -3897,8 +3897,25 @@
       ],
       "summary": "ICU Girişim Sermayesi Yatırım Ortaklığı A.Ş.'nin 19.11.2026 tarihinde yapılan 2025 yılı olağan genel kurul toplantısı, gerekli asgari toplantı nisabı (%25) sağlanamadığı için Yönetim Kurulu'nun belirleyeceği ileri bir tarihe ertelenmiştir. 347.500.000 TL sermayeye sahip şirketin toplantısında sadece 14.748.434 adet pay temsil edilmiştir. Bu durum rutin idari ve kurumsal bir erteleme niteliğinde olup şirketin operasyonel veya finansal yapısını doğrudan değiştirmemektedir.",
       "ts": "2026-11-19T22:00:58.561309+03:00"
+    },
+    "1700449": {
+      "analysis_points": [
+        "Nakit ve nakit benzerleri 31.12.2025 tarihindeki 111.780 TL'den 30.09.2026'da 61.405 TL'ye düşmüştür → Kısa vadeli likidite tamponu zayıflamıştır, kısa vadeli yükümlülüklerin (161.244.266 TL) servis edilmesi için operasyonel nakit akışı veya ek finansman gerekecektir",
+        "Ticari alacaklar 12.559.591 TL iken ticari borçlar 68.923.051 TL seviyesindedir → Net ticari borç pozisyonu şirketin işletme sermayesi açığına işaret etmektedir",
+        "Özkaynak yöntemiyle değerlenen yatırımlar 31.12.2025'teki 343.784 TL'den 30.09.2026'da 97.008.612 TL'ye yükselmiştir → Portföydeki iştirak yapısında büyüme veya yeni değerleme olmuştur, bu kalemin kâr/zarar etkileri dipnotlardan incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "8945cb9d6fba0e6f",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Nakit ve nakit benzerleri 30.09.2026 itibarıyla 61.405 TL'ye gerilemiştir"
+      ],
+      "summary": "US Yatırım Holding A.Ş., 1 Ocak - 30 Eylül 2026 hesap dönemine ait konsolide finansal tablolarını yayımlamıştır. Şirketin toplam varlıkları 30.09.2026 tarihi itibarıyla 481.046.315 TL olarak gerçekleşirken, toplam kısa vadeli yükümlülükleri 161.244.266 TL seviyesindedir. Bu finansal rapor, şirketin dokuz aylık dönemdeki varlık, borç ve özkaynak yapısındaki değişimlerin izlenmesi açısından önem taşımaktadır.",
+      "ts": "2026-11-19T23:00:58.882841+03:00"
     }
   },
-  "updated_at": "2026-11-19T22:00:58.561309+03:00",
+  "updated_at": "2026-11-19T23:00:58.882841+03:00",
   "version": 1
 }
