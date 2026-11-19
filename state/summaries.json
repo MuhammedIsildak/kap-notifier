@@ -3577,8 +3577,22 @@
       ],
       "summary": "Pasifik Eurasia Lojistik Dış Ticaret A.Ş., Azerbaycan'ın multimodal lojistik firmalarından Ali Prime Logistics LLC ile genel kargo konteyner ve soğutuculu (reefer) konteyner taşımacılığı alanında anlaşmaya varmıştır. Anlaşmanın finansal büyüklüğü veya süresine ilişkin bilgi verilmemiştir; bu durum ciroya ve nakit akışına etkisinin doğrudan hesaplanmasını engellemektedir. Bu iş birliği, şirketin uluslararası taşımacılık ağını ve bölgesel operasyonel hacmini artırma potansiyeli taşımaktadır.",
       "ts": "2026-11-19T15:00:59.962474+03:00"
+    },
+    "1700262": {
+      "analysis_points": [
+        "Yatırımın toplam bütçesi ve finansman modeli belgede belirtilmedi → şirketin özkaynak mı yoksa yabancı kaynak mı kullandığı KAP ekinden incelenmeli",
+        "Yatırımın tamamlama tarihi ve devreye giriş takvimi metinde yer almıyor → 2026/2027 nakit akış projeksiyonlarında capex kalemleri netleştirilmeli"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "332dc3947dd04239",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Tarkim Bitki Koruma Sanayi ve Ticaret A.Ş., Turgutlu Yeni Fabrika Yatırımı hakkında daha önce 16.02.2026, 20.05.2026, 08.06.2026 ve 27.10.2026 tarihlerinde yapılan açıklamaların güncellendiğini bildirdi. Söz konusu güncelleme, şirketin üretim kapasitesini ve operasyonel yapısını etkileyecek yatırım sürecinin devam ettiğini gösteriyor. Bu tür yatırımlar, orta vadeli nakit çıkışları ve ilerleyen dönemde kapasite artışı yoluyla finansal tabloları doğrudan etkiler.",
+      "ts": "2026-11-19T16:00:59.462683+03:00"
     }
   },
-  "updated_at": "2026-11-19T15:00:59.962474+03:00",
+  "updated_at": "2026-11-19T16:00:59.462683+03:00",
   "version": 1
 }
