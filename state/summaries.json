@@ -3683,8 +3683,52 @@
       "red_flags": [],
       "summary": "Uluslararası derecelendirme kuruluşu Fitch Ratings, 18 Kasım 2026 tarihinde Vakıf Katılım Bankası AŞ'nin Uzun Vadeli Yerel ve Yabancı Para cinsinden kredi notlarını BB- olarak teyit etmiş ve not görünümlerini Durağan olarak belirlemiştir. Bu teyit, bankanın mevcut borçlanma maliyetlerinde ve uluslararası fonlama imkânlarında ani bir değişiklik yaratmayacağını göstermektedir.",
       "ts": "2026-11-19T17:00:59.740360+03:00"
+    },
+    "1700340": {
+      "analysis_points": [
+        "Planet-Scan AG halka arz cezası yönetim kuruluna rücu gündemi yer alıyor → Şirket üzerindeki olası finansal yük veya tazminat riski takip edilmeli",
+        "2025 yılı kâr dağıtımı önerisi görüşülecek → Şirketin nakit temettü ödeme kapasitesi ve serbest nakit akışı finansal tablolardan kontrol edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "ccb67ddeae0452bb",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Planet-Scan AG'nin halka arz başvurusu ile ilgili cezanın yönetim kurulu üyelerine rücu edilmesi gündemi, olası bir hukuki veya idari yaptırıma işaret etmektedir"
+      ],
+      "summary": "A.V.O.D. Kurutulmuş Gıda ve Tarım Ürünleri Sanayi Ticaret A.Ş., 2025 yılı Olağan Genel Kurul toplantısının 22 Aralık 2026 tarihinde yapılacağını duyurmuştur. Gündem maddeleri arasında kâr dağıtımı, yönetim kurulu üyelerinin ibrası ve Planet-Scan AG'nin İsviçre Borsası'nda halka arz başvurusu ile ilgili cezanın yönetim kurulu üyelerine rücu edilip edilmeyeceği hususu yer almaktadır. Bu durum, olası bir hukuki/mali sorumluluk riskini barındırması açısından analist için önem arz etmektedir.",
+      "ts": "2026-11-19T18:01:04.737742+03:00"
+    },
+    "1700341": {
+      "analysis_points": [
+        "İmtiyazlı pay sahipleri genel kurul daveti yapıldı → A grubu imtiyazlı payların yapısı ve hakları gündem maddelerine göre incelenmeli",
+        "Belgede tutar belirtilmemiş → Etki hesaplanamıyor, KAP ekine bakılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "697e14c140f78720",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "A.V.O.D. Kurutulmuş Gıda ve Tarım Ürünleri Sanayi Ticaret A.Ş., İmtiyazlı Pay Sahipleri Genel Kurul Toplantı Daveti yapmıştır. Bildirim rutin bir idari ve kurumsal yönetim prosedürü niteliğindedir. Şirketin operasyonel veya finansal yapısına doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-19T18:01:04.737742+03:00"
+    },
+    "1700350": {
+      "analysis_points": [
+        "Sermaye 100.000.000 TL, toplantıda temsil edilen pay 49.400.102,999 TL → Nisap koşulu sağlandı, karar yeter sayısı oluştu",
+        "Redington Turkey Holdings S.A.R.L temsilcisi Yavuz İskit önerge verdi → Hakim ortak yönetim kararlarında aktif rol alıyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "9eed85828ae69af8",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Arena Bilgisayar Sanayi ve Ticaret A.Ş., 1 Nisan 2025 – 31 Mart 2026 hesap dönemine ilişkin ertelenen olağan genel kurul toplantısını 17 Kasım 2026 tarihinde gerçekleştirmiştir. Toplantıda 100.000.000 TL toplam sermayeyi temsilen 49.400.102,999 TL itibari değerli pay hazır bulunarak nisap sağlanmıştır. Bu bildirim olağan bir kurumsal yönetim prosedürü olup, şirketin finansal yapısında doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-19T18:01:04.737742+03:00"
     }
   },
-  "updated_at": "2026-11-19T17:00:59.740360+03:00",
+  "updated_at": "2026-11-19T18:01:04.737742+03:00",
   "version": 1
 }
