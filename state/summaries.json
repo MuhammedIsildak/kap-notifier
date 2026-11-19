@@ -3477,8 +3477,36 @@
       ],
       "summary": "ATP Yazılım ve Teknoloji A.Ş. bağlı ortaklığı ATP Capital'in %45,10 ortak olduğu Ata Temiz Enerji, Nuclean ve BA Steel şirketlerine sermayeye katılım yoluyla yatırım yapma kararı almıştır. 18.11.2026 tarihinde imzalanan sözleşmeler kapsamında, Ata Temiz Enerji 31.12.2030 tarihine kadar her bir şirkete 5.000.000 ABD Doları olmak üzere toplam 10.000.000 ABD Doları yatırım yapacaktır ve bu işlemler sonucunda her iki şirkette de %51 oranında pay sahibi olması planlanmaktadır. Bu işlem grubun enerji ve savunma sanayii teknolojilerine yönelik sermaye tahsisini artırmaktadır.",
       "ts": "2026-11-18T22:01:07.364956+03:00"
+    },
+    "1700112": {
+      "analysis_points": [
+        "İhraç tavanı tutarı belgede belirtilmemiş → SPK bülteni veya ilgili ihraç belgesi kontrol edilerek limit öğrenilmeli",
+        "Onaylanan tavan tutarı şirketin mevcut borç çevirme oranı ve fonlama maliyeti üzerinden değerlendirilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "10ec6a160778acd2",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ZKB Varlık Kiralama A.Ş. tarafından ihraç tavanına ilişkin SPK onayının alındığı duyuruldu. Bildirim metninde ihraç tavanı tutarı, vade veya faiz oranına ilişkin detaylı finansal bilgi yer almamaktadır.",
+      "ts": "2026-11-19T10:00:59.078649+03:00"
+    },
+    "1700120": {
+      "analysis_points": [
+        "Sözleşme bedeli KDV dâhil 2.388.000 ABD Doları (120.461.227,20 TL) → Şirketin geçmiş dönem cirosuna oranı ile kıyaslanarak ciroya katkısı netleştirilmeli",
+        "İş kapsamı tedarik, kurulum ve mühendislik hizmetlerini içeriyor → Proje tamamlama takvimine göre faturalandırma ve nakit akışının hangi çeyrekte gerçekleşeceği takip edilmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "80c5d25f48b3b56b",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "MİA Teknoloji A.Ş., Gürbağ Savunma ve Teknoloji A.Ş. ile Eskişehir'deki TSK Bulut Bilişim Veri Merkezi Projesi – Faz 2 kapsamında 18.11.2026 tarihinde KDV dâhil 2.388.000 ABD Doları (120.461.227,20 TL) bedelli sözleşme imzaladı. Anlaşma; kritik veri merkezi teknolojilerinin tedariği, kurulumu, mühendislik, devreye alma ve saha kabul test hizmetlerini kapsıyor. Bu sözleşme şirketin savunma sanayii ve kritik bilişim altyapılarındaki iş geliştirme potansiyelini destekler niteliktedir.",
+      "ts": "2026-11-19T10:00:59.078649+03:00"
     }
   },
-  "updated_at": "2026-11-18T22:01:07.364956+03:00",
+  "updated_at": "2026-11-19T10:00:59.078649+03:00",
   "version": 1
 }
