@@ -3727,8 +3727,134 @@
       "red_flags": [],
       "summary": "Arena Bilgisayar Sanayi ve Ticaret A.Ş., 1 Nisan 2025 – 31 Mart 2026 hesap dönemine ilişkin ertelenen olağan genel kurul toplantısını 17 Kasım 2026 tarihinde gerçekleştirmiştir. Toplantıda 100.000.000 TL toplam sermayeyi temsilen 49.400.102,999 TL itibari değerli pay hazır bulunarak nisap sağlanmıştır. Bu bildirim olağan bir kurumsal yönetim prosedürü olup, şirketin finansal yapısında doğrudan bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-19T18:01:04.737742+03:00"
+    },
+    "1700372": {
+      "analysis_points": [
+        "Genel Müdürlük pozisyonunun vekâleten yürütülmeye devam etmesi → Kurumsal yönetim sürekliliği açısından belirsizlik yaratabilir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "ed3a79786f62248f",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Pardus Girişim Sermayesi Yatırım Ortaklığı A.Ş.'de vekâleten Genel Müdürlük görevini yürüten Mustafa Ümit Tahmaz istifa etmiştir. Yerine Muhammet Çelik vekâleten Genel Müdür olarak atanmıştır. Şirketin operasyonel yönetiminde vekâleten yürütülen bir süreç devam etmektedir.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700377": {
+      "analysis_points": [
+        "386 milyon TL anapara büyüklüğü → Satın alma maliyeti (ödenen tutar) açıklanmalı, portföyün tahsilat projeksiyonu ile net bugünkü değer (NBD) analizi yapılmalı",
+        "Portföy alımı → Şirketin nakit çıkışı ve borçluluk yapısı üzerindeki etkisi 2026 son çeyrek finansallarında izlenmeli"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "c245f20d0548a84a",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Gelecek Varlık Yönetimi A.Ş., Aktif Yatırım Bankası A.Ş.'nin satışa çıkardığı 386 milyon TL anapara büyüklüğündeki 2 bireysel tahsili gecikmiş alacak portföyünü ihale yoluyla satın almıştır. Bu işlem, şirketin varlık yönetim hacmini doğrudan artıran bir büyüme hamlesidir.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700382": {
+      "analysis_points": [
+        "Komite kurulumu → Şirketin ESG (Çevresel, Sosyal, Yönetişim) skorlaması ve uzun vadeli finansman maliyetleri üzerindeki etkisi izlenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "c2953adba641f615",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Şeker Yatırım Menkul Değerler A.Ş., kurumsal yönetim ve sürdürülebilirlik uyum süreçleri kapsamında Sürdürülebilirlik Komitesi kurmuş ve çalışma esaslarını belirlemiştir. Bu adım, regülasyon uyumu çerçevesinde idari bir düzenlemedir.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700383": {
+      "analysis_points": [
+        "Geri alım tutarı ve vadesi açıklanmadı → Şirketin nakit pozisyonu ve likidite üzerindeki etkisi için detaylı KAP açıklaması beklenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "357a2109a5ccaf61",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "İnfo Yatırım Menkul Değerler A.Ş., finansman bonosu geri alımı yapılmasına ilişkin Yönetim Kurulu kararı almıştır. İşlem, şirketin borçlanma aracı yönetimi kapsamında rutin bir sermaye piyasası faaliyetidir.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700385": {
+      "analysis_points": [
+        "Not indirimi → Şirketin borçlanma maliyetleri ve finansman koşulları üzerinde baskı oluşturabilir",
+        "BBB- notu → Yatırım yapılabilir seviyenin alt sınırına yakınlık, finansal rasyoların yakından takibini gerektirir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "e63a3208490c59b8",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Kredi notunda bir kademe indirim",
+        "Uzun vadeli uluslararası notun BB- seviyesinde kalması"
+      ],
+      "summary": "JCR Avrasya, Durukan Şekerleme Sanayi ve Ticaret A.Ş.'nin uzun vadeli ulusal kredi notunu 'BBB (tr)' seviyesinden 'BBB- (tr)' seviyesine indirmiştir. Görünüm 'Stabil' olarak korunmuştur.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700386": {
+      "analysis_points": [
+        "Dönen varlıklardaki 35,3 mn TL'lik azalma → Likidite pozisyonu ve işletme sermayesi ihtiyacı açısından nakit akış tablosu ile karşılaştırılmalı",
+        "Ticari alacakların toplam dönen varlığa oranı (~%46) → Alacak tahsilat süresi ve alacak kalitesi yakından izlenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "9f330621dcc9dc89",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Dönen varlıklarda 31.12.2025'e göre yaklaşık %22,6 oranında düşüş (156,4 mn TL'den 121,1 mn TL'ye)",
+        "Ticari alacakların dönen varlıklar içindeki yüksek payı"
+      ],
+      "summary": "Saray Matbaacılık Kağıtçılık Kırtasiyecilik Ticaret ve Sanayi A.Ş.'nin 30.09.2026 tarihli finansal durum tablosuna göre dönen varlıklar 121,1 milyon TL seviyesindedir. Nakit ve nakit benzerleri 4,6 milyon TL, ticari alacaklar ise 55,7 milyon TL olarak raporlanmıştır.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700390": {
+      "analysis_points": [
+        "Şube kapatma → Operasyonel giderlerde (OPEX) tasarruf sağlayıp sağlamadığı takip edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "ec1ab526c14bb4d8",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Tacirler Yatırım Menkul Değerler A.Ş., Marmaris İrtibat Bürosu'nun 30.11.2026 tarihi itibarıyla kapatılmasına karar vermiştir. Müşteri hesapları Genel Müdürlüğe devredilecek olup operasyonel bir küçülme veya verimlilik adımıdır.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700391": {
+      "analysis_points": [
+        "Yönetim kurulu yetki sınırları ve iç yönerge hükümleri → Şirketin karar alma mekanizmalarının etkinliği açısından incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "4ec2157fdce902cf",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Saray Matbaacılık Kağıtçılık Kırtasiyecilik Ticaret ve Sanayi A.Ş.'nin 01.01.2026 – 30.09.2026 dönemine ait yönetim kurulu faaliyet raporu yayımlanmıştır. Rapor, şirketin faaliyet alanı, yönetim kurulu yetki sınırları ve kurumsal yönetim ilkelerine uyum bilgilerini içermektedir.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700407": {
+      "analysis_points": [
+        "Yolcu sayıları → Liman işletmeciliği gelir projeksiyonları ve FAVÖK beklentileri ile karşılaştırılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "c964a8af2d08b973",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Global Yatırım Holding A.Ş., dolaylı bağlı ortaklığı Global Ports Holding'in Ekim 2026 dönemine ait yolcu istatistiklerini yayınlamıştır. Bu veriler, şirketin ana faaliyet kolu olan liman işletmeciliğindeki operasyonel hacmi göstermektedir.",
+      "ts": "2026-11-19T19:00:58.399696+03:00"
     }
   },
-  "updated_at": "2026-11-19T18:01:04.737742+03:00",
+  "updated_at": "2026-11-19T19:00:58.399696+03:00",
   "version": 1
 }

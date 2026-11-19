@@ -315,8 +315,29 @@
         "source": "AG ANADOLU GRUBU HOLDİNG ANONİM ŞİRKETİ.pdf"
       },
       "ts": "2026-11-18T19:01:04.229481+03:00"
+    },
+    "1700385": {
+      "hash": "e63a3208490c59b8",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da17e515d01a1f42843916c96"
+        ],
+        "current": "BBB- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB- / (Durağan)",
+          "Kısa vadeli ulusal: J3 (tr) / (Durağan)"
+        ],
+        "entity": "DURUKAN ŞEKERLEME SANAYİ VE TİCARET ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "BBB (tr)",
+        "red_flags": [],
+        "source": "DURUKAN ŞEKERLEME SANAYİ VE TİCARET ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-19T19:00:58.399696+03:00"
     }
   },
-  "updated_at": "2026-11-19T18:01:04.737742+03:00",
+  "updated_at": "2026-11-19T19:00:58.399696+03:00",
   "version": 1
 }
