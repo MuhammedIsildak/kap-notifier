@@ -3914,8 +3914,37 @@
       ],
       "summary": "US Yatırım Holding A.Ş., 1 Ocak - 30 Eylül 2026 hesap dönemine ait konsolide finansal tablolarını yayımlamıştır. Şirketin toplam varlıkları 30.09.2026 tarihi itibarıyla 481.046.315 TL olarak gerçekleşirken, toplam kısa vadeli yükümlülükleri 161.244.266 TL seviyesindedir. Bu finansal rapor, şirketin dokuz aylık dönemdeki varlık, borç ve özkaynak yapısındaki değişimlerin izlenmesi açısından önem taşımaktadır.",
       "ts": "2026-11-19T23:00:58.882841+03:00"
+    },
+    "1700484": {
+      "analysis_points": [
+        "Mevcut toplantı nisabı %4.24 (14.748.434 / 347.500.000) kaldı → Asgari %25 nisap sağlanamadığı için genel kurul ileri bir tarihe ertelendi, yönetim yeni çağrı tarihi belirleyecek"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "a1d5675b1c5121de",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Asgari toplantı nisabının (%25) sağlanamaması nedeniyle genel kurulun ertelenmesi",
+        "Toplam 347.500.000 TL sermayeye karşılık yalnızca 14.748.434 adet payın katılım göstermesi düşük paydar katılımına işaret ediyor"
+      ],
+      "summary": "ICU Girişim Sermayesi Yatırım Ortaklığı A.Ş.'nin 19.11.2026 tarihli 2025 yılı olağan genel kurul toplantısı, asgari toplantı nisabı olan %25 oranının sağlanamaması nedeniyle ertelenmiştir. Şirketin toplam 347.500.000 TL'lik sermayesine karşılık toplantıda sadece 14.748.434 adet pay temsil edilmiştir.",
+      "ts": "2026-11-20T10:00:55.948175+03:00"
+    },
+    "1700495": {
+      "analysis_points": [
+        "Bağlı ortaklık sermayesi 30.000.000 TL'den 80.000.000 TL'ye çıkıyor → Ana ortaklık nakit çıkışı veya iç kaynak kullanımı izlenmeli"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "d4f3afee0e9f9dd8",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kayseri Şeker Fabrikası A.Ş.'nin %100 bağlı ortaklığı Kayseri Şeker Tarım Ürünleri Lisanslı Depoculuk A.Ş., 30.000.000 TL olan sermayesini 50.000.000 TL artırarak 80.000.000 TL'ye çıkarma kararı almış ve bu başvuru SPK'nın 19.11.2026 tarihli bülteninde onaylanmıştır. Bu sermaye artırımı bağlı ortaklığın finansal yapısını güçlendirmesi ve operasyonel kapasitesini artırması açısından önem taşımaktadır.",
+      "ts": "2026-11-20T10:00:55.948175+03:00"
     }
   },
-  "updated_at": "2026-11-19T23:00:58.882841+03:00",
+  "updated_at": "2026-11-20T10:00:55.948175+03:00",
   "version": 1
 }
