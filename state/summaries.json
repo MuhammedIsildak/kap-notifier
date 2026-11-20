@@ -3988,8 +3988,36 @@
       ],
       "summary": "Niyazi Önen Holding A.Ş., Dardanel Grup şirketlerinin finansal durumuna ilişkin basın açıklaması yayımlamıştır. Açıklamada konkordato veya finansal yeniden yapılandırma ihtiyacı bulunmadığı, bono, sukuk ve faktoring borçlarının kapatıldığı/kapatılacağı, JCR tarafından kredi notunun BBB- olarak belirlendiği ve 2026 yılı için 370 milyon USD ciro ile 45 milyon USD FAVÖK (%12 marj) beklendiği ifade edilmiştir.",
       "ts": "2026-11-20T12:01:01.612679+03:00"
+    },
+    "1700641": {
+      "analysis_points": [
+        "Nezihpark Bahçekent projesinde kısmi geçici kabul 18.11.2026 tarihinde onaylandı → İlgili bloklar için anahtar teslimi ve kesin kabul sürecine geçilir, eksik imalat bedelleri düşülerek hakedişler netleşir",
+        "Projenin toplam satış değeri veya Emlak Konut payı tutarı bildirimde yer almıyor → Şirketin hasılat ve kârlılık tablosuna dönemsel katkısı doğrudan hesaplanamıyor"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "fedec4c754dc414a",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş., İstanbul Başakşehir Hoşdere 7. Etap Arsa Satışı Karşılığı Gelir Paylaşımı İşi (Nezihpark Bahçekent) kapsamında A1, B1, B2, B3, B6, C1, C2, D1, D2 Bloklar, Kapalı Otopark, İksa-İstinat, Altyapı ve Çevre Düzenleme İşlerinin kısmi geçici kabulünün 18.11.2026 tarihinde onaylandığını bildirmiştir. Bu gelişme, projede inşaat aşamasının ilgili kısımlar için tamamlandığını ve sonrasında kesin kabul ve arsa payı gelir paylaşımı hesaplamalarına geçileceğini göstermektedir. Projenin toplam finansal büyüklüğü veya şirketin payına düşen hasılat rakamı bu bildirimde yer almamaktadır.",
+      "ts": "2026-11-20T14:00:58.438497+03:00"
+    },
+    "1700644": {
+      "analysis_points": [
+        "Corbiq Yazılım A.Ş.'ye yapılan 1.500.000 TL yatırım → Toplam fon büyüklüğü açıklanmadığı için portföy içindeki yoğunlaşma oranı hesaplanamıyor",
+        "Athleticlabs Spor Yazılım Teknolojileri A.Ş.'ye yapılan 1.000.000 TL yatırım → Girişimlerin değerlemeleri ve pay oranları belirtilmediği için fonun getiri potansiyeli net olarak ölçülemiyor"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "9a00e1c8d9c48177",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Albaraka Portföy Yönetimi A.Ş. Fonangels Girişim Sermayesi Yatırım Fonu, Corbiq Yazılım A.Ş.'ye 1.500.000 TL ve Athleticlabs Spor Yazılım Teknolojileri A.Ş.'ye 1.000.000 TL tutarında sermaye artırımı yoluyla yatırım yapmıştır. Toplamda 2.500.000 TL'lik bu girişim sermayesi yatırımları, fonun portföy çeşitlendirmesini ve teknoloji odaklı girişimlere olan tahsisatını göstermektedir. Fon büyüklüğü ve ana portföy büyüklüğü metinde yer almadığı için fon üzerindeki sermaye ağırlığı ve likidite etkisi belirsizdir.",
+      "ts": "2026-11-20T14:00:58.438497+03:00"
     }
   },
-  "updated_at": "2026-11-20T12:01:01.612679+03:00",
+  "updated_at": "2026-11-20T14:00:58.438497+03:00",
   "version": 1
 }
