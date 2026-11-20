@@ -3943,8 +3943,22 @@
       "red_flags": [],
       "summary": "Kayseri Şeker Fabrikası A.Ş.'nin %100 bağlı ortaklığı Kayseri Şeker Tarım Ürünleri Lisanslı Depoculuk A.Ş., 30.000.000 TL olan sermayesini 50.000.000 TL artırarak 80.000.000 TL'ye çıkarma kararı almış ve bu başvuru SPK'nın 19.11.2026 tarihli bülteninde onaylanmıştır. Bu sermaye artırımı bağlı ortaklığın finansal yapısını güçlendirmesi ve operasyonel kapasitesini artırması açısından önem taşımaktadır.",
       "ts": "2026-11-20T10:00:55.948175+03:00"
+    },
+    "1700579": {
+      "analysis_points": [
+        "Kupon ödeme tutarı 10.606.200 TL → iştirak Denge Varlık Yönetim A.Ş.'nin nakit çıkışını ve kısa vadeli borç servis yükümlülüğünün yerine getirildiğini gösterir",
+        "İhraç nominal tutarı 100.000.000 TL → kalan kupon ödemeleri ve anapara itfa takvimi ana ortaklığın likidite planlaması üzerinden takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "ecbbb82f6714a1fc",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Lider Faktoring A.Ş., sermayesine %100 iştirak ettiği Denge Varlık Yönetim A.Ş. tarafından ihraç edilen TRFDNGV22711 ISIN kodlu bonoya ait 20 Kasım 2026 vadeli 10.606.200 TL nominal tutarlı kupon ödemesinin gerçekleştirildiğini bildirmiştir. 100.000.000 TL nominal tutarlı bono ihracı kapsamındaki bu ödeme, iştirakin borç servis kapasitesinin düzenli işlediğini gösterir. Bu durum, konsolide nakit akışı ve ana ortaklık likiditesi açısından rutin bir borç servis işlemidir.",
+      "ts": "2026-11-20T11:00:57.234035+03:00"
     }
   },
-  "updated_at": "2026-11-20T10:00:55.948175+03:00",
+  "updated_at": "2026-11-20T11:00:57.234035+03:00",
   "version": 1
 }
