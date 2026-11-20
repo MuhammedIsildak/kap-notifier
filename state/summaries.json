@@ -4016,8 +4016,37 @@
       "red_flags": [],
       "summary": "Albaraka Portföy Yönetimi A.Ş. Fonangels Girişim Sermayesi Yatırım Fonu, Corbiq Yazılım A.Ş.'ye 1.500.000 TL ve Athleticlabs Spor Yazılım Teknolojileri A.Ş.'ye 1.000.000 TL tutarında sermaye artırımı yoluyla yatırım yapmıştır. Toplamda 2.500.000 TL'lik bu girişim sermayesi yatırımları, fonun portföy çeşitlendirmesini ve teknoloji odaklı girişimlere olan tahsisatını göstermektedir. Fon büyüklüğü ve ana portföy büyüklüğü metinde yer almadığı için fon üzerindeki sermaye ağırlığı ve likidite etkisi belirsizdir.",
       "ts": "2026-11-20T14:00:58.438497+03:00"
+    },
+    "1700670": {
+      "analysis_points": [
+        "60. taksit ödendi, toplam 72 ay vadeye göre kalan taksit sayısı 12'dir → 1 yıl içinde konkordato sürecinin tamamlanıp tamamlanmayacağı izlenmeli"
+      ],
+      "category": "Temerrüt",
+      "has_document": true,
+      "hash": "b2333b957c703054",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Şirket hâlâ konkordato sürecindedir ve borçlar tamamen bitmemiştir"
+      ],
+      "summary": "Emini̇ş Ambalaj Sanayi̇ ve Ti̇caret A.Ş., Gebze Ticaret Asliye Mahkemesi tarafından 22 Haziran 2020'de tasdik edilen konkordato projesi kapsamında 60. taksit ödemesini gerçekleştirmiştir. Yapılandırma uyarınca borçlar 1,5 yıl geri ödemesiz ve 72 ay eşit taksitle ödenmekte olup, süreç tüm borçlar bitene kadar sürmektedir. Bu bildirim, şirketin hukuki ve finansal yeniden yapılandırma sürecinin devam ettiğini ve nakit çıkışlarının düzenli yapıldığını göstermektedir.",
+      "ts": "2026-11-20T16:00:58.214654+03:00"
+    },
+    "1700682": {
+      "analysis_points": [
+        "Makine ve ekipman alımı KDV hariç 610.000 ABD dolarıdır → Şirketin döviz cinsi borçluluğu ve kısa vadeli nakit çıkışı bu tutar kadar artar",
+        "Ödeme takvimi veya finansman kaynağı (özkaynak vs. kredi) belgede belirtilmemiştir → Nakit akışına ve borçlanma ihtiyacına etkisi için KAP ekindeki proforma fatura detayları incelenmelidir"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "4df4c328b1b7a58b",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Armada Gıda Ticaret Sanayi A.Ş., Armada-3 yatırım projesi kapsamında AKY Teknoloji Makina Reklamcılık Sanayi ve Ticaret Ltd. Şti. ile 20.11.2026 tarihinde KDV hariç 610.000 ABD doları tutarında makine ve ekipman alımı için mutabakata varmıştır. Bu yatırım projesi, şirketin üretim kapasitesini ve operasyonel altyapısını güçlendirmeyi hedeflemektedir. Döviz cinsinden yapılan bu harcama şirketin yatırım harcamaları (capex) yükümlülüğünü artırmaktadır.",
+      "ts": "2026-11-20T16:00:58.214654+03:00"
     }
   },
-  "updated_at": "2026-11-20T14:00:58.438497+03:00",
+  "updated_at": "2026-11-20T16:00:58.214654+03:00",
   "version": 1
 }
