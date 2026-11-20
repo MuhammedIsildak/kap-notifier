@@ -4450,8 +4450,26 @@
       ],
       "summary": "Destek Finans Faktoring A.Ş.'nin hakim ortağı Destek Holding A.Ş.'ye, İstanbul 4. Sulh Ceza Hâkimliği kararıyla TMSF kayyım olarak atanmıştır. TMSF Fon Kurulu, 20.11.2026 tarihinde şirketin yönetim kurulunu yeniden oluşturmuştur. Bu gelişme, şirketin yönetim kontrolünün değiştiğini ve operasyonel/finansal risklerin arttığını göstermektedir.",
       "ts": "2026-11-20T20:01:01.997598+03:00"
+    },
+    "1700884": {
+      "analysis_points": [
+        "Taşınmazın defter değeri veya portföy içindeki payı belgede belirtilmemiş → aktif büyüklüğüne ve net varlık değerine etkisi finansal tablolardan incelenmeli",
+        "Üst hakkının terkini ve Hazine'ye devri → kira gelirleri veya gelecekteki proje geliştirme potansiyeli düşer",
+        "İşlemin 28.08.2026 tarihli genelge kapsamında yapıldığı ifade edilmiş → benzer nitelikte başka üst hakları varsa risk analizi yapılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "fd31d9259466990c",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Portföydeki bir taşınmazın üst hakkının kaybedilerek Maliye Hazinesi adına tescil edilmesi",
+        "Şirket varlık tabanında eksilme yaratması"
+      ],
+      "summary": "Martı Gayrimenkul Yatırım Ortaklığı A.Ş. portföyünde yer alan Antalya Kemer Çamyuva'daki 6.305 m² yüzölçümlü taşınmaz üzerindeki üst hakkının tapu sicilinden terkin edildiğini ve taşınmazın Maliye Hazinesi adına tescil edildiğini açıkladı. İşlem, Tapu ve Kadastro Genel Müdürlüğünün 28.08.2026 tarihli makam oluru ile güncellenen 1705 sayılı Genelgesi kapsamında gerçekleştirilmiştir. Bu gelişme, şirketin portföy büyüklüğünü ve maddi duran varlık tabanını doğrudan daraltmaktadır.",
+      "ts": "2026-11-20T21:01:12.452103+03:00"
     }
   },
-  "updated_at": "2026-11-20T20:01:01.997598+03:00",
+  "updated_at": "2026-11-20T21:01:12.452103+03:00",
   "version": 1
 }
