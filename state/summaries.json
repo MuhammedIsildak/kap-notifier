@@ -4059,8 +4059,21 @@
       "red_flags": [],
       "summary": "Yapı Kredi Yatırım Menkul Değerler A.Ş., halka arz edilmeksizin borçlanma aracı ihracına ilişkin ihraç belgesi başvuru formunu yayımladı. Şirket'in 1.500.000.000 TL ödenmiş sermayesi bulunurken, sermayenin %99,998'i Yapı ve Kredi Bankası A.Ş.'ye aittir. Bu bildirim, aracı kurumun faaliyetlerini finanse etmek amacıyla borçlanma aracı ihraç tavanı süreçlerini başlattığını göstermektedir.",
       "ts": "2026-11-20T17:01:03.320016+03:00"
+    },
+    "1700729": {
+      "analysis_points": [
+        "Sermayenin %25'ini aşan 2.000.000 USD limitli sigorta poliçesi → şirketin nakit akışına ve ana faaliyet kârına etkisi ihmal edilebilir düzeyde"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "aee6fd324c210620",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "AKMERKEZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., Sermaye Piyasası Kurulu Kurumsal Yönetim Tebliği'nin 4.2.8 numaralı Kurumsal Yönetim İlkesi gereğince 2.000.000 USD sorumluluk limitli ve 1 yıl süreli Yönetici Sorumluluk Sigortası yaptırmıştır. Poliçe limiti şirketin sermayesinin %25'ini aşmaktadır. Bu işlem kurumsal yönetim uyumunun bir gereği olup, şirketin operasyonel veya finansal yapısı üzerinde doğrudan bir etki yaratmamaktadır.",
+      "ts": "2026-11-20T18:01:05.465647+03:00"
     }
   },
-  "updated_at": "2026-11-20T17:01:03.320016+03:00",
+  "updated_at": "2026-11-20T18:01:05.465647+03:00",
   "version": 1
 }
