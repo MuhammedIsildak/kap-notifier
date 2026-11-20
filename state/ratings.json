@@ -336,8 +336,29 @@
         "source": "DURUKAN ŞEKERLEME SANAYİ VE TİCARET ANONİM ŞİRKETİ.pdf"
       },
       "ts": "2026-11-19T19:00:58.399696+03:00"
+    },
+    "1700800": {
+      "hash": "e1c94fe2c20f6182",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca17e4f5e01a1f87d71d63399"
+        ],
+        "current": "BBB- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB- / (Negatif)",
+          "Kısa vadeli ulusal: J3 (tr) / (Durağan)"
+        ],
+        "entity": "KARDEMİR ÇELİK SANAYİ ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [],
+        "source": "KARDEMİR ÇELİK SANAYİ ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-20T19:01:06.254277+03:00"
     }
   },
-  "updated_at": "2026-11-20T18:01:05.465647+03:00",
+  "updated_at": "2026-11-20T19:01:06.254277+03:00",
   "version": 1
 }

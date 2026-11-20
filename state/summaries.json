@@ -4072,8 +4072,337 @@
       "red_flags": [],
       "summary": "AKMERKEZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., Sermaye Piyasası Kurulu Kurumsal Yönetim Tebliği'nin 4.2.8 numaralı Kurumsal Yönetim İlkesi gereğince 2.000.000 USD sorumluluk limitli ve 1 yıl süreli Yönetici Sorumluluk Sigortası yaptırmıştır. Poliçe limiti şirketin sermayesinin %25'ini aşmaktadır. Bu işlem kurumsal yönetim uyumunun bir gereği olup, şirketin operasyonel veya finansal yapısı üzerinde doğrudan bir etki yaratmamaktadır.",
       "ts": "2026-11-20T18:01:05.465647+03:00"
+    },
+    "1700775": {
+      "analysis_points": [
+        "Yatırım tutarı açıklanmadı → şirketin sermaye harcamaları (capex) bütçesine etkisi bilinmiyor",
+        "Faaliyete geçiş takvimi verilmedi → 2026/2027 dönemindeki ciro ve FAVÖK artışı modellenemiyor"
+      ],
+      "category": "Yatırım",
+      "has_document": false,
+      "hash": "df1a056962b9a3c0",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Ruhsat yatırımının maliyeti belirtilmedi",
+        "Üretime ve kapasiteye katkı tarihi verilmedi"
+      ],
+      "summary": "Kapeks Kimya Sanayi A.Ş., 20.11.2026 tarihinde Şabanözü/Çankırı tesisindeki iyileştirme çalışmaları kapsamında ruhsat alındığını duyurdu. Bu gelişme, tesisin kapasite artışı veya yasal uygunluk sürecinde bir aşamayı temsil eder. Yatırımın toplam maliyeti ve üretime katkı takvimi açıklanmamıştır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700776": {
+      "analysis_points": [
+        "Yatırım harcamaları gerçekleşme oranı %2,55 → İzahnamede belirtilen %40-50 hedefinden sapma, yatırım projelerinin takviminde gecikme sinyali olarak izlenmeli",
+        "İşletme sermayesi kullanımı 806,6 mn TL → Şirketin operasyonel nakit akışındaki zayıflık ve finansman ihtiyacının boyutu sorgulanmalı"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "57ed9c0cfd5c334d",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Yatırım harcamalarının %2,55 gibi çok düşük bir gerçekleşme oranında kalması",
+        "Fonun büyük kısmının (%35,20) işletme sermayesine kayması"
+      ],
+      "summary": "Kapeks Kimya Sanayi A.Ş., 2,29 milyar TL net halka arz gelirinin 30.09.2026 itibarıyla kullanım raporunu açıklamıştır. Fonun %37,75'i kullanılmış olup, yatırım harcamalarının gerçekleşme oranı %2,55 ile planlanan %40-50 aralığının oldukça altında kalmıştır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700779": {
+      "analysis_points": [
+        "Kapatılan büro sayısı açıklanmadı → operasyonel gider tasarrufunun boyutu bilinmiyor",
+        "Personel ve kira tasfiye giderleri belirtilmedi → kısa vadeli tek seferlik maliyet etkisi hesaplanamıyor"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "2fd99626adb2b732",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "A1 Capital Yatırım Menkul Değerler A.Ş., 20.11.2026 tarihinde irtibat bürolarının kapatılmasına karar verildiğini açıkladı. Bu operasyonel karar, şirketin maliyet optimizasyonu veya şube yapılanması stratejisinin bir parçasıdır. Kapatılan büroların sayısı ve operasyonel maliyete etkisi duyuruda yer almamıştır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700783": {
+      "analysis_points": [
+        "Alım bedeli açıklanmadı → nakit akışına ve kısa vadeli likiditeye etkisi hesaplanamıyor",
+        "Portföyün anapara büyüklüğü verilmedi → aktif kalitesi ve tahsilat potansiyeli değerlendirilemiyor"
+      ],
+      "category": "Sözleşme",
+      "has_document": false,
+      "hash": "cd693ef46bb27d56",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Portföy alım bedeli açıklanmadı",
+        "Alınan portföyün anapara büyüklüğü ve tahsil edilebilirlik oranı belirtilmedi"
+      ],
+      "summary": "Gelecek Varlık Yönetimi A.Ş., 20.11.2026 tarihinde tahsili gecikmiş alacak portföyü alımı gerçekleştirdiğini bildirdi. Bu işlem, varlık yönetim şirketlerinin ana faaliyet konusu olup portföy büyüklüğü ve ödenen bedel şirketin nakit çıkışını ve varlık tabanını doğrudan etkiler. Alım tutarı verilmediği için varlık kalitesi ve karlılığa etkisi izlenememektedir.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700788": {
+      "analysis_points": [
+        "Özel hesap dönemi olağan genel kurul süreci → Doğrudan finansal veya nakit akışı etkisi bulunmuyor, rutin idari işlem"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "34908f1ebb1a3faf",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A.Ş., 01.06.2025 - 31.05.2026 özel hesap dönemine ilişkin Olağan Genel Kurul bilgilendirmesini yapmıştır. Açıklama rutin bir kurumsal süreç olup şirketin finansal veya operasyonel yapısında doğrudan bir değişiklik yaratmamaktadır. Analist açısından finansal tablo veya borç yapısına etkisi bulunmamaktadır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700792": {
+      "analysis_points": [
+        "Kolaylaştırılmış usulde birleşme → grup içi konsolidasyon sağlar, ek borç veya nakit çıkışı yaratmaz",
+        "Devralınan şirketlerin mali verileri açıklanmadı → konsolide borç ve özkaynak üzerindeki net etkisi bilançoda görülmeli"
+      ],
+      "category": "M&A",
+      "has_document": false,
+      "hash": "c62bddcf2dbbaeb0",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ANEL ELEKTRİK PROJE TAAHHÜT VE TİCARET A.Ş., bağlı ortaklıkları Anel Net Teknik Hizmetleri Limited Şirketi, Anelyapı Gayrimenkul A.Ş. ve Anel Holding A.Ş. ile devralma yoluyla kolaylaştırılmış usulde birleşme işlemini duyurdu. Gerçekleştirilen bu yapılandırma, grup içindeki operasyonel süreçlerin sadeleşmesini ve yönetim giderlerinin konsolide edilmesini sağlayacaktır. Birleşmenin finansal tablolara etkisi ve taraf şirketlerin aktif büyüklükleri bildirimde detaylandırılmamıştır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700796": {
+      "analysis_points": [
+        "Sermaye artırım tutarı açıklanmadı → Inveo Portföy'ün özkaynak yapısındaki değişim ve holdingin iştirak payı üzerindeki etkisi için KAP ekleri incelenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "0d90edcf4c992d2a",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Inveo Yatırım Holding A.Ş., bağlı ortaklığı Inveo Portföy Yönetimi AŞ'nin sermaye artırımına ilişkin SPK onayını duyurmuştur. Bildirim, holdingin konsolide finansalları üzerinde doğrudan ve acil bir etki yaratmayan rutin bir idari süreçtir.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700799": {
+      "analysis_points": [
+        "İhraç tutarı açıklanmadı → toplam borçlanma içindeki payı ve vade yapısı bilinmiyor, KAP ekine bakılmalı",
+        "Kira sertifikası maliyeti belirtilmedi → şirketin finansman giderleri üzerindeki net yükü hesaplanamıyor"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "3c7dbfc501131804",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İhraç tutarı ve vadesi açıklanmadı",
+        "Kira sertifikasının maliyeti ve faiz/getiri oranına yer verilmedi"
+      ],
+      "summary": "Fuzul Gayrimenkul Yatırım Ortaklığı A.Ş., 20.11.2026 tarihinde kira sertifikası ihracına ilişkin yönetim kurulu kararı alındığını duyurmuştur. Bu karar, şirketin borçlanma araçları yoluyla likidite temin etme stratejisinin bir parçasıdır. İhraç tutarı ve koşulları açıklanmadığından bilanço üzerindeki kaldıraç ve vade yapısı etkisi henüz netleşmemiştir.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700800": {
+      "analysis_points": [
+        "Kredi notu görünümü Negatif → Borçlanma maliyetlerinde artış ve refinansman riskleri tetiklenebilir",
+        "Uzun vadeli uluslararası not BB- → Döviz cinsi borç servisinde olası kur ve likidite baskıları izlenmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "e1c94fe2c20f6182",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Uzun vadeli uluslararası not görünümünün Negatif olması",
+        "Ulusal not görünümünün Negatif olması"
+      ],
+      "summary": "JCR Avrasya, KARDEMİR ÇELİK SANAYİ ANONİM ŞİRKETİ'nin uzun vadeli ulusal kredi notunu BBB- (tr) seviyesinde teyit ederken görünümü Negatif olarak belirlemiştir. Uzun vadeli uluslararası notu BB- / (Negatif) ve kısa vadeli ulusal notu J3 (tr) / (Durağan) olarak açıklanmıştır. Bu görünüm, şirketin finansal risk profili ve borç servisi kapasitesi üzerinde aşağı yönlü baskıların devam ettiğini göstermektedir.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700801": {
+      "analysis_points": [
+        "Yatırımcı ilişkileri müdürü ataması yapıldı → Rutin idari bir işlemdir, şirket finansallarına doğrudan etkisi bulunmuyor"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "1ce8ade3d9738631",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Türker Vangölü Enerji Yatırım A.Ş. Yönetim Kurulu'nun 20.11.2026 tarihli kararı ile Hüseyin Kaleboğaz Yatırımcı İlişkileri Müdürü olarak atandı. Atama II-17.1 sayılı Kurumsal Yönetim Tebliği kapsamında gerçekleştirildi.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700806": {
+      "analysis_points": [
+        "Üst düzey yönetici atandı → üretim ve satış hedeflerinde revizyon olup olmadığı takip edilmeli",
+        "İdari atama → şirket operasyonları ve mali tablolar üzerinde doğrudan finansal etkisi yoktur"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": false,
+      "hash": "a5c2d30217a304d6",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "TOFAŞ TÜRK OTOMOBİL FABRİKASI A.Ş., üst düzey yönetici değişikliği yapıldığını duyurdu. Gerçekleşen bu görev değişimi şirket içinde idari bir atama olup operasyonel süreçlerin seyrini doğrudan etkilememektedir. Finansal yapı veya borç servis kapasitesi üzerinde bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700811": {
+      "analysis_points": [
+        "İhraç limit tutarı açıklanmadı → bankanın bilanço büyüklüğüne oranı ve likidite etkisi hesaplanamıyor, KAP ekine bakılmalı",
+        "Yurtdışı borçlanma aracı ihracı → döviz cinsi borçlanma maliyetleri ve vade yapısı netleşmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "969c8ab4226a2fec",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İhraç tutarı ve vadesi açıklanmadı → fonlama maliyeti ve piyasa koşullarının etkisi belirsiz"
+      ],
+      "summary": "YAPI VE KREDİ BANKASI A.Ş., yurtdışı borçlanma aracı ihraç limitine ilişkin Yönetim Kurulu kararı alındığını bildirdi. Alınan bu karar, bankanın önümüzdeki dönemde yurtdışı piyasalardan likidite temin etme esnekliğini artıracak ve fonlama maliyetlerinin yönetilmesinde etkili olacaktır. İhraç tutarı ve vadesi bildirimde yer almamaktadır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700812": {
+      "analysis_points": [
+        "İhraç tavanı tutarı açıklanmadı → İhraç edilecek borçlanma araçlarının vadesi ve maliyeti, bankanın net faiz marjı üzerindeki etkisi açısından takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "b91706075209b238",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Yapı ve Kredi Bankası A.Ş., yurtiçinde borçlanma aracı ihraç tavanına ilişkin yönetim kurulu kararı almıştır. Bankanın borçlanma araçları ihracı yoluyla kaynak çeşitlendirmesi stratejisinin bir parçasıdır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700813": {
+      "analysis_points": [
+        "İhraç tavanı tutarı açıklanmadı → Bankanın piyasa koşullarına göre belirleyeceği ihraç hacmi, bilanço likidite rasyoları açısından izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "6846f1f1c11249ae",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Yapı ve Kredi Bankası A.Ş., yurtiçinde yapılandırılmış borçlanma aracı ihraç limitine ilişkin yönetim kurulu kararı almıştır. Bankanın likidite yönetimi ve fonlama stratejisi kapsamında olağan bir borçlanma hazırlığıdır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700814": {
+      "analysis_points": [
+        "Yönetim kurulu başkanı değişti → stratejik yönelimde ani bir değişiklik olup olmadığı izlenmeli",
+        "Atama yapıldı → kredi komitesi ve operasyonel kararlarda süreklilik esastır"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": false,
+      "hash": "cbb1583dc16511e9",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "TÜRKİYE İHRACAT KREDİ BANKASI A.Ş., Yönetim Kurulu Başkanlığı atamasının gerçekleştirildiğini bildirdi. Söz konusu atama kurumsal yönetim ve idari yapılanma kapsamında olağan bir yönetim kurulu güncellemesidir. Bankanın kredi profili ve stratejisinde doğrudan bir değişiklik yaratması beklenmemektedir.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700817": {
+      "analysis_points": [
+        "9A 2026 hasılat 17,5 milyar TL (+%31) ve FAVÖK 4,4 milyar TL (+%103) → Operasyonel kârlılıkta güçlü artış trendi var",
+        "Devam eden sözleşmeler 933,6 milyon USD, kalan iş portföyü 568,6 milyon USD → Gelecek dönem ciro görünürlüğünü destekliyor",
+        "REAP Battery Tuzla tesisi 5 GWh/yıl kapasiteye sahip → Batarya yatırımlarının FAVÖK katkısı izlenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "0c2ba64d4fb5215c",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Enflasyon muhasebesi etkilerinin net nakit akışına yansımaları ayrıca incelenmelidir"
+      ],
+      "summary": "YEO Teknoloji Enerji ve Endüstri A.Ş., TMS 29 enflasyon muhasebesi hükümleri uyumlu 3Ç 2026 finansal sonuçlarını içeren yatırımcı sunumunu yayımladı. 9A 2026'da hasılat 17,5 milyar TL (+%31), FAVÖK 4,4 milyar TL (+%103) ve net kâr 2,1 milyar TL (+%102) olarak gerçekleşti.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700832": {
+      "analysis_points": [
+        "Yatırım tutarı 250.000 USD → Fon büyüklüğü ve portföy içindeki ağırlığına göre etkisi sınırlı kalabilir",
+        "Sermaye artırımı yoluyla yatırım yapıldı → Hevi AI şirketindeki pay oranının fon portföyüne etkisi izlenmelidir"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "832f3c7467679d96",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Albaraka Portföy Yönetimi A.Ş. Yeni Nesil Teknoloji Girişim Sermayesi Yatırım Fonu, Hevi AI Sağlık Yapay Zeka ve Bilişim Teknolojileri A.Ş.'ye sermaye artırımı yoluyla 250.000 USD tutarında yatırım yaptı. Gerçekleştirilen bu fon çıkışı, portföyün teknoloji odaklı girişim yatırımlarını artırması açısından önem arz ediyor.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700837": {
+      "analysis_points": [
+        "Yatırımcı sunumu güncellendi → Şirketin operasyonel ve finansal hedeflerindeki revizyonlar detaylıca incelenmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "edce15afea78101a",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Sasa Polyester Sanayi A.Ş., vizyon, stratejik hedefler, operasyonel faaliyetler ve finansal performansı içeren yatırımcı sunumunu güncelledi. Açıklanan güncel sunum şirketin resmi internet sitesinde erişime açıldı.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700844": {
+      "analysis_points": [
+        "Aksa Carbon %100 bağlı ortaklık → Euronext halka arzı ile ana ortaklık konsolide bilançosunda özkaynak büyümesi ve nakit girişi yaratabilir",
+        "Danışman ataması yapıldı → Halka arz büyüklüğü ve değerleme raporu ilerleyen tarihlerde takip edilmelidir"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "7c1f8074a9c4e863",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Halka arz takvimi ve hedef büyüklük belirsiz"
+      ],
+      "summary": "Aksa Akrilik Kimya Sanayii A.Ş.'nin %100 bağlı ortaklığı Aksa Carbon and Advanced Composite Materials Holdings BV, Euronext'te olası halka arz için danışmanlar atadı. Bu stratejik adım, bağlı ortaklığın büyümesinin finansmanı ve piyasa değeri tespiti açısından önem taşıyor.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700845": {
+      "analysis_points": [
+        "Üretim tesisi yatırımları için kalan 84,9 mn TL → 2026 sonuna kadar harcanmazsa yatırım planındaki gecikme riski değerlendirilmeli",
+        "Hammadde ve işletme sermayesine 3,41 milyar TL aktarımı → Şirketin operasyonel nakit ihtiyacının yüksekliği ve işletme sermayesi döngüsü takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "4a9904fc618471e3",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Üretim tesisi yatırımlarında %37,26 oranında atıl fon bulunması"
+      ],
+      "summary": "Kardemir Çelik Sanayi A.Ş., 3,74 milyar TL net halka arz gelirinin 30.09.2026 itibarıyla kullanım raporunu yayınlamıştır. Fonun %90'ı işletme sermayesine aktarılmış olup, üretim tesisi yatırımları için ayrılan payın %37,26'sı henüz kullanılmamıştır.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700851": {
+      "analysis_points": [
+        "Portföy alım tutarı açıklanmadı → GSD Varlık Yönetimi'nin nakit çıkışı ve tahsilat potansiyeli ölçülemiyor",
+        "Tahsili gecikmiş alacak portföyü → tahsilat performansı şirketin faiz gelirlerini ve nakit akışını etkiler"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "cff2838e38fc6283",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "GSD HOLDİNG A.Ş., bağlı ortaklığı GSD Varlık Yönetimi A.Ş. tarafından tahsili gecikmiş alacak portföyü alımı gerçekleştirildiğini açıkladı. Bu işlem varlık yönetim şirketinin faaliyet alanı kapsamında rutin bir portföy genişletme hamlesidir. Alım tutarı ve portföyün nominal büyüklüğü metinde belirtilmemiştir.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700854": {
+      "analysis_points": [
+        "Kredi notu ve aksiyonu belirtilmedi → şirketin dış borçlanma maliyeti üzerindeki değişim hesaplanamıyor",
+        "Moody's raporunun tam içeriği incelenmeli → döviz cinsinden borçlanma faiz marjlarına etkisi takip edilmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "48e2458c1fe0417c",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Moody's tarafından yapılan değerlendirmenin detayları ve yeni not seviyesi açıklanmadı",
+        "Görünüm veya olası bir not indirimi/artırımı bilgisi metne yansıtılmadı"
+      ],
+      "summary": "Pegasus Hava Taşımacılığı A.Ş. için 20.11.2026 tarihinde Moody's tarafından kredi derecelendirmesi gözden geçirmesi yayımlandı. Kredi notu güncellemeleri şirketin borçlanma maliyetlerini ve uluslararası piyasalara erişimini doğrudan etkiler. Bildirim metninde somut not kademesi ve aksiyon detayları verilmemiştir.",
+      "ts": "2026-11-20T19:01:06.254277+03:00"
     }
   },
-  "updated_at": "2026-11-20T18:01:05.465647+03:00",
+  "updated_at": "2026-11-20T19:01:06.254277+03:00",
   "version": 1
 }
