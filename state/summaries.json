@@ -4468,8 +4468,39 @@
       ],
       "summary": "Martı Gayrimenkul Yatırım Ortaklığı A.Ş. portföyünde yer alan Antalya Kemer Çamyuva'daki 6.305 m² yüzölçümlü taşınmaz üzerindeki üst hakkının tapu sicilinden terkin edildiğini ve taşınmazın Maliye Hazinesi adına tescil edildiğini açıkladı. İşlem, Tapu ve Kadastro Genel Müdürlüğünün 28.08.2026 tarihli makam oluru ile güncellenen 1705 sayılı Genelgesi kapsamında gerçekleştirilmiştir. Bu gelişme, şirketin portföy büyüklüğünü ve maddi duran varlık tabanını doğrudan daraltmaktadır.",
       "ts": "2026-11-20T21:01:12.452103+03:00"
+    },
+    "1700887": {
+      "analysis_points": [
+        "İdari para cezası 1.019.069.577 TL → Şirketin kısa vadeli nakit pozisyonundan ödenecek, net nakit/borç rasyolarını olumsuz etkiler",
+        "Cezanın 2026 finansallarına yansıması → Net kâr ve net faaliyet kârı (EBIT) üzerinde tek seferlik önemli bir gider kalemi yaratır"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "16aa72c59a3cca47",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "1.019.069.577 TL tutarında yüksek idari para cezası nakit çıkışı yaratacak",
+        "Kısa vadeli likidite ve serbest nakit akımı üzerinde baskı oluşacak"
+      ],
+      "summary": "BRİSA Bridgestone Sabancı Lastik Sanayi ve Ticaret A.Ş., Rekabet Kurumu tarafından kendisine toplam 1.019.069.577 TL idari para cezası verildiğini ve gerekçeli kararın tebliğ edileceğini bildirdi. Söz konusu ceza şirketin nakit akışını ve kısa vadeli likiditesini doğrudan etkileyecek büyüklüktedir. Analist açısından bu tutar, şirketin kârlılığı ve serbest nakit akım yaratma kapasitesi üzerinde baskı oluşturacaktır.",
+      "ts": "2026-11-20T22:01:12.447927+03:00"
+    },
+    "1700891": {
+      "analysis_points": [
+        "Çıkarılmış sermaye 347.500.000 TL, kayıtlı sermaye tavanı 207.750.000 TL → Kayıtlı sermaye tavanı aşılmış durumda, genel kurulda tavan artırımı gündeme alınmalı",
+        "A grubu paylar 11.250.000 TL (Yönetimde aday gösterme imtiyazı var) → Yönetim kontrolü imtiyazlı pay sahiplerinde kalmaya devam ediyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "63543513200d8ba3",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ICU Girişim Sermayesi Yatırım Ortaklığı A.Ş., 13.12.2026 tarihinde 2025 yılı Olağan Genel Kurul Toplantısı'nın gerçekleştirileceğini duyurdu. Bildirimde çıkarılmış sermayenin 347.500.000 TL olduğu ve A grubu paylara yönetim kurulu seçiminde aday gösterme imtiyazı bulunduğu açıklandı. Bu açıklama rutin bir genel kurul bilgilendirmesi olup şirketin operasyonel veya finansal yapısında ani bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-20T22:01:12.447927+03:00"
     }
   },
-  "updated_at": "2026-11-20T21:01:12.452103+03:00",
+  "updated_at": "2026-11-20T22:01:12.447927+03:00",
   "version": 1
 }
