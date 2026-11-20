@@ -4401,8 +4401,57 @@
       ],
       "summary": "Pegasus Hava Taşımacılığı A.Ş. için 20.11.2026 tarihinde Moody's tarafından kredi derecelendirmesi gözden geçirmesi yayımlandı. Kredi notu güncellemeleri şirketin borçlanma maliyetlerini ve uluslararası piyasalara erişimini doğrudan etkiler. Bildirim metninde somut not kademesi ve aksiyon detayları verilmemiştir.",
       "ts": "2026-11-20T19:01:06.254277+03:00"
+    },
+    "1700868": {
+      "analysis_points": [
+        "Sınırlı denetim sonucu → Finansal tabloların mevzuata uygun sunulduğu teyit edilmiştir",
+        "Solo finansal performans → Bankanın ana faaliyet kârlılığı ve aktif kalitesi, konsolide olmayan tablolar üzerinden değerlendirilmelidir",
+        "Dipnotlar → Bankanın risk yönetimi ve mali bünyesine ilişkin detaylar, 30 Eylül 2026 tarihli dipnotlardan analiz edilmelidir"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "c2e8bab1a74af586",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Anadolubank A.Ş., 30.09.2026 tarihli konsolide olmayan finansal raporlarını ve sınırlı denetim raporunu açıklamıştır. PwC tarafından gerçekleştirilen sınırlı denetim sonucunda, finansal tabloların BDDK Muhasebe ve Finansal Raporlama Mevzuatı'na uygunluğu konusunda herhangi bir olumsuz husus tespit edilmemiştir.",
+      "ts": "2026-11-20T20:01:01.997598+03:00"
+    },
+    "1700870": {
+      "analysis_points": [
+        "Sınırlı denetim raporu → Olumsuz görüş bildirilmemesi finansal verilerin güvenilirliği açısından olumlu",
+        "Konsolidasyon kapsamı → Bağlı ortaklıkların (Anadolu Yatırım, Anadolu Faktoring, Anadolubank Nederland NV) katkısı dipnotlardan analiz edilmeli",
+        "Finansal veriler → Milyon TL bazındaki dokuz aylık kâr/zarar ve özkaynak değişimi, önceki dönemlerle karşılaştırmalı olarak incelenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "f9447b7b5c8d7fbc",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Anadolubank A.Ş., 30.09.2026 tarihli konsolide finansal raporlarını ve sınırlı denetim raporunu açıklamıştır. PwC tarafından yapılan sınırlı denetim sonucunda, finansal tabloların BDDK mevzuatına uygunluğu konusunda olumsuz bir hususa rastlanmamıştır. Rapor, bankanın bağlı ortaklıkları olan Anadolu Yatırım, Anadolu Faktoring ve Anadolubank Nederland NV'yi kapsamaktadır.",
+      "ts": "2026-11-20T20:01:01.997598+03:00"
+    },
+    "1700873": {
+      "analysis_points": [
+        "Hakim ortak üzerindeki kayyım kararı → Şirketin kredi limitleri ve banka ilişkileri gözden geçirilmeli",
+        "Yönetim kurulu değişikliği → Stratejik kararlar ve finansal raporlama süreçlerinde olası aksamalar izlenmeli",
+        "TMSF süreci → Şirketin faaliyet sürekliliği ve olası varlık satışları/tasfiye riskleri takip edilmeli"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "f3e92c0dec89c088",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Hakim ortağa kayyım atanması",
+        "Yönetim kurulunun TMSF tarafından yeniden oluşturulması",
+        "Hukuki süreç belirsizliği"
+      ],
+      "summary": "Destek Finans Faktoring A.Ş.'nin hakim ortağı Destek Holding A.Ş.'ye, İstanbul 4. Sulh Ceza Hâkimliği kararıyla TMSF kayyım olarak atanmıştır. TMSF Fon Kurulu, 20.11.2026 tarihinde şirketin yönetim kurulunu yeniden oluşturmuştur. Bu gelişme, şirketin yönetim kontrolünün değiştiğini ve operasyonel/finansal risklerin arttığını göstermektedir.",
+      "ts": "2026-11-20T20:01:01.997598+03:00"
     }
   },
-  "updated_at": "2026-11-20T19:01:06.254277+03:00",
+  "updated_at": "2026-11-20T20:01:01.997598+03:00",
   "version": 1
 }
