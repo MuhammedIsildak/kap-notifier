@@ -3957,8 +3957,39 @@
       "red_flags": [],
       "summary": "Lider Faktoring A.Ş., sermayesine %100 iştirak ettiği Denge Varlık Yönetim A.Ş. tarafından ihraç edilen TRFDNGV22711 ISIN kodlu bonoya ait 20 Kasım 2026 vadeli 10.606.200 TL nominal tutarlı kupon ödemesinin gerçekleştirildiğini bildirmiştir. 100.000.000 TL nominal tutarlı bono ihracı kapsamındaki bu ödeme, iştirakin borç servis kapasitesinin düzenli işlediğini gösterir. Bu durum, konsolide nakit akışı ve ana ortaklık likiditesi açısından rutin bir borç servis işlemidir.",
       "ts": "2026-11-20T11:00:57.234035+03:00"
+    },
+    "1700598": {
+      "analysis_points": [
+        "Yatırımcı ilişkileri yöneticisi ataması için verilen 90 günlük ek süre 18.10.2026 tarihinde başladı → Yeni atamanın en geç Ocak 2027 ortasına kadar tamamlanması zorunludur"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "93a61dd86ea5f06f",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Teknosa İç ve Dış Ticaret A.Ş., Yatırımcı İlişkileri Bölümü Yöneticisi ataması için SPK'dan talep ettiği ek sürenin 18.10.2026 tarihinden itibaren 90 gün uzatıldığını duyurmuştur. Bu idari ve rutin bir süreç olup, şirketin operasyonel ve finansal yapısı üzerinde doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-20T12:01:01.612679+03:00"
+    },
+    "1700608": {
+      "analysis_points": [
+        "JCR Ekim 2026 kredi notu BBB- olarak belirlendi → Yatırım yapılabilir seviyenin alt sınırında yer alıyor, maliyetler bu not üzerinden şekillenir",
+        "2026 yılı beklentisi 370 milyon ABD doları ciro ve 45 milyon ABD doları FAVÖK (%12 marj) → 2027'de FAVÖK marjının %15'e çıkarılması ve 50 milyon ABD dolarının aşılması hedefleniyor",
+        "Bono ve sukuk borçları kapatıldı, faktoring borçları 2026 sonunda bitecek → Borç kalitesi banka kredileri ile sınırlı hale geldi"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "1c2dc63980362936",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Bono, sukuk ve faktoring borçlarının kapatıldığı belirtilse de kısa vadeli banka kredi portföyünün çevrilme maliyetleri izlenmelidir",
+        "2027 yılı için hedeflenen %15 FAVÖK marjına ulaşılıp ulaşılamayacağı enflasyon ve maliyet baskıları nedeniyle risk oluşturabilir"
+      ],
+      "summary": "Niyazi Önen Holding A.Ş., Dardanel Grup şirketlerinin finansal durumuna ilişkin basın açıklaması yayımlamıştır. Açıklamada konkordato veya finansal yeniden yapılandırma ihtiyacı bulunmadığı, bono, sukuk ve faktoring borçlarının kapatıldığı/kapatılacağı, JCR tarafından kredi notunun BBB- olarak belirlendiği ve 2026 yılı için 370 milyon USD ciro ile 45 milyon USD FAVÖK (%12 marj) beklendiği ifade edilmiştir.",
+      "ts": "2026-11-20T12:01:01.612679+03:00"
     }
   },
-  "updated_at": "2026-11-20T11:00:57.234035+03:00",
+  "updated_at": "2026-11-20T12:01:01.612679+03:00",
   "version": 1
 }
