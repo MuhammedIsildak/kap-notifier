@@ -4045,8 +4045,22 @@
       "red_flags": [],
       "summary": "Armada Gıda Ticaret Sanayi A.Ş., Armada-3 yatırım projesi kapsamında AKY Teknoloji Makina Reklamcılık Sanayi ve Ticaret Ltd. Şti. ile 20.11.2026 tarihinde KDV hariç 610.000 ABD doları tutarında makine ve ekipman alımı için mutabakata varmıştır. Bu yatırım projesi, şirketin üretim kapasitesini ve operasyonel altyapısını güçlendirmeyi hedeflemektedir. Döviz cinsinden yapılan bu harcama şirketin yatırım harcamaları (capex) yükümlülüğünü artırmaktadır.",
       "ts": "2026-11-20T16:00:58.214654+03:00"
+    },
+    "1700720": {
+      "analysis_points": [
+        "Ödenmiş sermaye 1.500.000.000 TL → İhraç tavanı tutarı belgede belirtilmediği için borçlanma limitinin özkaynağa oranı KAP ekinden kontrol edilmeli",
+        "Yapı ve Kredi Bankası A.Ş. payı %99,998 → Ana ortaklık desteğiyle borçlanma maliyetleri grup sinerjisi ile optimize edilir"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "5c40eead10607157",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Yapı Kredi Yatırım Menkul Değerler A.Ş., halka arz edilmeksizin borçlanma aracı ihracına ilişkin ihraç belgesi başvuru formunu yayımladı. Şirket'in 1.500.000.000 TL ödenmiş sermayesi bulunurken, sermayenin %99,998'i Yapı ve Kredi Bankası A.Ş.'ye aittir. Bu bildirim, aracı kurumun faaliyetlerini finanse etmek amacıyla borçlanma aracı ihraç tavanı süreçlerini başlattığını göstermektedir.",
+      "ts": "2026-11-20T17:01:03.320016+03:00"
     }
   },
-  "updated_at": "2026-11-20T16:00:58.214654+03:00",
+  "updated_at": "2026-11-20T17:01:03.320016+03:00",
   "version": 1
 }
