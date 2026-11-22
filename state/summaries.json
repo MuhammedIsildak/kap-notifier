@@ -4499,8 +4499,25 @@
       "red_flags": [],
       "summary": "ICU Girişim Sermayesi Yatırım Ortaklığı A.Ş., 13.12.2026 tarihinde 2025 yılı Olağan Genel Kurul Toplantısı'nın gerçekleştirileceğini duyurdu. Bildirimde çıkarılmış sermayenin 347.500.000 TL olduğu ve A grubu paylara yönetim kurulu seçiminde aday gösterme imtiyazı bulunduğu açıklandı. Bu açıklama rutin bir genel kurul bilgilendirmesi olup şirketin operasyonel veya finansal yapısında ani bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-20T22:01:12.447927+03:00"
+    },
+    "1700901": {
+      "analysis_points": [
+        "Adli tedbir kararı yok → mevcut aşamada şirketin operasyonel faaliyetlerinde kısıtlayıcı bir etki bulunmuyor",
+        "İsim benzerliği açıklaması yapıldı → soruşturmanın resmi mercilerce genişletilmesi durumunda kurumsal risk profili tekrar değerlendirilmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "1382366ad70faffe",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yönetim kurulu başkan vekili hakkında fon soruşturması ve mal varlığı tedbiri iddialarının ortaya çıkması",
+        "Sosyal medya haberleri nedeniyle pay piyasasında oluşabilecek volatilite"
+      ],
+      "summary": "Makim Makine Teknolojileri Sanayi ve Ticaret A.Ş. Yönetim Kurulu Başkan Vekili Ahmet Gönüllü hakkında sosyal medyada yer alan fon soruşturması ve mal varlığı tedbiri iddialarına yönelik kamuoyu açıklaması yapmıştır. Şirket, Ahmet Gönüllü hakkında alınmış herhangi bir adli tedbir olmadığını ve haberlerin isim benzerliğinden ibaret bulunduğunu belirtmiştir. Üst düzey yönetim hakkındaki hukuki belirsizlik algısı ve itibar riski, şirketin kurumsal risk profili ve pay piyasasındaki likidite açısından yakından izlenmelidir.",
+      "ts": "2026-11-22T23:00:56.993786+03:00"
     }
   },
-  "updated_at": "2026-11-20T22:01:12.447927+03:00",
+  "updated_at": "2026-11-22T23:00:56.993786+03:00",
   "version": 1
 }
