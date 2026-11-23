@@ -5032,8 +5032,77 @@
       ],
       "summary": "İhlas Holding, 1.500 mn TL bedelli sermaye artırımını tamamlayarak çıkarılan sermayeyi 3.000 mn TL'ye çıkardı. Net 1.504 mn TL nakit girişi sağlandı (emisyon primi 4,17 mn TL dahil). Fonun 1.494 mn TL'si planlanan kalemlere yönlendirildi: finansman niteliğindeki borçların kapatılması 844 mn TL (plan 700 mn TL, %10 kaydırma kuralı kullanıldı), proje finansmanı/yenilenebilir yatırımlar 275 mn TL (plan 419 mn TL), işletme sermayesi 375 mn TL. Halka arz maliyeti 6,24 mn TL.",
       "ts": "2026-11-23T20:01:04.364670+03:00"
+    },
+    "1701574": {
+      "analysis_points": [
+        "Sermaye 138.768.000 TL, toplantı nisabı 110.544.028 TL → karar yeter sayısı sağlanmıştır",
+        "TFI Tab Gıda Yatırımları A.Ş. temsil oranı → hâkim ortak kontrolü ve oy hakkı dağılımı teyit edilmiştir",
+        "Genel kurulda maddi gündem maddesi açıklanmadı → operasyonel veya finansal yapıya doğrudan etki bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "ec5ce9e396a22620",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Atakey Patates Gıda Sanayi ve Ticaret A.Ş., 23 Kasım 2026 tarihinde gerçekleştirilen olağanüstü genel kurul toplantı sonucunu açıklamıştır. Toplantıda asaleten ve temsilen hazır bulunan pay miktarları ile toplantı nisabına ilişkin idari bilgiler paylaşılmıştır. Şirketin ana faaliyetlerini veya finansal yapısını doğrudan değiştirecek maddi bir karar bildirilmemiştir.",
+      "ts": "2026-11-23T21:01:00.632173+03:00"
+    },
+    "1701575": {
+      "analysis_points": [
+        "S&P kredi notu BB / Görünüm Negatif → olası bir kademe indirimde şirketin tahvil ihraç maliyetleri artar",
+        "Yabancı para cinsinden borç servisi → Negatif görünüm nedeniyle refinansman riskleri yakından izlenmeli",
+        "Mevcut borçlanma faiz oranları → not indirimi baskısıyla banka kredi sözleşmelerindeki covenants (finansal kısıtlar) açısından kontrol edilmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "97f411e6bf95e2ba",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kredi görünümünün Negatif olması olası not indirimi riskini canlı tutmaktadır",
+        "BB seviyesi spekülatif (yatırım yapılabilir altı) bölgededir"
+      ],
+      "summary": "S&P, Ülker Bisküvi Sanayi A.Ş.'nin kredi derecelendirme notunu BB seviyesinde teyit ederken görünümünü Negatif olarak belirlemiştir. Notun teyit edilmesine karşın görünümün negatif kalması, şirketin likidite ve borç servisi kapasitesine yönelik risklerin devam ettiğini göstermektedir. Bu durum şirketin ilerleyen dönemde olası borçlanma maliyetlerini olumsuz etkileyebilir.",
+      "ts": "2026-11-23T21:01:00.632173+03:00"
+    },
+    "1701577": {
+      "analysis_points": [
+        "Arabuluculuk süreci başlama tarihi 23.11.2026 → anlaşma sağlanamazsa grev oylaması ve kanuni grev süreçleri takip edilmeli",
+        "Mali etki tutarı açıklanmadı → olası zammın brüt kâr marjına etkisi KAP ekindeki sendika talepleri üzerinden modellenmeli",
+        "Personel giderlerinin toplam operasyonel giderler içindeki payı → mali tablolardan tespiti yapılarak simüle edilmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "66ce293542e6d987",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Resmi arabuluculuk aşamasına geçilmesi iş gücü maliyetlerinde artış veya grev riskini artırır",
+        "Toplu iş sözleşmesi maliyet etkisine dair tutar açıklanmadı"
+      ],
+      "summary": "Kartonsan Karton Sanayi ve Ticaret A.Ş., Selüloz İş Sendikası ile yürütülen toplu iş sözleşmesi görüşmelerinde anlaşma sağlanamaması üzerine resmi arabuluculuk safhasına geçildiğini bildirdi. Sürecin uyuşmazlıkla sonuçlanması durumunda şirketin işçilik maliyetlerinde ve operasyonel devamlılığında olası grev riski gündeme gelebilecektir. Bildirimde mali etki veya ek maliyet tutarına ilişkin bilgi verilmemiştir.",
+      "ts": "2026-11-23T21:01:00.632173+03:00"
+    },
+    "1701578": {
+      "analysis_points": [
+        "Serbest karşılık tutarı 2.100 milyon TL → bu tutar silindiğinde özkaynaklar bu miktar kadar artar, sermaye yeterlilik rasyoları yeniden hesaplanmalı",
+        "30 Eylül 2026 tarihli bilançoda diğer karşılıklar 2.100 milyon TL daha düşük olabilirdi → olası iptal durumunda net kâr etkisi izlenmeli",
+        "Dokuz aylık konsolide aktif büyüklüğü ve net kâr rakamları → önceki dönemlerle kıyaslanarak ana ortaklık kârlılık trendi incelenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "dd93cca8f43cac12",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Finansal tablolarda 2.100 milyon TL tutarında serbest karşılık bulunmaktadır",
+        "Serbest karşılıklar özkaynakları ve diğer karşılık kalemlerini doğrudan etkilemektedir"
+      ],
+      "summary": "Vakıf Katılım Bankası A.Ş.'nin 30 Eylül 2026 sona eren 9 aylık konsolide finansal raporu sınırlı denetimden geçmiştir. Bağımsız denetçi raporunda, geçmiş dönemlerde ayrılan ve tamamı gider yazılan 2.100 milyon TL tutarındaki serbest karşılığın finansal tablolarda yer aldığı, bu karşılık olmasaydı özkaynakların 2.100 milyon TL daha fazla olacağı belirtilmiştir. Şartlı sonuç dışında BDDK mevzuatına aykırı bir hususa rastlanmamıştır.",
+      "ts": "2026-11-23T21:01:00.632173+03:00"
     }
   },
-  "updated_at": "2026-11-23T20:01:04.364670+03:00",
+  "updated_at": "2026-11-23T21:01:00.632173+03:00",
   "version": 1
 }

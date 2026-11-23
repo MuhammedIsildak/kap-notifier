@@ -474,8 +474,24 @@
         "source": "jcrer_Çimsa_SPK_Bildirim_2026.pdf"
       },
       "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701575": {
+      "hash": "97f411e6bf95e2ba",
+      "info": {
+        "action": "Teyit",
+        "agency": "S&P",
+        "attachments": [],
+        "current": "BB",
+        "details": [],
+        "entity": "ÜLKER BİSKÜVİ SANAYİ A.Ş.",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [],
+        "source": ""
+      },
+      "ts": "2026-11-23T21:01:00.632173+03:00"
     }
   },
-  "updated_at": "2026-11-23T20:01:04.364670+03:00",
+  "updated_at": "2026-11-23T21:01:00.632173+03:00",
   "version": 1
 }
