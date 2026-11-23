@@ -4619,8 +4619,35 @@
       ],
       "summary": "Creditwest Faktoring A.Ş.'nin ortaklık yapısında %29,05 paya sahip olan ve yönetim kurulu üyelerinin yarıdan bir fazlasını seçme imtiyazına sahip A grubu hisselerin tamamını elinde bulunduran Altınbaş Holding A.Ş.'ye Tasarruf Mevduatı Sigorta Fonu'nun (TMSF) kayyım olarak atandığı öğrenilmiştir. Bu gelişme, ana ortaklık düzeyinde yaşanan hukuki ve idari müdahalelerin şirketin yönetim yapısı ve ortaklık kontrolü üzerindeki belirsizlikleri artırması açısından kritik önem taşımaktadır.",
       "ts": "2026-11-23T13:00:58.324561+03:00"
+    },
+    "1701313": {
+      "analysis_points": [
+        "Çıkarılmış sermaye 347.500.000 TL, kayıtlı sermaye tavanı 207.750.000 TL → Kayıtlı sermaye tavanı aşılmış durumda, genel kurulda tavan artırımı gündemi izlenmeli",
+        "A grubu payların yönetim kurulu seçiminde aday gösterme imtiyazı var → Yönetim kontrol yapısında değişiklik beklenmiyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "92b166e082a02f32",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ICU Girişim Sermayesi Yatırım Ortaklığı A.Ş., 2025 yılı Olağan Genel Kurul Toplantısı'nı 13.12.2026 tarihinde İzmir'de gerçekleştireceğini duyurmuştur. Bilgilendirme dokümanına göre şirket sermayesi 347.500.000 TL olup, 11.250.000 TL tutarındaki A grubu payların yönetim kurulu seçiminde aday gösterme imtiyazı bulunmaktadır. Toplantı gündeminde 2025 yılı finansal tabloları ve faaliyet raporları görüşülecektir.",
+      "ts": "2026-11-23T16:01:00.982457+03:00"
+    },
+    "1701339": {
+      "analysis_points": [
+        "Yatırımcı İlişkileri Yöneticiliği boşaldı → II-17.1 sayılı Kurumsal Yönetim Tebliği uyarınca yeni atamanın süresi içinde yapılması izlenmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "534d4c919574a602",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Ekos Teknoloji ve Elektrik A.Ş.'de Yatırımcı İlişkileri Bölümü Yöneticisi Huriye Çömez 23.11.2026 itibarıyla görevinden ayrılmıştır. Ayrılışla birlikte Kurumsal Yönetim Komitesi ve Sürdürülebilirlik Komitesi üyeliği de sona ermiştir. Bu gelişme rutin bir yönetsel değişim olup şirketin finansal veya operasyonel yapısını doğrudan etkilememektedir.",
+      "ts": "2026-11-23T16:01:00.982457+03:00"
     }
   },
-  "updated_at": "2026-11-23T13:00:58.324561+03:00",
+  "updated_at": "2026-11-23T16:01:00.982457+03:00",
   "version": 1
 }
