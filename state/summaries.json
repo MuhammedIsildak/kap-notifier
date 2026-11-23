@@ -5101,8 +5101,53 @@
       ],
       "summary": "Vakıf Katılım Bankası A.Ş.'nin 30 Eylül 2026 sona eren 9 aylık konsolide finansal raporu sınırlı denetimden geçmiştir. Bağımsız denetçi raporunda, geçmiş dönemlerde ayrılan ve tamamı gider yazılan 2.100 milyon TL tutarındaki serbest karşılığın finansal tablolarda yer aldığı, bu karşılık olmasaydı özkaynakların 2.100 milyon TL daha fazla olacağı belirtilmiştir. Şartlı sonuç dışında BDDK mevzuatına aykırı bir hususa rastlanmamıştır.",
       "ts": "2026-11-23T21:01:00.632173+03:00"
+    },
+    "1701583": {
+      "analysis_points": [
+        "Sermaye artırımı 489.521.363,22 TL ve 489.521.363 adet yeni pay → ihraç sonrası pay sayısı ve seyreltme oranı netleşir; 30.06.2026 özkaynağına eklendiğinde hisse başına özkaynak etkisi hesaplanmalı",
+        "Ayrılma hakkı fiyatı 17,52 TL ve 100 mn TL üst sınır → maksimum ~5,7 mn pay iadesi (100.000.000/17,52) ve nakit çıkışı ihtimali; genel kurul onayı şart",
+        "Kantur - Akdaş 30.06.2026 konsolide aktif/pasif ve FAVÖK verisi henüz açıklanmadı → birleşme sonrası konsolide borç/FAVÖK, nakit akışı ve senaryo analizi için hedef şirket finansalları beklenmeli"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "9affbe67745732ff",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Ayrılma hakkı üst sınırı 100 mn TL aşıldığında birleşmeden vazgeçilebileceği kararlaştırıldı → işlem kapanma riski doğurur",
+        "Değişim oranı 157,91 → mevcut pay sahiplerinde ~%38,8 lik seyreltme (1/(1+1,5791)) etkisi oluşur",
+        "İşlem 30.06.2026 tabloları esas alındığı için 2026Y sonu finansal etkisi henüz belli değil; SPK/Genel Kurul onay süresi belirsiz"
+      ],
+      "summary": "Biotrend Çevre ve Enerji Yatırımları A.Ş., Kantur - Akdaş İnşaat Gıda Pazarlama Sanayi ve Ticaret A.Ş.'yi (\"Kantur - Akdaş\") tam devralma suretiyle birleşme kararı aldı. Birleşme oranı %49,47, değişim oranı 157,910117 olarak BDO Denet tarafından tespit edildi; her 1 TL nominal değerli Biotrent payı karşılığında 15,7910117 adet yeni pay ihraç edilerek 489.521.363,22 TL sermaye artırımı yapılacak. İşlem SPK onayı ve genel kurul kararı şartıyla 30.06.2026 konsolide tabloları esas alınarak gerçekleştirilecek; ayrılma hakkı fiyatı 17,52 TL (16.04.2026 öncesi 1 aylık ağırlıklı ortalama) ve toplam üst sınır 100.000.000 TL olarak belirlendi.",
+      "ts": "2026-11-23T22:00:56.580801+03:00"
+    },
+    "1701584": {
+      "analysis_points": [
+        "Genel kurul katılım listesi rutin açıklama → finansal tablo, borç yapısı veya nakit akışı üzerinde doğrudan etkisi yok"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "6efa16e03d742c36",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "TAB GIDA A.Ş., 23.11.2026 tarihli olağanüstü genel kurul toplantısının hazır bulunanlar listesi (katılımcı pay sahipleri ve temsilciler) KAP'ta yayımlandı. Liste 125 kayıt içeriyor; kurum yatırımcıların (Vanguard, BlackRock, Amundi, vb.) yanı sıra bireysel pay sahiplerinin de katıldığını gösteriyor. Bu, toplantı quorum ve oy kullanım sürecinin rutin belgelendirilmesidir.",
+      "ts": "2026-11-23T22:00:56.580801+03:00"
+    },
+    "1701585": {
+      "analysis_points": [
+        "Yönetim kurulu başkan/yardımcı ataması rutin idari işlem → operasyonel/finansal etki yok, takip gerekmez"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "7601835b95bc5184",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "TAB GIDA A.Ş., 23.11.2026 tarihli olağanüstü genel kurulda seçilen yeni yönetim kurulu üyeleri arasında görev dağılımı yaptı; Erhan KURDOĞLU başkan, Korhan KURDOĞLU başkan yardımcılığına getirildi. Bu, rutin bir idari atama kararıdır.",
+      "ts": "2026-11-23T22:00:56.580801+03:00"
     }
   },
-  "updated_at": "2026-11-23T21:01:00.632173+03:00",
+  "updated_at": "2026-11-23T22:00:56.580801+03:00",
   "version": 1
 }
