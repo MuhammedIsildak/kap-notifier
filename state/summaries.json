@@ -4571,8 +4571,56 @@
       "red_flags": [],
       "summary": "TEB Faktoring A.Ş. tarafından borçlanma aracı ihracına ilişkin yönetim kurulu kararı alınmıştır. Bu bildirim rutin borçlanma tavanı işlemlerinden olup, şirketin likidite ve fonlama çeşitliliğini yönetmek amacıyla yaptığı olağan bir finansman hazırlığıdır. Tutar ve vade detayları bu aşamada açıklanmamıştır.",
       "ts": "2026-11-23T11:00:59.658129+03:00"
+    },
+    "1701110": {
+      "analysis_points": [
+        "Toplam kredi tutarı 151,5 milyon Euro → 5 yıl 1 aya kadar vadeli dış kaynak girişi sağlanır",
+        "51,5 milyon Euro TURYIB programı → 35 yaş altı genç KOBİ projelerine yönlendirilir",
+        "100 milyon Euro GEFF III programı → Yeşil dönüşüm yatırımlarının finansmanında kullandırılır"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "28361464b312acb4",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Döviz cinsinden uzun vadeli borçlanma yükümlülüğü artmaktadır"
+      ],
+      "summary": "Türkiye İş Bankası A.Ş., Avrupa İmar ve Kalkınma Bankası (EBRD) ile genç KOBİ'leri desteklemek amacıyla TURYIB programı kapsamında 51,5 milyon Euro ve yeşil dönüşüm yatırımları için GEFF III programı kapsamında 100 milyon Euro olmak üzere toplam 151,5 milyon Euro tutarında kredi anlaşması imzalamıştır. Kredinin vade süresi 5 yıl 1 aya kadardır. Bu anlaşma, bankanın uzun vadeli dış kaynak temini ve hedefli sektörlere kredi sağlama kapasitesi açısından önem arz etmektedir.",
+      "ts": "2026-11-23T13:00:58.324561+03:00"
+    },
+    "1701125": {
+      "analysis_points": [
+        "Çıkarılmış sermaye 347.500.000 TL, kayıtlı sermaye tavanı 207.750.000 TL → Tavan aşımı durumu hukuki olarak incelenmelidir",
+        "Genel kurul tarihi 13.12.2026 → Toplantı gündemi ve oylama sonuçları takip edilmelidir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "202acbb9b75cd91d",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ICU Girişim Sermayesi Yatırım Ortaklığı A.Ş., 2025 yılı Olağan Genel Kurul Toplantısı'nın 13.12.2026 tarihinde gerçekleştirileceğini duyurmuştur. İlgili bilgilendirme dokümanında çıkarılmış sermayenin 347.500.000 TL olduğu ve kayıtlı sermaye tavanının 207.750.000 TL bulunduğu belirtilmiştir. Bu durum, genel kurul süreçlerinin yürütülmesi kapsamında rutin bir idari bildirim niteliğindedir.",
+      "ts": "2026-11-23T13:00:58.324561+03:00"
+    },
+    "1701130": {
+      "analysis_points": [
+        "Altınbaş Holding pay oranı %29,05 ve A grubu imtiyazlı paylar (%25) → Yönetim kurulu üyesi seçim imtiyazı doğrudan etkilenebilir",
+        "TMSF kayyımlığı → Şirketin operasyonel ve stratejik kararlarında idari değişim riski izlenmelidir"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "f443e46d12cec555",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Ana ortaklığa TMSF kayyımı atanması, şirketin yönetim kontrolünde belirsizlik yaratmaktadır",
+        "A grubu imtiyazlı payların sahibi olan ortağın yönetimine müdahale edilmiştir"
+      ],
+      "summary": "Creditwest Faktoring A.Ş.'nin ortaklık yapısında %29,05 paya sahip olan ve yönetim kurulu üyelerinin yarıdan bir fazlasını seçme imtiyazına sahip A grubu hisselerin tamamını elinde bulunduran Altınbaş Holding A.Ş.'ye Tasarruf Mevduatı Sigorta Fonu'nun (TMSF) kayyım olarak atandığı öğrenilmiştir. Bu gelişme, ana ortaklık düzeyinde yaşanan hukuki ve idari müdahalelerin şirketin yönetim yapısı ve ortaklık kontrolü üzerindeki belirsizlikleri artırması açısından kritik önem taşımaktadır.",
+      "ts": "2026-11-23T13:00:58.324561+03:00"
     }
   },
-  "updated_at": "2026-11-23T11:00:59.658129+03:00",
+  "updated_at": "2026-11-23T13:00:58.324561+03:00",
   "version": 1
 }
