@@ -4542,8 +4542,37 @@
       "red_flags": [],
       "summary": "METROPAL KURUMSAL HİZMETLER A.Ş., 23.11.2026 tarihinde tasfiye kapsamındaki yatırım fonlarından şirket paylarının borsa dışında geri alındığını bildirmiştir. Bu işlem olağan pay geri alım veya tasfiye süreçlerinin bir parçası olup şirketin operasyonel ve finansal yapısında doğrudan kritik bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-23T10:00:59.473495+03:00"
+    },
+    "1701018": {
+      "analysis_points": [
+        "Mağaza satış alanı yaklaşık 3.500 m2 → 2027 ilk çeyrekte faaliyete geçmesiyle ciroya katkı sağlar ancak tadilat/dekorasyon maliyeti capex'i artırır",
+        "Kira sözleşmesi imzalandı ve yasal işlemler başlatıldı → sabit kira yükümlülüğü artacak, kira giderlerinin FAVÖK'e etkisi izlenmeli",
+        "Yatırım tutarı belirsiyor → tadilat maliyeti ve başlangıç işletme sermayesi ihtiyacı açıklanmadı"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "a4ed7ead3b51f0d7",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "GİMAT Mağazacılık Sanayi ve Ticaret A.Ş., Ankara Keçiören'de Ovacık Mahallesi 673. Cadde N13 A-B Blok adresinde yaklaşık 3.500 m2 satış alanına sahip yeni bir mağaza açılmasına karar vermiş ve kira sözleşmesi imzalamıştır. 2027 yılının ilk çeyreğinde açılması planlanan bu mağaza, şirketin Ankara'daki mağaza sayısını artırma ve büyüme stratejisi doğrultusunda capex harcaması yaratacaktır.",
+      "ts": "2026-11-23T11:00:59.658129+03:00"
+    },
+    "1701029": {
+      "analysis_points": [
+        "İhraç tutarı ve vadesi açıklanmadı → fonlama maliyeti ve vadesi belirsiz, ihraç belgesi beklenmeli",
+        "Borçlanma tavanı limiti belirtilmedi → şirketin mevcut kaldıraç oranına etkisi hesaplanamıyor"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "a921d68ceeeaded0",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "TEB Faktoring A.Ş. tarafından borçlanma aracı ihracına ilişkin yönetim kurulu kararı alınmıştır. Bu bildirim rutin borçlanma tavanı işlemlerinden olup, şirketin likidite ve fonlama çeşitliliğini yönetmek amacıyla yaptığı olağan bir finansman hazırlığıdır. Tutar ve vade detayları bu aşamada açıklanmamıştır.",
+      "ts": "2026-11-23T11:00:59.658129+03:00"
     }
   },
-  "updated_at": "2026-11-23T10:00:59.473495+03:00",
+  "updated_at": "2026-11-23T11:00:59.658129+03:00",
   "version": 1
 }
