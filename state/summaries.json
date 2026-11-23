@@ -4694,8 +4694,105 @@
       "red_flags": [],
       "summary": "HALK YATIRIM MENKUL DEĞERLER A.Ş., borçlanma araçları ihracına ilişkin SPK onayını duyurmuştur. Bu bildirim, şirketin sermaye piyasası araçları yoluyla fonlama kapasitesini ve limitlerini güncellemektedir. Rutin bir ihraç tavanı onayı olup, tek başına doğrudan bir finansal risk veya nakit akışı etkisi içermez.",
       "ts": "2026-11-23T17:01:04.264333+03:00"
+    },
+    "1701400": {
+      "analysis_points": [
+        "Genel kurul tarihi 22 Aralık 2026 olarak belirlendi → toplantı gününe kadar gündemdeki kar dağıtımı ve yönetim kurulu seçimleri takip edilmelidir",
+        "Gündem maddelerinde 2025 yılı finansal tabloları ve kâr dağıtım önerisi bulunuyor → ilgili tarihte açıklanacak kâr payı politikası nakit akışı projeksiyonları için incelenmelidir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "d3d970c5013e341a",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "A.V.O.D. Kurutulmuş Gıda ve Tarım Ürünleri Sanayi Ticaret A.Ş., 2025 yılına ait olağan genel kurul toplantısının 22 Aralık 2026 tarihinde şirket merkezinde yapılacağını duyurdu. Bildirimde finansal tabloların onayı, yönetim kurulu ibraları, kâr dağıtım teklifi ve denetçi seçimi gibi standart gündem maddeleri yer almaktadır. Bu gelişme rutin bir kurumsal süreç olup şirketin operasyonel veya finansal yapısında doğrudan ani bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-23T18:01:00.649809+03:00"
+    },
+    "1701407": {
+      "analysis_points": [
+        "İhraç tavanı 50.000.000 EUR → TL cinsinden etkisi ihraç anındaki kurdan bağımsız olarak DÖS'a eklenecek, mevcut DÖS/Özkaynak oranına göre leverage etkisi KAP onay bildiriminde netleşecek",
+        "Yurt dışı finansman maliyeti (EUR bazlı kupon/spread) ve vade profili açıklanmamış → marj ve likidite planlaması için nihai şartların açıklanması beklenmeli",
+        "BRSA/SPK onay süreci ve yurt dışı piyasa koşulları → ihracın gerçekleşme zamanı ve boyutu regülatör onayına ve global likiditeye bağlı"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "938bc8e66d04a431",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Belge metni sağlanmamış → vade, kupon, garanti ve ihraç takvimi bilgisi yok, nakit akışı ve maliyet etkisi hesaplanamıyor"
+      ],
+      "summary": "Deniz Finansal Kiralama A.Ş., 50.000.000 EUR nominal tutarına kadar yurt dışı borçlanma aracı ihracı tavanı bildirmiştir. Belge metni sağlanmadığı için vade, kupon, garanti ve ihraç zamanı gibi finansman şartları bilinmemektedir.",
+      "ts": "2026-11-23T18:01:00.649809+03:00"
+    },
+    "1701408": {
+      "analysis_points": [
+        "İhraç tavanı 3.000.000.000 TL → şirketin TL cinsinden borçlanma limiti ve faiz maliyeti bu çerçevede şekillenecek, gerçekleşen ihraç tutarı ve vade yapısı nakit akışını belirleyecek",
+        "Nitelikli yatırımcıya özel satış → halka arz maliyetleri ve süreçleri ortadan kalkar, ancak talep yoğunluğu ve kupon oranı piyasa koşullarına bağlı olarak belirsiz kalır",
+        "Vade, kupon ve garanti yapısı açıklanmamış → borç hizmeti yükümlülüklerinin zamanlaması ve özkaynak etki analizi için KAP'te yayımlanacak nihai ihraç bildirimi beklenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "390bbb912b174c3d",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "BNP Paribas Finansal Kiralama A.Ş., 18.11.2026 tarihli Yönetim Kurulu kararıyla 3.000.000.000 TL tutarına kadar, bir veya birden fazla trançta, nitelikli yatırımcılara özel olarak satılacak Türk Lirası cinsinden borçlanma aracı ihracına karar vermiştir. İhraç tavanı şirketin borçlanma kapasitesini ve likidite yönetimini doğrudan etkileyen bir finansman kararıdır.",
+      "ts": "2026-11-23T18:01:00.649809+03:00"
+    },
+    "1701443": {
+      "analysis_points": [
+        "Gündem maddeleri ve kararlar açıklanmamış → sermaye artırımı, yönetim değişikliği, borçlanma yetkisi gibi maddi kararlar için tutanak metni incelenmeli",
+        "Önceki bildirim tarihi 21.10.2026 → gündem maddeleri o tarihteki bildirimde yer alıyor olabilir, ilişki kontrol edilmeli",
+        "Varlık kiralama şirketi (SPV) yapısı → alınan kararlar genelde sukuk ihraç tavanı, program güncellemesi veya vekil değişikliği ile ilgilidir, tutanakta netleşecek"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "032b1078530f1bb2",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Gündem ve karar içerikleri bildirim metninde yok → tutanak incelenmeden etki değerlendirilemez"
+      ],
+      "summary": "KT Sukuk Varlık Kiralama A.Ş., 23.11.2026 tarihinde Olağanüstü Genel Kurul Toplantısı yapmış ve tutanak ile hazır bulunanlar listesi KAP'a sunulmuştur. Bildirimde gündem maddeleri ve alınan kararların içeriği yer almamaktadır; detaylar ekteki tutanakta beklenmektedir.",
+      "ts": "2026-11-23T18:01:00.649809+03:00"
+    },
+    "1701445": {
+      "analysis_points": [
+        "İhraç tavanı ve yeşil/sosyal çerçeve standardı belirtilmemiş → ikinci taraf görüş (SPO) raporu ve kullanım alanı (yenilenebilir enerji, sosyal altyapı vb.) KAP'te yayımlanacak belgelerde netleşecek",
+        "Yurt dışı sürdürülebilir finansman maliyeti (greenium/spread) ve vade profili açıklanmamış → marj avantajı ve likidite planlaması için nihai şartların açıklanması beklenmeli",
+        "Regülatör onayı (BRSA/SPK) ve yatırımcı talep toplayıcı süreci → ihracın boyutu ve zamanlaması piyasa koşullarına ve onay süreçlerine bağlı"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "b4593a3de2c5dc33",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Belge metni sağlanmamış → ihraç tavanı, yeşil/sosyal çerçeve detayları, vade ve maliyet bilgisi yok, etki hesaplanamıyor"
+      ],
+      "summary": "T.C. Ziraat Bankası A.Ş., yurt dışı yeşil/sürdürülebilir/sosyal borçlanma aracı ihracı için başvuru yaptığını bildirmiştir. Belge metni sağlanmadığı için ihraç tavanı, çerçeve standartları (ICMA Green/Social Bond Principles vb.), vade, para birimi ve kullanım alanı detayları bilinmemektedir.",
+      "ts": "2026-11-23T18:01:00.649809+03:00"
+    },
+    "1701446": {
+      "analysis_points": [
+        "İhraç tavanı ve para birimi belirtilmemiş → borç stokuna ve DÖS/Özkaynak oranına etkisi KAP'te yayımlanacak onay/ihraç bildiriminde netleşecek",
+        "Yurt dışı finansman maliyeti (kupon/spread) ve vade profili açıklanmamış → marj ve likidite planlaması için nihai şartların açıklanması beklenmeli",
+        "BRSA/SPK onay süreci ve piyasa koşulları → ihracın gerçekleşme olasılığı ve zamanlaması regülatör onayına ve global likiditeye bağlı"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "f93207fae2c75d0a",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Belge metni sağlanmamış → ihraç tavanı, vade, para birimi ve maliyet bilgisi yok, etki hesaplanamıyor"
+      ],
+      "summary": "T.C. Ziraat Bankası A.Ş., yurt dışı borçlanma aracı ihracı için başvuru yaptığını bildirmiştir. Belge metni sağlanmadığı için ihraç tavanı, vade, para birimi, kupon oranı ve garanti yapısı gibi kritik finansman detayları bilinmemektedir.",
+      "ts": "2026-11-23T18:01:00.649809+03:00"
     }
   },
-  "updated_at": "2026-11-23T17:01:04.264333+03:00",
+  "updated_at": "2026-11-23T18:01:00.649809+03:00",
   "version": 1
 }
