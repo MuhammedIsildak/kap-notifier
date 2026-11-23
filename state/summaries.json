@@ -4646,8 +4646,56 @@
       "red_flags": [],
       "summary": "Ekos Teknoloji ve Elektrik A.Ş.'de Yatırımcı İlişkileri Bölümü Yöneticisi Huriye Çömez 23.11.2026 itibarıyla görevinden ayrılmıştır. Ayrılışla birlikte Kurumsal Yönetim Komitesi ve Sürdürülebilirlik Komitesi üyeliği de sona ermiştir. Bu gelişme rutin bir yönetsel değişim olup şirketin finansal veya operasyonel yapısını doğrudan etkilememektedir.",
       "ts": "2026-11-23T16:01:00.982457+03:00"
+    },
+    "1701353": {
+      "analysis_points": [
+        "Uzun vadeli ulusal not A- (tr)'den BBB- (tr)'ye düştü → yatırım yapılabilir seviyenin sınırına geriledi, yeni borçlanma maliyetleri yükselir",
+        "Kaldıraç göstergeleri bozuldu ve banka kredileri artıyor → 2026 9 aylık finansallarda net borç/FAVÖK ve faiz karşılama oranları kritik eşiklere ulaştı, finansal sözleşmeler (covenant) ihlal riski taşır"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "541e49257a07d710",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Uzun vadeli ulusal kredi notunun A- (tr)'den BBB- (tr)'ye iki kademe düşürülmesi",
+        "FAVÖK kapasitesinde düşüş ve banka kredilerindeki artış nedeniyle kaldıraç göstergelerinde bozulma"
+      ],
+      "summary": "JCR Avrasya, ÇAMSAN ENTEGRE AĞAÇ SANAYİ VE TİCARET ANONİM ŞİRKETİ'nin ulusal uzun vadeli kredi notunu A- (tr)'den BBB- (tr)'ye indirmiştir; görünüm Stabil olarak belirlenmiştir. Not indiriminin gerekçesi olarak FAVÖK kapasitesindeki düşüş, banka kredilerindeki artış ve 2026/9 aylık dönemi itibarıyla kaldıraç göstergelerindeki bozulma gösterilmiştir. Bu durum şirketin borç servis kalitesinde belirgin bir zayıflamaya işaret etmektedir.",
+      "ts": "2026-11-23T17:01:04.264333+03:00"
+    },
+    "1701365": {
+      "analysis_points": [
+        "Ödenemeyen tahvil tutarı 134.000.000 TL → yatırımcılar açısından anapara ve kupon tahsilatı geçici mühlet ve komiser heyeti kararlarına bağlandı",
+        "Geçici mühlet 10.11.2026 tarihinde başladı (3 ay) → Şubat 2027 başındaki mahkeme kararında kesin mühlet veya iflas riski netleşecek"
+      ],
+      "category": "Temerrüt",
+      "has_document": true,
+      "hash": "ec4f7e2705054d3a",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "134.000.000 TL tutarındaki tahvil ödemesinin vade tarihinde temerrüde düşmesi",
+        "Ankara Batı 1. Asliye Ticaret Mahkemesi'nce verilen üç aylık geçici mühlet kararı"
+      ],
+      "summary": "KAYATUR FİLO KİRALAMA A.Ş., 134.000.000 TL nominal tutarlı TRFKYTRK2631 ISIN kodlu borçlanma aracının 23.11.2026 tarihli itfa ve kupon ödemesini gerçekleştirememiştir. Şirket hakkında Ankara Batı 1. Asliye Ticaret Mahkemesi'nin 2026/1015 E. sayılı dosyası ile 10.11.2026 tarihinde üç aylık geçici mühlet verilmiş ve komiser heyeti görevlendirilmiştir. Bu durum, borç servis kapasitesinin tamamen tıkandığını ve yasal konkordato sürecinin fiilen işlediğini gösterir.",
+      "ts": "2026-11-23T17:01:04.264333+03:00"
+    },
+    "1701376": {
+      "analysis_points": [
+        "İhraç tavanı tutarı açıklanmadı → fonlama kapasitesi ve maliyeti belirsiz, sonraki ihraç duyuruları izlenmeli",
+        "İhraç edilecek borçlanma araçlarının vade ve faiz yapısı netleşmedi → bilanço üzerindeki vade uyumu henüz hesaplanamıyor"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "7d59e42034a4fe00",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "HALK YATIRIM MENKUL DEĞERLER A.Ş., borçlanma araçları ihracına ilişkin SPK onayını duyurmuştur. Bu bildirim, şirketin sermaye piyasası araçları yoluyla fonlama kapasitesini ve limitlerini güncellemektedir. Rutin bir ihraç tavanı onayı olup, tek başına doğrudan bir finansal risk veya nakit akışı etkisi içermez.",
+      "ts": "2026-11-23T17:01:04.264333+03:00"
     }
   },
-  "updated_at": "2026-11-23T16:01:00.982457+03:00",
+  "updated_at": "2026-11-23T17:01:04.264333+03:00",
   "version": 1
 }
