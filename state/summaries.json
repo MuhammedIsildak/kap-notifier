@@ -4791,8 +4791,184 @@
       ],
       "summary": "T.C. Ziraat Bankası A.Ş., yurt dışı borçlanma aracı ihracı için başvuru yaptığını bildirmiştir. Belge metni sağlanmadığı için ihraç tavanı, vade, para birimi, kupon oranı ve garanti yapısı gibi kritik finansman detayları bilinmemektedir.",
       "ts": "2026-11-23T18:01:00.649809+03:00"
+    },
+    "1701451": {
+      "analysis_points": [
+        "Portföy aracılığı faaliyeti için 6 kalemde (paylar, diğer menkul kıymetler, kaldıraçlı alım satım, paya dayalı türev, pay endeksine dayalı türev, diğer türev) yeni izin verildi → şirketin ürün gamı genişler, ancak sermaye ve risk limitleri açıklanmadığı için ölçeklenebilirliği öl",
+        "Yurt içi ve yurt dışında emir iletimi, işlem aracılığı, yatırım danışmanlığı, en iyi gayret aracılığı ve sınırlı saklama izinleri mevcut → toplam yetki kapsamı geniş, ancak bu izinlerin gelir katkısı ve ilgili sermaye maliyeti bildirimde yer almıyor",
+        "Bireysel portföy yöneticiliği, genel saklama ve halka arzı aracılık (aracılık yüklenimi) için izin verilmedi → bu faaliyetler şirketin gelir kalemleri arasında bulunmuyor"
+      ],
+      "category": "İzin/Genişleme",
+      "has_document": true,
+      "hash": "c52418cfebad29f1",
+      "materiality": "high",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [
+        "Portföy aracılığı için yeni izin, müşteri varlıklarına ilişkin likidite ve operasyonel risk yükümlülüğü getirir",
+        "İzin için gerekli sermaye ve yükümlülüklerin tutarı açıklanmadı",
+        "Kaldıraçlı alım satım ve türev araçlara yeni izin, piyasa riski taşıma kapasitesinin sınanmasını gerektirir"
+      ],
+      "summary": "SPK Başkanlığı, MİDAS MENKUL DEĞERLER A.Ş.'ye portföy aracılığı faaliyeti için yurt içinde yeni izin vermiştir; bu kapsamda paylar, diğer menkul kıymetler, kaldıraçlı alım satım işlemleri ve paya/pay endeksine dayalı ve diğer türev araçlar için yeni izin verilmiştir. Mevcut izinler arasında yurt içi ve yurt dışında emir iletimine aracılık, işlem aracılığı, yatırım danışmanlığı, en iyi gayret aracılığı ve sınırlı saklama hizmeti bulunmaktadır. Portföy aracılığı izninin yeni alınması, şirketin faaliyet yetki kapsamını genişleterek gelir çeşitlendirmesi ve sermaye ihtiyacı yaratması bakımından yüksek önem taşır; ancak izin tutarı, sermaye koşulu ve beklenen gelir etkisi açıklanmamıştır.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701472": {
+      "analysis_points": [
+        "Bağlayıcı ön protokol imzalandı → hisse devri ve yatırım kararı süreci işletildi, KAP'tan sonraki bildirimlerde tutar/koşullar netleşirse capex ve nakit akışı modellenebilir",
+        "50 MW güneş santrali → kapasite ve üretim tahminiyle yıllık gelir potansiyeli hesaplanabilir, PPA/spot fiyatı ve Gürcistan teşvik rejimi belirlenecek",
+        "İşlem %100 pay alımı → konsolidasyonda tam kontrol, borç/nakit devri bilançoya yansıyacak; net borç/FAVÖK etkisi takip edilmeli"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "2271692059e5c7f9",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "İşlem tutarı ve ödeme yapısı açıklanmamış → nakit akışı etkisi hesaplanamıyor",
+        "Kapalı olma koşulları ve zaman çizelgesi belirtilmemiş → gerçekleşme riski belirsiz",
+        "Yabancı ülke yatırımı → para birimi, regülasyon ve operasyonel riskler izlenmeli"
+      ],
+      "summary": "Best Brands Grup Enerji Yatırım A.Ş., Gürcistan'da 50 MW (AC) kurulu gücü güneş enerjisi santrali yatırımı gerçekleştirmek üzere Slov Energy Georgia şirketinin %100 paylarını satın almak için bağlayıcı ön protokol imzaladı. 30.07.2026 duyurulan yatırım sürecinin bir sonraki aşamasıdır; hisse devri ve yatırım hayata geçirme süreçleri devam ediyor. Tutar ve kapalı olma koşulları açıklanmamış.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701474": {
+      "analysis_points": [
+        "EIN alımı kurulumun idari bir kilometre taşı → banka hesabı açımı, sözleşme imzalama ve operasyonel hazırlıkların önü açıldı",
+        "03.09.2026 kuruluş bildirimi sonrası ilk somut adım → sonraki bildirimlerde tesis yeri, kapasite, yatırım tutarı ve finansman yapısı netleşirse 2027+ capex planına yansıtılmalı"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "f531847aa8a47bd2",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "ABD operasyonel faaliyet başlangıcı, yatırım büyüklüğü ve zaman çizelgesi belirsiz → capex ve nakit akışı etkisi hesaplanamıyor"
+      ],
+      "summary": "Kocaer Çelik Sanayi ve Ticaret A.Ş., 03.09.2026'da kurduğu ABD/Texas'teki %100 bağlı ortaklığı KCR Steel U.S. LLC için IRS EIN (vergi kimlik) numarası alındığını duyurdu. Şirket kurulum süreci idari olarak ilerliyor; operasyonel faaliyet ve yatırım tutarı/kapasite henüz açıklanmadı.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701475": {
+      "analysis_points": [
+        "Ulusal uzun vadeli not BB+ (tr) teyit, aksiyon Teyit, görünüm Negatif → not değiştirilmedi ancak negatif görünüm, bir sonraki değerlendirmede aşağı revizyon riskini taşıyor",
+        "Kısa vadeli ulusal not J3 (tr) / Durağan → kısa vadeli borç ödeme kapasitesi zayıf, vade kısaltma veya işlem hacmi kısıtlaması riski bulunuyor",
+        "Önceki not bilgisi bildirimde yer almıyor → not seviyesindeki değişimin yönü ve büyüklüğü bu bildirimden tespit edilemiyor"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "b193e9595a28c447",
+      "materiality": "normal",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [
+        "Ulusal uzun vadeli not BB+ (tr) seviyesinde → yatırım yapılamaz kategorisinde kredi profili",
+        "Negatif görünüm verildi → not düşürme riski açık",
+        "Kısa vadeli ulusal not J3 (tr) seviyesinde → kısa vadeli likidite ve yeniden finansman riski yüksek"
+      ],
+      "summary": "JCR Avrasya, QUA GRANITE HAYAL YAPI VE ÜRÜNLERİ SANAYİ TİCARET ANONİM ŞİRKETİ'nin ulusal uzun vadeli kredi notunu BB+ (tr) seviyesinde teyit etmiş, aksiyon Teyit olarak kaydedilmiştir. Uluslararası uzun vadeli not B+ / Durağan, kısa vadeli ulusal not J3 (tr) / Durağan olarak belirlenmiştir; görünüm Negatif'tir. Bildirimde önceki not bilgisi verilmemiş ve kredi notu raporuna ilişkin ek risk sinyali paylaşılmamıştır; BB+ (tr) seviyesi yatırım yapılamaz (speculative) kategorisindedir.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701476": {
+      "analysis_points": [
+        "Atama %99 bağlı ortaklıkta → konsolide performansı etkileyebilir; yeni GM'nin jeotermal/güneş tecrübesi Kocaer Enerji'nin yatırım/operasyon hızını artırabilir",
+        "Kamuoyuna duyuru rutin yönetim bildirimi → finansal etki doğrudan değil, stratejik yürütme kapakitesiyle dolaylı"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "66dc3c2d8eb34b13",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "Kocaer Çelik Sanayi ve Ticaret A.Ş.'nin %99'u bağlı ortaklığı Kocaer Enerji A.Ş. Genel Müdürlüğüne Cem Ovalıoğlu atandı. Aday 30+ yıl yenilenebilir enerji, demir çelik, petrokimya deneyimine sahip; jeotermal/güneş santrallerinde GM derecesine kadar yöneticilik yapmış.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701477": {
+      "analysis_points": [
+        "Ulusal uzun vadeli not A (tr) → BBB (tr), aksiyon Not indirimi, görünüm Negatif → bir kademe gerileyen not, mevcut kredi koşullarının yeniden fiyatlandırılması ve yeni finansman bulma maliyetinin artması anlamına gelir",
+        "30 Eylül 2026 itibarıyla yüksek finansal kaldıraç ve devam eden negatif nakit akış metrikleri → içsel nakit üretimi borç servisi için yeterli değil, dış kaynak ihtiyacı sürecektir",
+        "İlişkili taraflardan yüksek tutarlı finansal alacak → varlıkların likiditesi grup içi tahsilat riskine bağlı, alacakların geri dönüşü izlenmeden net varlık değerine güvenilemez"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "e26686a886ea3256",
+      "materiality": "critical",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [
+        "Ulusal uzun vadeli not A (tr) seviyesinden BBB (tr) seviyesine indirildi → kredi profili zayıfladı, borçlanma maliyeti artabilir",
+        "30 Eylül 2026 itibarıyla yüksek finansal kaldıraç → borç servisi kapasitesi zayıf",
+        "İlişkili taraflardan yüksek tutarlı finansal alacak likidite üzerinde baskı oluşturuyor ve nakit akış metrikleri negatif",
+        "Negatif görünüm → notun tekrar indirilme riski devam ediyor"
+      ],
+      "summary": "JCR Avrasya, BİEN YAPI ÜRÜNLERİ SANAYİ TURİZM VE TİCARET ANONİM ŞİRKETİ'nin ulusal uzun vadeli kredi notunu A (tr) seviyesinden BBB (tr) seviyesine indirmiş, aksiyon Not indirimi olarak kaydedilmiştir. Uluslararası uzun vadeli not BB / Durağan, kısa vadeli ulusal not J2 (tr) / Durağan olarak belirlenmiştir; görünüm Negatif'tir. Not indiriminin nedeni, 30 Eylül 2026 itibarıyla yüksek finansal kaldıraç, ilişkili taraflardan yüksek tutarlı finansal alacak nedeniyle likidite üzerindeki baskı ve devam eden negatif nakit akışı metrikleridir.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701484": {
+      "analysis_points": [
+        "Değerleme raporu hazır (30.10.2026) → satış kararı alınırsa tutar rapor değerine yakın olacak; KAP'ta satış kararı bildirimi gelirse tutar ve nakit giriş tarihi modellenebilir",
+        "Gayrimenkul tamamlanmış, kullanım izni var, satılabilir durumda → işlem hızı alıcı talep ve pazarlık süresine bağlı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "f7cb59e83f6c7d0c",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Satış tutarı, alıcı ve kapatma tarihi açıklanmamış → nakit girişi ve kâr etkisi hesaplanamıyor",
+        "Tek bir dükkan satışı → portföy büyüklüğü içinde maliyetli etkisi muhtemelen düşük"
+      ],
+      "summary": "Koray Gayrimenkul Yatırım Ortaklığı A.Ş., Eyüpsultan/Göktürk'teki Koray Liberte sitesinde 76,24 m² brüt alanı bir dükkan bağımsız bölümünün satışı için Epos Gayrimenkul Danışmanlık raporu (30.10.2026) hazırlattı. Raporda pazar değeri tespiti yapılmış; satış kararı, tutar ve tarih açıklanmamış.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701506": {
+      "analysis_points": [
+        "Olağanüstü genel kurul 23.11.2026'da yapıldı, kararlar 18/11/2026'da alındı → kararların niteliği ekteki tutanak ve gündemden okunmalı",
+        "Gündem ve alınan kararlar yalnızca 'Ektedir' şeklinde belirtilmiş → sermaye, borçlanma veya varlık satışı gibi kararların varlığı ve tutarı bu bildirimden tespit edilemiyor"
+      ],
+      "category": "Genel Kurul",
+      "has_document": true,
+      "hash": "cf177fc55c233b49",
+      "materiality": "low",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [],
+      "summary": "GARANTİ FİNANSAL KİRALAMA A.Ş., 23.11.2026 tarihinde olağanüstü genel kurul toplantısı yapmıştır; karar tarihi 18/11/2026, toplantı saati 15.00, adres Çamçeşme Mah. Tersane Cad. - Sitesi N 15 Pendik / İstanbul olarak belirtilmiştir. Gündem ve alınan kararlar ekte yer almaktadır. Bildirimde toplantıda alınan kararların içeriği açıklanmadığı için finansal etkisi değerlendirilememektedir.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701534": {
+      "analysis_points": [
+        "Ulusal uzun vadeli not AA+ (tr) teyit, aksiyon Teyit, görünüm Negatif → not düşürülmedi ancak bir sonraki değerlendirmede aşağı yönlü revizyon riski taşınıyor",
+        "İncelenen dönemlerde serbest faaliyet nakit akışının negatif seyretmesi (yatırım harcamaları ve şirket satın alımı kaynaklı) → içsel fonlama kapasitesi zayıflıyor, dış finansman ihtiyacı artabilir",
+        "Uluslararası uzun vadeli BB / Durağan ve kısa vadeli J1+ (tr) / Durağan seviyelerinde teyit → uluslararası piyasalardan fonlama maliyeti ve vade profili, negatif görünümün seyriyle birlikte izlenmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "b7462c4d46e06bdd",
+      "materiality": "high",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [
+        "Negatif görünüm verildi → not düşürme riski açık",
+        "Yatırım harcamaları ve şirket satın alımı nedeniyle serbest faaliyet nakit akışı negatif",
+        "Yüksek not seviyesine rağmen görünüm negatif olduğu için mevcut borçlanma koşullarının yeniden fiyatlandırılma riski"
+      ],
+      "summary": "JCR Avrasya, ÇİMSA ÇİMENTO SANAYİ VE TİCARET A.Ş.'nin ulusal uzun vadeli kredi notunu AA+ (tr) seviyesinde teyit etmiş, görünümü Negatif olarak belirlemiştir. Uluslararası uzun vadeli not BB / Durağan, kısa vadeli ulusal not J1+ (tr) / Durağan olarak teyit edilmiştir. Not yüksek seviyede korunmasına rağmen negatif görünüm ve incelenen dönemlerde yatırım harcamaları ile şirket satın alımından kaynaklanan nakit çıkışları nedeniyle serbest faaliyet nakit akışının negatif seyretmesi, kredi profilindeki bozulma eğilimini gösterir.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701541": {
+      "analysis_points": [
+        "Net fon 3,946 Mrd TL, 30 Eyl 2026'da 355,3 Mn TL kullanılmış → kalan ~3,59 Mrd TL önümüzdeki çeyreklerde VEDAŞ capex'ine (yıllık onaylı bütçe) ve işletme sermayesine akmalı; kullanım hızı 2027 Q1-Q2'de %30-40'a çıkmazsa plan sapması sorgulanmalı",
+        "VEDAŞ yatırım harcamaları EPDK 5 yıllık onaylı bütçeye bağlı → düzenleyici gelir bileşeni, capex gerçekleşme hızı doğrudan VEDAŞ gelir/nakit akışını belirler; 281 Mn TL ilk adım, yıllık bütçe tutarı ile kıyaslanmalı",
+        "LİNA ve VEPSAŞ işletme sermayesi kullanımı 0 TL → bağlı ortaklıkların nakit ihtiyacı ve ödeme yeteneği (özellikle LİNA ~900 Mn TL plan) 2027 Q1-Q2 finansal tablolarında izlenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "75374f4551d5b844",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Fon kullanım hızı %7,2 (30 Eyl 2026) → planlanan VEDAŞ yatırımları ve işletme sermayesi ihtiyacının büyük kısmı henüz karşılanmamış",
+        "LİNA işletme sermayesi payı (%18-20 plan, ~894-993 Mn TL) henüz 0 TL kullanılmış → bağlı ortaklık finansmanı gecikiyor olabilir",
+        "Fiyat istikrarı fonu 1,02 Mrd TL şirket hesabında → piyasa koşulları bozulursa geri alım baskısı yaratabilir"
+      ],
+      "summary": "Türker Vangölü Enerji Yatırım A.Ş., 12-14 Ağustos 2026 halka arzından brüt 5,1 Mrd TL (net 3,946 Mrd TL fiyat istikrarı fonu düşüldükten sonra) elde etti. 30 Eylül 2026 itibarıyla fonun %7,2'si (355,3 Mn TL) kullanılmış; VEDAŞ yatırım harcamalarında 281 Mn TL (%5,7), işletme sermayesinde 74,3 Mn TL (%1,5) harcanmış. Plan: fonun %60-70'i VEDAŞ yatırımları, %30-40'ı işletme sermayesi.",
+      "ts": "2026-11-23T19:01:08.870633+03:00"
     }
   },
-  "updated_at": "2026-11-23T18:01:00.649809+03:00",
+  "updated_at": "2026-11-23T19:01:08.870633+03:00",
   "version": 1
 }
