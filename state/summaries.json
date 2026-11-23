@@ -5146,8 +5146,42 @@
       "red_flags": [],
       "summary": "TAB GIDA A.Ş., 23.11.2026 tarihli olağanüstü genel kurulda seçilen yeni yönetim kurulu üyeleri arasında görev dağılımı yaptı; Erhan KURDOĞLU başkan, Korhan KURDOĞLU başkan yardımcılığına getirildi. Bu, rutin bir idari atama kararıdır.",
       "ts": "2026-11-23T22:00:56.580801+03:00"
+    },
+    "1701587": {
+      "analysis_points": [
+        "Özkaynak 9.100 mn TL aşırtılmış → BDDK raporlanan CAR oranından gerçek CAR hesaplanmalı; eşik altına düşerse (örn. %12 altı) düzenleyici müdahale/ek sermaye riski doğar",
+        "Serbest karşılık 13.000 mn TL (geçmiş yıllar 9.850 + cari 3.150) → NPL oranı ve KHK tahminleri revize edilmeli; 9 aylık cari dönem 3.150 mn TL yeni ayrılma hızı yıllık ~4.200 mn TL → varlık kalitesi bozuluyor",
+        "Ertelenmiş vergi varlığı 3.900 mn TL (geçmiş 2.955 + cari 945) → gerçekleştirme olasılığı düşükse özkaynaktan tamamen düşürülmeli; nakit vergisi avantajı yok, sadece muhasebe etkisi"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "7234d9aa972f91c3",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Şartlı denetim sonucu (qualified conclusion) → finansal tabloların güvenilirliği kısıtlı",
+        "Özkaynak 9.100 mn TL aşırtılmış → CAR oranı raporlandığından belirgin düşük",
+        "Net kar 2.205 mn TL aşırtılmış → karlılık metrikleri (ROE, ROA) gerçeğinden yukarıda"
+      ],
+      "summary": "TÜRKİYE EMLAK KATILIM BANKASI A.Ş., 30 Eylül 2026 tarihi 9 aylık konsolide finansal tablolarında PwC'den 'şartlı sonuç' (qualified conclusion) aldı. Denetçi, BDDK mevzuatı dışında ayrılan 13.000 mn TL serbest karşılık ve buna bağlı 3.900 mn TL ertelenmiş vergi varlığı muhasebeleştirilmesinin, özkaynakları 9.100 mn TL ve net dönem karını 2.205 mn TL aşırtarak yansıtmadığını tespit etti. Bu düzeltme bankanın sermaye yeterliliği oranlarını ve kredi risk profili ciddi oranda zayıflatır.",
+      "ts": "2026-11-23T23:00:57.995696+03:00"
+    },
+    "1701590": {
+      "analysis_points": [
+        "Yönetim kurulu başkanlığı aile içi atama → yönetim yapısında kontrol değişimi yok, stratejik yönelimde ani kırılma beklenmez",
+        "Finansal metrik (ciro, borç, nakit akışı) üzerinde doğrudan etki yok → model/görünüm güncellemesi gerekmez",
+        "Sıradan idari bildirim → portföy/pozisyon kararı için aksiyon gerektirmez"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "7dd5bf7cb5eee474",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "ATAKEY PATATES GIDA A.Ş., 23.11.2026 tarihli Olağanüstü Genel Kurul sonrası yapılan Yönetim Kurulu toplantısında görev dağılımını gerçekleştirdi. Erhan KURDOĞLU Yönetim Kurulu Başkanı, Korhan KURDOĞLU ise Başkan Yardımcısı olarak atandı. Bu, rutin bir idari düzenleme olup finansal tablo veya kredi profili üzerinde doğrudan etkisi yoktur.",
+      "ts": "2026-11-23T23:00:57.995696+03:00"
     }
   },
-  "updated_at": "2026-11-23T22:00:56.580801+03:00",
+  "updated_at": "2026-11-23T23:00:57.995696+03:00",
   "version": 1
 }
