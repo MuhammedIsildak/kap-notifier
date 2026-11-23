@@ -4967,8 +4967,73 @@
       ],
       "summary": "Türker Vangölü Enerji Yatırım A.Ş., 12-14 Ağustos 2026 halka arzından brüt 5,1 Mrd TL (net 3,946 Mrd TL fiyat istikrarı fonu düşüldükten sonra) elde etti. 30 Eylül 2026 itibarıyla fonun %7,2'si (355,3 Mn TL) kullanılmış; VEDAŞ yatırım harcamalarında 281 Mn TL (%5,7), işletme sermayesinde 74,3 Mn TL (%1,5) harcanmış. Plan: fonun %60-70'i VEDAŞ yatırımları, %30-40'ı işletme sermayesi.",
       "ts": "2026-11-23T19:01:08.870633+03:00"
+    },
+    "1701550": {
+      "analysis_points": [
+        "Karar detayları bildirimde yok → ektaki tutanak incelenene kadar etki analiz edilemez, sermaye/borç/yönetim değişikliği varsa tutanakta olmalı",
+        "Varlık kiralama şirketi için olağanüstü GK → genellikle sukuk ihraç yetkisi, program limiti veya yönetim değişikliği gündemdedir, tutanak kontrol edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "e14fc3015ab6ec9d",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "KT Kira Sertifikaları Varlık Kiralama A.Ş., 23.11.2026 tarihinde olağanüstü genel kurul toplantısı yaptı. Bildirimde gündem maddeleri ve alınan kararların özeti yer almıyor; sadece tutanak ve hazır bulunanlar listesi ekte sunulduğu belirtiliyor. Varlık kiralama şirketleri için rutin bir idari işlemdir.",
+      "ts": "2026-11-23T20:01:04.364670+03:00"
+    },
+    "1701562": {
+      "analysis_points": [
+        "Oylama geçti → teknik temerrüd riski kalktı, 2030 vadeli 1,1 mrd USD Eurobond yapısı korundu, yeniden yapılandırma maliyeti muvafakat ücreti ile sınırlı kaldı",
+        "Faiz ertelemesi (Ekim 2026 dönemi) → 2026 Q4 nakit akışında ~60 mn USD operasyonel rahatlama, 2027 faiz gideri artışı modellenmeli",
+        "İlave kısıtlamaların içeriği (borç/FAVÖK eşiği, ödeme kısıtlamaları, garanti serbest bırakma koşulları) → 2027-2029 finansal esnekliği belirleyecek, Dördüncü Ek Tröst Sözleşmesi KAP'ten edinilip modellenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "ef1e8edca2f16a44",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "İlave kısıtlamalar (additional restrictions) getirildi → borç/FAVÖK, faiz örtme veya nakit akışı kovanları gibi covenant'lar sıkılaştırılmış olabilir, detaylar Dördüncü Ek Tröst Sözleşmesinde",
+        "Faiz ertelemesi → nakit akışında ~60 mn USD (1,1 mrd * %11 * 6 ay) anlık rahatlama, ancak birikim faiz yükü artar"
+      ],
+      "summary": "Zorlu Enerji, 1,1 mrd USD, %11 kuponlu, 2030 vadeli sürdürülebilirlik bağlantılı Eurobond'lar için başlattığı muvafakat talebi %95,63 katılım ve %97,02 olumlu oyla kabul edildi. Ekim 2026 faiz ödemesi ertelendi, Dördüncü Ek Tröst Sözleşmesi ile ilave kısıtlamalar (additional restrictions) getirildi. Muvafakat ücreti 01.12.2026 tarihine kadar ödenecek. Bu, teknik temerrüd riskini ortadan kaldıran ve borç yapısını yeniden şekillendiren kritik bir finansman işlemidir.",
+      "ts": "2026-11-23T20:01:04.364670+03:00"
+    },
+    "1701570": {
+      "analysis_points": [
+        "Depolama lisansı alındı → capex ve COD (işletme tarihi) netleşince 2027+ FAVÖK katkısı modellenebilir",
+        "Tutar ve zaman çizelgesi açıklanmadı → nakit akışı etkisi hesaplanamıyor, yatırım bütçesi KAP eklerinde izlenmeli",
+        "10 MWh ölçekli depolama → mevcut 45 MWe jeotermal kapasitesinin yanında anciller hizmet geliri potansiyeli doğurur, tarife/piyasa modeli netleşmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "0eef8fa676ff5378",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "Zorlu Enerji'nin bağlı ortaklığı Zorlu Jeotermal, Alaşehir JES projesine 10 MWe/10 MWh lityum-iyon depolama ünitesi eklemek için EPDK'ya yaptığı lisans tadil başvurusu 22.10.2026 tarihli 14975-3 sayılı Kurul Kararı ile onaylandı. Bu, mevcut jeotermal santralin yanına hibrit depolama entegrasyonu için reglamenter izin adımıdır. Yatırım tutarı, capex planı ve işletme tarihi bildirimde belirtilmemiştir.",
+      "ts": "2026-11-23T20:01:04.364670+03:00"
+    },
+    "1701573": {
+      "analysis_points": [
+        "Borç ödemesi 844 mn TL → net borç/FAVÖK oranında anlık iyileşme beklenir, 2026 Q4 bilançosunda borç stoğu ~844 mn TL düşmeli",
+        "Yenilenebilir yatırım harcaması 275 mn TL (plan 419 mn TL) → 2027 capex bütçesi ve MW hedefleri revize edilmeli, nakit akışı serbest kalemine 144 mn TL fark düştü",
+        "Emisyon primi 4,17 mn TL ve halka arz maliyeti 6,24 mn TL → net nakit girişi 1.494 mn TL, sermaye artırımının maliyeti düşük gerçekleşti"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "66e71d5a63d3cc08",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Yenilenebilir yatırımlara ayrılan kaynak planın %66'sında kaldı (275 vs 419 mn TL) → yatırım hızı/kapasite hedefleri revize edilmiş olabilir",
+        "Borç kapatma planın %120'sinde gerçekleşti → nakit akışı borç azaltmaya kaydırıldı, büyüme capex'i geride kaldı"
+      ],
+      "summary": "İhlas Holding, 1.500 mn TL bedelli sermaye artırımını tamamlayarak çıkarılan sermayeyi 3.000 mn TL'ye çıkardı. Net 1.504 mn TL nakit girişi sağlandı (emisyon primi 4,17 mn TL dahil). Fonun 1.494 mn TL'si planlanan kalemlere yönlendirildi: finansman niteliğindeki borçların kapatılması 844 mn TL (plan 700 mn TL, %10 kaydırma kuralı kullanıldı), proje finansmanı/yenilenebilir yatırımlar 275 mn TL (plan 419 mn TL), işletme sermayesi 375 mn TL. Halka arz maliyeti 6,24 mn TL.",
+      "ts": "2026-11-23T20:01:04.364670+03:00"
     }
   },
-  "updated_at": "2026-11-23T19:01:08.870633+03:00",
+  "updated_at": "2026-11-23T20:01:04.364670+03:00",
   "version": 1
 }
