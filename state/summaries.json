@@ -4516,8 +4516,34 @@
       ],
       "summary": "Makim Makine Teknolojileri Sanayi ve Ticaret A.Ş. Yönetim Kurulu Başkan Vekili Ahmet Gönüllü hakkında sosyal medyada yer alan fon soruşturması ve mal varlığı tedbiri iddialarına yönelik kamuoyu açıklaması yapmıştır. Şirket, Ahmet Gönüllü hakkında alınmış herhangi bir adli tedbir olmadığını ve haberlerin isim benzerliğinden ibaret bulunduğunu belirtmiştir. Üst düzey yönetim hakkındaki hukuki belirsizlik algısı ve itibar riski, şirketin kurumsal risk profili ve pay piyasasındaki likidite açısından yakından izlenmelidir.",
       "ts": "2026-11-22T23:00:56.993786+03:00"
+    },
+    "1700928": {
+      "analysis_points": [
+        "Belgede finansal tutar veya oran belirtilmemiş → etki hesaplanamıyor, KAP ekindeki detaylar incelenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "e3c234d732e3213c",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ENDA ENERJİ HOLDİNG A.Ş., 23.11.2026 tarihinde işbirliği ve ortaklık konusunda daha önce 20.02.2026 ve 24.08.2026 tarihlerinde yapılan açıklamalara ilişkin güncelleme bildirmiştir. Belge metninde herhangi bir finansal tutar, oran veya somut ortaklık şartı yer almamaktadır.",
+      "ts": "2026-11-23T10:00:59.473495+03:00"
+    },
+    "1700939": {
+      "analysis_points": [
+        "İşlem borsa dışında gerçekleşti → fonun tasfiye sürecindeki pay devri, şirket ana hissedarlık yapısında değişiklik yaratabilir"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "86ce5f5b127a4b1e",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "METROPAL KURUMSAL HİZMETLER A.Ş., 23.11.2026 tarihinde tasfiye kapsamındaki yatırım fonlarından şirket paylarının borsa dışında geri alındığını bildirmiştir. Bu işlem olağan pay geri alım veya tasfiye süreçlerinin bir parçası olup şirketin operasyonel ve finansal yapısında doğrudan kritik bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-23T10:00:59.473495+03:00"
     }
   },
-  "updated_at": "2026-11-22T23:00:56.993786+03:00",
+  "updated_at": "2026-11-23T10:00:59.473495+03:00",
   "version": 1
 }
