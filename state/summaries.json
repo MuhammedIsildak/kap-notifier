@@ -5180,8 +5180,27 @@
       "red_flags": [],
       "summary": "ATAKEY PATATES GIDA A.Ş., 23.11.2026 tarihli Olağanüstü Genel Kurul sonrası yapılan Yönetim Kurulu toplantısında görev dağılımını gerçekleştirdi. Erhan KURDOĞLU Yönetim Kurulu Başkanı, Korhan KURDOĞLU ise Başkan Yardımcısı olarak atandı. Bu, rutin bir idari düzenleme olup finansal tablo veya kredi profili üzerinde doğrudan etkisi yoktur.",
       "ts": "2026-11-23T23:00:57.995696+03:00"
+    },
+    "1701624": {
+      "analysis_points": [
+        "Geçici mühlet süresi 10.11.2026 tarihinden itibaren 3 ay → Mahkeme kararının uzatılıp uzatılmayacağı ve kesin mühlet verilip verilmeyeceği takip edilmeli",
+        "Haziran 2027'ye kadar olan finansman bonoları anapara ve faiz yükümlülükleri → Borç servisinin durması veya yeniden yapılandırılması nakit akışını doğrudan etkiler",
+        "JCR Avrasya notu CCC (tr) ve Negatif görünüm → Temerrüt riskinin yüksek olduğunu gösterir, kredi risk maliyetleri artar"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "bcd9a24897d947d8",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Ankara Batı 1. Asliye Mahkemesi’nden 10.11.2026 tarihinden itibaren 3 ay süreyle geçici mühlet kararı alındı",
+        "Haziran 2027 tarihine kadar devam eden finansman bonolarının ana para ve faiz yükümlülüklerinin yerine getirilmesinde risk oluştu",
+        "Uzun vadeli ulusal kredi notu CCC (tr) ve görünüm Negatif seviyesinde"
+      ],
+      "summary": "JCR Avrasya, Kayatur Filo Kiralama Anonim Şirketi'nin kredi derecelendirme notunu güncellemiş olup uzun vadeli ulusal notu CCC (tr), görünümü Negatif olarak belirlemiştir. Ankara Batı 1. Asliye Mahkemesi'nden 10.11.2026 tarihinden itibaren 3 ay süreyle geçici mühlet kararı alınmıştır. Bu durum, Haziran 2027'ye kadar devam eden finansman bonolarının anapara ve faiz yükümlülüklerinin yerine getirilmesinde risk oluşturmaktadır.",
+      "ts": "2026-11-24T09:00:54.764669+03:00"
     }
   },
-  "updated_at": "2026-11-23T23:00:57.995696+03:00",
+  "updated_at": "2026-11-24T09:00:54.764669+03:00",
   "version": 1
 }

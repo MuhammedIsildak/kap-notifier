@@ -490,8 +490,32 @@
         "source": ""
       },
       "ts": "2026-11-23T21:01:00.632173+03:00"
+    },
+    "1701624": {
+      "hash": "bcd9a24897d947d8",
+      "info": {
+        "action": "Güncelleme",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca1fcb99501a20c20059a2944"
+        ],
+        "current": "CCC (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: prD / (Durağan)",
+          "Kısa vadeli ulusal: prD (tr) / (Durağan)"
+        ],
+        "entity": "KAYATUR FİLO KİRALAMA ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [
+          "Asliye Mahkemesi’nden 10.11.2026 tarihinden itibaren 3 ay süreyle alınmış geçici mühlet kararına istinaden, Haziran 2027 tarihine kadar devam eden finansman bonolarının ana para ve faiz yükümlülüklerinin yerine getirilmesine ilişkin oluşan ",
+          "Konkordato başvurusu sonrasında, Ankara Batı 1."
+        ],
+        "source": "KAYATUR FİLO KİRALAMA ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-24T09:00:54.764669+03:00"
     }
   },
-  "updated_at": "2026-11-23T23:00:57.995696+03:00",
+  "updated_at": "2026-11-24T09:00:54.764669+03:00",
   "version": 1
 }
