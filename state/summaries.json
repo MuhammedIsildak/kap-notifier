@@ -5332,8 +5332,57 @@
       "red_flags": [],
       "summary": "Vakıf Varlık Kiralama A.Ş., Vakıf Katılım Bankası A.Ş. fon kullanıcılığında ek satışla 3.000.000.000 TL'ye kadar artırılabilecek 2.000.000.000 TL tutarında 118 gün vadeli kira sertifikası ihracı gerçekleştirmiştir. İhracın yıllık basit getiri oranı %34, dönemsel getiri oranı ise %10.9918 olarak belirlenmiştir. Talep toplama tarihleri 25-26 Kasım 2026, vade başlangıcı ise 27 Kasım 2026 olarak açıklanmıştır.",
       "ts": "2026-11-24T17:01:04.407333+03:00"
+    },
+    "1701987": {
+      "analysis_points": [
+        "9. ihraçta 93 mn TL, 10. ihraçta 89.2 mn TL, 12. ihraçta 19.1 mn TL anapara ödenmemiş kaldı → kalan ödemeler vade tarihine (26.10.2026) kadar tamamlanmazsa tam temerrüt riski artar",
+        "FD notu, fonun mevcut ve gelecek ihraçları için yatırımcı tabanını daraltır ve finansman maliyetini artırır → yeni ihraç talep ve fiyatlandırma izlenmeli",
+        "Kısmi ödeme yapıldığı halde FD notu verilmiş → yapısal ödeme sorunu veya nakit akışı zamanlaması sorunu olabilir, fon yöneticisinin nakit durumu takip edilmeli"
+      ],
+      "category": "Temerrüt",
+      "has_document": true,
+      "hash": "77de7c900a4216a4",
+      "materiality": "critical",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Kısmi temerrüt (FD) notuna indirim",
+        "9. ihraç anaparasının %27'si ödenmemiş",
+        "10. ihraç anaparasının %52'si ödenmemiş"
+      ],
+      "summary": "Saha Kurumsal Yönetim ve Kredi Derecelendirme Hizmetleri A.Ş., TMKŞ Tarfin Birinci Varlık Finansmanı Fonu'nun 9., 10. ve 12. ihraçlarına ait anapara ödemelerinin kısmi olarak gerçekleştiğini bildirdi. 9. ihraçta 336 mn TL anaparadan 243 mn TL, 10. ihraçta 172 mn TL anaparadan 82.8 mn TL, 12. ihraçta 135 mn TL anaparadan 115.9 mn TL ödenmiş; bu nedenle ilgili ihraçların kredi derecelendirme notları \"kısmi temerrüt (FD)\" seviyesine indirilmiştir.",
+      "ts": "2026-11-24T18:01:03.712361+03:00"
+    },
+    "1702004": {
+      "analysis_points": [
+        "İhraç tutarı, vade, kupon ve garanti detayları belirtilmemiş → borçlanma maliyeti, nakit girişi tarihi ve borç profili üzerindeki etkisi hesaplanamıyor, KAP'te yayımlanacak ihraç belgesi beklenmeli",
+        "Varlık kiralama şirketi ihracı → kaynak sağlayacak fonun (muhtemelen Ziraat Katılım Bankası) likidite ihtiyacını karşılaması amaçlı olabilir, bankanın finansman planı bağlamında değerlendirilmeli",
+        "İhraç tavanı kararı ihracın yapıldığı anlamına gelmez → ihracın gerçekleşme tarihi ve koşulları ayrı bildirimle takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "0eb56b7142464d41",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "ZKB Varlık Kiralama A.Ş., kira sertifikası ihracı için ihraç tavanına ilişkin Yönetim Kurulu kararı alındığını bildirdi. Bildirimde ihraç tutarı, vade, kupon oranı, garanti yapısı ve kullanım amacı gibi kritik finansman detayları yer almamaktadır.",
+      "ts": "2026-11-24T18:01:03.712361+03:00"
+    },
+    "1702027": {
+      "analysis_points": [
+        "Yeni şube açılışı operasyonel büyüme sinyali → 2027 cirosuna katkı miktarı mağaza büyüklüğüne ve lokasyona bağlı, raporlarda izlenmeli",
+        "Tescil tamamlanması yasal sürecin bitişi → operasyonel başlangıç tarihi ve ilk ay satışları takip edilmeli",
+        "Maddi etkisi (ciro/kar marjı) bildirimde belirtilmemiş → etkisi hesaplanamıyor, finansal raporlarda mağaza bazlı performans izlenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "bd01cb7123a7d0b5",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "GİMAT Mağazacılık Sanayi ve Ticaret A.Ş., Yönetim Kurulu'nun 23.11.2026 tarihli kararıyla Ankara Keçiören Ovacık Mahallesi'nde açılmasına karar verilen yeni şubenin tescil işlemlerinin 24.11.2026 tarihinde tamamlandığını ve Türkiye Ticaret Sicili Gazetesi'nde yayımlandığını bildirdi.",
+      "ts": "2026-11-24T18:01:03.712361+03:00"
     }
   },
-  "updated_at": "2026-11-24T17:01:04.407333+03:00",
+  "updated_at": "2026-11-24T18:01:03.712361+03:00",
   "version": 1
 }
