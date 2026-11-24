@@ -5199,8 +5199,54 @@
       ],
       "summary": "JCR Avrasya, Kayatur Filo Kiralama Anonim Şirketi'nin kredi derecelendirme notunu güncellemiş olup uzun vadeli ulusal notu CCC (tr), görünümü Negatif olarak belirlemiştir. Ankara Batı 1. Asliye Mahkemesi'nden 10.11.2026 tarihinden itibaren 3 ay süreyle geçici mühlet kararı alınmıştır. Bu durum, Haziran 2027'ye kadar devam eden finansman bonolarının anapara ve faiz yükümlülüklerinin yerine getirilmesinde risk oluşturmaktadır.",
       "ts": "2026-11-24T09:00:54.764669+03:00"
+    },
+    "1701636": {
+      "analysis_points": [
+        "İhraç tavanı limiti ve türü belirtilmedi → SPK başvuru belgesi beklenmeli",
+        "Mevcut borç yapısı içindeki vadsiz/kısa vadeli borçların refinansmanı olup olmadığı finansal raporlardan takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "60a0dee27594f22b",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İhraç edilecek borçlanma aracının tutarı, limiti ve vadesi açıklanmadı"
+      ],
+      "summary": "Akfen İnşaat Turizm ve Ticaret A.Ş., borçlanma aracı ihracına ilişkin yönetim kurulu kararı alarak ihraç tavanı başvuru sürecini başlatmıştır. Bu karar, şirket için yeni borçlanma fonlaması ve likidite yönetimi açısından önem arz etmektedir. Belge metni bulunmadığından ihraç tutarı, vade ve faiz koşulları net değildir.",
+      "ts": "2026-11-24T10:00:55.405234+03:00"
+    },
+    "1701642": {
+      "analysis_points": [
+        "Yatırım tutarı ve finansman yöntemi açıklanmadı → bilançodaki nakit çıkışı veya borçlanma etkisi KAP ekinden incelenmeli",
+        "5 MWe kurulu güç ve enerji maliyeti azaltımı hedefi → elektrik maliyetlerinin toplam operasyonel giderler içindeki payına göre FAVÖK marjına olumlu katkısı hesaplanmalı"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "b574f8fdd1c3ed7a",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yatırımın toplam maliyeti ve geri dönüş süresi (payback period) belgede belirtilmemiştir"
+      ],
+      "summary": "Kaleseramik Çanakkale Kalebodur Seramik Sanayi A.Ş., 60.628 m² alan üzerinde 5 MWe kurulu güce sahip arazi tipi Güneş Enerjisi Santrali (GES) yatırımını tamamlayarak TEDAŞ kabulü sonrası devreye almıştır. Bu yatırım ile şirketin elektrik enerjisi ihtiyacının bir kısmının yenilenebilir kaynaktan karşılanması, enerji maliyetlerinin azaltılması ve operasyonel karbon ayak izinin düşürülmesi hedeflenmektedir. Yatırım tutarı açıklanmamış olup, operasyonel giderler üzerinde maliyet optimizasyonu sağlaması beklenmektedir.",
+      "ts": "2026-11-24T10:00:55.405234+03:00"
+    },
+    "1701674": {
+      "analysis_points": [
+        "Network Genel Müdür Yardımcılığı pozisyonu boş kaldı → yeni atama yapılana kadar operasyonel süreçlerin sürekliliği takip edilmeli",
+        "Ayrılışın gerekçesi açıklanmadı → stratejik projelerde olası bir aksama riski için yönetim açıklamaları izlenmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "ecc539d9a40eac6d",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Türk Telekomünikasyon A.Ş.'de Network Genel Müdür Yardımcısı olarak görev yapan Zafer Orhan görevinden ayrılmıştır. Kritik bir operasyonel birimde gerçekleşen bu ayrılış, şirketin teknik operasyonları ve stratejik altyapı projeleri açısından izlenmesi gereken bir yönetim değişikliğidir. Yeni atamanın ne zaman yapılacağı henüz duyurulmamıştır.",
+      "ts": "2026-11-24T10:00:55.405234+03:00"
     }
   },
-  "updated_at": "2026-11-24T09:00:54.764669+03:00",
+  "updated_at": "2026-11-24T10:00:55.405234+03:00",
   "version": 1
 }
