@@ -5455,8 +5455,26 @@
       ],
       "summary": "DİRİTEKS DİRİLİŞ TEKSTİL SANAYİ VE TİCARET A.Ş. 10.650.000 TL sermayeyi 50.000.000 TL'ye çıkaran tahsisli (bedelli) sermaye artırımında, paylar Okalin Yatırım Holding A.Ş.'ye tahsis edilecek. Beklenen net satış hasılatı 630.000.000 TL (brüt 39.350.000 TL — metinde tutarsızlık var, net rakam esas alındı). Fonun %92'si (580 mn TL) tekstil ve sağlık sektöründe iştirak edinimine, %8'i (50 mn TL) kamü ve ticari borçların ödenmesine ayrılacak. Şirket akrilik bazlı üretimi kapatmış, polyester bazlı üretim ve sağlık sektörüne girişi planlıyor; bu stratejik yön değiştirme ve borç temizleme hamlesidir.",
       "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702113": {
+      "analysis_points": [
+        "Ulusal not AA+(Tr)/J1+(Tr) (Durağan) → Türk Lirası cinsinden borçlanma maliyeti düşük seyirde kalabilir, yerel yatırımcı tabanı geniş",
+        "Uluslararası not BB (Durağan) → Döviz cinsinden borçlanma/finansman maliyeti yatırım derecesi (BBB-) altı kalır, döviz nakit akışını izlemek gerekir",
+        "Önceki derecelendirme 24.11.2025 → 1 yıldır not ve görünüm sabit, bir sonraki gözden geçirmede (2027 sonbaharı muhtemel) FAVÖK marjı, döviz kuru etkisi ve net borç/FAVÖK seviyesi belirleyici olacak"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "c382d436a4efeb29",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Uluslararası not BB seviyesinde spekülatif kategoride kalıyor → uluslararası finansman maliyeti yüksek kalabilir",
+        "Not görünümü \"Durağan\" → yükselme beklentisi zayıf, aşağı yönlü risk varsa uyarı gelme ihtimali var"
+      ],
+      "summary": "Marmaris Altınyunus Turistik Tesisler A.Ş., JCR Avrasya Derecelendirme A.Ş. tarafından yapılan kredi derecelendirmesinde Uzun Vadeli Ulusal Notu \"AA+(Tr)\" (Durağan), Kısa Vadeli Ulusal Notu \"J1+(Tr)\" (Durağan), Uzun Vadeli Uluslararası Yabancı Para ve Yerel Para Notları \"BB\" (Durağan) seviyelerinde teyit edildi. Önceki derecelendirme tarihi 24.11.2025 olup notlarda ve görünümde değişiklik yok. Bu seviye, şirketin ulusal ölçekte çok güçlü, uluslararası ölçekte spekülatif derecede (BB) bir kredi profiline sahip olduğunu gösterir.",
+      "ts": "2026-11-24T20:01:07.771397+03:00"
     }
   },
-  "updated_at": "2026-11-24T19:00:56.504934+03:00",
+  "updated_at": "2026-11-24T20:01:07.771397+03:00",
   "version": 1
 }
