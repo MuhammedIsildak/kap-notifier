@@ -5305,8 +5305,35 @@
       "red_flags": [],
       "summary": "BOR ŞEKER A.Ş., Etil Alkol Üretim Tesisi yatırımında yasal izin süreçlerini tamamlayarak 24.11.2026 tarihinde üretim ve ticari satışa başlamıştır. Tesis yıllık üretim kapasitesi 5.524.050 litreden 19.972.050 litreye (yaklaşık 3,6 kat) yükseltilmiştir. Yatırım, şeker üretimi yan ürünü melasın değerlendirilmesiyle entegre üretim yapısını güçlendirmeyi ve yeni gelir kaynakları oluşturmayı hedeflemektedir.",
       "ts": "2026-11-24T16:01:06.210474+03:00"
+    },
+    "1701933": {
+      "analysis_points": [
+        "Atama tarihi 24.11.2026 ve görev unvanı Yatırımcı İlişkileri Yöneticisi/Komite Üyesi → Kurumsal yönetim uyumunu sağlar, operasyonel veya finansal yapıya doğrudan etkisi yoktur"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "24dc64e5df739af3",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Balsu Gıda Sanayi ve Ticaret A.Ş. Yönetim Kurulu'nun 24.11.2026 tarihli kararıyla, II-17.1 sayılı Kurumsal Yönetim Tebliği hükümleri çerçevesinde Huriye Çömez Yatırımcı İlişkileri Bölümü Yöneticisi ve Kurumsal Yönetim Komitesi üyesi olarak atanmıştır. Bu bildirim rutin bir idari ve kurumsal yönetim atamasıdır.",
+      "ts": "2026-11-24T17:01:04.407333+03:00"
+    },
+    "1701954": {
+      "analysis_points": [
+        "İhraç tutarı 2.000.000.000 TL (ek satışla 3.000.000.000 TL) ve vade 118 gün → 27 Mart 2027 vadesinde ana para ve getiri ödemesi nakit akışında likidite çıkışı yaratır",
+        "Yıllık basit getiri oranı %34 → Fon kullanıcısının kısa vadeli fonlama maliyetini belirler, bilanço faiz giderlerine doğrudan yansır"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "b58e19f90cbd62ea",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Vakıf Varlık Kiralama A.Ş., Vakıf Katılım Bankası A.Ş. fon kullanıcılığında ek satışla 3.000.000.000 TL'ye kadar artırılabilecek 2.000.000.000 TL tutarında 118 gün vadeli kira sertifikası ihracı gerçekleştirmiştir. İhracın yıllık basit getiri oranı %34, dönemsel getiri oranı ise %10.9918 olarak belirlenmiştir. Talep toplama tarihleri 25-26 Kasım 2026, vade başlangıcı ise 27 Kasım 2026 olarak açıklanmıştır.",
+      "ts": "2026-11-24T17:01:04.407333+03:00"
     }
   },
-  "updated_at": "2026-11-24T16:01:06.210474+03:00",
+  "updated_at": "2026-11-24T17:01:04.407333+03:00",
   "version": 1
 }
