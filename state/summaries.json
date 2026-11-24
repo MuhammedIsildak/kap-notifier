@@ -5381,8 +5381,82 @@
       "red_flags": [],
       "summary": "GİMAT Mağazacılık Sanayi ve Ticaret A.Ş., Yönetim Kurulu'nun 23.11.2026 tarihli kararıyla Ankara Keçiören Ovacık Mahallesi'nde açılmasına karar verilen yeni şubenin tescil işlemlerinin 24.11.2026 tarihinde tamamlandığını ve Türkiye Ticaret Sicili Gazetesi'nde yayımlandığını bildirdi.",
       "ts": "2026-11-24T18:01:03.712361+03:00"
+    },
+    "1702058": {
+      "analysis_points": [
+        "Finansal tablolara, nakit akışına veya borç yapısına etki yok → analizde dikkate alınacak madde yok"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "84dbb566971ff628",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "REEDER TEKNOLOJİ SANAYİ VE TİCARET A.Ş. yatırımcı ilişkileri birimi telefon numarasını değiştirdi. Bu, finansal/operasyonel performansı etkilemeyen rutin bir idari bildirimdir.",
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702072": {
+      "analysis_points": [
+        "Yönetim kurulu bileşiminde tek üye değişimi → stratejik karar süreçlerinde belirgin etki beklenmez, yeni üyenin geçmişi/bağlantıları incelenirse değerlendirme yapılabilir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "daa7b42aba0cddd4",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "NİĞBAŞ NİĞDE BETON SANAYİ VE TİCARET A.Ş.'de Yönetim Kurulu üyesi Metin EVREN 24.11.2026 tarihinde istifa etti, yerine Merter ABAT geçici olarak atandı (ilk genel kurul onayına kadar). Rutin bir üye değişikliği, stratejik yön veya finansal profilde aniden değişiklik sinyali vermiyor.",
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702077": {
+      "analysis_points": [
+        "İş artışı tutarı 197.66 mn TL (KDV hariç) → bağlı ortaklık ciro/nakit akışına 2026-2027 arası pozitif katkı, konsolide etki pay oranına bağlı",
+        "Sözleşme bitişi 31.07.2027'ye uzatıldı → gelir görünürlüğü 6 ay uzadı, proje marjı biliniyorsa FAVÖK etkisi hesaplanabilir",
+        "Bağlı ortaklık pay oranı ve proje marjı açıklanmadı → konsolide etki net hesaplanamıyor, KAP ekine/bağlı ortaklık raporlarına bakılmalı"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "ad90f3ba7c1a5a6c",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "İNTETRA TEKNOLOJİ VE BİLİŞİM HİZMETLERİ A.Ş.'nin bağlı ortaklığı Tetra HGS Elektronik Sistemleri A.Ş.'nin 08.10.2025 tarihli proje sözleşmesinde, KDV hariç 197.658.428,63 TL tutarında iş artışı ve sözleşme süresinin 31.01.2027'den itibaren 6 ay uzatılması kararlaştırıldı. Bu gelişme bağlı ortaklığın gelir akışını uzatır ve ek iş hacmi getirir; konsolide cirowa etkisi bağlı ortaklığın payına oranla yansıyacak. Tutarı ve süre net belirlendiği için takip edilebilir bir gelişmedir.",
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702087": {
+      "analysis_points": [
+        "SPK onayı alınırsa artırım gerçekleşir → 1702099'daki fon kullanım planı devreye girer, takip edilecek sonraki adım SPK onay tarihi ve ihraç belgesi onayı",
+        "Satış fiyatı ve net fon SPK onayı sonrası kesinleşecek → 630 mn TL net fon hedefi gerçekleşmezse katılım edinim planı revize edilebilir"
+      ],
+      "category": "Sermaye Artırımı",
+      "has_document": true,
+      "hash": "988071c620693951",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "DİRİTEKS DİRİLİŞ TEKSTİL SANAYİ VE TİCARET A.Ş. tahsisli sermaye artırımı için SPK'ya başvuru yaptığını bildirdi (doğrulama kodu: c29887b9-1472-41d9-821c-ce8395210d4c). Bu, 1702099 numaralı bildirimde detaylandırılan 10.65 mn TL'den 50 mn TL'ye artırım sürecinin resmi başvuru aşamasına girdiğini gösterir.",
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702099": {
+      "analysis_points": [
+        "Net fon 630 mn TL (belgeye göre) → borç ödemesi 50 mn TL ile borçlanma ciddi oranda azalır, borç/özkaynak ve likidite oranları iyileşir",
+        "Katılım edinimleri 580 mn TL (%92) → yeni sektörlerde (polyester tekstil, sağlık) varlık edinimi beklenir, 2027'de konsolide cifte/FAVÖK etkisi hedef şirketlerin performansına bağlı",
+        "Sermaye 10.65 mn TL'den 50 mn TL'ye çıkıyor → özkaynak bazı genişler, ancak kontrol Okalin Yatırım Holding A.Ş.'ye kayar (tahsisli artırım), azınlık pay sahipleri sulanır"
+      ],
+      "category": "Sermaye Artırımı",
+      "has_document": true,
+      "hash": "32bda1aa7c1b7743",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Brüt hasılat 39.35 mn TL, net hasılat 630 mn TL olarak yazılmış → metinde ciddi tutarsızlık, hangi rakam doğru belirsiz",
+        "Şirket mevcut faaliyetini kapatmış, yeni sektörlerde deneyimsiz giriş planlıyor → yürütme riski yüksek",
+        "Satış fiyatı SPK onayı sonrası belirlenecek → net fon tutarı henüz kesin değil"
+      ],
+      "summary": "DİRİTEKS DİRİLİŞ TEKSTİL SANAYİ VE TİCARET A.Ş. 10.650.000 TL sermayeyi 50.000.000 TL'ye çıkaran tahsisli (bedelli) sermaye artırımında, paylar Okalin Yatırım Holding A.Ş.'ye tahsis edilecek. Beklenen net satış hasılatı 630.000.000 TL (brüt 39.350.000 TL — metinde tutarsızlık var, net rakam esas alındı). Fonun %92'si (580 mn TL) tekstil ve sağlık sektöründe iştirak edinimine, %8'i (50 mn TL) kamü ve ticari borçların ödenmesine ayrılacak. Şirket akrilik bazlı üretimi kapatmış, polyester bazlı üretim ve sağlık sektörüne girişi planlıyor; bu stratejik yön değiştirme ve borç temizleme hamlesidir.",
+      "ts": "2026-11-24T19:00:56.504934+03:00"
     }
   },
-  "updated_at": "2026-11-24T18:01:03.712361+03:00",
+  "updated_at": "2026-11-24T19:00:56.504934+03:00",
   "version": 1
 }

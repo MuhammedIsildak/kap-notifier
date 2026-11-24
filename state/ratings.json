@@ -514,8 +514,139 @@
         "source": "KAYATUR FİLO KİRALAMA ANONİM ŞİRKETİ.pdf"
       },
       "ts": "2026-11-24T09:00:54.764669+03:00"
+    },
+    "1702043": {
+      "hash": "58070ba13ffafa70",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a20e099beb4d42"
+        ],
+        "current": "BBB- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB- / (Durağan)",
+          "Kısa vadeli ulusal: J3 (tr) / (Durağan)"
+        ],
+        "entity": "PARSAN MAKİNA PARÇALARI SANAYİİ A.Ş.",
+        "outlook": "Stabil",
+        "previous": "BBB (tr)",
+        "red_flags": [
+          "Artan borçlulukla beraber Net Borç/FAVÖK ve FAVÖK/Net Ödenen Faiz çarpanlarında bozulmanın sürdürülmesi Esas itibarıyla yukarıdaki hususlar kapsamında \"PARSAN MAKİNA PARÇALARI SANAYİİ A.Ş.\" nin Uzun Vadeli Ulusal Kurum Kredi Rating Notu 'BB"
+        ],
+        "source": "PARSAN MAKİNA PARÇALARI SANAYİİ AŞ.pdf"
+      },
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702044": {
+      "hash": "ef303a1ea7eda8f0",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a20e082c6b4d11"
+        ],
+        "current": "AA+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "VAKKO TEKSTİL VE HAZIR GİYİM SANAYİ İŞLETMELERİ ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "",
+        "red_flags": [
+          "2025 yılında faaliyetlerden elde edilen nakit akışı marjının korunmasının yatırım harcamaları ve temettü ödemelerini desteklemesi."
+        ],
+        "source": "VAKKO TEKSTİL VE HAZIR GİYİM SANAYİ İŞLETMELERİ ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702045": {
+      "hash": "09928aa76872b06f",
+      "info": {
+        "action": "Temerrüt",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a20e06a9c74ce2"
+        ],
+        "current": "D (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: D D",
+          "Kısa vadeli ulusal: D (tr) D (tr)"
+        ],
+        "entity": "TMKŞ Fair Finansman İkinci Varlık Finansmanı Fonu",
+        "outlook": "Temerrüt",
+        "previous": "CCC (tr)",
+        "red_flags": [],
+        "source": "TMKŞ Fair Finansman İkinci Varlık Finansmanı Fonu.pdf"
+      },
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702046": {
+      "hash": "8615bd5ead531347",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a20e04c06e4c88"
+        ],
+        "current": "AA+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "MARMARİS ALTINYUNUS TURİSTİK TESİSLER ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "",
+        "red_flags": [
+          "Devam eden inşaat süreci nedeniyle, analiz edilen dönemler boyunca negatif devam eden faaliyetlerden serbest nakit akışı göstergesi.",
+          "2026 yılının ilk 9 aylık dönemindeki azalmaya karşılık makul düzeydeki nakit ve nakit benzerleri tutarının likidite yönetimini desteklemesi."
+        ],
+        "source": "MARMARİS ALTINYUNUS TURİSTİK TESİSLER ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702047": {
+      "hash": "ebe3e564af06486d",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a20e0b08ec4d83"
+        ],
+        "current": "BBB- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB- / (Durağan)",
+          "Kısa vadeli ulusal: J3 (tr) / (Durağan)"
+        ],
+        "entity": "DÖKTAŞ DÖKÜMCÜLÜK TİCARET VE SANAYİ ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "BBB (tr)",
+        "red_flags": [],
+        "source": "DÖKTAŞ DÖKÜMCÜLÜK TİCARET VE SANAYİ ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702057": {
+      "hash": "eef50fe77a3f831c",
+      "info": {
+        "action": "—",
+        "agency": "JCR Avrasya",
+        "attachments": [],
+        "current": "AA+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan Görünüm)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan Görünüm)"
+        ],
+        "entity": "VAKKO TEKSTİL VE HAZIR GİYİM SANAYİ İŞLETMELERİ A.Ş.",
+        "outlook": "Stabil",
+        "previous": "",
+        "red_flags": [],
+        "source": ""
+      },
+      "ts": "2026-11-24T19:00:56.504934+03:00"
     }
   },
-  "updated_at": "2026-11-24T18:01:03.712361+03:00",
+  "updated_at": "2026-11-24T19:00:56.504934+03:00",
   "version": 1
 }
