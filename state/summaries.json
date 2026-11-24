@@ -5275,8 +5275,38 @@
       "red_flags": [],
       "summary": "KT Kira Sertifikaları Varlık Kiralama A.Ş., kira sertifikası ihracına ilişkin yönetim kurulu kararı alarak ihraç tavanı başvurusunda bulunmuştur. Bildirimde ihraç tutarı, vadesi veya tavan limiti gibi finansal büyüklüklere yer verilmemiştir. Rutin bir sermaye piyasası aracı ihraç hazırlığı niteliğinde olduğundan şirketin mevcut borç yapısında anlık bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-24T14:01:00.189932+03:00"
+    },
+    "1701829": {
+      "analysis_points": [
+        "Sadece katılımcı listesi verilmiş → gündem/karar metni KAP'tan ayrı takip edilmeli, yönetim/statü değişikliği yoksa etki sıfır",
+        "Ana ortak yapısı (Koç Holding + Ford Deutschland) değişmemiş → kontrol yapısında değişiklik sinyali yok",
+        "Serbest dolaşımdaki pay oranı bu listeden hesaplanamaz → likidite/piyasa etkisi için ayrı bildirim beklenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "466dbdea16121e6b",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "Ford Otomotiv Sanayi A.Ş. 24.11.2026 tarihli Olağanüstü Genel Kurul toplantısı için hazır bulunan pay sahiplerinin (120+ kurumsal/bireysel) listesi bildirilmiştir. Listede Koç Holding, Ford Deutschland, Vehbi Koç Vakfı ve çok sayıda yabancı portföy fonu (Vanguard, BlackRock, iShares, vb.) yer almaktadır. Bildirimde gündem maddeleri, alınan kararlar veya yönetim değişikliği gibi materyal bir içerik bulunmamaktadır.",
+      "ts": "2026-11-24T16:01:06.210474+03:00"
+    },
+    "1701878": {
+      "analysis_points": [
+        "Yıllık kapasite 19.97 mn litreye çıkarıldı → 2024 cirosu ~12.5 mrd TL bazında %10-15'lik potansiyel artış, fiyat/marj netleşince 2027 FAVÖK etkisi ölçülebilir",
+        "Melas entegre kullanımı → hammadde maliyeti dışa bağımlılığı azaltır, brüt marj %2-3 puan iyileşebilir, 2027 Q1 mali tablolarda görülecek",
+        "İhracat lisansı/dağıtım belgesi alındı → yurt dışı satışlar 2027 H1'de devreye girerse TL bazlı ciro hedji doğal olarak oluşur"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "8037179dc50333cc",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "BOR ŞEKER A.Ş., Etil Alkol Üretim Tesisi yatırımında yasal izin süreçlerini tamamlayarak 24.11.2026 tarihinde üretim ve ticari satışa başlamıştır. Tesis yıllık üretim kapasitesi 5.524.050 litreden 19.972.050 litreye (yaklaşık 3,6 kat) yükseltilmiştir. Yatırım, şeker üretimi yan ürünü melasın değerlendirilmesiyle entegre üretim yapısını güçlendirmeyi ve yeni gelir kaynakları oluşturmayı hedeflemektedir.",
+      "ts": "2026-11-24T16:01:06.210474+03:00"
     }
   },
-  "updated_at": "2026-11-24T14:01:00.189932+03:00",
+  "updated_at": "2026-11-24T16:01:06.210474+03:00",
   "version": 1
 }
