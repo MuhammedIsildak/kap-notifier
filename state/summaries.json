@@ -5245,8 +5245,24 @@
       "red_flags": [],
       "summary": "Türk Telekomünikasyon A.Ş.'de Network Genel Müdür Yardımcısı olarak görev yapan Zafer Orhan görevinden ayrılmıştır. Kritik bir operasyonel birimde gerçekleşen bu ayrılış, şirketin teknik operasyonları ve stratejik altyapı projeleri açısından izlenmesi gereken bir yönetim değişikliğidir. Yeni atamanın ne zaman yapılacağı henüz duyurulmamıştır.",
       "ts": "2026-11-24T10:00:55.405234+03:00"
+    },
+    "1701743": {
+      "analysis_points": [
+        "Sözleşme tutarı 1.421.200 USD → Döviz ciroya ve operasyonel kârlılığa katkı sağlar, tahsilat vadeleri izlenmeli",
+        "New York borsası vadeli kontrat fiyatlarına endeksli yapı → Fiyat riskinin nasıl hedge edildiği finansal rapordan kontrol edilmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "52ecdf19227863e4",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Alıcı opsiyonlu (buyer's call) yapı piyasa fiyat dalgalanmalarına karşı marj baskısı yaratabilir"
+      ],
+      "summary": "DCT Trading Dış Ticaret A.Ş., Brezilya menşeli pamuklar için bir yurt içi alıcı ile 1.421.200 USD tutarında satış sözleşmesi imzalamıştır. İşlemde New York borsasındaki pamuk vadeli kontrat fiyatları ve alıcı opsiyonlu (buyer's call) yapı baz alınmıştır. Bu büyüklükteki bir sözleşme, şirketin döviz cinsinden ticari faaliyet hacmini ve kısa vadeli nakit akışını doğrudan etkileyecektir.",
+      "ts": "2026-11-24T12:00:59.107129+03:00"
     }
   },
-  "updated_at": "2026-11-24T10:00:55.405234+03:00",
+  "updated_at": "2026-11-24T12:00:59.107129+03:00",
   "version": 1
 }
