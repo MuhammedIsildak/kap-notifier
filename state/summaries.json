@@ -5261,8 +5261,22 @@
       ],
       "summary": "DCT Trading Dış Ticaret A.Ş., Brezilya menşeli pamuklar için bir yurt içi alıcı ile 1.421.200 USD tutarında satış sözleşmesi imzalamıştır. İşlemde New York borsasındaki pamuk vadeli kontrat fiyatları ve alıcı opsiyonlu (buyer's call) yapı baz alınmıştır. Bu büyüklükteki bir sözleşme, şirketin döviz cinsinden ticari faaliyet hacmini ve kısa vadeli nakit akışını doğrudan etkileyecektir.",
       "ts": "2026-11-24T12:00:59.107129+03:00"
+    },
+    "1701786": {
+      "analysis_points": [
+        "İhraç tavanı tutarı açıklanmadı → onaylanan limit belli olduğunda bilançodaki borçlanma tavanı ile karşılaştırılmalı",
+        "İhracın vade ve maliyet detayları verilmedi → gerçekleşme durumunda şirketin ortalama fonlama maliyetine etkisi KAP ekinden incelenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "6636ede5fd19a72e",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "KT Kira Sertifikaları Varlık Kiralama A.Ş., kira sertifikası ihracına ilişkin yönetim kurulu kararı alarak ihraç tavanı başvurusunda bulunmuştur. Bildirimde ihraç tutarı, vadesi veya tavan limiti gibi finansal büyüklüklere yer verilmemiştir. Rutin bir sermaye piyasası aracı ihraç hazırlığı niteliğinde olduğundan şirketin mevcut borç yapısında anlık bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-24T14:01:00.189932+03:00"
     }
   },
-  "updated_at": "2026-11-24T12:00:59.107129+03:00",
+  "updated_at": "2026-11-24T14:01:00.189932+03:00",
   "version": 1
 }
