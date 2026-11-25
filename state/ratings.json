@@ -645,8 +645,119 @@
         "source": ""
       },
       "ts": "2026-11-24T19:00:56.504934+03:00"
+    },
+    "1702670": {
+      "hash": "472a933389bd46c4",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a21332b8016ab6"
+        ],
+        "current": "AA (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "TÜRK TRAKTÖR VE ZİRAAT MAKİNELERİ ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "",
+        "red_flags": [
+          "İncelenen dönemlerde Şirket’in genel likidite pozisyonunu destekleyen yeterli likidite ve nakit akışı yönetimi.",
+          "2026 yılı 9 aylık dönemde net finansal borçta kısmi gerileme yaşanmasına rağmen FAVÖK'teki daralmanın devam etmesi nedeniyle kaldıraç göstergelerinin bozulması."
+        ],
+        "source": "TÜRK TRAKTÖR VE ZİRAAT MAKİNELERİ ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702671": {
+      "hash": "dcabd7f67f006971",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a21331b1826a89"
+        ],
+        "current": "BBB+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "KOLEKSİYON MOBİLYA SANAYİ ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "A+ (tr)",
+        "red_flags": [
+          "2026 yılı ilk 9 aylık dönemde negatif nakit akış metriklerinin likidite yönetimini baskılaması."
+        ],
+        "source": "KOLEKSİYON MOBİLYA SANAYİ ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702672": {
+      "hash": "a57ee35d7676044b",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a2133532626b52"
+        ],
+        "current": "BBB (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "AZTEK TEKNOLOJİ ÜRÜNLERİ TİCARET ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "A- (tr)",
+        "red_flags": [],
+        "source": "AZTEK TEKNOLOJİ ÜRÜNLERİ TİCARET ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702673": {
+      "hash": "c176277e5eacec14",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328da1fcbb9e01a21334027e6aeb"
+        ],
+        "current": "AA- (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "ASTOR ENERJİ ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "AA+ (tr)",
+        "red_flags": [
+          "Devam eden dikey entegrasyon yatırımlarıyla kısmen hafifletilmesine rağmen, kritik transformatör bileşenlerine yönelik artan küresel talebin yol açabileceği olası tedarik zinciri darboğazları."
+        ],
+        "source": "ASTOR ENERJİ ANONİM ŞİRKETİ.pdf"
+      },
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702714": {
+      "hash": "4c8db12a3de8972f",
+      "info": {
+        "action": "—",
+        "agency": "Turkrating",
+        "attachments": [
+          "4028328da1fcbb9e01a21364a13573b0"
+        ],
+        "current": "TR BBB",
+        "details": [
+          "Kısa vadeli ulusal: TR A2"
+        ],
+        "entity": "Koray Gayrimenkul Yatırım Ortaklığı A.Ş.",
+        "outlook": "Pozitif",
+        "previous": "",
+        "red_flags": [],
+        "source": "Derecelendirme Sözleşmesinin Sona Ermesi Duyuru 25112026.pdf"
+      },
+      "ts": "2026-11-25T19:01:07.811035+03:00"
     }
   },
-  "updated_at": "2026-11-25T18:01:01.630934+03:00",
+  "updated_at": "2026-11-25T19:01:07.811035+03:00",
   "version": 1
 }

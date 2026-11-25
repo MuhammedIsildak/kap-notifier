@@ -5860,8 +5860,83 @@
       "red_flags": [],
       "summary": "TRABZON LİMAN İŞLETMECİLİĞİ A.Ş., 2025 yılı Olağan Genel Kurul Toplantı Sonucunu açıklamıştır. Belge içeriğinde detaylı finansal veya karara ilişkin metin bulunmamakla birlikte genel kurul süreci tamamlanmıştır.",
       "ts": "2026-11-25T18:01:01.630934+03:00"
+    },
+    "1702677": {
+      "analysis_points": [
+        "Nakit çıkışı ~10.1-10.5 mld TL (2026 içinde) → şirket solo nakit pozisyonu ve serbest nakit akışı (FCF) bu tutar kadar düşer, 2026 sonu likidite tamponu izlenmeli",
+        "Konsolide tablolarda etki yok → borç/FAVÖK, net borç/FAVÖK gibi konsolide metrikler değişmez, solo bazlı kredi metrikleri bozulabilir",
+        "Ödeme takvimi '2026 yılı içinde' → çeyreklik nakit akışı projeksiyonlarında Q4 2026'a doğru büyük çıkış planlanmalı"
+      ],
+      "category": "Sermaye Artırımı",
+      "has_document": true,
+      "hash": "3ffde980f7d4a66c",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Nakit çıkışı ~10.1-10.5 mld TL (2026 içinde) → şirket tek başına nakit pozisyonunu ve serbest nakit akışını ciddi oranda zorlar"
+      ],
+      "summary": "Arçelik A.Ş., tam malikiyetindeki Hollanda bağlı ortaklığı Beko B.V.'nin finansman ihtiyacı için 273.078.736,32 EUR (yaklaşık 10.1-10.5 mld TL) nakdi sermaye artırımına 2026 yılı içinde katılacağını kararlaştırdı. İşlemin konsolide finansal tablolarda etkisi olmayacak.",
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702682": {
+      "analysis_points": [
+        "Nakit girişi 269.76 mn TL (temettü) → 31.12.2026'ya kadar serbest nakit pozisyonunu artırır",
+        "Nakit çıkışı 83.97 mn TL (sermaye artırımı) → net nakit etkisi +185.79 mn TL, 2026 sonu nakit pozisyonuna yansıyacaktır",
+        "Temettü ve sermaye artırımı takvimi 31.12.2026 → bu tarihe kadar gerçekleşmezse nakit akışı tahminleri revize edilmeli"
+      ],
+      "category": "Temettü",
+      "has_document": true,
+      "hash": "a478413862d888b9",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Nakit çıkışı 83.97 mn TL (sermaye artırımı) → 31.12.2026'ya kadar likidite planlaması gerektirir"
+      ],
+      "summary": "PC İletişim ve Medya Hizmetleri A.Ş., 5 bağlı ortaklığından 2025 yılı kar dağıtımı kapsamında toplam 269.758.396,05 TL temettü alacağını ve 4 bağlı ortaklığın sermaye artırımlarına nakden 83.971.158,72 TL katılacağını açıkladı. İşlemler 31 Aralık 2026 tarihine kadar tamamlanacak.",
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702685": {
+      "analysis_points": [
+        "Belge metni sağlanmamış → artırım tutarı, kaynak ve yeni sermaye yapısı belirsiz, KAP ekine bakılmalı",
+        "Bedelsiz artırım → hisse başına değer ve kâr payı dilüte olur, paydaşlar için hisse değeri etkisi hesaplanmalı",
+        "Sermaye artırım kayıt tarihi ve pay dağıtım oranı belli değil → teknik takip için tarihler netleşene kadar pozisyon etkisi belirsiz"
+      ],
+      "category": "Sermaye Artırımı",
+      "has_document": false,
+      "hash": "20bc311caa2c07b7",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "Lydia Yeşil Enerji Kaynakları A.Ş., bedelsiz sermaye artırımı kararı aldığını duyurdu. Belge metni sağlanmadığı için artırım tutarı, kaynak (kâr/ayar/rezerv) ve yeni sermaye yapısı belirlenemiyor.",
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702695": {
+      "analysis_points": [
+        "Belgede somut finansal veri yok → etki hesaplanamıyor, sunum detayları için KAP ekine bakılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "a791ce0a3a18ac58",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "İnveo Yatırım Holding A.Ş., yatırımcı sunumunu yayımladığını duyurdu. Belgede tutar, tarih veya somut finansal bilgi yer almadığı için analist için maddi bir etki belirlenemiyor.",
+      "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702699": {
+      "analysis_points": [
+        "Belgede somut finansal veri yok → etki hesaplanamıyor, sunum detayları için KAP ekine bakılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "890aac2a987606d3",
+      "materiality": "low",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [],
+      "summary": "Gedik Yatırım Menkul Değerler A.Ş., yatırımcı sunumunu yayımladığını duyurdu. Belgede tutar, tarih veya somut finansal bilgi yer almadığı için analist için maddi bir etki belirlenemiyor.",
+      "ts": "2026-11-25T19:01:07.811035+03:00"
     }
   },
-  "updated_at": "2026-11-25T18:01:01.630934+03:00",
+  "updated_at": "2026-11-25T19:01:07.811035+03:00",
   "version": 1
 }
