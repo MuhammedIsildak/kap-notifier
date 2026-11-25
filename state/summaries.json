@@ -5578,8 +5578,22 @@
       "red_flags": [],
       "summary": "Halk Finansal Kiralama A.Ş., bono ve/veya tahvil ihracına ilişkin Sermaye Piyasası Kurulu (SPK) onayını 25.11.2026 tarihinde duyurmuştur. Bu ihraç tavanı, şirketin borçlanma araçları yoluyla likidite temin etmesine ve bilançosundaki fonlama yapısını çeşitlendirmesine olanak tanır. İşlemin maliyet ve vadesi henüz netleşmemiş olup, şirketin finansman giderleri ve vade uyumu açısından izlenmesi gerekmektedir.",
       "ts": "2026-11-25T13:01:00.159120+03:00"
+    },
+    "1702327": {
+      "analysis_points": [
+        "Yer teslimi yapıldı, sözleşme bedeli açıklanmadı → proje maliyeti ve taahhüt tutarı bilinmiyor, KAP ekine veya ihale ilanına bakılmalı",
+        "İnşaat işi başladı → nakit çıkış takvimi 2026 sonu ve 2027 bütçe nakit akışına işlenmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "24f6528fac3d9aa4",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., İstanbul Esenler Kuzey Rezerv Yapı Alanı 2. Etap Genel Altyapı ve Yol İnşaatı İşi için yüklenici ATEŞ İnş. San. ve Tic. A.Ş.'ye 23.11.2026 tarihinde yer teslimi yapmıştır. Bu bildirim proje faaliyetlerinin takvime uygun ilerlediğini göstermekle birlikte, sözleşme bedeli veya toplam maliyet bilgisi belgede yer almamaktadır. Operasyonel akış açısından rutin bir aşama olup, doğrudan finansal tablo etkisi yer teslim tutarı açıklanmadığı için hesaplanamamaktadır.",
+      "ts": "2026-11-25T14:00:55.124224+03:00"
     }
   },
-  "updated_at": "2026-11-25T13:01:00.159120+03:00",
+  "updated_at": "2026-11-25T14:00:55.124224+03:00",
   "version": 1
 }
