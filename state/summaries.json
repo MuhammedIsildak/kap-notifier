@@ -5793,8 +5793,75 @@
       ],
       "summary": "Alkım Kağıt, sermayeyi 735,00 Mn TL'den 1.010,625 Mn TL'ye (+%37,5) artırmıştır. Artışın 275,625 Mn TL'lik kısmı nakden ve muvazaadan arı ödenmiş; 551,250 Mn TL'lik kısmı Sermaye Düzeltmesi Olumlu Farklarından karşılanarak bedelsiz pay dağıtımı yapılmıştır. Yeni sermaye tamamen ödenmiştir.",
       "ts": "2026-11-25T17:01:06.342294+03:00"
+    },
+    "1702555": {
+      "analysis_points": [
+        "Sermaye 313.000.000 TL'ye çıktı → Özkaynak tabanı güçlenirken, ortakların nakit taahhütleri şirketin likiditesine doğrudan katkı sağladı",
+        "Ata Holding A.Ş. 99.938.966,43 TL nakit taahhüt etti → Hakim ortağın sermaye desteğinin sürekliliği izlenmelidir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "5f48462c05afbec8",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "ATA YATIRIM MENKUL KIYMETLER A.Ş., sermayesini 244.421.460 TL artırarak 313.000.000 TL'ye yükseltmiştir. Artırılan tutarın 99.938.966,43 TL'lik kısmı Ata Holding A.Ş., 61.033.57 TL'lik kısmı ise Seniha Ece Kurdoğlu tarafından nakden taahhüt edilip ödenmiştir; bu işlem şirketin özkaynak tabanını güçlendirmektedir.",
+      "ts": "2026-11-25T18:01:01.630934+03:00"
+    },
+    "1702559": {
+      "analysis_points": [
+        "Geçmiş yıl karlarından kar dağıtımı 31.12.2026'ya kadar tamamlanacak → Şirketin serbest nakit akışı ve likidite pozisyonu bu çıkıştan etkilenecektir",
+        "TFRS karı 3.960.449.896 TL, Yasal kayıt karı 1.472.966.521 TL → Dağıtılacak net nakit tutarı ve ödeme takvimi takip edilmelidir"
+      ],
+      "category": "Temettü",
+      "has_document": true,
+      "hash": "d91e663c707ed1b6",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "BOR ŞEKER A.Ş. 25.11.2026 tarihli Olağanüstü Genel Kurulunda, TFRS'ye uygun finansal tablolarında 3.960.449.896 TL, yasal kayıtlarında ise 1.472.966.521 TL olan geçmiş yıl karlarından karşılanmak üzere kar dağıtımı yapılmasını onaylamıştır. Kar dağıtımının Yönetim Kurulu tarafından belirlenecek bir tarihte 31.12.2026 tarihine kadar tamamlanması kararlaştırılmıştır.",
+      "ts": "2026-11-25T18:01:01.630934+03:00"
+    },
+    "1702568": {
+      "analysis_points": [
+        "Pay alım tutarı 1.250.002 TL ve oran %11,0780 oldu → Hakim ortağın şirkete desteğini gösterir ancak operasyonel etki yaratmaz"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "4d2ff6e384ef0544",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "GÜRİŞ İnşaat ve Mühendislik A.Ş., 25.11.2026 tarihinde Borsa İstanbul'da 7,93 TL ortalama fiyattan toplam 1.250.002 TL tutarında 157.540 adet MOGAN Enerji Yatırım Holding A.Ş. payı almıştır. Bu işlemle birlikte GÜRİŞ'in MOGAN sermayesindeki payı %11,0780'e ulaşmıştır.",
+      "ts": "2026-11-25T18:01:01.630934+03:00"
+    },
+    "1702620": {
+      "analysis_points": [
+        "Rutin idari bildirim → Şirketin finansal yapısına veya nakit akışına doğrudan etkisi bulunmuyor"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "c5e38b706a737fc0",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "NET GLOBAL ENDÜSTRİYEL YATIRIMLAR A.Ş. tarafından Yatırımcı İlişkileri Yöneticisi atamasına ilişkin güncelleme veya düzeltme yapılmadığı bildirilmiştir. Bu bildirim rutin bir idari işlem niteliğinde olup şirketin finansal yapısında veya operasyonlarında doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-25T18:01:01.630934+03:00"
+    },
+    "1702640": {
+      "analysis_points": [
+        "Genel kurul yapıldı → Karar metninde detay bulunmadığı için KAP ekleri incelenmelidir"
+      ],
+      "category": "Genel kurul",
+      "has_document": true,
+      "hash": "6c6a5c34a5dad0f5",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "TRABZON LİMAN İŞLETMECİLİĞİ A.Ş., 2025 yılı Olağan Genel Kurul Toplantı Sonucunu açıklamıştır. Belge içeriğinde detaylı finansal veya karara ilişkin metin bulunmamakla birlikte genel kurul süreci tamamlanmıştır.",
+      "ts": "2026-11-25T18:01:01.630934+03:00"
     }
   },
-  "updated_at": "2026-11-25T17:01:06.342294+03:00",
+  "updated_at": "2026-11-25T18:01:01.630934+03:00",
   "version": 1
 }
