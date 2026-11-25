@@ -756,8 +756,31 @@
         "source": "Derecelendirme Sözleşmesinin Sona Ermesi Duyuru 25112026.pdf"
       },
       "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702781": {
+      "hash": "e11a4a47aabdba05",
+      "info": {
+        "action": "Not indirimi",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca1fcb99301a213ad92d27f08"
+        ],
+        "current": "BBB+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J2 (tr) / (Durağan)"
+        ],
+        "entity": "KOLEKSİYON MOBİLYA SANAYİ ANONİM ŞİRKETİ",
+        "outlook": "Negatif",
+        "previous": "A+ (tr)",
+        "red_flags": [
+          "2026 yılı ilk 9 aylık dönemde negatif nakit akış metriklerinin likidite yönetimini baskılaması."
+        ],
+        "source": "Koleksiyon Mobilya Sanayi A.Ş._2026.pdf"
+      },
+      "ts": "2026-11-25T21:00:59.696606+03:00"
     }
   },
-  "updated_at": "2026-11-25T20:01:01.903944+03:00",
+  "updated_at": "2026-11-25T21:00:59.696606+03:00",
   "version": 1
 }
