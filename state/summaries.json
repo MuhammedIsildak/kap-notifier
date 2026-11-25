@@ -5609,8 +5609,92 @@
       ],
       "summary": "DCT Trading Dış Ticaret A.Ş., 25.11.2026 tarihinde stoklarındaki Türk pamukları için iki ayrı yurt içi alıcı ile toplam 28.779.000 TL tutarında satış sözleşmesi imzalamıştır. Bu gelişme, şirketin stok eritme kapasitesini ve kısa vadeli operasyonel nakit girişini doğrudan etkileyecektir. İşlemin büyüklüğü ve alıcıların niteliği şirketin finansal tablolarında izlenmelidir.",
       "ts": "2026-11-25T15:00:55.960063+03:00"
+    },
+    "1702417": {
+      "analysis_points": [
+        "Genel kurul gündemi ve alınan kararların içeriği belirtilmedi → Şirketin operasyonel veya finansal yapısında bir değişiklik olup olmadığı belirsiz"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "1a344447f218f0c4",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "KT Sukuk Varlık Kiralama A.Ş.'nin 23.11.2026 tarihli Olağanüstü Genel Kurul kararları tescil edilerek Türkiye Ticaret Sicil Gazetesi'nde ilan edildi. Söz konusu işlem rutin bir kurumsal tescil sürecidir.",
+      "ts": "2026-11-25T16:00:59.000875+03:00"
+    },
+    "1702432": {
+      "analysis_points": [
+        "Yatırımın geri dönüş süresi (ROI) belirtilmedi → Nakit akışına katkısı izlenmeli",
+        "Lisans genişletme ile ilgili altyapı kurulum takvimi verilmedi → 2027 yılı operasyonel hedefleri üzerindeki etkisi belirsiz"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "aedaba46502348e9",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Enerya Enerji A.Ş.'nin bağlı ortaklığı Enerya Kapadokya Gaz Dağıtım A.Ş.'nin Niğde ili Çukurkuyu beldesine yönelik lisans genişletme başvurusu EPDK tarafından onaylandı. Şirketin faaliyet alanının genişlemesi, uzun vadeli doğal gaz dağıtım hacmini destekleyici bir unsurdur.",
+      "ts": "2026-11-25T16:00:59.000875+03:00"
+    },
+    "1702433": {
+      "analysis_points": [
+        "Lisans genişletme tutarı ve yatırım maliyeti açıklanmadı → CAPEX bütçesine etkisi belirsiz",
+        "Çukurkuyu beldesindeki potansiyel abone sayısı belirtilmedi → 2027-2028 dönemindeki gelir artış projeksiyonu hesaplanamıyor"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "4709a8b2f0b25a8f",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Ahlatcı Doğal Gaz'ın dolaylı bağlı ortaklığı Enerya Kapadokya Gaz Dağıtım A.Ş.'nin Niğde ili Çukurkuyu beldesini kapsayacak şekilde lisans genişletme başvurusu EPDK tarafından onaylandı. Bu gelişme, şirketin operasyonel dağıtım ağının genişlemesi ve yeni abone potansiyeli anlamına gelmektedir.",
+      "ts": "2026-11-25T16:00:59.000875+03:00"
+    },
+    "1702448": {
+      "analysis_points": [
+        "Genel kurul toplantı tutanağında finansal veri veya taahhüt yer almıyor → bilanço ve nakit akışına doğrudan etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "63144215fdb71890",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Alkim Kağıt Sanayi ve Ticaret A.Ş., 25 Kasım 2026 tarihinde Olağanüstü Genel Kurul toplantısını gerçekleştirmiştir. Toplantıda hazır bulunanlar listesi ve temsilci bilgileri açıklanmıştır. Şirketin finansal yapısını veya operasyonlarını doğrudan etkileyen sermaye, temettü veya borçlanma kararı bildirilmemiştir.",
+      "ts": "2026-11-25T16:00:59.000875+03:00"
+    },
+    "1702465": {
+      "analysis_points": [
+        "İçerik bulunmuyor → Analiz yapılamaz"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "afca385168ddeef9",
+      "materiality": "low",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Kamuyu Aydınlatma Platformu üzerinden yapılan bu bildirim herhangi bir içerik veya somut bilgi içermemektedir.",
+      "ts": "2026-11-25T16:00:59.000875+03:00"
+    },
+    "1702472": {
+      "analysis_points": [
+        "İhraç tutarı ve faiz oranı açıklanmadı → Finansman maliyeti ve borç çevirme rasyosu üzerindeki etkisi belirsiz",
+        "İhraç edilecek borçlanma aracının vadesi 12 ayın altındaysa → Kısa vadeli yükümlülükler artacak, likidite rasyoları yeniden hesaplanmalı"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "4686211fafcf0c24",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "İhraç tutarı ve vadesi açıklanmadı",
+        "Mevcut borçluluk rasyoları üzerindeki etkisi belirsiz"
+      ],
+      "summary": "Dardanel Önentaş Gıda Sanayi A.Ş., yurtiçinde borçlanma aracı ihraç edilmesine yönelik karar aldığını duyurdu. Şirketin finansman ihtiyacını karşılamak amacıyla sermaye piyasası araçlarına yönelmesi, borç yapısı ve vade yönetimi açısından önem taşımaktadır.",
+      "ts": "2026-11-25T16:00:59.000875+03:00"
     }
   },
-  "updated_at": "2026-11-25T15:00:55.960063+03:00",
+  "updated_at": "2026-11-25T16:00:59.000875+03:00",
   "version": 1
 }
