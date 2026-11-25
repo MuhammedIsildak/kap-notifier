@@ -5935,8 +5935,80 @@
       "red_flags": [],
       "summary": "Gedik Yatırım Menkul Değerler A.Ş., yatırımcı sunumunu yayımladığını duyurdu. Belgede tutar, tarih veya somut finansal bilgi yer almadığı için analist için maddi bir etki belirlenemiyor.",
       "ts": "2026-11-25T19:01:07.811035+03:00"
+    },
+    "1702723": {
+      "analysis_points": [
+        "Not 3 iş günü için Caa3-PD/LD olarak revize edildi, sonrasında Caa3-PD olarak korunacak → kısa vadeli temerrüt sinyali giderilmiş ancak Caa3 seviyesi değişmemiştir",
+        "Önceki açıklama 28.10.2026 tarihli, güncelleme 25.11.2026 tarihli → yaklaşık 1 ay içinde not değişikliği bildirimi yapılmış, gelişmenin takip sıklığı yüksek",
+        "Belgede aksiyon (izleme/askıya alma), görünüm (outlook) ve temerrütün nedeni (uzun vadeli borç vadesi, likidite vb.) belirtilmemiş → Moody's raporunun tamamı ve şirketin vade yapısı incelenmeli"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "8793af5eec3cb6bb",
+      "materiality": "critical",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [
+        "Moody's notu Caa3-PD'den Caa3-PD/LD'ye çekildi → şirketin temerrüt seviyesine (LD) indirildiği bir dönem yaşandığına işaret eder",
+        "Notun yalnızca 3 iş günü için geçici olarak LD olması → kredi görünümündeki olumsuzluk kalıcı olsa da kısa vadede düzeltildi",
+        "Caa3 seviyesi spekülatif/çok yüksek kredi riski kategorisindedir → refinansman koşulları ve borç piyasasına erişim maliyeti üzerinde baskı oluşturur"
+      ],
+      "summary": "Moody's, Zorlu Enerji Elektrik Üretim A.Ş.'nin PDR notunu 'sadece 3 iş günü için' Caa3-PD'den Caa3-PD/LD'ye revize etmiştir; 3 iş günü sonrasında notun Caa3-PD olarak korunacağı belirtilmiştir. Bu, 28.10.2026 tarihli önceki açıklamaya güncelleme olarak yapılmıştır. Caa3-PD/LD, kredi notunun temerrüt seviyesine (LD) indirildiğini gösterir; 3 iş günlük süre, notun geçici olarak temerrüt seviyesine çekildiği ve ardından eski seviyeye döndürüldüğü anlamına gelir.",
+      "ts": "2026-11-25T20:01:01.903944+03:00"
+    },
+    "1702724": {
+      "analysis_points": [
+        "Başvuru 10.09.2026'da yapıldı, 24.11.2026'da işlemden kaldırıldı → süreç yaklaşık 2,5 ay sonunda sonuçlandı ve sermaye artırımı gerçekleşmedi",
+        "SPK kararı 19.11.2026 tarihli 85/2034 sayılı karara dayanıyor → ret gerekçesi açıklanmadığı için sermaye ihtiyacının alternatif yolla karşılanıp karşılanmayacağı netleşmedi",
+        "İhraç edilecek pay adedi ve satış fiyatı belgede belirtilmemiş → mevcut hissedarların sulandırılma etkisi hesaplanamıyor, KAP ekine ve yeni finansman açıklamalarına bakılmalı"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "1becf5308fc82228",
+      "materiality": "high",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [
+        "Tahsisli sermaye artırımı başvurusunun SPK tarafından işlemden kaldırılması → planlanan özkaynak/finansman kaynağı gerçekleşmedi",
+        "Artırım tutarı 'ilgili mevzuat uyarınca belirlenecek pay satış fiyatına göre hesaplanacak tutara kadar' ifadesiyle belirsiz bırakılmış → ihraç büyüklüğü ve rüçhan etkisi ölçülemiyor",
+        "50.000.000 TL sermaye tavanı içinde 13.336.879 TL çıkarılmış sermaye → kullanılabilir tavanın büyük bölümü kullanılmadan kalmış durumda"
+      ],
+      "summary": "MMC Sanayi ve Ticari Yatırımlar A.Ş.'nin 13.336.879 TL çıkarılmış sermayesinin 50.000.000 TL kayıtlı sermaye tavanı içinde artırılması ve Ümit Gümüş'e tahsisli satış amacıyla 10.09.2026'da SPK'ya yapılan başvuru, Kurulun 19.11.2026 tarihli 85/2034 sayılı kararı uyarınca 24.11.2026'da işlemden kaldırılmıştır. SPK'nın Çalışma Usul ve Esasları Hakkında Yönetmelik'in 21'inci maddesi kapsamında yapılan bu işlem, tahsisli sermaye artırımının gerçekleşmeyeceği anlamına gelir. Şirketin özkaynak yapısı ve finansman ihtiyacının nasıl karşılanacağı bu aşamada açık değildir.",
+      "ts": "2026-11-25T20:01:01.903944+03:00"
+    },
+    "1702730": {
+      "analysis_points": [
+        "Kayyım kararı 24.11.2026 tarihli ve 2026/11489 D. İş sayılı → karar tarihi ile bildirim tarihi arasında 1 gün geçmiş, süreç hızlı ilerlemiş",
+        "Yönetim Kurulu'nun 7 üyeden oluşması ve tamamının Fon Kurulu tarafından atanması → bağımsız yönetim ve iç kontrol yapısının yeniden kurulması gerekecek",
+        "Kararın dayanağı olan uyuşmazlık tutarı, şirketin varlıkları üzerindeki etkisi ve kayyımın kaldırılma süreci belgede belirtilmemiş → bilanço ve faaliyet etkisi ölçülemiyor, TMSF bildirimleri ve mahkeme dosyası incelenmeli"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "66fc53e8c79b5fe7",
+      "materiality": "critical",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [
+        "TMSF'nin şirkete kayyım atanması → şirketin yönetim kontrolü kaybedildi, mevcut yönetim kararları bağlayıcılığını yitirmiş olabilir",
+        "Yönetim Kurulu'nun tamamen Fon Kurulu tarafından oluşturulması → hissedarların yönetimde temsil hakkı fiilen kısıtlandı",
+        "Karar bir Sulh Ceza Hakimliği kararına dayanıyor → şirketin karşı taraf olduğu uyuşmazlıkların niteliği ve tutarı açıklanmadı"
+      ],
+      "summary": "İstanbul 6. Sulh Ceza Hakimliğinin 24.11.2026 tarihli ve 2026/11489 D. İş sayılı kararı ile Tasarruf Mevduatı Sigorta Fonu (TMSF), Sümer Varlık Yönetim A.Ş.'ne kayyım olarak atanmıştır. Fon Kurulu, şirketin Yönetim Kurulu'nu oluşturarak Başkanlığa Nevzat AVUNÇ, Başkan Vekilliğine Melek İNCEKÖSE İMERT, üyeliklere Erdinç PERÇEMLİ, Kezban KÖK DEMİRVURAN, Evrim APAN CEYLAN, Cüneyit KAHRAMAN ve Şaziye Hilal NALÇACIOĞLU'nu atamıştır. Kayyım atanması, şirketin mevcut yönetiminin devre dışı bırakıldığına işaret eder ve şirket üzerindeki kontrolün TMSF'ye geçtiğini gösterir.",
+      "ts": "2026-11-25T20:01:01.903944+03:00"
+    },
+    "1702738": {
+      "analysis_points": [
+        "Atama 25.11.2026 tarihli Yönetim Kurulu kararıyla yapıldı ve görev doğrudan Genel Müdüre bağlı, tam zamanlı → kurumsal yönetim mevzuatına uyum amaçlı idari bir adım",
+        "İki lisansın varlığı açıkça belirtilmiş → SPK'nın yetkinlik şartlarına ilişkin uyum riski giderilmiş",
+        "Finansal etkiye dair tutar veya oran verilmemiş → doğrudan bilanço/kâr etkisi hesaplanamıyor"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "4c55faaff916278c",
+      "materiality": "low",
+      "model": "nvidia/minimaxai/minimax-m3.1-flash",
+      "red_flags": [],
+      "summary": "Marmara Holding A.Ş. Yönetim Kurulu, 25.11.2026 tarihli kararıyla Cem DEĞİRMENCİ'yi Yatırımcı İlişkileri Bölüm Yöneticisi olarak atamış ve Kurumsal Yönetim Komitesi üyeliğine görevlendirmiştir. Atanan kişinin SPK'nın II-17.1 sayılı Kurumsal Yönetim Tebliği kapsamında aranan 'Sermaye Piyasası Faaliyetleri İleri Düzey' ve 'Kurumsal Yönetim Derecelendirme Uzmanlığı' lisanslarına sahip olduğu belirtilmiştir. Bildirim, mevzuat uyumuna ilişkin rutin bir atamadır; finansal tabloya etkisi yoktur.",
+      "ts": "2026-11-25T20:01:01.903944+03:00"
     }
   },
-  "updated_at": "2026-11-25T19:01:07.811035+03:00",
+  "updated_at": "2026-11-25T20:01:01.903944+03:00",
   "version": 1
 }
