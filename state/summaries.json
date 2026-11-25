@@ -5473,8 +5473,42 @@
       ],
       "summary": "Marmaris Altınyunus Turistik Tesisler A.Ş., JCR Avrasya Derecelendirme A.Ş. tarafından yapılan kredi derecelendirmesinde Uzun Vadeli Ulusal Notu \"AA+(Tr)\" (Durağan), Kısa Vadeli Ulusal Notu \"J1+(Tr)\" (Durağan), Uzun Vadeli Uluslararası Yabancı Para ve Yerel Para Notları \"BB\" (Durağan) seviyelerinde teyit edildi. Önceki derecelendirme tarihi 24.11.2025 olup notlarda ve görünümde değişiklik yok. Bu seviye, şirketin ulusal ölçekte çok güçlü, uluslararası ölçekte spekülatif derecede (BB) bir kredi profiline sahip olduğunu gösterir.",
       "ts": "2026-11-24T20:01:07.771397+03:00"
+    },
+    "1702154": {
+      "analysis_points": [
+        "Tutar açıklanmadı → İhraç tavanı büyüklüğü ve şirketin toplam borçluluk oranına etkisi hesaplanamıyor",
+        "Kira sertifikası ihracı → Şirketin faiz/kâr payı gider yapısı ve vade yapısı, ihraç belgesi yayınlandığında güncellenmelidir"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "bca12ac20ac7c21f",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "İhraç tavanı tutarının açıklanmaması"
+      ],
+      "summary": "TF Varlık Kiralama A.Ş., kira sertifikası ihraç tavanı alınmasına ilişkin Yönetim Kurulu kararı aldığını duyurdu. İhraç tavanı tutarı ve vadesi gibi temel finansal detaylar KAP özetinde belirtilmemiştir. Şirketin borçlanma stratejisi ve likidite yönetimi açısından yeni bir finansman kaynağı oluşturulmaktadır.",
+      "ts": "2026-11-25T10:00:54.102326+03:00"
+    },
+    "1702159": {
+      "analysis_points": [
+        "Bağlayıcı olmayan MoU → Nihai sözleşme imzalanana kadar finansal projeksiyonlara dahil edilemez",
+        "500 MW kapasite hedefi → Şirketin mevcut üretim kapasitesine oranı ve ABD pazarındaki marj yapısı netleştiğinde ciro etkisi hesaplanabilir",
+        "Ticari koşullar belirlenmedi → Nakit akışı ve kârlılık üzerindeki etkisi belirsiz, nihai sözleşme KAP bildirimi beklenmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "988835ba84f00f40",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Anlaşmanın bağlayıcı olmaması",
+        "Fiyatlama ve ticari koşulların belirsizliği"
+      ],
+      "summary": "Kalyon Güneş Teknolojileri Üretim A.Ş., ABD merkezli Talon PV ile 500 MW ölçeğinde bir iş birliği için bağlayıcı olmayan iyi niyet anlaşması (MoU) imzaladı. Anlaşma, ABD pazarına yönelik güneş teknolojileri tedarikini hedeflese de fiyatlama, miktar ve ticari koşullar henüz belirlenmemiştir. Nihai tedarik sözleşmesi müzakere aşamasında olup, somut bir finansal etki henüz oluşmamıştır.",
+      "ts": "2026-11-25T10:00:54.102326+03:00"
     }
   },
-  "updated_at": "2026-11-24T20:01:07.771397+03:00",
+  "updated_at": "2026-11-25T10:00:54.102326+03:00",
   "version": 1
 }
