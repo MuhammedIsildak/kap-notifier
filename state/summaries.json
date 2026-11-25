@@ -5507,8 +5507,38 @@
       ],
       "summary": "Kalyon Güneş Teknolojileri Üretim A.Ş., ABD merkezli Talon PV ile 500 MW ölçeğinde bir iş birliği için bağlayıcı olmayan iyi niyet anlaşması (MoU) imzaladı. Anlaşma, ABD pazarına yönelik güneş teknolojileri tedarikini hedeflese de fiyatlama, miktar ve ticari koşullar henüz belirlenmemiştir. Nihai tedarik sözleşmesi müzakere aşamasında olup, somut bir finansal etki henüz oluşmamıştır.",
       "ts": "2026-11-25T10:00:54.102326+03:00"
+    },
+    "1702187": {
+      "analysis_points": [
+        "Toplam 1.140.000.000 lot hissenin 396.140.025 lotu toplantıda temsil edildi → nisap sağlandı ancak ortaklık yapısındaki blok oylar izlenmeli",
+        "Bağımsız üyeler %74.89 - %74.92 kabul oranıyla seçildi → yönetim stratejisinde grup uzlaşıları takip edilmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "6edcb3ccf6fb522b",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yönetim kurulu seçimlerinde %25'e varan ret oyları mevcuttur",
+        "Gruplar arası oy dağılımında paydaşlar arasında farklı görüşler bulunmaktadır"
+      ],
+      "summary": "Kardemir Karabük Demir Çelik Sanayi ve Ticaret A.Ş.'nin 22 Ekim 2026 tarihli Olağanüstü Genel Kurul toplantısında yönetim kurulu üyeleri 3 yıl süreyle yeniden seçilmiştir. Toplantıda toplam 1.140.000.000 TL sermayeyi temsilen 396.140.025 lot hisse katılım sağlamıştır. Yapılan oylamalar sonucunda A, B ve D grupları ile bağımsız üyeler oy çokluğuyla belirlenmiştir.",
+      "ts": "2026-11-25T11:01:04.096428+03:00"
+    },
+    "1702217": {
+      "analysis_points": [
+        "Belgede tutar belirtilmemiş → mali etki hesaplanamıyor, KAP ekine bakılmalı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "235adf1e4ef0cbbf",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "QNB Yatırım Menkul Değerler A.Ş. tarafından şube kapatılmasına ilişkin bildirim yapılmıştır. Belge metninde herhangi bir mali veri veya tutar yer almamaktadır. Şirketin operasyonel ağı ve mali tablolarına etkisi belgede belirtilmemiştir.",
+      "ts": "2026-11-25T11:01:04.096428+03:00"
     }
   },
-  "updated_at": "2026-11-25T10:00:54.102326+03:00",
+  "updated_at": "2026-11-25T11:01:04.096428+03:00",
   "version": 1
 }
