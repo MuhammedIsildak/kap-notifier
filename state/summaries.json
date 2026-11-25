@@ -5537,8 +5537,35 @@
       "red_flags": [],
       "summary": "QNB Yatırım Menkul Değerler A.Ş. tarafından şube kapatılmasına ilişkin bildirim yapılmıştır. Belge metninde herhangi bir mali veri veya tutar yer almamaktadır. Şirketin operasyonel ağı ve mali tablolarına etkisi belgede belirtilmemiştir.",
       "ts": "2026-11-25T11:01:04.096428+03:00"
+    },
+    "1702265": {
+      "analysis_points": [
+        "Romanya proje devralma süreci 23.11.2026 tarihli plana göre devam ediyor → İşlem tamamlandığında konsolide borç ve varlık yapısına etkileri izlenmeli",
+        "Margün Enerji'nin yönetimde temsilcisi yok ve hâkim ortak değil → Ortaklık yapısındaki pay hareketlerinin operasyonel kararlara doğrudan yönetimsel etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "2e99321b317bc4d3",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Enda Enerji Holding A.Ş., pay fiyatı hareketleri ve ortaklık yapısına yönelik yatırımcı soruları üzerine açıklama yapmıştır. Şirket, finansal durumunda ve faaliyetlerinde olumsuz bir gelişme olmadığını, Romanya'daki proje devir süreçlerinin 23.11.2026 tarihli açıklama doğrultusunda sürdüğünü ve Margün Enerji Üretim Sanayi ve Ticaret A.Ş.'nin hakim ortak olmadığını belirtmiştir.",
+      "ts": "2026-11-25T12:00:57.015316+03:00"
+    },
+    "1702277": {
+      "analysis_points": [
+        "Rutin idari atama → Şirketin finansal yapısına veya borç servis kapasitesine doğrudan bir etkisi yoktur"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "2630982c81ce88f8",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Servet Gayrimenkul Yatırım Ortaklığı A.Ş., 25.11.2026 tarihi itibarıyla Yatırımcı İlişkileri Bölümü Yöneticisi ve Kurumsal Yönetim Komitesi üyeliğine Sayın Mert Parıltı'nın atandığını bildirmiştir. İlgili atama rutin bir idari ve kurumsal yönetim uyum sürecidir ve şirketin finansal veya operasyonel yapısı üzerinde doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-25T12:00:57.015316+03:00"
     }
   },
-  "updated_at": "2026-11-25T11:01:04.096428+03:00",
+  "updated_at": "2026-11-25T12:00:57.015316+03:00",
   "version": 1
 }
