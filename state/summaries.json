@@ -5693,8 +5693,108 @@
       ],
       "summary": "Dardanel Önentaş Gıda Sanayi A.Ş., yurtiçinde borçlanma aracı ihraç edilmesine yönelik karar aldığını duyurdu. Şirketin finansman ihtiyacını karşılamak amacıyla sermaye piyasası araçlarına yönelmesi, borç yapısı ve vade yönetimi açısından önem taşımaktadır.",
       "ts": "2026-11-25T16:00:59.000875+03:00"
+    },
+    "1702474": {
+      "analysis_points": [
+        "Seçilen denetim kuruluşu ANY PARTNERS BAĞIMSIZ DENETİM A.Ş. → 2026 faaliyet yılı sürdürülebilirlik raporu denetiminde görev alacak ve ilk Genel Kurul'da onaylanacak"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "8ccf3aa4131af109",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "DARDANEL ÖNENTAŞ GIDA SANAYİ A.Ş., 25.11.2026 tarihli Yönetim Kurulu toplantısında 2026 faaliyet yılı sürdürülebilirlik raporunun zorunlu güvence denetimi için ANY PARTNERS BAĞIMSIZ DENETİM A.Ş.'nin seçilmesine karar vermiştir. Bu seçim yapılacak ilk Genel Kurul'un onayına sunulacaktır. Bu gelişme rutin bir denetçi seçimi olup şirketin finansal yapısına veya borç servisine doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-25T17:01:06.342294+03:00"
+    },
+    "1702478": {
+      "analysis_points": [
+        "İstinaf süresi (6-18 ay) → ilgili gayrimenkulden beklenen kira/gelir girişi bu süre zarfında gecikebilir",
+        "Tutar/ceza bedeli bildirilmemiş → nakit akışı etkisi hesaplanamıyor, KAP ekine bakılmalı",
+        "Karar kalıcılaşırsa → proje maliyeti artışı (hukuki masraflar, gecikme cezaları) FAVÖK'e yansıtılmalı"
+      ],
+      "category": "İflas/hukuki",
+      "has_document": true,
+      "hash": "0119490f2c83344c",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Yapı tatil tutanağı inşaat faaliyetlerini durdurabilir, kira gelirlerini geciktirebilir"
+      ],
+      "summary": "Akmerkez GYO, Yapı Tatil Tutanağı'nın iptali davasında mahkeme davayı reddetmiştir. Şirket istinaf başvurusu yapacağını bildirmiştir.",
+      "ts": "2026-11-25T17:01:06.342294+03:00"
+    },
+    "1702480": {
+      "analysis_points": [
+        "3,519 Mrd TL ceza tutarı → şirketin 2025 sonu nakit/nakit benzeşeni ve serbest nakit akışı ile karşılaştırılmalı; ödeme gücü test edilmeli",
+        "İstinaf sonucu (6-18 ay) → ceza ödemesi ertelendi mi? (İcra takibi/icra muhafazası durumu KAP'ta izlenmeli)",
+        "Cezanın KDV/stopaj/vergi mahsup edilebilirliği varsa → net nakit etkisi hesaplanmalı"
+      ],
+      "category": "İflas/hukuki",
+      "has_document": true,
+      "hash": "a88f8fcf86405336",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "3,519 Mrd TL idari para cezası ödenirse nakit pozisyonu ciddi oranda zarar görür",
+        "Cezanın büyük kısmı (99,998%) onaylanmış → istinaf riski yüksek"
+      ],
+      "summary": "Akmerkez GYO, 3,52 Mrd TL tutarındaki idari para cezasına ilişkin iptal davasında mahkeme sadece 42,97 bin TL'lik kısmı iptal etmiş, 3,519 Mrd TL'lik ana tutarı reddetmiştir. Şirket istinaf başvurusu yapacağını bildirmiştir.",
+      "ts": "2026-11-25T17:01:06.342294+03:00"
+    },
+    "1702481": {
+      "analysis_points": [
+        "İstinaf süresi (6-18 ay) → proje zaman çizelgesi ve capex planlaması bu süre zarfında belirsiz kalır",
+        "Karar kalıcılaşırsa → ilgili parselle proje geliştirme maliyeti/geri dönüş hesaplanmalı",
+        "Tutar/ceza bedeli bildirilmemiş → nakit akışı etkisi hesaplanamıyor, KAP ekine bakılmalı"
+      ],
+      "category": "İflas/hukuki",
+      "has_document": true,
+      "hash": "23daa7f3a26aa3d0",
+      "materiality": "normal",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Yıkım kararı proje geliştirme planlarını/izin sürecini geciktirebilir"
+      ],
+      "summary": "Akmerkez GYO, yıkım/proje uyumlaştırma konulu 2025/1108 sayılı Encümen Kararı'nın iptali davasında mahkeme davayı reddetmiştir. Şirket istinaf başvurusu yapacağını bildirmiştir.",
+      "ts": "2026-11-25T17:01:06.342294+03:00"
+    },
+    "1702482": {
+      "analysis_points": [
+        "İptal edilen 3,44 Mrd TL → nakit akışı/gider kaleminde tersine kayıt (gelir) sağlanabilir, 2026 Q4 veya 2027 Q1 finansal tablolarında izlenmeli",
+        "Reddedilen 75,80 Mn TL → istinaf sonucu (6-18 ay) netleşene kadar kontenjan/karşılık ayrılması gerekebilir",
+        "Dava tutarı (3,52 Mrd TL) şirketin 2025 yılı toplam varlık/özkaynak büyüklüğü ile oranlanmalı; oran %10'u geçerse ifşa standardı gerektirir"
+      ],
+      "category": "İflas/hukuki",
+      "has_document": true,
+      "hash": "cad53f85f27c59ab",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "3,52 Mrd TL ödeme emri tutarı şirketin bilanço büyüklüğü açısından materyal olabilir",
+        "İstinaf sonucu tersine dönerse 75,80 Mn TL ödeme yükümlülüğü kalıcı hale gelebilir"
+      ],
+      "summary": "Akmerkez GYO, 3,52 Mrd TL tutarındaki ödeme emrine ilişkin iptal davasında 3,44 Mrd TL'lik kısım iptal edilmiştir; 75,80 Mn TL'lik kısım reddedilmiştir. Şirket reddedilen kısım için istinaf başvurusu yapacağını bildirmiştir.",
+      "ts": "2026-11-25T17:01:06.342294+03:00"
+    },
+    "1702506": {
+      "analysis_points": [
+        "Sermaye 735 Mn TL → 1.010,625 Mn TL (+275,625 Mn TL nakden) → borç/özkaynak oranı düşer, kredi notu/borçlanma maliyeti olumlu etkilenebilir",
+        "Bedelsiz artırım 551,250 Mn TL (iç kaynak) → hisse başına değer (NAV) dilüte edilmez, brüt özkaynak artar",
+        "Yeni ödenmiş sermaye 1.010,625 Mn TL → 2026 YE ve 2027 Q1 finansal tablolarında özkaynak bazında ROE/ROA hesaplamalarında yeni baz kullanılmalı"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "2d8ea8b0d5a2faea",
+      "materiality": "high",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "red_flags": [
+        "Nakden artırım (275,625 Mn TL) → nakit girişi sağlanmış; kaynak (ortaklar/Alkim Alkali Kimya) ve kullanım alanı (capex/borç ödeme/çalışma sermayesi) izlenmeli"
+      ],
+      "summary": "Alkım Kağıt, sermayeyi 735,00 Mn TL'den 1.010,625 Mn TL'ye (+%37,5) artırmıştır. Artışın 275,625 Mn TL'lik kısmı nakden ve muvazaadan arı ödenmiş; 551,250 Mn TL'lik kısmı Sermaye Düzeltmesi Olumlu Farklarından karşılanarak bedelsiz pay dağıtımı yapılmıştır. Yeni sermaye tamamen ödenmiştir.",
+      "ts": "2026-11-25T17:01:06.342294+03:00"
     }
   },
-  "updated_at": "2026-11-25T16:00:59.000875+03:00",
+  "updated_at": "2026-11-25T17:01:06.342294+03:00",
   "version": 1
 }
