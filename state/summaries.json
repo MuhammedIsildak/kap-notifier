@@ -5592,8 +5592,25 @@
       "red_flags": [],
       "summary": "EMLAK KONUT GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., İstanbul Esenler Kuzey Rezerv Yapı Alanı 2. Etap Genel Altyapı ve Yol İnşaatı İşi için yüklenici ATEŞ İnş. San. ve Tic. A.Ş.'ye 23.11.2026 tarihinde yer teslimi yapmıştır. Bu bildirim proje faaliyetlerinin takvime uygun ilerlediğini göstermekle birlikte, sözleşme bedeli veya toplam maliyet bilgisi belgede yer almamaktadır. Operasyonel akış açısından rutin bir aşama olup, doğrudan finansal tablo etkisi yer teslim tutarı açıklanmadığı için hesaplanamamaktadır.",
       "ts": "2026-11-25T14:00:55.124224+03:00"
+    },
+    "1702365": {
+      "analysis_points": [
+        "Toplam sözleşme tutarı 28.779.000 TL → Şirketin yıllık cirosuna ve işletme sermayesine olan katkısı son finansal rapordaki ciro büyüklüğü ile karşılaştırılarak hesaplanmalıdır",
+        "Tahsilat şartları ve vade bilgisi verilmedi → Nakit akışı projeksiyonlarında vade yapısının netleştirilmesi gerekir",
+        "Stok kalemi azalışı gerçekleşti → Stok maliyeti ile satış fiyatı arasındaki brüt kâr marjı finansal tablolardan takip edilmelidir"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "4859b933fcf2f236",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Alıcıların kimliği ve tahsilat vadeleri açıklanmadı"
+      ],
+      "summary": "DCT Trading Dış Ticaret A.Ş., 25.11.2026 tarihinde stoklarındaki Türk pamukları için iki ayrı yurt içi alıcı ile toplam 28.779.000 TL tutarında satış sözleşmesi imzalamıştır. Bu gelişme, şirketin stok eritme kapasitesini ve kısa vadeli operasyonel nakit girişini doğrudan etkileyecektir. İşlemin büyüklüğü ve alıcıların niteliği şirketin finansal tablolarında izlenmelidir.",
+      "ts": "2026-11-25T15:00:55.960063+03:00"
     }
   },
-  "updated_at": "2026-11-25T14:00:55.124224+03:00",
+  "updated_at": "2026-11-25T15:00:55.960063+03:00",
   "version": 1
 }
