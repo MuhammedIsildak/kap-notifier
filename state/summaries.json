@@ -5564,8 +5564,22 @@
       "red_flags": [],
       "summary": "Servet Gayrimenkul Yatırım Ortaklığı A.Ş., 25.11.2026 tarihi itibarıyla Yatırımcı İlişkileri Bölümü Yöneticisi ve Kurumsal Yönetim Komitesi üyeliğine Sayın Mert Parıltı'nın atandığını bildirmiştir. İlgili atama rutin bir idari ve kurumsal yönetim uyum sürecidir ve şirketin finansal veya operasyonel yapısı üzerinde doğrudan bir etkisi bulunmamaktadır.",
       "ts": "2026-11-25T12:00:57.015316+03:00"
+    },
+    "1702290": {
+      "analysis_points": [
+        "İhraç tavanı tutarı ve vadesi açıklanmadı → etki hesaplanamıyor, KAP ekindeki SPK onay belgesi incelenmeli",
+        "Borçlanma maliyeti belirtilmedi → mevcut piyasa faizleriyle kıyaslanarak net faiz marjına etkisi ölçülmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "ee68a82bfd012f42",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Halk Finansal Kiralama A.Ş., bono ve/veya tahvil ihracına ilişkin Sermaye Piyasası Kurulu (SPK) onayını 25.11.2026 tarihinde duyurmuştur. Bu ihraç tavanı, şirketin borçlanma araçları yoluyla likidite temin etmesine ve bilançosundaki fonlama yapısını çeşitlendirmesine olanak tanır. İşlemin maliyet ve vadesi henüz netleşmemiş olup, şirketin finansman giderleri ve vade uyumu açısından izlenmesi gerekmektedir.",
+      "ts": "2026-11-25T13:01:00.159120+03:00"
     }
   },
-  "updated_at": "2026-11-25T12:00:57.015316+03:00",
+  "updated_at": "2026-11-25T13:01:00.159120+03:00",
   "version": 1
 }
