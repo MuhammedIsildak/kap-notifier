@@ -5546,8 +5546,36 @@
       ],
       "summary": "Yapı ve Kredi Bankası A.Ş., bağlı ortaklığı Yapı Kredi Portföy Yönetimi A.Ş. paylarının AZ International Holdings S.A.'ya devrine ilişkin Sermaye Piyasası Kurulu'nun izin verdiğini duyurmuştur. İşlem kapsamında Rekabet Kurulu izni ve bireysel muafiyet kararları daha önce alınmış olup, Dağıtım Sözleşmesi'nin imzalanması ve kapanış koşullarının tamamlanması beklenmektedir. Bu gelişme, bankanın iştirak portföyünü yeniden şekillendirirken 15 yıllık münhasır dağıtım anlaşmasıyla uzun vadeli komisyon gelir yapısını doğrudan etkileyecektir.",
       "ts": "2026-11-26T09:01:00.173651+03:00"
+    },
+    "1702845": {
+      "analysis_points": [
+        "Yönetim kurulu üye sayısı 8 olarak belirlendi ve yeni üyeler atandı → Bankanın stratejik karar alma süreçlerindeki olası yön değişiklikleri takip edilmeli",
+        "QNB (Q.P.S.C.) 12.459.992.866,72 TL nominal pay ile sermayenin ezici çoğunluğunu temsil ediyor → Ana hissedarın stratejik kararları ve banka üzerindeki kontrol yapısı izlenmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "b11fc299e261afe2",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Enpara Bank A.Ş.'nin 25 Kasım 2026 tarihli olağanüstü genel kurul toplantısında yönetim kurulu üye sayısı 8 olarak belirlenmiş ve Temel Güzeloglu, Ali Rashid A A Al-Mohannadi, Yzeed Sultan H.A. Al-Thani, Saleh Nofal, Dylan Cunningham, Cumhur Türkmen, Ahmet Alkan Altınsu ve Ahu Serter 3 yıl süreyle görev yapmak üzere seçilmiştir. Toplantıda ayrıca 2025 hesap dönemi Sürdürülebilirlik Raporu onaylanmış ve 2026 yılı için Güney Bağımsız Denetim denetçi olarak seçilmiştir. Bu yapısal ve idari kararlar bankanın kurumsal yönetim yapısını ve denetim süreçlerini şekillendirmektedir.",
+      "ts": "2026-11-26T10:00:58.031249+03:00"
+    },
+    "1702849": {
+      "analysis_points": [
+        "Sözleşme bedeli KDV dahil 2.214.000 USD → Proje tamamlama takvimine göre faturalandırma dönemi ve nakit giriş akışı takip edilmeli",
+        "İşin tarafları Gelişim Yapı Sanayi ve Ticaret A.Ş. – Ardalya İnşaat A.Ş. Adi Ortaklığı → Hakediş ödemelerinin tahsilat süreci ve karşı tarafın mali riskleri izlenmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "8837f83b396535e8",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Link Bilgisayar Sistemleri Yazılımı ve Donanımı A.Ş., Gelişim Yapı ve Ardalya İnşaat Adi Ortaklığı ile İstanbul Havalimanı OC Otopark ve Ofis Binası Projesi kapsamında KDV dahil 2.214.000 USD bedelli sözleşme imzalamıştır. Proje, otopark otomasyonu, akıllı sensörler ve plaka tanıma teknolojileri gibi teknoloji altyapısı çözümlerini içermektedir. Bu büyüklükteki teknoloji sözleşmesi şirketin yüksek katma değerli büyüme stratejisi ve gelecekteki operasyonel performansı açısından önem taşımaktadır.",
+      "ts": "2026-11-26T10:00:58.031249+03:00"
     }
   },
-  "updated_at": "2026-11-26T09:01:00.173651+03:00",
+  "updated_at": "2026-11-26T10:00:58.031249+03:00",
   "version": 1
 }
