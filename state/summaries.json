@@ -5637,8 +5637,60 @@
       "red_flags": [],
       "summary": "KT Sukuk Varlık Kiralama A.Ş.'nin 23.11.2026 tarihinde gerçekleştirilen Olağanüstü Genel Kurul Toplantısı kararları tescil edilerek 25.11.2026 tarih ve 11716 sayılı Türkiye Ticaret Sicil Gazetesi'nde ilan edilmiştir. Bu bildirim rutin bir idari tescil işlemidir ve şirketin finansal yapısında doğrudan bir değişikliğe yol açmamaktadır.",
       "ts": "2026-11-26T16:01:02.257961+03:00"
+    },
+    "1702973": {
+      "analysis_points": [
+        "Sözleşme bedeli 2025 hasılatının %23,6'sı seviyesinde → Şirketin orta vadeli ciro büyümesine doğrudan katkı sağlar",
+        "Ön sözleşme 17.07.2026'da imzalanmıştı, asıl sözleşme 25.11.2026'da tebliğ edildi → Proje execution takvimi ve nakit akışı başlangıcı izlenmeli",
+        "Tutar EUR bazlı hesaplandı → Döviz kurlarındaki dalgalanmalar ciro büyüklüğünü doğrudan etkiler"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "8d33246e5c782e04",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "İNTETRA TEKNOLOJİ VE BİLİŞİM HİZMETLERİ A.Ş., Ankara-Kırıkkale-Delice Otoyolu Projesi kapsamındaki Akıllı Ulaşım Sistemleri işlerine ilişkin asıl sözleşmenin imza sürecini tamamlamıştır. 25.11.2026 tarihinde tebliğ edilen sözleşme bedeli, şirketin 2025 yılı konsolide hasılatının yaklaşık %23,6'sına karşılık gelmektedir.",
+      "ts": "2026-11-26T17:00:58.793378+03:00"
+    },
+    "1702980": {
+      "analysis_points": [
+        "1.650.000.000 TL sermayeli banka tasfiyeye girdi → Tasfiye memurları (Recep Kaba, Yavuz Yeter, Mustafa Uysal, Mustafa T., Hakan Yüksel) yetkilendirildi",
+        "Tasfiye memurlarının aylık huzur hakkı net 200.000 TL olarak belirlendi → Tasfiye sürecinde ek idari maliyet oluştu",
+        "Kadir Yaylak, Avni Demirci ve Bedri Sayın istifa etti → Yönetim yapısı tasfiye amaçlı yeniden şekillendirildi"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "95ca75b53e518912",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "BDDK kararı ile faaliyet izninin iptali ve tasfiye kararı",
+        "Yönetim kurulu üyelerinin istifaları ve tasfiye yönetimine geçilmesi",
+        "Personel haklarının erken ödenmesi kararı ile ani likidite çıkışı"
+      ],
+      "summary": "GOLDEN GLOBAL YATIRIM BANKASI A.Ş.'nin 16.11.2026 tarihli Olağanüstü Genel Kurul tutanağına göre, BDDK kararıyla faaliyet izninin kaldırılması sonrasında bankanın tasfiyesine oy birliğiyle karar verilmiştir. Toplantıda 1.650.000.000 TL toplam itibari değerindeki payların tamamı temsil edilmiş, tasfiye memurları seçilmiş ve personelin yasal haklarının erken ödenmesi kararlaştırılmıştır.",
+      "ts": "2026-11-26T17:00:58.793378+03:00"
+    },
+    "1702988": {
+      "analysis_points": [
+        "Faaliyet izni kaldırıldı → Bankacılık faaliyetleri tamamen durduruldu, tasfiye memurları atandı",
+        "Personel haklarının erken ödenmesine karar verildi → Tasfiye sürecinde nakit çıkışı yaratacak yükümlülükler öne çekildi",
+        "1.650.000.000 TL nominal sermayeli banka tasfiyeye girdi → Tasfiye sonundaki varlık dağılımı ve alacaklıların durumu izlenmeli"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "57895ea5cddcdb30",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Bankacılık Kanunu 71/1-c kapsamında faaliyet izninin kaldırılması",
+        "Şirketin tasfiye sürecine girmesi"
+      ],
+      "summary": "GOLDEN GLOBAL YATIRIM BANKASI A.Ş., BDDK'nın 04.11.2026 tarihli ve 11593 sayılı kararı ile 5411 sayılı Bankacılık Kanunu'nun 71'inci maddesinin birinci fıkrasının (c) bendi kapsamında faaliyet izninin kaldırılması üzerine 16.11.2026 tarihinde tasfiye kararı almıştır. Bu gelişme, bankanın faaliyetlerinin tamamen sonlandırıldığını ve tasfiye süreçlerinin başlatıldığını göstermektedir.",
+      "ts": "2026-11-26T17:00:58.793378+03:00"
     }
   },
-  "updated_at": "2026-11-26T16:01:02.257961+03:00",
+  "updated_at": "2026-11-26T17:00:58.793378+03:00",
   "version": 1
 }
