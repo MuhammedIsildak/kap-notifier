@@ -799,8 +799,26 @@
         "source": "Derecelendirme Sözleşmesinin Sona Ermesi Duyuru 26112026.pdf"
       },
       "ts": "2026-11-26T15:00:59.411367+03:00"
+    },
+    "1702960": {
+      "hash": "76dcf38281cdd7fb",
+      "info": {
+        "action": "Not artırımı",
+        "agency": "Turkrating",
+        "attachments": [
+          "4028328da1fcbb9e01a217cf96e20ec8"
+        ],
+        "current": "TR AAA",
+        "details": [],
+        "entity": "Mercedes Benz Kamyon Finansman A.Ş. Basın Özeti_2026_Nihai",
+        "outlook": "Stabil",
+        "previous": "",
+        "red_flags": [],
+        "source": "Mercedes Benz Kamyon Finansman A.Ş. Basın Özeti_2026_Nihai.pdf"
+      },
+      "ts": "2026-11-26T16:01:02.257961+03:00"
     }
   },
-  "updated_at": "2026-11-26T15:00:59.411367+03:00",
+  "updated_at": "2026-11-26T16:01:02.257961+03:00",
   "version": 1
 }

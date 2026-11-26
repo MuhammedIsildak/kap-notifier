@@ -5596,8 +5596,49 @@
       ],
       "summary": "İstanbul Uluslararası Derecelendirme Hizmetleri A.Ş. (Turkrating), Global Menkul Değerler A.Ş.'ye ilişkin kredi derecelendirme sözleşmesinin sona erdiğini bildirmiştir. Bildirimde şirketin ulusal uzun vadeli kredi notunun TR A-, kısa vadeli ulusal notunun TR A2 ve görünümünün Stabil olduğu belirtilmiştir. Bu durum, sözleşme feshi nedeniyle ilgili kurum tarafından artık düzenli derecelendirme yapılmayacağını göstermektedir.",
       "ts": "2026-11-26T15:00:59.411367+03:00"
+    },
+    "1702957": {
+      "analysis_points": [
+        "Uyuşmazlık tutarı ve sözleşme bedeli açıklanmadı → potansiyel dava riski ve bilançoya olası etkisi hesaplanamıyor, 28.09.2026 tarihli ilk açıklama incelenmeli"
+      ],
+      "category": "İflas/hukuki",
+      "has_document": true,
+      "hash": "4c145a13a804e305",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Hukuki uyuşmazlığın mali boyutu ve potansiyel yükümlülük tutarı belirsiz"
+      ],
+      "summary": "REEDER TEKNOLOJİ SANAYİ VE TİCARET A.Ş., 28.09.2026 tarihinde duyurulan Reeder Robotik pay alım sözleşmesinden kaynaklanan uyuşmazlığa ilişkin yargı sürecinin devam ettiğini bildirmiştir. Belgede dava tutarı veya finansal etkiye dair bir rakam yer almamaktadır. Şirket için olası nakit çıkışı veya yükümlülük riski belirsizliğini korumaktadır.",
+      "ts": "2026-11-26T16:01:02.257961+03:00"
+    },
+    "1702960": {
+      "analysis_points": [
+        "Kredi notu Turkrating tarafından TR AAA seviyesine çıkarıldı, görünüm Stabil → tahvil ihraçlarında ve banka kredilerinde maliyet avantajı sağlar"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "76dcf38281cdd7fb",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Turkrating ajansı, Mercedes Benz Kamyon Finansman A.Ş. için kredi derecelendirmesini 'TR AAA' seviyesine yükseltmiştir. Not artırımı aksiyonu ile görünüm 'Stabil' olarak belirlenmiştir. Bu gelişme, şirketin borçlanma maliyetlerini olumlu yönde etkileyebilecek güçlü bir kredi profiline işaret etmektedir.",
+      "ts": "2026-11-26T16:01:02.257961+03:00"
+    },
+    "1702964": {
+      "analysis_points": [
+        "İşlem rutin genel kurul tescilidir → şirketin nakit akışı veya borç yapısına doğrudan etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "343ba529c0c09591",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "KT Sukuk Varlık Kiralama A.Ş.'nin 23.11.2026 tarihinde gerçekleştirilen Olağanüstü Genel Kurul Toplantısı kararları tescil edilerek 25.11.2026 tarih ve 11716 sayılı Türkiye Ticaret Sicil Gazetesi'nde ilan edilmiştir. Bu bildirim rutin bir idari tescil işlemidir ve şirketin finansal yapısında doğrudan bir değişikliğe yol açmamaktadır.",
+      "ts": "2026-11-26T16:01:02.257961+03:00"
     }
   },
-  "updated_at": "2026-11-26T15:00:59.411367+03:00",
+  "updated_at": "2026-11-26T16:01:02.257961+03:00",
   "version": 1
 }
