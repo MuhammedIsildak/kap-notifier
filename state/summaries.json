@@ -5588,8 +5588,54 @@
       "red_flags": [],
       "summary": "Sun Tekstil Sanayi ve Ticaret A.Ş.'nin %95 oranında ortak olduğu Ekoten CentroAmérica'nın Guatemala'daki kumaş fabrikası 25.11.2026 tarihinde faaliyete başlamıştır. Bu yatırım ile Amerika kıtasındaki ilk üretim tesisi devreye alınmış olup, 2027 sonuna kadar 120 kişilik istihdam ve yaklaşık 25 milyon ABD Doları ciro hedeflenmektedir. Bu gelişme, şirketin uluslararası büyüme stratejisi ve coğrafi çeşitlendirme hamlesi açısından operasyonel altyapısını güçlendirmektedir.",
       "ts": "2026-11-26T11:00:55.874775+03:00"
+    },
+    "1702889": {
+      "analysis_points": [
+        "İhraç tutarı ve faiz oranı belirtilmedi → maliyet ve nakit akışı etkisi hesaplanamıyor, SPK onaylı ihraç belgesi beklenmeli",
+        "Borçlanma tavanı limiti verilmedi → şirketin kaldıraç oranına etkisi belirsiz"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "e6b6b5300f951cd9",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İhraç tutarı ve vadesi açıklanmadı",
+        "Mevcut borç yükü üzerindeki faiz baskısı bilinmiyor"
+      ],
+      "summary": "Akfen İnşaat Turizm ve Ticaret A.Ş., 26.11.2026 tarihinde borçlanma aracı ihracına ilişkin SPK'ya ihraç tavanı başvurusunda bulunmuştur. Bu işlem şirketin borçlanma yoluyla likidite temin etme ve finansman yapısını çeşitlendirme hamlesidir. Analist açısından şirketin borçlanma maliyeti ve vadesi takip edilmelidir.",
+      "ts": "2026-11-26T12:00:57.527576+03:00"
+    },
+    "1702910": {
+      "analysis_points": [
+        "Raporun açıklanma tarihi 24.12.2026 olarak belirlendi → 30.09.2026 bilançosu ve finansal veriler bu tarihe kadar görülemeyecek",
+        "Ek süre talebi onaylandı → operasyonel veya muhasebesel bir gecikme nedeni KAP dipnotlarında incelenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "604731f0d9ee52d1",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Finansal raporların açıklanması 24.12.2026 tarihine kadar ertelendi"
+      ],
+      "summary": "Kamuyu Aydınlatma Platformu tarafından yayımlanan bildirime göre, Tera Yatırım Bankası A.Ş.'nin 30.09.2026 tarihli finansal raporlarının bildirimi için yaptığı ek süre talebi Sermaye Piyasası Kurulu (SPK) tarafından uygun görülmüştür. Tera Yatırım Bankası A.Ş. finansal raporlarını en geç 24.12.2026 tarihine kadar KAP'a bildirecektir. Bu durum raporlama sürecinde gecikmeye işaret eder.",
+      "ts": "2026-11-26T12:00:57.527576+03:00"
+    },
+    "1702916": {
+      "analysis_points": [
+        "Genel kurul kararları KAP'ta yer almıyor → ana sözleşme veya sermaye değişikliği olup olmadığı tutanaklardan kontrol edilmeli"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": false,
+      "hash": "3ac181446809e820",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Enpara Bank A.Ş., 26.11.2026 tarihinde Olağanüstü Genel Kurul toplantısını gerçekleştirmiştir. Bildirimde toplantı sonucuna ilişkin detaylı karar metni verilmemiştir. Rutin idari ve kurumsal yönetim süreçleri kapsamında değerlendirilmektedir.",
+      "ts": "2026-11-26T12:00:57.527576+03:00"
     }
   },
-  "updated_at": "2026-11-26T11:00:55.874775+03:00",
+  "updated_at": "2026-11-26T12:00:57.527576+03:00",
   "version": 1
 }
