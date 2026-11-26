@@ -5562,8 +5562,177 @@
       "red_flags": [],
       "summary": "Burgan Bank A.Ş., kayıtlı sermaye tavanı içerisinde ödenmiş sermayesini 1.700.000.000 TL artırarak 3.050.000.000 TL'den 4.750.000.000 TL'ye yükseltmek amacıyla BDDK'dan gerekli izni almış ve 25.11.2026 tarihli yönetim kurulu kararıyla süreci yenilemiştir. Bu sermaye artırımı bankanın özkaynak tabanını güçlendirme ve yasal sermaye yeterlilik rasyolarını destekleme amacını taşımaktadır.",
       "ts": "2026-11-26T18:01:05.590361+03:00"
+    },
+    "1703053": {
+      "analysis_points": [
+        "Poliçe teminatı 10.000.000 ABD doları → şirket sermayesinin %25'lik yasal eşik sınırı ile uyumu korunuyor",
+        "12.11.2027 geçerlilik bitiş tarihi → gelecek yıl aynı dönemde poliçe yenileme maliyeti takip edilecek"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "db244911150d0fb3",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Türker Vangölü Enerji Yatırım A.Ş., SPK Kurumsal Yönetim Tebliği gereğince 12.11.2026-12.11.2027 dönemi için Yönetici Sorumluluk Sigortası yaptırmıştır. Söz konusu sigorta poliçesi 10.000.000 ABD dolarına kadar teminat sağlamaktadır. İşlem, mevzuata uyum niteliğinde rutin bir idari uygulamadır.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703055": {
+      "analysis_points": [
+        "İhraç tavanı tutarı ve vadesi açıklanmadı → fonlama maliyeti ve vade yapısı belirsiz, SPK onaylı ihraç belgesi beklenmeli",
+        "İhraç edilecek kira sertifikalarının toplam büyüklüğü → ana ortak Halkbank'ın fonlama maliyeti ve bilanço dışı yükümlülükleri üzerinden takip edilmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "077fa78e6bc8a2fa",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "HALK VARLIK KİRALAMA A.Ş., 26.11.2026 tarihinde kira sertifikası ihracına ilişkin yönetim kurulu kararı alarak ihraç tavanı için başvuru sürecini başlatmıştır. Bu işlem, şirketin borçlanma araçları yoluyla likidite temin etme faaliyetinin rutin bir parçasıdır. Bildirimde ihraç tutarı, vadesi veya faiz/getiri oranına ilişkin herhangi bir sayısal veri yer almamaktadır.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703056": {
+      "analysis_points": [
+        "Sözleşme bedeli KDV hariç 3.925.000 Avro → iştirakin döviz bazlı ciro büyümesine ve proje portföyüne katkı sağlar",
+        "İşin kapsamı sinyalizasyon ve haberleşme altyapısı → taahhüt edilen teknik işlerin takvimi ve nakit akışı projeksiyona dahil edilmelidir",
+        "İştirak üzerinden yürütülen proje → konsolide finansallara yansıma büyüklüğü pay oranı çerçevesinde izlenmelidir"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "b92ffc73fbc37557",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Pasifik Eurasia Lojistik iştiraki Metrosis İnşaat Mühendislik A.Ş., Altunizade–Bosna Bulvarı Raylı Sistem Hattı'nın sinyalizasyon, haberleşme altyapısı ve elektronik kontrol sistemleri işleri için alt yüklenici sözleşmesi imzalamıştır. Söz konusu sözleşmenin bedeli KDV hariç 3.925.000 Avro olarak belirlenmiştir. Bu gelişme iştirak bazında yeni iş ilişkisi ve döviz bazlı gelir yaratılması açısından önem arz etmektedir.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703059": {
+      "analysis_points": [
+        "2.000.000.000 TL tutarında tahsisli sermaye artırımı → şirketin bilanço üzerindeki kısa/uzun vadeli borç yükünü ve finansman giderlerini azaltır",
+        "Yaşar Holding A.Ş.'nin muaccel alacakları sermayeye dönüştürülüyor → şirketin kısa vadeli yükümlülükleri özkaynağa dönüşerek kaldıraç oranlarını doğrudan iyileştirir",
+        "Ziraat Yatırım ile aracılık sözleşmesi imzalandı → SPK onay süreci ve toptan satış fiyatının baz fiyat/nominal değer üzerindeki oluşumu takip edilmelidir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "b830f5c93e395514",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Mevcut ortakların rüçhan haklarının kısıtlanması suretiyle sermaye artırımı yapılması",
+        "Ana ortağın muaccel alacaklarının sermayeye dönüştürülmesi suretiyle borç tasfiyesi"
+      ],
+      "summary": "Viking Kağıt ve Selüloz A.Ş. yönetimi, özkaynak yapısını güçlendirmek amacıyla 42.000.000 TL olan çıkarılmış sermayesini, rüçhan haklarını kısıtlayarak ana ortak Yaşar Holding A.Ş.'nin nakden aktardığı ve muaccel olan alacaklarına istinaden artırma kararı almıştır. Toplam satış hasılatı 2.000.000.000 TL olacak şekilde, Ziraat Yatırım aracılığıyla tahsisli satış yöntemiyle gerçekleştirilecek işlem için SPK onayına başvurulacaktır. İhraç edilecek paylar Borsa'da işlem görebilir nitelikte olacaktır.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703060": {
+      "analysis_points": [
+        "Şirket sermaye ödemesi yapmadı ve taşınmaz bedeli yükümlülüğü yok → şirketin nakit akışı veya borç yapısı üzerinde doğrudan bir nakit çıkışı yaratmaz",
+        "Pay devir görüşmeleri devam ediyor → devrin tamamlanması halinde şirketin varlık portföyü ve stratejik odak dağılımı değişecektir",
+        "Eteleme kararı SPK yazısıyla sonlandırıldı → ilerleyen dönemde olası idari veya regülasyon denetimleri açısından izlenmelidir"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "2b52d11117a634ab",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Özel durum açıklamasının 12.08.2025 tarihinden 26.11.2026'ya kadar ertelenmiş olması ve SPK yazısıyla açıklanması",
+        "Ortaklık yapısındaki pay devir süreçlerinin tapu devrine bağlı olarak bekletilmesi"
+      ],
+      "summary": "Vera Konsept GYO, Özelleştirme İdaresi Başkanlığı'nın ihalesini kazanan ortak girişim grubu kapsamında Alves Yatırım ve İnşaat A.Ş.'de 24.08.2025 tarihinde %48 oranında pay sahibi olmuştur. Şirket, Kartal arazisine odaklanma stratejisi çerçevesinde bu şirketteki payların devrine yönelik görüşmeler yürüttüğünü ve bilginin SPK'nın 28.10.2026 tarihli yazısı üzerine açıklandığını bildirmiştir. İşleme ilişkin olarak Vera Konsept GYO'nun herhangi bir sermaye ödemesi veya taşınmaz bedeli yükümlülüğü bulunmamaktadır.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703061": {
+      "analysis_points": [
+        "APK Gıda sermayesi 40.250.000 TL'ye ulaştı → bağlı ortaklığın fon ihtiyacı ana ortaklık kaynaklarıyla fonlandı",
+        "25.11.2026 tescil tarihi → bilançoda özkaynak kalemlerindeki değişim 2026/12 döneminde görülecek"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "5e819480fb5ba585",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Baydöner Restoranları A.Ş.'nin %100 bağlı ortaklığı APK Gıda Sanayi ve Ticaret A.Ş., ödenmiş sermayesini 250.000 TL'den 40.250.000 TL'ye yükseltmiştir. 40.000.000 TL tutarındaki nakdi artırım süreci tamamlanarak 25.11.2026 tarihli Türkiye Ticaret Sicili Gazetesi'nde tescil edilmiştir. Bu sermaye artırımı bağlı ortaklığın finansal yapısının güçlendirilmesi açısından önem arz etmektedir.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703063": {
+      "analysis_points": [
+        "Ana ortaklığın nakdi katılım tutarı 3.373.500 TL → Karel Elektronik'in kısa vadeli nakit çıkışı yaratır",
+        "Bağlı ortaklık sermayesi 10.000.000 TL'ye çıktı → bağlı ortaklığın finansal yapısı ve borçluluk durumu konsolide raporda izlenmeli"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "3e2fd1c498e88111",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Karel Elektronik Sanayi ve Ticaret A.Ş., %52,60 oranında iştirak ettiği bağlı ortaklığı Karel İletişim Hizmetleri A.Ş.'nin sermaye artırımına katılmıştır. Bağlı ortaklığın 3.586.500 TL olan sermayesi nakden 6.413.500 TL artırılarak 10.000.000 TL'ye çıkarılmış olup, ana ortaklık bu artırıma payı oranında 3.373.500 TL nakit katılım sağlamıştır. Bu işlem ana şirketin nakit pozisyonunda sınırlı da olsa bir nakit çıkışına neden olmuştur.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703074": {
+      "analysis_points": [
+        "İhraç tavanı tutarı metinde geçmiyor → SPK belgesi detayları incelenmeli",
+        "Borçlanma aracı ihracı yapılacaksa piyasa faiz oranları ve vadesi holdingin finansman maliyetini doğrudan etkiler"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "24ca5ddd63996e4d",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İhracın tutarı, vadesi ve faiz oranı metinde belirtilmedi"
+      ],
+      "summary": "Global Yatırım Holding A.Ş. tarafından ihraç tavanına ilişkin SPK onayı ve ihraç belgesi alınmıştır. İlgili bildirim metninde doğrulama kodları yer almakta olup, borçlanma aracı ihracı için yasal zemin oluşturulmuştur. Bu bildirim yeni bir ihraç kararından ziyade operasyonel bir ihraç tavanı onay aşamasını göstermektedir.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703077": {
+      "analysis_points": [
+        "Yatırım tutarı açıklanmadı → başlangıç sermayesi ve nakit çıkışı bilinmiyor, KAP ekine veya bilançoya bakılmalı",
+        "Madrid'de %100 ortaklık ile yeni şirket kuruluşu → 2027/2028 döneminde operasyonel giderlerin konsolide finansallara yansıması beklenmeli"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "0fa402c8bacb3bc2",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kuruluş sermayesi veya yatırım tutarı açıklanmadı"
+      ],
+      "summary": "Koleksiyon Mobilya Sanayi A.Ş., uluslararası büyüme stratejisi kapsamında İspanya'nın Madrid şehrinde %100 bağlı ortaklık statüsünde yeni bir limited şirket kurulmasına karar vermiştir. 26.11.2026 tarihli yönetim kurulu kararıyla hayata geçirilen bu yatırım, şirketin Avrupa pazarındaki varlığını güçlendirmeyi ve ihracat büyümesini desteklemeyi amaçlamaktadır. Yatırımın sermaye veya kuruluş maliyetine ilişkin bir tutar metinde yer almamaktadır.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703085": {
+      "analysis_points": [
+        "SPK olumsuz görüş bildirmedi → genel kurul onayına sunulması için süreç tamamlanmıştır",
+        "Bağımsız üye adaylığı onaylandı → kurumsal yönetim komitelerinin yapısını etkileyecektir",
+        "Doğrudan finansal etki yok → rutin idari işlemdir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "2e0a13afa2c59d95",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Batıçim Batı Anadolu Sanayi ve Ticaret A.Ş.'nin bağımsız yönetim kurulu üye adayı Rengin Akıllıoğlu hakkında, Sermaye Piyasası Kurulu tarafından kurumsal yönetim ilkesindeki şartları taşıdığı dikkate alınarak herhangi bir olumsuz görüş bildirilmemesine karar verilmiştir. Bu bildirim idari ve rutin bir yönetim kurulu adaylık onay sürecidir. Şirketin mali yapısına veya borç servis kapasitesine doğrudan bir etkisi bulunmamaktadır.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703086": {
+      "analysis_points": [
+        "SPK olumsuz görüş bildirmedi → genel kurulda bağımsız üye seçimi için yasal engel kalmamıştır",
+        "Adaylık süreci tamamlandı → olağan genel kurul gündem maddesi olarak oylanacaktır",
+        "Finansal tabloya etkisi bulunmuyor → rutin kurumsal yönetim prosedürüdür"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "fffd5da8c90ee0d8",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Batıçim Çimento Sanayi A.Ş.'nin bağımsız yönetim kurulu üye adayı Rengin Akıllıoğlu hakkında, Sermaye Piyasası Kurulu tarafından Kurumsal Yönetim İlkeleri kapsamında herhangi bir olumsuz görüş bildirilmemesine karar verilmiştir. Açıklama sıradan bir kurumsal yönetim ve adaylık onay sürecini içermektedir. Şirketin operasyonel veya finansal yapısında doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-26T19:00:58.321494+03:00"
     }
   },
-  "updated_at": "2026-11-26T18:01:05.590361+03:00",
+  "updated_at": "2026-11-26T19:00:58.321494+03:00",
   "version": 1
 }
