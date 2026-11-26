@@ -5574,8 +5574,22 @@
       "red_flags": [],
       "summary": "Link Bilgisayar Sistemleri Yazılımı ve Donanımı A.Ş., Gelişim Yapı ve Ardalya İnşaat Adi Ortaklığı ile İstanbul Havalimanı OC Otopark ve Ofis Binası Projesi kapsamında KDV dahil 2.214.000 USD bedelli sözleşme imzalamıştır. Proje, otopark otomasyonu, akıllı sensörler ve plaka tanıma teknolojileri gibi teknoloji altyapısı çözümlerini içermektedir. Bu büyüklükteki teknoloji sözleşmesi şirketin yüksek katma değerli büyüme stratejisi ve gelecekteki operasyonel performansı açısından önem taşımaktadır.",
       "ts": "2026-11-26T10:00:58.031249+03:00"
+    },
+    "1702871": {
+      "analysis_points": [
+        "2027 sonu hedefi ~25 milyon ABD Doları ciro → Şirketin konsolide gelir büyümesine ve coğrafi çeşitliliğine katkı sağlar",
+        "2027 sonuna kadar ~120 kişilik istihdam hedefi → Yeni tesisin operasyonel ölçeği ve personel giderleri bütçelenmelidir"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "db50861189c8069a",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Sun Tekstil Sanayi ve Ticaret A.Ş.'nin %95 oranında ortak olduğu Ekoten CentroAmérica'nın Guatemala'daki kumaş fabrikası 25.11.2026 tarihinde faaliyete başlamıştır. Bu yatırım ile Amerika kıtasındaki ilk üretim tesisi devreye alınmış olup, 2027 sonuna kadar 120 kişilik istihdam ve yaklaşık 25 milyon ABD Doları ciro hedeflenmektedir. Bu gelişme, şirketin uluslararası büyüme stratejisi ve coğrafi çeşitlendirme hamlesi açısından operasyonel altyapısını güçlendirmektedir.",
+      "ts": "2026-11-26T11:00:55.874775+03:00"
     }
   },
-  "updated_at": "2026-11-26T10:00:58.031249+03:00",
+  "updated_at": "2026-11-26T11:00:55.874775+03:00",
   "version": 1
 }
