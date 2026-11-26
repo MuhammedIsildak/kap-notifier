@@ -5529,8 +5529,25 @@
       ],
       "summary": "ANEL Elektrik Proje Taahhüt ve Ticaret A.Ş., kolaylaştırılmış usulde birleşme işlemleri için Sermaye Piyasası Kurulu'na (SPK) başvuru yapıldığını 25.11.2026 tarihinde bildirdi. Bu kurumsal yapı değişikliği, grubun operasyonel ve konsolide finansal yapısını doğrudan etkileme potansiyeli taşıyor. İşlemin maliyet ve bilanço etkileri SPK onay süreci sonrasında netleşecek.",
       "ts": "2026-11-25T23:01:01.553819+03:00"
+    },
+    "1702823": {
+      "analysis_points": [
+        "Pay devir bedeli açıklanmadı → işlem büyüklüğü ve özkaynak kârlılığına (ROE) katkısı netleştirilmeli",
+        "15 yıl münhasır dağıtım sözleşmesi → portföy yönetim ücreti gelirlerinin komisyon yapısındaki payı izlenmeli"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "697a3108a9308945",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Pay devir tutarı belirsiz → nakit girişinin bilançoya etkisi hesaplanamıyor",
+        "Kapanış koşullarının tamamlanması için ek süre gereksinimi var"
+      ],
+      "summary": "Yapı ve Kredi Bankası A.Ş., bağlı ortaklığı Yapı Kredi Portföy Yönetimi A.Ş. paylarının AZ International Holdings S.A.'ya devrine ilişkin Sermaye Piyasası Kurulu'nun izin verdiğini duyurmuştur. İşlem kapsamında Rekabet Kurulu izni ve bireysel muafiyet kararları daha önce alınmış olup, Dağıtım Sözleşmesi'nin imzalanması ve kapanış koşullarının tamamlanması beklenmektedir. Bu gelişme, bankanın iştirak portföyünü yeniden şekillendirirken 15 yıllık münhasır dağıtım anlaşmasıyla uzun vadeli komisyon gelir yapısını doğrudan etkileyecektir.",
+      "ts": "2026-11-26T09:01:00.173651+03:00"
     }
   },
-  "updated_at": "2026-11-25T23:01:01.553819+03:00",
+  "updated_at": "2026-11-26T09:01:00.173651+03:00",
   "version": 1
 }
