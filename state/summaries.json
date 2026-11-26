@@ -1,171 +1,5 @@
 {
   "items": {
-    "1697608": {
-      "analysis_points": [
-        "Sınırlı denetim raporunda olumsuz görüş veya şartlı ifade yer almıyor → finansal tablolarda muhasebe politikalarına aykırı majör bir uyumsuzluk bulunmuyor",
-        "Rapor 30 Eylül 2026 tarihli 9 aylık verileri kapsıyor → 4. çeyrek beklentileri ve yıllık kapanış kârlılık verileri ayrıca izlenmeli"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "9432b34019ba330f",
-      "materiality": "normal",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Citibank A.Ş.'nin 30 Eylül 2026 tarihinde sona eren dokuz aylık döneme ait konsolide olmayan finansal tabloları ve sınırlı denetim raporu yayımlandı. Güreli Yeminli Mali Müşavirlik ve Bağımsız Denetim A.Ş. tarafından gerçekleştirilen sınırlı denetimde, finansal bilgilerin BDDK Muhasebe ve Finansal Raporlama Mevzuatı'na uygun olarak gerçeğe uygun bir biçimde sunulduğu ve olumsuz bir hususa rastlanmadığı belirtildi. Bu bildirim, bankanın dokuz aylık mali bünye verilerinin ve ara dönem performansının resmi denetim onayından geçmiş halini sunmaktadır.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697609": {
-      "analysis_points": [
-        "İrtibat bürolarının kapatılması → Operasyonel giderlerde (kira, personel) tasarruf sağlayıp sağlamadığı mali tablolarda izlenmeli",
-        "Müşteri hizmetleri merkezi → Hizmet kalitesinde veya müşteri kaybında bir değişim olup olmadığı takip edilmeli"
-      ],
-      "category": "Diğer",
-      "has_document": true,
-      "hash": "ee84a38c8a402c65",
-      "materiality": "low",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Bulls Yatırım Menkul Değerler A.Ş., Ankara ve Bağdat Caddesi Private irtibat bürolarının kapatılmasına karar vermiştir. Söz konusu büroların müşteri hesapları ve kayıtları Genel Müdürlüğe devredilmiştir.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697615": {
-      "analysis_points": [
-        "Not indirimi → Şirketin mevcut borçlanma maliyetleri ve yeni finansman erişimi üzerindeki baskı artacaktır",
-        "BB+ (tr) seviyesi → Kredi sözleşmelerindeki 'covenant' maddeleri ve temerrüt riskleri gözden geçirilmelidir"
-      ],
-      "category": "Kredi notu",
-      "has_document": false,
-      "hash": "601bd41888a196e1",
-      "materiality": "critical",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [
-        "Kredi notu indirimi",
-        "Negatif görünüm"
-      ],
-      "summary": "JCR Avrasya, Loras Holding A.Ş.'nin kredi notunu 'BBB (tr)' seviyesinden 'BB+ (tr)' seviyesine indirmiş ve görünümü 'Negatif' olarak belirlemiştir. Not indirimi, şirketin kredi profilindeki zayıflamaya işaret etmektedir.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697616": {
-      "analysis_points": [
-        "Pay devri sonrası nihai hakim ortaklık yapısı ve oy hakları dağılımı → Şirket yönetim kurulunda değişiklik olup olmayacağı izlenmeli",
-        "Aile içi devir → Şirketin stratejik yöneliminde veya temettü politikasında bir değişim sinyali olup olmadığı takip edilmeli"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "7fb15da4d3394ae8",
-      "materiality": "normal",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Turcas Holding A.Ş.'nin %54,45 oranındaki hakim ortağı Aksoy Holding A.Ş. bünyesinde aile içi pay devri gerçekleşmiştir. İşlem, şirketin nihai kontrol yapısında veya operasyonel yönetiminde bir değişiklik yaratıp yaratmadığına dair detay içermemektedir.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697618": {
-      "analysis_points": [
-        "İtfa edilemeyen tutar 115.000.000 TL → Şirketin kısa vadeli borç ödeme gücünde belirgin zayıflama var",
-        "Ödeme planı detayları net değil → Planın aksaması durumunda temerrüt riski artar"
-      ],
-      "category": "Temerrüt",
-      "has_document": true,
-      "hash": "d2959dad98365521",
-      "materiality": "critical",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [
-        "Finansman bonosu ödemesinin vadesinde yapılamamış olması likidite sıkıntısını gösterir",
-        "Yeniden yapılandırma veya ödeme planına bağlanması finansal risk barındırır"
-      ],
-      "summary": "Akademi Çevre Entegre Atık Yönetimi Endüstri A.Ş., 04.11.2026 tarihinde vadesinde ödenemediği açıklanan 115.000.000 TL nominal değerli TRFAKADK2610 ISIN kodlu finansman bonosu yükümlülüğü için alacaklı yatırımcılarla mutabakata varıldığını duyurmuştur. Ödemeler mutabık kalınan ödeme planı doğrultusunda gerçekleştirilecektir.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697656": {
-      "analysis_points": [
-        "İhraç limiti 4.75,000,000 TL → Vadesi gelen borçların refinansmanında kullanılacak, likidite riskini azaltır",
-        "Borçlanma maliyetleri açıklanmadı → Piyasa faiz oranlarına göre net finansman gideri izlenmeli"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "bbcd05d115041972",
-      "materiality": "high",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [
-        "Yüksek borçlanma limiti faiz giderleri üzerinde baskı yaratabilir"
-      ],
-      "summary": "Koç Finansman A.Ş., yakın dönemde gerçekleştirilecek itfalar da dikkate alınarak, yurt içinde halka arz edilmeksizin tahsisli ve/veya nitelikli yatırımcılara satış suretiyle azami 4.750.000.000 TL tutarına kadar borçlanma aracı ihraç limiti için SPK'ya başvuru kararı almıştır. Bu yüksek tutarlı finansman yetkisi, şirketin borç çevirme oranını ve likidite yönetimini doğrudan destekleyecektir.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697661": {
-      "analysis_points": [
-        "Tamamlanma bedeli 18.349.470,243 TL (KDV dahil) → Şirket cirosu ve nakit akışına dönemsel katkı sağlar",
-        "Proje kabulü tamamlandı → Alacak tahsilatı ve işletme sermayesine nakit girişi gerçekleşir"
-      ],
-      "category": "Sözleşme",
-      "has_document": true,
-      "hash": "172ec7ba90752e29",
-      "materiality": "normal",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "MİA Teknoloji A.Ş., TCDD 4. Bölge Müdürlüğü'ne ait demiryolu hatları envanter tespiti ve ölçümü projesinin iş artışı ve KDV dahil toplam 18.349.470,243 TL bedelle başarıyla tamamlandığını ve kabul işlemlerinin sonuçlandığını bildirmiştir. Bu tamamlanma şirketin kamu projelerinden elde ettiği nakit akışının sonuçlanmasını sağlar.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697673": {
-      "analysis_points": [
-        "Konsolide olmayan finansal performans → Bankanın ana faaliyet kârlılığı ve aktif kalitesi dipnotlar üzerinden incelenmeli",
-        "UTPR belirsizliği → Bankanın vergi karşılıkları ve özkaynak yapısı üzerindeki olası etkiler izlenmeli"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "929afb55e795be4a",
-      "materiality": "normal",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [
-        "UTPR kaynaklı potansiyel finansal belirsizlikler"
-      ],
-      "summary": "Türkiye Finans Katılım Bankası A.Ş.'nin 30 Eylül 2026 tarihli konsolide olmayan finansal tabloları sınırlı denetimden geçmiştir. Konsolide raporla paralel olarak, UTPR uygulamalarının banka üzerindeki olası etkilerine ilişkin önemli belirsizlikler vurgulanmıştır.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697675": {
-      "analysis_points": [
-        "UTPR etkisi → Bankanın vergi yükünde ve net kâr marjında oluşabilecek değişimler 3. bölüm 18 no'lu dipnot üzerinden izlenmeli",
-        "Ana ortak SNB desteği → Suudi Arabistan düzenleyici kurumlarından gelecek görüşlerin bankanın sermaye yeterliliğine etkisi takip edilmeli"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "d5568f882324a710",
-      "materiality": "normal",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [
-        "UTPR kaynaklı potansiyel finansal belirsizlikler"
-      ],
-      "summary": "Türkiye Finans Katılım Bankası A.Ş.'nin 30 Eylül 2026 tarihli konsolide finansal tabloları sınırlı denetimden geçmiştir. Denetim raporunda, Küresel Asgari Tamamlayıcı Kurumlar Vergisi (UTPR) uygulamalarından kaynaklanabilecek potansiyel finansal etkiler konusunda önemli belirsizlikler olduğu belirtilmiştir.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697677": {
-      "analysis_points": [
-        "Satışlar 1.340,65 milyon Avro, %8,4 artış → Havayolu ikram hizmetleri segmenti büyümenin ana sürücüsü",
-        "Net dönem karı 66,69 milyon Avro, %24,7 artış → Operasyonel karlılık marjlarında iyileşme net kara olumlu yansıdı",
-        "Nakit pozisyonu 288,68 milyon Avro → Güçlü likidite yapısı capex ve operasyonları finanse etmeye yeterli"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "d39d3461df738add",
-      "materiality": "normal",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "DO & CO Aktiengesellschaft, 2026/2027 mali yılının ilk yarısında (1 Nisan - 30 Eylül 2026) satış gelirlerini önceki yılın aynı dönemine göre %8,4 artışla 1.340,65 milyon Avroya, konsolide net karını ise %24,7 artışla 66,69 milyon Avroya yükseltmiştir. Şirket bu dönemde 288,68 milyon Avro nakit ve nakit benzeri bakiye ile %43,0 özsermaye oranı korumuştur.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
-    "1697679": {
-      "analysis_points": [
-        "Üst düzey İK ataması → Finansal tablolar üzerinde doğrudan maddi bir etkisi bulunmuyor"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "c14a080b95603714",
-      "materiality": "low",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Beta Enerji ve Teknoloji A.Ş. İnsan Kaynakları ve Organizasyonel Gelişim Direktörlüğü görevine Hüseyin Şenel'in atandığını duyurmuştur. Bu atama şirketin operasyonel yapısında rutin bir üst düzey yönetici değişikliği niteliğindedir.",
-      "ts": "2026-11-12T17:06:26.302481+03:00"
-    },
     "1697818": {
       "analysis_points": [
         "Devredilen 1.094.173.000 TL'lik varlık, Akfen GYO'nun toplam aktif büyüklüğüne oranlanarak operasyonel odak değişikliği analiz edilmelidir",
@@ -5655,42 +5489,81 @@
     },
     "1702980": {
       "analysis_points": [
-        "1.650.000.000 TL sermayeli banka tasfiyeye girdi → Tasfiye memurları (Recep Kaba, Yavuz Yeter, Mustafa Uysal, Mustafa T., Hakan Yüksel) yetkilendirildi",
-        "Tasfiye memurlarının aylık huzur hakkı net 200.000 TL olarak belirlendi → Tasfiye sürecinde ek idari maliyet oluştu",
-        "Kadir Yaylak, Avni Demirci ve Bedri Sayın istifa etti → Yönetim yapısı tasfiye amaçlı yeniden şekillendirildi"
+        "Tasfiye memurlarına net 200.000 TL huzur hakkı belirlendi → Tasfiye süresince nakit çıkışı yaratacak idari giderler izlenmeli",
+        "Personel yasal haklarının erken ödenmesi kararlaştırıldı → Kıdem ve ihbar tazminatları için gereken nakit çıkışı tasfiye fonlarından karşılanacak"
       ],
       "category": "TMSF/devir",
       "has_document": true,
-      "hash": "95ca75b53e518912",
+      "hash": "a85514b4eee356b1",
       "materiality": "critical",
       "model": "gemini/gemini-3.5-flash-lite",
       "red_flags": [
-        "BDDK kararı ile faaliyet izninin iptali ve tasfiye kararı",
-        "Yönetim kurulu üyelerinin istifaları ve tasfiye yönetimine geçilmesi",
-        "Personel haklarının erken ödenmesi kararı ile ani likidite çıkışı"
+        "Faaliyet izninin iptali nedeniyle tasfiye kararının resmen tescili",
+        "Yönetim kurulu üyelerinin istifaları ve yönetim yapısının tasfiye odaklı değişmesi"
       ],
-      "summary": "GOLDEN GLOBAL YATIRIM BANKASI A.Ş.'nin 16.11.2026 tarihli Olağanüstü Genel Kurul tutanağına göre, BDDK kararıyla faaliyet izninin kaldırılması sonrasında bankanın tasfiyesine oy birliğiyle karar verilmiştir. Toplantıda 1.650.000.000 TL toplam itibari değerindeki payların tamamı temsil edilmiş, tasfiye memurları seçilmiş ve personelin yasal haklarının erken ödenmesi kararlaştırılmıştır.",
-      "ts": "2026-11-26T17:00:58.793378+03:00"
+      "summary": "Tasfiye Halinde Golden Global Yatırım Bankası A.Ş.'nin 16.11.2026 tarihli Olağanüstü Genel Kurulunda, bankanın faaliyet izninin kaldırılması nedeniyle tasfiye kararı alınmış ve tasfiye memurları atanmıştır. Ayrıca görevde kalan personelin kıdem, ihbar ve yasal haklarının erken ödenmesine ve tasfiye memurlarına net 200.000 TL huzur hakkı ödenmesine karar verilmiştir.",
+      "ts": "2026-11-26T18:01:05.590361+03:00"
     },
     "1702988": {
       "analysis_points": [
-        "Faaliyet izni kaldırıldı → Bankacılık faaliyetleri tamamen durduruldu, tasfiye memurları atandı",
-        "Personel haklarının erken ödenmesine karar verildi → Tasfiye sürecinde nakit çıkışı yaratacak yükümlülükler öne çekildi",
-        "1.650.000.000 TL nominal sermayeli banka tasfiyeye girdi → Tasfiye sonundaki varlık dağılımı ve alacaklıların durumu izlenmeli"
+        "Faaliyet izni kaldırıldı → Bankacılık operasyonları tamamen durdu, tasfiye süreci yürütülüyor",
+        "1.650.000.000 TL ödenmiş sermaye → Tasfiye masraf ve borçları düşüldükten sonra ortaklara kalacak tasfiye payı takip edilmeli"
       ],
       "category": "TMSF/devir",
       "has_document": true,
-      "hash": "57895ea5cddcdb30",
+      "hash": "0f58ecd827d4c11d",
       "materiality": "critical",
       "model": "gemini/gemini-3.5-flash-lite",
       "red_flags": [
         "Bankacılık Kanunu 71/1-c kapsamında faaliyet izninin kaldırılması",
-        "Şirketin tasfiye sürecine girmesi"
+        "Şirketin tasfiye sürecine girmesi ve faaliyetlerin durması"
       ],
-      "summary": "GOLDEN GLOBAL YATIRIM BANKASI A.Ş., BDDK'nın 04.11.2026 tarihli ve 11593 sayılı kararı ile 5411 sayılı Bankacılık Kanunu'nun 71'inci maddesinin birinci fıkrasının (c) bendi kapsamında faaliyet izninin kaldırılması üzerine 16.11.2026 tarihinde tasfiye kararı almıştır. Bu gelişme, bankanın faaliyetlerinin tamamen sonlandırıldığını ve tasfiye süreçlerinin başlatıldığını göstermektedir.",
-      "ts": "2026-11-26T17:00:58.793378+03:00"
+      "summary": "Tasfiye Halinde Golden Global Yatırım Bankası A.Ş., BDDK'nın 04.11.2026 tarihli ve 11593 sayılı kararı ile 5411 sayılı Bankacılık Kanunu'nun 71'inci maddesinin birinci fıkrasının (c) bendi kapsamında faaliyet izninin kaldırılması sonrasında 16.11.2026 tarihli Olağanüstü Genel Kurul kararıyla tasfiye sürecine girmiştir. Bu gelişme şirketin bankacılık faaliyetlerinin tamamen sonlandığını ve tasfiye işlemlerine başlandığını göstermektedir.",
+      "ts": "2026-11-26T18:01:05.590361+03:00"
+    },
+    "1703001": {
+      "analysis_points": [
+        "SPK ihraç tavanı onaylandı → Şirket piyasa koşullarına göre borçlanma aracı ihraç edebilir",
+        "Belgede net ihraç tutarı belirtilmemiş → İhraç limiti ve vadesi için SPK onaylı ihraç belgesi incelenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "c153aa84dd1213c0",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Deniz Faktoring A.Ş., ihraç tavanına ilişkin SPK onay süreçlerini tamamlamış olup, sisteme yüklenen belgelerle ihraç tavanı onayına dair doğrulama kodları paylaşılmıştır. Bu gelişme şirketin borçlanma araçları ihracı yoluyla likidite temin etme kapasitesini yasal olarak desteklemektedir.",
+      "ts": "2026-11-26T18:01:05.590361+03:00"
+    },
+    "1703005": {
+      "analysis_points": [
+        "80.000.000 TL sermaye üzerinden toplantı nisabı sağlandı → Kurumsal yönetim ve genel kurul onay süreçleri rutin şekilde tamamlandı",
+        "Bağımsız denetim raporu onaylandı → Mali tablolar ve sürdürülebilirlik raporu genel kurulca kabul edildi"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "cf1e2d4595728b39",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Ulusoy Elektrik İmalat Taahhüt ve Ticaret A.Ş., 26.10.2026 tarihinde gerçekleştirilen 2025 faaliyet yılına ilişkin olağan genel kurul toplantısı tutanağını ve kararlarını açıklamıştır. Toplantıda yönetim kurulu faaliyet raporu, finansal tablolar ve sürdürülebilirlik raporuna ilişkin sınırlı güvence denetimi raporu ortakların bilgisine sunularak onaylanmıştır.",
+      "ts": "2026-11-26T18:01:05.590361+03:00"
+    },
+    "1703041": {
+      "analysis_points": [
+        "Ödenmiş sermaye 1.700.000.000 TL artışla 4.750.000.000 TL'ye ulaşıyor → Sermaye yeterlilik rasyoları güçlenir",
+        "BDDK izni alındı → Sermaye artırım sürecinin tamamlanması için yasal süreçler takip edilmeli"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "67240b2675aaa76e",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Burgan Bank A.Ş., kayıtlı sermaye tavanı içerisinde ödenmiş sermayesini 1.700.000.000 TL artırarak 3.050.000.000 TL'den 4.750.000.000 TL'ye yükseltmek amacıyla BDDK'dan gerekli izni almış ve 25.11.2026 tarihli yönetim kurulu kararıyla süreci yenilemiştir. Bu sermaye artırımı bankanın özkaynak tabanını güçlendirme ve yasal sermaye yeterlilik rasyolarını destekleme amacını taşımaktadır.",
+      "ts": "2026-11-26T18:01:05.590361+03:00"
     }
   },
-  "updated_at": "2026-11-26T17:00:58.793378+03:00",
+  "updated_at": "2026-11-26T18:01:05.590361+03:00",
   "version": 1
 }
