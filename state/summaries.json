@@ -5548,8 +5548,56 @@
       "red_flags": [],
       "summary": "YAPRAK SÜT VE BESİ ÇİFTLİKLERİ SANAYİ VE TİCARET A.Ş., 26.11.2026 tarihli Yönetim Kurulu kararıyla 31.10.2026 itibarıyla ayrılan Emre ERKUT'un yerine SPL Düzey 3 ve Kurumsal Yönetim Derecelendirme Lisansları bulunan Taner Özen'in Yatırımcı İlişkileri Bölüm Yöneticisi ve Kurumsal Yönetim Komitesi Üyesi olarak atandığını bildirmiştir. Bu idari atama rutin bir kurumsal yönetim uyum işlemidir ve şirketin finansal yapısı veya kredi profili üzerinde doğrudan bir etkisi bulunmamaktadır.",
       "ts": "2026-11-26T13:00:57.935865+03:00"
+    },
+    "1702941": {
+      "analysis_points": [
+        "Mevcut sermaye 791.000.000 TL, artış tutarı 791.000.000 TL (%100 bedelli) → Şirket 791 milyon TL brüt nakit girişi hedeflemektedir",
+        "Rüçhan hakları 1 TL nominal fiyattan 15 gün süreyle kullanılacak → Süre sonunda satılamayan paylar 6 iş günü içinde iptal edilecek",
+        "İşlemin tamamlanması için SPK ve diğer yasal kurum onayları beklenmektedir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "b991a462f64bffd1",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Önceki sermaye artırım kararının 30 günlük süre aşımı nedeniyle iptal edilmesi süreci uzatmıştır"
+      ],
+      "summary": "Çemaş Döküm Sanayi A.Ş., 26.10.2026 tarihli önceki sermaye artırım kararını 30 günlük SPK başvuru süresinin aşılması nedeniyle iptal ederek yeni bir yönetim kurulu kararı almıştır. Şirket, 791.000.000 TL olan çıkarılmış sermayesini %100 oranında nakden artırarak 1.582.000.000 TL'ye yükseltme kararı almıştır. Yeni pay alma hakları 1 TL nominal değerden 15 gün süreyle kullandırılacak olup, kalan paylar Borsa İstanbul'da halka arz edilecektir.",
+      "ts": "2026-11-26T15:00:59.411367+03:00"
+    },
+    "1702945": {
+      "analysis_points": [
+        "Uzun Vadeli Yabancı Para ve TL İhraççı Temerrüt Notu BB- (Görünüm: Durağan) → Borç servis kapasitesi ve refinansman koşulları durağan seyretmektedir",
+        "Uzun Vadeli Ulusal Not AA(tur) → Ulusal ölçekte yüksek kredi kalitesine işaret etmektedir",
+        "Hissedar Destek Notu bb- → Ana hissedardan gelebilecek destek not seviyesini desteklemektedir"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "d9d75315b280a32d",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Fitch Ratings, 25 Kasım 2026 tarihinde QNB Finansal Kiralama A.Ş.'nin kredi notlarını güncellemiştir. Şirketin Uzun Vadeli Yabancı Para ve TL İhraççı Temerrüt Notları BB- (Görünüm: Durağan), Kısa Vadeli Yabancı Para ve TL notları ise B olarak belirlenmiştir. Uzun Vadeli Ulusal Notu ise AA(tur) olarak teyit edilmiştir.",
+      "ts": "2026-11-26T15:00:59.411367+03:00"
+    },
+    "1702946": {
+      "analysis_points": [
+        "Uzun vadeli ulusal not TR A-, kısa vadeli not TR A2, görünüm Stabil → Sözleşme sonlandığı için bu notlar güncelliğini yitirecektir",
+        "Derecelendirme sözleşmesinin feshi → Şirketin borçlanma maliyetleri ve piyasa şeffaflığı izlenirken alternatif bilgi kaynaklarına bakılmalıdır"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "990c9cb673122a37",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kredi derecelendirme sözleşmesinin feshedilmesi, şirketin kamuya şeffaf derecelendirme takibinden çıkmasına neden olur"
+      ],
+      "summary": "İstanbul Uluslararası Derecelendirme Hizmetleri A.Ş. (Turkrating), Global Menkul Değerler A.Ş.'ye ilişkin kredi derecelendirme sözleşmesinin sona erdiğini bildirmiştir. Bildirimde şirketin ulusal uzun vadeli kredi notunun TR A-, kısa vadeli ulusal notunun TR A2 ve görünümünün Stabil olduğu belirtilmiştir. Bu durum, sözleşme feshi nedeniyle ilgili kurum tarafından artık düzenli derecelendirme yapılmayacağını göstermektedir.",
+      "ts": "2026-11-26T15:00:59.411367+03:00"
     }
   },
-  "updated_at": "2026-11-26T13:00:57.935865+03:00",
+  "updated_at": "2026-11-26T15:00:59.411367+03:00",
   "version": 1
 }
