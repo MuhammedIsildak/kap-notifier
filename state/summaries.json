@@ -1,148 +1,5 @@
 {
   "items": {
-    "1697951": {
-      "analysis_points": [
-        "100 milyon dolar tutarında 5 yıl vadeli dış kaynak → bankanın uzun vadeli döviz likiditesini destekler ve vade yapısını iyileştirir",
-        "Fonun kullanım alanı iklim değişikliği finansmanı → yeşil kredi portföyünün büyümesine ve sürdürülebilirlik kriterli fon maliyetlerine etkisi izlenmeli"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "108292ec27029033",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "DENİZBANK A.Ş., Japonya Uluslararası İş Birliği Ajansı (JICA) ile 13.11.2026 tarihinde iklim değişikliği finansmanında kullanılmak üzere 100 milyon dolar tutarında 5 yıl vadeli iş birliği anlaşması imzalamıştır. Bu uzun vadeli dış kaynak temini, bankanın dış borçlanma vadesini uzatması ve yeşil finansman portföyünü genişletmesi açısından önemlidir. Anlaşma, döviz cinsinden likidite ve maliyet yapısını doğrudan etkileyecektir.",
-      "ts": "2026-11-13T14:29:06.316794+03:00"
-    },
-    "1697962": {
-      "analysis_points": [
-        "Mevcut sözleşme tutarı 100 milyon Euro ve 30 milyon Amerikan Doları → Şirketin ana faaliyetleri için döviz cinsinden likidite sağlar",
-        "Tutarın 100 milyon Euro ve 50 milyon Amerikan Doları'na artış opsiyonu var → Yeni katılımcı gelmesi durumunda 20 milyon Amerikan Doları ek borçlanma potansiyeli bulunur"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "011d6baba460159d",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Döviz cinsi sendikasyon kredisi kur riski barındırmaktadır"
-      ],
-      "summary": "İş Finansal Kiralama A.Ş., Hollanda Kalkınma Bankası (FMO) liderliğinde muhtelif uluslararası finans kuruluşlarının katılımıyla toplam 100 milyon Euro ve 30 milyon Amerikan Doları tutarında sendikasyon kredi sözleşmesi imzalamıştır. İlerleyen dönemde yeni katılımcılarla tutarın 100 milyon Euro ve 50 milyon Amerikan Doları'na kadar artırılabileceği belirtilmiştir.",
-      "ts": "2026-11-13T15:00:57.100819+03:00"
-    },
-    "1697965": {
-      "analysis_points": [
-        "Kredi tutarı 209,2 milyon euro, vade 30 yıl → Bankanın fonlama vadesini en üst kademeye taşıyan çok uzun vadeli bir kaynaktır",
-        "Dış borcun ikrazı yöntemi kullanıldı → Geri ödeme mekanizması Hazine ikraz sözleşmesi koşullarına tabidir"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "535ba241d23eeaaa",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 12.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığının dış borcun ikrazı yöntemiyle Dünya Bankası (IBRD) ile 209,2 milyon euro tutarında ve 30 yıl vadeli kredi anlaşması imzalamıştır. Sağlanan bu 30 yıl vadeli kaynak, bankanın uzun vadeli borçlanma vadesini önemli ölçüde desteklemektedir.",
-      "ts": "2026-11-13T15:00:57.100819+03:00"
-    },
-    "1697967": {
-      "analysis_points": [
-        "Kredi tutarı 100 milyon ABD doları, vade 15 yıl → 15 yıllık vade uzun vadeli projelerin finansmanı için uygundur",
-        "Hazine ve Maliye Bakanlığı geri ödeme garantisi var → Kredi riski Hazine garantisi altındadır"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "20a4e30e202a159a",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 12.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi altında Asya Altyapı Yatırım Bankası (AIIB) ile 100 milyon ABD doları tutarında ve 15 yıl vadeli kredi anlaşması imzalamıştır. Sağlanan bu uzun vadeli kaynak, bankanın fonlama yapısının vadesini uzatması açısından önem taşımaktadır.",
-      "ts": "2026-11-13T15:00:57.100819+03:00"
-    },
-    "1697968": {
-      "analysis_points": [
-        "Kredi tutarı 200 milyon ABD doları, vade 7 yıl → Vade yapısı orta-uzun vadeli fonlama ihtiyacını destekler",
-        "T.C. Hazine ve Maliye Bakanlığı garantisi mevcut → Bankanın kendi maliyetinden ziyade Hazine garantili borçlanma maliyeti takip edilmelidir"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "9c89a1d989a26bce",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Döviz cinsinden uzun vadeli borçlanma kur riski yaratmaktadır"
-      ],
-      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 12.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi altında Asya Altyapı Yatırım Bankası (AIIB) ile 200 milyon ABD doları tutarında ve 7 yıl vadeli kredi anlaşması imzalamıştır. Bu işlem bankanın uzun vadeli dış kaynak teminini destekleyerek bilanço likiditesine katkı sağlamaktadır.",
-      "ts": "2026-11-13T15:00:57.100819+03:00"
-    },
-    "1697969": {
-      "analysis_points": [
-        "Kredi tutarı 250 milyon euro, vade 12 yıl → Uzun vadeli Euro cinsi yükümlülük yaratır",
-        "T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi → Borç servisi Hazine garantisi kapsamındadır"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "f509acd4d564b1a9",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Euro cinsi borçlanma Euro/TL kur hareketlerine karşı bilançoda açık pozisyon etkisi yaratabilir"
-      ],
-      "summary": "Türkiye İhracat Kredi Bankası A.Ş., 11.11.2026 tarihinde T.C. Hazine ve Maliye Bakanlığı geri ödeme garantisi altında Alman Kalkınma Bankası (KfW) ile 250 milyon euro tutarında ve 12 yıl vadeli kredi anlaşması imzalamıştır. Bu işlem, bankanın uluslararası finans kuruluşlarından sağladığı dış kaynakların çeşitliliğini artırmaktadır.",
-      "ts": "2026-11-13T15:00:57.100819+03:00"
-    },
-    "1697979": {
-      "analysis_points": [
-        "Konsolide olmayan raporda sınırlı denetçi kanaatini olumsuz etkileyen bir husus bulunmuyor → Bilanço ve gelir tablosu verileri denetçi onayından geçmiştir"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "afe22180a2624c87",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "HSBC Bank A.Ş.'nin 30 Eylül 2026 tarihinde sona eren 9 aylık hesap dönemine ait konsolide olmayan finansal tabloları sınırlı bağımsız denetimden geçmiş ve olumlu rapor almıştır. Rapor, BDDK düzenlemeleri ve TMS 34 hükümlerine uygun olarak yayımlanmıştır.",
-      "ts": "2026-11-13T16:00:57.974213+03:00"
-    },
-    "1697981": {
-      "analysis_points": [
-        "Sınırlı denetim raporunda olumsuz görüş veya şartlı ifade yok → Finansal tablolarda mevzuata aykırı husus tespit edilmedi"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "6a537c2218b16c72",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "HSBC Bank A.Ş.'nin 30 Eylül 2026 tarihinde sona eren 9 aylık hesap dönemine ait konsolide finansal tabloları bağımsız denetim şirketinden olumlu sınırlı denetim raporu almıştır. Rapor, BDDK muhasebe ve finansal raporlama mevzuatına uygun olarak hazırlanmıştır.",
-      "ts": "2026-11-13T16:00:57.974213+03:00"
-    },
-    "1697990": {
-      "analysis_points": [
-        "Sermaye 802.845.890 TL değişmiyor (%100 grup içi devir) → Pay sahipliği yapısı ve çıkarılmış sermaye korunuyor",
-        "İşlem Rekabet Kurulu iznine tabi değil → Onay süreci doğrudan SPK incelemesiyle ilerler"
-      ],
-      "category": "M&A",
-      "has_document": true,
-      "hash": "025a1299a7af94fc",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Ata Turizm İşletmecilik Taşımacılık Madencilik Kuyumculuk Sanayi ve Dış Ticaret A.Ş., sermayesinin %100'üne sahip olduğu bağlı ortaklığı Gökyüzü Balonculuk Taşımacılık Hizmetleri Ticaret Turizm A.Ş.'yi kolaylaştırılmış usulde devralmak üzere yönetim kurulu kararı almış ve SPK'ya başvurmuştur. Devralınan şirketin paylarının tamamı devralana ait olduğundan, Ata Turizm'in 802.845.890 TL olan ödenmiş sermayesi bu birleşme nedeniyle değişmeyecektir.",
-      "ts": "2026-11-13T16:00:57.974213+03:00"
-    },
-    "1697996": {
-      "analysis_points": [
-        "Yatırımcı ilişkileri yöneticiliği boş → 30 gün içinde atama yapılmazsa SPK uyum süreci riski oluşur"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "4b1b62d4e675120c",
-      "materiality": "low",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Mopaş Marketçılık Gıda Sanayi ve Ticaret A.Ş.'de Yatırımcı İlişkileri Bölüm Yöneticisi ve Kurumsal Yönetim Komitesi Üyesi Fatih Karacanik 12/11/2026 tarihi itibarıyla görevinden ayrılmıştır. Tebliğ uyarınca boşalan pozisyona 30 gün içinde yeni atama yapılması gerekmektedir; bu durum idari bir süreç olup şirketin operasyonel veya finansal yapısını doğrudan etkilememektedir.",
-      "ts": "2026-11-13T16:00:57.974213+03:00"
-    },
     "1698018": {
       "analysis_points": [
         "Şube kapatma kararı alındı → Bölgesel operasyon maliyetleri ve gelir katkısı incelenmeli"
@@ -5736,8 +5593,115 @@
       ],
       "summary": "TUĞÇELİK ALÜMİNYUM VE METAL MAMÜLLERİ SANAYİ VE TİCARET A.Ş. tarafından yapılan açıklamada, son dönemdeki ekonomik dalgalanmalar, artan finansman maliyetleri ve nakit akışındaki daralma nedeniyle kısa vadeli ödeme dengelerinin olumsuz etkilendiği belirtilmiştir. Şirket, finansal yükümlülüklerini yeniden yapılandırmak ve ticari faaliyetlerin sürdürülebilirliğini sağlamak amacıyla konkordato sürecine başvurmuştur. Bu durum, kredi riskinin en üst seviyeye ulaştığını ve kısa vadeli borç servisinin yapılamadığını gösteren kritik bir eşiktir.",
       "ts": "2026-11-27T14:01:03.025897+03:00"
+    },
+    "1703300": {
+      "analysis_points": [
+        "Sermaye artış tutarı 277.250.000 TL (Kaynak: Sermaye Düzeltmesi Olumlu Farkları) → Özkaynak kalemi içinde yer değiştirme olur, toplam özkaynak büyüklüğü değişmez",
+        "Mevcut pay sahiplerine %1218,68 oranında bedelsiz pay verilecek → Halka açık piyasa derinliği ve işlem hacmi hisse adet artışından etkilenir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "55e004cd52bbefbb",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İç kaynaklı artış operasyonel nakit akışı yaratmadığı için borç servis kapasitesine doğrudan etki etmez"
+      ],
+      "summary": "Plastikkart Akıllı Kart İletişim Sistemleri Sanayi ve Ticaret A.Ş., 22.750.000 TL olan ödenmiş sermayesini %1218,68131 oranında (277.250.000 TL) artırarak 300.000.000 TL'ye ulaştırmıştır. Sermaye artışı Sermaye Düzeltmesi Olumlu Farkları hesabından karşılanmıştır. Bu işlem, şirketin bilançosundaki enflasyon düzeltme farklarının sermayeye ilave edilmesini tescil etmektedir.",
+      "ts": "2026-11-27T16:00:58.885667+03:00"
+    },
+    "1703302": {
+      "analysis_points": [
+        "Çıkarılmış sermaye 950.000.000 TL'den 3.800.000.000 TL'ye yükseliyor → Kayıtlı sermaye tavanı olan 3.900.000.000 TL'ye dayanılmıştır, yeni tavan izni gerekecektir",
+        "A grubu nama yazılı paylar 234.000.000 adetten 312.000.000 adete çıkıyor → İmtiyazlı pay sahiplerinin oy ve yönetim kurulu aday gösterme dengesi korunarak sermaye tabanı genişletilmiştir"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "6d41ea5a4d5acf46",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kayıtlı sermaye tavanı 3.900.000.000 TL iken çıkarılmış sermayenin 3.800.000.000 TL'ye ulaşması, tavan artırım zorunluluğunu gündeme getirebilir"
+      ],
+      "summary": "Reeder Teknoloji Sanayi ve Ticaret A.Ş., çıkarılmış sermayesini 950.000.000 TL'den 3.800.000.000 TL'ye çıkaran esas sözleşme tadil tasarısını paylaşmıştır. Şirketin kayıtlı sermaye tavanı 3.900.000.000 TL olup, çıkarılan payların dağılımı 312.000.000 TL A grubu, 624.000.000 TL B grubu ve 2.864.000.000 TL C grubu pay şeklinde düzenlenmiştir. Bu yapısal değişiklik, şirketin sermaye tavanı limitlerine yaklaşması ve pay gruplarındaki mülkiyet oranlarının güncellenmesi açısından izlenmelidir.",
+      "ts": "2026-11-27T16:00:58.885667+03:00"
+    },
+    "1703312": {
+      "analysis_points": [
+        "Önceki notlar prD (tr) / (Durağan) seviyesindedir → Şirketin borç servis kapasitesinde ve kredi profilinde ciddi bozulma ve temerrüt işareti bulunmaktadır",
+        "JCR Eurasia Rating sözleşmesi şirketin talebiyle iptal edilmiştir → Şeffaflık azalmakta olup, mevcut finansal yükümlülükler ve banka kredi sözleşmeleri risk altındadır",
+        "Tüm ulusal ve uluslararası ihraç ve kurum kredi notları hükümsüz kalmıştır → Borçlanma maliyetleri ve yeni finansman sağlama imkanları olumsuz etkilenecektir"
+      ],
+      "category": "Kredi notu",
+      "has_document": true,
+      "hash": "1e4ee58f21f436fc",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kredi derecelendirme notunun 'prD (tr)' yani temerrüt seviyesinde olması",
+        "Şirket talebiyle kredi derecelendirme sözleşmesinin iptal edilmesi ve takip edilebilirliğin sonlandırılması"
+      ],
+      "summary": "JCR Avrasya Derecelendirme A.Ş. ile Kayatur Filo Kiralama Anonim Şirketi arasında 20.04.2021 tarihinde imzalanan kredi derecelendirme sözleşmesi, şirketin talebi üzerine iptal edilmiş ve derecelendirme süreci sonlandırılmıştır. Sözleşme iptali öncesinde şirketin Uzun ve Kısa Vadeli Ulusal Kurum Kredi Rating Notları 'prD (tr) / (Durağan)' seviyesinde bulunmakta olup, bu notlar temerrüt (Default) durumuna işaret etmektedir ve yayımlanan derecelendirme notları geçerliliğini yitirmiştir.",
+      "ts": "2026-11-27T16:00:58.885667+03:00"
+    },
+    "1703314": {
+      "analysis_points": [
+        "Toplantıda temsil edilen sermaye 4.002.403.218,675 TL → Asgari toplantı nisabının sağlandığı ve kararların oyçokluğu/oybirliği ile alındığı görülmektedir",
+        "01.06.2025-31.05.2026 özel hesap dönemi faaliyet raporu ve konsolide finansal tablolar okunmuş sayılmıştır → İlgili döneme ait ana mali veriler ve denetim raporu detayları için ilgili finansal rapor bildirimleri incelenmelidir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "f1a7fdfbeaafe522",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Fenerbahçe Futbol A.Ş., 01.06.2025-31.05.2026 özel hesap dönemine ait olağan genel kurul toplantısını 22.10.2026 tarihinde gerçekleştirmiştir. Toplantıda 6.250.000.000.-TL toplam sermayeye karşılık 4.002.403.218,675 TL sermaye temsil edilmiş, faaliyet raporu ve konsolide finansal tablolar okunmuş ve oylanmıştır. Bu bildirim rutin idari ve yasal bir süreç olup şirketin finansal yapısında doğrudan dönemsel bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-27T16:00:58.885667+03:00"
+    },
+    "1703316": {
+      "analysis_points": [
+        "Sermaye 22.750.000 TL'den 300.000.000 TL'ye çıkıyor (%1218,68 artış) → Pay başına nominal değer değişmezken hisse adedi artar, hisse fiyatı teorik olarak bölünür",
+        "Fon kaynağı sermaye düzeltmesi olumlu farkları (277.250.000 TL) → Nakit yaratmayan iç kaynak transferi olduğu için şirketin net borç veya FAVÖK yapısında doğrudan bir iyileşme yaratmaz"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "3c0d0bc6473fdf90",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Sermaye artışının nakit girişine dayalı olmayıp enflasyon düzeltme farklarından kaynaklanması operasyonel likiditeyi doğrudan artırmaz"
+      ],
+      "summary": "Plastikkart Akıllı Kart İletişim Sistemleri Sanayi ve Ticaret A.Ş., 22.750.000 TL olan ödenmiş sermayesini %1218,68131 oranında artırarak 300.000.000 TL'ye yükseltmiştir. Artırılan 277.250.000 TL'lik tutar tamamen sermaye düzeltmesi olumlu farklarından karşılanmıştır. Bu iç kaynaklı sermaye artırımı, şirketin özkaynak yapısının enflasyon muhasebesi düzeltme farkları ile nominal olarak güçlendirilmesini sağlar.",
+      "ts": "2026-11-27T16:00:58.885667+03:00"
+    },
+    "1703322": {
+      "analysis_points": [
+        "Şirket sermayesi 50.000.000 TL → Sürdürülebilirlik güvence denetimi için Güney Bağımsız Denetim yetkilendirilmiştir",
+        "Denetim kapsamı 1 Ocak 2026 - 31 Aralık 2026 hesap dönemini kapsıyor → Yasal uyum maliyetleri ve raporlama takvimi bu denetçi koordinasyonunda yürütülecek"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "a7e0d773b4cd1e5e",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "TEB Faktoring A.Ş., 27 Kasım 2026 tarihinde gerçekleştirdiği olağanüstü genel kurul toplantısında 1 Ocak 2026 - 31 Aralık 2026 hesap dönemi için Güney Bağımsız Denetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş.'yi TSRS Uyumlu Sürdürülebilirlik Raporu sınırlı güvence denetçisi olarak seçmiştir. 50.000.000 TL sermayeyi temsil eden pay sahiplerinin vekaleten katıldığı toplantıda denetçi seçimi oy birliğiyle onaylanmıştır. Bu atama, yasal raporlama uyum süreçlerinin yürütülmesi açısından önem taşımaktadır.",
+      "ts": "2026-11-27T16:00:58.885667+03:00"
+    },
+    "1703323": {
+      "analysis_points": [
+        "Toplantı sonuçları rutin genel kurul gündemini içeriyor → Finansal tablolar veya borç yapısı üzerinde doğrudan bir etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": false,
+      "hash": "41cc4e7e32ff9e20",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Plastikkart Akıllı Kart İletişim Sistemleri Sanayi ve Ticaret A.Ş., 2025 yılı olağan genel kurul toplantı sonuçlarını açıklamıştır. Rutin kurumsal yönetim faaliyetleri kapsamında gerçekleştirilen bu toplantı, şirketin operasyonel veya finansal yapısında doğrudan ani bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-27T16:00:58.885667+03:00"
     }
   },
-  "updated_at": "2026-11-27T14:01:03.025897+03:00",
+  "updated_at": "2026-11-27T16:00:58.885667+03:00",
   "version": 1
 }
