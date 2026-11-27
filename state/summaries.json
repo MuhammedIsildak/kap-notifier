@@ -5780,8 +5780,40 @@
       ],
       "summary": "Huzur Faktoring A.Ş., 24/11/2026 tarihli yönetim kurulu kararına istinaden Muğla Şubesi'ni kapatmış ve bu karar 25/11/2026 tarihli Türkiye Ticaret Sicil Gazetesi'nde ilan edilmiştir. Şube kapama işlemleri, operasyonel ağın daralması veya maliyet optimizasyonu açısından şube bazlı gelir-gider dengesini etkileyebilir. Bildirimde şubenin portföy büyüklüğü veya tasfiye maliyetine ilişkin finansal veri yer almamaktadır.",
       "ts": "2026-11-27T11:01:02.020614+03:00"
+    },
+    "1703222": {
+      "analysis_points": [
+        "İhraç tavanı tutarı metinde belirtilmedi → SPK bülteni veya KAP ekindeki onaylı ihraç belgesinden limit kontrol edilmeli",
+        "Fonlama maliyeti ve vadesi açıklanmadı → tahvil veya bono ihracı gerçekleştiğinde piyasa faiz oranları ile spread maliyeti karşılaştırılmalı"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "7bee232485e0d182",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Belge metninde ihraç tavanı tutarı ve vade bilgisi yer almamaktadır"
+      ],
+      "summary": "Doruk Faktoring A.Ş., borçlanma aracı ihracı için SPK onaylı ihraç tavanı sürecini tamamlamıştır. İlgili belge metninde SPK doküman doğrulama kodları yer almakta olup, tavan tutarına ilişkin sayısal detay metinde geçmemektedir. Bu onay, şirketin sermaye piyasalarından fonlama temin etmesi ve likidite yönetimi için yasal altyapıyı sağlamaktadır.",
+      "ts": "2026-11-27T12:01:01.179944+03:00"
+    },
+    "1703223": {
+      "analysis_points": [
+        "Karabük Şubesi'nin aktif kredi hacmi ve ciroya katkısı açıklanmadı → şube portföyünün merkez veya diğer şubelere devredilip devredilmediği mali tablolardan izlenmeli",
+        "Operasyonel gider tasarrufu tutarı belirtilmedi → genel yönetim giderlerindeki azalış sonraki dönem kârlılığından teyit edilmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "9eba7993ab457c8c",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Şube kapanışının portföye ve gelir etkisine dair finansal veri paylaşılmadı"
+      ],
+      "summary": "Huzur Faktoring A.Ş., 24.11.2026 tarihli yönetim kurulu kararına istinaden Karabük Şubesi'ni kapatmış ve bu durum 26.11.2026 tarihli Türkiye Ticaret Sicil Gazetesi'nde ilan edilmiştir. Şube ağındaki bu daralma, şirketin operasyonel yapılanmasında ve coğrafi yayılımında değişikliğe gittiğini göstermektedir. Bu hamle, maliyet optimizasyonu sağlarken bölgesel kredi hacmini ve komisyon gelirlerini doğrudan etkileyecektir.",
+      "ts": "2026-11-27T12:01:01.179944+03:00"
     }
   },
-  "updated_at": "2026-11-27T11:01:02.020614+03:00",
+  "updated_at": "2026-11-27T12:01:01.179944+03:00",
   "version": 1
 }
