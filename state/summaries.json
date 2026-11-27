@@ -1,59 +1,5 @@
 {
   "items": {
-    "1698018": {
-      "analysis_points": [
-        "Şube kapatma kararı alındı → Bölgesel operasyon maliyetleri ve gelir katkısı incelenmeli"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "3fe34a76ebc3f6d0",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Skyalp Finansal Teknolojiler ve Danışmanlık A.Ş., Düzce Teknopark Teknoloji Geliştirme Bölgesi'nde faaliyet gösteren Düzce Şubesi'nin kapatılmasına ve Şube Müdürü Ferit Zakir Kaya'nın temsil ve ilzam yetkilerinin iptal edilmesine karar vermiştir. İlgili sicil tescil işlemleri başlatılmıştır.",
-      "ts": "2026-11-13T17:00:52.628345+03:00"
-    },
-    "1698040": {
-      "analysis_points": [
-        "Sınırlı denetim raporu olumlu yayımlandı → 30 Eylül 2026 bilançosu ve kârlılık kalemleri detaylı incelenmelidir"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "ff53511d30ad47a1",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Deutsche Bank A.Ş.'nin 30 Eylül 2026 tarihli konsolide olmayan finansal tablolarına ilişkin sınırlı denetim raporu yayımlanmıştır. Bağımsız denetçi Güney Bağımsız Denetim ve SMMM A.Ş. tarafından yapılan sınırlı denetimde, raporlanan döneme ilişkin olumsuz bir hususa veya şartlı görüşe rastlanmamıştır.",
-      "ts": "2026-11-13T17:00:52.628345+03:00"
-    },
-    "1698043": {
-      "analysis_points": [
-        "Yatırımcı sunumu yayımlandı → Şirketin 30 Eylül 2026 bilançosu ve portföy değeri detaylı olarak incelenmelidir"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "36b65b54361624d8",
-      "materiality": "low",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Sinpaş Gayrimenkul Yatırım Ortaklığı A.Ş., 30 Eylül 2026 tarihli yatırımcı sunumunu kurumsal internet sitesinde yayımlamıştır. Bildirim rutin bir bilgilendirme niteliğinde olup şirketin operasyonel veya finansal yapısında doğrudan ani bir değişiklik yaratmamaktadır.",
-      "ts": "2026-11-13T17:00:52.628345+03:00"
-    },
-    "1698056": {
-      "analysis_points": [
-        "Finansal rapor bildirimi 21.12.2026 tarihine ertelendi → 30.06.2026 ve 30.09.2026 bilançoları açıklanana kadar şirketin mali durumu izlenemiyor"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "01d1d6bfa240de29",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Finansal raporların açıklanmasında uzun süreli gecikme yaşanması"
-      ],
-      "summary": "Sermaye Piyasası Kurulu (SPK), Mega Polietilen Köpük Sanayi ve Ticaret A.Ş.'nin 30.06.2026 ve 30.09.2026 tarihli finansal raporlarının KAP'a bildirim süresini 21.12.2026 tarihine kadar (bu tarih dahil) uzatmıştır. Ek süre verilmesi, şirketin finansal raporlama süreçlerinde gecikmeler yaşandığına işaret etmektedir.",
-      "ts": "2026-11-13T17:00:52.628345+03:00"
-    },
     "1698097": {
       "analysis_points": [
         "Metin Öztürk istifa etti → Şirket yönetim kurulunda üye eksikliği oluştu, boşalan üyeliğe atama yapılması gerekir",
@@ -5700,8 +5646,58 @@
       "red_flags": [],
       "summary": "Plastikkart Akıllı Kart İletişim Sistemleri Sanayi ve Ticaret A.Ş., 2025 yılı olağan genel kurul toplantı sonuçlarını açıklamıştır. Rutin kurumsal yönetim faaliyetleri kapsamında gerçekleştirilen bu toplantı, şirketin operasyonel veya finansal yapısında doğrudan ani bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-27T16:00:58.885667+03:00"
+    },
+    "1703332": {
+      "analysis_points": [
+        "Geçmiş yıllar zararlarının 1.634.430.000 TL'lik kısmı yedeklerden mahsup edildi → bilanço defter değeri sadeleşti ancak serbest yedek akçe havuzu daraldı",
+        "VUK kayıtlarında 1.037.526.447 TL ihraç primi, 192.771.069,84 TL yasal yedek ve 404.132.483,16 TL olağanüstü yedek kullanıldı → dağıtılabilir kâr matrahı ve özkaynak kaliteleri yeniden şekillendi",
+        "Yönetimde istifalar ve atamalar (Murat PINAR, Huriye PANDUL, Ebru SAYILAN NEBOL) → yönetim kurulu kompozisyonu değişti, stratejik karar süreçleri izlenmeli"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "04d3d19d36a04ee0",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "1.634.430.000 TL tutarındaki geçmiş yıllar zararı özkaynak kalemlerinden (yedekler ve primler) silindi",
+        "Yedek akçelerin ve ihraç primlerinin sıfırlanması/azaltılması gelecekteki temettü dağıtım kapasitesini kısıtlar"
+      ],
+      "summary": "Teknosa, 27.11.2026 tarihli olağanüstü genel kurulunda yönetim kurulu üyelik değişikliklerini onaylamış ve özkaynak yapısının sadeleştirilmesi amacıyla geçmiş yıllar zararlarının 1.634.430.000 TL'lik kısmını mahsup etmiştir. SPK düzenlemelerine göre hazırlanan tablolardaki zararlar pay primleri ve yedek akçelerden, VUK kayıtlarındaki 1.634.430.000 TL'lik kısım ise ihraç primleri, yasal yedekler ve olağanüstü yedeklerden düşülmüştür.",
+      "ts": "2026-11-27T17:01:05.630272+03:00"
+    },
+    "1703336": {
+      "analysis_points": [
+        "GES için 75 USD/MWs ve RES için 61 USD/MWs satış fiyatı garantisi → 2027 yılı döviz bazlı operasyonel nakit akışına öngörülebilirlik sağlar",
+        "1.011 MW toplam portföyün tamamının devreye alma takvimi → tam kapasiteye geçiş süresi 2027 cirosunu doğrudan etkiler",
+        "USD bazlı sabit fiyat garantisi → şirketin kur riskine karşı doğal hedge mekanizmasını güçlendirir"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "e9b7985d670470bd",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Kısmi üretim ve YEKDEM başvuru sürecine bağlı döviz bazlı nakit akışı gerçekleşme riski",
+        "Yerli katkı ek teşvik koşullarının devamlılığına bağımlılık"
+      ],
+      "summary": "Aksa Enerji, 10 ilde toplam 1.011 MW mekanik kurulu güç ve 970 MWh depolama kapasitesine sahip projeleri kapsamında Mersin Depolamalı RES ve Fatih Depolamalı GES'in kısmi üretime başlamasıyla 2027 yılı YEKDEM başvurularını tamamladı. Pamuk GES, Alıç GES, Fatih GES ve Mersin RES, 2027 başından itibaren USD bazlı sabit fiyat garantisiyle satış yapacak. Yerli katkı teşvikiyle ortalama satış fiyatının GES'ler için 75 USD/MWs, RES'ler için 61 USD/MWs olması beklenmektedir.",
+      "ts": "2026-11-27T17:01:05.630272+03:00"
+    },
+    "1703341": {
+      "analysis_points": [
+        "Gündem sadece denetçi seçimi → finansal tabloların denetim süreci dışında operasyonel veya finansal yapıyı etkileyen bir unsur bulunmuyor",
+        "04.12.2026 toplantı tarihi → genel kurul sonrası yasal bildirimlerin takibi gerekir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "8f1df088ca3de321",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "K2 Faktoring, 04.12.2026 tarihinde denetçi seçimi gündemiyle olağanüstü genel kurul toplantısı gerçekleştireceğini bildirdi. Toplantı Büyükdere Cad. Maslak adresinde yapılacak olup şirketin rutin idari süreçleri kapsamındadır.",
+      "ts": "2026-11-27T17:01:05.630272+03:00"
     }
   },
-  "updated_at": "2026-11-27T16:00:58.885667+03:00",
+  "updated_at": "2026-11-27T17:01:05.630272+03:00",
   "version": 1
 }
