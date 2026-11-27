@@ -1,22 +1,5 @@
 {
   "items": {
-    "1698204": {
-      "analysis_points": [
-        "Geç Muvafakat Ücreti nominal tutarın %0,40'ı olarak belirlendi → Toplam nominal borç tutarı KAP ekinden kontrol edilerek toplam maliyet hesaplanmalı",
-        "XS2926261426 ve US98977LAA44 ISIN kodlu tahvillerin anapara ve kupon vadeleri → Yaklaşık nakit çıkış takvimi ve refinansman baskısı yeniden modellenmeli"
-      ],
-      "category": "Finansman",
-      "has_document": true,
-      "hash": "e63f3457326604c7",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Yurt dışı tahviller için muvafakat talebi sürecinin devam etmesi borç servis riskine işaret eder",
-        "Geç Muvafakat Ücreti oranının %0,40'a yükseltilmesi finansman maliyetini artırır"
-      ],
-      "summary": "Zorlu Enerji Elektrik Üretim A.Ş., XS2926261426 ve US98977LAA44 ISIN kodlu yurt dışı tahvillerine (Eurobonds) ilişkin 22 Ekim 2026'da başlattığı muvafakat talebi sürecinde teklif koşullarında değişiklik yapıldığını bildirdi. Yapılan düzenlemeyle geçici ilave kısıtlamalarda değişiklik öngörülmüş ve Geç Muvafakat Ücreti (Late Consent Fee) nominal tutarın %0,40'ına yükseltilmiştir. Bu gelişme, şirketin uluslararası borçlanma araçlarının yeniden yapılandırılması veya vade/koşul optimizasyonu sürecindeki likidite ve maliyet yapısını doğrudan etkiler.",
-      "ts": "2026-11-13T21:00:52.730042+03:00"
-    },
     "1698206": {
       "analysis_points": [
         "Devre konu stok ve sözleşmelerin ciroya ve kârlılığa etkisi → finansal tablolardan arındırma etkisi ayrıca takip edilmeli",
@@ -5621,8 +5604,125 @@
       ],
       "summary": "Efor Yatırım Sanayi Ticaret A.Ş.'nin bağlı ortaklıkları Efor Global Madencilik ve Efor Gübre aracılığıyla toplam 80.000 ton kömür ve 10.000 ton gübre ithalatına ilişkin anlaşmalar imzalanmıştır. Anlaşmaların toplam bedeli yaklaşık 17.000.000 ABD Doları olarak açıklanmıştır. Bu ithalat hamlesi, şirketin enerji ve tarım alanlarındaki ticaret hacmini büyütmeyi, arz sürekliliğini sağlamayı ve konsolide satış gelirleri ile kârlılığa olumlu katkı sunmayı hedeflemektedir.",
       "ts": "2026-11-27T20:00:59.269201+03:00"
+    },
+    "1703450": {
+      "analysis_points": [
+        "Tahsisli sermaye artırımı süreci başlatıldı → şirketin sermaye ve ortaklık yapısı güncellenecek"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": false,
+      "hash": "c40774beb16cea8b",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Teknosa İç ve Dış Ticaret A.Ş., tahsisli sermaye artırımı işlemlerine ilişkin bildirimde bulundu. İşlem detayları sermaye artırımından elde edilecek fonun kullanım raporu ile uyumluluk göstermektedir. Şirketin finansal borç ödemesi ve sermaye yapısı için operasyonel bir adımdır.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703451": {
+      "analysis_points": [
+        "Hacı Ömer Sabancı Holding A.Ş. tahsisli sermaye artırımına katılıyor → bağlı ortaklığın özkaynak yapısı güçleniyor"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "f6873e5ca6e5e5de",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Hacı Ömer Sabancı Holding A.Ş., Teknosa'nın tahsisli sermaye artırımına iştirak edeceğini bildirdi. Bu işlem grup içi sermaye desteği niteliği taşımaktadır. Şirketin finansal yapısının güçlendirilmesi açısından kritik önemdedir.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703452": {
+      "analysis_points": [
+        "4.500.000.000 TL fon sağlanacak → fonun %100'ü finansal borçların geri ödenmesinde kullanılacak",
+        "Finansal borçların tasfiyesi → faiz giderlerinde kalıcı düşüş ve net borç/FAVÖK rasyosunda iyileşme sağlanır"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "9612dbe5070fad53",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Mevcut pay sahiplerinin yeni pay alma haklarının tamamen kısıtlanması"
+      ],
+      "summary": "Teknosa İç ve Dış Ticaret A.Ş., mevcut pay sahiplerinin haklarını kısıtlayarak Hacı Ömer Sabancı Holding A.Ş.'ye tahsisli olarak 4.500.000.000 TL fon sağlanacak şekilde sermayesini artıracağını açıkladı. Elde edilen fonun tamamı şirketin finansal borçlarının geri ödenmesinde kullanılacaktır. Bu durum özkaynak yapısını güçlendirirken borç yükünü doğrudan azaltacaktır.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703454": {
+      "analysis_points": [
+        "Genel Müdür Yardımcısı pozisyonunda ayrılış gerçekleşti → Yeni atamanın yapılacağı tarihe kadar ilgili departmanda karar alma süreçleri yavaşlayabilir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "493eb4358ab3e042",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Destek Finans Faktoring A.Ş.'de Genel Müdür Yardımcısı olarak görev yapan Erdem Bayrak görevinden ayrılmıştır. Üst düzey yönetim değişiklikleri rutin idari süreçler kapsamında değerlendirilmekle birlikte, kritik bir birimde gerçekleştiği için operasyonel takibi gerektirir.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703455": {
+      "analysis_points": [
+        "JCR Avrasya tarafından uzun vadeli ulusal not AA+ (tr) ve görünüm Stabil olarak teyit edildi → Borçlanma maliyetlerinde ve kredi erişiminde olumsuz bir değişiklik beklenmez",
+        "Kısa vadeli ulusal not J1+ (tr) seviyesinde korundu → Şirketin kısa vadeli borç servis kapasitesinin güçlü olduğu teyit edilmiş oldu"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "83a6fbb527af55e7",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Hızlı nakit dönüşüm döngüsü ve likidite yönetiminin kritik bağımlılığı"
+      ],
+      "summary": "JCR Avrasya, ŞOK Marketler Ticaret A.Ş.'nin kredi notunu uzun vadeli ulusal düzeyde AA+ (tr) ve görünümü Stabil olarak teyit etmiştir. Uzun vadeli uluslararası notu BB (Durağan) ve kısa vadeli ulusal notu J1+ (tr) (Durağan) olarak açıklanırken, etkin likidite yönetimi ve güçlü nakit rezervleri notu destekleyen unsurlar olarak belirtilmiştir.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703457": {
+      "analysis_points": [
+        "14.11.2026 tarihinde TMSF'nin kayyım ataması yapıldı → Bankalar ve finansal kuruluşlar kredi limitlerini askıya alabilir veya erken ifa talep edebilir",
+        "Yönetim kuruluna çok sayıda yeni üyenin atanması → Karar alma süreçlerinde yavaşlama ve operasyonel riskler artar"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "83e4ff728d625a5b",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Şirkete TMSF'nin kayyım olarak atanması",
+        "Yönetim kurulunun tamamen yenilenmesi ve hukuki belirsizlik"
+      ],
+      "summary": "AK Faktoring A.Ş.'ye İstanbul 5. Sulh Ceza Hakimliği'nin 14.11.2026 tarihli kararıyla Tasarruf Mevduatı Sigorta Fonu (TMSF) kayyım olarak atanmış, TMSF Fon Kurulu kararlarıyla yönetim kurulu başkanlığı ve üyeliklerinde kapsamlı atamalar ve değişiklikler yapılmıştır. Şirket yönetiminin devredilmesi ve kayyım atanması, operasyonel süreklilik, kredi ilişkileri ve borç servis kapasitesi açısından en yüksek risk seviyesindedir.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703458": {
+      "analysis_points": [
+        "5.000.000 ABD Doları nominal değerli Eurobond geri alındı → toplam nakit çıkışı kupon dahil 5.061.267,36 ABD Doları oldu",
+        "Nominal değer üzerinde (101,00 fiyatla) geri alım yapıldı → vadeye kadar faiz gideri optimizasyonu sağlandı"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "636913ee6dcb00e0",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Türk Telekomünikasyon A.Ş., XS2820499619 ISIN kodlu, 2029 vadeli 5.000.000 ABD Doları nominal değerli Eurobond'unu 101,00 fiyatla satın aldı. Kupon tahakkuku dahil toplam ödenecek tutar 5.061.267,36 ABD Doları oldu. Bu geri alım şirketin likidite yönetimi ve borç servisi faaliyetlerinin bir parçasıdır.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703460": {
+      "analysis_points": [
+        "20.05.2026 tarihli birleşme kararı iptal edildi → inorganik büyüme ve konsolidasyon beklentileri rafa kalktı"
+      ],
+      "category": "M&A",
+      "has_document": true,
+      "hash": "df95a634ddae99fd",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Sermaye piyasasındaki olumsuz gelişmeler nedeniyle stratejik işlemlerden vazgeçilmesi"
+      ],
+      "summary": "Özata Denizcilik Sanayi ve Ticaret A.Ş., 20.05.2026 tarihinde karar verilen Özata Tersanecilik'in devralınması suretiyle birleşme işleminden mevcut sermaye piyasasındaki gelişmeler nedeniyle vazgeçtiğini açıkladı. Bu karar, şirketlerin inorganik büyüme ve konsolidasyon stratejilerinin piyasa koşulları doğrultusunda askıya alındığını göstermektedir. Analist açısından operasyonel sinerji ve varlık birleştirme beklentilerinin gerçekleşmeyeceğini ifade eder.",
+      "ts": "2026-11-27T21:00:57.402188+03:00"
     }
   },
-  "updated_at": "2026-11-27T20:00:59.269201+03:00",
+  "updated_at": "2026-11-27T21:00:57.402188+03:00",
   "version": 1
 }

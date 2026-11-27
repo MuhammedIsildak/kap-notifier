@@ -842,8 +842,32 @@
         "source": "Selva Gıda Jcr 27112026.pdf"
       },
       "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703455": {
+      "hash": "83a6fbb527af55e7",
+      "info": {
+        "action": "Teyit",
+        "agency": "JCR Avrasya",
+        "attachments": [
+          "4028328ca1fcb99501a21dfa82743c8e",
+          "4028328ca1fcb99501a21dfa827d3c8f"
+        ],
+        "current": "AA+ (tr)",
+        "details": [
+          "Uzun vadeli uluslararası: BB / (Durağan)",
+          "Kısa vadeli ulusal: J1+ (tr) / (Durağan)"
+        ],
+        "entity": "ŞOK MARKETLER TİCARET ANONİM ŞİRKETİ",
+        "outlook": "Stabil",
+        "previous": "",
+        "red_flags": [
+          "Hızlı nakit dönüşüm döngüsü, güçlü nakit rezervleri ve kredi kartıyla yapılan satışlar sayesinde alacaklarının zamanında tahsil edilmesiyle desteklenen etkin likidite yönetimi."
+        ],
+        "source": "jcrer_Şok Marketler_SPK_ BİLDİRİM FORMU_2026 .pdf"
+      },
+      "ts": "2026-11-27T21:00:57.402188+03:00"
     }
   },
-  "updated_at": "2026-11-27T20:00:59.269201+03:00",
+  "updated_at": "2026-11-27T21:00:57.402188+03:00",
   "version": 1
 }
