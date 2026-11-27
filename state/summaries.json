@@ -1,48 +1,5 @@
 {
   "items": {
-    "1697827": {
-      "analysis_points": [
-        "Finansal tutar açıklanmadı → sözleşme bedeli netleşmeden ciroya ve FAVÖK'e katkısı hesaplanamıyor, bağlayıcı sözleşme metni beklenmeli"
-      ],
-      "category": "Sözleşme",
-      "has_document": true,
-      "hash": "f8dc9391e8d548f0",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Mutabakat zaptının (MoU) finansal büyüklüğü veya taahhüt edilen hacim belgede belirtilmemiştir"
-      ],
-      "summary": "Pasifik Eurasia Lojistik Dış Ticaret A.Ş., Çin'in Xi'an şehrinde faaliyet gösteren ve yıllık 5,4 milyon TEU elleçleme kapasitesine sahip Xi'an Free Trade Port Construction and Operation Co., Ltd. ile uluslararası demiryolu taşımacılığının geliştirilmesine yönelik bir Mutabakat Zaptı (MoU) imzalamıştır. Bildirimde iş birliğinin finansal tutarına veya ciroya etkisine ilişkin herhangi bir rakamsal büyüklük açıklanmamıştır. Bu stratejik adım, şirketin uluslararası koridorlardaki operasyonel hacmini artırma potansiyeli taşımaktadır.",
-      "ts": "2026-11-13T09:00:52.599292+03:00"
-    },
-    "1697848": {
-      "analysis_points": [
-        "220.000.000 adet (A) grubu imtiyazlı pay (B) grubuna dönüştürüldü → toplam çıkarılmış sermaye 2.178.000.000 TL'de sabit kalıyor, kontrol yapısı ve sermaye oranları değişmiyor",
-        "İşlem bedelsiz gerçekleştiriliyor → II-23.3 sayılı Önemli Nitelikteki İşlemler ve Ayrılma Hakkı Tebliği'nin 16. maddesinin 1. fıkrasının (b) bendi uyarınca ayrılma hakkı muafiyeti talep edildi, SPK onayı bekleniyor"
-      ],
-      "category": "Sermaye artırımı",
-      "has_document": true,
-      "hash": "bd5c09aa308b14b5",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Efor Yatırım Sanayi Ticaret A.Ş. Yönetim Kurulu, Yönetim Kurulu Başkanı İbrahim Akkuş'a ait 600.000.000 adet (A) Grubu imtiyazlı payın 220.000.000 adedinin imtiyazlarından feragat edilerek (B) Grubu hamiline yazılı paya dönüştürülmesine ve esas sözleşmenin 6. maddesinin tadil edilmesine karar vermiştir. 12.11.2026 tarihinde SPK'ya başvuru yapılmış olup, işlemin bedelsiz olması nedeniyle ayrılma hakkından muafiyet talep edilmiştir. Bu işlem 2.178.000.000 TL tutarındaki çıkarılmış sermaye toplamını veya pay sahiplerinin sermaye oranlarını değiştirmemekle birlikte, pay gruplarındaki imtiyaz yapısını dönüştürmektedir.",
-      "ts": "2026-11-13T10:00:53.039165+03:00"
-    },
-    "1697857": {
-      "analysis_points": [
-        "Bankanın fondaki pay oranı %6,25 → tasfiye sonucunda elde edilecek nakit veya varlık dağılımı bilançoda küçük ölçekli likidite hareketi yaratır",
-        "Fon süresinin dolması otomatik gerçekleşiyor → vade sonu tasfiyesi olduğundan ek bir risk veya zarar yazma zorunluluğu belgede belirtilmedi, fonun defter değerine bakılmalı"
-      ],
-      "category": "Diğer",
-      "has_document": true,
-      "hash": "d7d48a6af877ef37",
-      "materiality": "low",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Türkiye Kalkınma ve Yatırım Bankası A.Ş.'nin Lüksemburg'ta kurulu ve %6,25 pay oranına sahip olduğu Turkish Investment Initiative-iVCi İstanbul Venture Capital Initiative-Alt Fonu, memorandum hükümlerine göre 13 Kasım 2026 tarihinde süresinin dolması nedeniyle otomatik olarak tasfiye sürecine girecektir. Bu gelişme, bankanın iştirak portföyündeki bir fonun olağan vade sonu tasfiyesini ifade etmekte olup, bankanın ana finansal yapısını ve operasyonlarını doğrudan etkileyecek kritik bir unsur içermemektedir.",
-      "ts": "2026-11-13T10:00:53.039165+03:00"
-    },
     "1697915": {
       "analysis_points": [
         "İhraç tutarı ve vadesi açıklanmadı → fonlama maliyeti ve vade yapısı hesaplanamıyor, ihraç belgesi beklenmeli",
@@ -5732,8 +5689,71 @@
       ],
       "summary": "TÜMOSAN Motor ve Traktör Sanayi A.Ş.'nin 26.11.2026 tarihinde gerçekleştirilen Olağan Genel Kurul toplantısında pay sahipleri tarafından şirketin operasyonel ve finansal yapısına ilişkin kritik sorular yöneltilmiştir. Bildirim metnine göre çalışan sayısı 2024 yılındaki 635 kişiden 2025 sonunda 529 kişiye gerilemiş, tek vardiyada 15.000 adet olan yıllık traktör üretim kapasitesine karşın 2025 yılında yalnızca 1.378 adet üretim ve 1.777 adet satış gerçekleştirilerek kapasite kullanımı yaklaşık yüzde 10 seviyesine düşmüştür. Ayrıca yatırım amaçlı gayrimenkullerin 141 milyon TL'den 11,1 milyar TL'ye yükseldiği ve 2025 yılındaki net kârın esas faaliyetlerden ziyade değerleme gelirlerinden kaynaklandığı belirtilmiştir.",
       "ts": "2026-11-27T08:00:55.983517+03:00"
+    },
+    "1703137": {
+      "analysis_points": [
+        "1,75 milyar TL tutarında pay alım sözleşmesi imzalandı ve 27.11.2026'da SPK'ya başvuruldu → Onay sonrasında şirketin likidite yapısı ve sermaye tabanı güçlenir",
+        "İşlem tamamlandığında pay devrinin ortaklık yapısına etkisi ve fonun şirkete nakit girişi detayları izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "bbb62ace532116e9",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "SPK onay sürecinin uzun sürme riski",
+        "Pay satışı yoluyla sermaye yapısında oluşabilecek değişimler"
+      ],
+      "summary": "GERSAN ELEKTRİK TİCARET VE SANAYİ A.Ş., Global Corporate Finance (GCF) ile 06.10.2026 tarihinde imzalanan Term Sheet ve 24.11.2026 tarihli nihai sözleşme kapsamında, 1,75 milyar TL tutarındaki mevcut payların alımına ilişkin Pay Satış Bilgi Formu'nun onaylanması için 27.11.2026 tarihinde SPK'ya resmî başvuruda bulunmuştur. Bu işlem, şirket için önemli bir sermaye/finansman hamlesi niteliği taşımaktadır.",
+      "ts": "2026-11-27T10:00:56.088791+03:00"
+    },
+    "1703138": {
+      "analysis_points": [
+        "Malvarlığı üzerindeki tedbirler 26.11.2026'da kaldırıldı → Yönetim kurulu başkanı üzerindeki hukuki risk kalktı, kredi kurumları ile ilişkiler normalleşir",
+        "Süreç boyunca operasyonel faaliyetlerin etkilenmediği belirtildi → Nakit akışında ve projelerde kesinti yaşanmadı"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "5649f514f07bb796",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Yönetim kurulu başkanı hakkında yürütülen adli soruşturma süreci",
+        "Geçmişte şahsi varlıklar üzerine konulan kısıtlama tedbirleri"
+      ],
+      "summary": "KORAY GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., hâkim ortağı ve Yönetim Kurulu Başkanı Orhun Kartal hakkında İstanbul Cumhuriyet Başsavcılığı'nın 26.11.2026 tarihli yazısı ile şahsi malvarlığına yönelik tedbirlerin ve durdurma kararının kaldırıldığını bildirmiştir. Şirket, bu süreç boyunca ticari ve operasyonel faaliyetlerinin etkilenmediğini belirtmiştir. Yönetim kurulu başkanına yönelik kısıtlamaların kalkması, olası yönetimsel kilitlenmeleri ve itibar risklerini bertaraf etmektedir.",
+      "ts": "2026-11-27T10:00:56.088791+03:00"
+    },
+    "1703139": {
+      "analysis_points": [
+        "Hâkim ortak hakkında tedbir kararı süreci devam ediyor → Şirketin kurumsal yönetim riskleri artar, finansman görüşmeleri olumsuz etkilenir"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "5cc71aab8db60e66",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Hâkim ortak ve yönetim kurulu başkanının malvarlığına yönelik kısıtlayıcı tedbirler",
+        "Şirket yönetiminde olası operasyonel ve stratejik belirsizlikler"
+      ],
+      "summary": "HUN YENİLENEBİLİR ENERJİ ÜRETİM A.Ş., hâkim ortağı ve Yönetim Kurulu Başkanı Orhun Kartal'ın şahsi malvarlığına yönelik kısıtlama kararıyla ilgili 23.11.2026 tarihli açıklamasına istinaden güncelleme paylaşmıştır. Bildirimde tedbirlerin kaldırıldığına dair açık bir ifade yer almamakta, yalnızca önceki duyurunun güncellemesi olduğu belirtilmektedir.",
+      "ts": "2026-11-27T10:00:56.088791+03:00"
+    },
+    "1703140": {
+      "analysis_points": [
+        "Rutin bilgilendirme → Şirketin finansal veya operasyonel yapısına etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "b4dadf082d2a54fd",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "HİTİT BİLGİSAYAR HİZMETLERİ A.Ş., 26.11.2026 tarihinde analistlerle gerçekleştirilen telekonferans toplantısının kaydının internet sitesinde yayımlandığını duyurmuştur. Bu açıklama rutin bir yatırımcı ilişkileri bilgilendirmesi niteliğinde olup şirketin finansal yapısında veya operasyonlarında doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-27T10:00:56.088791+03:00"
     }
   },
-  "updated_at": "2026-11-27T08:00:55.983517+03:00",
+  "updated_at": "2026-11-27T10:00:56.088791+03:00",
   "version": 1
 }
