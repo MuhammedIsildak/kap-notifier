@@ -1,295 +1,5 @@
 {
   "items": {
-    "1698103": {
-      "analysis_points": [
-        "KAP özeti ve belge metni bulunmuyor → içerik detaylarına ulaşılamıyor, KAP ekindeki tam rapora bakılmalı"
-      ],
-      "category": "Finansal rapor",
-      "has_document": false,
-      "hash": "4805e312aee0b3be",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "SOCIETE GENERALE S.A. Paris Merkezi Fransa İstanbul Türkiye Merkez Şubesi tarafından banka finansal rapor bildiriminde bulunulmuştur. Bildirim metni ve KAP özeti detay içermemektedir. Şube bazlı rutin finansal raporlama sürecinin bir parçasıdır.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698115": {
-      "analysis_points": [
-        "Yönetim kurulu ihraç kararı aldı → İhraç edilecek borçlanma aracının toplam nominal tutarı ve vadesi SPK başvuru sürecinde takip edilmelidir",
-        "Tutar açıklanmadı → Borçlanmanın şirketin faiz karşılama oranına (EBITDA/Interest) etkisi ihraç sonrasında netleşecektir"
-      ],
-      "category": "Finansman",
-      "has_document": false,
-      "hash": "a88bae60ba30b551",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Yönetim kurulu kararında ihraç tavanı veya öngörülen tutar belirtilmedi",
-        "Uluslararası piyasalardقى borçlanma maliyetlerinin şirketin nakit akışı üzerindeki baskı potansiyeli"
-      ],
-      "summary": "Sasa Polyester Sanayi A.Ş., yurt dışında borçlanma aracı ihracına ilişkin yönetim kurulu kararı aldığını açıkladı. Alınan bu karar, şirketin dış finansman arayışlarının resmiyet kazandığını göstermektedir. İhraç koşullarının netleşmesi, şirketin orta vadeli borç yapısı açısından kritik öneme sahiptir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698116": {
-      "analysis_points": [
-        "Sınırlı denetim raporunda olumlu sonuç verildi → finansal tabloların güvenilirliği denetçi tarafından onaylandı",
-        "30 Eylül 2026 bilançosu yayımlandı → özkaynak kârlılığı, net faiz marjı ve takipteki alacaklar (NPL) rasyoları detaylı incelenmeli"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "4d7dbbde25f660fc",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Odea Bank A.Ş.'nin 30 Eylül 2026 tarihinde sona eren dokuz aylık döneme ait konsolide olmayan finansal tabloları DRT Bağımsız Denetim (Deloitte) tarafından sınırlı denetime tabi tutulmuş ve olumlu sonuç bildirilmiştir. Raporda BDDK mevzuatına ve TMS 34'e uygunluk açısından olumsuz görüşü gerektirecek herhangi bir hususa rastlanmadığı belirtilmiştir. Bildirim, bankanın dokuz aylık finansal verilerinin denetim onayından geçtiğini ve rutine uygun ilerlediğini teyit eder.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698119": {
-      "analysis_points": [
-        "Ömer Öziskender 13.11.2026'da istifa etti → boşalan yönetim kurulu başkanlığına yapılacak yeni atama ve stratejik yönelim izlenmeli",
-        "Ayrılığın gerekçesi açıklanmadı → şirket içi olası yönetimsel uyuşmazlık riskleri takip edilmeli"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "f4eef882e4d21942",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Yönetim kurulu başkanının atanmasından kısa süre sonra (8 gün içinde) istifa etmesi"
-      ],
-      "summary": "DÜNYA VARLIK YÖNETİM A.Ş. yönetim kurulu başkanı ve üyesi Ömer Öziskender, 05.11.2026 tarihinde Ticaret Sicil Gazetesi'nde ilan edilen görevlerinden 13.11.2026 tarihi itibarıyla istifa etmiştir. Ani gerçekleşen bu üst düzey yönetim ayrılığı, şirketin stratejik karar süreçleri ve kurumsal yönetim istikrarı açısından yakından izlenmelidir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698121": {
-      "analysis_points": [
-        "Satış tutarı açıklanmadı → nakit girişinin ve olası kâr/zarar etkisinin büyüklüğü bilançodan takip edilmeli",
-        "Tahsilat tamamlandı → alacak kalmadı, şirketin serbest nakit akışı ve kısa vadeli likiditesi olumlu etkilendi"
-      ],
-      "category": "Sözleşme",
-      "has_document": true,
-      "hash": "686203cdb51ebc92",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "DENİZ GAYRİMENKUL YATIRIM ORTAKLIĞI A.Ş., Muğla Bodrum Eskiçeşme mahallesi 928 Ada 2 Parsel ve 929 Ada 3 Parsellerdeki otel satışına ilişkin tahsilatın tamamını 13 Kasım 2026 tarihinde tahsil etmiştir. Satışa ilişkin tahsil edilmemiş alacak kalmamıştır. Bu durum, şirketin varlık satışından nakit girişini tamamladığını ve bilanço likiditesini doğrudan desteklediğini göstermektedir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698125": {
-      "analysis_points": [
-        "JCR Avrasya kredi notu AA- (tr) teyit edildi, görünüm Stabil → ulusal borçlanma maliyetlerinde ani değişim beklenmez",
-        "Nakit yaratımında zayıflama ve geri alım baskısı var → net borç/FAVÖK ve serbest nakit akışı (SNA) 2026 yıl sonu raporunda izlenmeli"
-      ],
-      "category": "Kredi notu",
-      "has_document": false,
-      "hash": "85b85781433c8945",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "2026 ilk yarıda nakit yaratımında zayıflama görülmesi",
-        "Temettü ödemeleri ve pay geri alımlarının nakit pozisyonu üzerinde baskı yaratması"
-      ],
-      "summary": "JCR Avrasya, METROPAL KURUMSAL HİZMETLER ANONİM ŞİRKETİ'nin kredi derecelendirme notunu AA- (tr) olarak teyit etmiş ve görünümü Stabil belirlemiştir. 2026 yılının ilk yarısındaki nakit yaratımı zayıflığına ve temettü/pay geri alımlarının nakit pozisyonuna baskı yapmasına rağmen yapısal operasyonel nakit akışı destekleyici bulunmuştur. Bu bildirim, şirketin borç servis kapasitesinin ve ulusal ölçekteki kredi kalitesinin korunduğunu göstermektedir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698126": {
-      "analysis_points": [
-        "Önceki not BBB (tr) → yeni not BBB- (tr) seviyesine düştü, aksiyon Not indirimi",
-        "Kısa vadeli ulusal not J3 (tr) → kısa vadeli likidite ve borç ödeme kapasitesi izlenmelidir",
-        "Uzun vadeli uluslararası not BB- / (Durağan) → döviz bazlı borçların refinansman riski artmıştır"
-      ],
-      "category": "Kredi notu",
-      "has_document": false,
-      "hash": "fb70a9ac5062d179",
-      "materiality": "critical",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Kredi notu yatırım yapılabilir seviyenin alt sınırına (BBB-) geriledi"
-      ],
-      "summary": "JCR Avrasya, Margün Enerji Üretim Sanayi ve Ticaret Anonim Şirketi'nin kredi derecelendirme notunu revize etti. Şirketin ulusal uzun vadeli notu 'BBB (tr)'den 'BBB- (tr)'ye düşürülürken, görünüm 'Stabil' olarak belirlendi. Bu indirim, şirketin borçlanma koşulları ve finansal esnekliği üzerinde baskı yaratabilir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698127": {
-      "analysis_points": [
-        "Önceki not A (tr) → yeni not BBB+ (tr) seviyesine indirildi, aksiyon Not indirimi",
-        "Uzun vadeli uluslararası not BB / (Durağan) → dış finansman maliyetleri gözden geçirilmelidir",
-        "Görünüm Stabil → kısa vadede notun korunması beklenmektedir"
-      ],
-      "category": "Kredi notu",
-      "has_document": false,
-      "hash": "cdd971e4fc2a626a",
-      "materiality": "critical",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "JCR Avrasya tarafından bir kademe not indirimi gerçekleştirildi"
-      ],
-      "summary": "JCR Avrasya, Menderes Tekstil Sanayi ve Ticaret A.Ş. için kredi derecelendirme notunu güncelledi ve şirketin ulusal uzun vadeli notunu 'A (tr)'den 'BBB+ (tr)'ye düşürdü. Not indirimi aksiyonu ile görünüm 'Stabil' olarak teyit edildi. Bu değişiklik, şirketin finansal risk profilindeki zayıflamaya işaret etmektedir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698131": {
-      "analysis_points": [
-        "Sınırlı denetim raporunda olumsuz görüş veya şartlı tasdik bulunmuyor → finansal veriler güvenle analize alınabilir",
-        "Rapor dönemi 30.09.2026 → bilanço ve gelir tablosu kalemleri BDDK mevzuatına göre incelenmelidir",
-        "Yönetim ve denetim komitesi onaylı → kurumsal yönetim standartlarına uyum sürmektedir"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "5a28c00eb49ae866",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Türk Ticaret Bankası A.Ş., 30 Eylül 2026 tarihli konsolide olmayan finansal tablolarını sınırlı denetim raporu ile birlikte açıkladı. Bağımsız denetçi Güney Bağımsız Denetim ve SMMM A.Ş., tabloların BDDK düzenlemelerine uygun olarak gerçeğe uygun sunulduğunu belirtti. Rapor, bankanın dokuz aylık mali bünye ve performans göstergelerini ortaya koymaktadır.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698133": {
-      "analysis_points": [
-        "Bağımsızlık beyanı sunuldu → Adayın mevzuata uygunluk kriterleri genel kurulda oylanacaktır",
-        "Rutin yönetim kurulu adayı bildirimi → Şirketin operasyonel ve finansal performansına doğrudan etkisi bulunmamaktadır"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "0858b73b39caae9b",
-      "materiality": "low",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "Doğusan Boru Sanayii ve Ticaret A.Ş.'de Burak Alkan tarafından bağımsız yönetim kurulu üyeliği adaylığı kapsamında bağımsızlık beyanı sunulmuştur. Bu bildirim rutin kurumsal yönetim ve adaylık süreçlerinin bir parçasıdır. Şirketin finansal yapısına veya kredi profiline doğrudan bir etkisi bulunmamaktadır.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698137": {
-      "analysis_points": [
-        "Ulusal uzun vadeli not A (tr) → BBB+ (tr) seviyesine düştü, görünüm Stabil → borçlanma maliyetlerinde artışa yol açabilir",
-        "Uzun vadeli uluslararası not BB / (Durağan) → döviz cinsi borç servisinde maliyet baskısı yaratır",
-        "Kısa vadeli ulusal not J2 (tr) → kısa vadeli borç çevirme oranları takip edilmelidir"
-      ],
-      "category": "Kredi notu",
-      "has_document": false,
-      "hash": "67b5d50b3e0331a6",
-      "materiality": "critical",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Kredi notu yatırım yapılabilir seviyenin alt kademelerine doğru indirildi",
-        "Önceki not 'A (tr)' iken yeni not 'BBB+ (tr)' seviyesine geriledi"
-      ],
-      "summary": "JCR Avrasya, Menderes Tekstil Sanayi ve Ticaret A.Ş.'nin ulusal uzun vadeli kredi notunu 'A (tr)' seviyesinden 'BBB+ (tr)' seviyesine indirdi. Görünüm 'Stabil' olarak belirlenirken, bu not indirimi şirketin borç servis kapasitesi ve finansman maliyetleri açısından risk unsuru oluşturmaktadır.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698140": {
-      "analysis_points": [
-        "Nakit ve nakit benzerleri 10.548.466 TL → kısa vadeli yükümlülükler 152.455.474 TL karşısında likidite baskısı yaratmaktadır",
-        "Hasılat 24.604.350 TL iken satışların maliyeti 27.105.312 TL oldu → brüt kâr marjı negatif seyretmektedir",
-        "İlişkili taraflara diğer borçlar 61.714.915 TL → ana ortaklık finansman desteğinin devamı izlenmelidir"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "b591d5aa3568608d",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Ticari faaliyetlerden brüt zarar 2.500.962 TL olarak gerçekleşti",
-        "Ana ortaklığa ait özkaynaklar 31.12.2025 tarihindeki 74.234.060 TL'den 57.264.472 TL'ye düştü",
-        "Esas faaliyet zararı 20.391.653 TL seviyesinde"
-      ],
-      "summary": "Doğusan Boru Sanayi ve Ticaret A.Ş., 30.09.2026 tarihinde sona eren dokuz aylık ara döneme ait finansal tablolarını yayımladı. Şirket bu dönemde 15.855.179 TL net dönem zararı kaydederken, özkaynakları 57.264.472 TL seviyesine geriledi. Finansal tablolar, şirketin faaliyet kârlılığındaki daralmayı ve borç yükünü yansıtması açısından önem taşımaktadır.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698142": {
-      "analysis_points": [
-        "Ana ortaklık yönetimi TMSF'ye devredildi → şirket operasyonları ve stratejik kararlarda kamuki denetim dönemi başladı",
-        "Halka açıklık oranı %43,85 → ortaklık yapı değişikliklerinin azınlık pay sahipleri üzerindeki hukuki ve piyasa etkileri izlenmeli"
-      ],
-      "category": "TMSF/devir",
-      "has_document": true,
-      "hash": "66114f6aaa01c02f",
-      "materiality": "critical",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Ana hissedar yönetiminin TMSF tarafından kayyım olarak devralınması",
-        "Mahkeme kararı ve CMK hükümleri kapsamında hukuki süreç riski"
-      ],
-      "summary": "DOĞUSAN BORU SANAYİ VE TİCARET A.Ş.'nin %56,09 oranındaki ana hissedarı Doğusan Yatırım İnşaat A.Ş. yönetimi, 17.09.2026 tarihli mahkeme kararı ve Ceza Muhakemesi Kanunu hükümleri uyarınca Tasarruf Mevduatı Sigorta Fonu (TMSF) tarafından kayyımlık yetkileriyle yürütülmeye başlanmıştır. Bu gelişme, şirketin ana ortaklık kontrolünün kamusal ve hukuki müdahaleye uğradığını ve operasyonel belirsizliklerin kritik seviyeye ulaştığını göstermektedir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698152": {
-      "analysis_points": [
-        "JCR Avrasya notu AA- (tr) / Stabil olarak teyit etti → kredi profili korunuyor ancak likidite baskıları izlenmeli",
-        "Nakit yaratımında zayıflama vurgusu → temettü ve geri alımların serbest nakit akışı üzerindeki net etkisi 2026 sonu bilançosunda test edilmeli"
-      ],
-      "category": "Kredi notu",
-      "has_document": false,
-      "hash": "9a637c13ea59ff5b",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "2026 ilk yarıda nakit yaratımında zayıflama",
-        "Temettü ödemeleri ve pay geri alımlarının nakit pozisyonu üzerinde yaratacağı baskı"
-      ],
-      "summary": "METROPAL KURUMSAL HİZMETLER ANONİM ŞİRKETİ'nin kredi derecelendirme notu JCR Avrasya tarafından AA- (tr) olarak teyit edilmiş ve görünüm Stabil ilan edilmiştir. Ajans, 2026 yılının ilk yarısındaki nakit yaratımı zayıflamasına ve yıl içindeki temettü/geri alım baskılarına rağmen operasyonel nakdin yapısal olarak desteklendiğini belirtmiştir. Bu durum, şirketin borç servis kapasitesinin korunduğunu ancak nakit akışı baskılarının sürdüğünü göstermektedir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698154": {
-      "analysis_points": [
-        "Yurt dışında borçlanma aracı ihraç başvurusu → İhraç onaylandığında tutar ve kupon oranı şirketin finansman maliyetini belirler",
-        "Tutar ve vade bilgisi verilmedi → İhraç gerçekleştiğinde net borç/FAVÖK rasyosuna etkisi yeniden hesaplanmalıdır"
-      ],
-      "category": "Finansman",
-      "has_document": false,
-      "hash": "ef5ef75bd0d41fdf",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Yurt dışında borçlanma aracı ihraç başvurusu yapıldı ancak ihraç tutarı ve faiz oranı bildirimde yer almadı",
-        "Mevcut yüksek borç yükü üzerine eklenecek yeni döviz cinsi borçlanmanın kur riski yaratması"
-      ],
-      "summary": "Sasa Polyester Sanayi A.Ş., yurt dışında borçlanma aracı ihracı amacıyla Sermaye Piyasası Kurulu'na (SPK) başvuru yaptı. Bu adım, şirketin uluslararası borçlanma yoluyla likidite sağlama ve finansman maliyetlerini yönetme stratejisinin bir parçasıdır. Sağlanacak fonun büyüklüğü ve vadesi şirketin borç servisi açısından önem taşımaktadır.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698168": {
-      "analysis_points": [
-        "Toplam fon tahsisatı 598,47 milyon TL → Fonların Kıyıkışlacık, Tuzla 2. Otel, Esenboğa 2. Otel ve Gebze lojistik depo projeleri arasında yeniden dağılımı nakit çıkış takvimini değiştirir",
-        "Tersane Hotel projesinden vazgeçilmesi → Daha önce bu projeye bağlanan kaynakların iptal veya devir maliyetlerinin finansal tablolara yansıması izlenmelidir"
-      ],
-      "category": "Sermaye artırımı",
-      "has_document": true,
-      "hash": "14dd225e58ebfed9",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Tersane Hotel Istanbul projesinin terk edilmesi nedeniyle fonların başka projelere yönlendirilmesi",
-        "Projeler arası fon transferlerinin portföy getirilerini ve tamamlama sürelerini değiştirmesi riski"
-      ],
-      "summary": "Akfen Gayrimenkul Yatırım Ortaklığı A.Ş., sermaye artırımından elde edilen 598,47 milyon TL tutarındaki fonun kullanım yerlerinde değişiklik yapılmasına karar vermiştir. Tersane Hotel Istanbul projesinin terk edilmesiyle fonların yaklaşık %25'i Tuzla 2nd Hotel Projesi'ne aktarılmış ve toplam fon tahsisatı Kıyıkışlacık, Tuzla 2. Otel ve Esenboğa 2. Otel projeleri ile Kocaeli/Gebze lojistik depo geliştirme projeleri arasında yeniden yapılandırılmıştır. Bu değişiklik, şirketin yatırım portföyü önceliklerinin ve nakit kullanım stratejisinin değiştiğini göstermektedir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698172": {
-      "analysis_points": [
-        "İştirak modeliyle kısmi bölünme tescil edildi → Bölünmeye konu olan varlık ve yükümlülüklerin bilançodaki payı incelenmelidir",
-        "Kısmi bölünme işlemi → Şirketin ana faaliyet kârlılığına ve özkaynak büyüklüğüne olan etkisi finansal raporlarda takip edilmelidir"
-      ],
-      "category": "M&A",
-      "has_document": false,
-      "hash": "0c3cd0ae4185f735",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Kısmi bölünme sonrası varlık ve borç transferlerinin bilanço üzerindeki net etkisi belirsiz",
-        "İştirak yapısındaki değişimin konsolide finansal tablolara yansıma koşulları net değil"
-      ],
-      "summary": "İmaş Makina Sanayi A.Ş., iştirak modeliyle kısmi bölünme işlemlerine ilişkin tescil işleminin gerçekleştirildiğini bildirdi. Bu yapısal değişiklik, şirketin varlık ve borç dağılımını doğrudan etkileyen önemli bir kurumsal işlem niteliğindedir. Analist açısından şirketin bilanço yapısı ve operasyonel odak alanlarının incelenmesini gerektirir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
-    "1698176": {
-      "analysis_points": [
-        "30 Eylül 2026 itibarıyla sınırlı denetim olumlu sonuçlandı → finansal tabloların güvenilirliği teyit edildi",
-        "Rapor dönemi 9 aylık → net kâr, özkaynak ve sermaye yeterliliği rasyoları detaylı bilanço kalemlerinden incelenmeli"
-      ],
-      "category": "Finansal rapor",
-      "has_document": true,
-      "hash": "0e47a5cc194dfbd7",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "DİLER YATIRIM BANKASI A.Ş.’nin 30 Eylül 2026 tarihli konsolide olmayan finansal tabloları KPMG Bağımsız Denetim tarafından sınırlı denetime tabi tutulmuştur. Denetçi raporuna göre, finansal tabloların BDDK muhasebe mevzuatına uygun olarak gerçeğe uygun sunulmadığına dair herhangi bir hususa rastlanmamış olup olumlu sonuç bildirilmiştir. Bu rapor, bankanın dokuz aylık mali bünyesinin mevzuata uygun ve denetlenmiş olduğunu teyit etmektedir.",
-      "ts": "2026-11-13T19:00:56.576724+03:00"
-    },
     "1698179": {
       "analysis_points": [
         "İmtiyazlı pay alımından vazgeçildi (13.11.2026 tarihli karar) → Metro Yatırım Ortaklığı üzerindeki kontrol veya ortaklık yapısı planlandığı gibi değişmeyecek",
@@ -5741,8 +5451,314 @@
       "red_flags": [],
       "summary": "TEB Yatırım Menkul Değerler A.Ş., 26 Kasım 2026 tarihinde olağanüstü genel kurul toplantısı gerçekleştirmiştir. Toplantıda 100.000.000 TL sermayeyi temsilen tüm pay sahipleri hazır bulunmuş ve Güney Bağımsız Denetim A.Ş. 2026 hesap dönemi için sürdürülebilirlik raporu sınırlı güvence denetçisi olarak seçilmiştir.",
       "ts": "2026-11-27T18:01:00.748057+03:00"
+    },
+    "1703376": {
+      "analysis_points": [
+        "Güney Bağımsız Denetim seçildi → 2026 dönemi sürdürülebilirlik raporu sınırlı güvence denetimi bu kurum tarafından yürütülecek",
+        "Mali yapıya doğrudan etkisi bulunmuyor → Düzenleyici uyum gereksinimlerinin yerine getirilmesi açısından standart bir işlemdir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "97f411a286efadfc",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "TEB Finansman A.Ş.'nin 27 Kasım 2026 tarihli Olağanüstü Genel Kurul Toplantısı'nda, Güney Bağımsız Denetim ve Serbest Muhasebeci Mali Müşavirlik A.Ş.'nin 1 Ocak 2026 – 31 Aralık 2026 hesap dönemi için TSRS Uyumlu Sürdürülebilirlik Raporu sınırlı güvence denetçisi olarak seçilmesi oy birliğiyle kararlaştırılmıştır. Bu karar, yasal regülasyon uyumu çerçevesinde gerçekleştirilen rutin bir denetçi seçiminden ibarettir. Şirketin ana faaliyetlerini veya borç yapısını doğrudan değiştirmez.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703384": {
+      "analysis_points": [
+        "TMSF kayyımlığı atandı → mevcut kredi sözleşmelerindeki 'değişiklik' veya 'kayyım' maddeleri tetiklenerek borçların erken ödenmesi (accelerated repayment) talep edilebilir",
+        "Yeni yönetim kurulu oluşturuldu (Nevzat Avunç ve heyeti) → operasyonların kesintisiz sürdürülüp sürdürülemediği tahsilat performansından izlenmeli",
+        "Varlık yönetimi sektörü güven esasına dayanır → tahsilat oranları ve banka finansman limitlerinde ani daralma beklenmelidir"
+      ],
+      "category": "TMSF/devir",
+      "has_document": true,
+      "hash": "50afcfff226f7697",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Mahkeme kararıyla şirkete TMSF'nin kayyım olarak atanması",
+        "Şirketin yönetim kontrolünün tamamen el değiştirmesi ve hukuki belirsizlik",
+        "Kredi verenler nezdinde olası çapraz temerrüt (cross-default) ve kredi kapama baskısı"
+      ],
+      "summary": "İstanbul 6. Sulh Ceza Hakimliği'nin 26.11.2026 tarihli kararı ile Tasarruf Mevduatı Sigorta Fonu (TMSF) Birikim Varlık Yönetim A.Ş.'ye kayyım olarak atanmıştır. Fon Kurulu tarafından yeni yönetim kurulu oluşturulmuş ve başkanlığa Nevzat Avunç getirilmiştir. Bu gelişme şirketin mülkiyet ve yönetim kontrolünün kamusal otoriteye geçmesi anlamına gelmekte olup, kredi profili ve operasyonel devamlılık açısından kritik risk barındırmaktadır.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703386": {
+      "analysis_points": [
+        "Uzun vadeli ulusal not BBB (tr) ve görünüm Stabil olarak teyit edildi → mevcut finansal risk profilinde ani bir kötüleşme öngörülmemektedir",
+        "Kaldıraç metriklerindeki bozulma ve işletme sermayesi ihtiyacı devam ediyor → nakit akışı ve borç servis oranları 2026 yıl sonu bilançosunda yakından izlenmelidir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "268d7a1a640fa872",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "2025 yılında kaldıraç metriklerinde görülen bozulmanın, işletme sermayesi ihtiyacı nedeniyle 2026 yılı dokuz aylık finansallarına göre de devam etmesi"
+      ],
+      "summary": "JCR Avrasya, İŞBİR SENTETİK DOKUMA SANAYİ ANONİM ŞİRKETİ'nin uzun vadeli ulusal kredi notunu BBB (tr) ve görünümünü Stabil olarak teyit etmiştir. Uzun vadeli uluslararası notu BB (Durağan), kısa vadeli ulusal notu ise J2 (tr) (Durağan) olarak açıklanmıştır. 2025 ve 2026 9 aylık finansallarda kaldıraç ve işletme sermayesi baskısı raporda yer almıştır.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703387": {
+      "analysis_points": [
+        "Uzun vadeli ulusal not AA (tr)'den AA- (tr)'ye indirildi → kredi kalitesinde sınırlı bir gerileme söz konusu olup maliyetlere yansıması izlenmelidir",
+        "2026 9 aylık dönemde Net Borç/FAVÖK çarpanında bozulma görüldü → kaldıraç oranları düşmezse sonraki dönemlerde ek not baskısı oluşabilir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "a28ed9c7baa297da",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "2026 yılının ilk dokuz ayında Net Borç/FAVÖK çarpanındaki kısmi bozulmaya rağmen yönetilebilir finansal kaldıraç göstergeleri"
+      ],
+      "summary": "JCR Avrasya, NET HOLDİNG A.Ş.'nin uzun vadeli ulusal kredi notunu AA (tr) seviyesinden AA- (tr) seviyesine indirmiştir. Görünüm Stabil olarak korunurken, aksiyon not indirimi olmuştur. 2026 yılının ilk dokuz ayında Net Borç/FAVÖK çarpanındaki kısmi bozulma not indiriminin gerekçesi olarak belirtilmiştir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703388": {
+      "analysis_points": [
+        "Kredi notu BBB- (tr) seviyesinden yatırım yapılabilir seviyenin altı olan BB+ (tr) seviyesine düştü ve görünüm Negatif → yeni borçlanma maliyetleri yükselir ve finansmana erişim kısıtlanır",
+        "Net işletme sermayesi açığı ve zayıf likidite → kısa vadeli borç ödemeleri için ilave nakit yaratılması zorunludur, aksi takdirde teminat veya yeniden yapılandırma ihtiyacı doğar"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "cc01cab9b1934745",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Artan net işletme sermayesi açığıyla birlikte zayıf likidite pozisyonu ve dalgalı seyreden faaliyetlerden kaynaklanan nakit akışları"
+      ],
+      "summary": "JCR Avrasya, SELVA GIDA SANAYİ ANONİM ŞİRKETİ'nin uzun vadeli ulusal kredi notunu BBB- (tr) seviyesinden BB+ (tr) seviyesine indirmiştir. Görünüm Negatif olarak belirlenirken, aksiyon not indirimi olmuştur. Artan net işletme sermayesi açığı ve zayıf likidite pozisyonu raporda risk unsuru olarak vurgulanmıştır.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703390": {
+      "analysis_points": [
+        "JCR Avrasya tarafından uzun vadeli ulusal not AA- (tr) ve görünüm Stabil olarak teyit edildi → borçlanma maliyetlerinde ani bir değişim beklenmez",
+        "Kısa vadeli ulusal not J1+ (tr) seviyesinde → kısa vadeli borç servis kapasitesi güçlü kalmaya devam ediyor"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "d2d1b81341a1c666",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "JCR Avrasya, NET HOLDİNG A.Ş. için kredi derecelendirme raporunu yayımlamıştır. Şirketin uzun vadeli ulusal kredi notu AA- (tr), görünümü ise Stabil olarak belirlenmiştir. Uzun vadeli uluslararası yabancı para notu BB (Durağan), kısa vadeli ulusal notu ise J1+ (tr) (Durağan) olarak bildirilmiştir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703391": {
+      "analysis_points": [
+        "AA+ notu → Şirketin kredi riskinin oldukça düşük olduğu teyit edilmiştir",
+        "Güçlü nakit rezervi → Finansal borçların çevrilmesinde yüksek bir kapasiteye işaret etmektedir",
+        "Hızlı nakit dönüşüm döngüsü → Perakende sektöründeki operasyonel verimliliğin sürdüğü görülmektedir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "2337697558162f10",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "JCR Avrasya, Şok Marketler Ticaret A.Ş.'nin uzun vadeli ulusal kredi notunu 'AA+ (tr)' olarak teyit etmiş ve görünümü 'Stabil' olarak belirlemiştir. Şirketin etkin likidite yönetimi ve güçlü nakit rezervleri notun temel destekleyicileri olmuştur.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703392": {
+      "analysis_points": [
+        "Not indirimi → Şirketin borçlanma maliyetlerinde olası bir artış takip edilmelidir",
+        "BBB+ notu → Yatırım yapılabilir seviyede kalmaya devam etmesi finansal esneklik açısından olumludur",
+        "Stabil görünüm → Mevcut finansal yapının korunacağı beklentisi hakimdir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "122ee89fce46c5ec",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "JCR Avrasya, Karel Elektronik Sanayi ve Ticaret A.Ş.'nin uzun vadeli ulusal kredi notunu 'A (tr)' seviyesinden 'BBB+ (tr)' seviyesine indirmiştir. Görünüm 'Stabil' olarak korunmuştur.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703394": {
+      "analysis_points": [
+        "İdari para cezası 672.292.698,43 TL → şirketin son dönem net kârı ve serbest nakit akışı ile kıyaslanarak ödenebilirlik kapasitesi ölçülmeli",
+        "Gerekçeli kararın yayımlanması → dava açma ve yürütmeyi durdurma süreçlerinin hukuki maliyeti ve süresi takip edilmeli",
+        "Mali tablolarda karşılık ayrılıp ayrılmadığı → ayrılmadıysa dönem kârı ve özkaynaklar üzerinde ani darbe riski yaratır"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "11b1915334a0d2f0",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "672.292.698,43 TL tutarında yüksek borç/yükümlülük yaratan idari para cezası",
+        "Rekabet Kurumu'nun regülasyon yaptırımı ve gerekçeli kararın kesinleşme süreci"
+      ],
+      "summary": "Goodyear Lastikleri T.A.Ş. hakkında Rekabet Kurumu tarafından daha önce 10.06.2026 tarihinde duyurulan 672.292.698,43 TL tutarındaki idari para cezasına ilişkin gerekçeli karar yayımlanmıştır. Bu büyüklükteki bir ceza şirketin nakit akışını ve kârlılığını doğrudan baskılayacak boyuttadır. Şirketin yasal süreçleri işletmesi ve bu yükümlülüğün bilançodaki karşılıklarını izlemek kritik önem taşımaktadır.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703395": {
+      "analysis_points": [
+        "Kredi notu yatırım yapılabilir seviyenin altına indi → Borçlanma maliyetlerinde artış ve finansmana erişimde zorluk beklenebilir",
+        "Negatif görünüm → Likidite yönetimi iyileşmezse notun daha da düşme riski bulunmaktadır",
+        "İşletme sermayesi açığı → Nakit akış tablosundaki operasyonel nakit üretimi yakından izlenmelidir"
+      ],
+      "category": "Kredi notu",
+      "has_document": false,
+      "hash": "58dfa208a5653040",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Net işletme sermayesi açığı",
+        "Zayıf likidite pozisyonu",
+        "Negatif görünüm"
+      ],
+      "summary": "JCR Avrasya, Selva Gıda Sanayi A.Ş.'nin uzun vadeli ulusal kredi notunu 'BBB-' seviyesinden 'BB+ (tr)' seviyesine indirmiş ve görünümü 'Negatif' olarak belirlemiştir. Not indirimi, şirketin zayıf likidite pozisyonu ve nakit akışındaki dalgalanmalar gerekçesiyle yapılmıştır.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703396": {
+      "analysis_points": [
+        "Mustafa Zati'nin danışmanlık görevi → stratejik karar süreçlerindeki etkisi izlenmeli, ancak doğrudan finansal bir etkisi bulunmuyor",
+        "Yönetim kurulu danışmanlığı ataması → operasyonel maliyetler üzerinde dönemsel etkisi sınırlı"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "1808e913b069bd8c",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kardemir Karabük Demir Çelik Sanayi ve Ticaret A.Ş.'de görevden ayrılma ve atama işlemleri gerçekleştirilmiştir. Mustafa Zati, Yönetim Kurulu Başkan Danışmanlığı görevine atanmıştır. Bu atama rutin bir idari ve danışmanlık kadro düzenlemesi olup, şirketin operasyonel veya finansal yapısında doğrudan kritik bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703397": {
+      "analysis_points": [
+        "Konsolide rapora geçiş aşaması → finansal tabloda yer almayan iştirak veya bağlı ortaklıklar konsolidasyon kapsamına girecek",
+        "Geçiş tarihi ve kapsamı netleştirilmeli → dönemsel karşılaştırılabilirlik (trend analizi) yeniden yapılandırılmalı"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "fdb3973ed9c28035",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Koç Metalurji A.Ş. tarafından konsolide finansal raporlamaya geçiş sürecine ilişkin güncelleme yapılmamış, mevcut durum korunmuştur. Finansal tabloların konsolide yapıya geçmesi, grup şirketlerinin finansal durumunun bütüncül olarak görülmesini sağlayacaktır. Yatırımcılar ve analistler için raporlama kalitesini ve şeffaflığı etkileyen bir süreçtir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703398": {
+      "analysis_points": [
+        "SPK'dan ek süre talep edildi → Yeni yönetici ataması tamamlanana kadar bildirim süreçlerinde geçici sorumluluk dağılımı izlenmeli",
+        "Mali tabloya veya borç servisine etkisi yoktur → Doğrudan finansal bir risk barındırmamaktadır"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "fbfcafb89522865d",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kocaer Çelik Sanayi ve Ticaret A.Ş., Yatırımcı İlişkileri Bölümü Yöneticisi atamasına ilişkin ek süre talebiyle Sermaye Piyasası Kurulu'na başvuruda bulunmuştur. Bu idari süreç, şirketin operasyonel veya finansal yapısını doğrudan etkilememektedir. Rutin bir kurumsal yönetim uyum bildirisidir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703399": {
+      "analysis_points": [
+        "Esas faaliyet zararı/Hasılat oranı %35,5 → Operasyonel verimlilik ve gider yönetimi sorgulanmalı",
+        "Özkaynaklar 245 milyon TL seviyesinde → Zararın devamı durumunda sermaye yeterliliği üzerindeki baskı izlenmeli",
+        "Nakit ve nakit benzerleri 243 milyon TL → Şirketin kısa vadeli borç ödeme kapasitesi güçlü ancak operasyonel nakit akışı negatif"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "d174bb5a5fc946a7",
+      "materiality": "high",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [
+        "Esas faaliyetlerden 32 milyon TL zarar",
+        "Genel yönetim giderlerinin 93,5 milyon TL ile hasılatın üzerinde gerçekleşmesi",
+        "Net parasal pozisyon kaybı 27,9 milyon TL"
+      ],
+      "summary": "Emaa Blue Portföy Yönetimi A.Ş.'nin 30.09.2026 tarihli finansal tablolarına göre şirket 3.739.606 TL net dönem zararı açıklamıştır. Şirketin esas faaliyet zararı 32.027.226 TL seviyesinde gerçekleşirken, genel yönetim giderlerindeki yüksek seyir dikkat çekmektedir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703400": {
+      "analysis_points": [
+        "BPP borcu Namık Kemal Gökalp'in kişisel ödemesiyle kapandı → şirket özkaynağından nakit çıkışı olmadı, likidite baskısı geçici olarak hafifledi",
+        "28.09.2026 vadeli borç 27.11.2026 tarihinde ödendi → ~2 aylık gecikme yaşandı, benzer vadeli borçlar için rollover riski yeniden değerlendirilmeli",
+        "Fonların tasfiye süreci tamamlandı → grup içi fon yapısının ana şirketin likiditesine olası etkileri bilançoda izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": true,
+      "hash": "e028e1e0ef4aae3e",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Ortaklardan alınabilecek mali desteklerde sorunlar yaşanması",
+        "Şirket bağlantılı yatırım fonlarının tasfiye sürecine girmesi",
+        "Daralan finansman koşulları nedeniyle borcun vadesinde ödenememesi"
+      ],
+      "summary": "Hedef Holding A.Ş.'nin 28.09.2026 vadeli BPP borcu, daralan finansman koşulları ve fonların tasfiye süreci nedeniyle vadesinde ödenememiş ve temdit başvurusunda bulunulmuştu. Pay sahibi Namık Kemal Gökalp tarafından ilgili fona yapılan ödeme sonucunda borç sona ermiştir. Bu gelişme, şirket için kısa vadeli bir likidite baskısının ortadan kalktığını ve temerrüt riskinin bertaraf edildiğini göstermektedir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703403": {
+      "analysis_points": [
+        "İhraç tavanı tutarı açıklanmadı → İhraç belgesi ve SPK onayı sonrası limitler takip edilmeli",
+        "İhracın vadesi ve faiz yapısı belirsiz → Bankanın net faiz marjı üzerindeki etkisi ihraç detayları netleşince hesaplanabilir"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "1d1209deaf69bc8f",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.1-flash-lite",
+      "red_flags": [],
+      "summary": "Şekerbank T.A.Ş. Yönetim Kurulu, sermaye piyasası aracı ihracı için tavan kararı almıştır. Bu işlem, bankanın rutin likidite ve fonlama yönetimi faaliyetleri kapsamında değerlendirilmektedir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703409": {
+      "analysis_points": [
+        "1,5 milyar TL anapara portföy alımı iptal edildi → Varlık yönetim şirketinin dönemsel ciro ve tahsilat beklentileri gerçekleşmeyecek",
+        "Satıştan vazgeçilme gerekçesi belirtilmedi → Garanti Bankası ile olan gelecekteki portföy ihale süreçleri belirsizlik yarattı",
+        "Ödenmesi planlanan ihale bedeli nakit olarak elde kaldı → Alternatif portföy alımları veya faiz geliri getirisi değerlendirilmeli"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "024e2df5f19e8d83",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "İhale kazandıktan sonra banka tarafından satıştan vazgeçilmesi",
+        "1,5 milyar TL anapara büyüklüğündeki portföy gelirinin portföyden çıkması"
+      ],
+      "summary": "GSD Holding A.Ş.'nin bağlı ortaklığı GSD Varlık Yönetim A.Ş.'nin Türkiye Garanti Bankası A.Ş. tarafından 20.11.2026 tarihinde düzenlenen 1,5 milyar TL anaparaya sahip iki adet bireysel portföy ihalesini kazandığı duyurusu, bankanın 27.11.2026 tarihli kararıyla iptal edilmiştir. Bu gelişme, varlık yönetim şirketinin portföy büyüme hedeflerini ve öngörülen nakit akışı yaratma potansiyelini kısa vadede olumsuz etkilemektedir. İşlemin iptal edilmesi nedeniyle şirketin fon kullanım projeksiyonlarında güncelleme yapılması gerekecektir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703415": {
+      "analysis_points": [
+        "Toplam 1.515.837.727,90 TL'lik alacak 58.000.000,00 TL'ye satıldı → Nominal değerin yaklaşık %3.8'ine denk gelen bu oran, alacakların tahsil kabiliyetinin zayıflığını ve bankanın bilanço temizleme önceliğini gösterir",
+        "Nakit giriş tutarı 58.000.000,00 TL → Bankanın likiditesine sınırlı katkı sağlar, ana karlılık üzerindeki etkisi karşılık politikalarına bağlı olarak izlenmeli",
+        "İki ayrı portföy elden çıkarıldı → Bankanın NPL (takipteki alacaklar) oranında ve karşılık giderlerinde düşüş yaratır"
+      ],
+      "category": "Sözleşme",
+      "has_document": true,
+      "hash": "e278cc36c831bc78",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "1,5 milyar TL'yi aşan toplam alacağın 58 milyon TL gibi düşük bir bedelle satılması",
+        "Takipteki alacakların tasfiye maliyetinin yüksek seyretmesi"
+      ],
+      "summary": "Türkiye Garanti Bankası A.Ş., takipteki krediler portföyünde yer alan toplam 1.515.837.727,90 TL anapara ve akdi faiz bakiyesindeki iki ayrı alacağını toplam 58.000.000,00 TL bedelle Birleşim Varlık Yönetim A.Ş.'ye satmıştır. İlk portföy için 753.405.134,64 TL alacak 31.000.000,00 TL'ye, ikinci portföy için ise 762.432.593,26 TL alacak 27.000.000,00 TL'ye devredilmiştir. Bu satış, bankanın takipteki alacak stokunu azaltarak aktif kalitesini iyileştirirken, portföyün nominal değerine kıyasla oldukça düşük bir tahsilat bedeliyle elden çıkarıldığını göstermektedir.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
+    },
+    "1703416": {
+      "analysis_points": [
+        "İhraç tavanı tutarı belgede belirtilmedi → SPK bülteninden tavan tutarı teyit edilmeli",
+        "Borçlanma aracı onayı alındı → Şirketin piyasa koşullarına bağlı olarak borçlanma maliyetleri ve vade yapısı izlenmeli"
+      ],
+      "category": "Finansman",
+      "has_document": false,
+      "hash": "35d9e11fcebbd174",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Yapı Kredi Finansal Kiralama A.O.'nun borçlanma aracı ihracına ilişkin Sermaye Piyasası Kurulu onayını aldığı duyurulmuştur. Belge metni bulunmadığından ihraç tavanı ve vadesi net olarak belirtilmemiştir. Bu onay, şirketin orta vadeli fonlama imkanlarını çeşitlendirmesi ve likidite yönetimi açısından önem taşımaktadır.",
+      "ts": "2026-11-27T19:01:00.277185+03:00"
     }
   },
-  "updated_at": "2026-11-27T18:01:00.748057+03:00",
+  "updated_at": "2026-11-27T19:01:00.277185+03:00",
   "version": 1
 }
