@@ -1,41 +1,5 @@
 {
   "items": {
-    "1698206": {
-      "analysis_points": [
-        "Devre konu stok ve sözleşmelerin ciroya ve kârlılığa etkisi → finansal tablolardan arındırma etkisi ayrıca takip edilmeli",
-        "İşlem bedeli açıklanmadı → nakit girişi veya varlık satışı kârı hesaplanamıyor, detaylı finansal raporlar incelenmeli",
-        "Kapanış tarihi Alarko Holding pay devrine bağlandı → Holding seviyesindeki süreçlerin tamamlanması izlenmeli"
-      ],
-      "category": "M&A",
-      "has_document": true,
-      "hash": "2992b6d622c36c0c",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "İşlemin finansal büyüklüğü ve satış bedeli belgede belirtilmemiş",
-        "Kapanış tarihinin Alarko Holding ile Carrier arasındaki pay devrine bağlı olması takvimi belirsizleştiriyor"
-      ],
-      "summary": "Alarko Carrier Sanayi ve Ticaret A.Ş., Carrier ve Toshiba markalarına ilişkin belirli stok ve sözleşmelerin Viessmann Isı Teknikleri Ticaret Limited Şirketi'ne devredilmesi amacıyla 7 Ağustos 2026'da imzalanan faaliyet ayrıştırma sözleşmesi için Rekabet Kurumu onayının alındığını duyurdu. İşlemin kapanışı, Alarko Holding A.Ş. ile Carrier arasındaki pay devri işleminin kapanış tarihi ile eş zamanlı gerçekleşecek. Bu operasyon, şirketin portföy optimizasyonu ve varlık yapısının dönüştürülmesi açısından önem taşıyor.",
-      "ts": "2026-11-13T23:00:52.539833+03:00"
-    },
-    "1698207": {
-      "analysis_points": [
-        "11.12.2026 tarihli olağanüstü genel kurul → yönetim kurulu yapısındaki olası değişimler ve yeni üyelerin profilleri izlenmeli",
-        "Yönetim kurulu üye sayısı ve ücret politikası değişimi → genel kurul gündemindeki kararlar şirketin genel yönetim giderlerine yansıtılmalı",
-        "TTK 363 kapsamındaki atamaların gerekçesi → eksik bilgi durumunda yatırımcı ilişkilerinden netleştirilmeli"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "aaa4ecd4b2b1deca",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Dönem içinde yönetim kurulu üyelerinde neden değişiklik olduğu belgede açıklanmadı",
-        "Yönetim değişikliklerinin operasyonel veya stratejik bir uyuşmazlıktan kaynaklanıp kaynaklanmadığı belirsiz"
-      ],
-      "summary": "Kartonsan Karton Sanayi ve Ticaret A.Ş., 11 Aralık 2026 tarihinde olağanüstü genel kurul toplantısı yapılacağını bildirdi. Gündemde dönem içinde gerçekleşen yönetim kurulu üyelik değişikliklerinin TTK 363 uyarınca onaylanması, üye sayısı ve ücretlerin belirlenmesi ile yeni yönetim kurulu üyelerinin seçimi yer alıyor. Bu gelişme, şirketin yönetim yapısında olağan dışı bir yenilenme sürecine işaret ediyor.",
-      "ts": "2026-11-13T23:00:52.539833+03:00"
-    },
     "1698226": {
       "analysis_points": [
         "Sermaye 42.000.000 TL, toplantıda temsil edilen pay 1.660.638,00 TL → düşük katılım oranıyla genel kurul nisabı sağlanarak kararlar oy birliğiyle alındı",
@@ -5721,8 +5685,21 @@
       ],
       "summary": "Özata Denizcilik Sanayi ve Ticaret A.Ş., 20.05.2026 tarihinde karar verilen Özata Tersanecilik'in devralınması suretiyle birleşme işleminden mevcut sermaye piyasasındaki gelişmeler nedeniyle vazgeçtiğini açıkladı. Bu karar, şirketlerin inorganik büyüme ve konsolidasyon stratejilerinin piyasa koşulları doğrultusunda askıya alındığını göstermektedir. Analist açısından operasyonel sinerji ve varlık birleştirme beklentilerinin gerçekleşmeyeceğini ifade eder.",
       "ts": "2026-11-27T21:00:57.402188+03:00"
+    },
+    "1703466": {
+      "analysis_points": [
+        "Yatırımcı ilişkileri ve komite üyeliklerindeki bu idari değişiklikler → şirketin operasyonel nakit akışını veya borç servis kapasitesini doğrudan etkilemez"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "3e72f992bdff8d3a",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "SEKURO PLASTİK AMBALAJ SANAYİ A.Ş. tarafından 27.11.2026 tarihinde Yatırımcı İlişkileri Bölümü Yöneticisi, üye değişiklikleri ve Kurumsal Yönetim Komitesi üyesi çıkarılmasına ilişkin güncelleme içermeyen bir Özel Durum Açıklaması yapılmıştır. Bu tür idari ve rutin personel/komite değişiklikleri şirketin operasyonel kârlılığını veya kredi profilini doğrudan etkilemeyen olağan kurumsal yönetim faaliyetleridir.",
+      "ts": "2026-11-27T23:01:02.243025+03:00"
     }
   },
-  "updated_at": "2026-11-27T21:00:57.402188+03:00",
+  "updated_at": "2026-11-27T23:01:02.243025+03:00",
   "version": 1
 }
