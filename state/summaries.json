@@ -1,23 +1,5 @@
 {
   "items": {
-    "1697818": {
-      "analysis_points": [
-        "Devredilen 1.094.173.000 TL'lik varlık, Akfen GYO'nun toplam aktif büyüklüğüne oranlanarak operasyonel odak değişikliği analiz edilmelidir",
-        "Time-in Turizm Yatırımları A.Ş.'ye devredilen yükümlülüklerin (borçların) tutarı ve vadesi, Akfen GYO'nun solo bilançosundaki finansal borç yükünü nasıl değiştireceği açısından incelenmelidir",
-        "Kolaylaştırılmış usulde bölünme nedeniyle uzman kuruluş görüşü alınmamıştır → İşlemin şirket değerlemesine etkisini ölçmek için bağımsız denetim raporlarındaki varlık değerlemeleri esas alınmalıdır"
-      ],
-      "category": "M&A",
-      "has_document": true,
-      "hash": "586ef7850b73841f",
-      "materiality": "high",
-      "model": "gemini-3.5-flash-lite",
-      "red_flags": [
-        "Bölünmeye konu varlıkların detaylı dökümü (Ek/1) KAP metninde yer almamaktadır",
-        "İşlem sonrası Akfen GYO'nun nakit akışı ve borçluluk rasyoları üzerindeki net etkisi belirsizdir"
-      ],
-      "summary": "Akfen GYO, 31.12.2025 tarihli finansal tablolarda 1.094.173.000 TL net kayıtlı değere sahip varlık ve yükümlülüklerini, iştirak modeliyle kısmi bölünme suretiyle yeni kurulacak Time-in Turizm Yatırımları A.Ş.'ye devretmektedir. Söz konusu işlem, Akfen GYO'nun %100 bağlı ortaklığı olacak yeni bir şirket üzerinden yürütülecek olup, operasyonel yapıda bir yeniden düzenleme niteliği taşımaktadır.",
-      "ts": "2026-11-12T23:00:54.542086+03:00"
-    },
     "1697827": {
       "analysis_points": [
         "Finansal tutar açıklanmadı → sözleşme bedeli netleşmeden ciroya ve FAVÖK'e katkısı hesaplanamıyor, bağlayıcı sözleşme metni beklenmeli"
@@ -5731,8 +5713,27 @@
       "red_flags": [],
       "summary": "Batıçim Çimento Sanayi A.Ş.'nin bağımsız yönetim kurulu üye adayı Rengin Akıllıoğlu hakkında, Sermaye Piyasası Kurulu tarafından Kurumsal Yönetim İlkeleri kapsamında herhangi bir olumsuz görüş bildirilmemesine karar verilmiştir. Açıklama sıradan bir kurumsal yönetim ve adaylık onay sürecini içermektedir. Şirketin operasyonel veya finansal yapısında doğrudan bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-26T19:00:58.321494+03:00"
+    },
+    "1703101": {
+      "analysis_points": [
+        "Yatırım amaçlı gayrimenkuller 141 milyon TL'den 11,1 milyar TL'ye yükseldi → Değerleme yöntemi ve bağımsız ikinci değerleme raporu incelenmeli, operasyonel nakit yaratma kapasitesi ile varlık tabanı ayrıştırılmalıdır",
+        "Kapasite kullanım oranı yaklaşık %10 (15.000 adet kapasiteye karşılık 1.378 üretim) → Esas faaliyet kârlılığı baskı altında kalmaya devam eder, sabit maliyetlerin karşılanması için üretim hacminde acil toparlanma gereklidir",
+        "2025 yılı net kârı esas faaliyetlerden bağımsız değerleme gelirlerinden oluşuyor → 2026 yılında benzer değerleme artışı olmaması durumunda sürdürülebilir kârlılık modeli bulunmuyor, esas faaliyet zararları net kârı baskılar"
+      ],
+      "category": "Finansal rapor",
+      "has_document": true,
+      "hash": "da1f776326103c88",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Traktör üretim kapasite kullanım oranının yaklaşık %10 seviyesine gerilemesi ve yıllık satışların 1.777 adette kalması",
+        "Personel sayısının 635'ten 529'a düşmesi ile birlikte hasılatta önemli düşüş ve esas faaliyet zararlarında artış yaşanması",
+        "Yatırım amaçlı gayrimenkullerin 141 milyon TL'den 11,1 milyar TL'ye çıkması ve net kârın sürdürülebilir olmayan değerleme gelirlerine dayanması"
+      ],
+      "summary": "TÜMOSAN Motor ve Traktör Sanayi A.Ş.'nin 26.11.2026 tarihinde gerçekleştirilen Olağan Genel Kurul toplantısında pay sahipleri tarafından şirketin operasyonel ve finansal yapısına ilişkin kritik sorular yöneltilmiştir. Bildirim metnine göre çalışan sayısı 2024 yılındaki 635 kişiden 2025 sonunda 529 kişiye gerilemiş, tek vardiyada 15.000 adet olan yıllık traktör üretim kapasitesine karşın 2025 yılında yalnızca 1.378 adet üretim ve 1.777 adet satış gerçekleştirilerek kapasite kullanımı yaklaşık yüzde 10 seviyesine düşmüştür. Ayrıca yatırım amaçlı gayrimenkullerin 141 milyon TL'den 11,1 milyar TL'ye yükseldiği ve 2025 yılındaki net kârın esas faaliyetlerden ziyade değerleme gelirlerinden kaynaklandığı belirtilmiştir.",
+      "ts": "2026-11-27T08:00:55.983517+03:00"
     }
   },
-  "updated_at": "2026-11-26T19:00:58.321494+03:00",
+  "updated_at": "2026-11-27T08:00:55.983517+03:00",
   "version": 1
 }
