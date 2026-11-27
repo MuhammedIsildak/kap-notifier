@@ -1,33 +1,5 @@
 {
   "items": {
-    "1697915": {
-      "analysis_points": [
-        "İhraç tutarı ve vadesi açıklanmadı → fonlama maliyeti ve vade yapısı hesaplanamıyor, ihraç belgesi beklenmeli",
-        "Mevcut borç stoğu içindeki payı belirtilmedi → kaldıraç oranlarına etkisi net değil"
-      ],
-      "category": "Finansman",
-      "has_document": false,
-      "hash": "63d8cba5bdfd89f3",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "FİBA FAKTORİNG A.Ş., 13.11.2026 tarihinde borçlanma aracı ihracına ilişkin yönetim kurulu kararı aldığını bildirdi. Alınan bu karar şirketin borçlanma tavanı ve likidite yönetimi açısından atılan rutin dışı olmayan bir adımdır. İhraç tutarı, vadesi ve faiz oranına dair detaylar açıklanmadı.",
-      "ts": "2026-11-13T13:00:50.705022+03:00"
-    },
-    "1697925": {
-      "analysis_points": [
-        "Proje tamamlandı ancak sözleşme büyüklüğü ve ciroya katkısı belgede belirtilmedi → 2026 gelir tablosuna yansıması takip edilemiyor",
-        "Tahsilat koşulları ve son hakediş tutarı açıklanmadı → işletme sermayesine nakit girişi zamanlaması belirsiz"
-      ],
-      "category": "Sözleşme",
-      "has_document": true,
-      "hash": "9773a1ac255b3423",
-      "materiality": "high",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [],
-      "summary": "LİNK BİLGİSAYAR SİSTEMLERİ YAZILIMI VE DONANIMI SANAYİ VE TİCARET A.Ş., Emniyet Genel Müdürlüğü KGYS Projesinin tamamlanmasına ilişkin 13.11.2026 tarihinde güncelleme açıklaması yaptı. Projenin tamamlanması şirketin operasyonel faaliyetlerini ve ilgili dönem nakit akışını doğrudan etkiler. Belge metninde sözleşme tutarına veya tahsilat detayına yer verilmemiştir.",
-      "ts": "2026-11-13T13:00:50.705022+03:00"
-    },
     "1697929": {
       "analysis_points": [
         "Sürkit Holding A.Ş. 103.626.430 pay ile temsil ediliyor → şirkette hâkim ortaklık yapısı bu grup elindedir",
@@ -5812,8 +5784,25 @@
       ],
       "summary": "Huzur Faktoring A.Ş., 24.11.2026 tarihli yönetim kurulu kararına istinaden Karabük Şubesi'ni kapatmış ve bu durum 26.11.2026 tarihli Türkiye Ticaret Sicil Gazetesi'nde ilan edilmiştir. Şube ağındaki bu daralma, şirketin operasyonel yapılanmasında ve coğrafi yayılımında değişikliğe gittiğini göstermektedir. Bu hamle, maliyet optimizasyonu sağlarken bölgesel kredi hacmini ve komisyon gelirlerini doğrudan etkileyecektir.",
       "ts": "2026-11-27T12:01:01.179944+03:00"
+    },
+    "1703274": {
+      "analysis_points": [
+        "ÇED başvuru tutarı ve yatırım bütçesi belgede açıklanmadı → Bakanlık onay süreci beklenmeli, onay sonrası 2027 capex tahminleri güncellenmeli",
+        "Proje 4 adet ruhsatlı sahada altın, gümüş ve bakır üretimini kapsıyor → onay alınması durumunda orta vadeli operasyonel çeşitliliğe ve rezerv yapısına doğrudan etki eder"
+      ],
+      "category": "Yatırım",
+      "has_document": true,
+      "hash": "138374d1cdd7c57f",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "ÇED süreci onaylanmadan yatırım bütçesi ve inşaat takvimi netleşemiyor",
+        "Tutar veya yatırım maliyeti belgede belirtilmemiş → finansman ihtiyacı henüz hesaplanamıyor"
+      ],
+      "summary": "CVK Maden İşletmeleri Sanayi ve Ticaret A.Ş.'nin bağlı ortaklığı Orta Truva Madencilik San. Tic. A.Ş.'ye ait TV Tower Projesi kapsamında, Çanakkale sınırları içerisindeki 4 adet IV. Grup İşletme Ruhsatlı sahada altın, gümüş ve bakır üretimi ile tesis kurulmasını içeren ÇED başvurusu 27.11.2026 tarihinde E-ÇED sistemi üzerinden yapılmıştır. Proje dosyası daha önceki 28.12.2025 ve 08.05.2026 tarihli açıklamalar sonrasında yeniden gözden geçirilip revize edilmiştir. Bu başvuru, şirketin gelecek dönem üretim kapasitesi, operasyonel büyümesi ve madencilik yatırımlarının takvimi açısından kritik bir aşamayı temsil etmektedir.",
+      "ts": "2026-11-27T13:00:56.174609+03:00"
     }
   },
-  "updated_at": "2026-11-27T12:01:01.179944+03:00",
+  "updated_at": "2026-11-27T13:00:56.174609+03:00",
   "version": 1
 }
