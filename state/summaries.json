@@ -5752,8 +5752,36 @@
       "red_flags": [],
       "summary": "HİTİT BİLGİSAYAR HİZMETLERİ A.Ş., 26.11.2026 tarihinde analistlerle gerçekleştirilen telekonferans toplantısının kaydının internet sitesinde yayımlandığını duyurmuştur. Bu açıklama rutin bir yatırımcı ilişkileri bilgilendirmesi niteliğinde olup şirketin finansal yapısında veya operasyonlarında doğrudan bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-27T10:00:56.088791+03:00"
+    },
+    "1703153": {
+      "analysis_points": [
+        "Genel kurul gündem maddeleri ve alınan kararlar metinde yer almıyor → ana ihraçcı veya fon havuzu üzerinde doğrudan finansal etki tespiti yapılamıyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "3d3ddedf227df315",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "KT Kira Sertifikaları Varlık Kiralama A.Ş.'nin 23.11.2026 tarihinde gerçekleştirilen Olağanüstü Genel Kurul toplantısına ilişkin kararlar tescil edilerek 25.11.2026 tarihli Türkiye Ticaret Sicil Gazetesi'nde yayımlanmıştır. Bu bildirim rutin bir tescil ve ilan sürecini içermekte olup şirketin finansal yapısında doğrudan bir değişiklik yaratmamaktadır. Gündem ve alınan kararlar metinde paylaşılmamıştır.",
+      "ts": "2026-11-27T11:01:02.020614+03:00"
+    },
+    "1703193": {
+      "analysis_points": [
+        "Muğla şube portföyü ve çalışan sayısı belirtilmedi → operasyonel maliyet tasarrufu veya olası gelir kaybı hesaplanamıyor, genel müdürlük portföy devir detayları incelenmeli"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "12bcd55c1cb87fcb",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Muğla şubesinin portföy büyüklüğü ve tasfiye maliyeti açıklanmadı"
+      ],
+      "summary": "Huzur Faktoring A.Ş., 24/11/2026 tarihli yönetim kurulu kararına istinaden Muğla Şubesi'ni kapatmış ve bu karar 25/11/2026 tarihli Türkiye Ticaret Sicil Gazetesi'nde ilan edilmiştir. Şube kapama işlemleri, operasyonel ağın daralması veya maliyet optimizasyonu açısından şube bazlı gelir-gider dengesini etkileyebilir. Bildirimde şubenin portföy büyüklüğü veya tasfiye maliyetine ilişkin finansal veri yer almamaktadır.",
+      "ts": "2026-11-27T11:01:02.020614+03:00"
     }
   },
-  "updated_at": "2026-11-27T10:00:56.088791+03:00",
+  "updated_at": "2026-11-27T11:01:02.020614+03:00",
   "version": 1
 }
