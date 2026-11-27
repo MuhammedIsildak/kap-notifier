@@ -1,21 +1,5 @@
 {
   "items": {
-    "1698097": {
-      "analysis_points": [
-        "Metin Öztürk istifa etti → Şirket yönetim kurulunda üye eksikliği oluştu, boşalan üyeliğe atama yapılması gerekir",
-        "İstifa gerekçesi belirtilmedi → Yönetim içi olası bir anlaşmazlık veya stratejik ayrışma olasılığı takip edilmeli"
-      ],
-      "category": "Yönetim değişikliği",
-      "has_document": true,
-      "hash": "5d6f08da181ace1c",
-      "materiality": "normal",
-      "model": "gemini/gemini-3.5-flash-lite",
-      "red_flags": [
-        "Yönetim kurulu üyesi istifa etmiştir ancak gerekçesi açıklanmamıştır"
-      ],
-      "summary": "Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. Yönetim Kurulu üyesi Metin Öztürk şirketteki görevinden istifa etmiştir. Açıklamada istifanın gerekçesine ve yerine yapılacak atamaya dair bir bilgi yer almamaktadır.",
-      "ts": "2026-11-13T18:00:56.829551+03:00"
-    },
     "1698103": {
       "analysis_points": [
         "KAP özeti ve belge metni bulunmuyor → içerik detaylarına ulaşılamıyor, KAP ekindeki tam rapora bakılmalı"
@@ -5696,8 +5680,69 @@
       "red_flags": [],
       "summary": "K2 Faktoring, 04.12.2026 tarihinde denetçi seçimi gündemiyle olağanüstü genel kurul toplantısı gerçekleştireceğini bildirdi. Toplantı Büyükdere Cad. Maslak adresinde yapılacak olup şirketin rutin idari süreçleri kapsamındadır.",
       "ts": "2026-11-27T17:01:05.630272+03:00"
+    },
+    "1703353": {
+      "analysis_points": [
+        "İkitelli Şubesi kapatıldı → bölgedeki müşteri portföyünün diğer şubelere devri ve operasyonel maliyet tasarrufu finansal tablolarda izlenmeli",
+        "24/11/2026 tarihli YKK ve 27/11/2026 tarihli Ticaret Sicil Gazetesi tescili tamamlandı → hukuki kapanış süreci usulüne uygun sonuçlandı"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "71164afe71d15f0a",
+      "materiality": "normal",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Şube kapanışı ile operasyonel daralma veya maliyet optimizasyonu yapılıyor"
+      ],
+      "summary": "Huzur Faktoring A.Ş., Yönetim Kurulu'nun 24 Kasım 2026 tarihli ve 2026/77 sayılı kararına istinaden İstanbul İkitelli Şubesi'ni kapatmıştır. Kapanış işlemi 27 Kasım 2026 tarihli ve 11718 sayılı Türkiye Ticaret Sicil Gazetesi'nde yayımlanmıştır.",
+      "ts": "2026-11-27T18:01:00.748057+03:00"
+    },
+    "1703355": {
+      "analysis_points": [
+        "Sermaye 30.000.000 TL'den 80.000.000 TL'ye çıkarıldı → bağlı ortaklığın lisanslı depoculuk yatırımları için özkaynak tabanı güçlendirildi",
+        "50.000.000 TL nakit avans daha önceden ödendi → ana şirketin nakit akışına ve net borç pozisyonuna bu aşamada ek bir nakit çıkış yükü getirmiyor"
+      ],
+      "category": "Sermaye artırımı",
+      "has_document": true,
+      "hash": "bdc29ec572242379",
+      "materiality": "high",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Kayseri Şeker Fabrikası A.Ş.'nin %100 bağlı ortaklığı Kayseri Şeker Tarım Ürünleri Lisanslı Depoculuk A.Ş.'nin sermayesi 30.000.000 TL'den 50.000.000 TL artırılarak 80.000.000 TL'ye çıkarılmıştır. Artırım tutarı olan 50.000.000 TL daha önce ana ortaklık tarafından sermaye avansı olarak nakden ödenmiştir.",
+      "ts": "2026-11-27T18:01:00.748057+03:00"
+    },
+    "1703361": {
+      "analysis_points": [
+        "Geçici süre 27 Kasım 2026'da başladı → 3 aylık koruma süresi içinde alacaklı bankalarla yapılandırma anlaşması denenecek",
+        "Ticari faaliyetlerin sürdürülebilirliği risk altında → konkordato komiseri raporları ve alacaklılar toplantıları takip edilmeli"
+      ],
+      "category": "Temerrüt",
+      "has_document": true,
+      "hash": "7e3e234c10f3c0ab",
+      "materiality": "critical",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [
+        "Grup şirketlerini kapsayan konkordato geçici süresi alındı",
+        "3 aylık kritik yasal koruma süreci başladı"
+      ],
+      "summary": "Tuğçelik Alüminyum ve Metal Mamülleri Sanayi ve Ticaret A.Ş. ve grup şirketleri için konkordato başvurusu kapsamında 27 Kasım 2026 tarihinde 3 aylık geçici süre alınmıştır. Bu gelişme, şirketin finansal yükümlülüklerini yerine getirmede ciddi likidite sıkıntısı yaşadığını ve borç yapılandırma sürecine girdiğini göstermektedir.",
+      "ts": "2026-11-27T18:01:00.748057+03:00"
+    },
+    "1703363": {
+      "analysis_points": [
+        "Sermaye 100.000.000 TL tam katılım ile temsil edildi → ortaklık yapısında olağan dışı bir uyuşmazlık bulunmuyor",
+        "Güney Bağımsız Denetim A.Ş. 1 Ocak - 31 Aralık 2026 dönemi için seçildi → TSRS uyumlu sürdürülebilirlik raporlaması yasal takvime uygun ilerliyor"
+      ],
+      "category": "Yönetim değişikliği",
+      "has_document": true,
+      "hash": "b8a139c647141e62",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "TEB Yatırım Menkul Değerler A.Ş., 26 Kasım 2026 tarihinde olağanüstü genel kurul toplantısı gerçekleştirmiştir. Toplantıda 100.000.000 TL sermayeyi temsilen tüm pay sahipleri hazır bulunmuş ve Güney Bağımsız Denetim A.Ş. 2026 hesap dönemi için sürdürülebilirlik raporu sınırlı güvence denetçisi olarak seçilmiştir.",
+      "ts": "2026-11-27T18:01:00.748057+03:00"
     }
   },
-  "updated_at": "2026-11-27T17:01:05.630272+03:00",
+  "updated_at": "2026-11-27T18:01:00.748057+03:00",
   "version": 1
 }
