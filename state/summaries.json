@@ -5698,8 +5698,21 @@
       "red_flags": [],
       "summary": "SEKURO PLASTİK AMBALAJ SANAYİ A.Ş. tarafından 27.11.2026 tarihinde Yatırımcı İlişkileri Bölümü Yöneticisi, üye değişiklikleri ve Kurumsal Yönetim Komitesi üyesi çıkarılmasına ilişkin güncelleme içermeyen bir Özel Durum Açıklaması yapılmıştır. Bu tür idari ve rutin personel/komite değişiklikleri şirketin operasyonel kârlılığını veya kredi profilini doğrudan etkilemeyen olağan kurumsal yönetim faaliyetleridir.",
       "ts": "2026-11-27T23:01:02.243025+03:00"
+    },
+    "1703475": {
+      "analysis_points": [
+        "Genel kurul kararları tescil edildi → finansal tablolar veya nakit akışı üzerinde doğrudan bir etkisi bulunmuyor"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "b0bcfc21199dd952",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Trabzon Liman İşletmeciliği A.Ş., 28.11.2026 tarihinde 2025 yılı Olağan Genel Kurul kararlarının tescil edildiğini bildirdi. Bildirim ekinde Elektronik Ticari Defter Sistemi (ETDS) doğrulama kodları yer aldı. Bu işlem rutin bir idari/kurumsal süreç olup şirketin finansal yapısında doğrudan bir değişiklik yaratmamaktadır.",
+      "ts": "2026-11-28T08:01:05.370062+03:00"
     }
   },
-  "updated_at": "2026-11-27T23:01:02.243025+03:00",
+  "updated_at": "2026-11-28T08:01:05.370062+03:00",
   "version": 1
 }
