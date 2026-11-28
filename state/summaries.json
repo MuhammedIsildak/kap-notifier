@@ -5711,8 +5711,21 @@
       "red_flags": [],
       "summary": "Trabzon Liman İşletmeciliği A.Ş., 28.11.2026 tarihinde 2025 yılı Olağan Genel Kurul kararlarının tescil edildiğini bildirdi. Bildirim ekinde Elektronik Ticari Defter Sistemi (ETDS) doğrulama kodları yer aldı. Bu işlem rutin bir idari/kurumsal süreç olup şirketin finansal yapısında doğrudan bir değişiklik yaratmamaktadır.",
       "ts": "2026-11-28T08:01:05.370062+03:00"
+    },
+    "1703477": {
+      "analysis_points": [
+        "Sigorta limiti şirket sermayesinin %25'ini aşmaktadır → poliçe bedeli veya primi nakit akışını etkilemeyecek büyüklüktedir, mali tablolar üzerindeki etkisi ihmal edilebilir seviyededir"
+      ],
+      "category": "Diğer",
+      "has_document": true,
+      "hash": "28761f6f3ec312f7",
+      "materiality": "low",
+      "model": "gemini/gemini-3.5-flash-lite",
+      "red_flags": [],
+      "summary": "Koton Mağazacılık Tekstil Sanayi ve Ticaret A.Ş., Sermaye Piyasası Kurulu Kurumsal Yönetim Tebliği'nin 4.2.8 numaralı maddesi gereğince Yönetici Sorumluluk Sigortası'nı yenilemiştir. Sigortanın toplam sorumluluk limiti şirket sermayesinin %25'ini aşmaktadır. Bu bildirim rutin bir kurumsal yönetim uyum işlemidir ve şirketin finansal veya operasyonel yapısında doğrudan bir değişikliğe yol açmamaktadır.",
+      "ts": "2026-11-28T10:00:56.718040+03:00"
     }
   },
-  "updated_at": "2026-11-28T08:01:05.370062+03:00",
+  "updated_at": "2026-11-28T10:00:56.718040+03:00",
   "version": 1
 }
